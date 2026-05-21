@@ -1,0 +1,53 @@
+{
+  "project": {
+    "name": "history-web",
+    "description": "Website lịch sử Việt Nam — Phân tích nhân vật theo hệ thống 3 Gốc / 3 Độc",
+    "created_at": "2026-05-21T11:36:07+07:00"
+  },
+  "tech_stack": [
+    "HTML5",
+    "Tailwind CSS (CDN)",
+    "Vanilla JS",
+    "Google Fonts (Be Vietnam Pro, Noto Serif)"
+  ],
+  "features": [
+    "Trang phân tích nhân vật lịch sử (1 file HTML / nhân vật)",
+    "Hệ thống đánh giá 3 Gốc (Trí tuệ, Đạo đức, Nghị lực)",
+    "Hệ thống đánh giá 3 Độc (Tham lam, Sân giận, Si mê)",
+    "Trang danh sách nhân vật (index)",
+    "Reading progress bar",
+    "Fade-in scroll animations",
+    "Responsive design",
+    "Share / Copy link CTA"
+  ],
+  "decisions": [
+    {
+      "date": "2026-05-21",
+      "decision": "Dùng Tailwind CDN thay vì build pipeline để đơn giản, dễ deploy static",
+      "reason": "Dự án là static HTML, không cần bundler"
+    },
+    {
+      "date": "2026-05-21",
+      "decision": "Màu chủ đạo: Đỏ sậm #9b1c1c + nền kem #faf9f7",
+      "reason": "Gợi cảm giác cổ điển, lịch sử, trang trọng"
+    },
+    {
+      "date": "2026-05-21",
+      "decision": "Cấu truc: mỗi nhân vật là 1 file HTML riêng",
+      "reason": "Dễ quản lý, SEO-friendly, không cần backend"
+    }
+  ],
+  "content_plan": {
+    "nhan_vat": [
+      { "ten": "Dương Đình Nghệ", "file": "nhan-vat/duong-dinh-nghe.html", "status": "done" },
+      { "ten": "Ngô Quyền", "file": "nhan-vat/ngo-quyen.html", "status": "done" },
+      { "ten": "Đinh Bộ Lĩnh", "file": "nhan-vat/dinh-bo-linh.html", "status": "done" },
+      { "ten": "Dương Vân Nga", "file": "nhan-vat/duong-van-nga.html", "status": "done" }
+    ],
+    "bai_hoc": [
+      { "ten": "Đinh – Lê: Từ Thủ lĩnh thành Hoàng đế", "file": "bai-hoc/dinh-le.html", "status": "done" }
+    ],
+    "tong_so_ke_hoach": 20,
+    "note": "Có 2 loại page: nhan-vat/ (phân tích nhân vật 3 Gốc/3 Độc) và bai-hoc/ (bài học lịch sử)"
+  }
+}

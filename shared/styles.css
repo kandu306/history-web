@@ -1,0 +1,260 @@
+/* ==========================================================================
+   DỰ ÁN LỊCH SỬ VIỆT NAM — PHONG CÁCH HỆ THỐNG DÙNG CHUNG (SHARED CSS)
+   ========================================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #faf9f7;
+  color: #1c1917;
+}
+
+/* ── Thanh tiến trình đọc (Reading Progress Bar) ── */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #9b1c1c, #b45309);
+  transition: width 0.1s linear;
+  z-index: 200;
+  width: 0%;
+}
+
+/* ── Họa tiết phân cách (Ornament Divider) ── */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+.ornament-divider::before,
+.ornament-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e7e5e4;
+}
+.ornament-divider span {
+  color: #9b1c1c;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+/* ── Hiệu ứng cuộn xuất hiện (Scroll Fade-In) ── */
+.fade-in,
+.fade-section {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.fade-in.visible,
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Tùy chỉnh thanh cuộn trình duyệt (Custom Scrollbar) ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f4f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9b1c1c;
+}
+
+/* ── Hiệu ứng thẻ (Card Hover System) ── */
+.card-hover,
+.card {
+  transition: all 0.25s ease;
+}
+.card-hover:hover,
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.10);
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #e7e5e4;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(28, 25, 23, 0.05);
+}
+.card:hover {
+  box-shadow: 0 6px 24px rgba(28, 25, 23, 0.09);
+  transform: translateY(-1px);
+}
+
+/* ── Xếp hạng sao (Star Rating System) ── */
+.rating-bar {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.rating-stars {
+  color: #f59e0b;
+  letter-spacing: -1px;
+}
+.rating-filled {
+  color: #9b1c1c;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.rating-empty {
+  color: #e7e5e4;
+  font-size: 1.1rem;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* ── Liên kết trong bài viết (Article Link) ── */
+.article-link {
+  color: #9b1c1c;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.article-link:hover {
+  border-color: #9b1c1c;
+}
+
+/* ── Khối trích dẫn (Blockquotes) ── */
+blockquote p {
+  font-style: italic;
+}
+.quote-block {
+  border-left: 4px solid #9b1c1c;
+  background: linear-gradient(135deg, #fef2f2 0%, #fff 100%);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 12px 12px 0;
+  margin: 1.5rem 0;
+}
+
+/* ── Danh sách có dấu tròn tùy chỉnh (Custom Bullets) ── */
+.custom-bullet {
+  list-style: none;
+  padding: 0;
+}
+.custom-bullet li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  padding: 0.4rem 0;
+}
+.custom-bullet li::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #9b1c1c;
+  border-radius: 50%;
+  margin-top: 0.55rem;
+  flex-shrink: 0;
+}
+
+/* ── Nhãn & Huy hiệu (Tags & Badges) ── */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.pill {
+  display: inline-block;
+  padding: 0.2rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.period-badge {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+}
+.timeline-dot {
+  width: 11px;
+  height: 11px;
+  background: #9b1c1c;
+  border: 2px solid #fef2f2;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── Tiêu đề bài học (Lesson Headings) ── */
+h2.section-title {
+  font-family: 'Noto Serif', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1c1917;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+h3.sub-title {
+  font-family: 'Noto Serif', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1c1917;
+  margin-bottom: 0.6rem;
+}
+
+/* ── Trang trí tiêu điểm (Hero Ornaments) ── */
+.hero-ornament {
+  position: absolute;
+  top: -40px;
+  right: -60px;
+  width: 320px;
+  height: 320px;
+  opacity: 0.04;
+  pointer-events: none;
+}
+@media (max-width: 640px) {
+  .hero-ornament {
+    display: none;
+  }
+}
+
+/* ── Sơ đồ Nhân quả (Fatal Chain - Đinh Bộ Lĩnh) ── */
+.fatal-chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+.chain-node {
+  background: #292524;
+  border: 1px solid #44403c;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.82rem;
+  color: #d6d3d1;
+  border-radius: 4px;
+  line-height: 1.4;
+}
+.chain-node.red {
+  background: #450a0a;
+  border-color: #9b1c1c;
+  color: #fca5a5;
+  font-weight: 600;
+}
+.chain-arrow {
+  color: #9b1c1c;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+@media (max-width: 640px) {
+  .fatal-chain {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

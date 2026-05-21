@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lịch Sử Việt Nam — Phân tích nhân vật 3 Gốc / 3 Độc</title>
+  <meta name="description" content="Khám phá lịch sử Việt Nam qua lăng kính phân tích nhân vật độc đáo: hệ thống 3 Gốc (Trí tuệ, Đạo đức, Nghị lực) và 3 Độc (Tham lam, Sân giận, Si mê).">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lịch Sử Việt Nam — Phân tích nhân vật 3 Gốc / 3 Độc">
+  <meta property="og:description" content="Khám phá lịch sử Việt Nam qua lăng kính phân tích nhân vật độc đáo: hệ thống 3 Gốc (Trí tuệ, Đạo đức, Nghị lực) và 3 Độc (Tham lam, Sân giận, Si mê).">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="shared/favicon.svg">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Shared Assets -->
+  <link rel="stylesheet" href="shared/styles.css">
+  <script src="shared/scripts.js" defer></script>
+</head>
+<body class="font-sans antialiased">
+
+  <div id="progress-bar"></div>
+
+  <!-- Sticky Nav -->
+  <nav style="background: rgba(250,249,247,0.92); backdrop-filter: blur(12px);"
+       class="sticky top-0 z-50 border-b border-[#e7e5e4]">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="text-[#9b1c1c] text-lg leading-none">◈</span>
+        <span class="font-semibold text-[#1c1917]">Lịch sử Việt Nam</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-6 text-sm text-[#78716c]">
+        <a href="#nhan-vat" class="hover:text-[#9b1c1c] transition-colors">Nhân vật</a>
+        <a href="#phuong-phap" class="hover:text-[#9b1c1c] transition-colors">Phương pháp</a>
+        <a href="#ve-khoa-hoc" class="hover:text-[#9b1c1c] transition-colors">Về khoá học</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="text-xs text-[#a8a29e] font-semibold tracking-widest uppercase hidden sm:block">
+          3 Gốc / 3 Độc
+        </span>
+        <!-- Mobile hamburger menu button -->
+        <button id="mobile-menu-btn" class="sm:hidden text-[#1c1917] focus:outline-none p-1.5 rounded-lg hover:bg-[#f5f4f1] transition-colors" aria-label="Toggle menu">
+          <!-- Hamburger Line Icon -->
+          <svg id="hamburger-icon" class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <!-- Close Icon -->
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden sm:hidden border-t border-[#e7e5e4] bg-[#faf9f7] py-2 px-6 shadow-lg">
+      <div class="flex flex-col gap-2 py-2">
+        <a href="#nhan-vat" class="mobile-nav-link text-sm text-[#57534e] hover:text-[#9b1c1c] font-medium py-2 transition-colors">Nhân vật</a>
+        <a href="#phuong-phap" class="mobile-nav-link text-sm text-[#57534e] hover:text-[#9b1c1c] font-medium py-2 transition-colors">Phương pháp</a>
+        <a href="#ve-khoa-hoc" class="mobile-nav-link text-sm text-[#57534e] hover:text-[#9b1c1c] font-medium py-2 transition-colors">Về khoá học</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <header class="hero-bg hero-pattern relative overflow-hidden">
+    <!-- Decorative blobs -->
+    <div class="absolute top-0 right-0 w-96 h-96 opacity-[0.03] pointer-events-none">
+      <svg viewBox="0 0 200 200" fill="currentColor" style="color:#9b1c1c;">
+        <path d="M100 0 L173 50 L173 150 L100 200 L27 150 L27 50 Z"/>
+      </svg>
+    </div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 opacity-[0.02] pointer-events-none">
+      <svg viewBox="0 0 200 200" fill="currentColor" style="color:#9b1c1c;">
+        <path d="M100 0 L173 50 L173 150 L100 200 L27 150 L27 50 Z"/>
+      </svg>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-6 pt-20 pb-20 relative">
+      <!-- Eyebrow -->
+      <div class="flex items-center gap-3 mb-8 fade-in">
+        <span class="tag" style="background:#9b1c1c22; color:#f87171; border: 1px solid rgba(155,28,28,0.3);">
+          Khoá học
+        </span>
+        <span class="text-sm text-[#a8a29e]">Phân tích nhân vật lịch sử</span>
+      </div>
+
+      <h1 class="font-serif font-bold text-[#faf9f7] leading-tight mb-6 fade-in"
+          style="font-size: clamp(2.5rem, 6vw, 4.5rem); animation-delay: 0.1s;">
+        Lịch Sử Việt Nam
+      </h1>
+
+      <p class="font-serif text-xl text-[#a8a29e] italic leading-relaxed mb-10 max-w-2xl fade-in"
+         style="animation-delay: 0.2s;">
+        Hiểu người xưa qua hệ thống phân tích <em style="color:#fca5a5;">3 Gốc / 3 Độc</em> — 
+        nhìn lịch sử bằng con mắt tâm lý học và triết học, không chỉ niên đại và sự kiện.
+      </p>
+
+      <!-- Stats row -->
+      <div class="flex flex-wrap gap-8 mb-10 fade-in" style="animation-delay: 0.3s;">
+        <div>
+          <div class="font-serif text-3xl font-bold text-[#faf9f7]">20+</div>
+          <div class="text-sm text-[#78716c] mt-1">Nhân vật</div>
+        </div>
+        <div class="w-px bg-[#292524]"></div>
+        <div>
+          <div class="font-serif text-3xl font-bold text-[#faf9f7]">∞</div>
+          <div class="text-sm text-[#78716c] mt-1">Bài học</div>
+        </div>
+        <div class="w-px bg-[#292524]"></div>
+        <div>
+          <div class="font-serif text-3xl font-bold text-[#faf9f7]">2000+</div>
+          <div class="text-sm text-[#78716c] mt-1">Năm lịch sử</div>
+        </div>
+        <div class="w-px bg-[#292524]"></div>
+        <div>
+          <div class="font-serif text-3xl font-bold text-[#faf9f7]">6</div>
+          <div class="text-sm text-[#78716c] mt-1">Tiêu chí đánh giá</div>
+        </div>
+      </div>
+
+      <!-- 3 Gốc 3 Độc pills -->
+      <div class="flex flex-wrap gap-3 fade-in" style="animation-delay: 0.4s;">
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#1c2617; color:#86efac; border:1px solid rgba(134,239,172,0.2);">
+          <span>🌱</span> Trí tuệ
+        </span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#1c2617; color:#86efac; border:1px solid rgba(134,239,172,0.2);">
+          <span>⚖️</span> Đạo đức
+        </span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#1c2617; color:#86efac; border:1px solid rgba(134,239,172,0.2);">
+          <span>⚡</span> Nghị lực
+        </span>
+        <span class="w-px bg-[#292524] self-stretch hidden sm:block"></span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#2a1515; color:#fca5a5; border:1px solid rgba(252,165,165,0.2);">
+          <span>💰</span> Tham lam
+        </span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#2a1515; color:#fca5a5; border:1px solid rgba(252,165,165,0.2);">
+          <span>😤</span> Sân giận
+        </span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#2a1515; color:#fca5a5; border:1px solid rgba(252,165,165,0.2);">
+          <span>🌀</span> Si mê
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 pb-28">
+
+    <!-- ═══════════════════════ PHƯƠNG PHÁP ═══════════════════════ -->
+    <section id="phuong-phap" class="py-16 fade-in">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.15em] uppercase text-[#9b1c1c] mb-4">
+          <span class="w-8 h-px bg-[#9b1c1c]"></span>
+          Phương pháp
+          <span class="w-8 h-px bg-[#9b1c1c]"></span>
+        </div>
+        <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-4">Hệ thống 3 Gốc / 3 Độc</h2>
+        <p class="text-[#78716c] max-w-xl mx-auto leading-relaxed">
+          Mỗi nhân vật được phân tích theo 6 tiêu chí, cho điểm từ 1–5 sao, kèm luận giải cụ thể dựa trên tư liệu lịch sử.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- 3 GỐC -->
+        <div class="rounded-2xl border border-[#e7e5e4] bg-white p-7 glow-red">
+          <div class="flex items-center gap-3 mb-5">
+            <span class="w-9 h-9 rounded-lg bg-[#9b1c1c] text-[#faf9f7] text-sm font-bold flex items-center justify-center flex-shrink-0">G</span>
+            <h3 class="font-serif text-xl font-semibold text-[#9b1c1c] uppercase tracking-wide">3 Gốc — Phẩm chất cốt lõi</h3>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="text-lg">🧠</span>
+              <div>
+                <p class="font-semibold text-[#1c1917] text-sm">Trí tuệ</p>
+                <p class="text-sm text-[#78716c] leading-relaxed">Khả năng nhìn đại cục, phân tích và ra quyết định trong bối cảnh lịch sử</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-lg">⚖️</span>
+              <div>
+                <p class="font-semibold text-[#1c1917] text-sm">Đạo đức</p>
+                <p class="text-sm text-[#78716c] leading-relaxed">Hành xử với dân, với đối thủ; mức độ đặt lợi ích chung lên lợi ích cá nhân</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-lg">⚡</span>
+              <div>
+                <p class="font-semibold text-[#1c1917] text-sm">Nghị lực</p>
+                <p class="text-sm text-[#78716c] leading-relaxed">Sức chịu đựng, khả năng vượt khó, kiên định trước áp lực và thách thức</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 ĐỘC -->
+        <div class="rounded-2xl border border-[#e7e5e4] bg-white p-7" style="box-shadow: 0 0 0 1px rgba(120,53,15,0.1), 0 4px 24px rgba(120,53,15,0.06);">
+          <div class="flex items-center gap-3 mb-5">
+            <span class="w-9 h-9 rounded-lg bg-[#78350f] text-[#faf9f7] text-sm font-bold flex items-center justify-center flex-shrink-0">Đ</span>
+            <h3 class="font-serif text-xl font-semibold text-[#78350f] uppercase tracking-wide">3 Độc — Chướng ngại tâm lý</h3>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="text-lg">💰</span>
+              <div>
+                <p class="font-semibold text-[#1c1917] text-sm">Tham lam</p>
+                <p class="text-sm text-[#78716c] leading-relaxed">Mức độ tham quyền, tham lợi; sẵn sàng hy sinh lợi ích chung vì cá nhân</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-lg">😤</span>
+              <div>
+                <p class="font-semibold text-[#1c1917] text-sm">Sân giận</p>
+                <p class="text-sm text-[#78716c] leading-relaxed">Để cảm xúc tiêu cực chi phối quyết định, trả thù cá nhân thay vì lý trí</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-lg">🌀</span>
+              <div>
+                <p class="font-semibold text-[#1c1917] text-sm">Si mê</p>
+                <p class="text-sm text-[#78716c] leading-relaxed">Bám víu vào ảo tưởng, danh vị, không nhìn thực tế — dẫn đến sai lầm lịch sử</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ornament-divider"><span>◈</span></div>
+
+    <!-- ═══════════════════════ DANH SÁCH NHÂN VẬT ═══════════════════════ -->
+    <section id="nhan-vat" class="py-4 fade-in">
+      <!-- Bài học sub-section -->
+      <div class="mb-12">
+        <div class="flex items-end justify-between mb-6">
+          <div>
+            <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.15em] uppercase text-[#9b1c1c] mb-3">
+              <span class="w-8 h-px bg-[#9b1c1c]"></span>
+              Bài học
+            </div>
+            <h2 class="font-serif text-3xl font-bold text-[#1c1917]">Bài học lịch sử</h2>
+          </div>
+          <span class="text-sm text-[#a8a29e]">1 bài</span>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Bài 5: Đinh – Lê -->
+          <a href="bai-hoc/dinh-le.html" id="card-dinh-le"
+             class="card-hover rounded-2xl border overflow-hidden block"
+             style="border-color: rgba(180,83,9,0.25); box-shadow: 0 0 0 1px rgba(180,83,9,0.08), 0 4px 20px rgba(28,25,23,0.06); background:#fff;">
+            <div class="h-2 bg-gradient-to-r from-[#1c1917] to-[#1e2d40]"></div>
+            <div class="p-6">
+              <div class="flex items-start justify-between mb-4">
+                <span class="pill text-[0.65rem]" style="background:#fef2f2; color:#9b1c1c; border:1px solid rgba(155,28,28,0.2); letter-spacing:0.1em;">968–1009 SCN</span>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-[#1c1917] mb-1">Đinh – Lê</h3>
+              <p class="text-sm text-[#78716c] italic mb-4">Từ "Thủ lĩnh" thành "Hoàng đế" — Xây nền móng nhà nước</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="pill text-xs" style="background:#f0f4fa; color:#2f5fab; border:1px solid #dce6f5;">3 Ý chính</span>
+                <span class="pill text-xs" style="background:#fef2f2; color:#9b1c1c; border:1px solid rgba(155,28,28,0.2);">Dễ nhầm</span>
+                <span class="pill text-xs" style="background:#faf9f7; color:#78716c; border:1px solid #e7e5e4;">Áp dụng</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="pill text-xs" style="background: linear-gradient(135deg,#9b1c1c,#b45309); color:#fafaf9;">⭐ Bớt Tối</span>
+                <span class="text-xs text-[#9b1c1c] font-semibold">Đọc →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Nhân vật sub-section -->
+      <div class="flex items-end justify-between mb-6">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.15em] uppercase text-[#9b1c1c] mb-3">
+            <span class="w-8 h-px bg-[#9b1c1c]"></span>
+            Nhân vật
+          </div>
+          <h2 class="font-serif text-3xl font-bold text-[#1c1917]">Phân tích nhân vật</h2>
+        </div>
+        <span class="text-sm text-[#a8a29e]">4 / 20+ nhân vật</span>
+      </div>
+
+      <!-- Grid nhân vật — sắp xếp theo thứ tự thời gian -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <!-- 🔲 Hai Bà Trưng — 40–43 SCN -->
+        <div class="card-hover rounded-2xl border border-[#e7e5e4] bg-[#fafaf8] overflow-hidden opacity-60">
+          <div class="h-2 bg-[#e7e5e4]"></div>
+          <div class="p-6">
+            <div class="mb-4">
+              <span class="period-badge tag" style="background:#f5f4f1; color:#a8a29e; border:1px solid #e7e5e4;">
+                40–43 SCN
+              </span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-[#44403c] mb-1">Hai Bà Trưng</h3>
+            <p class="text-sm text-[#a8a29e] italic mb-4">Khởi nghĩa chống ách Đông Hán — dựng nền độc lập ngắn ngủi</p>
+            <span class="tag" style="background:#f5f4f1; color:#a8a29e; border:1px solid #e7e5e4;">
+              Sắp ra mắt
+            </span>
+          </div>
+        </div>
+
+        <!-- ✅ Dương Đình Nghệ — 931–937 SCN -->
+        <a href="nhan-vat/duong-dinh-nghe.html" id="card-duong-dinh-nghe"
+           class="card-hover rounded-2xl border border-[#9b1c1c]/25 bg-white overflow-hidden block"
+           style="box-shadow: 0 0 0 1px rgba(155,28,28,0.1), 0 4px 20px rgba(155,28,28,0.07);">
+          <div class="h-2 bg-gradient-to-r from-[#9b1c1c] to-[#b45309]"></div>
+          <div class="p-6">
+            <div class="mb-4">
+              <span class="period-badge tag" style="background:#fef2f2; color:#9b1c1c; border:1px solid rgba(155,28,28,0.2);">
+                931–937 SCN
+              </span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-[#1c1917] mb-1">Dương Đình Nghệ</h3>
+            <p class="text-sm text-[#78716c] italic mb-4">Người giải phóng Đại La — chí hướng lớn nhưng chết bi kịch vì điểm mù</p>
+            <!-- Mini ratings -->
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="inline-flex items-center gap-1.5 text-xs text-[#57534e]">
+                <span class="text-[#f59e0b]">★★★★☆</span> Trí tuệ
+              </span>
+              <span class="inline-flex items-center gap-1.5 text-xs text-[#57534e]">
+                <span class="text-[#f59e0b]">★★★★★</span> Nghị lực
+              </span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="tag" style="background:#fef2f2; color:#9b1c1c; border:1px solid rgba(155,28,28,0.2);">
+                Anh hùng chưa hoàn thành
+              </span>
+              <span class="text-xs text-[#9b1c1c] font-semibold flex items-center gap-1">
+                Đọc →
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- ✅ Ngô Quyền — 938 SCN -->
+        <a href="nhan-vat/ngo-quyen.html" id="card-ngo-quyen"
+           class="card-hover rounded-2xl border border-[#9b1c1c]/25 bg-white overflow-hidden block"
+           style="box-shadow: 0 0 0 1px rgba(155,28,28,0.1), 0 4px 20px rgba(155,28,28,0.07);">
+          <div class="h-2 bg-gradient-to-r from-[#9b1c1c] to-[#b45309]"></div>
+          <div class="p-6">
+            <div class="mb-4">
+              <span class="period-badge tag" style="background:#fef2f2; color:#9b1c1c; border:1px solid rgba(155,28,28,0.2);">
+                938 SCN
+              </span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-[#1c1917] mb-1">Ngô Quyền</h3>
+            <p class="text-sm text-[#78716c] italic mb-4">Người kết thúc vĩnh viễn 1.000 năm Bắc thuộc — Bạch Đằng 938</p>
+            <!-- Mini ratings -->
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="inline-flex items-center gap-1.5 text-xs text-[#57534e]">
+                <span class="text-[#f59e0b]">★★★★★</span> Trí tuệ
+              </span>
+              <span class="inline-flex items-center gap-1.5 text-xs text-[#57534e]">
+                <span class="text-[#f59e0b]">★★★★★</span> Nghị lực
+              </span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="tag" style="background:#fef2f2; color:#9b1c1c; border:1px solid rgba(155,28,28,0.2);">
+                Anh hùng khai quốc
+              </span>
+              <span class="text-xs text-[#9b1c1c] font-semibold flex items-center gap-1">
+                Đọc →
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- ✅ Đinh Bộ Lĩnh — 968–979 SCN -->
+        <a href="nhan-vat/dinh-bo-linh.html" id="card-dinh-bo-linh"
+           class="card-hover rounded-2xl border border-[#9b1c1c]/25 bg-white overflow-hidden block"
+           style="box-shadow: 0 0 0 1px rgba(155,28,28,0.1), 0 4px 20px rgba(155,28,28,0.07);">
+          <div class="h-2 bg-gradient-to-r from-[#9b1c1c] to-[#b45309]"></div>
+          <div class="p-6">
+            <div class="mb-4">
+              <span class="period-badge tag" style="background:#fef2f2; color:#9b1c1c; border:1px solid rgba(155,28,28,0.2);">
+                968–979 SCN
+              </span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-[#1c1917] mb-1">Đinh Bộ Lĩnh</h3>
+            <p class="text-sm text-[#78716c] italic mb-4">Vua kiến tạo nhà nước — vĩ đại nhưng mắc điểm mù chí mạng</p>
+            <!-- Mini ratings -->
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="inline-flex items-center gap-1.5 text-xs text-[#57534e]">
+                <span class="text-[#f59e0b]">★★★★★</span> Trí tuệ
+              </span>
+              <span class="inline-flex items-center gap-1.5 text-xs text-[#57534e]">
+                <span class="text-[#f59e0b]">★★★★★</span> Nghị lực
+              </span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="tag" style="background:#fef2f2; color:#9b1c1c; border:1px solid rgba(155,28,28,0.2);">
+                Vua kiến tạo nhà nước
+              </span>
+              <span class="text-xs text-[#9b1c1c] font-semibold flex items-center gap-1">
+                Đọc →
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- ✅ Dương Vân Nga — 979–980 SCN -->
+        <a href="nhan-vat/duong-van-nga.html" id="card-duong-van-nga"
+           class="card-hover rounded-2xl border border-[#9b1c1c]/25 bg-white overflow-hidden block"
+           style="box-shadow: 0 0 0 1px rgba(155,28,28,0.1), 0 4px 20px rgba(155,28,28,0.07);">
+          <div class="h-2 bg-gradient-to-r from-[#9b1c1c] to-[#b45309]"></div>
+          <div class="p-6">
+            <div class="mb-4">
+              <span class="period-badge tag" style="background:#fef2f2; color:#9b1c1c; border:1px solid rgba(155,28,28,0.2);">
+                979–980 SCN
+              </span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-[#1c1917] mb-1">Dương Vân Nga</h3>
+            <p class="text-sm text-[#78716c] italic mb-4">Người trao áo long bào — Quyết định đơn độc cứu cả đất nước</p>
+            <!-- Mini ratings -->
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="inline-flex items-center gap-1.5 text-xs text-[#57534e]">
+                <span class="text-[#f59e0b]">★★★★★</span> Trí tuệ
+              </span>
+              <span class="inline-flex items-center gap-1.5 text-xs text-[#57534e]">
+                <span class="text-[#f59e0b]">★★★★★</span> Đạo đức
+              </span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="tag" style="background:#fef2f2; color:#9b1c1c; border:1px solid rgba(155,28,28,0.2);">
+                Nữ chính trị gia kiệt xuất
+              </span>
+              <span class="text-xs text-[#9b1c1c] font-semibold flex items-center gap-1">
+                Đọc →
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 🔲 Lê Hoàn — 980–1005 SCN -->
+        <div class="card-hover rounded-2xl border border-[#e7e5e4] bg-[#fafaf8] overflow-hidden opacity-60">
+          <div class="h-2 bg-[#e7e5e4]"></div>
+          <div class="p-6">
+            <div class="mb-4">
+              <span class="period-badge tag" style="background:#f5f4f1; color:#a8a29e; border:1px solid #e7e5e4;">
+                980–1005 SCN
+              </span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-[#44403c] mb-1">Lê Hoàn</h3>
+            <p class="text-sm text-[#a8a29e] italic mb-4">Thập đạo tướng quân — người đánh tan quân Tống năm 981</p>
+            <span class="tag" style="background:#f5f4f1; color:#a8a29e; border:1px solid #e7e5e4;">
+              Sắp ra mắt
+            </span>
+          </div>
+        </div>
+
+        <!-- 🔲 Trần Hưng Đạo — 1228–1300 -->
+        <div class="card-hover rounded-2xl border border-[#e7e5e4] bg-[#fafaf8] overflow-hidden opacity-60">
+          <div class="h-2 bg-[#e7e5e4]"></div>
+          <div class="p-6">
+            <div class="mb-4">
+              <span class="period-badge tag" style="background:#f5f4f1; color:#a8a29e; border:1px solid #e7e5e4;">
+                1228–1300
+              </span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-[#44403c] mb-1">Trần Hưng Đạo</h3>
+            <p class="text-sm text-[#a8a29e] italic mb-4">Quốc công tiết chế — 3 lần đánh bại quân Nguyên Mông</p>
+            <span class="tag" style="background:#f5f4f1; color:#a8a29e; border:1px solid #e7e5e4;">
+              Sắp ra mắt
+            </span>
+          </div>
+        </div>
+
+        <!-- 🔲 Nguyễn Trãi — 1380–1442 -->
+        <div class="card-hover rounded-2xl border border-[#e7e5e4] bg-[#fafaf8] overflow-hidden opacity-60">
+          <div class="h-2 bg-[#e7e5e4]"></div>
+          <div class="p-6">
+            <div class="mb-4">
+              <span class="period-badge tag" style="background:#f5f4f1; color:#a8a29e; border:1px solid #e7e5e4;">
+                1380–1442
+              </span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-[#44403c] mb-1">Nguyễn Trãi</h3>
+            <p class="text-sm text-[#a8a29e] italic mb-4">Quân sư — nhà văn hoá và bi kịch vụ án Lệ Chi Viên</p>
+            <span class="tag" style="background:#f5f4f1; color:#a8a29e; border:1px solid #e7e5e4;">
+              Sắp ra mắt
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- More coming soon notice -->
+      <div class="mt-8 rounded-2xl border border-dashed border-[#e7e5e4] p-8 text-center fade-in">
+        <p class="text-[#a8a29e] text-sm mb-2">📚 Các nhân vật tiếp theo đang được nghiên cứu và biên soạn</p>
+        <p class="text-xs text-[#d6d3d1]">Lý Công Uẩn · Lê Lợi · Nguyễn Du · và nhiều nhân vật khác...</p>
+      </div>
+    </section>
+
+    <div class="ornament-divider"><span>◈</span></div>
+
+    <!-- ═══════════════════════ VỀ KHOÁ HỌC ═══════════════════════ -->
+    <section id="ve-khoa-hoc" class="py-4 fade-in">
+      <div class="rounded-2xl bg-[#1c1917] text-[#faf9f7] p-10 relative overflow-hidden">
+        <!-- Background pattern -->
+        <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+          <svg width="100%" height="100%">
+            <defs>
+              <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="10" cy="10" r="1.5" fill="white"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#dots)"/>
+          </svg>
+        </div>
+        <div class="relative max-w-2xl">
+          <div class="text-xs font-semibold tracking-[0.15em] uppercase text-[#9b1c1c] mb-4">Về khoá học</div>
+          <h2 class="font-serif text-3xl font-bold mb-6">Tại sao học lịch sử theo cách này?</h2>
+          <div class="space-y-4 text-[#a8a29e] leading-relaxed">
+            <p>
+              Lịch sử truyền thống thường chỉ dạy <em class="text-[#d6d3d1]">sự kiện và niên đại</em>. 
+              Cách này không giúp bạn hiểu tại sao một quyết định được đưa ra, hay bài học gì có thể áp dụng hôm nay.
+            </p>
+            <p>
+              Hệ thống <strong class="text-[#faf9f7]">3 Gốc / 3 Độc</strong> phân tích nhân vật như một 
+              <em class="text-[#d6d3d1]">con người thật</em> — với phẩm chất, điểm mạnh, điểm yếu và bối cảnh tâm lý — 
+              giúp bạn rút ra bài học thực tiễn cho cuộc sống và công việc hiện đại.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#e7e5e4] py-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[#a8a29e]">
+      <div class="flex items-center gap-2">
+        <span class="text-[#9b1c1c]">◈</span>
+        <span>Lịch sử Việt Nam — Khoá học phân tích nhân vật</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-2">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#9b1c1c]"></span>
+          Hệ thống 3 Gốc / 3 Độc
+        </span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
