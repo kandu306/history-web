@@ -1,0 +1,41 @@
+{
+  "updated_at": "2026-05-22T22:21:42+07:00",
+  "working_on": {
+    "feature": "Tích hợp nhân vật Hai Bà Trưng",
+    "task": "Tích hợp nhân vật Hai Bà Trưng vào hệ thống và đồng bộ trang chủ",
+    "status": "completed",
+    "files": [
+      "nhan-vat/hai-ba-trung.html",
+      "index.html",
+      ".brain/brain.json"
+    ],
+    "blockers": [],
+    "notes": "Đã dọn dẹp sạch sẽ 'Bớt Tối' 100%, đồng bộ niên đại cổ nhất."
+  },
+  "pending_tasks": [
+    {
+      "task": "Tích hợp các bài học và nhân vật lịch sử tiếp theo theo yêu cầu của người dùng",
+      "priority": "medium",
+      "notes": "Ví dụ: Triệu Thị Trinh, Lê Long Đĩnh"
+    }
+  ],
+  "recent_changes": [
+    {
+      "timestamp": "2026-05-22T22:18:00+07:00",
+      "type": "feature",
+      "description": "Tích hợp trang phân tích nhân vật Hai Bà Trưng 3 Gốc/3 Độc và kích hoạt card trang chủ, dọn dẹp Bớt Tối",
+      "files": [
+        "nhan-vat/hai-ba-trung.html",
+        "index.html",
+        ".brain/brain.json"
+      ]
+    }
+  ],
+  "errors_encountered": [],
+  "decisions_made": [
+    {
+      "decision": "Thêm Hai Bà Trưng vào đầu danh sách nhân vật",
+      "reason": "Niên đại lịch sử 40-43 SCN cổ nhất trong số các nhân vật hiện có"
+    }
+  ]
+}
