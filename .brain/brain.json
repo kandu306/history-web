@@ -39,6 +39,8 @@
   ],
   "content_plan": {
     "nhan_vat": [
+      { "ten": "Phùng Hưng", "file": "nhan-vat/phung-hung.html", "status": "done" },
+      { "ten": "Khúc Thừa Dụ", "file": "nhan-vat/khuc-thua-du.html", "status": "done" },
       { "ten": "Dương Đình Nghệ", "file": "nhan-vat/duong-dinh-nghe.html", "status": "done" },
       { "ten": "Ngô Quyền", "file": "nhan-vat/ngo-quyen.html", "status": "done" },
       { "ten": "Đinh Bộ Lĩnh", "file": "nhan-vat/dinh-bo-linh.html", "status": "done" },
