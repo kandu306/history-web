@@ -44,9 +44,11 @@
       { "ten": "Dương Đình Nghệ", "file": "nhan-vat/duong-dinh-nghe.html", "status": "done" },
       { "ten": "Ngô Quyền", "file": "nhan-vat/ngo-quyen.html", "status": "done" },
       { "ten": "Đinh Bộ Lĩnh", "file": "nhan-vat/dinh-bo-linh.html", "status": "done" },
-      { "ten": "Dương Vân Nga", "file": "nhan-vat/duong-van-nga.html", "status": "done" }
+      { "ten": "Dương Vân Nga", "file": "nhan-vat/duong-van-nga.html", "status": "done" },
+      { "ten": "Lê Hoàn", "file": "nhan-vat/le-hoan.html", "status": "done" }
     ],
     "bai_hoc": [
+      { "ten": "Nhà Nước Văn Lang: Từ huyền thoại đến sự thật khảo cổ", "file": "bai-hoc/nha-nuoc-van-lang.html", "status": "done" },
       { "ten": "Đinh – Lê: Từ Thủ lĩnh thành Hoàng đế", "file": "bai-hoc/dinh-le.html", "status": "done" }
     ],
     "tong_so_ke_hoach": 20,
