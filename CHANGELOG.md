@@ -4,6 +4,33 @@ Tất cả những thay đổi quan trọng của dự án **Lịch Sử Việt 
 
 ---
 
+## [2026-05-23]
+
+### Added
+- **5 Bài học Lịch sử mới**: Tích hợp các tệp bài học mới:
+  - [nha-nuoc-au-lac.html](file:///d:/01.%20Projects/history-web/bai-hoc/nha-nuoc-au-lac.html) (257–179 TCN)
+  - [1000-nam-bac-thuoc.html](file:///d:/01.%20Projects/history-web/bai-hoc/1000-nam-bac-thuoc.html) (111 TCN–938 SCN)
+  - [ngo-quyen.html](file:///d:/01.%20Projects/history-web/bai-hoc/ngo-quyen.html) (938 SCN)
+  - [loan-12-su-quan.html](file:///d:/01.%20Projects/history-web/bai-hoc/loan-12-su-quan.html) (944–968 SCN)
+  - [nha-tien-le.html](file:///d:/01.%20Projects/history-web/bai-hoc/nha-tien-le.html) (979–981 SCN)
+- **3 Nhân vật Lịch sử mới**: Tích hợp các tệp phân tích 3 Gốc / 3 Độc mới:
+  - [le-long-dinh.html](file:///d:/01.%20Projects/history-web/nhan-vat/le-long-dinh.html) (1005–1009 SCN)
+  - [thien-su-van-hanh.html](file:///d:/01.%20Projects/history-web/nhan-vat/thien-su-van-hanh.html) (Cuối TK X - Đầu TK XI)
+  - [ly-cong-uan.html](file:///d:/01.%20Projects/history-web/nhan-vat/ly-cong-uan.html) (1009–1028 SCN - hoàn thiện 100% phần khuyết ở cuối).
+- **Bản đồ Khái niệm tương tác**: Tạo mới trang tương tác [ban-do.html](file:///d:/01.%20Projects/history-web/ban-do.html) thể hiện lộ trình thời gian và 5 quy luật lịch sử lặp lại.
+- **Tài liệu Lộ trình Vĩ mô**: Tạo mới phác thảo tổng thể [master-concept-map.md](file:///d:/01.%20Projects/history-web/docs/master-concept-map.md) phục vụ cộng tác mở rộng.
+- **Custom Project Skill**: Thiết lập cẩm nang kỹ thuật & quy chuẩn [SKILL.md](file:///d:/01.%20Projects/history-web/.brain/skills/history-web-manager/SKILL.md) hướng dẫn vận hành dự án chi tiết.
+
+### Changed
+- **Trang chủ index.html**:
+  - Tái cấu trúc và kích hoạt 3 card nhân vật mới, nâng bộ đếm lên **11 / 20+ nhân vật**.
+  - Sắp xếp lại danh sách bài học theo đúng trật tự thời gian (Loạn 12 Sứ Quân lên trước Đinh - Lê), nâng bộ đếm bài học lên **7 bài**.
+  - Liên kết trang Bản đồ khái niệm vào Menu Điều hướng.
+- **Dọn dẹp mã nguồn**: Xóa bỏ các hộp ghi chú nháp/metadata còn sót lại trong `dinh-le.html` và `nha-nuoc-van-lang.html`.
+- **Đồng bộ hóa JSON & Git**: Cập nhật `brain.json`, `session.json`, commit và đẩy toàn bộ thay đổi lên GitHub.
+
+---
+
 ## [2026-05-22]
 
 ### Added
