@@ -176,3 +176,56 @@ git add .
 git commit -m "feat: integrate [tên bài/nhân vật], sync index counters, and update brain json"
 git push origin main
 ```
+
+---
+
+## 4. Quy Trình Cập Nhật & Đồng Bộ Bản Đồ Khái Niệm (ban-do.html)
+
+Khi tài liệu phác thảo `docs/master-concept-map.md` có sự thay đổi hoặc bổ sung về triều đại, bài học, nhân vật, bắt buộc phải đồng bộ hóa trực tiếp lên giao diện tương tác `ban-do.html` theo các bước cụ thể sau:
+
+### Bước 4.1: Cập nhật Cấu trúc Dữ liệu `database` trong `ban-do.html`
+Mở `ban-do.html`, tìm đến đoạn mã khai báo hằng số `const database = { ... }` ở cuối file và cập nhật đối tượng tương ứng:
+* **Khi thêm/sửa đổi thời kỳ hoặc triều đại:**
+```javascript
+  [id_key]: {
+    category: "Phân loại thời kỳ",
+    title: "Tên triều đại/Sự kiện",
+    period: "Niên đại",
+    desc: "Mô tả sâu sắc ý nghĩa lịch sử của giai đoạn (3-4 câu).",
+    lessons: [
+      { name: "Tên bài học", url: "bai-hoc/file-name.html" }
+    ],
+    figures: [
+      { name: "Tên nhân vật", url: "nhan-vat/file-name.html" }
+    ],
+    lineConnections: ["line-[id_truoc]-[id_sau]"]
+  }
+```
+* **Khi thêm/sửa đổi Quy luật (Patterns):** Thêm vào mảng cuối của `database` với định dạng:
+```javascript
+  pt[X]: {
+    category: "Quy Luật Lịch Sử X",
+    title: "Tên quy luật lặp lại",
+    period: "Pattern Quy luật",
+    desc: "Phân tích chi tiết quy luật và các biểu hiện thực tế (4-5 câu).",
+    lessons: [...],
+    figures: [...]
+  }
+```
+
+### Bước 4.2: Cập nhật Sơ đồ HTML và các đường SVG nối
+* Tìm thẻ `<svg>` vẽ các đường nối trong `ban-do.html` (chứa `id="lines-container"`) để khai báo thêm đường vẽ nối giữa các Node mới bằng thẻ `<line>`:
+```html
+<line id="line-[id_truoc]-[id_sau]" x1="50%" y1="[y1_val]" x2="50%" y2="[y2_val]" stroke="#e7e5e4" stroke-width="2" />
+```
+* Tìm khối `#tab-flow` và thêm một Node HTML tương ứng để người dùng có thể click chọn:
+```html
+<div onclick="selectNode('[id_key]')" id="node-[id_key]" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
+  <div class="flex items-center justify-between mb-1">
+    <span class="text-[9px] font-semibold tracking-wider text-[#b45309] uppercase">[Nhãn phụ]</span>
+    <span class="text-[9px] text-[#a8a29e] tracking-widest">[Niên đại]</span>
+  </div>
+  <h4 class="font-serif font-bold text-sm text-[#1c1917]">[Tiêu đề]</h4>
+  <div class="text-[10px] text-[#78716c] italic mt-1">[Tóm tắt phụ]</div>
+</div>
+```
