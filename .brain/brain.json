@@ -46,11 +46,19 @@
       { "ten": "Ngô Quyền", "file": "nhan-vat/ngo-quyen.html", "status": "done" },
       { "ten": "Đinh Bộ Lĩnh", "file": "nhan-vat/dinh-bo-linh.html", "status": "done" },
       { "ten": "Dương Vân Nga", "file": "nhan-vat/duong-van-nga.html", "status": "done" },
-      { "ten": "Lê Hoàn", "file": "nhan-vat/le-hoan.html", "status": "done" }
+      { "ten": "Lê Hoàn", "file": "nhan-vat/le-hoan.html", "status": "done" },
+      { "ten": "Thiền Sư Vạn Hạnh", "file": "nhan-vat/thien-su-van-hanh.html", "status": "done" },
+      { "ten": "Lê Long Đĩnh", "file": "nhan-vat/le-long-dinh.html", "status": "done" },
+      { "ten": "Lý Công Uẩn", "file": "nhan-vat/ly-cong-uan.html", "status": "done" }
     ],
     "bai_hoc": [
       { "ten": "Nhà Nước Văn Lang: Từ huyền thoại đến sự thật khảo cổ", "file": "bai-hoc/nha-nuoc-van-lang.html", "status": "done" },
-      { "ten": "Đinh – Lê: Từ Thủ lĩnh thành Hoàng đế", "file": "bai-hoc/dinh-le.html", "status": "done" }
+      { "ten": "Nhà Nước Âu Lạc: Hợp nhất Âu - Lạc, kỳ quan Cổ Loa & bài học an ninh thông tin", "file": "bai-hoc/nha-nuoc-au-lac.html", "status": "done" },
+      { "ten": "1.000 Năm Bắc Thuộc: Pháo đài làng xã tự trị & cơ chế bảo tồn văn hóa Việt", "file": "bai-hoc/1000-nam-bac-thuoc.html", "status": "done" },
+      { "ten": "Ngô Quyền 938: Tại sao lần này là vĩnh viễn? Thiên thời & chuỗi triều đại", "file": "bai-hoc/ngo-quyen.html", "status": "done" },
+      { "ten": "Đinh – Lê: Từ Thủ lĩnh thành Hoàng đế", "file": "bai-hoc/dinh-le.html", "status": "done" },
+      { "ten": "Loạn 12 Sứ Quân: Hoa Lư lập quốc, chiến lược 4 bước thu phục giang sơn", "file": "bai-hoc/loan-12-su-quan.html", "status": "done" },
+      { "ten": "Nhà Tiền Lê: Chuyển giao quyền lực khẩn cấp & nghệ thuật Cương & Nhu", "file": "bai-hoc/nha-tien-le.html", "status": "done" }
     ],
     "tong_so_ke_hoach": 20,
     "note": "Có 2 loại page: nhan-vat/ (phân tích nhân vật 3 Gốc/3 Độc) và bai-hoc/ (bài học lịch sử)"

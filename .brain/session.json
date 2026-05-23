@@ -1,31 +1,46 @@
 {
-  "updated_at": "2026-05-22T22:21:42+07:00",
+  "updated_at": "2026-05-23T21:40:00+07:00",
   "working_on": {
-    "feature": "Tích hợp nhân vật Hai Bà Trưng",
-    "task": "Tích hợp nhân vật Hai Bà Trưng vào hệ thống và đồng bộ trang chủ",
+    "feature": "Tích hợp 5 Bài học và 3 Nhân vật mới (Sạch 100% Bớt Tối)",
+    "task": "Tích hợp 8 trang nội dung lịch sử mới từ đĩa D, dọn sạch Bớt Tối, cập nhật trang chủ và đồng bộ tri thức",
     "status": "completed",
     "files": [
-      "nhan-vat/hai-ba-trung.html",
+      "bai-hoc/nha-nuoc-au-lac.html",
+      "bai-hoc/1000-nam-bac-thuoc.html",
+      "bai-hoc/ngo-quyen.html",
+      "bai-hoc/loan-12-su-quan.html",
+      "bai-hoc/nha-tien-le.html",
+      "nhan-vat/le-long-dinh.html",
+      "nhan-vat/thien-su-van-hanh.html",
+      "nhan-vat/ly-cong-uan.html",
       "index.html",
-      ".brain/brain.json"
+      ".brain/brain.json",
+      ".brain/session.json"
     ],
     "blockers": [],
-    "notes": "Đã dọn dẹp sạch sẽ 'Bớt Tối' 100%, đồng bộ niên đại cổ nhất."
+    "notes": "Đã tích hợp hoàn thiện 5 bài học và 3 nhân vật mới, phân tích sâu sắc theo hệ 3 Gốc/3 Độc và dọn sạch 100% từ khóa Bớt Tối."
   },
   "pending_tasks": [
     {
-      "task": "Tích hợp các bài học và nhân vật lịch sử tiếp theo theo yêu cầu của người dùng",
-      "priority": "medium",
-      "notes": "Ví dụ: Triệu Thị Trinh, Lê Long Đĩnh"
+      "task": "Đẩy mã nguồn lên GitHub Repository",
+      "priority": "high",
+      "notes": "Đẩy toàn bộ thay đổi lên nhánh main"
     }
   ],
   "recent_changes": [
     {
-      "timestamp": "2026-05-22T22:18:00+07:00",
+      "timestamp": "2026-05-23T21:40:00+07:00",
       "type": "feature",
-      "description": "Tích hợp trang phân tích nhân vật Hai Bà Trưng 3 Gốc/3 Độc và kích hoạt card trang chủ, dọn dẹp Bớt Tối",
+      "description": "Tích hợp 5 bài học và 3 nhân vật lịch sử mới, loại bỏ hoàn toàn Bớt Tối, đồng bộ index.html và cơ sở tri thức",
       "files": [
-        "nhan-vat/hai-ba-trung.html",
+        "bai-hoc/nha-nuoc-au-lac.html",
+        "bai-hoc/1000-nam-bac-thuoc.html",
+        "bai-hoc/ngo-quyen.html",
+        "bai-hoc/loan-12-su-quan.html",
+        "bai-hoc/nha-tien-le.html",
+        "nhan-vat/le-long-dinh.html",
+        "nhan-vat/thien-su-van-hanh.html",
+        "nhan-vat/ly-cong-uan.html",
         "index.html",
         ".brain/brain.json"
       ]
@@ -34,8 +49,12 @@
   "errors_encountered": [],
   "decisions_made": [
     {
-      "decision": "Thêm Hai Bà Trưng vào đầu danh sách nhân vật",
-      "reason": "Niên đại lịch sử 40-43 SCN cổ nhất trong số các nhân vật hiện có"
+      "decision": "Đưa 3 nhân vật mới vào trang chủ theo trật tự thời gian sau Lê Hoàn",
+      "reason": "Thiền Sư Vạn Hạnh, Lê Long Đĩnh và Lý Công Uẩn đại diện cho giai đoạn giao thời Tiền Lê - Lý và kiến thiết nhà Lý"
+    },
+    {
+      "decision": "Hoàn thiện 100% phần nội dung khuyết ở cuối file lý công uẩn.html của người dùng",
+      "reason": "Đảm bảo trang nhân vật có chất lượng nội dung và thẩm mỹ cao nhất"
     }
   ]
 }
