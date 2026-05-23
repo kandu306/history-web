@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bản Đồ Khái Niệm — Lịch Sử Việt Nam | Hệ Thống Tương Tác</title>
+  <meta name="description" content="Bản đồ khái niệm tương tác kết nối các triều đại, bài học lịch sử và phân tích nhân vật theo hệ thống 3 Gốc / 3 Độc.">
+  <link rel="icon" type="image/svg+xml" href="shared/favicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared/styles.css">
+  <script src="shared/scripts.js" defer></script>
+  <style>
+    .node-active {
+      border-color: #9b1c1c !important;
+      box-shadow: 0 0 20px rgba(155, 28, 28, 0.25) !important;
+      transform: translateY(-4px);
+    }
+    .line-active {
+      stroke: #9b1c1c !important;
+      stroke-width: 3px !important;
+      stroke-dasharray: 5;
+      animation: dash 2s linear infinite;
+    }
+    @keyframes dash {
+      to {
+        stroke-dashoffset: -20;
+      }
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #faf9f7;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #e7e5e4;
+      border-radius: 3px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #d6d3d1;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-[#1c1917] bg-[#faf9f7]">
+  <div id="progress-bar"></div>
+
+  <!-- Sticky Nav -->
+  <nav style="background: rgba(250,249,247,0.92); backdrop-filter: blur(12px);" class="sticky top-0 z-50 border-b border-[#e7e5e4]">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <a href="index.html" class="text-[#9b1c1c] text-lg hover:opacity-75 transition-opacity">◈</a>
+        <span class="font-semibold text-[#1c1917]">Lịch sử Việt Nam</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-6 text-sm text-[#78716c]">
+        <a href="index.html#nhan-vat" class="hover:text-[#9b1c1c] transition-colors">Nhân vật</a>
+        <a href="index.html#phuong-phap" class="hover:text-[#9b1c1c] transition-colors">Phương pháp</a>
+        <a href="ban-do.html" class="text-[#9b1c1c] font-medium transition-colors">Bản đồ khái niệm</a>
+      </div>
+      <span class="text-xs text-[#a8a29e] font-semibold tracking-widest uppercase hidden sm:block">Mạng Lưới Lịch Sử</span>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="max-w-6xl mx-auto px-6 pt-10 pb-6">
+    <div class="text-xs font-semibold tracking-[0.15em] uppercase text-[#9b1c1c] mb-2">Hệ thống học trực quan</div>
+    <h1 class="font-serif font-bold text-[#1c1917] text-4xl sm:text-5xl leading-tight mb-3">Bản Đồ Khái Niệm Lịch Sử</h1>
+    <p class="text-sm text-[#78716c] max-w-2xl leading-relaxed">
+      Khám phá mối liên hệ nhân quả, các quy luật lặp lại xuyên suốt 1.000 năm lịch sử Giao thời Dựng nước & Bắc thuộc. Bấm vào một khái niệm để xem chi tiết mối liên kết.
+    </p>
+  </header>
+
+  <!-- Interactive Dashboard -->
+  <main class="max-w-6xl mx-auto px-6 pb-24 grid lg:grid-cols-12 gap-8">
+    
+    <!-- LEFT: Interactive Node Map (Column 7/12) -->
+    <div class="lg:col-span-7 bg-white rounded-3xl border border-[#e7e5e4] p-6 shadow-sm relative overflow-hidden flex flex-col min-h-[600px]">
+      <div class="flex items-center justify-between mb-6">
+        <div class="text-xs font-semibold uppercase tracking-wider text-[#a8a29e]">Bản đồ thời kỳ & Liên kết</div>
+        <div class="flex gap-2">
+          <button id="btn-flow" class="px-3 py-1 text-xs font-medium rounded-lg bg-[#9b1c1c] text-white border border-[#9b1c1c]">Lộ trình</button>
+          <button id="btn-patterns" class="px-3 py-1 text-xs font-medium rounded-lg bg-[#faf9f7] text-[#57534e] border border-[#e7e5e4] hover:bg-[#f5f4f1]">Quy luật</button>
+        </div>
+      </div>
+
+      <!-- Tab Content 1: Flow Map -->
+      <div id="tab-flow" class="flex-1 relative flex flex-col justify-between py-4 select-none">
+        <!-- SVG lines container -->
+        <svg class="absolute inset-0 w-full h-full pointer-events-none z-0" id="lines-container">
+          <!-- Lines will be dynamically colored/animated in JS -->
+          <line id="line-vl-al" x1="50%" y1="60" x2="50%" y2="120" stroke="#e7e5e4" stroke-width="2" />
+          <line id="line-al-bt" x1="50%" y1="170" x2="50%" y2="230" stroke="#e7e5e4" stroke-width="2" />
+          <line id="line-bt-nq" x1="50%" y1="280" x2="50%" y2="340" stroke="#e7e5e4" stroke-width="2" />
+          <line id="line-nq-l12" x1="50%" y1="390" x2="50%" y2="450" stroke="#e7e5e4" stroke-width="2" />
+          <line id="line-l12-dl" x1="50%" y1="500" x2="50%" y2="560" stroke="#e7e5e4" stroke-width="2" />
+          <line id="line-dl-ntl" x1="50%" y1="610" x2="50%" y2="670" stroke="#e7e5e4" stroke-width="2" />
+          <line id="line-ntl-ly" x1="50%" y1="720" x2="50%" y2="780" stroke="#e7e5e4" stroke-width="2" />
+        </svg>
+
+        <!-- Chronological Dynasty Nodes -->
+        <div class="relative z-10 flex flex-col items-center gap-12">
+          
+          <!-- Node 1: Văn Lang -->
+          <div onclick="selectNode('vl')" id="node-vl" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[9px] font-semibold tracking-wider text-[#b45309] uppercase">Dựng Nước</span>
+              <span class="text-[9px] text-[#a8a29e] tracking-widest">Thế kỷ 7-6 TCN</span>
+            </div>
+            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Nhà nước Văn Lang</h4>
+            <div class="text-[10px] text-[#78716c] italic mt-1">Cơ cấu 3 cấp Hùng Vương, Lạc Tướng, Lạc Dân</div>
+          </div>
+
+          <!-- Node 2: Âu Lạc -->
+          <div onclick="selectNode('al')" id="node-al" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[9px] font-semibold tracking-wider text-[#b45309] uppercase">Thục Phán lập thành</span>
+              <span class="text-[9px] text-[#a8a29e] tracking-widest">257–179 TCN</span>
+            </div>
+            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Nhà nước Âu Lạc</h4>
+            <div class="text-[10px] text-[#78716c] italic mt-1">Thành Cổ Loa kiên cố & bài học nỏ thần mất nước</div>
+          </div>
+
+          <!-- Node 3: 1.000 Năm Bắc Thuộc -->
+          <div onclick="selectNode('bt')" id="node-bt" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[9px] font-semibold tracking-wider text-[#9b1c1c] uppercase">Thời kỳ Đề kháng</span>
+              <span class="text-[9px] text-[#a8a29e] tracking-widest">111 TCN – 938 SCN</span>
+            </div>
+            <h4 class="font-serif font-bold text-sm text-[#1c1917]">1.000 Năm Bắc Thuộc</h4>
+            <div class="text-[10px] text-[#78716c] italic mt-1">Làng xã tự trị chống đồng hóa & Các khởi nghĩa</div>
+          </div>
+
+          <!-- Node 4: Ngô Quyền -->
+          <div onclick="selectNode('nq')" id="node-nq" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[9px] font-semibold tracking-wider text-[#b45309] uppercase">Bạch Đằng vĩ đại</span>
+              <span class="text-[9px] text-[#a8a29e] tracking-widest">Năm 938 SCN</span>
+            </div>
+            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Ngô Quyền — Độc lập vĩnh viễn</h4>
+            <div class="text-[10px] text-[#78716c] italic mt-1">Khai quốc vương triều, đóng đô Cổ Loa</div>
+          </div>
+
+          <!-- Node 5: Loạn 12 Sứ Quân -->
+          <div onclick="selectNode('l12')" id="node-l12" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[9px] font-semibold tracking-wider text-[#9b1c1c] uppercase">Nội chiến cát cứ</span>
+              <span class="text-[9px] text-[#a8a29e] tracking-widest">944–968 SCN</span>
+            </div>
+            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Loạn 12 Sứ Quân</h4>
+            <div class="text-[10px] text-[#78716c] italic mt-1">Nguy cơ mất nước & Bài học khoảng trống quyền lực</div>
+          </div>
+
+          <!-- Node 6: Đinh – Lê -->
+          <div onclick="selectNode('dl')" id="node-dl" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[9px] font-semibold tracking-wider text-[#b45309] uppercase">Hoa Lư lập hoàng đế</span>
+              <span class="text-[9px] text-[#a8a29e] tracking-widest">968–979 SCN</span>
+            </div>
+            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Nhà Đinh — Đinh Bộ Lĩnh</h4>
+            <div class="text-[10px] text-[#78716c] italic mt-1">Sự thống nhất Hoa Lư & Sáng lập Đại Cồ Việt</div>
+          </div>
+
+          <!-- Node 7: Nhà Tiền Lê -->
+          <div onclick="selectNode('ntl')" id="node-ntl" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[9px] font-semibold tracking-wider text-[#b45309] uppercase">Lê Hoàn phá Tống</span>
+              <span class="text-[9px] text-[#a8a29e] tracking-widest">980–1009 SCN</span>
+            </div>
+            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Nhà Tiền Lê — Lê Đại Hành</h4>
+            <div class="text-[10px] text-[#78716c] italic mt-1">Chuyển giao quyền lực Dương Vân Nga & Ngoại giao khôn ngoan</div>
+          </div>
+
+          <!-- Node 8: Nhà Lý -->
+          <div onclick="selectNode('ly')" id="node-ly" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[9px] font-semibold tracking-wider text-[#9b1c1c] uppercase">Thể chế hóa tối cao</span>
+              <span class="text-[9px] text-[#a8a29e] tracking-widest">1009–1225 SCN</span>
+            </div>
+            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Nhà Lý — Thăng Long thịnh trị</h4>
+            <div class="text-[10px] text-[#78716c] italic mt-1">Dời đô Thăng Long, ban Hình Thư & dựng Văn Miếu</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tab Content 2: Patterns Map -->
+      <div id="tab-patterns" class="hidden flex-1 grid sm:grid-cols-2 gap-4 py-2">
+        <div onclick="selectPattern('pt1')" class="border border-[#e7e5e4] bg-[#faf9f7] rounded-2xl p-5 cursor-pointer hover:border-[#9b1c1c]/50 transition-all">
+          <div class="text-[10px] font-semibold text-[#9b1c1c] tracking-wider uppercase mb-1">Pattern 1</div>
+          <h4 class="font-serif font-bold text-sm mb-2">Thiên thời + Nhân hòa</h4>
+          <p class="text-xs text-[#78716c] leading-relaxed">Tại sao các cuộc khởi nghĩa Bắc thuộc chỉ thắng tạm thời, còn Ngô Quyền thắng vĩnh viễn nhờ kết hợp triều đại suy thoái với xây dựng triều đình tự lập.</p>
+        </div>
+        <div onclick="selectPattern('pt2')" class="border border-[#e7e5e4] bg-[#faf9f7] rounded-2xl p-5 cursor-pointer hover:border-[#9b1c1c]/50 transition-all">
+          <div class="text-[10px] font-semibold text-[#9b1c1c] tracking-wider uppercase mb-1">Pattern 2</div>
+          <h4 class="font-serif font-bold text-sm mb-2">Khoảng trống quyền lực</h4>
+          <p class="text-xs text-[#78716c] leading-relaxed">Khi lãnh đạo tối cao qua đời đột ngột mà chưa thiết lập thể chế vững chắc sẽ dẫn đến thảm họa cát cứ chia cắt (Ngô Quyền, Đinh Bộ Lĩnh).</p>
+        </div>
+        <div onclick="selectPattern('pt3')" class="border border-[#e7e5e4] bg-[#faf9f7] rounded-2xl p-5 cursor-pointer hover:border-[#9b1c1c]/50 transition-all">
+          <div class="text-[10px] font-semibold text-[#9b1c1c] tracking-wider uppercase mb-1">Pattern 3</div>
+          <h4 class="font-serif font-bold text-sm mb-2">Trả rẻ giữ đắt</h4>
+          <p class="text-xs text-[#78716c] leading-relaxed">Phương châm ngoại giao sinh tồn của nước nhỏ: Chấp nhận triều cống giữ hòa khí và hạ mình danh nghĩa, nhưng kiên định giữ tự trị nội bộ thực chất.</p>
+        </div>
+        <div onclick="selectPattern('pt4')" class="border border-[#e7e5e4] bg-[#faf9f7] rounded-2xl p-5 cursor-pointer hover:border-[#9b1c1c]/50 transition-all">
+          <div class="text-[10px] font-semibold text-[#9b1c1c] tracking-wider uppercase mb-1">Pattern 4</div>
+          <h4 class="font-serif font-bold text-sm mb-2">Trận Bạch Đằng lặp lại</h4>
+          <p class="text-xs text-[#78716c] leading-relaxed">Mô hình cọc nhọn bịt sắt cắm sâu lòng sông Bạch Đằng là biểu tượng quân sự lặp lại xuất sắc qua 3 triều đại (Ngô Quyền 938, Lê Hoàn 981).</p>
+        </div>
+        <div onclick="selectPattern('pt5')" class="sm:col-span-2 border border-[#e7e5e4] bg-[#faf9f7] rounded-2xl p-5 cursor-pointer hover:border-[#9b1c1c]/50 transition-all">
+          <div class="text-[10px] font-semibold text-[#9b1c1c] tracking-wider uppercase mb-1">Pattern 5</div>
+          <h4 class="font-serif font-bold text-sm mb-2">Uy vũ cá nhân chuyển sang Thể chế hóa</h4>
+          <p class="text-xs text-[#78716c] leading-relaxed">Sự phát triển từ cai trị phụ thuộc vào sức mạnh của một anh hùng cụ thể sang việc vận hành bằng luật pháp, giáo dục và di sản ổn định bền vững lâu dài (Hình thư và Văn miếu nhà Lý).</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT: Concept Details Panel (Column 5/12) -->
+    <div class="lg:col-span-5 flex flex-col gap-6">
+      
+      <!-- Live Detail Card -->
+      <div class="bg-[#1c1917] rounded-3xl p-6 text-[#faf9f7] shadow-lg sticky top-20 min-h-[500px] flex flex-col justify-between">
+        
+        <!-- Top Metadata -->
+        <div id="detail-card-content">
+          <div class="flex items-center justify-between mb-4 border-b border-[#292524] pb-4">
+            <div>
+              <span id="detail-category" class="text-[10px] font-semibold uppercase tracking-wider text-[#b45309]">BẢN ĐỒ TƯ DUY</span>
+              <h2 id="detail-title" class="font-serif text-2xl font-bold mt-1 text-[#faf9f7]">Chọn một khái niệm</h2>
+            </div>
+            <span id="detail-period" class="text-xs text-[#a8a29e] italic">TCN – 1009</span>
+          </div>
+
+          <!-- Description -->
+          <div class="mb-6">
+            <h5 class="text-xs font-semibold uppercase tracking-wider text-[#78716c] mb-2">Ý nghĩa cốt lõi</h5>
+            <p id="detail-desc" class="text-sm text-[#d6d3d1] leading-relaxed">
+              Bấm chọn vào các thời kỳ bên trái hoặc thẻ quy luật lịch sử để phân tích sâu sắc các sự kiện lịch sử, nhân vật liên quan và bài học thực tiễn rút ra.
+            </p>
+          </div>
+
+          <!-- Connected Elements -->
+          <div class="space-y-4">
+            <div>
+              <h5 class="text-xs font-semibold uppercase tracking-wider text-[#78716c] mb-2">Bài học liên quan</h5>
+              <div id="detail-lessons" class="flex flex-wrap gap-2">
+                <span class="text-xs text-[#a8a29e] italic">Chưa chọn khái niệm</span>
+              </div>
+            </div>
+            <div>
+              <h5 class="text-xs font-semibold uppercase tracking-wider text-[#78716c] mb-2">Nhân vật liên kết</h5>
+              <div id="detail-figures" class="flex flex-wrap gap-2">
+                <span class="text-xs text-[#a8a29e] italic">Chưa chọn khái niệm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Link -->
+        <div class="mt-8 border-t border-[#292524] pt-4 flex items-center justify-between">
+          <div class="text-xs text-[#78716c]">Hệ thống phân tích 3 Gốc / 3 Độc</div>
+          <a id="detail-link" href="#" class="px-4 py-2 bg-[#9b1c1c] hover:bg-[#7f1d1d] text-white rounded-xl text-xs font-semibold transition-colors hidden">
+            Đọc bài viết →
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#e7e5e4] py-10 bg-[#1c1917] text-[#faf9f7]">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[#a8a29e]">
+      <div class="flex items-center gap-2">
+        <span class="text-[#9b1c1c]">◈</span>
+        <span>Lịch sử Việt Nam — Sơ đồ mạng lưới khái niệm</span>
+      </div>
+      <div class="text-xs">Phát triển dựa trên tri thức concept-map của khoá học</div>
+    </div>
+  </footer>
+
+  <script>
+    // Live database of concepts based on concept-map.md
+    const database = {
+      vl: {
+        category: "Thời kỳ Dựng Nước",
+        title: "Nhà nước Văn Lang",
+        period: "Thế kỷ 7–6 TCN",
+        desc: "Văn Lang là nhà nước sơ khai đầu tiên của người Việt cổ. Mặc dù huyền thoại chép lại lập quốc năm 2879 TCN, các bằng chứng khảo cổ học văn hóa Đông Sơn xác thực nhà nước chỉ thực sự hình thành rõ rệt từ thế kỷ 7–6 TCN. Mô hình cai trị chia 3 cấp: Vua Hùng ở trung ương, Lạc tướng cai quản các bộ và Lạc dân tự do canh tác lúa nước.",
+        lessons: [
+          { name: "Bài 1: Nhà nước Văn Lang", url: "bai-hoc/nha-nuoc-van-lang.html" }
+        ],
+        figures: [
+          { name: "Vua Hùng (Huyền thoại)", url: "#" }
+        ],
+        lineConnections: ["line-vl-al"]
+      },
+      al: {
+        category: "Kế thừa & Chuyển tiếp",
+        title: "Nhà nước Âu Lạc",
+        period: "257–179 TCN",
+        desc: "Thục Phán sáp nhập Âu Việt và Lạc Việt, tự xưng là An Dương Vương lập nước Âu Lạc. Triều đại này đánh dấu sự chuyển mình từ uy vũ bộ lạc sang một nhà nước tập quyền thật sự. Bằng chứng khảo cổ học là kỳ quan Thành Cổ Loa kiên cố xoắn ốc dài 16km. Tuy nhiên vương triều sụp đổ vì mất bí mật nỏ thần quân sự qua cuộc hôn nhân chính trị Trọng Thủy - Mỵ Châu.",
+        lessons: [
+          { name: "Bài 2: Nhà nước Âu Lạc", url: "bai-hoc/nha-nuoc-au-lac.html" }
+        ],
+        figures: [
+          { name: "An Dương Vương", url: "#" }
+        ],
+        lineConnections: ["line-vl-al", "line-al-bt"]
+      },
+      bt: {
+        category: "Hơn 10 thế kỷ đề kháng",
+        title: "1.000 Năm Bắc Thuộc",
+        period: "111 TCN – 938 SCN",
+        desc: "Giai đoạn bị các triều đại phong kiến Trung Hoa chiếm đóng và thực thi chính sách đồng hóa khốc liệt bằng chữ Hán, nho giáo và luật pháp quan liêu. Mặc dù tầng lớp quý tộc trên bị Hán hóa, nền văn hóa Việt cốt lõi vẫn được bảo tồn vững chắc nhờ pháo đài tự trị Làng xã (Phép vua thua lệ làng) kết hợp các cuộc khởi nghĩa liên tục tích lũy ký ức kháng cự.",
+        lessons: [
+          { name: "Bài 3: 1000 Năm Bắc Thuộc", url: "bai-hoc/1000-nam-bac-thuoc.html" }
+        ],
+        figures: [
+          { name: "Hai Bà Trưng", url: "nhan-vat/hai-ba-trung.html" },
+          { name: "Phùng Hưng", url: "nhan-vat/phung-hung.html" },
+          { name: "Khúc Thừa Dụ", url: "nhan-vat/khuc-thua-du.html" },
+          { name: "Dương Đình Nghệ", url: "nhan-vat/duong-dinh-nghe.html" }
+        ],
+        lineConnections: ["line-al-bt", "line-bt-nq"]
+      },
+      nq: {
+        category: "Mốc son vĩnh viễn",
+        title: "Ngô Quyền — 938 SCN",
+        period: "Năm 938 SCN",
+        desc: "Ngô Quyền hạ sát phản tặc Kiều Công Tiễn và lập trận địa cọc gỗ bịt sắt trên sông Bạch Đằng dẹp tan quân Nam Hán xâm lược năm 938 SCN. Chiến thắng này chấm dứt vĩnh viễn 1.000 năm Bắc thuộc. Ông dời đô về lại Cổ Loa xưng vương vĩ đại, tuy nhiên do băng hà sớm năm 944 nên chưa kịp thiết lập hệ thống thể chế vững chắc lâu dài.",
+        lessons: [
+          { name: "Bài 4: Ngô Quyền 938", url: "bai-hoc/ngo-quyen.html" }
+        ],
+        figures: [
+          { name: "Ngô Quyền", url: "nhan-vat/ngo-quyen.html" }
+        ],
+        lineConnections: ["line-bt-nq", "line-nq-l12"]
+      },
+      l12: {
+        category: "Hậu Ngô Quyền",
+        title: "Loạn 12 Sứ Quân",
+        period: "944–968 SCN",
+        desc: "Sau cái chết của Ngô Quyền, đất nước xuất hiện khoảng trống quyền lực tối cao, dẫn đến các hào trưởng tự lập địa bàn chia cát cứ nội chiến đẫm máu suốt hơn 20 năm. Loạn sứ quân phản ánh điểm yếu chí mạng khi vương triều cai trị chỉ dựa trên uy vũ cá nhân của một người lãnh đạo mà thiếu đi cơ chế pháp trị hay thể chế hóa bộ máy kế vị.",
+        lessons: [
+          { name: "Bài 5: Loạn 12 Sứ Quân", url: "bai-hoc/loan-12-su-quan.html" }
+        ],
+        figures: [
+          { name: "Đinh Bộ Lĩnh", url: "nhan-vat/dinh-bo-linh.html" }
+        ],
+        lineConnections: ["line-nq-l12", "line-l12-dl"]
+      },
+      dl: {
+        category: "Thiết lập Hoàng quyền",
+        title: "Nhà Đinh — Đinh Bộ Lĩnh",
+        period: "968–979 SCN",
+        desc: "Đinh Bộ Lĩnh bằng chiến lược liên minh hôn nhân và thu phục khéo léo đã dẹp tan 12 sứ quân, lập ra nhà Đinh năm 968 SCN tại vùng thung lũng hiểm trở Hoa Lư. Ông xưng Hoàng đế (ngang hàng Trung Hoa), đặt quốc hiệu Đại Cồ Việt, xác lập 3 nền móng độc lập vững chắc: danh hiệu tự lập, bộ máy quan lại phân cấp và ngoại giao triều cống khôn ngoan.",
+        lessons: [
+          { name: "Bài 6: Đinh – Lê", url: "bai-hoc/dinh-le.html" }
+        ],
+        figures: [
+          { name: "Đinh Bộ Lĩnh", url: "nhan-vat/dinh-bo-linh.html" }
+        ],
+        lineConnections: ["line-l12-dl", "line-dl-ntl"]
+      },
+      ntl: {
+        category: "Ngoại giao Cương & Nhu",
+        title: "Nhà Tiền Lê — Lê Đại Hành",
+        period: "980–1009 SCN",
+        desc: "Sau khi Đinh Bộ Lĩnh bị ám sát 979, trước nguy cơ xâm lược của nhà Tống, Thái hậu Dương Vân Nga đã quyết định thực dụng: trao áo long bào cống hiến quốc gia cho Thập đạo tướng quân Lê Hoàn. Vua Lê Hoàn đánh tan quân Tống năm 981 bằng chiến thuật Bạch Đằng lặp lại, ngay lập tức cử sứ giả bang giao triều cống nhún nhường để bảo đảm hòa bình lâu dài.",
+        lessons: [
+          { name: "Bài 7: Nhà Tiền Lê", url: "bai-hoc/nha-tien-le.html" }
+        ],
+        figures: [
+          { name: "Lê Hoàn", url: "nhan-vat/le-hoan.html" },
+          { name: "Dương Vân Nga", url: "nhan-vat/duong-van-nga.html" },
+          { name: "Lê Long Đĩnh", url: "nhan-vat/le-long-dinh.html" }
+        ],
+        lineConnections: ["line-dl-ntl", "line-ntl-ly"]
+      },
+      ly: {
+        category: "Kỷ nguyên văn hiến",
+        title: "Nhà Lý — Lý Thái Tổ",
+        period: "1009–1225 SCN",
+        desc: "Lý Công Uẩn được suy tôn lên ngôi hoàng đế lập triều đại nhà Lý thái bình thịnh trị. Quyết định lịch sử dời đô về đồng bằng Thăng Long năm 1010 tuyên bố đất nước đủ mạnh để mở cửa giao thương phát triển. Nhà Lý giải quyết triệt để sự bấp bênh của Đinh-Tiền Lê bằng cách 'thể chế hóa': ban hành luật Hình thư và dựng Văn Miếu đào tạo quan lại bằng quy trình thực chất.",
+        lessons: [
+          { name: "Đang nghiên cứu nhà Lý", url: "#" }
+        ],
+        figures: [
+          { name: "Lý Công Uẩn", url: "nhan-vat/ly-cong-uan.html" },
+          { name: "Thiền Sư Vạn Hạnh", url: "nhan-vat/thien-su-van-hanh.html" }
+        ],
+        lineConnections: ["line-ntl-ly"]
+      },
+
+      // Patterns
+      pt1: {
+        category: "Quy Luật Lịch Sử 01",
+        title: "Thiên thời + Nhân hòa",
+        period: "Pattern Quy luật",
+        desc: "Sự khác biệt chí mạng giữa các cuộc khởi nghĩa thời Bắc thuộc và đại thắng Ngô Quyền 938 là sự kết hợp thời cơ vàng. Trước 938, khởi nghĩa thắng trận rồi mất vì Trung Hoa còn mạnh và ta chưa xây nhà nước vững chãi. Năm 938, Trung Hoa rơi vào đại loạn Ngũ Đại Thập Quốc (Thiên thời), và Ngô Quyền lập tức xưng vương dựng triều đình đóng đô Cổ Loa (Nhân hòa) thiết lập rào cản ngăn chặn sự tái chiếm.",
+        lessons: [
+          { name: "Bài 3: 1000 Năm Bắc Thuộc", url: "bai-hoc/1000-nam-bac-thuoc.html" },
+          { name: "Bài 4: Ngô Quyền 938", url: "bai-hoc/ngo-quyen.html" }
+        ],
+        figures: [
+          { name: "Ngô Quyền", url: "nhan-vat/ngo-quyen.html" }
+        ],
+        lineConnections: []
+      },
+      pt2: {
+        category: "Quy Luật Lịch Sử 02",
+        title: "Tránh khoảng trống quyền lực",
+        period: "Pattern Quy luật",
+        desc: "Lịch sử chỉ ra rằng khi vị anh hùng tối cao dựng nước mất sớm mà chưa hoàn thành xây dựng thể chế và cơ chế thừa kế rõ ràng, đất nước sẽ lập tức rơi vào khủng hoảng hoặc bị ngoại bang dòm ngó. Điển hình là sau cái chết của Ngô Quyền 944 dẫn đến Loạn 12 sứ quân, và cái chết của Đinh Tiên Hoàng 979 dẫn đến đại quân Tống nam tiến. Sự có mặt dũng cảm, thực dụng của Đinh Bộ Lĩnh và Lê Hoàn đã cứu xã tắc kịp thời.",
+        lessons: [
+          { name: "Bài 5: Loạn 12 Sứ Quân", url: "bai-hoc/loan-12-su-quan.html" },
+          { name: "Bài 6: Đinh – Lê", url: "bai-hoc/dinh-le.html" },
+          { name: "Bài 7: Nhà Tiền Lê", url: "bai-hoc/nha-tien-le.html" }
+        ],
+        figures: [
+          { name: "Đinh Bộ Lĩnh", url: "nhan-vat/dinh-bo-linh.html" },
+          { name: "Dương Vân Nga", url: "nhan-vat/duong-van-nga.html" }
+        ],
+        lineConnections: []
+      },
+      pt3: {
+        category: "Quy Luật Lịch Sử 03",
+        title: "Trả rẻ giữ đắt (Ngoại giao)",
+        period: "Pattern Quy luật",
+        desc: "Sách lược ngoại giao xuyên suốt 1.000 năm của các vương triều độc lập tự chủ nước Việt: Chấp nhận nhún nhường, chịu triều cống triều đình phong kiến phương Bắc (trả cái rẻ - danh vị hào nhoáng bên ngoài) để giữ lấy nền độc lập, chủ quyền nội trị thực chất bên trong (giữ cái đắt). Vua Lê Hoàn sau khi đánh bại quân Tống năm 981 đã thả tù binh và lập tức cử sứ thần sang triều cống cầu hòa để đổi lấy hòa bình bền vững.",
+        lessons: [
+          { name: "Bài 6: Đinh – Lê", url: "bai-hoc/dinh-le.html" },
+          { name: "Bài 7: Nhà Tiền Lê", url: "bai-hoc/nha-tien-le.html" }
+        ],
+        figures: [
+          { name: "Lê Hoàn", url: "nhan-vat/le-hoan.html" }
+        ],
+        lineConnections: []
+      },
+      pt4: {
+        category: "Quy Luật Lịch Sử 04",
+        title: "Biểu tượng Bạch Đằng Giang",
+        period: "Pattern Quy luật",
+        desc: "Sự lặp lại kỳ diệu của tri thức và chiến thuật quân sự. Sông Bạch Đằng với trận địa cắm cọc gỗ nhọn bịt sắt lợi dụng thủy triều lên xuống đã ghi nhận 2 lần chiến thắng vang dội trong thời kỳ này: Ngô Quyền đánh tan quân Nam Hán năm 938 và Lê Hoàn đánh bại quân Tống năm 981. Nó chứng tỏ tri thức quân sự được lưu truyền, kế thừa xuất sắc qua các thế hệ anh hùng cứu quốc.",
+        lessons: [
+          { name: "Bài 4: Ngô Quyền 938", url: "bai-hoc/ngo-quyen.html" },
+          { name: "Bài 7: Nhà Tiền Lê", url: "bai-hoc/nha-tien-le.html" }
+        ],
+        figures: [
+          { name: "Ngô Quyền", url: "nhan-vat/ngo-quyen.html" },
+          { name: "Lê Hoàn", url: "nhan-vat/le-hoan.html" }
+        ],
+        lineConnections: []
+      },
+      pt5: {
+        category: "Quy Luật Lịch Sử 05",
+        title: "Chuyển từ Uy Vũ sang Thể Chế",
+        period: "Pattern Quy luật",
+        desc: "Đỉnh cao của sự trưởng thành quốc gia. Các triều đại Ngô, Đinh, Tiền Lê cai trị đất nước chủ yếu bằng 'uy vũ cá nhân' của vị dũng tướng lập quốc, khiến vương triều bấp bênh dễ sụp khi vua chết. Nhà Lý lập quốc 1009 đã giải quyết triệt để bằng 'thể chế hóa': Dời đô Thăng Long mở mang giao thương phát triển, ban Hình Thư xác lập luật pháp tối cao và dựng Văn Miếu đào tạo quan lại bằng quy trình chọn lọc thực tài.",
+        lessons: [
+          { name: "Bài 6: Đinh – Lê", url: "bai-hoc/dinh-le.html" }
+        ],
+        figures: [
+          { name: "Lý Công Uẩn", url: "nhan-vat/ly-cong-uan.html" },
+          { name: "Thiền Sư Vạn Hạnh", url: "nhan-vat/thien-su-van-hanh.html" }
+        ],
+        lineConnections: []
+      }
+    };
+
+    // Tab switcher logic
+    const btnFlow = document.getElementById('btn-flow');
+    const btnPatterns = document.getElementById('btn-patterns');
+    const tabFlow = document.getElementById('tab-flow');
+    const tabPatterns = document.getElementById('tab-patterns');
+
+    btnFlow.addEventListener('click', () => {
+      btnFlow.classList.add('bg-[#9b1c1c]', 'text-white');
+      btnFlow.classList.remove('bg-[#faf9f7]', 'text-[#57534e]');
+      btnPatterns.classList.add('bg-[#faf9f7]', 'text-[#57534e]');
+      btnPatterns.classList.remove('bg-[#9b1c1c]', 'text-white');
+      tabFlow.classList.remove('hidden');
+      tabPatterns.classList.add('hidden');
+    });
+
+    btnPatterns.addEventListener('click', () => {
+      btnPatterns.classList.add('bg-[#9b1c1c]', 'text-white');
+      btnPatterns.classList.remove('bg-[#faf9f7]', 'text-[#57534e]');
+      btnFlow.classList.add('bg-[#faf9f7]', 'text-[#57534e]');
+      btnFlow.classList.remove('bg-[#9b1c1c]', 'text-white');
+      tabPatterns.classList.remove('hidden');
+      tabFlow.classList.add('hidden');
+    });
+
+    // Selecting node logic
+    let activeNodeId = null;
+
+    function selectNode(id) {
+      // Clear previous active classes
+      if (activeNodeId) {
+        document.getElementById(`node-${activeNodeId}`)?.classList.remove('node-active');
+        const prevData = database[activeNodeId];
+        if (prevData && prevData.lineConnections) {
+          prevData.lineConnections.forEach(lineId => {
+            document.getElementById(lineId)?.classList.remove('line-active');
+          });
+        }
+      }
+
+      // Set new active classes
+      activeNodeId = id;
+      document.getElementById(`node-${id}`).classList.add('node-active');
+      
+      const data = database[id];
+      if (data.lineConnections) {
+        data.lineConnections.forEach(lineId => {
+          document.getElementById(lineId)?.classList.add('line-active');
+        });
+      }
+
+      // Update right details panel
+      updateDetailPanel(data);
+    }
+
+    function selectPattern(id) {
+      // Clear flow node active styles
+      if (activeNodeId) {
+        document.getElementById(`node-${activeNodeId}`)?.classList.remove('node-active');
+        const prevData = database[activeNodeId];
+        if (prevData && prevData.lineConnections) {
+          prevData.lineConnections.forEach(lineId => {
+            document.getElementById(lineId)?.classList.remove('line-active');
+          });
+        }
+      }
+      activeNodeId = null;
+
+      const data = database[id];
+      updateDetailPanel(data);
+    }
+
+    function updateDetailPanel(data) {
+      document.getElementById('detail-category').innerText = data.category.toUpperCase();
+      document.getElementById('detail-title').innerText = data.title;
+      document.getElementById('detail-period').innerText = data.period;
+      document.getElementById('detail-desc').innerText = data.desc;
+
+      // Update lessons
+      const lessonsContainer = document.getElementById('detail-lessons');
+      lessonsContainer.innerHTML = '';
+      if (data.lessons && data.lessons.length > 0) {
+        data.lessons.forEach(l => {
+          const span = document.createElement('a');
+          span.href = l.url;
+          span.className = "px-3 py-1.5 bg-[#292524] text-xs font-semibold rounded-xl text-[#fca5a5] hover:bg-[#3e3a38] transition-colors border border-[#3e3a38]";
+          span.innerText = l.name;
+          lessonsContainer.appendChild(span);
+        });
+      } else {
+        lessonsContainer.innerHTML = '<span class="text-xs text-[#78716c] italic">Không có bài học liên kết trực tiếp</span>';
+      }
+
+      // Update figures
+      const figuresContainer = document.getElementById('detail-figures');
+      figuresContainer.innerHTML = '';
+      if (data.figures && data.figures.length > 0) {
+        data.figures.forEach(f => {
+          const span = document.createElement('a');
+          span.href = f.url;
+          span.className = "px-3 py-1.5 bg-[#292524] text-xs font-semibold rounded-xl text-[#fcd34d] hover:bg-[#3e3a38] transition-colors border border-[#3e3a38]";
+          span.innerText = f.name;
+          figuresContainer.appendChild(span);
+        });
+      } else {
+        figuresContainer.innerHTML = '<span class="text-xs text-[#78716c] italic">Không có nhân vật liên kết trực tiếp</span>';
+      }
+
+      // Show/hide read article button
+      const linkBtn = document.getElementById('detail-link');
+      if (data.lessons && data.lessons.length > 0 && data.lessons[0].url !== '#') {
+        linkBtn.href = data.lessons[0].url;
+        linkBtn.classList.remove('hidden');
+      } else {
+        linkBtn.classList.add('hidden');
+      }
+    }
+
+    // Auto select first node
+    selectNode('vl');
+  </script>
+</body>
+</html>
