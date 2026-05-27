@@ -3,342 +3,423 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quách Quỳ — Nhân Vật Lịch Sử Nhà Tống</title>
+  <title>Quách Quỳ — Tướng Giỏi, Nhiệm Vụ Sai: Thất Bại Tại Sông Như Nguyệt | Phân tích 3 Gốc / 3 Độc</title>
+  <meta name="description" content="Phân tích Quách Quỳ theo lăng kính 3 Gốc & 3 Độc — Tướng tài nhà Tống bị giao nhiệm vụ sai chiến lược: xâm lược Đại Việt 1076. Thất bại tại sông Như Nguyệt trước Lý Thường Kiệt.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Quách Quỳ — Tướng Giỏi, Nhiệm Vụ Sai | Phân tích 3 Gốc / 3 Độc">
+  <meta property="og:description" content="Tướng tài nhà Tống xâm lược Đại Việt 1076. Thất bại không chỉ vì yếu — mà vì nhiệm vụ sai chiến lược ngay từ đầu.">
+
+  <!-- Favicon -->
+  <link class="js-favicon" rel="icon" type="image/svg+xml" href="../shared/favicon.svg">
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700;1,900&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            'playfair': ['"Playfair Display"', 'Georgia', 'serif'],
-            'plex': ['"IBM Plex Serif"', 'Georgia', 'serif'],
-            'mono': ['"JetBrains Mono"', 'monospace'],
-            'noto': ['"Noto Sans SC"', 'sans-serif'],
-          },
-          colors: {
-            'cream': '#f4eed8','cream-dark': '#ede5c8','ink': '#1c1409','ink-mid': '#2e2010','ink-light': '#4a3520',
-            'crimson': '#921c1c','crimson-light': '#b83232','gold': '#b07c28','gold-light': '#d4a042',
-            'warm': '#7a6040','rule': '#c4aa84','rule-light': '#ddd0b8',
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    :root { --cream:#f4eed8; --ink:#1c1409; --crimson:#921c1c; --gold:#b07c28; --rule:#c4aa84; }
-    * { box-sizing: border-box; }
-    body { background-color:#e8dfc0; background-image:radial-gradient(circle,rgba(160,130,80,0.35) 0.6px,transparent 0.6px); background-size:18px 18px; min-height:100vh; padding:2rem 1rem; }
-    .paper { background-color:var(--cream); position:relative; }
-    .paper::before { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(180,150,90,0.12) 0.8px,transparent 0.8px); background-size:22px 22px; pointer-events:none; }
-    .triple-rule { border-top:3px solid var(--ink); position:relative; margin-bottom:2px; }
-    .triple-rule::after { content:''; display:block; border-top:1px solid var(--ink); margin-top:3px; }
-    .single-rule { border-top:1px solid var(--rule); }
-    .double-rule { border-top:2px solid var(--ink); position:relative; }
-    .double-rule::after { content:''; display:block; border-top:1px solid var(--ink); margin-top:2px; }
-    .drop-cap::first-letter { font-family:'Playfair Display',serif; font-size:4.6em; font-weight:900; line-height:0.78; float:left; margin-right:0.06em; margin-top:0.04em; color:var(--crimson); }
-    .strikeword { position:relative; display:inline-block; }
-    .strikeword::after { content:''; position:absolute; left:-3px; right:-3px; top:50%; height:5px; background:var(--crimson); transform:translateY(-50%) rotate(-1.5deg); }
-    .two-col { column-count:2; column-gap:2.2rem; column-rule:1px solid var(--rule); }
-    @media (max-width:640px) { .two-col { column-count:1; } }
-    .pull-q { border-left:4px solid var(--crimson); padding-left:1.1rem; }
-    .pull-q-center { border-top:2px solid var(--crimson); border-bottom:2px solid var(--crimson); padding:1rem 0; text-align:center; }
-    .sec-label { font-family:'JetBrains Mono',monospace; font-size:0.6rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--crimson); font-weight:600; }
-    .stars { letter-spacing:0.06em; }
-    .sf { color:var(--gold); }
-    .se { color:var(--rule); }
-    .tl-dot { width:8px; height:8px; background:var(--crimson); border-radius:50%; flex-shrink:0; margin-top:6px; }
-    .ornament { letter-spacing:0.6em; color:var(--gold); }
-    @keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
-    .fade-in { animation:fadeUp 0.7s ease-out both; }
-    .fade-in-2 { animation:fadeUp 0.7s ease-out 0.15s both; }
-    .fade-in-3 { animation:fadeUp 0.7s ease-out 0.3s both; }
-    .ink-box { background-color:var(--ink); color:var(--cream); }
-    .ink-box .muted { color:#a89060; }
-    .ink-box .bright { color:var(--cream); }
-    .profile-badge { border:2px solid var(--crimson); border-radius:0.75rem; }
-    .link-card { border:1px solid var(--rule); border-radius:0.75rem; transition:border-color 0.2s,box-shadow 0.2s; }
-    .link-card:hover { border-color:var(--crimson); box-shadow:0 2px 12px rgba(146,28,28,0.1); }
-    .lesson-num { width:2.8rem; height:2.8rem; border:2px solid var(--crimson); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
-    .rating-row { border-bottom:1px solid var(--rule-light); }
-    ::-webkit-scrollbar { width:6px; }
-    ::-webkit-scrollbar-track { background:#e8dfc0; }
-    ::-webkit-scrollbar-thumb { background:var(--rule); border-radius:3px; }
-    p { orphans:2; widows:2; }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Shared Assets -->
+  <link rel="stylesheet" href="../shared/styles.css">
+  <script src="../shared/scripts.js" defer></script>
 </head>
-<body>
 
-<div class="paper max-w-4xl mx-auto shadow-2xl fade-in" style="border:1px solid #b8a070; border-radius:2px; overflow:hidden;">
+<body class="font-sans antialiased text-[#1c1917]">
 
-  <!-- DATELINE -->
-  <div style="border-bottom:1px solid var(--ink);" class="px-10 pt-7 pb-3 flex items-center justify-between gap-4 flex-wrap">
-    <span class="font-mono text-xs tracking-widest text-warm uppercase" style="font-size:0.6rem; letter-spacing:0.2em;">Nhân Vật Lịch Sử Việt Nam · Phân Tích Chuyên Sâu</span>
-    <div class="text-center">
-      <span class="sec-label" style="font-size:0.62rem;">★ Nhà Tống — Đại Tướng / Series Lịch Sử ★</span>
-    </div>
-    <span class="font-mono text-xs tracking-widest text-warm uppercase" style="font-size:0.6rem; letter-spacing:0.2em;">1076 SCN · Quách Quỳ</span>
-  </div>
+  <!-- Reading Progress -->
+  <div id="progress-bar"></div>
 
-  <!-- MASTHEAD BAR -->
-  <div class="px-10 pt-3 pb-2">
-    <div class="triple-rule"></div>
-    <p class="font-mono text-center py-1" style="font-size:0.55rem; letter-spacing:0.35em; color:var(--warm);">NHÂN VẬT BI KỊCH · NHÀ TỐNG · TƯỚNG GIỎI NHIỆM VỤ SAI · 1076 SCN</p>
-    <div class="single-rule"></div>
-  </div>
+  <!-- Sticky Nav -->
+  <nav style="background: rgba(250,249,247,0.92); backdrop-filter: blur(12px);"
+       class="sticky top-0 z-50 border-b border-[#e7e5e4]">
+    <div class="max-w-4xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2 text-sm text-[#78716c]">
+        <a href="../index.html" class="text-[#9b1c1c] text-base leading-none hover:opacity-75 transition-opacity">◈</a>
+        <span>Lịch sử Việt Nam</span>
+        <span class="text-[#d6d3d1]">›</span>
+        <span class="font-medium text-[#1c1917]">Quách Quỳ</span>
+      </div>
+      <span class="text-xs text-[#a8a29e] font-semibold tracking-widest uppercase hidden sm:block">
+        3 Gốc / 3 Độc
+      </span>
+      <button id="mobile-menu-btn" class="sm:hidden text-[#1c1917] focus:outline-none p-1.5 rounded-lg hover:bg-[#f5f4f1] transition-colors" aria-label="Toggle menu">
+        <svg id="hamburger-icon" class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden sm:hidden border-t border-[#e7e5e4] bg-[#faf9f7] py-2 px-6 shadow-lg">
+      <div class="flex flex-col gap-2 py-2">
+        <a href="../index.html#nhan-vat" class="mobile-nav-link text-sm text-[#57534e] hover:text-[#9b1c1c] font-medium py-2 transition-colors">Nhân vật & Bài học</a>
+        <a href="../index.html#phuong-phap" class="mobile-nav-link text-sm text-[#57534e] hover:text-[#9b1c1c] font-medium py-2 transition-colors">Phương pháp</a>
+      </div>
+    </div>
+  </nav>
 
-  <!-- HEADLINE -->
-  <div class="px-10 pt-6 pb-8 text-center" style="border-bottom:2px solid var(--ink);">
-    <p class="font-playfair italic mb-1" style="font-size:0.9rem; letter-spacing:0.08em; color:var(--crimson);">Nhân Vật Bi Kịch · Đại Tướng Nhà Tống · ?–?</p>
-    <h1 class="font-playfair leading-none" style="font-size:clamp(2.8rem,7vw,4.8rem); font-weight:900; color:var(--ink); letter-spacing:-0.015em;">QUÁCH QUỲ</h1>
-    <h1 class="font-playfair leading-none mb-5" style="font-size:clamp(4rem,12vw,8rem); font-weight:900; color:var(--ink); letter-spacing:-0.025em; font-style:italic; margin-top:-0.05em;">1076</h1>
-    <div class="flex items-center gap-5 mb-6 px-4">
-      <div class="flex-1" style="border-top:2px solid var(--ink);"></div>
-      <p class="font-playfair text-lg italic" style="color:var(--ink-mid); white-space:nowrap;"><em style="color:var(--crimson);">Tướng Giỏi</em> — Nhiệm Vụ Sai</p>
-      <div class="flex-1" style="border-top:2px solid var(--ink);"></div>
-    </div>
-    <p class="font-plex mx-auto leading-relaxed" style="max-width:58ch; font-size:1.05rem; color:var(--ink-light); font-style:italic;">Đại tướng nhà Tống, dẫn đại quân xâm lược Đại Việt năm 1076 để trả đũa cuộc tấn công của Lý Thường Kiệt vào Ung Châu. Chiến dịch thất bại hoàn toàn tại phòng tuyến sông Như Nguyệt — không phải vì ông kém, mà vì ván cờ đã bị phá từ trước khi bắt đầu.</p>
-  </div>
+  <main>
 
-  <!-- §01 TIỂU SỬ NHANH -->
-  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
-    <div class="flex items-baseline gap-3 mb-5">
-      <span class="sec-label">§ 01</span>
-      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink); letter-spacing:-0.01em;">Tiểu Sử Nhanh</h2>
-      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
-    </div>
-    <div class="two-col font-plex leading-relaxed mb-6" style="font-size:1.02rem; color:var(--ink-light);">
-      <p class="drop-cap mb-4">Đại tướng nhà Tống, được triều đình Tống giao chỉ huy chiến dịch xâm lược Đại Việt năm 1076 — một trong những chiến dịch quân sự lớn nhất mà Tống từng phát động về phía Nam.</p>
-      <p class="mb-4">Bối cảnh: năm <strong style="color:var(--ink);">1075</strong>, Lý Thường Kiệt chủ động tấn công phòng thủ, đánh thẳng vào <strong style="color:var(--ink);">Ung Châu</strong> — kho lương và căn cứ hậu cần chính của Tống tại biên giới — rồi rút về. Triều đình Tống buộc phải đáp trả.</p>
-      <p class="mb-4">Năm <strong style="color:var(--ink);">1076</strong>: Quách Quỳ dẫn đại quân (hàng trăm nghìn người) tiến vào Đại Việt. Chiến dịch bị chặn đứng tại <strong style="color:var(--ink);">phòng tuyến sông Như Nguyệt</strong>. Quân Tống không thể vượt qua, hậu cần cạn kiệt, khí hậu khắc nghiệt — cuối cùng phải rút về.</p>
-      <p>Kết cục: thất bại hoàn toàn. Nhưng câu hỏi là — thất bại này có thực sự là lỗi của Quách Quỳ?</p>
-    </div>
-    <div class="pull-q-center mx-auto" style="max-width:60ch;">
-      <p class="font-playfair italic" style="font-size:1.22rem; color:var(--ink); line-height:1.45;">"Điều kiện tiên quyết đã bị lấy đi —<br><em style="color:var(--crimson);">trước khi ông đặt chân vào trận địa.</em>"</p>
-    </div>
-  </div>
+    <!-- HERO -->
+    <header class="max-w-4xl mx-auto px-6 pt-16 pb-12">
+      <div class="relative overflow-hidden">
+        <svg class="hero-ornament" viewBox="0 0 200 200" fill="currentColor" style="color:#78716c;">
+          <path d="M100 0 L173 50 L173 150 L100 200 L27 150 L27 50 Z"/>
+        </svg>
 
-  <!-- §02 3 GỐC · TRÍ TUỆ -->
-  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
-    <div class="flex items-baseline gap-3 mb-6">
-      <span class="sec-label">§ 02</span>
-      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">3 Gốc · Trí Tuệ</h2>
-      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
-      <span class="stars" style="font-size:1.1rem;"><span class="sf">★★★</span><span class="se">☆☆</span></span>
-    </div>
-    <div class="grid gap-8" style="grid-template-columns:1fr 1fr;">
+        <!-- Category label -->
+        <div class="flex flex-wrap items-center gap-3 mb-7">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold tracking-wider uppercase bg-[#f5f4f1] text-[#57534e] rounded-full border border-[#e7e5e4]">
+            <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+            Phân tích nhân vật
+          </span>
+          <span class="text-sm text-[#78716c] font-medium">1076 SCN · Tướng Nhà Tống · Xâm lược Đại Việt</span>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold tracking-wider uppercase bg-[#fdfbeb] text-[#b45309] rounded-full border border-[#b45309]/20">
+            Góc nhìn đối lập
+          </span>
+        </div>
+
+        <h1 class="font-serif font-bold text-[#1c1917] leading-tight mb-4"
+            style="font-size: clamp(2.75rem, 6vw, 4rem);">
+          Quách Quỳ
+        </h1>
+
+        <p class="font-serif text-xl text-[#78716c] italic leading-snug mb-8 max-w-xl">
+          Tướng Giỏi, Nhiệm Vụ Sai — <em class="text-[#44403c] not-italic font-semibold">Thất bại tại sông Như Nguyệt không phải vì yếu, mà vì ngay từ đầu đã không thể thắng</em>
+        </p>
+
+        <!-- Meta row -->
+        <div class="flex flex-wrap items-center gap-5 text-sm text-[#57534e] border-t border-[#e7e5e4] py-4 mb-6">
+          <div class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-[#9b1c1c] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+            </svg>
+            Lịch sử Việt Nam — Khoá học
+          </div>
+          <div class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-[#9b1c1c] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+            </svg>
+            Nhà Tống · Đối thủ của Lý Thường Kiệt
+          </div>
+          <div class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-[#9b1c1c] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            5 phút đọc
+          </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8 pt-2 pb-2">
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4 text-center sm:text-left card-hover">
+            <div class="font-serif text-3xl font-bold text-[#78716c]">10 vạn</div>
+            <div class="text-[10px] text-[#78716c] font-semibold tracking-wider uppercase mt-1">Quân Tống xâm lược</div>
+          </div>
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4 text-center sm:text-left card-hover">
+            <div class="font-serif text-3xl font-bold text-[#78716c]">1076</div>
+            <div class="text-[10px] text-[#78716c] font-semibold tracking-wider uppercase mt-1">Năm xâm lược Đại Việt</div>
+          </div>
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4 text-center sm:text-left card-hover">
+            <div class="font-serif text-3xl font-bold text-[#78716c]">3 tháng</div>
+            <div class="text-[10px] text-[#78716c] font-semibold tracking-wider uppercase mt-1">Bị cầm chân tại Như Nguyệt</div>
+          </div>
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4 text-center sm:text-left card-hover">
+            <div class="font-serif text-3xl font-bold text-[#78716c]">0</div>
+            <div class="text-[10px] text-[#78716c] font-semibold tracking-wider uppercase mt-1">Lần tiến được qua sông</div>
+          </div>
+        </div>
+
+        <!-- TL;DR dark card -->
+        <div class="relative rounded-2xl bg-[#1c1917] p-8 overflow-hidden shadow-md">
+          <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+            <svg width="100%" height="100%"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(#grid)"/></svg>
+          </div>
+          <div class="relative">
+            <div class="text-xs font-semibold tracking-[0.15em] uppercase text-[#b45309] mb-3">TL;DR / Bản tóm tắt nhanh — Góc nhìn đối lập</div>
+            <p class="text-base leading-relaxed text-[#d6d3d1] mb-5">
+              Quách Quỳ là tướng tài nhà Tống, được giao chỉ huy <strong class="text-[#faf9f7]">10 vạn quân</strong> xâm lược Đại Việt năm 1076 — trả đũa sau khi Lý Thường Kiệt tấn công phủ đầu đất Tống. Ông đối mặt với Lý Thường Kiệt tại <strong class="text-[#faf9f7]">sông Như Nguyệt</strong>. Bị cầm chân 3 tháng, mất hàng vạn quân vì dịch bệnh và phòng thủ kiên cố. Thất bại không phải vì Quách Quỳ kém — mà vì <strong class="text-[#faf9f7]">đây là nhiệm vụ sai chiến lược ngay từ đầu</strong>: Tống bất ổn nội bộ, tuyến hậu cần quá dài, đánh vào địa bàn phòng thủ được chuẩn bị kỹ. Ông là người tài bị giao việc không thể thắng.
+            </p>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="inline-flex items-center gap-2 px-4 py-2 bg-[#292524] rounded-xl text-sm">
+                <span class="text-[#a8a29e]">Trí tuệ</span>
+                <span class="text-[#f59e0b] tracking-tight">★★★☆☆</span>
+              </span>
+              <span class="inline-flex items-center gap-2 px-4 py-2 bg-[#292524] rounded-xl text-sm">
+                <span class="text-[#a8a29e]">Nghị lực</span>
+                <span class="text-[#f59e0b] tracking-tight">★★★☆☆</span>
+              </span>
+              <span class="inline-flex items-center gap-2 px-4 py-2 bg-[#44403c] rounded-xl text-sm font-semibold text-[#faf9f7]">
+                Nhân vật bi kịch
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ARTICLE BODY -->
+    <article class="max-w-[700px] mx-auto px-6 pb-28">
+
+      <!-- Tại sao phân tích nhân vật Tống? -->
+      <section class="fade-section">
+        <div class="rounded-xl border border-[#b45309]/30 bg-[#fdfbeb] p-5 mb-8">
+          <div class="text-xs font-semibold text-[#b45309] uppercase tracking-wider mb-2">Tại sao phân tích nhân vật nhà Tống?</div>
+          <p class="text-base leading-relaxed text-[#44403c]">
+            Hiểu lịch sử sâu hơn khi nhìn từ cả hai phía. Quách Quỳ không phải kẻ phản diện đơn giản — ông là tấm gương phản chiếu những quyết định sai lầm của nhà Tống, và những bài học về <strong>nhiệm vụ sai chiến lược</strong> vẫn còn nguyên giá trị ứng dụng.
+          </p>
+        </div>
+
+        <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">Bối cảnh và Tiểu sử nhanh</h2>
+
+        <p class="text-lg leading-relaxed text-[#44403c] mb-4 first-letter:font-serif first-letter:text-5xl first-letter:font-bold first-letter:float-left first-letter:mr-2 first-letter:text-[#9b1c1c]">
+          Cuối năm 1075, Lý Thường Kiệt tấn công phủ đầu đất Tống. Nhà Tống buộc phải phản ứng. Quách Quỳ — một trong những tướng có kinh nghiệm nhất của Tống — được giao chỉ huy chiến dịch xâm lược Đại Việt, dẫn 10 vạn quân (cả bộ lẫn thủy) xuống phía Nam năm 1076.
+        </p>
+
+        <p class="text-lg leading-relaxed text-[#44403c] mb-4">
+          Quân Tống vượt biên giới, chiếm một số vùng phía Bắc, tiến về sông Như Nguyệt. Tại đây, Lý Thường Kiệt đã chuẩn bị sẵn: <strong>tuyến phòng thủ bên bờ sông với chiến hào, cọc và quân thủy</strong>. Quách Quỳ bị cầm chân hoàn toàn — không vượt được sông trong suốt 3 tháng.
+        </p>
+
+        <p class="text-lg leading-relaxed text-[#44403c] mb-4">
+          Dịch bệnh, hậu cần đứt, tinh thần xuống thấp. Khi Lý Thường Kiệt chủ động đề nghị hòa, Quách Quỳ chấp nhận ngay — rút quân về, trả lại đất đã chiếm. Chiến dịch kết thúc trong thất bại hoàn toàn.
+        </p>
+
+        <!-- Timeline -->
+        <div class="mt-8 pt-6 border-t border-[#e7e5e4]">
+          <div class="text-xs font-semibold text-[#9b1c1c] tracking-wider uppercase mb-4">Diễn biến chiến dịch 1076–1077</div>
+          <div class="relative pl-6 border-l-2 border-[#e7e5e4] space-y-6">
+            <div class="relative">
+              <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-[#1c1917] border-4 border-white"></div>
+              <div class="font-serif font-bold text-[#1c1917] text-sm">Cuối 1075 — Lý Thường Kiệt tấn công Tống</div>
+              <p class="text-sm text-[#57534e] mt-1">Tiên phát chế nhân — Đại Việt tấn công phủ đầu đất Tống, buộc Tống phải phản ứng.</p>
+            </div>
+            <div class="relative">
+              <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-[#78350f] border-4 border-white"></div>
+              <div class="font-serif font-bold text-[#1c1917] text-sm">1076 — Quách Quỳ dẫn 10 vạn quân xuống phía Nam</div>
+              <p class="text-sm text-[#57534e] mt-1">Vượt biên giới, chiếm một số vùng đất phía Bắc. Tiến về sông Như Nguyệt.</p>
+            </div>
+            <div class="relative">
+              <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-[#78350f] border-4 border-white"></div>
+              <div class="font-serif font-bold text-[#1c1917] text-sm">Đông 1076 — Bị cầm chân 3 tháng tại Như Nguyệt</div>
+              <p class="text-sm text-[#57534e] mt-1">Không vượt được sông. Dịch bệnh, hậu cần đứt. Hàng vạn quân thiệt mạng.</p>
+            </div>
+            <div class="relative">
+              <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-[#44403c] border-4 border-white"></div>
+              <div class="font-serif font-bold text-[#1c1917] text-sm">1077 — Rút quân, chấp nhận hòa</div>
+              <p class="text-sm text-[#57534e] mt-1">Lý Thường Kiệt đề nghị hòa. Quách Quỳ chấp nhận ngay. Trả lại đất đã chiếm, rút về Tống.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <!-- 3 Gốc -->
+      <section class="fade-section">
+        <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">Phân tích 3 Gốc</h2>
+
+        <!-- Trí tuệ -->
+        <div class="card p-6 mb-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0"
+                 style="background:#f5f4f1; color:#57534e; border:1px solid #e7e5e4;">T</div>
+            <h3 class="font-serif text-xl font-bold text-[#1c1917] mb-0">Trí tuệ: Tướng tài, chiến trường sai ★★★☆☆</h3>
+            <div class="ml-auto text-right">
+              <span class="text-[#f59e0b]">★★★☆☆</span>
+              <div class="score-bar-bg"><div class="score-bar-fill" style="width:60%;"></div></div>
+            </div>
+          </div>
+          <p class="text-base leading-relaxed text-[#44403c] mb-4">
+            Quách Quỳ có kinh nghiệm chiến trận thực sự. Quyết định <strong>chấp nhận hòa ngay khi được đề nghị</strong> thay vì tiếp tục sa lầy — đây thực ra là trí tuệ chiến lược: biết khi nào nên dừng. Ông không bướng bỉnh đến chết.
+          </p>
+          <p class="text-base leading-relaxed text-[#44403c]">
+            Điểm hạn chế: không có bằng chứng ông phản đối nhiệm vụ ngay từ đầu dù biết hậu cần sẽ là vấn đề. <strong>Tướng giỏi thật sự phải dám nói "nhiệm vụ này không khả thi"</strong> — không chỉ thực thi mệnh lệnh.
+          </p>
+        </div>
+
+        <!-- Đạo đức -->
+        <div class="card p-6 mb-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0"
+                 style="background:#f5f4f1; color:#57534e; border:1px solid #e7e5e4;">Đ</div>
+            <h3 class="font-serif text-xl font-bold text-[#1c1917] mb-0">Đạo đức: Tuân lệnh — không hơn không kém ★★★☆☆</h3>
+            <div class="ml-auto text-right">
+              <span class="text-[#f59e0b]">★★★☆☆</span>
+              <div class="score-bar-bg"><div class="score-bar-fill" style="width:60%;"></div></div>
+            </div>
+          </div>
+          <p class="text-base leading-relaxed text-[#44403c]">
+            Chiến dịch xâm lược là lệnh chính trị từ triều đình Tống — không phải sáng kiến cá nhân. Ông tuân lệnh. Trong chiến tranh, "đạo đức" của người lính-tướng là khái niệm phức tạp: <strong>trách nhiệm cá nhân và trách nhiệm của thể chế đan xen</strong>. Không có bằng chứng tàn ác vô cớ hay vi phạm quân kỷ từ phía ông.
+          </p>
+        </div>
+
+        <!-- Nghị lực -->
+        <div class="card p-6 mb-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0"
+                 style="background:#f5f4f1; color:#57534e; border:1px solid #e7e5e4;">N</div>
+            <h3 class="font-serif text-xl font-bold text-[#1c1917] mb-0">Nghị lực: Chịu đựng trong hoàn cảnh tệ ★★★☆☆</h3>
+            <div class="ml-auto text-right">
+              <span class="text-[#f59e0b]">★★★☆☆</span>
+              <div class="score-bar-bg"><div class="score-bar-fill" style="width:60%;"></div></div>
+            </div>
+          </div>
+          <p class="text-base leading-relaxed text-[#44403c]">
+            Giữ được quân trong suốt 3 tháng bị cầm chân — dịch bệnh, tinh thần xuống, không tiến được — và rút lui có trật tự thay vì tan rã. Điều đó đòi hỏi năng lực chỉ huy thực sự. Điểm trừ: <strong>không đủ quyết đoán để phá vòng vây hoặc tìm đột phá sáng tạo</strong>.
+          </p>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <!-- Bài học quan trọng -->
+      <section class="fade-section">
+        <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">Bài học cốt lõi — Từ Kẻ Thất Bại</h2>
+
+        <div class="card p-6 mb-6" style="border-left: 4px solid #b45309;">
+          <div class="text-xs font-semibold text-[#b45309] uppercase tracking-wider mb-3">Bài học 01 — Nhiệm vụ sai chiến lược</div>
+          <h4 class="font-serif font-bold text-xl text-[#1c1917] mb-3">Người giỏi + Nhiệm vụ sai = Thất bại chắc chắn</h4>
+          <p class="text-base leading-relaxed text-[#44403c]">
+            Tống bất ổn nội bộ vì cải cách Vương An Thạch. Hậu cần tuyến dài qua địa hình khó. Đại Việt phòng thủ được chuẩn bị kỹ. Quách Quỳ có thể là tướng giỏi hàng đầu Tống — nhưng tập hợp điều kiện đó làm nhiệm vụ này gần như không thể thắng. Bài học: <strong>trước khi nhận nhiệm vụ, hãy đánh giá điều kiện khách quan — không chỉ năng lực chủ quan của mình.</strong>
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div class="card p-5">
+            <div class="text-xs font-semibold uppercase tracking-wider mb-2 text-[#9b1c1c]">Bài học 02</div>
+            <h4 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Biết dừng đúng lúc</h4>
+            <p class="text-sm leading-relaxed text-[#57534e]">
+              Chấp nhận hòa khi được đề nghị, rút lui có trật tự thay vì tiếp tục sa lầy đến cùng — đây thực ra là quyết định đúng. Biết dừng không phải hèn nhát, mà là thực tế.
+            </p>
+          </div>
+          <div class="card p-5">
+            <div class="text-xs font-semibold uppercase tracking-wider mb-2 text-[#9b1c1c]">Bài học 03</div>
+            <h4 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Hậu cần quyết định tất cả</h4>
+            <p class="text-sm leading-relaxed text-[#57534e]">
+              10 vạn quân bị đánh bại không chỉ bởi Lý Thường Kiệt — mà bởi dịch bệnh, tiếp tế đứt đoạn, hàng ngàn km xa hậu cứ. Chiến tranh thắng bằng hậu cần trước khi thắng trên chiến trường.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <!-- Góc nhìn so sánh -->
+      <section class="fade-section">
+        <h2 class="font-serif text-2xl font-bold text-[#1c1917] mb-4">Quách Quỳ vs Lý Thường Kiệt — Tại sao một bên thắng?</h2>
+        <div class="overflow-x-auto rounded-xl border border-[#e7e5e4] bg-[#fafaf8] mb-6">
+          <table class="w-full text-sm text-[#44403c]">
+            <thead>
+              <tr class="border-b border-[#e7e5e4] bg-[#f5f4f1] text-[#1c1917] font-serif font-bold text-left">
+                <th class="p-4 w-1/3">Yếu tố</th>
+                <th class="p-4 w-1/3">Quách Quỳ (Tống)</th>
+                <th class="p-4 w-1/3">Lý Thường Kiệt (Đại Việt)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-[#e7e5e4]">
+              <tr>
+                <td class="p-4 font-semibold">Chiến lược</td>
+                <td class="p-4">Tấn công — phải vượt sông</td>
+                <td class="p-4">Phòng thủ — chờ bên kia sông</td>
+              </tr>
+              <tr class="bg-[#fafaf8]">
+                <td class="p-4 font-semibold">Hậu cần</td>
+                <td class="p-4">Tuyến dài, đứt đoạn</td>
+                <td class="p-4">Ngắn, trên đất nhà</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-semibold">Động lực chiến đấu</td>
+                <td class="p-4">Lính viễn chinh, xa nhà</td>
+                <td class="p-4">Bảo vệ quê hương</td>
+              </tr>
+              <tr class="bg-[#fafaf8]">
+                <td class="p-4 font-semibold">Bối cảnh chính trị</td>
+                <td class="p-4">Tống bất ổn nội bộ</td>
+                <td class="p-4">Đại Việt thống nhất, đã chuẩn bị</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-semibold">Kết quả</td>
+                <td class="p-4 text-[#9b1c1c] font-semibold">Thất bại, rút quân</td>
+                <td class="p-4 text-[#166534] font-semibold">Bảo vệ thành công</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <!-- Liên kết -->
+      <section class="fade-section">
+        <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">Liên kết nhân vật & bài học</h2>
+        <div class="grid sm:grid-cols-3 gap-5">
+          <a href="ly-thanh-tong.html" class="card p-5 card-hover block">
+            <div class="text-xs font-semibold text-[#a8a29e] mb-1">NHÂN VẬT 12</div>
+            <h4 class="font-serif font-bold text-base text-[#1c1917] mb-1">Lý Thánh Tông</h4>
+            <p class="text-xs text-[#78716c] leading-relaxed">Vua Đại Việt — xây Văn Miếu (1070), thực hiện chiến lược tiên phát chế nhân (1075) dẫn đến cuộc đối đầu với Quách Quỳ.</p>
+          </a>
+          <a href="hoang-hau-y-lan.html" class="card p-5 card-hover block">
+            <div class="text-xs font-semibold text-[#a8a29e] mb-1">NHÂN VẬT 13</div>
+            <h4 class="font-serif font-bold text-base text-[#1c1917] mb-1">Hoàng Hậu Ỷ Lan</h4>
+            <p class="text-xs text-[#78716c] leading-relaxed">Nhiếp chính giai đoạn Quách Quỳ xâm lược — hậu phương ổn định là yếu tố Đại Việt thắng.</p>
+          </a>
+          <a href="../bai-hoc/nha-ly-chap3.html" class="card p-5 card-hover block">
+            <div class="text-xs font-semibold text-[#a8a29e] mb-1">BÀI HỌC 09</div>
+            <h4 class="font-serif font-bold text-base text-[#1c1917] mb-1">Nhà Lý — Kháng Chiến Chống Tống</h4>
+            <p class="text-xs text-[#78716c] leading-relaxed">Toàn cảnh trận Như Nguyệt từ góc nhìn Đại Việt — bài học về chiến lược tiên phát chế nhân và phòng thủ sông.</p>
+          </a>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <!-- Share CTA -->
+      <section class="fade-section">
+        <div class="rounded-2xl bg-[#1c1917] text-[#faf9f7] p-8 text-center relative overflow-hidden">
+          <div class="absolute inset-0 opacity-[0.04] pointer-events-none">
+            <svg width="100%" height="100%">
+              <defs><pattern id="dots2" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1.5" fill="white"/></pattern></defs>
+              <rect width="100%" height="100%" fill="url(#dots2)"/>
+            </svg>
+          </div>
+          <div class="relative">
+            <p class="font-serif text-xl font-semibold mb-2">Bạn đồng ý với phân tích này?</p>
+            <p class="text-[#a8a29e] text-base mb-6">Quách Quỳ — nạn nhân của nhiệm vụ sai hay tướng kém? Cùng bàn luận.</p>
+            <div class="flex flex-wrap justify-center gap-3">
+              <button
+                onclick="if(navigator.share){navigator.share({title:document.title,url:location.href})}else{navigator.clipboard&&navigator.clipboard.writeText(location.href);this.textContent='Đã sao chép link ✓'}"
+                class="px-6 py-2.5 bg-[#9b1c1c] hover:bg-[#7f1d1d] rounded-xl text-sm font-semibold transition-colors focus:outline-none">
+                Chia sẻ bài viết
+              </button>
+              <a href="../index.html"
+                 class="px-6 py-2.5 bg-[#292524] hover:bg-[#44403c] rounded-xl text-sm font-semibold transition-colors">
+                ← Về trang chủ
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#e7e5e4] py-8" style="background:#1c1917; border-color:rgba(255,255,255,0.06);">
+    <div class="max-w-[700px] mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-[#a8a29e]">
       <div>
-        <p class="font-plex leading-relaxed mb-4" style="font-size:1.02rem; color:var(--ink-light);"><em style="color:var(--crimson);">[CHƯA CHẮC]</em> Quách Quỳ là tướng được Tống tin dùng — điều đó cho thấy năng lực nhất định. Nhưng tình huống bất lợi từ trước khi chiến dịch bắt đầu: kho lương Ung Châu đã bị Lý Thường Kiệt phá sạch, đường tiếp tế dài hàng nghìn dặm, khí hậu phương Nam khắc nghiệt với quân Tống.</p>
-        <p class="font-plex leading-relaxed" style="font-size:1.02rem; color:var(--ink-light);">Khó đánh giá năng lực thực sự — như đánh cờ khi đã mất Xe và Pháo từ trước khi ván bắt đầu. Điều kiện tiên quyết bị lấy đi, mọi nước đi đều trở nên vô nghĩa.</p>
+        <p class="font-semibold font-serif" style="color:#b45309;">Lịch sử Việt Nam · Nhân vật 14</p>
+        <p class="text-xs mt-0.5 text-[#57534e]">Phân tích Quách Quỳ — góc nhìn đối lập từ phía nhà Tống</p>
       </div>
-      <div>
-        <div class="pull-q mb-5 py-1">
-          <p class="font-playfair italic" style="font-size:1.1rem; color:var(--ink); line-height:1.4;">"Tướng được tin dùng — nhưng hoàn cảnh bất lợi từ trước khi bắt đầu."</p>
-        </div>
-        <div class="font-mono space-y-0" style="font-size:0.72rem; color:var(--warm);">
-          <div class="flex justify-between items-center rating-row py-2">
-            <span>Được Tống triều tin dùng làm đại tướng</span>
-            <span class="stars"><span class="sf">★★★</span><span class="se">☆☆</span></span>
-          </div>
-          <div class="flex justify-between items-center rating-row py-2">
-            <span>Kho lương bị phá trước khi bắt đầu</span>
-            <span class="stars"><span class="sf">★★★</span><span class="se">☆☆</span></span>
-          </div>
-          <div class="flex justify-between items-center rating-row py-2">
-            <span>Đường tiếp tế dài, khí hậu khắc nghiệt</span>
-            <span class="stars"><span class="sf">★★★</span><span class="se">☆☆</span></span>
-          </div>
-          <div class="flex justify-between items-center py-2">
-            <span>Năng lực thực sự khó đánh giá</span>
-            <span class="stars"><span class="sf">★★★</span><span class="se">☆☆</span></span>
-          </div>
-        </div>
+      <div class="flex items-center gap-2">
+        <a href="../index.html" class="flex items-center gap-1.5 hover:text-[#9b1c1c] transition-colors text-xs">
+          <span class="text-[#9b1c1c]">◈</span>
+          Lịch sử Việt Nam
+        </a>
       </div>
     </div>
-  </div>
+  </footer>
 
-  <!-- §03 3 GỐC · ĐẠO ĐỨC -->
-  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
-    <div class="flex items-baseline gap-3 mb-6">
-      <span class="sec-label">§ 03</span>
-      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">3 Gốc · Đạo Đức</h2>
-      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
-      <span class="stars" style="font-size:1.1rem;"><span class="sf">★★★</span><span class="se">☆☆</span></span>
-    </div>
-    <div class="two-col font-plex leading-relaxed mb-6" style="font-size:1.02rem; color:var(--ink-light);">
-      <p class="drop-cap mb-4"><em style="color:var(--crimson);">[CHƯA CHẮC]</em> Quách Quỳ thực thi lệnh vua — việc xâm lược Đại Việt là quyết định chính trị của triều đình Tống, không hoàn toàn là lựa chọn cá nhân ông.</p>
-      <p class="mb-4">Trong bối cảnh phong kiến, tướng lĩnh không từ chối mệnh vua — đặc biệt khi đây là chiến dịch trả đũa lớn, có áp lực từ Vương An Thạch và triều đình. Đánh giá đạo đức ở đây cần phân biệt rõ giữa <strong style="color:var(--ink);">người ra lệnh</strong> và <strong style="color:var(--ink);">người thực thi</strong>.</p>
-      <p>Không có bằng chứng về hành vi tàn ác hay tư lợi cá nhân trong chiến dịch. Nguồn sử liệu từ phía Đại Việt tất nhiên không thuận lợi cho ông, nhưng cũng không ghi nhận tội ác đặc biệt ngoài bản thân cuộc xâm lược.</p>
-    </div>
-    <div class="pull-q-center mx-auto" style="max-width:60ch;">
-      <p class="font-playfair italic" style="font-size:1.15rem; color:var(--ink); line-height:1.45;">"Việc xâm lược là quyết định chính trị —<br><em style="color:var(--crimson);">ông là người thực thi, không phải người chủ mưu.</em>"</p>
-    </div>
-  </div>
-
-  <!-- §04 3 GỐC · NGHỊ LỰC -->
-  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
-    <div class="flex items-baseline gap-3 mb-6">
-      <span class="sec-label">§ 04</span>
-      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">3 Gốc · Nghị Lực</h2>
-      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
-      <span class="stars" style="font-size:1.1rem;"><span class="sf">★★★</span><span class="se">☆☆</span></span>
-    </div>
-    <div class="grid gap-8" style="grid-template-columns:1fr 1fr;">
-      <div>
-        <p class="font-plex leading-relaxed mb-4" style="font-size:1.02rem; color:var(--ink-light);">Nghị lực thể hiện qua việc duy trì chiến dịch <strong style="color:var(--ink);">nhiều tháng</strong> trong điều kiện cực kỳ khó khăn — kho lương cạn kiệt, đường tiếp tế bị cắt đứt, quân sĩ bệnh tật vì khí hậu phương Nam.</p>
-        <p class="font-plex leading-relaxed" style="font-size:1.02rem; color:var(--ink-light);">Không thiếu kiên trì — nhưng hoàn cảnh không thể thắng được. Đây là dạng nghị lực bi kịch: nỗ lực không thiếu, nhưng điều kiện tiên quyết đã không còn. Rút lui khi thế cờ đã rõ là quyết định đúng đắn, không phải đầu hàng.</p>
-      </div>
-      <div>
-        <div class="pull-q mb-5 py-1">
-          <p class="font-playfair italic" style="font-size:1.1rem; color:var(--ink); line-height:1.4;">"Duy trì nhiều tháng trong hoàn cảnh không thể thắng — rồi rút lui khi đã rõ."</p>
-        </div>
-        <div class="font-mono space-y-0" style="font-size:0.72rem; color:var(--warm);">
-          <div class="flex justify-between items-center rating-row py-2">
-            <span>Duy trì chiến dịch nhiều tháng</span>
-            <span class="stars"><span class="sf">★★★</span><span class="se">☆☆</span></span>
-          </div>
-          <div class="flex justify-between items-center rating-row py-2">
-            <span>Chịu đựng điều kiện khắc nghiệt</span>
-            <span class="stars"><span class="sf">★★★</span><span class="se">☆☆</span></span>
-          </div>
-          <div class="flex justify-between items-center rating-row py-2">
-            <span>Không bỏ cuộc vội vàng</span>
-            <span class="stars"><span class="sf">★★★</span><span class="se">☆☆</span></span>
-          </div>
-          <div class="flex justify-between items-center py-2">
-            <span>Rút lui khi thế cờ đã rõ</span>
-            <span class="stars"><span class="sf">★★★</span><span class="se">☆☆</span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- §05 3 ĐỘC -->
-  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
-    <div class="flex items-baseline gap-3 mb-6">
-      <span class="sec-label">§ 05</span>
-      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">3 Độc · Tham · Sân · Si</h2>
-      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
-    </div>
-    <div class="grid gap-5" style="grid-template-columns:1fr 1fr 1fr;">
-      <div style="border:1px solid var(--rule); border-radius:0.75rem; padding:1.1rem;">
-        <div class="flex items-center justify-between mb-3">
-          <p class="font-mono" style="font-size:0.62rem; letter-spacing:0.18em; color:var(--crimson);">THAM LAM</p>
-          <span class="stars" style="font-size:0.9rem;"><span class="sf">★★</span><span class="se">☆☆☆</span></span>
-        </div>
-        <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Không có bằng chứng về động cơ tư lợi. Thực thi <strong style="color:var(--ink);">nhiệm vụ được giao</strong> — đây là chiến dịch của triều đình, không phải tham vọng cá nhân.</p>
-      </div>
-      <div style="border:1px solid var(--rule); border-radius:0.75rem; padding:1.1rem;">
-        <div class="flex items-center justify-between mb-3">
-          <p class="font-mono" style="font-size:0.62rem; letter-spacing:0.18em; color:var(--crimson);">SÂN GIẬN</p>
-          <span class="stars" style="font-size:0.9rem;"><span class="sf">★</span><span class="se">☆☆☆☆</span></span>
-        </div>
-        <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Không có bằng chứng về quyết định bị chi phối cảm xúc tiêu cực. Không có ghi chép nào cho thấy hành động <strong style="color:var(--ink);">bốc đồng hay trả thù</strong> cá nhân.</p>
-      </div>
-      <div style="border:1px solid var(--rule); border-radius:0.75rem; padding:1.1rem;">
-        <div class="flex items-center justify-between mb-3">
-          <p class="font-mono" style="font-size:0.62rem; letter-spacing:0.18em; color:var(--crimson);">SI MÊ</p>
-          <span class="stars" style="font-size:0.9rem;"><span class="sf">★★★</span><span class="se">☆☆</span></span>
-        </div>
-        <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);"><em style="color:var(--crimson);">[SUY LUẬN]</em> Có thể ông biết rõ tình huống bất lợi mà vẫn phải đi vì <strong style="color:var(--ink);">áp lực triều đình</strong> — không phải si mê mà là bị ép vào thế không thể từ chối.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- §06 ĐÁNH GIÁ & BÀI HỌC -->
-  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
-    <div class="flex items-baseline gap-3 mb-7">
-      <span class="sec-label">§ 06</span>
-      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Đánh Giá & Bài Học</h2>
-      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
-    </div>
-    <div class="profile-badge p-5 mb-8 mx-auto" style="max-width:58ch;">
-      <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--crimson);">PROFILE</p>
-      <p class="font-playfair font-bold" style="font-size:1.25rem; color:var(--ink);">Nhân vật bi kịch</p>
-      <p class="font-plex italic" style="font-size:0.95rem; color:var(--ink-light);">Tướng giỏi, <strong style="color:var(--ink);">nhiệm vụ sai</strong> — thất bại không phải vì kém mà vì ván cờ đã bị phá từ trước</p>
-    </div>
-    <div class="mb-8">
-      <p class="font-mono mb-3" style="font-size:0.62rem; letter-spacing:0.2em; color:var(--crimson);">GỐC NỔI BẬT · NGHỊ LỰC TRONG HOÀN CẢNH KHÔNG THỂ THẮNG</p>
-      <div class="two-col font-plex leading-relaxed" style="font-size:1.02rem; color:var(--ink-light);">
-        <p class="mb-4">Quách Quỳ thua không phải vì kém — mà vì Lý Thường Kiệt đã <strong style="color:var(--ink);">"phá ván cờ"</strong> từ trước khi chiến dịch bắt đầu: phá Ung Châu đồng nghĩa loại bỏ kho lương, điều kiện tiên quyết của toàn bộ chiến dịch.</p>
-        <p>Ông đã duy trì chiến dịch nhiều tháng trong điều kiện cực kỳ bất lợi trước khi chấp nhận thực tế. <strong style="color:var(--ink);">Không thiếu nghị lực — nhưng nghị lực không thể thay thế điều kiện tiên quyết đã mất.</strong></p>
-      </div>
-    </div>
-    <div class="mb-8">
-      <p class="font-mono mb-5" style="font-size:0.62rem; letter-spacing:0.2em; color:var(--crimson);">BÀI HỌC RÚT RA</p>
-      <div class="space-y-6">
-        <div class="flex gap-5 items-start">
-          <div class="lesson-num">
-            <span class="font-playfair font-bold" style="color:var(--crimson); font-size:1.1rem;">1</span>
-          </div>
-          <div>
-            <p class="font-playfair font-bold mb-1" style="font-size:1.1rem; color:var(--ink);">Điều kiện tiên quyết quan trọng hơn năng lực</p>
-            <p class="font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">Giao nhiệm vụ mà không có đủ điều kiện thì tướng giỏi cũng thua. Trước khi nhận việc, hỏi: <em>"Tôi có đủ điều kiện để thành công không?"</em> Nếu không, đó là vấn đề của người giao việc, không phải người nhận việc.</p>
-          </div>
-        </div>
-        <div class="flex gap-5 items-start">
-          <div class="lesson-num">
-            <span class="font-playfair font-bold" style="color:var(--crimson); font-size:1.1rem;">2</span>
-          </div>
-          <div>
-            <p class="font-playfair font-bold mb-1" style="font-size:1.1rem; color:var(--ink);">Đôi khi thất bại không phải lỗi của người thực thi</p>
-            <p class="font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">Mà là lỗi của người ra quyết định từ trên, hoặc của hoàn cảnh đã được định hình trước. Biết phân biệt <strong style="color:var(--ink);">"thất bại do năng lực"</strong> vs <strong style="color:var(--ink);">"thất bại do hoàn cảnh"</strong> — để đánh giá đúng bản thân và người khác.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="border:1px solid var(--gold); background:rgba(176,124,40,0.06); border-radius:0.75rem; padding:1.1rem 1.4rem;">
-      <p class="font-mono mb-2" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--gold);">CÂU HỎI TƯ DUY</p>
-      <p class="font-plex leading-relaxed" style="font-size:0.95rem; color:var(--ink-light);">Nếu Lý Thường Kiệt không phá Ung Châu trước, liệu Quách Quỳ có thắng không? → Có thể. Nếu kho lương còn nguyên, đại quân có đủ hậu cần duy trì vây hãm lâu dài. Đây chính là lý do Lý Thường Kiệt tấn công Ung Châu trước — ông hiểu <strong style="color:var(--ink);">trận Như Nguyệt được quyết định TRƯỚC khi nó bắt đầu</strong>.</p>
-    </div>
-  </div>
-
-  <!-- §07 LIÊN KẾT NHÂN VẬT -->
-  <div class="px-10 py-9">
-    <div class="flex items-baseline gap-3 mb-6">
-      <span class="sec-label">§ 07</span>
-      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Liên Kết Nhân Vật</h2>
-      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
-    </div>
-    <div class="grid gap-4" style="grid-template-columns:1fr 1fr 1fr;">
-      <div class="link-card p-5">
-        <div class="flex items-start gap-4">
-          <div class="tl-dot" style="margin-top:4px;"></div>
-          <div>
-            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">ĐỐI THỦ TRỰC TIẾP</p>
-            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">Lý Thường Kiệt</p>
-            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Người phá ván cờ từ trước — tấn công Ung Châu để loại kho lương, quyết định trận Như Nguyệt trước khi nó bắt đầu.</p>
-          </div>
-        </div>
-      </div>
-      <div class="link-card p-5">
-        <div class="flex items-start gap-4">
-          <div class="tl-dot" style="margin-top:4px;"></div>
-          <div>
-            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">ÁP LỰC CHÍNH TRỊ</p>
-            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">Vương An Thạch</p>
-            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Người tạo ra áp lực chính trị khiến chiến dịch xảy ra — quyết định ở triều đình Tống, không phải ở chiến trường.</p>
-          </div>
-        </div>
-      </div>
-      <div class="link-card p-5">
-        <div class="flex items-start gap-4">
-          <div class="tl-dot" style="margin-top:4px;"></div>
-          <div>
-            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">ĐỒNG CHỈ HUY</p>
-            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">Triệu Tiết</p>
-            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Đồng chỉ huy trong chiến dịch xâm lược Đại Việt 1076 — cùng chịu thất bại tại phòng tuyến sông Như Nguyệt.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="text-center mt-10 mb-2">
-      <p class="ornament" style="font-size:1.2rem;">✦ ✦ ✦</p>
-      <p class="font-mono mt-3" style="font-size:0.58rem; letter-spacing:0.25em; color:var(--warm);">QUÁCH QUỲ · ?–? · NHÀ TỐNG · NHÂN VẬT BI KỊCH</p>
-    </div>
-  </div>
-
-</div>
 </body>
 </html>
