@@ -1,5 +1,5 @@
 # Concept Map: Lịch sử Việt Nam
-Cập nhật: 2026-05-21 | Tổng: **14 concepts, 26 connections** | Nhân vật: 13 figures
+Cập nhật: 2026-05-27 | Tổng: **14 concepts, 26 connections** | Nhân vật: 15 figures
 
 ---
 
@@ -195,6 +195,7 @@ Cập nhật: 2026-05-21 | Tổng: **14 concepts, 26 connections** | Nhân vật
 | Thiền Sư Vạn Hạnh | Cuối TK X | Đạo diễn chuyển giao quyền lực sang nhà Lý | thien-su-van-hanh.html |
 | Lê Long Đĩnh | 1005 SCN | Bạo chúa tự hủy vương triều | le-long-dinh.html |
 | Lý Công Uẩn | 1009 SCN | Khai quốc nhà Lý — dời đô Thăng Long | ly-cong-uan.html |
+| Lý Thái Tông | 1028 SCN | Vua thứ 2 nhà Lý — Hình thư & Hội thề Đồng Cổ | ly-thai-tong.html |
 | Lý Thánh Tông | 1054 SCN | Anh hùng thực dụng — đổi tên Đại Việt, dựng Văn Miếu | ly-thanh-tong.html |
 | Hoàng Hậu Ỷ Lan | 1069 SCN | Nhiếp chính hậu phương — anh hùng có bóng tối | hoang-hau-y-lan.html |
 | Quách Quỳ | 1076 SCN | Tướng Tống — đối thủ tại phòng tuyến Như Nguyệt | quach-quy.html |
