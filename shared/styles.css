@@ -258,3 +258,50 @@ h3.sub-title {
     align-items: flex-start;
   }
 }
+
+/* ── Thiết kế tối giản và gọn gàng cho Thẻ (Compact Premium Cards) ── */
+/* Thu hẹp khoảng đệm p-6 (24px) mặc định xuống kích thước tinh tế hơn */
+a.card-hover > div.p-6,
+a.card-hover > div[class*="p-6"] {
+  padding: 1.15rem 1.25rem 1.15rem 1.25rem !important;
+}
+
+/* Thu mảnh dải màu trang trí phía trên đầu thẻ (h-2 = 8px) xuống còn 4px */
+a.card-hover > div.h-2,
+a.card-hover > div[class*="h-2"] {
+  height: 4px !important;
+}
+
+/* Giảm kích thước tiêu đề từ text-xl (20px) xuống 1.1rem (17.6px) giúp tăng mật độ thông tin */
+a.card-hover h3.font-serif {
+  font-size: 1.1rem !important;
+  line-height: 1.4 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+/* Thu nhỏ mô tả/hook in nghiêng và giảm khoảng cách lề dưới */
+a.card-hover p.text-sm.italic {
+  font-size: 0.8rem !important;
+  line-height: 1.5 !important;
+  margin-bottom: 0.6rem !important;
+}
+
+/* Thu nhỏ kích cỡ của các huy hiệu/nhãn (pills/tags) bên trong thẻ */
+a.card-hover .pill,
+a.card-hover .tag {
+  font-size: 0.65rem !important;
+  padding: 0.15rem 0.5rem !important;
+}
+
+/* Giảm lề dưới của khu vực nhóm huy hiệu và khu vực đánh giá sao */
+a.card-hover div.mb-4,
+a.card-hover div.flex-wrap {
+  margin-bottom: 0.6rem !important;
+}
+
+/* Thêm đường kẻ chia mảnh tinh tế (border-t) ở chân thẻ trước nút hành động */
+a.card-hover div.flex.items-center.justify-between:last-child {
+  border-top: 1px solid #f5f4f1;
+  padding-top: 0.65rem;
+  margin-top: 0.35rem;
+}
