@@ -1,60 +1,50 @@
 {
-  "updated_at": "2026-05-23T21:40:00+07:00",
+  "updated_at": "2026-05-27T11:45:00+07:00",
   "working_on": {
-    "feature": "Tích hợp 5 Bài học và 3 Nhân vật mới (Sạch 100% Bớt Tối)",
-    "task": "Tích hợp 8 trang nội dung lịch sử mới từ đĩa D, dọn sạch Bớt Tối, cập nhật trang chủ và đồng bộ tri thức",
+    "feature": "Đồng bộ hóa 3 Nhân vật mới vào Bản đồ Khái niệm (Concept Map)",
+    "task": "Tích hợp và đồng bộ hóa các nhân vật Lý Thánh Tông, Hoàng Hậu Ỷ Lan và Quách Quỳ vào ban-do.html, concept-map.md và master-concept-map.md theo quy chuẩn của dự án",
     "status": "completed",
     "files": [
-      "bai-hoc/nha-nuoc-au-lac.html",
-      "bai-hoc/1000-nam-bac-thuoc.html",
-      "bai-hoc/ngo-quyen.html",
-      "bai-hoc/loan-12-su-quan.html",
-      "bai-hoc/nha-tien-le.html",
-      "nhan-vat/le-long-dinh.html",
-      "nhan-vat/thien-su-van-hanh.html",
-      "nhan-vat/ly-cong-uan.html",
-      "index.html",
-      ".brain/brain.json",
+      "ban-do.html",
+      "concept-map.md",
+      "docs/master-concept-map.md",
       ".brain/session.json"
     ],
     "blockers": [],
-    "notes": "Đã tích hợp hoàn thiện 5 bài học và 3 nhân vật mới, phân tích sâu sắc theo hệ 3 Gốc/3 Độc và dọn sạch 100% từ khóa Bớt Tối."
+    "notes": "Đã đồng bộ hóa 100% các nhân vật mới vào Bản đồ khái niệm tương tác và tài liệu phác thảo, hoàn thành toàn bộ workflow kỹ thuật."
   },
   "pending_tasks": [
     {
-      "task": "Đẩy mã nguồn lên GitHub Repository",
+      "task": "Đẩy mã nguồn đã đồng bộ bản đồ lên GitHub",
       "priority": "high",
-      "notes": "Đẩy toàn bộ thay đổi lên nhánh main"
+      "notes": "Đẩy toàn bộ thay đổi lên nhánh main để hoàn tất"
     }
   ],
   "recent_changes": [
     {
-      "timestamp": "2026-05-23T21:40:00+07:00",
+      "timestamp": "2026-05-27T11:45:00+07:00",
       "type": "feature",
-      "description": "Tích hợp 5 bài học và 3 nhân vật lịch sử mới, loại bỏ hoàn toàn Bớt Tối, đồng bộ index.html và cơ sở tri thức",
+      "description": "Đồng bộ hóa 3 nhân vật Lý Thánh Tông, Hoàng Hậu Ỷ Lan, Quách Quỳ vào cơ sở dữ liệu ban-do.html, cập nhật các quy luật lịch sử pt2, pt5 và tài liệu concept-map.md, master-concept-map.md",
       "files": [
-        "bai-hoc/nha-nuoc-au-lac.html",
-        "bai-hoc/1000-nam-bac-thuoc.html",
-        "bai-hoc/ngo-quyen.html",
-        "bai-hoc/loan-12-su-quan.html",
-        "bai-hoc/nha-tien-le.html",
-        "nhan-vat/le-long-dinh.html",
-        "nhan-vat/thien-su-van-hanh.html",
-        "nhan-vat/ly-cong-uan.html",
-        "index.html",
-        ".brain/brain.json"
+        "ban-do.html",
+        "concept-map.md",
+        "docs/master-concept-map.md"
       ]
     }
   ],
   "errors_encountered": [],
   "decisions_made": [
     {
-      "decision": "Đưa 3 nhân vật mới vào trang chủ theo trật tự thời gian sau Lê Hoàn",
-      "reason": "Thiền Sư Vạn Hạnh, Lê Long Đĩnh và Lý Công Uẩn đại diện cho giai đoạn giao thời Tiền Lê - Lý và kiến thiết nhà Lý"
+      "decision": "Liên kết Lý Thánh Tông, Hoàng Hậu Ỷ Lan, Quách Quỳ vào triều đại Nhà Lý (node ly)",
+      "reason": "Các nhân vật này đều thuộc thời đại Lý thịnh trị và chiến tranh kháng Tống"
     },
     {
-      "decision": "Hoàn thiện 100% phần nội dung khuyết ở cuối file lý công uẩn.html của người dùng",
-      "reason": "Đảm bảo trang nhân vật có chất lượng nội dung và thẩm mỹ cao nhất"
+      "decision": "Bổ sung Hoàng Hậu Ỷ Lan vào Quy luật 2 (Tránh khoảng trống quyền lực)",
+      "reason": "Bà là ví dụ xuất sắc về việc nhiếp chính vững vàng, giải quyết khoảng trống khi vua Lý Thánh Tông ra trận và khi vua băng hà lúc Nhân Tông còn nhỏ"
+    },
+    {
+      "decision": "Bổ sung Lý Thánh Tông và Hoàng Hậu Ỷ Lan vào Quy luật 5 (Chuyển từ Uy vũ sang Thể chế)",
+      "reason": "Lý Thánh Tông thiết lập Văn Miếu (1070) và ban Hình Thư (1042), là cột mốc thể chế hóa tối cao"
     }
   ]
 }

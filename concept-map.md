@@ -178,19 +178,26 @@ Cập nhật: 2026-05-21 | Tổng: **14 concepts, 26 connections** | Nhân vật
 
 | Nhân vật | Giai đoạn | Vai trò | File |
 |----------|-----------|---------|------|
-| Hai Bà Trưng | 40 SCN | Khởi nghĩa đầu tiên lớn | hai-ba-trung.md |
-| Ma Viên | 43 SCN | Tướng Hán tái chiếm — "kẻ thù đáng kính" | ma-vien.md |
-| Triệu Thị Trinh | 248 SCN | "Muốn cưỡi cơn gió mạnh..." | trieu-thi-trinh.md |
-| Lý Bí | 544 SCN | Lập Vạn Xuân — nhà nước độc lập 6 năm | ly-bi.md |
-| Triệu Quang Phục | 548 SCN | Giữ đầm Dạ Trạch — chiến tranh du kích | trieu-quang-phuc.md |
-| Mai Thúc Loan | 722 SCN | Xưng đế — liên minh Champa, Chân Lạp | mai-thuc-loan.md |
-| Phùng Hưng | 791 SCN | Bố Cái Đại Vương — giải phóng Tống Bình | phung-hung.md |
-| Khúc Thừa Dụ | 905 SCN | Tự chủ không đổ máu — thực dụng nhất | khuc-thua-du.md |
-| Dương Đình Nghệ | 931 SCN | Đánh đuổi Nam Hán — bị Kiều Công Tiễn phản | duong-dinh-nghe.md |
-| Kiều Công Tiễn | 937 SCN | Phản chủ — cầu cứu Nam Hán → bị Ngô Quyền diệt | kieu-cong-tien.md |
-| Ngô Quyền | 938 SCN | Bạch Đằng → độc lập vĩnh viễn | ngo-quyen.md |
-| Đinh Bộ Lĩnh | 968 SCN | Dẹp 12 sứ quân, lập Đại Cồ Việt | dinh-bo-linh.md |
-| Dương Vân Nga | 979 SCN | Trao áo long bào → cứu độc lập | duong-van-nga.md |
+| Hai Bà Trưng | 40 SCN | Khởi nghĩa đầu tiên lớn | hai-ba-trung.html |
+| Ma Viên | 43 SCN | Tướng Hán tái chiếm — "kẻ thù đáng kính" | ma-vien.html |
+| Triệu Thị Trinh | 248 SCN | "Muốn cưỡi cơn gió mạnh..." | trieu-thi-trinh.html |
+| Lý Bí | 544 SCN | Lập Vạn Xuân — nhà nước độc lập 6 năm | ly-bi.html |
+| Triệu Quang Phục | 548 SCN | Giữ đầm Dạ Trạch — chiến tranh du kích | trieu-quang-phuc.html |
+| Mai Thúc Loan | 722 SCN | Xưng đế — liên minh Champa, Chân Lạp | mai-thuc-loan.html |
+| Phùng Hưng | 791 SCN | Bố Cái Đại Vương — giải phóng Tống Bình | phung-hung.html |
+| Khúc Thừa Dụ | 905 SCN | Tự chủ không đổ máu — thực dụng nhất | khuc-thua-du.html |
+| Dương Đình Nghệ | 931 SCN | Đánh đuổi Nam Hán — bị Kiều Công Tiễn phản | duong-dinh-nghe.html |
+| Kiều Công Tiễn | 937 SCN | Phản chủ — cầu cứu Nam Hán → bị Ngô Quyền diệt | kieu-cong-tien.html |
+| Ngô Quyền | 938 SCN | Bạch Đằng → độc lập vĩnh viễn | ngo-quyen.html |
+| Đinh Bộ Lĩnh | 968 SCN | Dẹp 12 sứ quân, lập Đại Cồ Việt | dinh-bo-linh.html |
+| Dương Vân Nga | 979 SCN | Trao áo long bào → cứu độc lập | duong-van-nga.html |
+| Lê Hoàn | 980 SCN | Vua chiến binh lập nhà Tiền Lê | le-hoan.html |
+| Thiền Sư Vạn Hạnh | Cuối TK X | Đạo diễn chuyển giao quyền lực sang nhà Lý | thien-su-van-hanh.html |
+| Lê Long Đĩnh | 1005 SCN | Bạo chúa tự hủy vương triều | le-long-dinh.html |
+| Lý Công Uẩn | 1009 SCN | Khai quốc nhà Lý — dời đô Thăng Long | ly-cong-uan.html |
+| Lý Thánh Tông | 1054 SCN | Anh hùng thực dụng — đổi tên Đại Việt, dựng Văn Miếu | ly-thanh-tong.html |
+| Hoàng Hậu Ỷ Lan | 1069 SCN | Nhiếp chính hậu phương — anh hùng có bóng tối | hoang-hau-y-lan.html |
+| Quách Quỳ | 1076 SCN | Tướng Tống — đối thủ tại phòng tuyến Như Nguyệt | quach-quy.html |
 
 ---
 

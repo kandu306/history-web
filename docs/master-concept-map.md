@@ -88,8 +88,8 @@ graph TD
 * **Bài học lịch sử:**
   * Chuyển đổi phương thức cai trị từ "Uy vũ cá nhân" (Đinh - Lê) sang "Thể chế hóa" bằng luật pháp văn bản (Hình thư) và giáo dục quy trình (Văn Miếu).
   * Phòng thủ là nhất thời (Hoa Lư hiểm trở), phát triển cởi mở mới là vĩnh viễn (Thăng Long đồng bằng).
-* **Nhân vật biểu tượng:** Thiền Sư Vạn Hạnh, Lý Công Uẩn, Lý Thường Kiệt, Trần Hưng Đạo, Hồ Quý Ly.
-* **Trạng thái:** `🟡 Đang xây dựng` (Đã xong Lý Công Uẩn, Thiền Sư Vạn Hạnh).
+* **Nhân vật biểu tượng:** Thiền Sư Vạn Hạnh, Lý Công Uẩn, Lý Thánh Tông, Hoàng Hậu Ỷ Lan, Quách Quỳ (Nhà Tống), Lý Thường Kiệt, Trần Hưng Đạo, Hồ Quý Ly.
+* **Trạng thái:** `🟡 Đang xây dựng` (Đã xong Lý Công Uẩn, Thiền Sư Vạn Hạnh, Lý Thánh Tông, Hoàng Hậu Ỷ Lan, Quách Quỳ).
 
 ### Giai đoạn V: Thuộc Minh & Thời Lê Sơ (1407 – 1527 SCN)
 * **Bối cảnh cốt lõi:** Giặc Minh đô hộ tàn khốc, cuộc khởi nghĩa Lam Sơn kéo dài 10 năm gian khổ giành độc lập, mở ra triều đại Lê Sơ cực thịnh.
