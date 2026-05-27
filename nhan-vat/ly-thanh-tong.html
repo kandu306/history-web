@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lý Thánh Tông — Nhân Vật Lịch Sử Nhà Lý</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700;1,900&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'playfair': ['"Playfair Display"', 'Georgia', 'serif'],
+            'plex': ['"IBM Plex Serif"', 'Georgia', 'serif'],
+            'mono': ['"JetBrains Mono"', 'monospace'],
+            'noto': ['"Noto Sans SC"', 'sans-serif'],
+          },
+          colors: {
+            'cream': '#f4eed8',
+            'cream-dark': '#ede5c8',
+            'ink': '#1c1409',
+            'ink-mid': '#2e2010',
+            'ink-light': '#4a3520',
+            'crimson': '#921c1c',
+            'crimson-light': '#b83232',
+            'gold': '#b07c28',
+            'gold-light': '#d4a042',
+            'warm': '#7a6040',
+            'rule': '#c4aa84',
+            'rule-light': '#ddd0b8',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --cream: #f4eed8;
+      --ink: #1c1409;
+      --crimson: #921c1c;
+      --gold: #b07c28;
+      --rule: #c4aa84;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      background-color: #e8dfc0;
+      background-image:
+        radial-gradient(circle, rgba(160,130,80,0.35) 0.6px, transparent 0.6px);
+      background-size: 18px 18px;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    .paper {
+      background-color: var(--cream);
+      position: relative;
+    }
+    .paper::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle, rgba(180,150,90,0.12) 0.8px, transparent 0.8px);
+      background-size: 22px 22px;
+      pointer-events: none;
+    }
+
+    /* Decorative horizontal rules */
+    .triple-rule {
+      border-top: 3px solid var(--ink);
+      position: relative;
+      margin-bottom: 2px;
+    }
+    .triple-rule::after {
+      content: '';
+      display: block;
+      border-top: 1px solid var(--ink);
+      margin-top: 3px;
+    }
+
+    .single-rule { border-top: 1px solid var(--rule); }
+    .double-rule {
+      border-top: 2px solid var(--ink);
+      position: relative;
+    }
+    .double-rule::after {
+      content: '';
+      display: block;
+      border-top: 1px solid var(--ink);
+      margin-top: 2px;
+    }
+
+    /* Drop cap */
+    .drop-cap::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 4.6em;
+      font-weight: 900;
+      line-height: 0.78;
+      float: left;
+      margin-right: 0.06em;
+      margin-top: 0.04em;
+      color: var(--crimson);
+    }
+
+    /* Strike-through accent */
+    .strikeword {
+      position: relative;
+      display: inline-block;
+    }
+    .strikeword::after {
+      content: '';
+      position: absolute;
+      left: -3px; right: -3px;
+      top: 50%;
+      height: 5px;
+      background: var(--crimson);
+      transform: translateY(-50%) rotate(-1.5deg);
+    }
+
+    /* Two-column newspaper */
+    .two-col {
+      column-count: 2;
+      column-gap: 2.2rem;
+      column-rule: 1px solid var(--rule);
+    }
+    @media (max-width: 640px) { .two-col { column-count: 1; } }
+
+    /* Pull quote */
+    .pull-q {
+      border-left: 4px solid var(--crimson);
+      padding-left: 1.1rem;
+    }
+    .pull-q-center {
+      border-top: 2px solid var(--crimson);
+      border-bottom: 2px solid var(--crimson);
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    /* Section label */
+    .sec-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--crimson);
+      font-weight: 600;
+    }
+
+    /* Star ratings */
+    .stars { letter-spacing: 0.06em; }
+    .sf { color: var(--gold); }
+    .se { color: var(--rule); }
+
+    /* Timeline node */
+    .tl-dot {
+      width: 8px; height: 8px;
+      background: var(--crimson);
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+
+    /* Ornament */
+    .ornament { letter-spacing: 0.6em; color: var(--gold); }
+
+    /* Animations */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in { animation: fadeUp 0.7s ease-out both; }
+    .fade-in-2 { animation: fadeUp 0.7s ease-out 0.15s both; }
+    .fade-in-3 { animation: fadeUp 0.7s ease-out 0.3s both; }
+
+    /* Inverted box */
+    .ink-box {
+      background-color: var(--ink);
+      color: var(--cream);
+    }
+    .ink-box .muted { color: #a89060; }
+    .ink-box .bright { color: var(--cream); }
+
+    /* Profile badge */
+    .profile-badge {
+      border: 2px solid var(--crimson);
+      border-radius: 0.75rem;
+    }
+
+    /* Link cards */
+    .link-card {
+      border: 1px solid var(--rule);
+      border-radius: 0.75rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .link-card:hover {
+      border-color: var(--crimson);
+      box-shadow: 0 2px 12px rgba(146,28,28,0.1);
+    }
+
+    /* Lesson number circle */
+    .lesson-num {
+      width: 2.8rem; height: 2.8rem;
+      border: 2px solid var(--crimson);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* Rating bar */
+    .rating-row { border-bottom: 1px solid var(--rule-light); }
+
+    /* Scrollbar minimal */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #e8dfc0; }
+    ::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 3px; }
+
+    p { orphans: 2; widows: 2; }
+  </style>
+</head>
+<body>
+
+<div class="paper max-w-4xl mx-auto shadow-2xl fade-in" style="border: 1px solid #b8a070; border-radius: 2px; overflow: hidden;">
+
+  <!-- ═══════════════════════════════════════ DATELINE ═══ -->
+  <div style="border-bottom: 1px solid var(--ink);" class="px-10 pt-7 pb-3 flex items-center justify-between gap-4 flex-wrap">
+    <span class="font-mono text-xs tracking-widest text-warm uppercase" style="font-size:0.6rem; letter-spacing:0.2em;">
+      Nhân Vật Lịch Sử Việt Nam · Phân Tích Chuyên Sâu
+    </span>
+    <div class="text-center">
+      <span class="sec-label" style="font-size:0.62rem;">★ Nhà Lý — Vua Thứ 3 / Series Lịch Sử ★</span>
+    </div>
+    <!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lý Thánh Tông — Nhân Vật Lịch Sử Nhà Lý</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700;1,900&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'playfair': ['"Playfair Display"', 'Georgia', 'serif'],
+            'plex': ['"IBM Plex Serif"', 'Georgia', 'serif'],
+            'mono': ['"JetBrains Mono"', 'monospace'],
+            'noto': ['"Noto Sans SC"', 'sans-serif'],
+          },
+          colors: {
+            'cream': '#f4eed8','cream-dark': '#ede5c8','ink': '#1c1409','ink-mid': '#2e2010','ink-light': '#4a3520',
+            'crimson': '#921c1c','crimson-light': '#b83232','gold': '#b07c28','gold-light': '#d4a042',
+            'warm': '#7a6040','rule': '#c4aa84','rule-light': '#ddd0b8',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { --cream:#f4eed8; --ink:#1c1409; --crimson:#921c1c; --gold:#b07c28; --rule:#c4aa84; }
+    * { box-sizing: border-box; }
+    body { background-color:#e8dfc0; background-image:radial-gradient(circle,rgba(160,130,80,0.35) 0.6px,transparent 0.6px); background-size:18px 18px; min-height:100vh; padding:2rem 1rem; }
+    .paper { background-color:var(--cream); position:relative; }
+    .paper::before { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(180,150,90,0.12) 0.8px,transparent 0.8px); background-size:22px 22px; pointer-events:none; }
+    .triple-rule { border-top:3px solid var(--ink); position:relative; margin-bottom:2px; }
+    .triple-rule::after { content:''; display:block; border-top:1px solid var(--ink); margin-top:3px; }
+    .single-rule { border-top:1px solid var(--rule); }
+    .double-rule { border-top:2px solid var(--ink); position:relative; }
+    .double-rule::after { content:''; display:block; border-top:1px solid var(--ink); margin-top:2px; }
+    .drop-cap::first-letter { font-family:'Playfair Display',serif; font-size:4.6em; font-weight:900; line-height:0.78; float:left; margin-right:0.06em; margin-top:0.04em; color:var(--crimson); }
+    .strikeword { position:relative; display:inline-block; }
+    .strikeword::after { content:''; position:absolute; left:-3px; right:-3px; top:50%; height:5px; background:var(--crimson); transform:translateY(-50%) rotate(-1.5deg); }
+    .two-col { column-count:2; column-gap:2.2rem; column-rule:1px solid var(--rule); }
+    @media (max-width:640px) { .two-col { column-count:1; } }
+    .pull-q { border-left:4px solid var(--crimson); padding-left:1.1rem; }
+    .pull-q-center { border-top:2px solid var(--crimson); border-bottom:2px solid var(--crimson); padding:1rem 0; text-align:center; }
+    .sec-label { font-family:'JetBrains Mono',monospace; font-size:0.6rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--crimson); font-weight:600; }
+    .stars { letter-spacing:0.06em; }
+    .sf { color:var(--gold); }
+    .se { color:var(--rule); }
+    .tl-dot { width:8px; height:8px; background:var(--crimson); border-radius:50%; flex-shrink:0; margin-top:6px; }
+    .ornament { letter-spacing:0.6em; color:var(--gold); }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+    .fade-in { animation:fadeUp 0.7s ease-out both; }
+    .fade-in-2 { animation:fadeUp 0.7s ease-out 0.15s both; }
+    .fade-in-3 { animation:fadeUp 0.7s ease-out 0.3s both; }
+    .ink-box { background-color:var(--ink); color:var(--cream); }
+    .ink-box .muted { color:#a89060; }
+    .ink-box .bright { color:var(--cream); }
+    .profile-badge { border:2px solid var(--crimson); border-radius:0.75rem; }
+    .link-card { border:1px solid var(--rule); border-radius:0.75rem; transition:border-color 0.2s,box-shadow 0.2s; }
+    .link-card:hover { border-color:var(--crimson); box-shadow:0 2px 12px rgba(146,28,28,0.1); }
+    .lesson-num { width:2.8rem; height:2.8rem; border:2px solid var(--crimson); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .rating-row { border-bottom:1px solid var(--rule-light); }
+    ::-webkit-scrollbar { width:6px; }
+    ::-webkit-scrollbar-track { background:#e8dfc0; }
+    ::-webkit-scrollbar-thumb { background:var(--rule); border-radius:3px; }
+    p { orphans:2; widows:2; }
+  </style>
+</head>
+<body>
+
+<div class="paper max-w-4xl mx-auto shadow-2xl fade-in" style="border:1px solid #b8a070; border-radius:2px; overflow:hidden;">
+
+  <!-- DATELINE -->
+  <div style="border-bottom:1px solid var(--ink);" class="px-10 pt-7 pb-3 flex items-center justify-between gap-4 flex-wrap">
+    <span class="font-mono text-xs tracking-widest text-warm uppercase" style="font-size:0.6rem; letter-spacing:0.2em;">Nhân Vật Lịch Sử Việt Nam · Phân Tích Chuyên Sâu</span>
+    <div class="text-center">
+      <span class="sec-label" style="font-size:0.62rem;">★ Nhà Lý — Vua Thứ 3 / Series Lịch Sử ★</span>
+    </div>
+    <span class="font-mono text-xs tracking-widest text-warm uppercase" style="font-size:0.6rem; letter-spacing:0.2em;">1054–1072 SCN · Lý Thánh Tông</span>
+  </div>
+
+  <!-- MASTHEAD BAR -->
+  <div class="px-10 pt-3 pb-2">
+    <div class="triple-rule"></div>
+    <p class="font-mono text-center py-1" style="font-size:0.55rem; letter-spacing:0.35em; color:var(--warm);">ANH HÙNG THỰC DỤNG · ĐẠI VIỆT · VĂN MIẾU · 1054–1072 SCN</p>
+    <div class="single-rule"></div>
+  </div>
+
+  <!-- HEADLINE -->
+  <div class="px-10 pt-6 pb-8 text-center" style="border-bottom:2px solid var(--ink);">
+    <p class="font-playfair italic mb-1" style="font-size:0.9rem; letter-spacing:0.08em; color:var(--crimson);">Anh Hùng Thực Dụng · Vua Thứ 3 Nhà Lý · 1023–1072</p>
+    <h1 class="font-playfair leading-none" style="font-size:clamp(2.8rem,7vw,4.8rem); font-weight:900; color:var(--ink); letter-spacing:-0.015em;">LÝ THÁNH TÔNG</h1>
+    <h1 class="font-playfair leading-none mb-5" style="font-size:clamp(4rem,12vw,8rem); font-weight:900; color:var(--ink); letter-spacing:-0.025em; font-style:italic; margin-top:-0.05em;">1054–1072</h1>
+    <div class="flex items-center gap-5 mb-6 px-4">
+      <div class="flex-1" style="border-top:2px solid var(--ink);"></div>
+      <p class="font-playfair text-lg italic" style="color:var(--ink-mid); white-space:nowrap;"><em style="color:var(--crimson);">Thực Dụng</em> — Không Phải Thiên Tài Nhưng Làm Đúng Cái Cần Làm</p>
+      <div class="flex-1" style="border-top:2px solid var(--ink);"></div>
+    </div>
+    <p class="font-plex mx-auto leading-relaxed" style="max-width:58ch; font-size:1.05rem; color:var(--ink-light); font-style:italic;">Con trai Lý Thái Tổ, vua thứ 3 của Nhà Lý. Trong 18 năm trị vì: đổi tên nước thành Đại Việt, thân chinh đánh Chiêm Thành, xây Văn Miếu — mỗi quyết định điền đúng một lỗ hổng mà đất nước đang thiếu.</p>
+  </div>
+
+  <!-- §01 TIỂU SỬ NHANH -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
+    <div class="flex items-baseline gap-3 mb-5">
+      <span class="sec-label">§ 01</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink); letter-spacing:-0.01em;">Tiểu Sử Nhanh</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div class="two-col font-plex leading-relaxed mb-6" style="font-size:1.02rem; color:var(--ink-light);">
+      <p class="drop-cap mb-4">Con trai Lý Thái Tổ, kế thừa vương triều non trẻ vừa mới đặt móng. Lý Thánh Tông trị vì 18 năm (1054–1072) và không phí một năm nào trong số đó.</p>
+      <p class="mb-4">Năm <strong style="color:var(--ink);">1054</strong>: đổi tên nước thành <strong style="color:var(--ink);">Đại Việt</strong> — xác lập danh phận, thoát bóng "Giao Chỉ" của Trung Hoa. Năm <strong style="color:var(--ink);">1069</strong>: thân chinh đánh Chiêm Thành, lấy về <strong style="color:var(--ink);">3 châu</strong> vùng Quảng Bình–Quảng Trị, bảo đảm an ninh biên giới phía Nam.</p>
+      <p class="mb-4">Năm <strong style="color:var(--ink);">1070</strong>: xây <strong style="color:var(--ink);">Văn Miếu</strong> — đặt nền cho hệ thống đào tạo nhân tài, tiền đề mở khoa thi đầu tiên dưới triều Lý Nhân Tông (1075).</p>
+      <p>Mất năm <strong style="color:var(--ink);">1072</strong> khi đất nước đang ở thời thịnh. Ba hành động lớn trong 18 năm — đủ để khắc tên vào lịch sử.</p>
+    </div>
+    <div style="border:1px solid var(--crimson); background:rgba(146,28,28,0.04); border-radius:0.75rem; padding:1.1rem 1.4rem; margin-bottom:1.5rem;">
+      <p class="font-mono mb-2" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--crimson);">KHOẢNH KHẮC NỔI BẬT</p>
+      <p class="font-plex leading-relaxed" style="font-size:0.95rem; color:var(--ink-light);">Giữa chiến dịch Chiêm Thành, ông tính rút quân về. Rồi tin đến: hoàng hậu <strong style="color:var(--ink);">Ỷ Lan</strong> đang cai quản triều đình tài giỏi hơn cả ông. Lý Thánh Tông lập tức quay đầu quân, dứt điểm chiến dịch. Biết <strong style="color:var(--ink);">nhận tín hiệu và điều chỉnh</strong> khi bản thân đang mắc kẹt.</p>
+    </div>
+    <div class="pull-q-center mx-auto" style="max-width:60ch;">
+      <p class="font-playfair italic" style="font-size:1.22rem; color:var(--ink); line-height:1.45;">"Làm ít, làm đúng —<br><em style="color:var(--crimson);">ba quyết định</em> trong 18 năm, đủ rồi."</p>
+    </div>
+  </div>
+
+  <!-- §02 3 GỐC · TRÍ TUỆ -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 02</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">3 Gốc · Trí Tuệ</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+      <span class="stars" style="font-size:1.1rem;"><span class="sf">★★★★</span><span class="se">☆</span></span>
+    </div>
+    <div class="grid gap-8" style="grid-template-columns:1fr 1fr;">
+      <div>
+        <p class="font-plex leading-relaxed mb-4" style="font-size:1.02rem; color:var(--ink-light);">Trí tuệ của Lý Thánh Tông là loại <em>trí tuệ thực dụng</em> — không phải thiên tài quân sự hay nhà tư tưởng lớn, nhưng biết chính xác đất nước đang thiếu gì và điền đúng vào từng chỗ trống đó.</p>
+        <p class="font-plex leading-relaxed" style="font-size:1.02rem; color:var(--ink-light);">Ba quyết định chiến lược trong 18 năm: <strong style="color:var(--ink);">đổi tên nước</strong> (danh phận), <strong style="color:var(--ink);">chinh Chiêm Thành</strong> (an ninh), <strong style="color:var(--ink);">xây Văn Miếu</strong> (nhân lực). Mỗi quyết định nhắm đúng vấn đề cốt lõi. Điểm trừ: chiến dịch Chiêm ban đầu sa lầy, nhưng ông biết điều chỉnh.</p>
+      </div>
+      <div>
+        <div class="pull-q mb-5 py-1">
+          <p class="font-playfair italic" style="font-size:1.1rem; color:var(--ink); line-height:1.4;">"Biết đất nước thiếu gì — và điền đúng vào từng chỗ trống."</p>
+        </div>
+        <div class="font-mono space-y-0" style="font-size:0.72rem; color:var(--warm);">
+          <div class="flex justify-between items-center rating-row py-2">
+            <span>Đổi tên nước Đại Việt (1054)</span>
+            <span class="stars"><span class="sf">★★★★</span><span class="se">☆</span></span>
+          </div>
+          <div class="flex justify-between items-center rating-row py-2">
+            <span>Chinh phạt Chiêm Thành (an ninh)</span>
+            <span class="stars"><span class="sf">★★★★</span><span class="se">☆</span></span>
+          </div>
+          <div class="flex justify-between items-center rating-row py-2">
+            <span>Xây Văn Miếu — nền nhân lực</span>
+            <span class="stars"><span class="sf">★★★★</span><span class="se">☆</span></span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span>Điều chỉnh chiến lược kịp thời</span>
+            <span class="stars"><span class="sf">★★★★</span><span class="se">☆</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- §03 3 GỐC · ĐẠO ĐỨC -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 03</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">3 Gốc · Đạo Đức</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+      <span class="stars" style="font-size:1.1rem;"><span class="sf">★★★★</span><span class="se">☆</span></span>
+    </div>
+    <div class="two-col font-plex leading-relaxed mb-6" style="font-size:1.02rem; color:var(--ink-light);">
+      <p class="drop-cap mb-4">Vua quan tâm dân — giảm thuế, ban bổng lộc là những ghi chép còn lại về đạo đức trị vì của Lý Thánh Tông. Không có hành động bạo ngược hay trả thù chính trị được ghi nhận.</p>
+      <p class="mb-4">Nguồn sử liệu về ông không dày đặc như về Lý Công Uẩn. Đánh giá ★★★★☆ phản ánh thực tế: những gì có thể xác minh đều tích cực, nhưng bức tranh chưa đủ chi tiết để kết luận sâu hơn.</p>
+      <p>Điều đáng chú ý: ông khởi xướng Văn Miếu — không chỉ là công trình kiến trúc mà là <strong style="color:var(--ink);">cam kết đạo đức với tri thức và nhân tài</strong>, tín hiệu rõ ràng về những gì một ông vua coi trọng.</p>
+    </div>
+    <div class="pull-q-center mx-auto" style="max-width:60ch;">
+      <p class="font-playfair italic" style="font-size:1.15rem; color:var(--ink); line-height:1.45;">"Xây Văn Miếu là tuyên ngôn đạo đức —<br><em style="color:var(--crimson);">nhân tài quan trọng hơn bạo lực.</em>"</p>
+    </div>
+  </div>
+
+  <!-- §04 3 GỐC · NGHỊ LỰC -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 04</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">3 Gốc · Nghị Lực</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+      <span class="stars" style="font-size:1.1rem;"><span class="sf">★★★★</span><span class="se">☆</span></span>
+    </div>
+    <div class="grid gap-8" style="grid-template-columns:1fr 1fr;">
+      <div>
+        <p class="font-plex leading-relaxed mb-4" style="font-size:1.02rem; color:var(--ink-light);">Nghị lực thể hiện rõ nhất qua chiến dịch Chiêm Thành. <strong style="color:var(--ink);">Thân chinh dẫn quân khi đã 46 tuổi</strong> — không phải tuổi nghỉ ngơi của một quân vương.</p>
+        <p class="font-plex leading-relaxed" style="font-size:1.02rem; color:var(--ink-light);">Khi chiến dịch sa lầy, ông tính rút. Nhưng sau khi nhận tin Ỷ Lan cai trị tốt trong lúc ông vắng mặt, ông <strong style="color:var(--ink);">quay lại đánh tiếp và dứt điểm</strong> — kiên trì không phải vì bướng bỉnh, mà vì biết điều chỉnh rồi tiếp tục.</p>
+      </div>
+      <div>
+        <div class="pull-q mb-5 py-1">
+          <p class="font-playfair italic" style="font-size:1.1rem; color:var(--ink); line-height:1.4;">"Thân chinh năm 46 tuổi — rồi quay lại khi suýt bỏ cuộc."</p>
+        </div>
+        <div class="font-mono space-y-0" style="font-size:0.72rem; color:var(--warm);">
+          <div class="flex justify-between items-center rating-row py-2">
+            <span>Thân chinh dẫn quân (tuổi 46)</span>
+            <span class="stars"><span class="sf">★★★★</span><span class="se">☆</span></span>
+          </div>
+          <div class="flex justify-between items-center rating-row py-2">
+            <span>Kiên trì sau khi tính rút</span>
+            <span class="stars"><span class="sf">★★★★</span><span class="se">☆</span></span>
+          </div>
+          <div class="flex justify-between items-center rating-row py-2">
+            <span>Biết điều chỉnh khi sa lầy</span>
+            <span class="stars"><span class="sf">★★★★</span><span class="se">☆</span></span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span>Dứt điểm đến cùng</span>
+            <span class="stars"><span class="sf">★★★★</span><span class="se">☆</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- §05 3 ĐỘC -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 05</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">3 Độc · Tham · Sân · Si</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div class="grid gap-5" style="grid-template-columns:1fr 1fr 1fr;">
+      <div style="border:1px solid var(--rule); border-radius:0.75rem; padding:1.1rem;">
+        <div class="flex items-center justify-between mb-3">
+          <p class="font-mono" style="font-size:0.62rem; letter-spacing:0.18em; color:var(--crimson);">THAM LAM</p>
+          <span class="stars" style="font-size:0.9rem;"><span class="sf">★★</span><span class="se">☆☆☆</span></span>
+        </div>
+        <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Chinh Chiêm có yếu tố mở rộng lãnh thổ, nhưng động cơ chủ yếu là <strong style="color:var(--ink);">an ninh</strong> — Chiêm quấy phá trước. Không có bằng chứng tham vọng mở rộng vô độ.</p>
+      </div>
+      <div style="border:1px solid var(--rule); border-radius:0.75rem; padding:1.1rem;">
+        <div class="flex items-center justify-between mb-3">
+          <p class="font-mono" style="font-size:0.62rem; letter-spacing:0.18em; color:var(--crimson);">SÂN GIẬN</p>
+          <span class="stars" style="font-size:0.9rem;"><span class="sf">★★</span><span class="se">☆☆☆</span></span>
+        </div>
+        <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Ít bằng chứng về quyết định bị chi phối cảm xúc tiêu cực. Chiến dịch Chiêm được dừng–khởi lại theo <strong style="color:var(--ink);">lý trí</strong>, không phải giận dữ.</p>
+      </div>
+      <div style="border:1px solid var(--rule); border-radius:0.75rem; padding:1.1rem;">
+        <div class="flex items-center justify-between mb-3">
+          <p class="font-mono" style="font-size:0.62rem; letter-spacing:0.18em; color:var(--crimson);">SI MÊ</p>
+          <span class="stars" style="font-size:0.9rem;"><span class="sf">★</span><span class="se">☆☆☆☆</span></span>
+        </div>
+        <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Nhận thức rõ tình thế. Các quyết định lớn đều có <strong style="color:var(--ink);">logic rõ ràng</strong> — danh phận, an ninh, nhân lực — không có dấu hiệu ảo tưởng hay mù quáng.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- §06 ĐÁNH GIÁ & BÀI HỌC -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-7">
+      <span class="sec-label">§ 06</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Đánh Giá & Bài Học</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div class="profile-badge p-5 mb-8 mx-auto" style="max-width:58ch;">
+      <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--crimson);">PROFILE</p>
+      <p class="font-playfair font-bold" style="font-size:1.25rem; color:var(--ink);">Anh hùng thực dụng</p>
+      <p class="font-plex italic" style="font-size:0.95rem; color:var(--ink-light);">Không phải thiên tài, nhưng biết <strong style="color:var(--ink);">cần gì thì làm đúng cái đó</strong></p>
+    </div>
+    <div class="mb-8">
+      <p class="font-mono mb-3" style="font-size:0.62rem; letter-spacing:0.2em; color:var(--crimson);">GỐC NỔI BẬT · TRÍ TUỆ THỰC DỤNG</p>
+      <div class="two-col font-plex leading-relaxed" style="font-size:1.02rem; color:var(--ink-light);">
+        <p class="mb-4">Không phải thiên tài quân sự hay nhà tư tưởng lớn. Nhưng biết đất nước thiếu gì — <strong style="color:var(--ink);">danh phận, an ninh, nhân lực</strong> — và điền đúng vào từng chỗ trống.</p>
+        <p>Dạng lãnh đạo này <strong style="color:var(--ink);">bền vững hơn thiên tài thiếu kỷ luật</strong>. Kết quả: nhà Lý tiếp tục vững mạnh sau khi Lý Thái Tổ qua đời, thay vì sụp đổ như nhiều triều đại "anh hùng lập quốc" khác.</p>
+      </div>
+    </div>
+    <div class="mb-8">
+      <p class="font-mono mb-5" style="font-size:0.62rem; letter-spacing:0.2em; color:var(--crimson);">BÀI HỌC RÚT RA</p>
+      <div class="space-y-6">
+        <div class="flex gap-5 items-start">
+          <div class="lesson-num">
+            <span class="font-playfair font-bold" style="color:var(--crimson); font-size:1.1rem;">1</span>
+          </div>
+          <div>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.1rem; color:var(--ink);">Làm ít, làm đúng</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">Ba quyết định lớn trong 18 năm, đủ rồi. Đừng ôm đồm mọi thứ cùng lúc — mỗi quyết định nhắm đúng một vấn đề cốt lõi tạo tác động lớn hơn mười quyết định lan man.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 items-start">
+          <div class="lesson-num">
+            <span class="font-playfair font-bold" style="color:var(--crimson); font-size:1.1rem;">2</span>
+          </div>
+          <div>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.1rem; color:var(--ink);">Nhận tín hiệu và điều chỉnh</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">Tin về Ỷ Lan cai trị giỏi là cú hích kéo ông quay lại chiến trường. Biết nghe tín hiệu từ bên ngoài khi bản thân đang mắc kẹt — đây là dạng trí tuệ tình huống hiếm có.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="border:1px solid var(--gold); background:rgba(176,124,40,0.06); border-radius:0.75rem; padding:1.1rem 1.4rem;">
+      <p class="font-mono mb-2" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--gold);">CHÚ Ý DÀI HẠN</p>
+      <p class="font-plex leading-relaxed" style="font-size:0.95rem; color:var(--ink-light);">Ông khởi đầu mô hình Nam tiến <em>"đánh–lấy đất–hòa bình"</em>. Đúng trong bối cảnh đó, nhưng mô hình này sẽ bị các triều đại sau đẩy đến cực đoan — <strong style="color:var(--ink);">xóa sổ hoàn toàn Chiêm Thành vào thế kỷ 15</strong>. Một quyết định tốt trong thời điểm có thể trở thành tiền lệ nguy hiểm sau này.</p>
+    </div>
+  </div>
+
+  <!-- §07 LIÊN KẾT NHÂN VẬT -->
+  <div class="px-10 py-9">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 07</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Liên Kết Nhân Vật</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div class="grid gap-4" style="grid-template-columns:1fr 1fr;">
+      <div class="link-card p-5">
+        <div class="flex items-start gap-4">
+          <div class="tl-dot" style="margin-top:4px;"></div>
+          <div>
+            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">NHÂN VẬT #16</p>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">Lý Công Uẩn</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Người cha — đặt nền móng mà Lý Thánh Tông tiếp tục xây. Nhà Lý tồn tại 216 năm nhờ cả hai.</p>
+          </div>
+        </div>
+      </div>
+      <div class="link-card p-5">
+        <div class="flex items-start gap-4">
+          <div class="tl-dot" style="margin-top:4px;"></div>
+          <div>
+            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">NHÂN VẬT #18</p>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">Ỷ Lan</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Hoàng hậu — cai quản triều đình khi ông ra trận, và chính tin tức về bà đã kéo ông quay lại chiến thắng.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-10 mb-2">
+      <p class="ornament" style="font-size:1.2rem;">✦ ✦ ✦</p>
+      <p class="font-mono mt-3" style="font-size:0.58rem; letter-spacing:0.25em; color:var(--warm);">LÝ THÁNH TÔNG · 1023–1072 · ĐẠI VIỆT · ANH HÙNG THỰC DỤNG</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

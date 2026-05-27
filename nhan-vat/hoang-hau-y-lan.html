@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ỷ Lan (1044–1117) · Hoàng Hậu Nhiếp Chính · Nhà Lý</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream:     #f2e8d5;
+      --ink:       #1c1208;
+      --ink-mid:   #4a3728;
+      --ink-light: #7a6250;
+      --red:       #8b1a1a;
+      --warm:      #b5541c;
+      --border:    #2a1c0e;
+      --rule:      #c8b89a;
+      --bg-soft:   #ede2cc;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background-color: var(--cream);
+      background-image: radial-gradient(circle, rgba(100,75,45,0.17) 1px, transparent 1px);
+      background-size: 18px 18px;
+      color: var(--ink);
+      font-family: 'IBM Plex Serif', 'Noto Serif SC', Georgia, serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .f-playfair { font-family: 'Playfair Display', Georgia, serif; }
+    .f-mono     { font-family: 'JetBrains Mono', 'Courier New', monospace; }
+    .f-ibm      { font-family: 'IBM Plex Serif', 'Noto Serif SC', Georgia, serif; }
+    .rule-thick { border: none; border-top: 3.5px solid var(--border); margin: 0; }
+    .rule-thin  { border: none; border-top: 1px solid var(--rule); margin: 0; }
+    .rule-double { border: none; border-top: 3px double var(--border); margin: 0; }
+    .dateline {
+      border-top: 3px solid var(--border);
+      border-bottom: 3px solid var(--border);
+    }
+    .strike-red {
+      text-decoration: line-through;
+      text-decoration-color: var(--red);
+      text-decoration-thickness: 3px;
+    }
+    .pull-quote {
+      border-left: 4px solid var(--border);
+      padding-left: 1rem;
+    }
+    .sec-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      color: var(--ink-light);
+      white-space: nowrap;
+    }
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-mid);
+      border: 1px solid var(--rule);
+      padding: 2px 10px;
+      display: inline-block;
+    }
+    .star-on  { color: var(--ink); }
+    .star-off { color: var(--rule); }
+    .tr-rating { transition: background 0.15s; cursor: default; }
+    .tr-rating:hover { background: rgba(100,75,45,0.07); }
+    .drop-cap::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 4.2em;
+      font-weight: 900;
+      line-height: 0.8;
+      float: left;
+      margin-right: 0.09em;
+      margin-top: 0.07em;
+      color: var(--ink);
+    }
+    .card       { border: 1px solid var(--rule); border-radius: 2px; }
+    .card-accent{ border: 1px solid var(--border); border-radius: 2px; }
+    .ornament   { letter-spacing: 0.5em; color: var(--ink-light); }
+    .score-bar-bg {
+      height: 5px; background: var(--rule); border-radius: 3px; overflow: hidden; margin-top: 0.45rem; width: 72px;
+    }
+    .score-bar-fill { height: 100%; background: var(--ink); border-radius: 3px; }
+    .tl-dot {
+      width: 11px; height: 11px;
+      border: 2px solid var(--border);
+      border-radius: 50%;
+      background: var(--cream);
+      flex-shrink: 0; margin-top: 3px;
+    }
+    .tl-dot-red { background: var(--red); border-color: var(--red); }
+    @media (min-width: 640px) {
+      .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2.25rem; }
+      .g3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; vertical-align: top; }
+    p, h1, h2, h3, h4 { margin: 0; }
+  </style>
+</head>
+<body>
+<div style="max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem 3rem;">
+
+  <!-- DATELINE BAR -->
+  <div class="dateline" style="display:flex; justify-content:space-between; align-items:center; padding:0.65rem 0; margin-bottom:1.25rem; flex-wrap:wrap; gap:0.4rem;">
+    <span class="f-mono" style="font-size:0.62rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-mid);">Biên Niên Sử Việt</span>
+    <span class="f-mono" style="font-size:0.62rem; letter-spacing:0.12em; color:var(--ink-mid);">1044–1117 SCN · Hoàng Hậu · Nhiếp Chính</span>
+    <span class="f-mono" style="font-size:0.62rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-mid);">Nhân Vật Lịch Sử</span>
+  </div>
+
+  <!-- TAG ROW -->
+  <div style="text-align:center; margin-bottom:1rem;">
+    <span class="tag">Lịch Sử Việt Nam</span>&ensp;
+    <span class="tag">Nhà Lý</span>&ensp;
+    <span class="tag">Nhân Vật</span>
+  </div>
+
+  <hr class="rule-thick" style="margin-bottom:0.22rem;">
+  <hr class="rule-thin" style="margin-bottom:1.8rem;">
+
+  <!-- MAIN HEADLINE -->
+  <div style="text-align:center; margin-bottom:0.85rem;">
+    <h1 class="f-playfair" style="font-size:clamp(2.8rem,8vw,5.5rem); font-weight:900; line-height:1; letter-spacing:-0.01em; margin-bottom:0.55rem;">
+      Ỷ LAN
+    </h1>
+    <h2 class="f-playfair" style="font-size:clamp(1.1rem,3vw,1.7rem); font-weight:400; margin-bottom:0.6rem;">
+      Hoàng Hậu · Nhiếp Chính (1044–1117)
+    </h2>
+    <p class="f-playfair" style="font-size:1.05rem; font-style:italic; color:var(--warm);">
+      1044–1117 SCN · Nhà Lý · Nghị Lực Phi Thường
+    </p>
+  </div>
+
+  <hr class="rule-thin" style="margin:1rem 0;">
+
+  <!-- SUB-KICKER -->
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; flex-wrap:wrap; gap:0.5rem;">
+    <span class="f-mono" style="font-size:0.62rem; color:var(--ink-light);">HOÀNG HẬU · NHIẾP CHÍNH</span>
+    <span class="f-ibm" style="font-size:0.82rem; font-style:italic; color:var(--ink-mid);">Trí Tuệ · Đạo Đức · Nghị Lực</span>
+    <span class="f-mono" style="font-size:0.62rem; color:var(--ink-light);">1072 SCN · NHIẾP CHÍNH</span>
+  </div>
+
+  <hr class="rule-double" style="margin-bottom:2rem;">
+
+  <!-- LEAD PARAGRAPH -->
+  <p class="f-ibm drop-cap" style="font-size:1.06rem; line-height:1.88; max-width:72ch; margin:0 auto 2.5rem; color:var(--ink-mid);">
+    Xuất thân bình dân, được Lý Thánh Tông chú ý và lập làm phi. Hai lần gánh vác triều đình: khi Lý Thánh Tông thân chinh đánh Chiêm (1069) và khi <strong>Lý Nhân Tông lên ngôi lúc 7 tuổi (1072)</strong>. Sống đến 73 tuổi — trải qua gần trọn thời kỳ Nhà Lý cực thịnh. <strong>Nhân vật phức tạp — anh hùng có bóng tối.</strong>
+  </p>
+
+  <!-- SEC 01 & 02 — TWO COLUMNS -->
+  <div class="g2" style="margin-bottom:2.5rem;">
+    <!-- LEFT: 3 GỐC -->
+    <div>
+      <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
+        <span class="sec-num">01.</span>
+        <hr class="rule-thin" style="flex:1;">
+      </div>
+      <h3 class="f-playfair" style="font-size:1.5rem; font-weight:700; margin-bottom:0.85rem;">3 Gốc</h3>
+      <table style="margin-bottom:1.25rem;">
+        <thead>
+          <tr style="border-bottom:2px solid var(--border);">
+            <th class="f-playfair" style="padding:0.5rem 0.6rem 0.5rem 0; font-size:0.88rem;">Tiêu Chí</th>
+            <th class="f-playfair" style="padding:0.5rem 0.6rem 0.5rem 0; font-size:0.88rem;">Rating</th>
+            <th class="f-playfair" style="padding:0.5rem 0; font-size:0.88rem;">Bằng Chứng</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--rule);">
+            <td style="padding:0.75rem 0.6rem 0.75rem 0;" class="f-ibm"><p style="font-size:0.82rem; font-weight:600;">Trí Tuệ</p></td>
+            <td style="padding:0.75rem 0.6rem 0.75rem 0; white-space:nowrap;" class="f-mono"><span class="star-on">★★★★</span><span class="star-off">☆</span></td>
+            <td style="padding:0.75rem 0;" class="f-ibm"><p style="font-size:0.82rem; line-height:1.7;">Cai quản triều đình khi vua đi đánh Chiêm — đất nước ổn định đến mức vua nghe tin mà yên tâm đánh tiếp thay vì rút về. Bằng chứng gián tiếp nhưng rất mạnh.</p></td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--rule);">
+            <td style="padding:0.75rem 0.6rem 0.75rem 0;" class="f-ibm"><p style="font-size:0.82rem; font-weight:600;">Đạo Đức</p></td>
+            <td style="padding:0.75rem 0.6rem 0.75rem 0; white-space:nowrap;" class="f-mono"><span class="star-on">★★★</span><span class="star-off">☆☆</span></td>
+            <td style="padding:0.75rem 0;" class="f-ibm"><p style="font-size:0.82rem; line-height:1.7;">Điểm sáng: chăm lo triều đình, được dân ghi nhớ. Điểm tối: có liên quan đến cái chết của 72 cung phi — mức độ trách nhiệm trực tiếp còn tranh luận trong sử học.</p></td>
+          </tr>
+          <tr>
+            <td style="padding:0.75rem 0.6rem 0.75rem 0;" class="f-ibm"><p style="font-size:0.82rem; font-weight:600;">Nghị Lực</p></td>
+            <td style="padding:0.75rem 0.6rem 0.75rem 0; white-space:nowrap;" class="f-mono"><span class="star-on">★★★★★</span></td>
+            <td style="padding:0.75rem 0;" class="f-ibm"><p style="font-size:0.82rem; line-height:1.7;">Từ thường dân → hoàng phi → nhiếp chính quốc gia. Gánh vác triều đình trong hai giai đoạn khủng hoảng. Hiếm có trong lịch sử phong kiến Việt Nam.</p></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="pull-quote">
+        <p class="f-playfair" style="font-size:1rem; font-style:italic; line-height:1.55;">"Từ thường dân đến nhiếp chính quốc gia — <strong>Nghị Lực</strong> là gốc nổi bật nhất của Ỷ Lan."</p>
+      </div>
+    </div>
+
+    <!-- RIGHT: 3 ĐỘC -->
+    <div>
+      <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
+        <span class="sec-num">02.</span>
+        <hr class="rule-thin" style="flex:1;">
+      </div>
+      <h3 class="f-playfair" style="font-size:1.5rem; font-weight:700; margin-bottom:0.85rem;">3 Độc</h3>
+      <p class="f-ibm" style="font-size:0.9rem; line-height:1.85; margin-bottom:1rem;">
+        Ba chiều đánh giá về điểm tối — nhiều suy luận, ít bằng chứng trực tiếp:
+      </p>
+      <table style="margin-bottom:1.25rem;">
+        <thead>
+          <tr style="border-bottom:2px solid var(--border);">
+            <th class="f-playfair" style="padding:0.5rem 0.6rem 0.5rem 0; font-size:0.88rem;">Tiêu Chí</th>
+            <th class="f-playfair" style="padding:0.5rem 0.6rem 0.5rem 0; font-size:0.88rem;">Rating</th>
+            <th class="f-playfair" style="padding:0.5rem 0; font-size:0.88rem;">Bằng Chứng</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--rule);">
+            <td style="padding:0.75rem 0.6rem 0.75rem 0;" class="f-ibm"><p style="font-size:0.82rem; font-weight:600;">Tham Lam</p></td>
+            <td style="padding:0.75rem 0.6rem 0.75rem 0; white-space:nowrap;" class="f-mono"><span class="star-on">★★★</span><span class="star-off">☆☆</span></td>
+            <td style="padding:0.75rem 0;" class="f-ibm"><p style="font-size:0.82rem; line-height:1.7;">[CHƯA CHẮC] Nếu vụ 72 cung phi là thật — có thể xuất phát từ muốn loại bỏ ảnh hưởng của các phi khác. Bằng chứng trực tiếp không rõ.</p></td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--rule);">
+            <td style="padding:0.75rem 0.6rem 0.75rem 0;" class="f-ibm"><p style="font-size:0.82rem; font-weight:600;">Sân Giận</p></td>
+            <td style="padding:0.75rem 0.6rem 0.75rem 0; white-space:nowrap;" class="f-mono"><span class="star-on">★★★</span><span class="star-off">☆☆</span></td>
+            <td style="padding:0.75rem 0;" class="f-ibm"><p style="font-size:0.82rem; line-height:1.7;">[SUY LUẬN] Nếu vụ 72 cung phi là thật: sân giận/ghen tuông được chuyển thành hành động cực đoan.</p></td>
+          </tr>
+          <tr>
+            <td style="padding:0.75rem 0.6rem 0.75rem 0;" class="f-ibm"><p style="font-size:0.82rem; font-weight:600;">Si Mê</p></td>
+            <td style="padding:0.75rem 0.6rem 0.75rem 0; white-space:nowrap;" class="f-mono"><span class="star-on">★★</span><span class="star-off">☆☆☆</span></td>
+            <td style="padding:0.75rem 0;" class="f-ibm"><p style="font-size:0.82rem; line-height:1.7;">Nhận thức chính trị tốt — ít bằng chứng về quyết định mù quáng.</p></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="pull-quote">
+        <p class="f-playfair" style="font-size:1rem; font-style:italic; line-height:1.55;">"Con người không phải toàn tốt hay toàn xấu — cùng một người, có thể vừa vĩ đại vừa có bóng tối."</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="rule-double" style="margin-bottom:2.5rem;">
+
+  <!-- SEC 03 — BÀI HỌC RÚT RA -->
+  <div style="margin-bottom:2.5rem;">
+    <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
+      <span class="sec-num">03.</span>
+      <hr class="rule-thin" style="flex:1;">
+      <span class="tag">Bài Học</span>
+    </div>
+    <h3 class="f-playfair" style="font-size:2rem; font-weight:700; margin-bottom:0.25rem;">Bài Học Rút Ra</h3>
+    <p class="f-ibm" style="font-size:0.85rem; font-style:italic; color:var(--ink-mid); margin-bottom:1.75rem;">Từ Cuộc Đời Ỷ Lan Đến Tư Duy Thực Tiễn</p>
+
+    <p class="f-ibm" style="font-size:0.88rem; line-height:1.85; margin-bottom:1.5rem;">
+      Ba bài học rút ra từ cuộc đời Ỷ Lan — một nhân vật vừa truyền cảm hứng vừa nhắc nhở về sự phức tạp của con người và quyền lực.
+    </p>
+
+    <div class="g3" style="margin-top:1.5rem;">
+      <div class="card" style="padding:1rem;">
+        <div class="f-mono" style="font-size:0.58rem; letter-spacing:0.18em; color:var(--ink-light); margin-bottom:0.45rem;">BÀI HỌC 1</div>
+        <div class="f-playfair" style="font-size:1rem; font-weight:900; margin-bottom:0.4rem; line-height:1.35;">Xuất Thân Không Định Nghĩa Giới Hạn</div>
+        <div class="f-ibm" style="font-size:0.78rem; line-height:1.7; font-style:italic; color:var(--ink-mid);">Nhưng quyền lực có thể làm lộ ra phần tối mà bình thường bị che giấu — xuất thân thấp không ngăn thành công, nhưng cũng không miễn nhiễm với sai lầm.</div>
+      </div>
+      <div class="card" style="padding:1rem;">
+        <div class="f-mono" style="font-size:0.58rem; letter-spacing:0.18em; color:var(--ink-light); margin-bottom:0.45rem;">BÀI HỌC 2</div>
+        <div class="f-playfair" style="font-size:1rem; font-weight:900; margin-bottom:0.4rem; line-height:1.35;">Năng Lực Và Đạo Đức Phải Đi Đôi</div>
+        <div class="f-ibm" style="font-size:0.78rem; line-height:1.7; font-style:italic; color:var(--ink-mid);">Có thể cai trị giỏi nhưng vẫn phạm sai lầm nghiêm trọng ở chiều khác. Năng lực không tự động đảm bảo đạo đức — cần cả hai để di sản được trọn vẹn.</div>
+      </div>
+      <div class="card" style="padding:1rem;">
+        <div class="f-mono" style="font-size:0.58rem; letter-spacing:0.18em; color:var(--ink-light); margin-bottom:0.45rem;">BÀI HỌC 3</div>
+        <div class="f-playfair" style="font-size:1rem; font-weight:900; margin-bottom:0.4rem; line-height:1.35;">Con Người Không Phải Toàn Tốt Hay Toàn Xấu</div>
+        <div class="f-ibm" style="font-size:0.78rem; line-height:1.7; font-style:italic; color:var(--ink-mid);">Ỷ Lan là minh chứng: cùng một người, có thể vừa vĩ đại vừa có bóng tối. Đánh giá lịch sử cần nhìn toàn diện, không đơn giản hóa.</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="rule-double" style="margin-bottom:2.5rem;">
+
+  <!-- SEC 04 — GỐC NỔI BẬT: NGHỊ LỰC -->
+  <div style="margin-bottom:2.5rem;">
+    <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
+      <span class="sec-num">04.</span>
+      <hr class="rule-thin" style="flex:1;">
+      <span class="tag">Đánh Giá</span>
+    </div>
+    <h3 class="f-playfair" style="font-size:2rem; font-weight:700; margin-bottom:0.25rem;">Gốc Nổi Bật: Nghị Lực</h3>
+    <p class="f-ibm" style="font-size:0.85rem; font-style:italic; color:var(--ink-mid); margin-bottom:1.75rem;">Từ Thường Dân Đến Nhiếp Chính Quốc Gia</p>
+
+    <div class="pull-quote" style="margin-bottom:1.75rem;">
+      <p class="f-playfair" style="font-size:1.05rem; font-style:italic; line-height:1.5;">Con đường từ thường dân lên nhiếp chính quốc gia, hai lần gánh vác triều đình trong khủng hoảng — <strong>hiếm có trong lịch sử phong kiến Việt Nam.</strong></p>
+    </div>
+
+    <div class="card-accent" style="padding:1.25rem; margin-top:1.75rem;">
+      <div class="f-mono" style="font-size:0.58rem; letter-spacing:0.18em; color:var(--ink-light); margin-bottom:0.5rem;">NHÂN VẬT PHỨC TẠP</div>
+      <p class="f-playfair" style="font-size:1.05rem; font-weight:700; line-height:1.5; margin-bottom:0.85rem;">Anh hùng có bóng tối</p>
+      <div class="f-mono" style="font-size:0.58rem; letter-spacing:0.18em; color:var(--ink-light); margin-bottom:0.4rem;">VỤ 72 CUNG PHI</div>
+      <p class="f-ibm" style="font-size:0.85rem; line-height:1.85; color:var(--ink-mid);">Có liên quan đến cái chết của 72 cung phi — mức độ trách nhiệm trực tiếp còn tranh luận trong sử học. Điểm tối này không xóa bỏ thành tựu, nhưng nhắc nhở rằng quyền lực có thể làm lộ ra phần tối mà bình thường bị che giấu.</p>
+    </div>
+  </div>
+
+  <hr class="rule-double" style="margin-bottom:2.5rem;">
+
+  <!-- SEC 05 — GIAI THOẠI QUAN TRỌNG -->
+  <div style="margin-bottom:2.5rem;">
+    <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
+      <span class="sec-num">05.</span>
+      <hr class="rule-thin" style="flex:1;">
+      <span class="tag">Giai Thoại</span>
+    </div>
+    <h3 class="f-playfair" style="font-size:2rem; font-weight:700; margin-bottom:0.25rem;">Giai Thoại Quan Trọng</h3>
+    <p class="f-ibm" style="font-size:0.85rem; font-style:italic; color:var(--ink-mid); margin-bottom:1.75rem;">Bằng Chứng Gián Tiếp Về Năng Lực Cai Trị</p>
+    <div class="g2">
+      <div class="card" style="padding:1.25rem;">
+        <div class="f-mono" style="font-size:0.58rem; letter-spacing:0.18em; color:var(--ink-light); margin-bottom:0.5rem;">CÂU CHUYỆN</div>
+        <div class="f-playfair" style="font-size:1.1rem; font-weight:700; margin-bottom:0.5rem;">Lý Thánh Tông Nghe Tin — Yên Tâm Đánh Tiếp</div>
+        <p class="f-ibm" style="font-size:0.82rem; line-height:1.75; color:var(--ink-mid); margin-bottom:0.75rem;">Khi Lý Thánh Tông đánh Chiêm mãi không thắng, ông nghe tin Ỷ Lan cai trị giỏi trong nước → quay lại đánh tiếp và thắng. Bằng chứng gián tiếp nhưng rất mạnh về năng lực điều hành.</p>
+        <div class="f-mono" style="font-size:0.58rem; letter-spacing:0.12em; color:var(--ink-mid);">→ 1069 SCN · Chiến Dịch Chiêm Thành</div>
+      </div>
+      <div class="card" style="padding:1.25rem;">
+        <div class="f-mono" style="font-size:0.58rem; letter-spacing:0.18em; color:var(--ink-light); margin-bottom:0.5rem;">Ý NGHĨA</div>
+        <div class="f-playfair" style="font-size:1.1rem; font-weight:700; margin-bottom:0.5rem;">Dấu Hiệu Của Thể Chế Trưởng Thành</div>
+        <p class="f-ibm" style="font-size:0.82rem; line-height:1.75; color:var(--ink-mid); margin-bottom:0.75rem;">Câu chuyện này cho thấy Nhà Lý có thể vận hành không phụ thuộc hoàn toàn vào vua — một dấu hiệu của thể chế trưởng thành. Ỷ Lan không chỉ "giữ ghế" mà thực sự điều hành hiệu quả.</p>
+        <div class="f-mono" style="font-size:0.58rem; letter-spacing:0.12em; color:var(--ink-mid);">→ Thể Chế · Nhà Lý Cực Thịnh</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="rule-double" style="margin-bottom:2.5rem;">
+
+  <!-- SEC 06 — LIÊN KẾT NHÂN VẬT -->
+  <div style="margin-bottom:2.5rem;">
+    <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
+      <span class="sec-num">06.</span>
+      <hr class="rule-thin" style="flex:1;">
+    </div>
+    <h3 class="f-playfair" style="font-size:2rem; font-weight:700; margin-bottom:1.5rem;">Liên Kết Nhân Vật</h3>
+    <p class="f-ibm" style="font-size:0.9rem; line-height:1.85; margin-bottom:1.75rem; color:var(--ink-mid);">Nhân vật liên quan trong cùng giai đoạn lịch sử Nhà Lý.</p>
+    <div style="max-width:380px;">
+      <div class="card" style="padding:1.25rem;">
+        <div class="f-mono" style="font-size:0.58rem; letter-spacing:0.18em; color:var(--ink-light); margin-bottom:0.5rem;">CHỒNG · NGƯỜI ĐƯA LÊN HOÀNG PHI</div>
+        <div class="f-playfair" style="font-size:1.1rem; font-weight:700; margin-bottom:0.5rem;">17. Lý Thánh Tông</div>
+        <p class="f-ibm" style="font-size:0.82rem; line-height:1.75; color:var(--ink-mid); margin-bottom:0.75rem;">Chồng của Ỷ Lan — người đưa bà từ thường dân lên hoàng phi. Thân chinh đánh Chiêm 1069, để Ỷ Lan nhiếp chính trong nước.</p>
+        <div class="f-mono" style="font-size:0.58rem; letter-spacing:0.12em; color:var(--red);">→ Nhân Vật Lịch Sử · Nhà Lý</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <hr class="rule-thick" style="margin-bottom:1rem;">
+  <div style="display:flex; justify-content:space-between; align-items:center; padding:0.75rem 0; flex-wrap:wrap; gap:0.5rem;">
+    <div class="f-ibm" style="font-size:0.75rem; font-style:italic; color:var(--ink-mid);">Nhân vật lịch sử Việt Nam · Khoá học Lịch sử Việt Nam</div>
+    <div class="ornament f-playfair" style="font-size:1.15rem;">✦ ◆ ✦</div>
+    <div class="f-mono" style="font-size:0.62rem; color:var(--ink-mid);">1044–1117 SCN · Nhà Lý · Hoàng Hậu · Nhiếp Chính</div>
+  </div>
+  <hr class="rule-thin" style="margin-bottom:0.75rem;">
+  <div style="text-align:center; padding-bottom:1.75rem;">
+    <span class="f-mono" style="font-size:0.58rem; letter-spacing:0.25em; color:var(--ink-light); text-transform:uppercase;">Biên Niên Sử Việt · Nhân Vật Lịch Sử · Ỷ Lan · 1044–1117 · Hoàng Hậu Nhiếp Chính</span>
+  </div>
+
+</div>
+</body>
+</html>
