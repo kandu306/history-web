@@ -1,33 +1,26 @@
 {
-  "updated_at": "2026-05-27T15:21:00+07:00",
+  "updated_at": "2026-05-27T15:36:00+07:00",
   "working_on": {
-    "feature": "Tích hợp 5 trang mới Nhà Lý và đồng bộ toàn diện hệ thống",
-    "task": "Chuẩn hóa và lưu 1 trang nhân vật (Lý Thái Tông), 4 trang bài học Nhà Lý (bài tổng quan và 3 chapter), đồng thời cập nhật trang chủ index.html, sơ đồ khái niệm ban-do.html, concept-map.md, master-concept-map.md và brain.json",
+    "feature": "Thiết kế lại các thẻ (card) gọn gàng và cao cấp hơn",
+    "task": "Thêm luật CSS ghi đè tinh gọn vào shared/styles.css, tối ưu không gian hiển thị, paddings, kích cỡ font chữ và thêm đường phân cách chân thẻ",
     "status": "completed",
     "files": [
-      "nhan-vat/ly-thai-tong.html",
-      "bai-hoc/nha-ly-total.html",
-      "bai-hoc/nha-ly-chap1.html",
-      "bai-hoc/nha-ly-chap2.html",
-      "bai-hoc/nha-ly-chap3.html",
-      "index.html",
-      "ban-do.html",
-      "concept-map.md",
-      "docs/master-concept-map.md",
-      ".brain/brain.json",
+      "shared/styles.css",
       ".brain/session.json"
     ],
     "blockers": [],
-    "notes": "Đã tích hợp 100% các trang mới của Nhà Lý và thực hiện đồng bộ hóa toàn diện 4 bước theo đúng quy trình chuẩn của dự án."
+    "notes": "Đã hoàn thành ghi đè CSS tinh gọn cho các thẻ bài học và nhân vật trên trang chủ, kiểm thử hiển thị mượt mà và quét sạch từ khóa cấm."
   },
-  "pending_tasks": [
-    {
-      "task": "Quét kiểm tra từ khóa cấm bằng PowerShell và đẩy mã nguồn lên GitHub",
-      "priority": "high",
-      "notes": "Đẩy toàn bộ thay đổi lên nhánh main để hoàn tất"
-    }
-  ],
+  "pending_tasks": [],
   "recent_changes": [
+    {
+      "timestamp": "2026-05-27T15:36:00+07:00",
+      "type": "design",
+      "description": "Thiết kế lại các thẻ (card) gọn gàng hơn qua CSS toàn cục trong shared/styles.css",
+      "files": [
+        "shared/styles.css"
+      ]
+    },
     {
       "timestamp": "2026-05-27T15:21:00+07:00",
       "type": "feature",
@@ -47,6 +40,10 @@
   ],
   "errors_encountered": [],
   "decisions_made": [
+    {
+      "decision": "Sử dụng CSS ghi đè có độ ưu tiên cao trong shared/styles.css để compact hóa thẻ",
+      "reason": "Tránh chỉnh sửa thủ công HTML của 26+ thẻ trên trang chủ, đảm bảo tính đồng bộ tuyệt đối và an toàn mã nguồn"
+    },
     {
       "decision": "Chuẩn hóa 5 trang mới từ dạng nháp Chronicle Mode sang định dạng premium dùng chung stylesheet",
       "reason": "Đảm bảo tính đồng bộ thị giác và cấu trúc mã nguồn theo quy định của dự án"
