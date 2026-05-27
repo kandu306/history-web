@@ -70,7 +70,8 @@
   </nav>
 
   <!-- ═══════════════════════ HERO ═══════════════════════ -->
-  <header class="hero-bg hero-pattern relative overflow-hidden">
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <header class="relative overflow-hidden bg-[#1c1917] bg-gradient-to-br from-[#1c1917] via-[#2d1515] to-[#1c1917] border-b border-[#292524]">
     <!-- Decorative blobs -->
     <div class="absolute top-0 right-0 w-96 h-96 opacity-[0.03] pointer-events-none">
       <svg viewBox="0 0 200 200" fill="currentColor" style="color:#9b1c1c;">
@@ -83,70 +84,112 @@
       </svg>
     </div>
 
-    <div class="max-w-4xl mx-auto px-6 pt-20 pb-20 relative">
-      <!-- Eyebrow -->
-      <div class="flex items-center gap-3 mb-8 fade-in">
-        <span class="tag" style="background:#9b1c1c22; color:#f87171; border: 1px solid rgba(155,28,28,0.3);">
-          Khoá học
-        </span>
-        <span class="text-sm text-[#a8a29e]">Phân tích nhân vật lịch sử</span>
-      </div>
+    <div class="max-w-6xl mx-auto px-6 pt-20 pb-20 relative">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Cột Trái (7/12): Nội dung chính -->
+        <div class="lg:col-span-7">
+          <!-- Eyebrow -->
+          <div class="flex items-center gap-3 mb-8 fade-in">
+            <span class="tag" style="background:#9b1c1c22; color:#f87171; border: 1px solid rgba(155,28,28,0.3);">
+              Khoá học
+            </span>
+            <span class="text-sm text-[#a8a29e]">Phân tích nhân vật lịch sử</span>
+          </div>
 
-      <h1 class="font-serif font-bold text-[#faf9f7] leading-tight mb-6 fade-in"
-          style="font-size: clamp(2.5rem, 6vw, 4.5rem); animation-delay: 0.1s;">
-        Lịch Sử Việt Nam
-      </h1>
+          <h1 class="font-serif font-bold text-[#faf9f7] leading-tight mb-6 fade-in"
+              style="font-size: clamp(2.5rem, 6vw, 4.5rem); animation-delay: 0.1s;">
+            Lịch Sử Việt Nam
+          </h1>
 
-      <p class="font-serif text-xl text-[#a8a29e] italic leading-relaxed mb-10 max-w-2xl fade-in"
-         style="animation-delay: 0.2s;">
-        Hiểu người xưa qua hệ thống phân tích <em style="color:#fca5a5;">3 Gốc / 3 Độc</em> — 
-        nhìn lịch sử bằng con mắt tâm lý học và triết học, không chỉ niên đại và sự kiện.
-      </p>
+          <p class="font-serif text-xl text-[#a8a29e] italic leading-relaxed mb-10 max-w-2xl fade-in"
+             style="animation-delay: 0.2s;">
+            Hiểu người xưa qua hệ thống phân tích <em style="color:#fca5a5;">3 Gốc / 3 Độc</em> — 
+            nhìn lịch sử bằng con mắt tâm lý học và triết học, không chỉ niên đại và sự kiện.
+          </p>
 
-      <!-- Stats row -->
-      <div class="flex flex-wrap gap-8 mb-10 fade-in" style="animation-delay: 0.3s;">
-        <div>
-          <div class="font-serif text-3xl font-bold text-[#faf9f7]">20+</div>
-          <div class="text-sm text-[#78716c] mt-1">Nhân vật</div>
-        </div>
-        <div class="w-px bg-[#292524]"></div>
-        <div>
-          <div class="font-serif text-3xl font-bold text-[#faf9f7]">∞</div>
-          <div class="text-sm text-[#78716c] mt-1">Bài học</div>
-        </div>
-        <div class="w-px bg-[#292524]"></div>
-        <div>
-          <div class="font-serif text-3xl font-bold text-[#faf9f7]">2000+</div>
-          <div class="text-sm text-[#78716c] mt-1">Năm lịch sử</div>
-        </div>
-        <div class="w-px bg-[#292524]"></div>
-        <div>
-          <div class="font-serif text-3xl font-bold text-[#faf9f7]">6</div>
-          <div class="text-sm text-[#78716c] mt-1">Tiêu chí đánh giá</div>
-        </div>
-      </div>
+          <!-- Stats row -->
+          <div class="flex flex-wrap gap-8 mb-10 fade-in" style="animation-delay: 0.3s;">
+            <div>
+              <div class="font-serif text-3xl font-bold text-[#faf9f7]">14</div>
+              <div class="text-sm text-[#78716c] mt-1">Nhân vật</div>
+            </div>
+            <div class="w-px bg-[#292524]"></div>
+            <div>
+              <div class="font-serif text-3xl font-bold text-[#faf9f7]">7</div>
+              <div class="text-sm text-[#78716c] mt-1">Bài học</div>
+            </div>
+            <div class="w-px bg-[#292524]"></div>
+            <div>
+              <div class="font-serif text-3xl font-bold text-[#faf9f7]">2000+</div>
+              <div class="text-sm text-[#78716c] mt-1">Năm lịch sử</div>
+            </div>
+            <div class="w-px bg-[#292524]"></div>
+            <div>
+              <div class="font-serif text-3xl font-bold text-[#faf9f7]">6</div>
+              <div class="text-sm text-[#78716c] mt-1">Tiêu chí đánh giá</div>
+            </div>
+          </div>
 
-      <!-- 3 Gốc 3 Độc pills -->
-      <div class="flex flex-wrap gap-3 fade-in" style="animation-delay: 0.4s;">
-        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#1c2617; color:#86efac; border:1px solid rgba(134,239,172,0.2);">
-          <span>🌱</span> Trí tuệ
-        </span>
-        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#1c2617; color:#86efac; border:1px solid rgba(134,239,172,0.2);">
-          <span>⚖️</span> Đạo đức
-        </span>
-        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#1c2617; color:#86efac; border:1px solid rgba(134,239,172,0.2);">
-          <span>⚡</span> Nghị lực
-        </span>
-        <span class="w-px bg-[#292524] self-stretch hidden sm:block"></span>
-        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#2a1515; color:#fca5a5; border:1px solid rgba(252,165,165,0.2);">
-          <span>💰</span> Tham lam
-        </span>
-        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#2a1515; color:#fca5a5; border:1px solid rgba(252,165,165,0.2);">
-          <span>😤</span> Sân giận
-        </span>
-        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#2a1515; color:#fca5a5; border:1px solid rgba(252,165,165,0.2);">
-          <span>🌀</span> Si mê
-        </span>
+          <!-- 3 Gốc 3 Độc pills -->
+          <div class="flex flex-wrap gap-3 fade-in" style="animation-delay: 0.4s;">
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#1c2617; color:#86efac; border:1px solid rgba(134,239,172,0.2);">
+              <span>🧠</span> Trí tuệ
+            </span>
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#1c2617; color:#86efac; border:1px solid rgba(134,239,172,0.2);">
+              <span>⚖️</span> Đạo đức
+            </span>
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#1c2617; color:#86efac; border:1px solid rgba(134,239,172,0.2);">
+              <span>⚡</span> Nghị lực
+            </span>
+            <span class="w-px bg-[#292524] self-stretch hidden sm:block"></span>
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#2a1515; color:#fca5a5; border:1px solid rgba(252,165,165,0.2);">
+              <span>💰</span> Tham lam
+            </span>
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#2a1515; color:#fca5a5; border:1px solid rgba(252,165,165,0.2);">
+              <span>😤</span> Sân giận
+            </span>
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm" style="background:#2a1515; color:#fca5a5; border:1px solid rgba(252,165,165,0.2);">
+              <span>🌀</span> Si mê
+            </span>
+          </div>
+        </div>
+
+        <!-- Cột Phải (5/12): Thẻ Tri Thức Hùng Vĩ / Concept Map Preview -->
+        <div class="lg:col-span-5 fade-in" style="animation-delay: 0.3s;">
+          <div class="relative rounded-3xl bg-[#292524]/60 backdrop-blur-md border border-[#44403c] p-8 shadow-2xl overflow-hidden hover:border-[#9b1c1c]/50 transition-all duration-300">
+            <!-- Decorative SVG in card background -->
+            <div class="absolute -right-10 -bottom-10 w-48 h-48 opacity-10 pointer-events-none">
+              <svg viewBox="0 0 200 200" fill="currentColor" class="text-[#b45309]">
+                <path d="M100 0 L173 50 L173 150 L100 200 L27 150 L27 50 Z"/>
+              </svg>
+            </div>
+            
+            <div class="relative z-10">
+              <div class="text-[10px] font-semibold tracking-[0.15em] uppercase text-[#b45309] mb-2">Học tập trực quan</div>
+              <h3 class="font-serif text-2xl font-bold text-[#faf9f7] mb-3">Mạng Lưới Tri Thức</h3>
+              <p class="text-sm leading-relaxed text-[#d6d3d1] mb-6">
+                Lịch sử không chỉ là những cột mốc cô lập. Khám phá các mối liên hệ nhân quả, quy luật lịch sử và hệ thống nhân vật được kết nối chặt chẽ trong Bản đồ khái niệm tương tác.
+              </p>
+              
+              <!-- Mini stats/features list inside the card -->
+              <div class="space-y-3 mb-8">
+                <div class="flex items-center gap-2 text-xs text-[#a8a29e]">
+                  <span class="text-[#b45309] text-base leading-none">◈</span> 8 Thời kỳ triều đại liền mạch
+                </div>
+                <div class="flex items-center gap-2 text-xs text-[#a8a29e]">
+                  <span class="text-[#b45309] text-base leading-none">◈</span> 5 Quy luật lịch sử cốt lõi
+                </div>
+                <div class="flex items-center gap-2 text-xs text-[#a8a29e]">
+                  <span class="text-[#b45309] text-base leading-none">◈</span> Kết nối bài học & nhân vật lập tức
+                </div>
+              </div>
+              
+              <a href="ban-do.html" class="inline-flex items-center justify-center w-full px-5 py-3.5 bg-[#9b1c1c] hover:bg-[#7f1d1d] text-[#faf9f7] rounded-xl text-xs font-semibold tracking-wide uppercase transition-all duration-300 shadow-lg hover:shadow-red-950/30 text-center">
+                Mở Bản Đồ Khái Niệm →
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -169,62 +212,86 @@
 
       <div class="grid md:grid-cols-2 gap-6">
         <!-- 3 GỐC -->
-        <div class="rounded-2xl border border-[#e7e5e4] bg-white p-7 glow-red">
-          <div class="flex items-center gap-3 mb-5">
-            <span class="w-9 h-9 rounded-lg bg-[#9b1c1c] text-[#faf9f7] text-sm font-bold flex items-center justify-center flex-shrink-0">G</span>
-            <h3 class="font-serif text-xl font-semibold text-[#9b1c1c] uppercase tracking-wide">3 Gốc — Phẩm chất cốt lõi</h3>
+        <div class="rounded-3xl border border-[#e7e5e4] bg-white p-8 shadow-md hover:border-[#9b1c1c]/40 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="w-10 h-10 rounded-xl bg-[#fef2f2] text-[#9b1c1c] text-sm font-bold flex items-center justify-center flex-shrink-0 border border-[#9b1c1c]/10">G</span>
+            <h3 class="font-serif text-xl font-bold text-[#9b1c1c] uppercase tracking-wide">3 Gốc — Phẩm chất cốt lõi</h3>
           </div>
-          <div class="space-y-4">
-            <div class="flex items-start gap-3">
-              <span class="text-lg">🧠</span>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-[#fef2f2] flex items-center justify-center flex-shrink-0 border border-[#9b1c1c]/10">
+                <svg class="w-5 h-5 text-[#9b1c1c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                </svg>
+              </div>
               <div>
-                <p class="font-semibold text-[#1c1917] text-sm">Trí tuệ</p>
-                <p class="text-sm text-[#78716c] leading-relaxed">Khả năng nhìn đại cục, phân tích và ra quyết định trong bối cảnh lịch sử</p>
+                <p class="font-semibold text-[#1c1917] text-base mb-0.5">Trí tuệ</p>
+                <p class="text-sm text-[#78716c] leading-relaxed">Khả năng nhìn đại cục, phân tích chiều sâu bản chất và ra quyết định thực tế trong bối cảnh lịch sử.</p>
               </div>
             </div>
-            <div class="flex items-start gap-3">
-              <span class="text-lg">⚖️</span>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-[#fef2f2] flex items-center justify-center flex-shrink-0 border border-[#9b1c1c]/10">
+                <svg class="w-5 h-5 text-[#9b1c1c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+                </svg>
+              </div>
               <div>
-                <p class="font-semibold text-[#1c1917] text-sm">Đạo đức</p>
-                <p class="text-sm text-[#78716c] leading-relaxed">Hành xử với dân, với đối thủ; mức độ đặt lợi ích chung lên lợi ích cá nhân</p>
+                <p class="font-semibold text-[#1c1917] text-base mb-0.5">Đạo đức</p>
+                <p class="text-sm text-[#78716c] leading-relaxed">Hành xử nhân nghĩa với nhân dân, quân lính và đối thủ; mức độ đặt lợi ích dân tộc lên trên lợi ích dòng họ, cá nhân.</p>
               </div>
             </div>
-            <div class="flex items-start gap-3">
-              <span class="text-lg">⚡</span>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-[#fef2f2] flex items-center justify-center flex-shrink-0 border border-[#9b1c1c]/10">
+                <svg class="w-5 h-5 text-[#9b1c1c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+              </div>
               <div>
-                <p class="font-semibold text-[#1c1917] text-sm">Nghị lực</p>
-                <p class="text-sm text-[#78716c] leading-relaxed">Sức chịu đựng, khả năng vượt khó, kiên định trước áp lực và thách thức</p>
+                <p class="font-semibold text-[#1c1917] text-base mb-0.5">Nghị lực</p>
+                <p class="text-sm text-[#78716c] leading-relaxed">Sức chịu đựng gian khổ, ý chí vượt khó vô song, kiên định chiến lược trước sức ép ngàn cân từ thù trong giặc ngoài.</p>
               </div>
             </div>
           </div>
         </div>
 
         <!-- 3 ĐỘC -->
-        <div class="rounded-2xl border border-[#e7e5e4] bg-white p-7" style="box-shadow: 0 0 0 1px rgba(120,53,15,0.1), 0 4px 24px rgba(120,53,15,0.06);">
-          <div class="flex items-center gap-3 mb-5">
-            <span class="w-9 h-9 rounded-lg bg-[#78350f] text-[#faf9f7] text-sm font-bold flex items-center justify-center flex-shrink-0">Đ</span>
-            <h3 class="font-serif text-xl font-semibold text-[#78350f] uppercase tracking-wide">3 Độc — Chướng ngại tâm lý</h3>
+        <div class="rounded-3xl border border-[#e7e5e4] bg-white p-8 shadow-md hover:border-[#b45309]/40 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="w-10 h-10 rounded-xl bg-[#fdfbeb] text-[#b45309] text-sm font-bold flex items-center justify-center flex-shrink-0 border border-[#b45309]/10">Đ</span>
+            <h3 class="font-serif text-xl font-bold text-[#b45309] uppercase tracking-wide">3 Độc — Chướng ngại tâm lý</h3>
           </div>
-          <div class="space-y-4">
-            <div class="flex items-start gap-3">
-              <span class="text-lg">💰</span>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-[#fdfbeb] flex items-center justify-center flex-shrink-0 border border-[#b45309]/10">
+                <svg class="w-5 h-5 text-[#b45309]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                </svg>
+              </div>
               <div>
-                <p class="font-semibold text-[#1c1917] text-sm">Tham lam</p>
-                <p class="text-sm text-[#78716c] leading-relaxed">Mức độ tham quyền, tham lợi; sẵn sàng hy sinh lợi ích chung vì cá nhân</p>
+                <p class="font-semibold text-[#1c1917] text-base mb-0.5">Tham lam</p>
+                <p class="text-sm text-[#78716c] leading-relaxed">Mức độ tham quyền cố vị, thu vén lợi ích phe nhóm cá nhân; sẵn sàng hy sinh an nguy quốc gia vì danh vọng ích kỷ.</p>
               </div>
             </div>
-            <div class="flex items-start gap-3">
-              <span class="text-lg">😤</span>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-[#fdfbeb] flex items-center justify-center flex-shrink-0 border border-[#b45309]/10">
+                <svg class="w-5 h-5 text-[#b45309]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+              </div>
               <div>
-                <p class="font-semibold text-[#1c1917] text-sm">Sân giận</p>
-                <p class="text-sm text-[#78716c] leading-relaxed">Để cảm xúc tiêu cực chi phối quyết định, trả thù cá nhân thay vì lý trí</p>
+                <p class="font-semibold text-[#1c1917] text-base mb-0.5">Sân giận</p>
+                <p class="text-sm text-[#78716c] leading-relaxed">Để cảm xúc tiêu cực, lòng thù hận cá nhân chi phối việc triều chính; hành xử tàn bạo, thiếu sáng suốt trước các quyết định sinh tử.</p>
               </div>
             </div>
-            <div class="flex items-start gap-3">
-              <span class="text-lg">🌀</span>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-[#fdfbeb] flex items-center justify-center flex-shrink-0 border border-[#b45309]/10">
+                <svg class="w-5 h-5 text-[#b45309]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                </svg>
+              </div>
               <div>
-                <p class="font-semibold text-[#1c1917] text-sm">Si mê</p>
-                <p class="text-sm text-[#78716c] leading-relaxed">Bám víu vào ảo tưởng, danh vị, không nhìn thực tế — dẫn đến sai lầm lịch sử</p>
+                <p class="font-semibold text-[#1c1917] text-base mb-0.5">Si mê</p>
+                <p class="text-sm text-[#78716c] leading-relaxed">Bám víu vào ảo tưởng vương quyền, tin vào lời xiểm nịnh giả tạo; thiếu nhận thức thực tế dẫn đến những sai lầm chiến lược nghiêm trọng.</p>
               </div>
             </div>
           </div>
