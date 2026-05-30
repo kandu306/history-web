@@ -1,5 +1,5 @@
 # Concept Map: Lịch sử Việt Nam
-Cập nhật: 2026-05-27 | Tổng: **14 concepts, 26 connections** | Nhân vật: 15 figures
+Cập nhật: 2026-05-30 | Tổng: **15 concepts, 29 connections** | Nhân vật: 17 figures
 
 ---
 
@@ -198,6 +198,8 @@ Cập nhật: 2026-05-27 | Tổng: **14 concepts, 26 connections** | Nhân vật
 | Lý Thái Tông | 1028 SCN | Vua thứ 2 nhà Lý — Hình thư & Hội thề Đồng Cổ | ly-thai-tong.html |
 | Lý Thánh Tông | 1054 SCN | Anh hùng thực dụng — đổi tên Đại Việt, dựng Văn Miếu | ly-thanh-tong.html |
 | Hoàng Hậu Ỷ Lan | 1069 SCN | Nhiếp chính hậu phương — anh hùng có bóng tối | hoang-hau-y-lan.html |
+| Lý Nhân Tông | 1072 SCN | Minh Quân Vĩ Đại Cô Đơn — hoàng đế thứ 4 nhà Lý | ly-nhan-tong.html |
+| Lê Văn Thịnh | 1075 SCN | Trạng Nguyên Khai Khoa — Thái sư oan khuất | le-van-thinh.html |
 | Quách Quỳ | 1076 SCN | Tướng Tống — đối thủ tại phòng tuyến Như Nguyệt | quach-quy.html |
 
 ---

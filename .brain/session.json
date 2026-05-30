@@ -1,18 +1,44 @@
 {
-  "updated_at": "2026-05-27T15:36:00+07:00",
+  "updated_at": "2026-05-30T11:45:00+07:00",
   "working_on": {
-    "feature": "Thiết kế lại các thẻ (card) gọn gàng và cao cấp hơn",
-    "task": "Thêm luật CSS ghi đè tinh gọn vào shared/styles.css, tối ưu không gian hiển thị, paddings, kích cỡ font chữ và thêm đường phân cách chân thẻ",
+    "feature": "Tích hợp 5 trang mới Nhà Lý và hoàn tất đồng bộ hệ thống Giai đoạn IV & V",
+    "task": "Chuẩn hóa định dạng, cập nhật counters và grids trên index.html, sơ đồ ban-do.html, concept-map.md, docs/master-concept-map.md và tệp brain.json",
     "status": "completed",
     "files": [
-      "shared/styles.css",
+      "nhan-vat/ly-nhan-tong.html",
+      "nhan-vat/le-van-thinh.html",
+      "nhan-vat/hoang-hau-y-lan.html",
+      "bai-hoc/nha-ly-chap4.html",
+      "bai-hoc/nha-ly-chap5.html",
+      "index.html",
+      "ban-do.html",
+      "concept-map.md",
+      "docs/master-concept-map.md",
+      ".brain/brain.json",
       ".brain/session.json"
     ],
     "blockers": [],
-    "notes": "Đã hoàn thành ghi đè CSS tinh gọn cho các thẻ bài học và nhân vật trên trang chủ, kiểm thử hiển thị mượt mà và quét sạch từ khóa cấm."
+    "notes": "Đã tích hợp hoàn tất 5 trang Nhà Lý chuẩn Premium, đồng bộ hoàn toàn counters và cards trên index.html, sơ đồ ban-do.html, concept-map.md, docs/master-concept-map.md và tệp brain.json."
   },
   "pending_tasks": [],
   "recent_changes": [
+    {
+      "timestamp": "2026-05-30T11:45:00+07:00",
+      "type": "feature",
+      "description": "Tích hợp 5 trang mới Nhà Lý (Lý Nhân Tông, Lê Văn Thịnh, Ỷ Lan cập nhật, Chap 4 & Chap 5) và thực hiện đồng bộ 4 bước toàn diện hệ thống",
+      "files": [
+        "nhan-vat/ly-nhan-tong.html",
+        "nhan-vat/le-van-thinh.html",
+        "nhan-vat/hoang-hau-y-lan.html",
+        "bai-hoc/nha-ly-chap4.html",
+        "bai-hoc/nha-ly-chap5.html",
+        "index.html",
+        "ban-do.html",
+        "concept-map.md",
+        "docs/master-concept-map.md",
+        ".brain/brain.json"
+      ]
+    },
     {
       "timestamp": "2026-05-27T15:36:00+07:00",
       "type": "design",
@@ -41,16 +67,16 @@
   "errors_encountered": [],
   "decisions_made": [
     {
+      "decision": "Bổ sung Lý Nhân Tông và Lê Văn Thịnh vào lộ trình quy luật chuyển từ uy vũ sang thể chế chính trị",
+      "reason": "Hai nhân vật phản ánh rõ nét sự vận hành của thể chế văn trị và những sự thỏa hiệp chính trị lạnh lùng ở đỉnh cao quyền lực triều Lý"
+    },
+    {
       "decision": "Sử dụng CSS ghi đè có độ ưu tiên cao trong shared/styles.css để compact hóa thẻ",
       "reason": "Tránh chỉnh sửa thủ công HTML của 26+ thẻ trên trang chủ, đảm bảo tính đồng bộ tuyệt đối và an toàn mã nguồn"
     },
     {
       "decision": "Chuẩn hóa 5 trang mới từ dạng nháp Chronicle Mode sang định dạng premium dùng chung stylesheet",
       "reason": "Đảm bảo tính đồng bộ thị giác và cấu trúc mã nguồn theo quy định của dự án"
-    },
-    {
-      "decision": "Liên kết Lý Thái Tông vào Quy luật 5 (Chuyển từ Uy vũ sang Thể chế)",
-      "reason": "Lý Thái Tông trực tiếp xây dựng thể chế bằng luật pháp thành văn đầu tiên (Hình thư 1042) và Hội thề Đồng Cổ (1028)"
     }
   ]
 }

@@ -53,7 +53,9 @@
       { "ten": "Lý Thái Tông", "file": "nhan-vat/ly-thai-tong.html", "status": "done" },
       { "ten": "Lý Thánh Tông", "file": "nhan-vat/ly-thanh-tong.html", "status": "done" },
       { "ten": "Hoàng Hậu Ỷ Lan", "file": "nhan-vat/hoang-hau-y-lan.html", "status": "done" },
-      { "ten": "Quách Quỳ (Nhà Tống)", "file": "nhan-vat/quach-quy.html", "status": "done" }
+      { "ten": "Quách Quỳ (Nhà Tống)", "file": "nhan-vat/quach-quy.html", "status": "done" },
+      { "ten": "Lý Nhân Tông", "file": "nhan-vat/ly-nhan-tong.html", "status": "done" },
+      { "ten": "Lê Văn Thịnh", "file": "nhan-vat/le-van-thinh.html", "status": "done" }
     ],
     "bai_hoc": [
       { "ten": "Nhà Nước Văn Lang: Từ huyền thoại đến sự thật khảo cổ", "file": "bai-hoc/nha-nuoc-van-lang.html", "status": "done" },
@@ -66,9 +68,11 @@
       { "ten": "Nhà Lý: Quốc gia thật sự — Đại Việt 1009–1225", "file": "bai-hoc/nha-ly-total.html", "status": "done" },
       { "ten": "Nhà Lý — Khai Quốc & Dời Đô (1009–1054)", "file": "bai-hoc/nha-ly-chap1.html", "status": "done" },
       { "ten": "Nhà Lý — Củng Cố & Mở Rộng (1054–1075)", "file": "bai-hoc/nha-ly-chap2.html", "status": "done" },
-      { "ten": "Nhà Lý — Kháng Chiến Chống Tống (1075–1077)", "file": "bai-hoc/nha-ly-chap3.html", "status": "done" }
+      { "ten": "Nhà Lý — Kháng Chiến Chống Tống (1075–1077)", "file": "bai-hoc/nha-ly-chap3.html", "status": "done" },
+      { "ten": "Nhà Lý — Phát Triển Văn Hoá & Thể Chế (1077–1127)", "file": "bai-hoc/nha-ly-chap4.html", "status": "done" },
+      { "ten": "Nhà Lý — Suy Tàn & Chuyển Giao (1127–1225)", "file": "bai-hoc/nha-ly-chap5.html", "status": "done" }
     ],
-    "tong_so_ke_hoach": 20,
+    "tong_so_ke_hoach": 30,
     "note": "Có 2 loại page: nhan-vat/ (phân tích nhân vật 3 Gốc/3 Độc) và bai-hoc/ (bài học lịch sử)"
   }
 }
