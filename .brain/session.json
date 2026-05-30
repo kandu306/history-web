@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-30T11:45:00+07:00",
+  "updated_at": "2026-05-30T11:55:00+07:00",
   "working_on": {
     "feature": "Tích hợp 5 trang mới Nhà Lý và hoàn tất đồng bộ hệ thống Giai đoạn IV & V",
-    "task": "Chuẩn hóa định dạng, cập nhật counters và grids trên index.html, sơ đồ ban-do.html, concept-map.md, docs/master-concept-map.md và tệp brain.json",
+    "task": "Chuẩn hóa định dạng, cập nhật counters và grids trên index.html, sơ đồ ban-do.html, concept-map.md, docs/master-concept-map.md và tệp brain.json. Khắc phục lỗi diacritics bị rời rạc do đứt đường dẫn Noto Serif trong nha-ly-chap5.html",
     "status": "completed",
     "files": [
       "nhan-vat/ly-nhan-tong.html",
