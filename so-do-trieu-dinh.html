@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sơ Đồ Triều Đình — Vua & Quan | Lịch Sử Việt Nam</title>
+  <meta name="description" content="Cây cấu trúc Vua → Quan trong lịch sử Việt Nam từ Hai Bà Trưng đến Nhà Lý. Khám phá mối quan hệ quyền lực giữa các vị vua và quần thần." />
+  <link rel="icon" href="shared/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared/styles.css" />
+
+  <style>
+    /* ── Root & Base ── */
+    :root {
+      --red: #9b1c1c;
+      --red-light: #fef2f2;
+      --red-mid: #fee2e2;
+      --amber: #b45309;
+      --cream: #faf9f7;
+      --stone: #1c1917;
+      --stone-mid: #44403c;
+      --stone-light: #a8a29e;
+      --border: #e7e5e4;
+      --gold: #d97706;
+      --gold-light: #fef3c7;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background: var(--cream);
+      color: var(--stone);
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    .page-header {
+      background: linear-gradient(135deg, #1c0a0a 0%, #2d0d0d 50%, #1a0808 100%);
+      color: white;
+      padding: 3.5rem 2rem 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-header::before {
+      content: '⚜';
+      position: absolute;
+      font-size: 22rem;
+      opacity: 0.025;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      line-height: 1;
+    }
+    .header-eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #fca5a5;
+      margin-bottom: 0.75rem;
+    }
+    .header-title {
+      font-family: 'Noto Serif', Georgia, serif;
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    .header-title span { color: #fca5a5; }
+    .header-sub {
+      font-size: 0.9rem;
+      color: #d6d3d1;
+      max-width: 500px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.7;
+    }
+    .header-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: #fca5a5;
+      font-size: 0.8rem;
+      text-decoration: none;
+      border: 1px solid rgba(252,165,165,0.3);
+      padding: 0.4rem 1rem;
+      border-radius: 9999px;
+      transition: all 0.2s;
+    }
+    .header-back:hover {
+      background: rgba(252,165,165,0.1);
+      border-color: #fca5a5;
+    }
+
+    /* ── Legend ── */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem 2rem;
+      background: white;
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.78rem;
+      color: var(--stone-mid);
+    }
+    .legend-dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .dot-king { background: var(--red); }
+    .dot-official { background: #059669; }
+    .dot-queen { background: #7c3aed; }
+    .dot-enemy { background: #374151; }
+    .dot-advisor { background: #0369a1; }
+
+    /* ── Main Layout ── */
+    .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    /* ── Era Block ── */
+    .era-block {
+      margin-bottom: 3rem;
+    }
+    .era-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--stone);
+      color: white;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem 0.35rem 0.75rem;
+      border-radius: 9999px;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+    .era-label-dot {
+      width: 8px; height: 8px;
+      background: #fca5a5;
+      border-radius: 50%;
+    }
+
+    /* ── Tree Row ── */
+    .tree-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: flex-start;
+      padding-left: 0;
+    }
+
+    /* ── Dynasty Column ── */
+    .dynasty-column {
+      flex: 1;
+      min-width: 260px;
+      max-width: 360px;
+    }
+
+    /* ── King Card ── */
+    .king-card {
+      background: linear-gradient(135deg, #450a0a 0%, #7f1d1d 100%);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 1.25rem 1.25rem 1rem;
+      color: white;
+      text-decoration: none;
+      display: block;
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(155, 28, 28, 0.25);
+    }
+    .king-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .king-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 35px rgba(155, 28, 28, 0.4);
+    }
+    .king-crown {
+      font-size: 1.4rem;
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+    .king-title {
+      font-size: 0.6rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #fca5a5;
+      margin-bottom: 0.3rem;
+    }
+    .king-name {
+      font-family: 'Noto Serif', Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 0.2rem;
+    }
+    .king-real-name {
+      font-size: 0.75rem;
+      color: #fecaca;
+      margin-bottom: 0.6rem;
+    }
+    .king-years {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: rgba(0,0,0,0.25);
+      padding: 0.2rem 0.6rem;
+      border-radius: 9999px;
+      font-size: 0.72rem;
+      color: #fecaca;
+    }
+    .king-note {
+      font-size: 0.7rem;
+      color: #fca5a5;
+      margin-top: 0.5rem;
+      font-style: italic;
+      line-height: 1.5;
+    }
+    .king-no-link {
+      cursor: default;
+    }
+    .king-no-link:hover {
+      transform: none;
+      box-shadow: 0 4px 20px rgba(155, 28, 28, 0.25);
+    }
+
+    /* ── Connector ── */
+    .connector {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem 0 0.5rem 1.5rem;
+      gap: 0.5rem;
+    }
+    .connector-line {
+      width: 2px;
+      background: linear-gradient(180deg, var(--border) 0%, transparent 100%);
+      align-self: stretch;
+      min-height: 12px;
+      margin-right: 0.5rem;
+    }
+    .connector-branch {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+    }
+
+    /* ── Official Cards ── */
+    .official-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    .official-list::before {
+      content: '';
+      position: absolute;
+      left: 0.6rem;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, var(--border) 0%, transparent 100%);
+    }
+
+    .official-card {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+    .official-card::before {
+      content: '';
+      position: absolute;
+      left: -0.9rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0.75rem;
+      height: 2px;
+      background: var(--border);
+    }
+    .official-card:hover {
+      border-color: var(--red);
+      box-shadow: 0 4px 16px rgba(155, 28, 28, 0.1);
+      transform: translateX(3px);
+    }
+
+    .official-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .icon-queen { background: #f3e8ff; }
+    .icon-official { background: #d1fae5; }
+    .icon-advisor { background: #dbeafe; }
+    .icon-enemy { background: #f3f4f6; }
+
+    .official-info {
+      flex: 1;
+      min-width: 0;
+    }
+    .official-role {
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0.15rem;
+    }
+    .role-queen { color: #7c3aed; }
+    .role-official { color: #059669; }
+    .role-advisor { color: #0369a1; }
+    .role-enemy { color: #374151; }
+
+    .official-name {
+      font-family: 'Noto Serif', Georgia, serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--stone);
+      line-height: 1.3;
+    }
+    .official-desc {
+      font-size: 0.7rem;
+      color: var(--stone-light);
+      line-height: 1.4;
+      margin-top: 0.1rem;
+    }
+    .official-arrow {
+      color: var(--stone-light);
+      font-size: 0.8rem;
+      flex-shrink: 0;
+      transition: color 0.2s, transform 0.2s;
+    }
+    .official-card:hover .official-arrow {
+      color: var(--red);
+      transform: translateX(2px);
+    }
+
+    /* ── No officials placeholder ── */
+    .no-officials {
+      padding: 0.6rem 1rem 0.6rem 1.5rem;
+      font-size: 0.75rem;
+      color: var(--stone-light);
+      font-style: italic;
+    }
+    .no-officials::before {
+      content: '';
+      position: absolute;
+      left: 0.6rem;
+      width: 0.75rem;
+      height: 2px;
+      background: var(--border);
+      top: 50%;
+    }
+
+    /* ── Enemy block ── */
+    .enemy-card {
+      background: #f9fafb;
+      border: 1px dashed #9ca3af;
+    }
+    .enemy-card:hover {
+      border-color: #374151;
+      box-shadow: 0 4px 16px rgba(55, 65, 81, 0.1);
+    }
+
+    /* ── Section divider ── */
+    .section-divider {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 2.5rem 0;
+    }
+    .section-divider::before,
+    .section-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .section-divider span {
+      color: var(--stone-light);
+      font-size: 0.8rem;
+    }
+
+    /* ── Stats bar ── */
+    .stats-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+      padding: 1.25rem;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+    .stat-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .stat-king { background: #fef2f2; color: var(--red); }
+    .stat-official { background: #d1fae5; color: #059669; }
+    .stat-queen { background: #f3e8ff; color: #7c3aed; }
+    .stat-advisor { background: #dbeafe; color: #0369a1; }
+    .stat-enemy { background: #f3f4f6; color: #374151; }
+    .stat-label { font-weight: 400; opacity: 0.7; }
+
+    /* ── Enemy section ── */
+    .enemy-section {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 2px dashed var(--border);
+    }
+    .enemy-title {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #6b7280;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .enemy-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #e5e7eb;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .tree-row { flex-direction: column; }
+      .dynasty-column { max-width: 100%; }
+      .page-header { padding: 2rem 1.25rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reading Progress -->
+  <div id="progress-bar"></div>
+
+  <!-- Header -->
+  <header class="page-header">
+    <p class="header-eyebrow">🏛️ Cây Cấu Trúc Triều Đình</p>
+    <h1 class="header-title">Vua <span>→</span> Quan</h1>
+    <p class="header-sub">
+      Mối quan hệ quyền lực giữa các vị vua và quần thần trong lịch sử Việt Nam — từ Hai Bà Trưng đến cuối Nhà Lý
+    </p>
+    <a href="index.html" class="header-back">← Về trang chủ</a>
+  </header>
+
+  <!-- Legend -->
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot dot-king"></div> Vua / Người đứng đầu</div>
+    <div class="legend-item"><div class="legend-dot dot-queen"></div> Hoàng hậu / Nhiếp chính</div>
+    <div class="legend-item"><div class="legend-dot dot-official"></div> Quan đại thần</div>
+    <div class="legend-item"><div class="legend-dot dot-advisor"></div> Cố vấn / Thiền sư</div>
+    <div class="legend-item"><div class="legend-dot dot-enemy"></div> Đối lập / Ngoại xâm</div>
+  </div>
+
+  <!-- Main -->
+  <main class="main-container">
+
+    <!-- Stats -->
+    <div class="stats-bar">
+      <div class="stat-pill stat-king">👑 <strong>12</strong> <span class="stat-label">Vua / Thủ lĩnh</span></div>
+      <div class="stat-pill stat-queen">👸 <strong>2</strong> <span class="stat-label">Hoàng hậu nhiếp chính</span></div>
+      <div class="stat-pill stat-official">📜 <strong>1</strong> <span class="stat-label">Quan đại thần</span></div>
+      <div class="stat-pill stat-advisor">🧘 <strong>1</strong> <span class="stat-label">Cố vấn / Thiền sư</span></div>
+      <div class="stat-pill stat-enemy">⚔️ <strong>1</strong> <span class="stat-label">Đối lập / Ngoại xâm</span></div>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════════
+         ERA 1: ĐẤU TRANH GIÀNH ĐỘC LẬP
+    ════════════════════════════════════════════ -->
+    <div class="era-block fade-section">
+      <div class="era-label"><div class="era-label-dot"></div> Thời kỳ đấu tranh giành độc lập · 40 – 937 SCN</div>
+      <div class="tree-row">
+
+        <!-- Hai Bà Trưng -->
+        <div class="dynasty-column">
+          <a href="nhan-vat/hai-ba-trung.html" class="king-card">
+            <div class="king-crown">👑</div>
+            <div class="king-title">Nữ Vương</div>
+            <div class="king-name">Trưng Nữ Vương</div>
+            <div class="king-real-name">Trưng Trắc & Trưng Nhị</div>
+            <div class="king-years">📅 40 – 43 SCN</div>
+            <div class="king-note">Cuộc khởi nghĩa độc lập đầu tiên. Đánh đuổi Tô Định, lập vương quốc tự trị ngắn ngủi.</div>
+          </a>
+          <div class="official-list" style="margin-top:0.6rem">
+            <div class="no-officials" style="position:relative">— Chưa có hồ sơ quan thần trong giai đoạn này</div>
+          </div>
+        </div>
+
+        <!-- Phùng Hưng -->
+        <div class="dynasty-column">
+          <a href="nhan-vat/phung-hung.html" class="king-card">
+            <div class="king-crown">👑</div>
+            <div class="king-title">Bố Cái Đại Vương</div>
+            <div class="king-name">Phùng Hưng</div>
+            <div class="king-real-name">Phùng Hưng</div>
+            <div class="king-years">📅 ~791 – 802 SCN</div>
+            <div class="king-note">Thủ lĩnh Đường Lâm. Chiếm lại Tống Bình, cai trị tự trị trước khi nhà Đường phục hồi.</div>
+          </a>
+          <div class="official-list" style="margin-top:0.6rem">
+            <div class="no-officials" style="position:relative">— Chưa có hồ sơ quan thần trong giai đoạn này</div>
+          </div>
+        </div>
+
+        <!-- Khúc Thừa Dụ -->
+        <div class="dynasty-column">
+          <a href="nhan-vat/khuc-thua-du.html" class="king-card">
+            <div class="king-crown">👑</div>
+            <div class="king-title">Tiết Độ Sứ</div>
+            <div class="king-name">Khúc Thừa Dụ</div>
+            <div class="king-real-name">Khúc Thừa Dụ</div>
+            <div class="king-years">📅 905 – 907 SCN</div>
+            <div class="king-note">Người đặt nền móng tự trị thực sự. Tiếp quản quyền lực từ nhà Đường suy tàn bằng con đường hoà bình.</div>
+          </a>
+          <div class="official-list" style="margin-top:0.6rem">
+            <div class="no-officials" style="position:relative">— Chưa có hồ sơ quan thần trong giai đoạn này</div>
+          </div>
+        </div>
+
+        <!-- Dương Đình Nghệ -->
+        <div class="dynasty-column">
+          <a href="nhan-vat/duong-dinh-nghe.html" class="king-card">
+            <div class="king-crown">👑</div>
+            <div class="king-title">Tiết Độ Sứ</div>
+            <div class="king-name">Dương Đình Nghệ</div>
+            <div class="king-real-name">Dương Đình Nghệ</div>
+            <div class="king-years">📅 931 – 937 SCN</div>
+            <div class="king-note">Giải phóng Giao Châu khỏi Nam Hán. Thân phụ của Dương Vân Nga, người kết nối Đinh–Tiền Lê.</div>
+          </a>
+          <div class="official-list" style="margin-top:0.6rem">
+            <div class="no-officials" style="position:relative">— Chưa có hồ sơ quan thần trong giai đoạn này</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section-divider fade-section"><span>⚔️ 938 — Ngô Quyền đánh Bạch Đằng, kết thúc 1.000 năm Bắc thuộc</span></div>
+
+    <!-- ═══════════════════════════════════════════
+         ERA 2: NGÔ VƯƠNG
+    ════════════════════════════════════════════ -->
+    <div class="era-block fade-section">
+      <div class="era-label"><div class="era-label-dot"></div> Ngô Vương · 939 – 944 SCN</div>
+      <div class="tree-row">
+
+        <div class="dynasty-column">
+          <a href="nhan-vat/ngo-quyen.html" class="king-card">
+            <div class="king-crown">👑</div>
+            <div class="king-title">Ngô Vương</div>
+            <div class="king-name">Ngô Quyền</div>
+            <div class="king-real-name">Ngô Quyền</div>
+            <div class="king-years">📅 939 – 944 SCN</div>
+            <div class="king-note">Chiến thắng Bạch Đằng 938. Khai sinh nền độc lập vĩnh viễn. Mất khi 47 tuổi, chưa kịp xây dựng thể chế.</div>
+          </a>
+          <div class="official-list" style="margin-top:0.6rem">
+            <div class="no-officials" style="position:relative">— Chưa có hồ sơ quan thần trong giai đoạn này</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section-divider fade-section"><span>🌀 Loạn 12 Sứ Quân · 944 – 968</span></div>
+
+    <!-- ═══════════════════════════════════════════
+         ERA 3: NHÀ ĐINH
+    ════════════════════════════════════════════ -->
+    <div class="era-block fade-section">
+      <div class="era-label"><div class="era-label-dot"></div> Nhà Đinh · 968 – 980 SCN</div>
+      <div class="tree-row">
+
+        <div class="dynasty-column">
+          <a href="nhan-vat/dinh-bo-linh.html" class="king-card">
+            <div class="king-crown">👑</div>
+            <div class="king-title">Đinh Tiên Hoàng</div>
+            <div class="king-name">Đinh Bộ Lĩnh</div>
+            <div class="king-real-name">Đinh Hoàn</div>
+            <div class="king-years">📅 968 – 979 SCN</div>
+            <div class="king-note">Dẹp loạn 12 Sứ Quân. Lập Nhà Đinh, đặt tên nước Đại Cồ Việt. Bị ám sát năm 979.</div>
+          </a>
+          <div class="official-list" style="margin-top:0.6rem">
+            <a href="nhan-vat/duong-van-nga.html" class="official-card">
+              <div class="official-icon icon-queen">👸</div>
+              <div class="official-info">
+                <div class="official-role role-queen">Hoàng Hậu</div>
+                <div class="official-name">Dương Vân Nga</div>
+                <div class="official-desc">Hoàng hậu Nhà Đinh → Tiền Lê. Cầu nối quyền lực hai triều đại</div>
+              </div>
+              <div class="official-arrow">›</div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         ERA 4: NHÀ TIỀN LÊ
+    ════════════════════════════════════════════ -->
+    <div class="era-block fade-section">
+      <div class="era-label"><div class="era-label-dot"></div> Nhà Tiền Lê · 980 – 1009 SCN</div>
+      <div class="tree-row">
+
+        <!-- Lê Hoàn -->
+        <div class="dynasty-column">
+          <a href="nhan-vat/le-hoan.html" class="king-card">
+            <div class="king-crown">👑</div>
+            <div class="king-title">Lê Đại Hành</div>
+            <div class="king-name">Lê Hoàn</div>
+            <div class="king-real-name">Lê Hoàn</div>
+            <div class="king-years">📅 980 – 1005 SCN</div>
+            <div class="king-note">Đại thắng quân Tống 981 & quân Chiêm. Điều phối quyền lực bằng cả cương lẫn nhu.</div>
+          </a>
+          <div class="official-list" style="margin-top:0.6rem">
+            <a href="nhan-vat/duong-van-nga.html" class="official-card">
+              <div class="official-icon icon-queen">👸</div>
+              <div class="official-info">
+                <div class="official-role role-queen">Hoàng Hậu / Nhiếp Chính</div>
+                <div class="official-name">Dương Vân Nga</div>
+                <div class="official-desc">Cựu hoàng hậu Nhà Đinh, trao áo long bào cho Lê Hoàn</div>
+              </div>
+              <div class="official-arrow">›</div>
+            </a>
+            <a href="nhan-vat/thien-su-van-hanh.html" class="official-card">
+              <div class="official-icon icon-advisor">🧘</div>
+              <div class="official-info">
+                <div class="official-role role-advisor">Cố Vấn Tối Cao</div>
+                <div class="official-name">Thiền Sư Vạn Hạnh</div>
+                <div class="official-desc">Cố vấn tinh thần dưới thời Tiền Lê → đưa Lý Công Uẩn lên ngôi</div>
+              </div>
+              <div class="official-arrow">›</div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lê Long Đĩnh -->
+        <div class="dynasty-column">
+          <a href="nhan-vat/le-long-dinh.html" class="king-card">
+            <div class="king-crown">👑</div>
+            <div class="king-title">Lê Ngọa Triều</div>
+            <div class="king-name">Lê Long Đĩnh</div>
+            <div class="king-real-name">Lê Long Đĩnh</div>
+            <div class="king-years">📅 1005 – 1009 SCN</div>
+            <div class="king-note">Vị vua cuối Tiền Lê. Bạo ngược khiến triều đình mất lòng dân — mở đường cho sự ra đời Nhà Lý.</div>
+          </a>
+          <div class="official-list" style="margin-top:0.6rem">
+            <a href="nhan-vat/thien-su-van-hanh.html" class="official-card">
+              <div class="official-icon icon-advisor">🧘</div>
+              <div class="official-info">
+                <div class="official-role role-advisor">Cố Vấn Bí Mật</div>
+                <div class="official-name">Thiền Sư Vạn Hạnh</div>
+                <div class="official-desc">Bí mật vận động đưa Lý Công Uẩn thay thế Tiền Lê</div>
+              </div>
+              <div class="official-arrow">›</div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section-divider fade-section"><span>🌟 1009 — Lý Công Uẩn lên ngôi, khai sáng Nhà Lý · Đại Việt ra đời</span></div>
+
+    <!-- ═══════════════════════════════════════════
+         ERA 5: NHÀ LÝ
+    ════════════════════════════════════════════ -->
+    <div class="era-block fade-section">
+      <div class="era-label"><div class="era-label-dot"></div> Nhà Lý (Đại Việt) · 1009 – 1225 SCN</div>
+      <div class="tree-row">
+
+        <!-- Lý Thái Tổ -->
+        <div class="dynasty-column">
+          <a href="nhan-vat/ly-cong-uan.html" class="king-card">
+            <div class="king-crown">👑</div>
+            <div class="king-title">Lý Thái Tổ — Khai Quốc</div>
+            <div class="king-name">Lý Công Uẩn</div>
+            <div class="king-real-name">Lý Công Uẩn</div>
+            <div class="king-years">📅 1009 – 1028 SCN</div>
+            <div class="king-note">Dời đô từ Hoa Lư về Thăng Long. Đặt nền móng quốc gia văn minh, mở kỷ nguyên 216 năm Nhà Lý.</div>
+          </a>
+          <div class="official-list" style="margin-top:0.6rem">
+            <a href="nhan-vat/thien-su-van-hanh.html" class="official-card">
+              <div class="official-icon icon-advisor">🧘</div>
+              <div class="official-info">
+                <div class="official-role role-advisor">Cha Đỡ Đầu Tinh Thần</div>
+                <div class="official-name">Thiền Sư Vạn Hạnh</div>
+                <div class="official-desc">Người đưa Lý Công Uẩn lên ngôi, nền tảng tư tưởng Phật giáo Nhà Lý</div>
+              </div>
+              <div class="official-arrow">›</div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lý Thái Tông -->
+        <div class="dynasty-column">
+          <a href="nhan-vat/ly-thai-tong.html" class="king-card">
+            <div class="king-crown">👑</div>
+            <div class="king-title">Lý Thái Tông — Củng Cố</div>
+            <div class="king-name">Lý Thái Tông</div>
+            <div class="king-real-name">Lý Phật Mã</div>
+            <div class="king-years">📅 1028 – 1054 SCN</div>
+            <div class="king-note">Lập bộ luật Hình thư — bộ luật thành văn đầu tiên. Chinh phục Chiêm Thành, mở rộng lãnh thổ phía Nam.</div>
+          </a>
+          <div class="official-list" style="margin-top:0.6rem">
+            <div class="no-officials" style="position:relative">— Chưa có hồ sơ quan thần riêng trong giai đoạn này</div>
+          </div>
+        </div>
+
+        <!-- Lý Thánh Tông -->
+        <div class="dynasty-column">
+          <a href="nhan-vat/ly-thanh-tong.html" class="king-card">
+            <div class="king-crown">👑</div>
+            <div class="king-title">Lý Thánh Tông — Văn Trị</div>
+            <div class="king-name">Lý Thánh Tông</div>
+            <div class="king-real-name">Lý Nhật Tôn</div>
+            <div class="king-years">📅 1054 – 1072 SCN</div>
+            <div class="king-note">Đặt tên nước Đại Việt. Mở Văn Miếu Quốc Tử Giám. Khai sáng nền học thuật chính thống.</div>
+          </a>
+          <div class="official-list" style="margin-top:0.6rem">
+            <a href="nhan-vat/hoang-hau-y-lan.html" class="official-card">
+              <div class="official-icon icon-queen">👸</div>
+              <div class="official-info">
+                <div class="official-role role-queen">Hoàng Hậu / Nhiếp Chính</div>
+                <div class="official-name">Hoàng Hậu Ỷ Lan</div>
+                <div class="official-desc">Nhiếp chính khi vua chinh phạt Chiêm 1069. Tài trí hiếm có</div>
+              </div>
+              <div class="official-arrow">›</div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lý Nhân Tông -->
+        <div class="dynasty-column">
+          <a href="nhan-vat/ly-nhan-tong.html" class="king-card">
+            <div class="king-crown">👑</div>
+            <div class="king-title">Lý Nhân Tông — Đỉnh Cao</div>
+            <div class="king-name">Lý Nhân Tông</div>
+            <div class="king-real-name">Lý Càn Đức</div>
+            <div class="king-years">📅 1072 – 1127 SCN</div>
+            <div class="king-note">Lên ngôi năm 7 tuổi. Trị vì 56 năm — dài nhất Nhà Lý. Chiến thắng Tống 1075–1077, lập khoa thi đầu tiên.</div>
+          </a>
+          <div class="official-list" style="margin-top:0.6rem">
+            <a href="nhan-vat/hoang-hau-y-lan.html" class="official-card">
+              <div class="official-icon icon-queen">👸</div>
+              <div class="official-info">
+                <div class="official-role role-queen">Thái Hậu Nhiếp Chính</div>
+                <div class="official-name">Hoàng Hậu Ỷ Lan</div>
+                <div class="official-desc">Nhiếp chính 1072–1076 khi vua còn nhỏ. Quyền lực đỉnh cao</div>
+              </div>
+              <div class="official-arrow">›</div>
+            </a>
+            <a href="nhan-vat/le-van-thinh.html" class="official-card">
+              <div class="official-icon icon-official">📜</div>
+              <div class="official-info">
+                <div class="official-role role-official">Trạng Nguyên · Thái Sư</div>
+                <div class="official-name">Lê Văn Thịnh</div>
+                <div class="official-desc">Trạng nguyên đầu tiên. Đàm phán biên giới với nhà Tống. Bị hạ bệ vì vụ án "hóa hổ"</div>
+              </div>
+              <div class="official-arrow">›</div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════════
+         ENEMY SECTION
+    ════════════════════════════════════════════ -->
+    <div class="enemy-section fade-section">
+      <div class="enemy-title">⚔️ Đối Lập / Ngoại Xâm (có hồ sơ trong dự án)</div>
+      <div class="tree-row">
+        <div class="dynasty-column">
+          <a href="nhan-vat/quach-quy.html" class="king-card" style="background: linear-gradient(135deg, #1f2937 0%, #374151 100%); box-shadow: 0 4px 20px rgba(55,65,81,0.3);">
+            <div class="king-crown">⚔️</div>
+            <div class="king-title" style="color: #9ca3af;">Tướng Nhà Tống</div>
+            <div class="king-name">Quách Quỳ</div>
+            <div class="king-real-name">Quách Quỳ (Guo Kui)</div>
+            <div class="king-years" style="background: rgba(0,0,0,0.3); color: #9ca3af;">📅 Xâm lược 1075–1077</div>
+            <div class="king-note" style="color: #9ca3af;">Chỉ huy đại quân Tống xâm lược Đại Việt. Thất bại trước chiến lược của Lý Thường Kiệt tại phòng tuyến Như Nguyệt.</div>
+          </a>
+          <div class="official-list" style="margin-top:0.6rem">
+            <div class="no-officials" style="position:relative">— Đối đầu với triều Lý Nhân Tông (1072–1127)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="shared/scripts.js"></script>
+  <script>
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(el => {
+        if (el.isIntersecting) {
+          el.target.classList.add('visible');
+          observer.unobserve(el.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-section').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
