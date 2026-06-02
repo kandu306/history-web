@@ -3,381 +3,388 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>28. Lý Cao Tông (1173–1210) — Hoàng Đế Thứ 7 Nhà Lý</title>
+  <title>Lý Cao Tông — Kẻ Tàn Phá Cơ Đồ | Phân tích 3 Gốc / 3 Độc</title>
+  <meta name="description" content="Phân tích Lý Cao Tông theo lăng kính 3 Gốc & 3 Độc — Hoàng đế thứ 7 nhà Lý: xây cung điện xa hoa bóc lột dân, giết oan trung thần Phạm Bỉnh Di, bỏ chạy khỏi kinh thành — tự trao quyền cho họ Trần.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Lý Cao Tông — Kẻ Tàn Phá Cơ Đồ | Phân tích 3 Gốc / 3 Độc">
+  <meta property="og:description" content="Sinh ra ở vạch đích mà không tự rèn giũa — vơ vét dân, giết trung thần, bỏ chạy khỏi kinh thành và vô tình trao quyền cho họ Trần. 16 năm sau, nhà Lý mất ngôi.">
+
+  <link class="js-favicon" rel="icon" type="image/svg+xml" href="../shared/favicon.svg">
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700;1,900&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            'playfair': ['"Playfair Display"', 'Georgia', 'serif'],
-            'plex': ['"IBM Plex Serif"', 'Georgia', 'serif'],
-            'mono': ['"JetBrains Mono"', 'monospace'],
-            'noto': ['"Noto Sans SC"', 'sans-serif'],
-          },
-          colors: {
-            'cream': '#f4eed8','cream-dark': '#ede5c8','ink': '#1c1409','ink-mid': '#2e2010','ink-light': '#4a3520',
-            'crimson': '#921c1c','crimson-light': '#b83232','gold': '#b07c28','gold-light': '#d4a042',
-            'warm': '#7a6040','rule': '#c4aa84','rule-light': '#ddd0b8',
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    :root { --cream:#f4eed8; --ink:#1c1409; --crimson:#921c1c; --gold:#b07c28; --rule:#c4aa84; }
-    * { box-sizing: border-box; }
-    body { background-color:#e8dfc0; background-image:radial-gradient(circle,rgba(160,130,80,0.35) 0.6px,transparent 0.6px); background-size:18px 18px; min-height:100vh; padding:2rem 1rem; }
-    .paper { background-color:var(--cream); position:relative; }
-    .paper::before { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(180,150,90,0.12) 0.8px,transparent 0.8px); background-size:22px 22px; pointer-events:none; }
-    .triple-rule { border-top:3px solid var(--ink); position:relative; margin-bottom:2px; }
-    .triple-rule::after { content:''; display:block; border-top:1px solid var(--ink); margin-top:3px; }
-    .single-rule { border-top:1px solid var(--rule); }
-    .double-rule { border-top:2px solid var(--ink); position:relative; }
-    .double-rule::after { content:''; display:block; border-top:1px solid var(--ink); margin-top:2px; }
-    .drop-cap::first-letter { font-family:'Playfair Display',serif; font-size:4.6em; font-weight:900; line-height:0.78; float:left; margin-right:0.06em; margin-top:0.04em; color:var(--crimson); }
-    .strikeword { position:relative; display:inline-block; }
-    .strikeword::after { content:''; position:absolute; left:-3px; right:-3px; top:50%; height:5px; background:var(--crimson); transform:translateY(-50%) rotate(-1.5deg); }
-    .two-col { column-count:2; column-gap:2.2rem; column-rule:1px solid var(--rule); }
-    @media (max-width:640px) { .two-col { column-count:1; } }
-    .pull-q { border-left:4px solid var(--crimson); padding-left:1.1rem; }
-    .pull-q-center { border-top:2px solid var(--crimson); border-bottom:2px solid var(--crimson); padding:1rem 0; text-align:center; }
-    .sec-label { font-family:'JetBrains Mono',monospace; font-size:0.6rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--crimson); font-weight:600; }
-    .stars { letter-spacing:0.06em; }
-    .sf { color:var(--gold); }
-    .se { color:var(--rule); }
-    .tl-dot { width:8px; height:8px; background:var(--crimson); border-radius:50%; flex-shrink:0; margin-top:6px; }
-    .ornament { letter-spacing:0.6em; color:var(--gold); }
-    @keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
-    .fade-in { animation:fadeUp 0.7s ease-out both; }
-    .fade-in-2 { animation:fadeUp 0.7s ease-out 0.15s both; }
-    .fade-in-3 { animation:fadeUp 0.7s ease-out 0.3s both; }
-    .ink-box { background-color:var(--ink); color:var(--cream); }
-    .ink-box .muted { color:#a89060; }
-    .ink-box .bright { color:var(--cream); }
-    .profile-badge { border:2px solid var(--crimson); border-radius:0.75rem; }
-    .link-card { border:1px solid var(--rule); border-radius:0.75rem; transition:border-color 0.2s,box-shadow 0.2s; }
-    .link-card:hover { border-color:var(--crimson); box-shadow:0 2px 12px rgba(146,28,28,0.1); }
-    .lesson-num { width:2.8rem; height:2.8rem; border:2px solid var(--crimson); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
-    .rating-row { border-bottom:1px solid var(--rule-light); }
-    ::-webkit-scrollbar { width:6px; }
-    ::-webkit-scrollbar-track { background:#e8dfc0; }
-    ::-webkit-scrollbar-thumb { background:var(--rule); border-radius:3px; }
-    p { orphans:2; widows:2; }
-    details summary { list-style:none; }
-    details summary::-webkit-details-marker { display:none; }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../shared/styles.css">
+  <script src="../shared/scripts.js" defer></script>
 </head>
-<body>
 
-<div class="paper max-w-4xl mx-auto shadow-2xl fade-in" style="border:1px solid #b8a070; border-radius:2px; overflow:hidden;">
+<body class="font-sans antialiased text-[#1c1917]">
 
-  <!-- DATELINE -->
-  <div style="border-bottom:1px solid var(--ink);" class="px-10 pt-7 pb-3 flex items-center justify-between gap-4 flex-wrap">
-    <span class="font-mono text-xs tracking-widest text-warm uppercase" style="font-size:0.6rem; letter-spacing:0.2em;">Lịch Sử Việt Nam · Nhân Vật</span>
-    <div class="text-center">
-      <span class="sec-label" style="font-size:0.62rem;">★ Nhân Vật Số 28 — Lý Cao Tông ★</span>
+  <div id="progress-bar"></div>
+
+  <nav style="background: rgba(250,249,247,0.92); backdrop-filter: blur(12px);"
+       class="sticky top-0 z-50 border-b border-[#e7e5e4]">
+    <div class="max-w-4xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2 text-sm text-[#78716c]">
+        <a href="../index.html" class="text-[#9b1c1c] text-base leading-none hover:opacity-75 transition-opacity">◈</a>
+        <span>Lịch sử Việt Nam</span>
+        <span class="text-[#d6d3d1]">›</span>
+        <span class="font-medium text-[#1c1917]">Lý Cao Tông</span>
+      </div>
+      <span class="text-xs text-[#a8a29e] font-semibold tracking-widest uppercase hidden sm:block">3 Gốc / 3 Độc</span>
+      <button id="mobile-menu-btn" class="sm:hidden text-[#1c1917] focus:outline-none p-1.5 rounded-lg hover:bg-[#f5f4f1] transition-colors" aria-label="Toggle menu">
+        <svg id="hamburger-icon" class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
     </div>
-    <span class="font-mono text-xs tracking-widest text-warm uppercase" style="font-size:0.6rem; letter-spacing:0.2em;">1173–1210 SCN · Thời Lý</span>
-  </div>
-
-  <!-- METADATA BAR -->
-  <div class="px-10 py-2 flex gap-3 flex-wrap items-center" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.06);">
-    <span class="font-mono" style="font-size:0.57rem; letter-spacing:0.1em; color:var(--warm);"><strong style="color:var(--ink-light);">Khoá:</strong> Lịch sử Việt Nam - Khoá học · Nhân vật số 28</span>
-    <span style="color:var(--rule); font-size:0.7rem;">|</span>
-    <span class="font-mono" style="font-size:0.57rem; letter-spacing:0.1em; color:var(--warm);"><strong style="color:var(--ink-light);">Vai trò:</strong> Hoàng đế thứ 7 nhà Lý</span>
-    <span style="color:var(--rule); font-size:0.7rem;">|</span>
-    <span class="font-mono" style="font-size:0.57rem; letter-spacing:0.1em; color:var(--warm);"><strong style="color:var(--ink-light);">Tên thật:</strong> Lý Long Cán</span>
-  </div>
-
-  <!-- MASTHEAD BAR -->
-  <div class="px-10 pt-3 pb-2">
-    <div class="triple-rule"></div>
-    <p class="font-mono text-center py-1" style="font-size:0.55rem; letter-spacing:0.35em; color:var(--warm);">LỊCH SỬ VIỆT NAM · NHÂN VẬT 28 · 1173–1210 SCN · HOÀNG ĐẾ · NHÀ LÝ · SỰ SUY VONG</p>
-    <div class="single-rule"></div>
-  </div>
-
-  <!-- HEADLINE -->
-  <div class="px-10 pt-6 pb-8 text-center" style="border-bottom:2px solid var(--ink);">
-    <p class="font-playfair italic mb-1" style="font-size:0.9rem; letter-spacing:0.08em; color:var(--crimson);">Lịch Sử Việt Nam · Nhân Vật 28 · 1173–1210</p>
-    <h1 class="font-playfair leading-none" style="font-size:clamp(2.8rem,7vw,4.8rem); font-weight:900; color:var(--ink); letter-spacing:-0.015em;">LÝ CAO TÔNG</h1>
-    <h1 class="font-playfair leading-none mb-5" style="font-size:clamp(4rem,12vw,8rem); font-weight:900; color:var(--ink); letter-spacing:-0.025em; font-style:italic; margin-top:-0.05em;">1173</h1>
-    <div class="flex items-center gap-5 mb-6 px-4">
-      <div class="flex-1" style="border-top:2px solid var(--ink);"></div>
-      <p class="font-playfair text-lg italic" style="color:var(--ink-mid); white-space:nowrap;"><em style="color:var(--crimson);">Hoàng Đế Thứ 7</em> — Lý Long Cán</p>
-      <div class="flex-1" style="border-top:2px solid var(--ink);"></div>
-    </div>
-    <p class="font-plex mx-auto leading-relaxed" style="max-width:58ch; font-size:1.05rem; color:var(--ink-light); font-style:italic;">Lý Cao Tông (1173–1210) — lên ngôi lúc 3 tuổi, được Tô Hiến Thành phò tá những năm đầu. Khi nắm thực quyền, trở thành một trong những vua hôn ám nhất lịch sử: bóc lột dân, giết oan trung thần, bỏ chạy — vô tình trao quyền cho họ Trần.</p>
-  </div>
-
-  <!-- §01 TL;DR & TIỂU SỬ NHANH -->
-  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
-    <div class="flex items-baseline gap-3 mb-5">
-      <span class="sec-label">§ 01</span>
-      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink); letter-spacing:-0.01em;">TL;DR &amp; Tiểu Sử Nhanh</h2>
-      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
-    </div>
-    <div class="profile-badge p-5 mb-6" style="background:rgba(146,28,28,0.04);">
-      <p class="font-mono mb-3" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--crimson);">PROFILE: KẺ TÀN PHÁ CƠ ĐỒ — TỘI NHÂN CỦA VƯƠNG TRIỀU LÝ</p>
-      <div class="flex gap-8 flex-wrap">
-        <div>
-          <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.12em; color:var(--warm);">TRÍ TUỆ</p>
-          <p class="stars" style="font-size:1.1rem;"><span class="sf">★★</span><span class="se">★★★</span></p>
-        </div>
-        <div>
-          <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.12em; color:var(--warm);">ĐẠO ĐỨC</p>
-          <p class="stars" style="font-size:1.1rem;"><span class="sf">★</span><span class="se">★★★★</span></p>
-        </div>
+    <div id="mobile-menu" class="hidden sm:hidden border-t border-[#e7e5e4] bg-[#faf9f7] py-2 px-6 shadow-lg">
+      <div class="flex flex-col gap-2 py-2">
+        <a href="../index.html#nhan-vat" class="mobile-nav-link text-sm text-[#57534e] hover:text-[#9b1c1c] font-medium py-2 transition-colors">Nhân vật & Bài học</a>
+        <a href="../index.html#phuong-phap" class="mobile-nav-link text-sm text-[#57534e] hover:text-[#9b1c1c] font-medium py-2 transition-colors">Phương pháp</a>
       </div>
     </div>
-    <p class="font-plex leading-relaxed mb-5" style="font-size:1.02rem; color:var(--ink-light);">Lý Cao Tông (1173–1210) — lên ngôi lúc 3 tuổi, được <strong style="color:var(--ink);">Tô Hiến Thành</strong> phò tá những năm đầu. Nhưng khi nắm thực quyền sau khi Tô Hiến Thành mất (1179), trở thành một trong những vua hôn ám nhất lịch sử: xây cung điện xa hoa bóc lột dân, giết oan trung thần <strong style="color:var(--ink);">Phạm Bỉnh Di</strong>, bỏ chạy khỏi kinh thành khi loạn xảy ra — vô tình trao quyền cho họ Trần.</p>
-    <div class="single-rule mb-5"></div>
-    <p class="font-mono mb-3" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--crimson);">TIỂU SỬ NHANH</p>
-    <p class="font-plex leading-relaxed" style="font-size:1.02rem; color:var(--ink-light);">Tên thật <strong style="color:var(--ink);">Lý Long Cán</strong>, con trai <strong style="color:var(--ink);">Lý Anh Tông</strong>. Được <strong style="color:var(--ink);">Tô Hiến Thành</strong> bảo vệ di chiếu đưa lên ngôi (3 tuổi). Khi Tô Hiến Thành mất, không còn người can ngăn đủ uy tín — ông tự do theo đuổi thú vui cá nhân mà không nghĩ đến hậu quả.</p>
-    <p class="font-plex leading-relaxed mt-3" style="font-size:0.93rem; color:var(--warm);">Sinh: <em>1173</em> · Mất: <em>1210</em> · Thời kỳ: Nhà Lý</p>
-  </div>
+  </nav>
 
-  <!-- §02 SỰ KIỆN LIÊN QUAN CHÍNH -->
-  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
-    <div class="flex items-baseline gap-3 mb-5">
-      <span class="sec-label">§ 02</span>
-      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink); letter-spacing:-0.01em;">Các Sự Kiện Liên Quan Chính</h2>
-      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
-    </div>
-    <div class="space-y-7 mb-8 font-plex leading-relaxed" style="font-size:1.02rem; color:var(--ink-light);">
-      <div class="flex gap-5 items-start">
-        <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3rem; text-align:right; line-height:1.25; padding-top:2px; letter-spacing:0.03em;">NĂM<br>1175</span>
-        <div class="tl-dot"></div>
-        <div>
-          <p class="font-playfair font-bold mb-2" style="color:var(--ink); font-size:1.05rem;">Lên Ngôi Lúc 3 Tuổi</p>
-          <p>Lên ngôi hoàng đế sau khi <strong style="color:var(--ink);">Lý Anh Tông</strong> băng hà. <strong style="color:var(--ink);">Tô Hiến Thành</strong> phụ chính, bảo vệ triều đình những năm đầu.</p>
+  <main>
+
+    <header class="max-w-4xl mx-auto px-6 pt-16 pb-12">
+      <div class="relative overflow-hidden">
+        <svg class="hero-ornament" viewBox="0 0 200 200" fill="currentColor" style="color:#9b1c1c;">
+          <path d="M100 0 L173 50 L173 150 L100 200 L27 150 L27 50 Z"/>
+        </svg>
+
+        <div class="flex flex-wrap items-center gap-3 mb-7">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold tracking-wider uppercase bg-[#fef2f2] text-[#9b1c1c] rounded-full border border-[#9b1c1c]/20">
+            <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+            Phân tích nhân vật
+          </span>
+          <span class="text-sm text-[#78716c] font-medium">1173–1210 SCN · Nhân Vật 28 · Hoàng Đế Thứ 7 Nhà Lý</span>
         </div>
-      </div>
-      <div class="flex gap-5 items-start">
-        <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3rem; text-align:right; line-height:1.25; padding-top:2px; letter-spacing:0.03em;">NĂM<br>1179</span>
-        <div class="tl-dot"></div>
-        <div>
-          <p class="font-playfair font-bold mb-1" style="color:var(--ink); font-size:1.05rem;">Tô Hiến Thành Qua Đời — Mất Người Can Ngăn Cuối Cùng</p>
-          <p>Triều đình mất đi người can ngăn cuối cùng có đủ uy tín — từ đây vua bắt đầu trượt dài không ai kéo lại được.</p>
-        </div>
-      </div>
-      <div class="flex gap-5 items-start">
-        <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3rem; text-align:right; line-height:1.25; padding-top:2px; letter-spacing:0.03em;">TỪ<br>1189</span>
-        <div class="tl-dot"></div>
-        <div>
-          <p class="font-playfair font-bold mb-2" style="color:var(--ink); font-size:1.05rem;">Xây Cung Điện Xa Hoa — Bóc Lột Dân</p>
-          <p>Xây dựng hàng loạt cung điện xa hoa (điện Giao Tiên, gác Kính Thiên...), bắt dân phục dịch triền miên. Vơ vét của cải khiến nhân dân lầm than, trộm cướp nổi lên khắp nơi. Khởi nghĩa nông dân bùng phát nhiều nơi.</p>
-        </div>
-      </div>
-      <div class="flex gap-5 items-start">
-        <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3rem; text-align:right; line-height:1.25; padding-top:2px; letter-spacing:0.03em;">NĂM<br>1209</span>
-        <div class="tl-dot"></div>
-        <div>
-          <p class="font-playfair font-bold mb-1" style="color:var(--ink); font-size:1.05rem;">Án Oan Phạm Bỉnh Di — Quách Bốc Nổi Loạn</p>
-          <p class="mb-3">Phạm Du đi dẹp loạn thất bại, lại thông đồng với giặc. Vua sai <strong style="color:var(--ink);">Phạm Bỉnh Di</strong> (trung thần cương trực) đi dẹp Phạm Du — Bỉnh Di thắng. Phạm Du chạy về kinh đút lót và gièm pha ngược lại. Vua u mê tin lời, triệu Bỉnh Di về rồi bỏ ngục cùng con trai. Bộ tướng của Bỉnh Di là <strong style="color:var(--ink);">Quách Bốc</strong> nổi loạn cứu chủ, đánh thủng hoàng cung Thăng Long.</p>
-          <div class="pull-q py-1">
-            <p class="font-playfair italic" style="font-size:1rem; color:var(--ink); line-height:1.5;"><strong>Giết trung thần, tin gian thần — tự dựng con đường đến diệt vong.</strong></p>
+
+        <h1 class="font-serif font-bold text-[#1c1917] leading-tight mb-4"
+            style="font-size: clamp(2.75rem, 6vw, 4rem);">
+          Lý Cao Tông
+        </h1>
+
+        <p class="font-serif text-xl text-[#78716c] italic leading-snug mb-8 max-w-xl">
+          Kẻ tàn phá cơ đồ — <em class="text-[#9b1c1c] not-italic font-semibold">sinh ra ở vạch đích mà không tự rèn giũa, dễ biến thành người phá hoại mà không biết mình đang phá hoại</em>
+        </p>
+
+        <div class="flex flex-wrap items-center gap-5 text-sm text-[#57534e] border-t border-[#e7e5e4] py-4 mb-6">
+          <div class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-[#9b1c1c] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+            </svg>
+            Lịch sử Việt Nam — Khoá học
+          </div>
+          <div class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-[#9b1c1c] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+            </svg>
+            Nhân vật 28 · Hoàng đế · Nhà Lý
+          </div>
+          <div class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-[#9b1c1c] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            6 phút đọc
           </div>
         </div>
-      </div>
-      <div class="flex gap-5 items-start">
-        <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3rem; text-align:right; line-height:1.25; padding-top:2px; letter-spacing:0.03em;">NĂM<br>1209</span>
-        <div class="tl-dot"></div>
-        <div>
-          <p class="font-playfair font-bold mb-2" style="color:var(--ink); font-size:1.05rem;">Bỏ Chạy Khỏi Kinh Thành — Trao Quyền Cho Họ Trần</p>
-          <p>Hoảng sợ, vua sai giết cha con Phạm Bỉnh Di rồi bỏ chạy lên Quy Hóa (Phú Thọ). Thái tử Sảm chạy về Hải Ấp nương nhờ họ Trần. Đây là thời khắc nhà Lý "tự trao ấn kiếm" cho ngoại tộc.</p>
-        </div>
-      </div>
-      <div class="flex gap-5 items-start">
-        <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3rem; text-align:right; line-height:1.25; padding-top:2px; letter-spacing:0.03em;">NĂM<br>1210</span>
-        <div class="tl-dot"></div>
-        <div>
-          <p class="font-playfair font-bold mb-2" style="color:var(--ink); font-size:1.05rem;">Băng Hà — Truyền Ngôi Vương Triều Tan Hoang</p>
-          <p>Băng hà, truyền ngôi lại cho Thái tử Sảm (<strong style="color:var(--ink);">Lý Huệ Tông</strong>) khi vương triều đã tan hoang.</p>
-        </div>
-      </div>
-    </div>
-    <div class="pull-q-center mx-auto" style="max-width:60ch;">
-      <p class="font-playfair italic" style="font-size:1.22rem; color:var(--ink); line-height:1.45;">"Sinh ra ở vạch đích mà không tự rèn giũa — dễ biến thành người phá hoại mà không biết mình đang phá hoại."<br><em style="color:var(--crimson);">— Bài học từ cuộc đời Lý Cao Tông</em></p>
-    </div>
-  </div>
 
-  <!-- §03 PHÂN TÍCH 3 GỐC / 3 ĐỘC -->
-  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
-    <div class="flex items-baseline gap-3 mb-6">
-      <span class="sec-label">§ 03</span>
-      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Phân Tích 3 Gốc / 3 Độc</h2>
-      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
-    </div>
-    <p class="font-mono mb-4" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--crimson);">3 GỐC</p>
-    <div class="mb-8 overflow-x-auto">
-      <table class="w-full font-plex" style="font-size:0.95rem; border-collapse:collapse;">
-        <thead>
-          <tr>
-            <th class="text-left p-3 font-mono" style="font-size:0.62rem; letter-spacing:0.15em; color:var(--crimson); border-bottom:2px solid var(--ink); width:18%;">TIÊU CHÍ</th>
-            <th class="text-left p-3 font-mono" style="font-size:0.62rem; letter-spacing:0.15em; color:var(--crimson); border-bottom:2px solid var(--ink); width:18%;">RATING</th>
-            <th class="text-left p-3 font-mono" style="font-size:0.62rem; letter-spacing:0.15em; color:var(--crimson); border-bottom:2px solid var(--ink);">BẰNG CHỨNG</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="rating-row">
-            <td class="p-3 align-top" style="color:var(--ink); font-weight:600;">Trí tuệ</td>
-            <td class="p-3 align-top stars"><span class="sf">★★</span><span class="se">★★★</span></td>
-            <td class="p-3 align-top" style="color:var(--ink-light);">Hoàn toàn u mê trong dùng người: không phân biệt trung thần (Phạm Bỉnh Di) với gian thần (Phạm Du). Không nhận thức được sức mạnh ngai vàng nằm ở lòng dân, không phải cung điện xa hoa.</td>
-          </tr>
-          <tr class="rating-row">
-            <td class="p-3 align-top" style="color:var(--ink); font-weight:600;">Đạo đức</td>
-            <td class="p-3 align-top stars"><span class="sf">★</span><span class="se">★★★★</span></td>
-            <td class="p-3 align-top" style="color:var(--ink-light);">Bạo chúa theo nghĩa "bóc lột": vơ vét dân đến đói kém, ra lệnh giết oan trung thần chỉ vì tin lời gièm pha. Khi nguy cấp, bỏ chạy bỏ lại thần dân.</td>
-          </tr>
-          <tr>
-            <td class="p-3 align-top" style="color:var(--ink); font-weight:600;">Nghị lực</td>
-            <td class="p-3 align-top stars"><span class="sf">★</span><span class="se">★★★★</span></td>
-            <td class="p-3 align-top" style="color:var(--ink-light);">Khi đối mặt khủng hoảng (Loạn Quách Bốc): bỏ chạy khỏi kinh đô thay vì đứng ra dẹp loạn hoặc nhận trách nhiệm. Yếu hèn triệt để khi cần.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="font-mono mb-4" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--crimson);">3 ĐỘC</p>
-    <div class="overflow-x-auto">
-      <table class="w-full font-plex" style="font-size:0.95rem; border-collapse:collapse;">
-        <thead>
-          <tr>
-            <th class="text-left p-3 font-mono" style="font-size:0.62rem; letter-spacing:0.15em; color:var(--crimson); border-bottom:2px solid var(--ink); width:18%;">TIÊU CHÍ</th>
-            <th class="text-left p-3 font-mono" style="font-size:0.62rem; letter-spacing:0.15em; color:var(--crimson); border-bottom:2px solid var(--ink); width:18%;">RATING</th>
-            <th class="text-left p-3 font-mono" style="font-size:0.62rem; letter-spacing:0.15em; color:var(--crimson); border-bottom:2px solid var(--ink);">BẰNG CHỨNG</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="rating-row">
-            <td class="p-3 align-top" style="color:var(--ink); font-weight:600;">Tham lam</td>
-            <td class="p-3 align-top stars"><span class="sf">★★★★★</span></td>
-            <td class="p-3 align-top" style="color:var(--ink-light);">Lòng tham của cải và xa hoa vô đáy. Xây cung điện không vì đất nước mà vì thỏa mãn thú vui cá nhân. Bóc lột dân không tiếc tay.</td>
-          </tr>
-          <tr class="rating-row">
-            <td class="p-3 align-top" style="color:var(--ink); font-weight:600;">Sân giận</td>
-            <td class="p-3 align-top stars"><span class="sf">★★★★</span><span class="se">★</span></td>
-            <td class="p-3 align-top" style="color:var(--ink-light);">Giết cha con Phạm Bỉnh Di ngay trong hoàng cung, phớt lờ mọi lời can ngăn — phẫn nộ thiếu kiểm soát với trung thần, không dành được nửa phần đó để giận kẻ thù thực sự.</td>
-          </tr>
-          <tr>
-            <td class="p-3 align-top" style="color:var(--ink); font-weight:600;">Si mê</td>
-            <td class="p-3 align-top stars"><span class="sf">★★★★★</span></td>
-            <td class="p-3 align-top" style="color:var(--ink-light);">Sống trong ảo tưởng thái bình mà không thấy vương triều đang sụp đổ dưới chân. Không nhận ra rằng việc giết Phạm Bỉnh Di và bỏ chạy là tự mình kết thúc nhà Lý.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <!-- §04 ĐÁNH GIÁ TỔNG THỂ -->
-  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
-    <div class="flex items-baseline gap-3 mb-6">
-      <span class="sec-label">§ 04</span>
-      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Đánh Giá Tổng Thể</h2>
-      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
-    </div>
-    <div class="profile-badge p-5 mb-7">
-      <p class="font-mono mb-3" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--crimson);">PROFILE: KẺ TÀN PHÁ CƠ ĐỒ — TỘI NHÂN CỦA VƯƠNG TRIỀU LÝ</p>
-      <p class="font-plex leading-relaxed mb-4" style="font-size:1.02rem; color:var(--ink-light);">Dù được sinh ra trên đỉnh cao quyền lực và thịnh vượng (di sản 200 năm nhà Lý), sự yếu kém về năng lực cộng với thói hư tật xấu vô độ đã biến ông thành vị vua đẩy nhanh tốc độ suy vong nhất. Hai đòn chí mạng: giết <strong style="color:var(--ink);">Phạm Bỉnh Di</strong> (phá niềm tin của quân đội) và bỏ chạy (trao quyền cho ngoại tộc họ Trần).</p>
-      <p class="font-plex leading-relaxed" style="font-size:1.02rem; color:var(--ink-light);"><strong style="color:var(--ink);">Hậu quả chí mạng của vụ Quách Bốc:</strong> Việc bỏ chạy buộc hoàng gia phải dựa vào thế lực quân đội của hào trưởng địa phương (họ Trần ở Hải Ấp). Hành động này vô tình "trao ấn kiếm" cho ngoại tộc — biến nhà Lý từ người làm chủ thành con rối trong tay gia tộc họ Trần.</p>
-    </div>
-    <p class="font-mono mb-5" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--crimson);">BÀI HỌC</p>
-    <div class="space-y-6">
-      <div class="flex gap-5 items-start">
-        <div class="lesson-num">
-          <span class="font-playfair font-bold" style="color:var(--crimson); font-size:1.1rem;">1</span>
-        </div>
-        <div>
-          <p class="font-playfair font-bold mb-1" style="font-size:1.1rem; color:var(--ink);">Kế Thừa Di Sản Vĩ Đại Không Đủ Để Bảo Tồn Nó</p>
-          <p class="font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">Kế thừa di sản vĩ đại mà thiếu năng lực và đạo đức để xứng tầm — sẽ phá hủy nhanh hơn là bảo tồn. <strong style="color:var(--ink);">"Cái đang ổn" không có nghĩa là sẽ ổn mãi nếu không được duy trì.</strong></p>
-        </div>
-      </div>
-      <div class="flex gap-5 items-start">
-        <div class="lesson-num">
-          <span class="font-playfair font-bold" style="color:var(--crimson); font-size:1.1rem;">2</span>
-        </div>
-        <div>
-          <p class="font-playfair font-bold mb-1" style="font-size:1.1rem; color:var(--ink);">Sinh Ra Ở Vạch Đích Mà Không Tự Rèn Giũa</p>
-          <p class="font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">Sinh ra ở vạch đích mà không tự rèn giũa — <strong style="color:var(--ink);">dễ biến thành người phá hoại mà không biết mình đang phá hoại.</strong></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- §05 TỰ KIỂM TRA -->
-  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
-    <div class="flex items-baseline gap-3 mb-6">
-      <span class="sec-label">§ 05</span>
-      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">❓ Tự Kiểm Tra</h2>
-      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
-    </div>
-    <div style="border:1px solid var(--rule); border-radius:0.75rem; padding:1.6rem;">
-      <p class="font-playfair font-bold mb-5" style="font-size:1.05rem; color:var(--ink); line-height:1.5;">Việc Lý Cao Tông giết Phạm Bỉnh Di và bỏ chạy khỏi kinh thành để lại hậu quả chính trị chí mạng nào?</p>
-      <details>
-        <summary class="font-mono" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson); cursor:pointer;">▶ XEM GỢI Ý PHÂN TÍCH</summary>
-        <div class="mt-4 pt-4" style="border-top:1px solid var(--rule);">
-          <p class="font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">Hậu quả chí mạng là làm phá sản hoàn toàn niềm tin ("tính chính danh") của quân đội vào hoàng tộc nhà Lý. Việc bỏ chạy ép hoàng gia phải dựa vào thế lực quân đội của một hào trưởng địa phương (họ Trần ở Hải Ấp). Hành động này vô tình "trao ấn kiếm" cho ngoại tộc, biến nhà Lý từ những người làm chủ trở thành con rối trong tay gia tộc họ Trần. Chỉ <strong style="color:var(--ink);">16 năm sau (1225)</strong>, nhà Lý chính thức mất ngôi về tay nhà Trần.</p>
-        </div>
-      </details>
-    </div>
-  </div>
-
-  <!-- §06 LIÊN KẾT -->
-  <div class="px-10 py-9">
-    <div class="flex items-baseline gap-3 mb-6">
-      <span class="sec-label">§ 06</span>
-      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Liên Kết</h2>
-      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
-    </div>
-    <div class="grid gap-4" style="grid-template-columns:1fr 1fr;">
-      <div class="link-card p-5">
-        <div class="flex items-start gap-4">
-          <div class="tl-dot" style="margin-top:4px;"></div>
-          <div>
-            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">NHÂN VẬT LIÊN QUAN</p>
-            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">27. Lý Anh Tông</p>
-            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Cha, người sắp đặt sai lầm kế vị đưa ông lên ngôi.</p>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8 pt-2 pb-2">
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4 text-center sm:text-left card-hover">
+            <div class="font-serif text-3xl font-bold text-[#9b1c1c]">35 năm</div>
+            <div class="text-[10px] text-[#78716c] font-semibold tracking-wider uppercase mt-1">Thời gian trị vì</div>
+          </div>
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4 text-center sm:text-left card-hover">
+            <div class="font-serif text-3xl font-bold text-[#9b1c1c]">1179</div>
+            <div class="text-[10px] text-[#78716c] font-semibold tracking-wider uppercase mt-1">Tô Hiến Thành mất — bắt đầu trượt dài</div>
+          </div>
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4 text-center sm:text-left card-hover">
+            <div class="font-serif text-3xl font-bold text-[#9b1c1c]">1209</div>
+            <div class="text-[10px] text-[#78716c] font-semibold tracking-wider uppercase mt-1">Giết Phạm Bỉnh Di & bỏ chạy</div>
+          </div>
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4 text-center sm:text-left card-hover">
+            <div class="font-serif text-3xl font-bold text-[#9b1c1c]">1225</div>
+            <div class="text-[10px] text-[#78716c] font-semibold tracking-wider uppercase mt-1">Nhà Lý mất ngôi về họ Trần</div>
           </div>
         </div>
-      </div>
-      <div class="link-card p-5">
-        <div class="flex items-start gap-4">
-          <div class="tl-dot" style="margin-top:4px;"></div>
-          <div>
-            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">NHÂN VẬT LIÊN QUAN</p>
-            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">24. Tô Hiến Thành</p>
-            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Người can ngăn cuối cùng, khi ông mất thì triều đại bắt đầu trượt.</p>
-          </div>
-        </div>
-      </div>
-      <div class="link-card p-5">
-        <div class="flex items-start gap-4">
-          <div class="tl-dot" style="margin-top:4px;"></div>
-          <div>
-            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">NHÂN VẬT LIÊN QUAN</p>
-            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">29. Lý Huệ Tông</p>
-            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Con trai, người thừa hưởng ngai vàng rỗng và kết thúc bi kịch.</p>
-          </div>
-        </div>
-      </div>
-      <div class="link-card p-5">
-        <div class="flex items-start gap-4">
-          <div class="tl-dot" style="margin-top:4px;"></div>
-          <div>
-            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">GIAI ĐOẠN LỊCH SỬ</p>
-            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">8.5 Nhà Lý — Suy Tàn &amp; Chuyển Giao</p>
-            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Giai đoạn lịch sử tương ứng 1175–1225 — thời kỳ nhà Lý sụp đổ.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="text-center mt-10 mb-2">
-      <p class="ornament" style="font-size:1.2rem;">✦ ✦ ✦</p>
-      <p class="font-mono mt-3" style="font-size:0.58rem; letter-spacing:0.25em; color:var(--warm);">LỊCH SỬ VIỆT NAM · NHÂN VẬT 28 · 1173–1210 · LÝ CAO TÔNG</p>
-    </div>
-  </div>
 
-</div>
+        <div class="relative rounded-2xl bg-[#1c1917] p-8 overflow-hidden shadow-md">
+          <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+            <svg width="100%" height="100%"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(#grid)"/></svg>
+          </div>
+          <div class="relative">
+            <div class="text-xs font-semibold tracking-[0.15em] uppercase text-[#9b1c1c] mb-3">TL;DR / Bản tóm tắt nhanh</div>
+            <p class="text-base leading-relaxed text-[#d6d3d1] mb-5">
+              Lý Cao Tông (1173–1210) — lên ngôi lúc 3 tuổi, được <strong class="text-[#faf9f7]">Tô Hiến Thành</strong> phò tá những năm đầu. Nhưng khi nắm thực quyền sau khi Tô Hiến Thành mất (1179), trở thành một trong những vua hôn ám nhất lịch sử: xây cung điện xa hoa bóc lột dân, giết oan trung thần <strong class="text-[#faf9f7]">Phạm Bỉnh Di</strong>, bỏ chạy khỏi kinh thành khi loạn xảy ra — vô tình trao quyền cho họ Trần. Chỉ 16 năm sau khi ông mất (1225), nhà Lý chính thức bị xóa sổ.
+            </p>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="inline-flex items-center gap-2 px-4 py-2 bg-[#292524] rounded-xl text-sm">
+                <span class="text-[#a8a29e]">Tham lam</span>
+                <span class="text-[#f59e0b] tracking-tight">★★★★★</span>
+              </span>
+              <span class="inline-flex items-center gap-2 px-4 py-2 bg-[#292524] rounded-xl text-sm">
+                <span class="text-[#a8a29e]">Si mê</span>
+                <span class="text-[#f59e0b] tracking-tight">★★★★★</span>
+              </span>
+              <span class="inline-flex items-center gap-2 px-4 py-2 bg-[#9b1c1c] rounded-xl text-sm font-semibold text-[#faf9f7]">
+                Kẻ tàn phá cơ đồ 200 năm
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <article class="max-w-[700px] mx-auto px-6 pb-28">
+
+      <section class="fade-section">
+        <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">Tiểu sử: Thảm kịch không can ngăn</h2>
+        <p class="text-lg leading-relaxed text-[#44403c] mb-4 first-letter:font-serif first-letter:text-5xl first-letter:font-bold first-letter:float-left first-letter:mr-2 first-letter:text-[#9b1c1c]">
+          Tên thật <strong class="text-[#1c1917]">Lý Long Cán</strong>, con trai Lý Anh Tông. Được Tô Hiến Thành bảo vệ di chiếu đưa lên ngôi (3 tuổi). Khi Tô Hiến Thành mất, không còn người can ngăn đủ uy tín — ông tự do theo đuổi thú vui cá nhân mà không nghĩ đến hậu quả.
+        </p>
+        <p class="text-lg leading-relaxed text-[#44403c] mb-4">
+          Dù được sinh ra trên đỉnh cao quyền lực và thịnh vượng (di sản 200 năm nhà Lý), sự yếu kém về năng lực cộng với thói hư tật xấu vô độ đã biến ông thành vị vua đẩy nhanh tốc độ suy vong nhất. Hai đòn chí mạng: <strong class="text-[#1c1917]">giết Phạm Bỉnh Di</strong> (phá niềm tin quân đội) và <strong class="text-[#1c1917]">bỏ chạy</strong> (trao quyền cho ngoại tộc họ Trần).
+        </p>
+
+        <div class="mt-8 pt-6 border-t border-[#e7e5e4]">
+          <div class="text-xs font-semibold text-[#9b1c1c] tracking-wider uppercase mb-4">Mốc sự kiện chính</div>
+          <div class="relative pl-6 border-l-2 border-[#e7e5e4] space-y-6">
+            <div class="relative">
+              <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-[#1c1917] border-4 border-white"></div>
+              <div class="font-serif font-bold text-[#1c1917] text-sm">1175 SCN — Lên ngôi lúc 3 tuổi</div>
+              <p class="text-sm text-[#57534e] mt-1">Lên ngôi sau khi Lý Anh Tông băng hà. Tô Hiến Thành phụ chính, bảo vệ triều đình những năm đầu.</p>
+            </div>
+            <div class="relative">
+              <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-[#9b1c1c] border-4 border-white"></div>
+              <div class="font-serif font-bold text-[#1c1917] text-sm">1179 SCN — Tô Hiến Thành qua đời</div>
+              <p class="text-sm text-[#57534e] mt-1">Triều đình mất đi người can ngăn cuối cùng có đủ uy tín — từ đây vua bắt đầu trượt dài không ai kéo lại được.</p>
+            </div>
+            <div class="relative">
+              <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-[#9b1c1c] border-4 border-white"></div>
+              <div class="font-serif font-bold text-[#1c1917] text-sm">Từ 1189 — Xây cung điện xa hoa, bóc lột dân</div>
+              <p class="text-sm text-[#57534e] mt-1">Xây dựng hàng loạt cung điện xa hoa (điện Giao Tiên, gác Kính Thiên...), bắt dân phục dịch triền miên. Khởi nghĩa nông dân bùng phát khắp nơi.</p>
+            </div>
+            <div class="relative">
+              <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-[#9b1c1c] border-4 border-white"></div>
+              <div class="font-serif font-bold text-[#1c1917] text-sm">1209 SCN — Án oan Phạm Bỉnh Di — Quách Bốc nổi loạn</div>
+              <p class="text-sm text-[#57534e] mt-1">Phạm Du đi dẹp loạn thất bại, thông đồng với giặc rồi gièm pha ngược Phạm Bỉnh Di. Vua u mê tin lời, bỏ ngục trung thần. Bộ tướng Quách Bốc nổi loạn đánh thủng hoàng cung Thăng Long.</p>
+            </div>
+            <div class="relative">
+              <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-[#9b1c1c] border-4 border-white"></div>
+              <div class="font-serif font-bold text-[#1c1917] text-sm">1209 SCN — Bỏ chạy khỏi kinh thành — Trao quyền cho họ Trần</div>
+              <p class="text-sm text-[#57534e] mt-1">Hoảng sợ, vua sai giết cha con Phạm Bỉnh Di rồi bỏ chạy lên Quy Hóa. Thái tử Sảm chạy về Hải Ấp nương nhờ họ Trần — thời khắc nhà Lý "tự trao ấn kiếm" cho ngoại tộc.</p>
+            </div>
+            <div class="relative">
+              <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-[#44403c] border-4 border-white"></div>
+              <div class="font-serif font-bold text-[#1c1917] text-sm">1210 SCN — Băng hà, vương triều tan hoang</div>
+              <p class="text-sm text-[#57534e] mt-1">Truyền ngôi lại cho Thái tử Sảm (Lý Huệ Tông) khi vương triều đã tan hoang. 16 năm sau, nhà Lý mất ngôi về tay nhà Trần.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <section class="fade-section">
+        <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">Phân tích 3 Gốc</h2>
+
+        <div class="card p-6 mb-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0"
+                 style="background:#fef2f2; color:#9b1c1c; border:1px solid rgba(155,28,28,0.2);">T</div>
+            <h3 class="font-serif text-xl font-bold text-[#1c1917] mb-0">Trí tuệ: Hoàn toàn u mê trong dùng người ★★☆☆☆</h3>
+            <div class="ml-auto text-right">
+              <span class="text-[#f59e0b]">★★☆☆☆</span>
+              <div class="score-bar-bg"><div class="score-bar-fill" style="width:40%;"></div></div>
+            </div>
+          </div>
+          <p class="text-base leading-relaxed text-[#44403c]">
+            Hoàn toàn u mê trong dùng người: không phân biệt trung thần (Phạm Bỉnh Di) với gian thần (Phạm Du). <strong class="text-[#1c1917]">Không nhận thức được sức mạnh ngai vàng nằm ở lòng dân</strong>, không phải cung điện xa hoa. Tin lời gièm pha để giết oan người bảo vệ mình.
+          </p>
+        </div>
+
+        <div class="card p-6 mb-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0"
+                 style="background:#fef2f2; color:#9b1c1c; border:1px solid rgba(155,28,28,0.2);">Đ</div>
+            <h3 class="font-serif text-xl font-bold text-[#1c1917] mb-0">Đạo đức: Bạo chúa bóc lột, giết oan ★☆☆☆☆</h3>
+            <div class="ml-auto text-right">
+              <span class="text-[#f59e0b]">★☆☆☆☆</span>
+              <div class="score-bar-bg"><div class="score-bar-fill" style="width:20%;"></div></div>
+            </div>
+          </div>
+          <p class="text-base leading-relaxed text-[#44403c]">
+            Bạo chúa theo nghĩa "bóc lột": vơ vét dân đến đói kém, ra lệnh giết oan trung thần chỉ vì tin lời gièm pha. Khi nguy cấp, bỏ chạy bỏ lại thần dân. <strong class="text-[#1c1917]">Hành động bỏ chạy là điểm không thể tha thứ</strong> trong quan niệm đạo đức quân vương — người đứng đầu phải ở lại với thần dân khi nguy.
+          </p>
+        </div>
+
+        <div class="card p-6 mb-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0"
+                 style="background:#fef2f2; color:#9b1c1c; border:1px solid rgba(155,28,28,0.2);">N</div>
+            <h3 class="font-serif text-xl font-bold text-[#1c1917] mb-0">Nghị lực: Bỏ chạy khi cần đứng vững ★☆☆☆☆</h3>
+            <div class="ml-auto text-right">
+              <span class="text-[#f59e0b]">★☆☆☆☆</span>
+              <div class="score-bar-bg"><div class="score-bar-fill" style="width:20%;"></div></div>
+            </div>
+          </div>
+          <p class="text-base leading-relaxed text-[#44403c]">
+            Khi đối mặt khủng hoảng (Loạn Quách Bốc): <strong class="text-[#1c1917]">bỏ chạy khỏi kinh đô thay vì đứng ra dẹp loạn</strong> hoặc nhận trách nhiệm. Yếu hèn triệt để khi cần. Đây là sự thiếu hụt nghị lực tột cùng ở người đứng đầu.
+          </p>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <section class="fade-section">
+        <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">Phân tích 3 Độc (Điểm mù)</h2>
+
+        <div class="card p-6 mb-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0"
+                 style="background:#fef2f2; color:#9b1c1c; border:1px solid rgba(155,28,28,0.2);">T</div>
+            <h3 class="font-serif text-xl font-bold text-[#1c1917] mb-0">Tham lam: Lòng tham của cải và xa hoa vô đáy ★★★★★</h3>
+            <div class="ml-auto text-right">
+              <span class="text-[#f59e0b]">★★★★★</span>
+              <div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;"></div></div>
+            </div>
+          </div>
+          <p class="text-base leading-relaxed text-[#44403c]">Xây cung điện không vì đất nước mà vì thỏa mãn thú vui cá nhân. Bóc lột dân không tiếc tay, khiến nhân dân lầm than, trộm cướp nổi lên khắp nơi, khởi nghĩa bùng phát nhiều vùng. <strong class="text-[#1c1917]">Tham lam vô đáy là nguyên nhân gốc rễ</strong> dẫn đến mọi thảm họa sau đó.</p>
+        </div>
+
+        <div class="card p-6 mb-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0"
+                 style="background:#fef2f2; color:#9b1c1c; border:1px solid rgba(155,28,28,0.2);">S</div>
+            <h3 class="font-serif text-xl font-bold text-[#1c1917] mb-0">Sân giận: Phẫn nộ sai đối tượng ★★★★☆</h3>
+            <div class="ml-auto text-right">
+              <span class="text-[#f59e0b]">★★★★☆</span>
+              <div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;"></div></div>
+            </div>
+          </div>
+          <p class="text-base leading-relaxed text-[#44403c]">Giết cha con Phạm Bỉnh Di ngay trong hoàng cung, phớt lờ mọi lời can ngăn — <strong class="text-[#1c1917]">phẫn nộ thiếu kiểm soát với trung thần</strong>, không dành được nửa phần đó để giận kẻ thù thực sự (Phạm Du — gian thần đã gièm pha). Sân giận sai đối tượng là lỗi chí mạng của bạo chúa.</p>
+        </div>
+
+        <div class="card p-6 mb-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0"
+                 style="background:#fef2f2; color:#9b1c1c; border:1px solid rgba(155,28,28,0.2);">S</div>
+            <h3 class="font-serif text-xl font-bold text-[#1c1917] mb-0">Si mê: Không thấy vương triều đang sụp đổ ★★★★★</h3>
+            <div class="ml-auto text-right">
+              <span class="text-[#f59e0b]">★★★★★</span>
+              <div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;"></div></div>
+            </div>
+          </div>
+          <p class="text-base leading-relaxed text-[#44403c]">
+            Sống trong ảo tưởng thái bình mà không thấy vương triều đang sụp đổ dưới chân. <strong class="text-[#1c1917]">Không nhận ra rằng việc giết Phạm Bỉnh Di và bỏ chạy là tự mình kết thúc nhà Lý.</strong> Việc bỏ chạy ép hoàng gia phải dựa vào thế lực quân đội của hào trưởng địa phương (họ Trần ở Hải Ấp) — vô tình "trao ấn kiếm" cho ngoại tộc.
+          </p>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <section class="fade-section">
+        <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">Bài học cốt lõi</h2>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div class="card p-5">
+            <div class="text-xs font-semibold uppercase tracking-wider mb-2 text-[#9b1c1c]">Bài học 01 — Lãnh đạo</div>
+            <h4 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Kế thừa di sản vĩ đại không đủ để bảo tồn nó</h4>
+            <p class="text-sm leading-relaxed text-[#57534e]">
+              Kế thừa di sản vĩ đại mà thiếu năng lực và đạo đức để xứng tầm — sẽ phá hủy nhanh hơn là bảo tồn. "Cái đang ổn" không có nghĩa là sẽ ổn mãi nếu không được duy trì chủ động.
+            </p>
+          </div>
+          <div class="card p-5">
+            <div class="text-xs font-semibold uppercase tracking-wider mb-2 text-[#9b1c1c]">Bài học 02 — Cuộc sống</div>
+            <h4 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Sinh ra ở vạch đích mà không tự rèn giũa</h4>
+            <p class="text-sm leading-relaxed text-[#57534e]">
+              Sinh ra ở vạch đích mà không tự rèn giũa — dễ biến thành người phá hoại mà không biết mình đang phá hoại. Đặc quyền không kèm trách nhiệm là công thức của thảm họa.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align:center; max-width:68ch; margin:2rem auto 0; padding:1.75rem 0;">
+          <p class="font-serif text-xl font-semibold italic leading-relaxed text-[#1c1917]">
+            "Giết trung thần, tin gian thần —<br>
+            tự dựng con đường đến diệt vong."
+          </p>
+          <hr class="rule-thin" style="margin:1rem auto; width:3.5rem;">
+          <p class="font-mono text-[10px] tracking-widest text-[#78716c] uppercase">— Góc nhìn phân tích từ 3 Gốc / 3 Độc</p>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <section class="fade-section">
+        <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">Liên kết nhân vật</h2>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <a href="ly-anh-tong.html" class="card p-5 card-hover block">
+            <div class="text-xs font-semibold text-[#a8a29e] mb-1">NHÂN VẬT 27</div>
+            <h4 class="font-serif font-bold text-base text-[#1c1917] mb-1">Lý Anh Tông</h4>
+            <p class="text-xs text-[#78716c] leading-relaxed">Cha, người sắp đặt sai lầm kế vị đưa ông lên ngôi. Bi kịch kép: cha sai lầm trong kế vị, con sai lầm trong trị quốc.</p>
+          </a>
+          <a href="to-hien-thanh.html" class="card p-5 card-hover block">
+            <div class="text-xs font-semibold text-[#a8a29e] mb-1">NHÂN VẬT 24</div>
+            <h4 class="font-serif font-bold text-base text-[#1c1917] mb-1">Tô Hiến Thành</h4>
+            <p class="text-xs text-[#78716c] leading-relaxed">Người can ngăn cuối cùng, khi ông mất (1179) thì triều đại bắt đầu trượt không thể cứu vãn.</p>
+          </a>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <section class="fade-section">
+        <div class="rounded-2xl bg-[#1c1917] text-[#faf9f7] p-8 text-center relative overflow-hidden">
+          <div class="absolute inset-0 opacity-[0.04] pointer-events-none">
+            <svg width="100%" height="100%">
+              <defs><pattern id="dots2" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1.5" fill="white"/></pattern></defs>
+              <rect width="100%" height="100%" fill="url(#dots2)"/>
+            </svg>
+          </div>
+          <div class="relative">
+            <p class="font-serif text-xl font-semibold mb-2">Chia sẻ góc nhìn phân tích này?</p>
+            <p class="text-[#a8a29e] text-base mb-6">Lý Cao Tông — kẻ tàn phá cơ đồ 200 năm trong vòng một thế hệ.</p>
+            <div class="flex flex-wrap justify-center gap-3">
+              <button
+                onclick="if(navigator.share){navigator.share({title:document.title,url:location.href})}else{navigator.clipboard&&navigator.clipboard.writeText(location.href);this.textContent='Đã sao chép link ✓'}"
+                class="px-6 py-2.5 bg-[#9b1c1c] hover:bg-[#7f1d1d] rounded-xl text-sm font-semibold transition-colors focus:outline-none">
+                Chia sẻ bài viết
+              </button>
+              <a href="../index.html"
+                 class="px-6 py-2.5 bg-[#292524] hover:bg-[#44403c] rounded-xl text-sm font-semibold transition-colors">
+                ← Về trang chủ
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="border-t border-[#e7e5e4] py-8" style="background:#1c1917; border-color:rgba(255,255,255,0.06);">
+    <div class="max-w-[700px] mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-[#a8a29e]">
+      <div>
+        <p class="font-semibold font-serif" style="color:#b45309;">Lịch sử Việt Nam · Nhân vật 28</p>
+        <p class="text-xs mt-0.5 text-[#57534e]">Phân tích Lý Cao Tông theo phương pháp 3 Gốc / 3 Độc</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="../index.html" class="flex items-center gap-1.5 hover:text-[#9b1c1c] transition-colors text-xs">
+          <span class="text-[#9b1c1c]">◈</span>
+          Lịch sử Việt Nam
+        </a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
