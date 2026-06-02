@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>26. Nguyễn Minh Không (1065–1141) — Thiền Sư · Đại Danh Y · Quốc Sư</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700;1,900&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'playfair': ['"Playfair Display"', 'Georgia', 'serif'],
+            'plex': ['"IBM Plex Serif"', 'Georgia', 'serif'],
+            'mono': ['"JetBrains Mono"', 'monospace'],
+            'noto': ['"Noto Sans SC"', 'sans-serif'],
+          },
+          colors: {
+            'cream': '#f4eed8','cream-dark': '#ede5c8','ink': '#1c1409','ink-mid': '#2e2010','ink-light': '#4a3520',
+            'crimson': '#921c1c','crimson-light': '#b83232','gold': '#b07c28','gold-light': '#d4a042',
+            'warm': '#7a6040','rule': '#c4aa84','rule-light': '#ddd0b8',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { --cream:#f4eed8; --ink:#1c1409; --crimson:#921c1c; --gold:#b07c28; --rule:#c4aa84; }
+    * { box-sizing: border-box; }
+    body { background-color:#e8dfc0; background-image:radial-gradient(circle,rgba(160,130,80,0.35) 0.6px,transparent 0.6px); background-size:18px 18px; min-height:100vh; padding:2rem 1rem; }
+    .paper { background-color:var(--cream); position:relative; }
+    .paper::before { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(180,150,90,0.12) 0.8px,transparent 0.8px); background-size:22px 22px; pointer-events:none; }
+    .triple-rule { border-top:3px solid var(--ink); position:relative; margin-bottom:2px; }
+    .triple-rule::after { content:''; display:block; border-top:1px solid var(--ink); margin-top:3px; }
+    .single-rule { border-top:1px solid var(--rule); }
+    .double-rule { border-top:2px solid var(--ink); position:relative; }
+    .double-rule::after { content:''; display:block; border-top:1px solid var(--ink); margin-top:2px; }
+    .drop-cap::first-letter { font-family:'Playfair Display',serif; font-size:4.6em; font-weight:900; line-height:0.78; float:left; margin-right:0.06em; margin-top:0.04em; color:var(--crimson); }
+    .strikeword { position:relative; display:inline-block; }
+    .strikeword::after { content:''; position:absolute; left:-3px; right:-3px; top:50%; height:5px; background:var(--crimson); transform:translateY(-50%) rotate(-1.5deg); }
+    .two-col { column-count:2; column-gap:2.2rem; column-rule:1px solid var(--rule); }
+    @media (max-width:640px) { .two-col { column-count:1; } }
+    .pull-q { border-left:4px solid var(--crimson); padding-left:1.1rem; }
+    .pull-q-center { border-top:2px solid var(--crimson); border-bottom:2px solid var(--crimson); padding:1rem 0; text-align:center; }
+    .sec-label { font-family:'JetBrains Mono',monospace; font-size:0.6rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--crimson); font-weight:600; }
+    .stars { letter-spacing:0.06em; }
+    .sf { color:var(--gold); }
+    .se { color:var(--rule); }
+    .tl-dot { width:8px; height:8px; background:var(--crimson); border-radius:50%; flex-shrink:0; margin-top:6px; }
+    .ornament { letter-spacing:0.6em; color:var(--gold); }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+    .fade-in { animation:fadeUp 0.7s ease-out both; }
+    .fade-in-2 { animation:fadeUp 0.7s ease-out 0.15s both; }
+    .fade-in-3 { animation:fadeUp 0.7s ease-out 0.3s both; }
+    .ink-box { background-color:var(--ink); color:var(--cream); }
+    .ink-box .muted { color:#a89060; }
+    .ink-box .bright { color:var(--cream); }
+    .profile-badge { border:2px solid var(--crimson); border-radius:0.75rem; }
+    .link-card { border:1px solid var(--rule); border-radius:0.75rem; transition:border-color 0.2s,box-shadow 0.2s; }
+    .link-card:hover { border-color:var(--crimson); box-shadow:0 2px 12px rgba(146,28,28,0.1); }
+    .lesson-num { width:2.8rem; height:2.8rem; border:2px solid var(--crimson); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .rating-row { border-bottom:1px solid var(--rule-light); }
+    ::-webkit-scrollbar { width:6px; }
+    ::-webkit-scrollbar-track { background:#e8dfc0; }
+    ::-webkit-scrollbar-thumb { background:var(--rule); border-radius:3px; }
+    p { orphans:2; widows:2; }
+    details summary { list-style:none; }
+    details summary::-webkit-details-marker { display:none; }
+  </style>
+</head>
+<body>
+
+<div class="paper max-w-4xl mx-auto shadow-2xl fade-in" style="border:1px solid #b8a070; border-radius:2px; overflow:hidden;">
+
+  <!-- DATELINE -->
+  <div style="border-bottom:1px solid var(--ink);" class="px-10 pt-7 pb-3 flex items-center justify-between gap-4 flex-wrap">
+    <span class="font-mono text-xs tracking-widest text-warm uppercase" style="font-size:0.6rem; letter-spacing:0.2em;">Lịch Sử Việt Nam · Nhân Vật</span>
+    <div class="text-center">
+      <span class="sec-label" style="font-size:0.62rem;">★ Nhân Vật Số 26 — Nguyễn Minh Không ★</span>
+    </div>
+    <span class="font-mono text-xs tracking-widest text-warm uppercase" style="font-size:0.6rem; letter-spacing:0.2em;">1065–1141 SCN · Thời Lý</span>
+  </div>
+
+  <!-- METADATA BAR -->
+  <div class="px-10 py-2 flex gap-3 flex-wrap items-center" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.06);">
+    <span class="font-mono" style="font-size:0.57rem; letter-spacing:0.1em; color:var(--warm);"><strong style="color:var(--ink-light);">Khoá:</strong> Lịch sử Việt Nam - Khoá học · Nhân vật số 26</span>
+    <span style="color:var(--rule); font-size:0.7rem;">|</span>
+    <span class="font-mono" style="font-size:0.57rem; letter-spacing:0.1em; color:var(--warm);"><strong style="color:var(--ink-light);">Vai trò:</strong> Thiền sư · Đại Danh Y · Quốc Sư nhà Lý</span>
+    <span style="color:var(--rule); font-size:0.7rem;">|</span>
+    <span class="font-mono" style="font-size:0.57rem; letter-spacing:0.1em; color:var(--warm);"><strong style="color:var(--ink-light);">Còn gọi:</strong> Lý Quốc Sư · Đức Thánh Nguyễn</span>
+  </div>
+
+  <!-- MASTHEAD BAR -->
+  <div class="px-10 pt-3 pb-2">
+    <div class="triple-rule"></div>
+    <p class="font-mono text-center py-1" style="font-size:0.55rem; letter-spacing:0.35em; color:var(--warm);">LỊCH SỬ VIỆT NAM · NHÂN VẬT 26 · 1065–1141 SCN · THIỀN SƯ · ĐẠI DANH Y · QUỐC SƯ</p>
+    <div class="single-rule"></div>
+  </div>
+
+  <!-- HEADLINE -->
+  <div class="px-10 pt-6 pb-8 text-center" style="border-bottom:2px solid var(--ink);">
+    <p class="font-playfair italic mb-1" style="font-size:0.9rem; letter-spacing:0.08em; color:var(--crimson);">Lịch Sử Việt Nam · Nhân Vật 26 · 1065–1141</p>
+    <h1 class="font-playfair leading-none" style="font-size:clamp(2.8rem,7vw,4.8rem); font-weight:900; color:var(--ink); letter-spacing:-0.015em;">NGUYỄN MINH KHÔNG</h1>
+    <h1 class="font-playfair leading-none mb-5" style="font-size:clamp(4rem,12vw,8rem); font-weight:900; color:var(--ink); letter-spacing:-0.025em; font-style:italic; margin-top:-0.05em;">1065</h1>
+    <div class="flex items-center gap-5 mb-6 px-4">
+      <div class="flex-1" style="border-top:2px solid var(--ink);"></div>
+      <p class="font-playfair text-lg italic" style="color:var(--ink-mid); white-space:nowrap;"><em style="color:var(--crimson);">Lý Quốc Sư</em> — Đức Thánh Nguyễn</p>
+      <div class="flex-1" style="border-top:2px solid var(--ink);"></div>
+    </div>
+    <p class="font-plex mx-auto leading-relaxed" style="max-width:58ch; font-size:1.05rem; color:var(--ink-light); font-style:italic;">Nguyễn Minh Không (1065–1141) — hình mẫu "quyền lực mềm" trong lịch sử Việt. Không có binh quyền, không tranh giành địa vị, nhưng ảnh hưởng xuyên suốt triều Lý nhờ trí tuệ ứng dụng thực tiễn: chữa bệnh cứu người, xây dựng văn hóa.</p>
+  </div>
+
+  <!-- §01 TL;DR & TIỂU SỬ NHANH -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-5">
+      <span class="sec-label">§ 01</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink); letter-spacing:-0.01em;">TL;DR &amp; Tiểu Sử Nhanh</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div class="profile-badge p-5 mb-6" style="background:rgba(146,28,28,0.04);">
+      <p class="font-mono mb-3" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--crimson);">PROFILE: BẬC CHÂN TU / VĨ NHÂN VĂN HÓA</p>
+      <div class="flex gap-8 flex-wrap">
+        <div>
+          <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.12em; color:var(--warm);">TRÍ TUỆ</p>
+          <p class="stars" style="font-size:1.1rem;"><span class="sf">★★★★★</span></p>
+        </div>
+        <div>
+          <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.12em; color:var(--warm);">ĐẠO ĐỨC</p>
+          <p class="stars" style="font-size:1.1rem;"><span class="sf">★★★★★</span></p>
+        </div>
+      </div>
+    </div>
+    <p class="font-plex leading-relaxed mb-5" style="font-size:1.02rem; color:var(--ink-light);">Nguyễn Minh Không (1065–1141) — hình mẫu "quyền lực mềm" trong lịch sử Việt. Không có binh quyền, không tranh giành địa vị, nhưng ảnh hưởng xuyên suốt triều Lý nhờ Trí tuệ ứng dụng thực tiễn: chữa bệnh cứu người (y thuật), xây dựng văn hóa (đúc đồng, tứ đại khí). Khi mang lại giá trị thực, danh tiếng tự tìm đến — không cần thủ đoạn.</p>
+    <div class="single-rule mb-5"></div>
+    <p class="font-mono mb-3" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--crimson);">TIỂU SỬ NHANH</p>
+    <p class="font-plex leading-relaxed" style="font-size:1.02rem; color:var(--ink-light);">Còn gọi là <strong style="color:var(--ink);">Lý Quốc Sư</strong>. Học trò của thiền sư <strong style="color:var(--ink);">Từ Đạo Hạnh</strong>. Am hiểu uyên thâm cả Phật pháp, Y thuật lẫn Kỹ thuật đúc đồng — loại tổng hợp tri thức hiếm gặp. Được hậu thế tôn là <strong style="color:var(--ink);">Đức Thánh Nguyễn</strong> vì công lao chữa bệnh và truyền nghề khắp dân gian.</p>
+    <p class="font-plex leading-relaxed mt-3" style="font-size:0.93rem; color:var(--warm);">Sinh: <em>1065</em> · Mất: <em>1141</em> · Thời kỳ: Nhà Lý</p>
+  </div>
+
+  <!-- §02 SỰ KIỆN LIÊN QUAN CHÍNH -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
+    <div class="flex items-baseline gap-3 mb-5">
+      <span class="sec-label">§ 02</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink); letter-spacing:-0.01em;">Các Sự Kiện Liên Quan Chính</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div class="space-y-7 mb-8 font-plex leading-relaxed" style="font-size:1.02rem; color:var(--ink-light);">
+      <div class="flex gap-5 items-start">
+        <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3rem; text-align:right; line-height:1.25; padding-top:2px; letter-spacing:0.03em;">TUỔI<br>TRẺ</span>
+        <div class="tl-dot"></div>
+        <div>
+          <p class="font-playfair font-bold mb-2" style="color:var(--ink); font-size:1.05rem;">Theo Học &amp; Vân Du Tích Lũy Tri Thức</p>
+          <p>Theo học thiền sư <strong style="color:var(--ink);">Từ Đạo Hạnh</strong>, kiên trì học cả Phật pháp, y thuật và kỹ thuật. Vân du khắp nơi thu thập kiến thức — không học từ sách mà học từ thực hành.</p>
+        </div>
+      </div>
+      <div class="flex gap-5 items-start">
+        <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3rem; text-align:right; line-height:1.25; padding-top:2px; letter-spacing:0.03em;">NĂM<br>1136</span>
+        <div class="tl-dot"></div>
+        <div>
+          <p class="font-playfair font-bold mb-1" style="color:var(--ink); font-size:1.05rem;">Chữa Bệnh "Hóa Hổ" — Được Phong Quốc Sư</p>
+          <p>Chữa khỏi căn bệnh "hóa hổ" kỳ lạ cho vua <strong style="color:var(--ink);">Lý Thần Tông</strong>. Được phong <strong style="color:var(--ink);">Quốc Sư</strong> — địa vị cao nhất một nhà sư có thể đạt được, nhưng ông vẫn tiếp tục lối sống thanh đạm.</p>
+        </div>
+      </div>
+      <div class="flex gap-5 items-start">
+        <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3rem; text-align:right; line-height:1.25; padding-top:2px; letter-spacing:0.03em;">THỜI<br>LÝ</span>
+        <div class="tl-dot"></div>
+        <div>
+          <p class="font-playfair font-bold mb-2" style="color:var(--ink); font-size:1.05rem;">Đúc An Nam Tứ Đại Khí — Ông Tổ Nghề Đúc Đồng</p>
+          <p class="mb-3">Chủ trì đúc <strong style="color:var(--ink);">chuông Quy Điền</strong> và <strong style="color:var(--ink);">tượng Phật chùa Quỳnh Lâm</strong> — hai trong số <strong style="color:var(--ink);">An Nam tứ đại khí</strong> (4 báu vật lớn nhất của nước Việt thời đó). Ông tổ nghề đúc đồng Việt Nam.</p>
+          <div class="pull-q py-1">
+            <p class="font-playfair italic" style="font-size:1rem; color:var(--ink); line-height:1.5;"><strong>Không nắm binh quyền, không tranh ngôi vị — ảnh hưởng đến từ giá trị tạo ra, không từ quyền lực nắm giữ.</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pull-q-center mx-auto" style="max-width:60ch;">
+      <p class="font-playfair italic" style="font-size:1.22rem; color:var(--ink); line-height:1.45;">"Khi mang lại giá trị thực sự cho xã hội, danh tiếng và sự tôn trọng sẽ tự tìm đến."<br><em style="color:var(--crimson);">— Bài học từ cuộc đời Nguyễn Minh Không</em></p>
+    </div>
+  </div>
+
+  <!-- §03 PHÂN TÍCH 3 GỐC / 3 ĐỘC -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 03</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Phân Tích 3 Gốc / 3 Độc</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <p class="font-mono mb-4" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--crimson);">3 GỐC</p>
+    <div class="mb-8 overflow-x-auto">
+      <table class="w-full font-plex" style="font-size:0.95rem; border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th class="text-left p-3 font-mono" style="font-size:0.62rem; letter-spacing:0.15em; color:var(--crimson); border-bottom:2px solid var(--ink); width:18%;">TIÊU CHÍ</th>
+            <th class="text-left p-3 font-mono" style="font-size:0.62rem; letter-spacing:0.15em; color:var(--crimson); border-bottom:2px solid var(--ink); width:18%;">RATING</th>
+            <th class="text-left p-3 font-mono" style="font-size:0.62rem; letter-spacing:0.15em; color:var(--crimson); border-bottom:2px solid var(--ink);">BẰNG CHỨNG</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="rating-row">
+            <td class="p-3 align-top" style="color:var(--ink); font-weight:600;">Trí tuệ</td>
+            <td class="p-3 align-top stars"><span class="sf">★★★★★</span></td>
+            <td class="p-3 align-top" style="color:var(--ink-light);">[SỰ KIỆN] Am hiểu uyên thâm đồng thời cả Phật pháp, Y thuật và Kỹ thuật đúc đồng. Ứng dụng xuất sắc từng lĩnh vực vào thực tế — không phải kiến thức sách vở.</td>
+          </tr>
+          <tr class="rating-row">
+            <td class="p-3 align-top" style="color:var(--ink); font-weight:600;">Đạo đức</td>
+            <td class="p-3 align-top stars"><span class="sf">★★★★★</span></td>
+            <td class="p-3 align-top" style="color:var(--ink-light);">[SỰ KIỆN] Đi khắp nơi chữa bệnh cứu người không phân biệt giàu nghèo. Hoằng dương Phật pháp. Dù được phong Quốc Sư, không màng quyền lực chính trị — vẫn giữ lối sống thanh tịnh.</td>
+          </tr>
+          <tr>
+            <td class="p-3 align-top" style="color:var(--ink); font-weight:600;">Nghị lực</td>
+            <td class="p-3 align-top stars"><span class="sf">★★★★</span><span class="se">★</span></td>
+            <td class="p-3 align-top" style="color:var(--ink-light);">Lặn lội đi tìm thầy học đạo, vân du khắp nơi học y thuật và kỹ thuật đúc đồng — không ngại gian khổ để tích lũy tri thức thực sự.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="font-mono mb-4" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--crimson);">3 ĐỘC</p>
+    <div class="overflow-x-auto">
+      <table class="w-full font-plex" style="font-size:0.95rem; border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th class="text-left p-3 font-mono" style="font-size:0.62rem; letter-spacing:0.15em; color:var(--crimson); border-bottom:2px solid var(--ink); width:18%;">TIÊU CHÍ</th>
+            <th class="text-left p-3 font-mono" style="font-size:0.62rem; letter-spacing:0.15em; color:var(--crimson); border-bottom:2px solid var(--ink); width:18%;">RATING</th>
+            <th class="text-left p-3 font-mono" style="font-size:0.62rem; letter-spacing:0.15em; color:var(--crimson); border-bottom:2px solid var(--ink);">BẰNG CHỨNG</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="rating-row">
+            <td class="p-3 align-top" style="color:var(--ink); font-weight:600;">Tham lam</td>
+            <td class="p-3 align-top stars"><span class="sf">★</span><span class="se">★★★★</span></td>
+            <td class="p-3 align-top" style="color:var(--ink-light);">Hưởng lộc vua ban nhưng vẫn giữ lối sống thanh tịnh của bậc chân tu. Không tích lũy tài sản hay quyền lực.</td>
+          </tr>
+          <tr class="rating-row">
+            <td class="p-3 align-top" style="color:var(--ink); font-weight:600;">Sân giận</td>
+            <td class="p-3 align-top stars"><span class="sf">★</span><span class="se">★★★★</span></td>
+            <td class="p-3 align-top" style="color:var(--ink-light);">Không vướng mắc hận thù hay tranh giành quyền lực. Hành xử thuần theo từ bi.</td>
+          </tr>
+          <tr>
+            <td class="p-3 align-top" style="color:var(--ink); font-weight:600;">Si mê</td>
+            <td class="p-3 align-top stars"><span class="sf">★</span><span class="se">★★★★</span></td>
+            <td class="p-3 align-top" style="color:var(--ink-light);">Là người mang trí tuệ thấu suốt, phá bỏ vô minh — hiểu rõ bản chất sự vật không bị mê hoặc bởi danh lợi.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- §04 ĐÁNH GIÁ TỔNG THỂ -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 04</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Đánh Giá Tổng Thể</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div class="profile-badge p-5 mb-7">
+      <p class="font-mono mb-3" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--crimson);">PROFILE: BẬC CHÂN TU / VĨ NHÂN VĂN HÓA</p>
+      <p class="font-plex leading-relaxed mb-4" style="font-size:1.02rem; color:var(--ink-light);">Sức mạnh của Nguyễn Minh Không nằm ở <strong style="color:var(--ink);">"quyền lực mềm"</strong> — ông dùng Trí tuệ (y thuật, kỹ thuật) để thực hành Đạo đức (cứu người, xây dựng văn hóa). Không cần ngai vàng hay binh quyền để có ảnh hưởng lớn.</p>
+      <p class="font-plex leading-relaxed" style="font-size:1.02rem; color:var(--ink-light);"><strong style="color:var(--ink);">Tại sao dân gian suy tôn ông là Đức Thánh Nguyễn?</strong> Vì ông là hiện thân của Phật sống mang lại lợi ích thiết thực cho cộng đồng — không chỉ giảng đạo lý suông mà thực sự giúp đời: chữa bệnh cho người thường lẫn hoàng đế, truyền dạy nghề đúc đồng cho hàng thế hệ. Ảnh hưởng của ông đến từ giá trị tạo ra, không từ quyền lực nắm giữ.</p>
+    </div>
+    <p class="font-mono mb-5" style="font-size:0.6rem; letter-spacing:0.2em; color:var(--crimson);">BÀI HỌC</p>
+    <div class="space-y-6">
+      <div class="flex gap-5 items-start">
+        <div class="lesson-num">
+          <span class="font-playfair font-bold" style="color:var(--crimson); font-size:1.1rem;">1</span>
+        </div>
+        <div>
+          <p class="font-playfair font-bold mb-1" style="font-size:1.1rem; color:var(--ink);">Chuyên Môn Đa Ngành Hướng Đến Chân Lý Cốt Lõi</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">Người thực sự xuất chúng có thể thông tuệ đa ngành nếu biết tìm ra chân lý cốt lõi. <strong style="color:var(--ink);">Dù là Y học, Kỹ thuật hay Tôn giáo — cuối cùng đều hướng tới việc giúp đời.</strong></p>
+        </div>
+      </div>
+      <div class="flex gap-5 items-start">
+        <div class="lesson-num">
+          <span class="font-playfair font-bold" style="color:var(--crimson); font-size:1.1rem;">2</span>
+        </div>
+        <div>
+          <p class="font-playfair font-bold mb-1" style="font-size:1.1rem; color:var(--ink);">Giá Trị Thực Tạo Ra Danh Tiếng Bền Vững</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">Khi mang lại giá trị thực sự cho xã hội, <strong style="color:var(--ink);">danh tiếng và sự tôn trọng sẽ tự tìm đến</strong> mà không cần dùng thủ đoạn để tranh giành.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- §05 TỰ KIỂM TRA -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 05</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">❓ Tự Kiểm Tra</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div style="border:1px solid var(--rule); border-radius:0.75rem; padding:1.6rem;">
+      <p class="font-playfair font-bold mb-5" style="font-size:1.05rem; color:var(--ink); line-height:1.5;">Tại sao Nguyễn Minh Không lại có tầm ảnh hưởng to lớn đến mức được suy tôn là thánh (Đức Thánh Nguyễn) — trong khi ông không nắm giữ quyền lực chính trị hay quân sự nào?</p>
+      <details>
+        <summary class="font-mono" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson); cursor:pointer;">▶ XEM GỢI Ý PHÂN TÍCH</summary>
+        <div class="mt-4 pt-4" style="border-top:1px solid var(--rule);">
+          <p class="font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">Ảnh hưởng của ông không đến từ quyền lực chính trị mà đến từ việc ứng dụng Trí tuệ và Đạo đức vào thực tiễn: chữa bệnh cứu người (Y thuật) và truyền dạy nghề nghiệp (Đúc đồng). Nhân dân suy tôn ông vì ông là hiện thân của một vị Phật sống mang lại lợi ích thiết thực cho cộng đồng, thay vì chỉ giảng đạo lý suông. Đây cũng là minh chứng cho <strong style="color:var(--ink);">"quyền lực mềm"</strong> — loại ảnh hưởng bền vững nhất vì nó đến từ sự biết ơn tự nguyện, không phải từ sợ hãi hay ép buộc.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <!-- §06 LIÊN KẾT -->
+  <div class="px-10 py-9">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 06</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Liên Kết</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div class="grid gap-4" style="grid-template-columns:1fr 1fr;">
+      <div class="link-card p-5">
+        <div class="flex items-start gap-4">
+          <div class="tl-dot" style="margin-top:4px;"></div>
+          <div>
+            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">NHÂN VẬT LIÊN QUAN</p>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">25. Lý Thần Tông</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Vua được ông chữa bệnh "hóa hổ", phong làm Quốc Sư.</p>
+          </div>
+        </div>
+      </div>
+      <div class="link-card p-5">
+        <div class="flex items-start gap-4">
+          <div class="tl-dot" style="margin-top:4px;"></div>
+          <div>
+            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">GIAI ĐOẠN LỊCH SỬ</p>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">8.4 Nhà Lý — Xây Dựng Văn Hóa &amp; Thể Chế</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Giai đoạn lịch sử tương ứng 1077–1175 — thời kỳ Nguyễn Minh Không hoạt động.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-10 mb-2">
+      <p class="ornament" style="font-size:1.2rem;">✦ ✦ ✦</p>
+      <p class="font-mono mt-3" style="font-size:0.58rem; letter-spacing:0.25em; color:var(--warm);">LỊCH SỬ VIỆT NAM · NHÂN VẬT 26 · 1065–1141 · NGUYỄN MINH KHÔNG</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

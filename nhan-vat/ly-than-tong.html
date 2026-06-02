@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>25. Lý Thần Tông (1128–1138) — Nhân Vật Bản Lề Nhà Lý</title>
+  <meta name="description" content="Phân tích nhân vật Lý Thần Tông (1128–1138) — hoàng đế thứ 5 nhà Lý, người kế thừa di sản vĩ đại nhưng thiếu nghị lực tự rèn, để lại ngai vàng cho ấu chúa 3 tuổi.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700;1,900&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'playfair': ['"Playfair Display"', 'Georgia', 'serif'],
+            'plex': ['"IBM Plex Serif"', 'Georgia', 'serif'],
+            'mono': ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            'cream': '#f4eed8','cream-dark': '#ede5c8','ink': '#1c1409','ink-mid': '#2e2010','ink-light': '#4a3520',
+            'crimson': '#921c1c','gold': '#b07c28','warm': '#7a6040','rule': '#c4aa84','rule-light': '#ddd0b8',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { --cream:#f4eed8; --ink:#1c1409; --crimson:#921c1c; --gold:#b07c28; --rule:#c4aa84; }
+    * { box-sizing: border-box; }
+    body { background-color:#e8dfc0; background-image:radial-gradient(circle,rgba(160,130,80,0.35) 0.6px,transparent 0.6px); background-size:18px 18px; min-height:100vh; padding:2rem 1rem; }
+    .paper { background-color:var(--cream); position:relative; }
+    .paper::before { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(180,150,90,0.12) 0.8px,transparent 0.8px); background-size:22px 22px; pointer-events:none; }
+    .triple-rule { border-top:3px solid var(--ink); position:relative; margin-bottom:2px; }
+    .triple-rule::after { content:''; display:block; border-top:1px solid var(--ink); margin-top:3px; }
+    .single-rule { border-top:1px solid var(--rule); }
+    .sec-label { font-family:'JetBrains Mono',monospace; font-size:0.6rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--crimson); font-weight:600; }
+    .sf { color:var(--gold); }
+    .se { color:var(--rule); }
+    .tl-dot { width:8px; height:8px; background:var(--crimson); border-radius:50%; flex-shrink:0; margin-top:6px; }
+    .ornament { letter-spacing:0.6em; color:var(--gold); }
+    .pull-q { border-left:4px solid var(--crimson); padding-left:1.1rem; }
+    .pull-q-center { border-top:2px solid var(--crimson); border-bottom:2px solid var(--crimson); padding:1rem 0; text-align:center; }
+    .ink-box { background-color:var(--ink); color:var(--cream); }
+    .link-card { border:1px solid var(--rule); border-radius:0.75rem; transition:border-color 0.2s,box-shadow 0.2s; }
+    .link-card:hover { border-color:var(--crimson); box-shadow:0 2px 12px rgba(146,28,28,0.1); }
+    .lesson-num { width:2.8rem; height:2.8rem; border:2px solid var(--crimson); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .rating-row { border-bottom:1px solid var(--rule-light); }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+    .fade-in { animation:fadeUp 0.7s ease-out both; }
+    .profile-badge { border:2px solid var(--crimson); border-radius:0.75rem; }
+    p { orphans:2; widows:2; }
+    .kpi-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px; }
+    @media (max-width:640px) { .kpi-grid { grid-template-columns:1fr; } }
+    .kpi-cell { background:var(--ink); color:var(--cream); padding:1.2rem 1rem; text-align:center; }
+    .kpi-cell.accent { background:var(--crimson); }
+    .kpi-label-sm { font-family:'JetBrains Mono',monospace; font-size:0.55rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); margin-bottom:0.4rem; }
+    .kpi-val { font-family:'Playfair Display',serif; font-size:2.4rem; font-weight:900; line-height:1; color:#f0e8d8; }
+    .kpi-sub { font-family:'IBM Plex Serif',serif; font-size:0.7rem; font-style:italic; color:#9a8b78; margin-top:0.35rem; line-height:1.4; }
+    .kpi-cell.accent .kpi-sub { color:#f0c8c8; }
+    .tl-line { border-left:1px solid var(--rule); padding-left:1rem; position:relative; }
+    .tl-line::before { content:''; position:absolute; left:-4px; top:6px; width:7px; height:7px; background:var(--crimson); border-radius:50%; }
+    .rating-tbl { width:100%; border-collapse:collapse; }
+    .rating-tbl th { font-family:'JetBrains Mono',monospace; font-size:0.55rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--warm); text-align:left; padding:0.5rem 0.6rem; border-bottom:1px solid var(--rule); }
+    .rating-tbl td { font-family:'IBM Plex Serif',serif; font-size:0.9rem; padding:0.7rem 0.6rem; border-bottom:1px solid var(--rule-light); vertical-align:top; line-height:1.6; color:var(--ink-light); }
+    .rating-tbl td:first-child { font-family:'Playfair Display',serif; font-weight:700; color:var(--ink); white-space:nowrap; }
+    .rating-tbl td:nth-child(2) { font-family:'JetBrains Mono',monospace; font-size:0.8rem; color:var(--gold); white-space:nowrap; padding-right:1rem; }
+    .rating-tbl.doc td:nth-child(2) { color:var(--crimson); }
+    .selfcheck { background:var(--ink); color:var(--cream); padding:1.6rem 2rem; }
+    .selfcheck-q { font-family:'Playfair Display',serif; font-size:1.05rem; font-style:italic; line-height:1.65; color:#f0e8d8; margin-bottom:1.2rem; }
+    .selfcheck-label { font-family:'JetBrains Mono',monospace; font-size:0.55rem; letter-spacing:0.28em; text-transform:uppercase; color:var(--gold); margin-bottom:0.6rem; }
+    .selfcheck-ans { font-family:'IBM Plex Serif',serif; font-size:0.88rem; line-height:1.8; color:#d0c4b0; border-top:1px solid rgba(200,185,154,0.3); padding-top:1rem; }
+    .selfcheck-ans strong { color:var(--gold); font-weight:600; }
+  </style>
+</head>
+<body>
+
+<div class="paper max-w-4xl mx-auto shadow-2xl fade-in" style="border:1px solid #b8a070; border-radius:2px; overflow:hidden;">
+
+  <!-- DATELINE -->
+  <div style="border-bottom:1px solid var(--ink);" class="px-10 pt-7 pb-3 flex items-center justify-between gap-4 flex-wrap">
+    <span class="font-mono text-xs tracking-widest text-warm uppercase" style="font-size:0.6rem; letter-spacing:0.2em;">Lịch Sử Việt Nam · Nhân Vật</span>
+    <div class="text-center"><span class="sec-label" style="font-size:0.62rem;">★ Nhân Vật Số 25 — Lý Thần Tông ★</span></div>
+    <span class="font-mono text-xs tracking-widest text-warm uppercase" style="font-size:0.6rem; letter-spacing:0.2em;">1128–1138 SCN · Thời Lý</span>
+  </div>
+
+  <!-- METADATA BAR -->
+  <div class="px-10 py-2 flex gap-3 flex-wrap items-center" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.06);">
+    <span class="font-mono" style="font-size:0.57rem; letter-spacing:0.1em; color:var(--warm);"><strong style="color:var(--ink-light);">Khoá:</strong> Lịch sử Việt Nam · Nhân vật số 25</span>
+    <span style="color:var(--rule); font-size:0.7rem;">|</span>
+    <span class="font-mono" style="font-size:0.57rem; letter-spacing:0.1em; color:var(--warm);"><strong style="color:var(--ink-light);">Vai trò:</strong> Hoàng Đế Thứ 5 Nhà Lý · 1128–1138</span>
+    <span style="color:var(--rule); font-size:0.7rem;">|</span>
+    <span class="font-mono" style="font-size:0.57rem; letter-spacing:0.1em; color:var(--warm);"><strong style="color:var(--ink-light);">Tên thật:</strong> Lý Dương Hoán</span>
+  </div>
+
+  <!-- MASTHEAD BAR -->
+  <div class="px-10 pt-3 pb-2">
+    <div class="triple-rule"></div>
+    <p class="font-mono text-center py-1" style="font-size:0.55rem; letter-spacing:0.35em; color:var(--warm);">LỊCH SỬ VIỆT NAM · NHÂN VẬT 25 · 1128–1138 SCN · NHÂN VẬT BẢN LỀ NHÀ LÝ</p>
+    <div class="single-rule"></div>
+  </div>
+
+  <!-- HEADLINE -->
+  <div class="px-10 pt-6 pb-8 text-center" style="border-bottom:2px solid var(--ink);">
+    <p class="font-playfair italic mb-1" style="font-size:0.9rem; letter-spacing:0.08em; color:var(--crimson);">Lịch Sử Việt Nam · Nhân Vật 25 · 1128–1138</p>
+    <h1 class="font-playfair leading-none" style="font-size:clamp(2.8rem,7vw,4.8rem); font-weight:900; color:var(--ink); letter-spacing:-0.015em;">LÝ THẦN TÔNG</h1>
+    <h2 class="font-playfair leading-none mb-5" style="font-size:clamp(4rem,12vw,8rem); font-weight:900; color:var(--ink); letter-spacing:-0.025em; font-style:italic; margin-top:-0.05em;">1128</h2>
+    <div class="flex items-center gap-5 mb-6 px-4">
+      <div class="flex-1" style="border-top:2px solid var(--ink);"></div>
+      <p class="font-playfair text-lg italic" style="color:var(--ink-mid); white-space:nowrap;"><em style="color:var(--crimson);">Hoàng Đế Thứ 5</em> — Nhân Vật Bản Lề</p>
+      <div class="flex-1" style="border-top:2px solid var(--ink);"></div>
+    </div>
+    <p class="font-plex mx-auto leading-relaxed" style="max-width:58ch; font-size:1.05rem; color:var(--ink-light); font-style:italic;">Hoàng đế thứ 5 nhà Lý — người kế thừa di sản vĩ đại nhưng thiếu nghị lực tự rèn, để lại ngai vàng cho ấu chúa 3 tuổi. Không phải ông vua tồi, nhưng "yếu ớt đúng thời điểm" cũng gây hại không kém ác tâm.</p>
+  </div>
+
+  <!-- TL;DR -->
+  <div class="ink-box px-10 py-6">
+    <p class="font-mono mb-3" style="font-size:0.55rem; letter-spacing:0.3em; color:var(--gold);">TL;DR</p>
+    <p class="font-playfair italic leading-relaxed" style="font-size:1.05rem; color:#f0e8d8; line-height:1.75;">Lý Thần Tông (1128–1138) — không phải ông vua tồi: đủ sáng suốt để <span style="color:var(--gold);">không phá vỡ di sản khổng lồ</span> của thời trước, có những chính sách khoan dung tốt. Nhưng thiếu nghị lực tạo ra sự vĩ đại riêng, lối sống buông thả dẫn đến bạo bệnh và băng hà sớm ở tuổi 23. Để lại ngai vàng cho con 3 tuổi — tạo "vết nứt" đầu tiên trên nền móng vương quyền nhà Lý.</p>
+  </div>
+
+  <!-- KPI -->
+  <div class="kpi-grid">
+    <div class="kpi-cell">
+      <div class="kpi-label-sm">Thời gian trị vì</div>
+      <div class="kpi-val">10<span style="font-size:1rem; font-weight:400;"> năm</span></div>
+      <div class="kpi-sub">1128–1138, lên ngôi năm 12 tuổi</div>
+    </div>
+    <div class="kpi-cell accent">
+      <div class="kpi-label-sm" style="color:#ffd37a;">Tuổi băng hà</div>
+      <div class="kpi-val">23</div>
+      <div class="kpi-sub">Bạo bệnh "hóa hổ" — băng hà sớm</div>
+    </div>
+    <div class="kpi-cell">
+      <div class="kpi-label-sm">Ấu chúa kế vị</div>
+      <div class="kpi-val">3<span style="font-size:1rem; font-weight:400;"> tuổi</span></div>
+      <div class="kpi-sub">Lý Anh Tông — bắt đầu vòng xoáy suy yếu</div>
+    </div>
+  </div>
+
+  <!-- §01 HỒ SƠ -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-5">
+      <span class="sec-label">§ 01</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Hồ Sơ</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <p class="font-plex leading-relaxed" style="font-size:1.02rem; color:var(--ink-light);">Tên thật <strong style="color:var(--ink);">Lý Dương Hoán</strong>, cháu gọi Lý Nhân Tông bằng bác — được chọn làm người kế vị khi Nhân Tông không có con trai. Lên ngôi năm 12 tuổi, trị vì 10 năm trong giai đoạn Đại Việt còn cường thịnh.</p>
+    <p class="font-plex leading-relaxed mt-3" style="font-size:0.93rem; color:var(--warm);">Xuất hiện trong: <em>8.4 Nhà Lý — Xây Dựng Văn Hóa &amp; Thể Chế (1077–1175)</em></p>
+  </div>
+
+  <!-- §02 BIÊN NIÊN SỬ -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 02</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Biên Niên Sử — Mười Năm Trị Vì</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+      <div class="space-y-7 font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">
+        <div class="flex gap-4 items-start">
+          <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3.5rem; text-align:right; padding-top:2px;">1128</span>
+          <div class="tl-dot"></div>
+          <div class="tl-line">
+            <p class="font-playfair font-bold mb-1" style="color:var(--ink); font-size:1rem;">Lên Ngôi Hoàng Đế</p>
+            <p>Kế vị Lý Nhân Tông. Đất nước ổn định, thừa hưởng di sản to lớn. Lên ngôi năm 12 tuổi với nền tảng vững chắc được trao sẵn.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start">
+          <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3.5rem; text-align:right; padding-top:2px;">1128–<br>1138</span>
+          <div class="tl-dot"></div>
+          <div class="tl-line">
+            <p class="font-playfair font-bold mb-1" style="color:var(--ink); font-size:1rem;">Chính Sách Khoan Dung</p>
+            <p>Đánh bại quân Chân Lạp xâm lược, ban đại xá thiên hạ, thả cung nữ, trả lại ruộng đất cho dân nghèo. Trọng dụng Lê Bá Ngọc, Lưu Khánh Đàm; duy trì chính sách ngụ binh ư nông.</p>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-7 font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">
+        <div class="flex gap-4 items-start">
+          <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3.5rem; text-align:right; padding-top:2px;">1136</span>
+          <div class="tl-dot"></div>
+          <div class="tl-line">
+            <p class="font-playfair font-bold mb-1" style="color:var(--ink); font-size:1rem;">Bạo Bệnh "Hóa Hổ"</p>
+            <p>Mắc bạo bệnh "hóa hổ" — phát điên, hành xử như hổ dữ theo sử chép. Được thiền sư <strong style="color:var(--ink);">Nguyễn Minh Không</strong> chữa khỏi — sự kiện đẩy ông tổ nghề đúc đồng này lên địa vị Quốc Sư.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start">
+          <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3.5rem; text-align:right; padding-top:2px;">1138</span>
+          <div class="tl-dot" style="background:var(--rule);"></div>
+          <div class="tl-line" style="border-color:var(--rule-light);">
+            <p class="font-playfair font-bold mb-1" style="color:var(--warm); font-size:1rem;">Băng Hà — "Vết Nứt" Đầu Tiên</p>
+            <p style="color:var(--warm);">Băng hà ở tuổi 23 sau thời gian bệnh tật. Để lại ngai vàng cho hoàng tử mới 3 tuổi — <strong style="color:var(--ink-light);">Lý Anh Tông</strong>. Quyết định không thể tránh khỏi nhưng để lại hệ quả nặng nề.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- §03 TAM GỐC -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 03</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Phân Tích — Tam Gốc</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div style="display:grid; grid-template-columns:3fr 2fr; gap:2.5rem;">
+      <div>
+        <p class="font-mono mb-3" style="font-size:0.55rem; letter-spacing:0.2em; color:var(--crimson);">3 GỐC — PHẨM HẠNH CĂN BẢN</p>
+        <table class="rating-tbl mb-4">
+          <thead><tr><th>Tiêu chí</th><th>Rating</th><th>Bằng chứng</th></tr></thead>
+          <tbody>
+            <tr><td>Trí tuệ</td><td><span class="sf">★★★</span><span class="se">☆☆</span></td><td><em>[Sự kiện]</em> Trọng dụng đại thần hiền tài, duy trì ngụ binh ư nông, đánh bại Chân Lạp. Không phá vỡ thể chế nhưng cũng không tạo đột phá mới.</td></tr>
+            <tr><td>Đạo đức</td><td><span class="sf">★★★</span><span class="se">☆☆</span></td><td><em>[Sự kiện]</em> Ban đại xá, thả cung nữ, trả ruộng đất cho dân — những chính sách có tâm. Nhưng lối sống buông thả (đam mê săn bắn, thú lạ, xây chùa) cho thấy bản thân chưa thực sự kỷ luật.</td></tr>
+            <tr><td>Nghị lực</td><td><span class="sf">★★</span><span class="se">☆☆☆</span></td><td>Dựa chủ yếu vào nền tảng có sẵn và các đại thần giỏi. Không có ghi chép về sự tự lực vượt khó đáng kể. <strong style="color:var(--ink);">"Sinh ra ở vạch đích"</strong> — thiếu động lực rèn giũa.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="space-y-4">
+        <div style="background:rgba(180,150,90,0.08); border-top:2px solid var(--crimson); padding:1rem 1.1rem;">
+          <p class="font-mono mb-2" style="font-size:0.55rem; letter-spacing:0.22em; color:var(--crimson);">KẾ THỪA DI SẢN VĨ ĐẠI</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.88rem; color:var(--ink-light);">Nhận bàn giao từ Lý Nhân Tông — vị vua xây dựng Văn Miếu, Quốc Tử Giám, chiến thắng quân Tống. Nền tảng quá vững chắc đã che giấu sự thiếu hụt nghị lực.</p>
+        </div>
+        <div style="background:rgba(180,150,90,0.08); border-top:2px solid var(--crimson); padding:1rem 1.1rem;">
+          <p class="font-mono mb-2" style="font-size:0.55rem; letter-spacing:0.22em; color:var(--crimson);">CHÍNH SÁCH KHOAN DUNG</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.88rem; color:var(--ink-light);">Đại xá, thả cung nữ, trả ruộng đất — những hành động tốt có tâm. Nhưng thiếu tầm nhìn chiến lược dài hạn để biến di sản thừa kế thành di sản sáng tạo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- §04 TAM ĐỘC -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 04</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Phân Tích — Tam Độc</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;">
+      <div>
+        <p class="font-mono mb-3" style="font-size:0.55rem; letter-spacing:0.2em; color:var(--crimson);">3 ĐỘC — HẠN CHẾ &amp; ĐIỂM MÙ</p>
+        <table class="rating-tbl doc">
+          <thead><tr><th>Tiêu chí</th><th>Rating</th><th>Nhận xét</th></tr></thead>
+          <tbody>
+            <tr><td>Tham lam</td><td>★★☆☆☆</td><td><em>[Sự kiện]</em> Đam mê săn bắn, thích sưu tầm thú lạ, xây dựng nhiều chùa tháp quy mô lớn — những thú vui tốn kém ngân khố.</td></tr>
+            <tr><td>Sân giận</td><td>★☆☆☆☆</td><td>Ít biểu hiện bạo sát hay trả thù trong sử liệu.</td></tr>
+            <tr><td>Si mê</td><td>★★★☆☆</td><td><em>[Sự kiện]</em> Bạo bệnh "hóa hổ" — có thể là hệ quả từ lối sống buông thả, thiếu kỷ luật về thể chất và tinh thần. Không nhận ra nguy cơ cho đến khi quá muộn.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div style="background:rgba(180,150,90,0.08); border-top:2px solid var(--crimson); padding:1rem 1.1rem; margin-bottom:1rem;">
+          <p class="font-mono mb-2" style="font-size:0.55rem; letter-spacing:0.22em; color:var(--crimson);">BẠO BỆNH "HÓA HỔ"</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.88rem; color:var(--ink-light);">Sự kiện 1136 là điểm bùng phát của Si mê tích lũy lâu ngày. Được Nguyễn Minh Không chữa khỏi — nhưng sức khỏe suy kiệt, dẫn đến băng hà chỉ 2 năm sau.</p>
+        </div>
+        <p class="font-plex leading-relaxed" style="font-size:0.92rem; color:var(--ink-light);">Tham lam của Lý Thần Tông không phải tham quyền hay tham tiền — mà là tham những thú vui cá nhân. Những thú vui vô hại nếu đơn lẻ, nhưng tích lũy thành <strong style="color:var(--ink);">lối sống buông thả</strong> khiến sức khỏe sụp đổ đúng thời điểm tệ nhất.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- §05 ĐÁNH GIÁ -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 05</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Đánh Giá Tổng Thể</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div style="display:grid; grid-template-columns:3fr 2fr; gap:2.5rem;">
+      <div>
+        <div style="border:1px solid var(--rule); border-radius:0.75rem; padding:1.4rem; background:var(--cream-dark);">
+          <p class="font-playfair font-bold mb-3" style="font-size:1.1rem; color:var(--ink);">Người Ở Giữa — <em style="color:var(--crimson);">Điểm Nguy Hiểm Nhất</em></p>
+          <p class="font-plex leading-relaxed mb-3" style="font-size:0.97rem; color:var(--ink-light);">Lý Thần Tông không phải vua tồi, không phải vua vĩ đại — ông là người ở giữa, và khoảng giữa đó lại là điểm nguy hiểm nhất. Sự buông thả về sức khỏe và lối sống dẫn đến bạo bệnh → băng hà sớm → ngai vàng rơi vào tay ấu chúa → bắt đầu vòng xoáy suy yếu của nhà Lý.</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">Điểm khác biệt với Lý Cao Tông: <strong style="color:var(--ink);">Lý Thần Tông chỉ yếu ớt, không ác tâm</strong>. Nhưng trong lịch sử, yếu ớt đúng thời điểm cũng có thể gây hại không kém ác tâm.</p>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div style="background:rgba(180,150,90,0.08); border-top:2px solid var(--crimson); padding:1rem 1.1rem;">
+          <p class="font-mono mb-2" style="font-size:0.55rem; letter-spacing:0.22em; color:var(--crimson);">VẾT NỨT ĐẦU TIÊN</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.88rem; color:var(--ink-light);">1138: Lý Thần Tông băng hà → Lý Anh Tông 3 tuổi lên ngôi → quyền thần Đỗ Anh Vũ thao túng → sau Đỗ Anh Vũ là Tô Hiến Thành → sau Tô Hiến Thành là đại loạn. Toàn bộ chuỗi bắt đầu từ đây.</p>
+        </div>
+        <div style="background:rgba(180,150,90,0.08); border-top:2px solid var(--crimson); padding:1rem 1.1rem;">
+          <p class="font-mono mb-2" style="font-size:0.55rem; letter-spacing:0.22em; color:var(--crimson);">SỨC KHỎE LÀ VẬN MỆNH</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.88rem; color:var(--ink-light);">Sức khỏe thể chất của người đứng đầu <em>trực tiếp</em> quyết định sự ổn định của cả hệ thống. Khi người lãnh đạo mất quá sớm, mọi quy trình kế thừa đều trở nên mong manh.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- §06 BÀI HỌC -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 06</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Bài Học Rút Ra</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+      <div class="flex gap-5 items-start">
+        <div class="lesson-num flex-shrink-0"><span class="font-playfair font-bold" style="color:var(--crimson); font-size:1.1rem;">1</span></div>
+        <div>
+          <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">Kế Thừa Chưa Phải Thành Tích</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.95rem; color:var(--ink-light);">Kế thừa di sản tốt là chưa đủ; sức khỏe thể chất và tinh thần của người đứng đầu đôi khi <strong style="color:var(--ink);">quyết định sự tồn vong của cả hệ thống.</strong></p>
+        </div>
+      </div>
+      <div class="flex gap-5 items-start">
+        <div class="lesson-num flex-shrink-0"><span class="font-playfair font-bold" style="color:var(--crimson); font-size:1.1rem;">2</span></div>
+        <div>
+          <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">Hiểm Họa Của "Vạch Đích"</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.95rem; color:var(--ink-light);">Sinh ra ở vạch đích thường đi kèm sự yếu ớt về nghị lực nếu không tự rèn giũa. Không có thử thách → không được tôi luyện → khi thử thách đến, <strong style="color:var(--ink);">nghị lực không đủ để đối phó.</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- §07 TỰ KIỂM TRA -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 07</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Tự Kiểm Tra — Câu Hỏi Phân Tích</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div class="selfcheck">
+      <p class="selfcheck-q">Tại sao Lý Thần Tông không bị coi là "bạo chúa" hay "hôn quân" dù mắc bạo bệnh và để lại ngai vàng cho ấu chúa?</p>
+      <div class="selfcheck-label">✦ Gợi Ý Phân Tích</div>
+      <div class="selfcheck-ans">
+        <p><strong>Dù mắc bạo bệnh về cuối đời và thiếu nghị lực rèn giũa bản thân (Si mê ★★★),</strong> Lý Thần Tông vẫn duy trì được Đạo đức và Trí tuệ ở mức khá trong thời gian trị vì: không tàn sát trung thần, biết trọng dụng người tài, có những chính sách ân xá khoan dung với dân chúng.</p>
+        <p style="margin-top:0.6rem;">Sai lầm của ông phần nhiều nằm ở sự thiếu bản lĩnh của người <strong>"sinh ra ở vạch đích"</strong> chứ không phải sự độc ác của bạo chúa. Ông yếu ớt, không ác tâm — và trong lịch sử, đó là hai loại thất bại rất khác nhau về bản chất, dù kết quả đôi khi như nhau.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- §08 LIÊN KẾT -->
+  <div class="px-10 py-9">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 08</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Liên Kết</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div class="grid gap-4" style="grid-template-columns:1fr 1fr;">
+      <div class="link-card p-5">
+        <div class="flex items-start gap-4">
+          <div class="tl-dot" style="margin-top:4px;"></div>
+          <div>
+            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">VUA TIỀN NHIỆM</p>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">21. Lý Nhân Tông</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Bác ruột, người chọn cháu làm người kế vị. Di sản vĩ đại vừa là nền tảng, vừa là gánh nặng mà Lý Thần Tông thừa hưởng.</p>
+          </div>
+        </div>
+      </div>
+      <div class="link-card p-5">
+        <div class="flex items-start gap-4">
+          <div class="tl-dot" style="margin-top:4px;"></div>
+          <div>
+            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">NHÂN VẬT LIÊN QUAN</p>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">26. Nguyễn Minh Không</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Thiền sư chữa bệnh "hóa hổ" cho vua, được phong Quốc Sư — ông tổ nghề đúc đồng Việt Nam.</p>
+          </div>
+        </div>
+      </div>
+      <div class="link-card p-5">
+        <div class="flex items-start gap-4">
+          <div class="tl-dot" style="margin-top:4px;"></div>
+          <div>
+            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">VUA KẾ VỊ</p>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">27. Lý Anh Tông</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Con trai nối ngôi lúc 3 tuổi. Vòng xoáy ấu chúa → quyền thần thao túng bắt đầu từ đây.</p>
+          </div>
+        </div>
+      </div>
+      <div class="link-card p-5">
+        <div class="flex items-start gap-4">
+          <div class="tl-dot" style="margin-top:4px;"></div>
+          <div>
+            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">CHAPTER XUẤT HIỆN</p>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">8.4 Nhà Lý — Xây Dựng Văn Hóa &amp; Thể Chế</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Bối cảnh đất nước còn cường thịnh, thừa hưởng nền tảng từ Lý Nhân Tông.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-10 mb-2">
+      <p class="ornament" style="font-size:1.2rem;">✦ ✦ ✦</p>
+      <p class="font-mono mt-3" style="font-size:0.58rem; letter-spacing:0.25em; color:var(--warm);">LỊCH SỬ VIỆT NAM · NHÂN VẬT 25 · 1128–1138 · LÝ THẦN TÔNG</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

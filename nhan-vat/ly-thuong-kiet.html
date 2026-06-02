@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>23. Lý Thường Kiệt (1019–1105) — Đại Tướng Chiến Lược</title>
+  <meta name="description" content="Phân tích nhân vật Lý Thường Kiệt (1019–1105) — chiến lược gia tiên phát chế nhân, tác giả Nam quốc sơn hà, đại tướng phục vụ 3 đời vua nhà Lý.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700;1,900&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'playfair': ['"Playfair Display"', 'Georgia', 'serif'],
+            'plex': ['"IBM Plex Serif"', 'Georgia', 'serif'],
+            'mono': ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            'cream': '#f4eed8','cream-dark': '#ede5c8','ink': '#1c1409','ink-mid': '#2e2010','ink-light': '#4a3520',
+            'crimson': '#921c1c','gold': '#b07c28','warm': '#7a6040','rule': '#c4aa84','rule-light': '#ddd0b8',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { --cream:#f4eed8; --ink:#1c1409; --crimson:#921c1c; --gold:#b07c28; --rule:#c4aa84; }
+    * { box-sizing: border-box; }
+    body { background-color:#e8dfc0; background-image:radial-gradient(circle,rgba(160,130,80,0.35) 0.6px,transparent 0.6px); background-size:18px 18px; min-height:100vh; padding:2rem 1rem; }
+    .paper { background-color:var(--cream); position:relative; }
+    .paper::before { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(180,150,90,0.12) 0.8px,transparent 0.8px); background-size:22px 22px; pointer-events:none; }
+    .triple-rule { border-top:3px solid var(--ink); position:relative; margin-bottom:2px; }
+    .triple-rule::after { content:''; display:block; border-top:1px solid var(--ink); margin-top:3px; }
+    .single-rule { border-top:1px solid var(--rule); }
+    .sec-label { font-family:'JetBrains Mono',monospace; font-size:0.6rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--crimson); font-weight:600; }
+    .sf { color:var(--gold); }
+    .se { color:var(--rule); }
+    .tl-dot { width:8px; height:8px; background:var(--crimson); border-radius:50%; flex-shrink:0; margin-top:6px; }
+    .ornament { letter-spacing:0.6em; color:var(--gold); }
+    .pull-q { border-left:4px solid var(--crimson); padding-left:1.1rem; }
+    .pull-q-center { border-top:2px solid var(--crimson); border-bottom:2px solid var(--crimson); padding:1rem 0; text-align:center; }
+    .ink-box { background-color:var(--ink); color:var(--cream); }
+    .link-card { border:1px solid var(--rule); border-radius:0.75rem; transition:border-color 0.2s,box-shadow 0.2s; }
+    .link-card:hover { border-color:var(--crimson); box-shadow:0 2px 12px rgba(146,28,28,0.1); }
+    .lesson-num { width:2.8rem; height:2.8rem; border:2px solid var(--crimson); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .rating-row { border-bottom:1px solid var(--rule-light); }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+    .fade-in { animation:fadeUp 0.7s ease-out both; }
+    .profile-badge { border:2px solid var(--crimson); border-radius:0.75rem; }
+    p { orphans:2; widows:2; }
+    /* KPI */
+    .kpi-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px; }
+    @media (max-width:640px) { .kpi-grid { grid-template-columns:1fr; } }
+    .kpi-cell { background:var(--ink); color:var(--cream); padding:1.2rem 1rem; text-align:center; }
+    .kpi-cell.accent { background:var(--crimson); }
+    .kpi-label-sm { font-family:'JetBrains Mono',monospace; font-size:0.55rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); margin-bottom:0.4rem; }
+    .kpi-val { font-family:'Playfair Display',serif; font-size:2.4rem; font-weight:900; line-height:1; color:#f0e8d8; }
+    .kpi-sub { font-family:'IBM Plex Serif',serif; font-size:0.7rem; font-style:italic; color:#9a8b78; margin-top:0.35rem; line-height:1.4; }
+    .kpi-cell.accent .kpi-sub { color:#f0c8c8; }
+    /* Timeline */
+    .tl-line { border-left:1px solid var(--rule); padding-left:1rem; position:relative; }
+    .tl-line::before { content:''; position:absolute; left:-4px; top:6px; width:7px; height:7px; background:var(--crimson); border-radius:50%; }
+    /* Misc table */
+    .misc-table { width:100%; border-collapse:collapse; font-size:0.88rem; }
+    .misc-table thead th { font-family:'JetBrains Mono',monospace; font-size:0.55rem; letter-spacing:0.18em; text-transform:uppercase; padding:0.5rem 0.7rem; border-bottom:2px solid var(--ink); text-align:left; color:var(--warm); }
+    .misc-table tbody td { padding:0.65rem 0.7rem; border-bottom:1px solid var(--rule-light); line-height:1.65; vertical-align:top; font-family:'IBM Plex Serif',serif; color:var(--ink-light); }
+    .misc-table tbody td:first-child { font-family:'Playfair Display',serif; font-weight:700; color:var(--ink); white-space:nowrap; }
+    .misc-table tbody td:nth-child(2) { font-family:'JetBrains Mono',monospace; font-size:0.8rem; white-space:nowrap; }
+    .col-gold td:nth-child(2) { color:var(--gold); }
+    .col-crimson td:nth-child(2) { color:var(--crimson); }
+    /* Chip cards */
+    .card-chip { border-left:3px solid var(--crimson); padding:0.7rem 1rem; background:rgba(146,28,28,0.04); }
+    .card-chip-gold { border-left:3px solid var(--gold); padding:0.7rem 1rem; background:rgba(176,124,40,0.05); }
+    .chip-label { font-family:'JetBrains Mono',monospace; font-size:0.55rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--crimson); margin-bottom:0.3rem; }
+    .chip-label-gold { font-family:'JetBrains Mono',monospace; font-size:0.55rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:0.3rem; }
+  </style>
+</head>
+<body>
+
+<div class="paper max-w-4xl mx-auto shadow-2xl fade-in" style="border:1px solid #b8a070; border-radius:2px; overflow:hidden;">
+
+  <!-- DATELINE -->
+  <div style="border-bottom:1px solid var(--ink);" class="px-10 pt-7 pb-3 flex items-center justify-between gap-4 flex-wrap">
+    <span class="font-mono text-xs tracking-widest text-warm uppercase" style="font-size:0.6rem; letter-spacing:0.2em;">Lịch Sử Việt Nam · Nhân Vật</span>
+    <div class="text-center">
+      <span class="sec-label" style="font-size:0.62rem;">★ Nhân Vật Số 23 — Lý Thường Kiệt ★</span>
+    </div>
+    <span class="font-mono text-xs tracking-widest text-warm uppercase" style="font-size:0.6rem; letter-spacing:0.2em;">1019–1105 SCN · Thời Lý</span>
+  </div>
+
+  <!-- METADATA BAR -->
+  <div class="px-10 py-2 flex gap-3 flex-wrap items-center" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.06);">
+    <span class="font-mono" style="font-size:0.57rem; letter-spacing:0.1em; color:var(--warm);"><strong style="color:var(--ink-light);">Khoá:</strong> Lịch sử Việt Nam · Nhân vật số 23</span>
+    <span style="color:var(--rule); font-size:0.7rem;">|</span>
+    <span class="font-mono" style="font-size:0.57rem; letter-spacing:0.1em; color:var(--warm);"><strong style="color:var(--ink-light);">Vai trò:</strong> Đại Tướng · Chiến Lược Gia · Nhà Lý</span>
+    <span style="color:var(--rule); font-size:0.7rem;">|</span>
+    <span class="font-mono" style="font-size:0.57rem; letter-spacing:0.1em; color:var(--warm);"><strong style="color:var(--ink-light);">Chiến lược:</strong> Tiên Phát Chế Nhân</span>
+  </div>
+
+  <!-- MASTHEAD BAR -->
+  <div class="px-10 pt-3 pb-2">
+    <div class="triple-rule"></div>
+    <p class="font-mono text-center py-1" style="font-size:0.55rem; letter-spacing:0.35em; color:var(--warm);">LỊCH SỬ VIỆT NAM · NHÂN VẬT 23 · 1019–1105 SCN · ĐẠI TƯỚNG CHIẾN LƯỢC</p>
+    <div class="single-rule"></div>
+  </div>
+
+  <!-- HEADLINE -->
+  <div class="px-10 pt-6 pb-8 text-center" style="border-bottom:2px solid var(--ink);">
+    <p class="font-playfair italic mb-1" style="font-size:0.9rem; letter-spacing:0.08em; color:var(--crimson);">Lịch Sử Việt Nam · Nhân Vật 23 · 1019–1105</p>
+    <h1 class="font-playfair leading-none" style="font-size:clamp(2.8rem,7vw,4.8rem); font-weight:900; color:var(--ink); letter-spacing:-0.015em;">LÝ THƯỜNG KIỆT</h1>
+    <h2 class="font-playfair leading-none mb-5" style="font-size:clamp(4rem,12vw,8rem); font-weight:900; color:var(--ink); letter-spacing:-0.025em; font-style:italic; margin-top:-0.05em;">1019</h2>
+    <div class="flex items-center gap-5 mb-6 px-4">
+      <div class="flex-1" style="border-top:2px solid var(--ink);"></div>
+      <p class="font-playfair text-lg italic" style="color:var(--ink-mid); white-space:nowrap;"><em style="color:var(--crimson);">Tiên Phát Chế Nhân</em> — Chiến Lược Gia</p>
+      <div class="flex-1" style="border-top:2px solid var(--ink);"></div>
+    </div>
+    <p class="font-plex mx-auto leading-relaxed" style="max-width:58ch; font-size:1.05rem; color:var(--ink-light); font-style:italic;">Đại tướng phục vụ 3 đời vua nhà Lý — không phải dũng tướng đánh bằng bản năng, mà chiến lược gia đánh bằng tư duy. Tuổi 56 tấn công đất Tống, tuổi 58 chỉ huy trận sông Như Nguyệt, tác giả bài thơ <em>Nam quốc sơn hà</em>. Sống 86 tuổi, phục vụ liên tục hơn 50 năm.</p>
+  </div>
+
+  <!-- TL;DR -->
+  <div class="ink-box px-10 py-6">
+    <p class="font-mono mb-3" style="font-size:0.55rem; letter-spacing:0.3em; color:var(--gold);">TIỂU SỬ NHANH · PROFILE</p>
+    <p class="font-playfair italic leading-relaxed" style="font-size:1.05rem; color:#f0e8d8; line-height:1.75;">Phục vụ qua 3 đời vua: <span style="color:var(--gold);">Lý Thái Tông, Lý Thánh Tông, Lý Nhân Tông</span>. Nổi tiếng với chiến lược <strong style="color:#f0e8d8;">"tiên phát chế nhân"</strong> — chủ động tấn công Tống (1075) trước khi bị đánh, phá căn cứ hậu cần Ung Châu. Rồi chỉ huy trận phòng thủ sông Như Nguyệt (1077) với bài thơ <em>Nam quốc sơn hà</em> bất hủ. Tướng lĩnh thọ nhất và hiệu quả nhất lịch sử Việt Nam.</p>
+  </div>
+
+  <!-- KPI ROW -->
+  <div class="kpi-grid">
+    <div class="kpi-cell">
+      <div class="kpi-label-sm">Thời gian phụng sự</div>
+      <div class="kpi-val">50+<span style="font-size:1rem; font-weight:400;"> năm</span></div>
+      <div class="kpi-sub">Liên tục qua 3 đời vua nhà Lý</div>
+    </div>
+    <div class="kpi-cell accent">
+      <div class="kpi-label-sm" style="color:#ffd37a;">Tuổi tấn công Tống</div>
+      <div class="kpi-val">56</div>
+      <div class="kpi-sub">Tiên phát chế nhân — Ung Châu 1075</div>
+    </div>
+    <div class="kpi-cell">
+      <div class="kpi-label-sm">Tuổi trận Như Nguyệt</div>
+      <div class="kpi-val">58</div>
+      <div class="kpi-sub">Phòng thủ chủ động — Nam quốc sơn hà</div>
+    </div>
+  </div>
+
+  <!-- §01 HỒ SƠ -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-5">
+      <span class="sec-label">§ 01</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Hồ Sơ</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <p class="font-plex leading-relaxed" style="font-size:1.02rem; color:var(--ink-light);">Nhân vật #23 trong series Nhân Vật Lịch Sử Việt Nam. Thuộc bài học <em>8.3 Nhà Lý — Kháng Chiến Chống Tống (1075–1077)</em>.</p>
+    <p class="font-plex leading-relaxed mt-3" style="font-size:0.93rem; color:var(--warm);">Sinh: <em>1019, Thăng Long</em> · Mất: <em>1105 (86 tuổi)</em> · Giai đoạn: Nhà Lý · Rating: Trí tuệ ★★★★★ + Nghị lực ★★★★★</p>
+  </div>
+
+  <!-- §02 BIÊN NIÊN SỬ -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 02</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Biên Niên Sử — Nửa Thế Kỷ Phụng Sự</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div class="space-y-7 font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">
+      <div class="flex gap-5 items-start">
+        <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3.5rem; text-align:right; line-height:1.25; padding-top:2px;">NĂM<br>1069</span>
+        <div class="tl-dot"></div>
+        <div class="tl-line">
+          <p class="font-playfair font-bold mb-1" style="color:var(--ink); font-size:1rem;">Đánh Chiêm Thành, Bắt Vua Chế Củ</p>
+          <p>Chiến dịch bành trướng lãnh thổ dưới thời Lý Thánh Tông — ông là đại tướng chỉ huy chủ lực. Khẳng định vị thế quân sự hàng đầu trong triều đình.</p>
+        </div>
+      </div>
+      <div class="flex gap-5 items-start">
+        <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3.5rem; text-align:right; line-height:1.25; padding-top:2px;">NĂM<br>1075</span>
+        <div class="tl-dot"></div>
+        <div class="tl-line">
+          <p class="font-playfair font-bold mb-2" style="color:var(--ink); font-size:1rem;">Tiên Phát Chế Nhân — Tấn Công Ung Châu</p>
+          <p class="mb-2">Chủ động tấn công đất Tống (Ung Châu, Khâm Châu, Liêm Châu) trước khi bị đánh — phá tan căn cứ hậu cần của Tống. Chiến lược táo bạo: <strong style="color:var(--ink);">kiểm soát thời điểm và điều kiện trận đánh trước khi đối thủ kịp chuẩn bị.</strong></p>
+          <div class="pull-q py-1">
+            <p class="font-playfair italic" style="font-size:0.9rem; color:var(--ink); line-height:1.5;">"Tiên phát chế nhân" — không phải hiếu chiến, mà là phòng thủ chủ động.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-5 items-start">
+        <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3.5rem; text-align:right; line-height:1.25; padding-top:2px;">NĂM<br>1077</span>
+        <div class="tl-dot"></div>
+        <div class="tl-line">
+          <p class="font-playfair font-bold mb-2" style="color:var(--ink); font-size:1rem;">Trận Sông Như Nguyệt — Nam Quốc Sơn Hà</p>
+          <p>Chỉ huy phòng thủ tuyến sông Như Nguyệt (sông Cầu). Quân Tống hàng chục vạn người bị chặn lại hoàn toàn. Bài thơ <em>Nam quốc sơn hà</em> được truyền đọc để khích lệ quân sĩ — bản tuyên ngôn độc lập đầu tiên của dân tộc.</p>
+        </div>
+      </div>
+      <div class="flex gap-5 items-start">
+        <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3.5rem; text-align:right; line-height:1.25; padding-top:2px;">NĂM<br>1105</span>
+        <div class="tl-dot" style="background:var(--rule);"></div>
+        <div class="tl-line" style="border-color:var(--rule-light);">
+          <p class="font-playfair font-bold mb-1" style="color:var(--warm); font-size:1rem;">Mất — 86 Tuổi</p>
+          <p style="color:var(--warm);">Phục vụ liên tục đến cuối đời. Tướng lĩnh thọ nhất và hiệu quả nhất lịch sử Việt Nam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- §03 TAM GỐC -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 03</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Phân Tích — Tam Gốc</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <p class="font-mono mb-3" style="font-size:0.55rem; letter-spacing:0.2em; color:var(--crimson);">3 GỐC — PHẨM HẠNH CĂN BẢN</p>
+    <table class="misc-table col-gold mb-6">
+      <thead>
+        <tr><th style="width:20%;">Tiêu chí</th><th style="width:18%;">Rating</th><th>Bằng chứng</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Trí tuệ</td>
+          <td><span class="sf">★★★★★</span></td>
+          <td><strong style="color:var(--ink);">[Sự kiện]</strong> Tiên phát chế nhân (1075) + phòng thủ sông Như Nguyệt (1077): hai chiến lược trái ngược về hình thức nhưng cùng một logic — luôn chủ động kiểm soát thế trận, không để đối thủ chọn thời điểm.</td>
+        </tr>
+        <tr>
+          <td>Đạo đức</td>
+          <td><span class="sf">★★★★</span><span class="se">☆</span></td>
+          <td>Chiến đấu vì đất nước qua 3 đời vua, không tham quyền, không phản loạn dù quyền lực quân sự rất lớn. <em>[Chưa chắc]</em> Một số ghi chép về sự cứng rắn trong chiến dịch đánh Tống — chưa đủ bằng chứng rõ.</td>
+        </tr>
+        <tr>
+          <td>Nghị lực</td>
+          <td><span class="sf">★★★★★</span></td>
+          <td><strong style="color:var(--ink);">[Sự kiện]</strong> Phục vụ liên tục hơn 50 năm. Tuổi 56 vẫn đề xuất chiến lược táo bạo tấn công Tống, tuổi 58 vẫn chỉ huy trực tiếp. Nghị lực bền bỉ xuyên cả cuộc đời, không chỉ lúc trẻ.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pull-q-center mx-auto" style="max-width:56ch;">
+      <p class="font-playfair italic" style="font-size:1.1rem; color:var(--ink); line-height:1.45;">"Chủ động kiểm soát điều kiện —<br><em style="color:var(--crimson);">đừng để người khác chọn thời điểm và địa điểm quyết chiến."</em></p>
+    </div>
+  </div>
+
+  <!-- §04 TAM ĐỘC -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 04</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Phân Tích — Tam Độc</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <p class="font-mono mb-3" style="font-size:0.55rem; letter-spacing:0.2em; color:var(--crimson);">3 ĐỘC — HẠN CHẾ &amp; ĐIỂM MÙ</p>
+    <table class="misc-table col-crimson mb-5">
+      <thead>
+        <tr><th style="width:20%;">Tiêu chí</th><th style="width:18%;">Rating</th><th>Bằng chứng</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tham lam</td>
+          <td><span class="se">★★</span><span class="se">☆☆☆</span></td>
+          <td>Ít bằng chứng về động cơ tư lợi — hành động chủ yếu phục vụ quốc gia qua hơn 50 năm.</td>
+        </tr>
+        <tr>
+          <td>Sân giận</td>
+          <td><span class="se">★★</span><span class="se">☆☆☆</span></td>
+          <td><em>[Chưa chắc]</em> Chiến dịch đánh Tống có thể có yếu tố cứng rắn — không rõ là sân giận hay kỷ luật chiến tranh cần thiết.</td>
+        </tr>
+        <tr>
+          <td>Si mê</td>
+          <td><span class="se">★☆☆☆☆</span></td>
+          <td>Nhận thức tình hình cực kỳ sắc bén — tình báo + phân tích + hành động đúng thời điểm. Hiếm khi bị mê hoặc bởi ảo tưởng chiến trận.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="background:rgba(180,150,90,0.08); border-top:2px solid var(--gold); padding:1rem 1.1rem;">
+      <p class="font-mono mb-2" style="font-size:0.55rem; letter-spacing:0.22em; color:var(--gold);">LƯU Ý SỬ HỌC</p>
+      <p class="font-plex leading-relaxed" style="font-size:0.92rem; color:var(--ink-light);">Sử sách ghi điều tốt, ít ghi điểm tối — người càng được tôn vinh, hồ sơ càng "sạch". Cần thận trọng khi đọc hồ sơ nhân vật quá hoàn hảo: <strong style="color:var(--ink);">không tô hồng, không bôi đen</strong> — đây là thái độ sử học đúng đắn khi bằng chứng chưa rõ.</p>
+    </div>
+  </div>
+
+  <!-- §05 ĐÁNH GIÁ TỔNG THỂ -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 05</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Đánh Giá Tổng Thể</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div style="border:1px solid var(--rule); border-radius:0.75rem; padding:1.4rem; background:var(--cream-dark); margin-bottom:1.5rem;">
+      <p class="font-playfair font-bold mb-3" style="font-size:1.1rem; color:var(--ink);">Chiến Lược Gia Bền Bỉ <em style="color:var(--crimson);">50 Năm</em></p>
+      <p class="font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">Lý Thường Kiệt là trường hợp hiếm trong lịch sử: tài năng chiến lược đỉnh cao kết hợp với nghị lực bền bỉ xuyên cả cuộc đời. Không bùng cháy rồi tắt — mà duy trì hiệu quả từ tuổi trẻ đến 86, phục vụ liên tục ba đời vua với cùng một ngọn lửa chiến lược.</p>
+      <p class="font-plex leading-relaxed mt-3" style="font-size:0.97rem; color:var(--ink-light);"><strong style="color:var(--ink);">Gốc nổi bật nhất: Trí tuệ.</strong> Hiểu rằng địa vị phòng thủ luôn yếu hơn tấn công — nên phải chủ động từ đầu. "Tiên phát chế nhân" không phải hiếu chiến, mà là kiểm soát thời điểm, địa điểm và điều kiện trận đánh trước khi đối thủ kịp chuẩn bị.</p>
+    </div>
+  </div>
+
+  <!-- §06 BÀI HỌC -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 06</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Bài Học Rút Ra</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+      <div class="flex gap-5 items-start">
+        <div class="lesson-num flex-shrink-0">
+          <span class="font-playfair font-bold" style="color:var(--crimson); font-size:1.1rem;">1</span>
+        </div>
+        <div>
+          <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">Chủ Động Kiểm Soát Thế Trận</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.95rem; color:var(--ink-light);">"Tiên phát chế nhân" không phải hiếu chiến — mà là phòng thủ chủ động. <strong style="color:var(--ink);">Đừng để đối thủ chọn thời điểm và địa điểm quyết chiến.</strong></p>
+        </div>
+      </div>
+      <div class="flex gap-5 items-start">
+        <div class="lesson-num flex-shrink-0">
+          <span class="font-playfair font-bold" style="color:var(--crimson); font-size:1.1rem;">2</span>
+        </div>
+        <div>
+          <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">Nghị Lực Bền Bỉ Hơn Bùng Cháy Ngắn</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.95rem; color:var(--ink-light);">Giá trị không nằm ở đỉnh cao nhất thang, mà ở <strong style="color:var(--ink);">khả năng duy trì hiệu quả liên tục qua nhiều thập kỷ.</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- §07 LIÊN KẾT -->
+  <div class="px-10 py-9">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 07</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Liên Kết</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div class="grid gap-4" style="grid-template-columns:1fr 1fr;">
+      <div class="link-card p-5">
+        <div class="flex items-start gap-4">
+          <div class="tl-dot" style="margin-top:4px;"></div>
+          <div>
+            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">VUA PHỤNG SỰ</p>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">17. Lý Thánh Tông</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Vua đầu tiên ông phục vụ — thời kỳ bành trướng lãnh thổ, đánh Chiêm Thành 1069.</p>
+          </div>
+        </div>
+      </div>
+      <div class="link-card p-5">
+        <div class="flex items-start gap-4">
+          <div class="tl-dot" style="margin-top:4px;"></div>
+          <div>
+            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">VUA ĐỒNG THỜI</p>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">21. Lý Nhân Tông</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Vua trong giai đoạn kháng Tống — cùng nhau làm nên chiến thắng sông Như Nguyệt.</p>
+          </div>
+        </div>
+      </div>
+      <div class="link-card p-5">
+        <div class="flex items-start gap-4">
+          <div class="tl-dot" style="margin-top:4px;"></div>
+          <div>
+            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">NHÂN VẬT CÙNG THỜI</p>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">18. Ỷ Lan</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Cùng thời nhiếp chính — cùng gánh vác đất nước trong giai đoạn kháng Tống.</p>
+          </div>
+        </div>
+      </div>
+      <div class="link-card p-5">
+        <div class="flex items-start gap-4">
+          <div class="tl-dot" style="margin-top:4px;"></div>
+          <div>
+            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">BÀI HỌC CHAPTER</p>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">8.3 Nhà Lý — Kháng Chiến Chống Tống</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Chi tiết trận sông Như Nguyệt — bối cảnh đầy đủ chiến lược tiên phát chế nhân.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-10 mb-2">
+      <p class="ornament" style="font-size:1.2rem;">✦ ✦ ✦</p>
+      <p class="font-mono mt-3" style="font-size:0.58rem; letter-spacing:0.25em; color:var(--warm);">LỊCH SỬ VIỆT NAM · NHÂN VẬT 23 · 1019–1105 · LÝ THƯỜNG KIỆT</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
