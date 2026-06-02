@@ -305,3 +305,112 @@ a.card-hover div.flex.items-center.justify-between:last-child {
   padding-top: 0.65rem;
   margin-top: 0.35rem;
 }
+
+/* ==========================================================================
+   TIMELINE TRIỀU ĐẠI — Era Chips & Tool Buttons
+   ========================================================================== */
+
+/* Chip bài học — màu trung tính */
+.era-chip-lesson {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #57534e;
+  background: #f5f4f1;
+  border: 1px solid #e7e5e4;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.era-chip-lesson:hover {
+  background: #fef2f2;
+  color: #9b1c1c;
+  border-color: rgba(155,28,28,0.3);
+}
+
+/* Chip bài học — era đang học (màu đỏ nhẹ) */
+.era-chip-lesson-active {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #9b1c1c;
+  background: #fef2f2;
+  border: 1px solid rgba(155,28,28,0.2);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+}
+.era-chip-lesson-active:hover {
+  background: #9b1c1c;
+  color: #fff;
+  border-color: #9b1c1c;
+}
+
+/* Chip nhân vật */
+.era-chip-char {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #44403c;
+  background: #ffffff;
+  border: 1px solid #e7e5e4;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.era-chip-char:hover {
+  background: #fef2f2;
+  color: #9b1c1c;
+  border-color: rgba(155,28,28,0.35);
+}
+
+/* Chip sắp ra mắt (mờ, không click được) */
+.era-chip-upcoming {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  color: #a8a29e;
+  background: #f5f4f1;
+  border: 1px solid #e7e5e4;
+  white-space: nowrap;
+  cursor: default;
+}
+
+/* Nút công cụ (Bản đồ / Vua-Quan) */
+.era-tool-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #faf9f7;
+  background: #1c1917;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+.era-tool-btn:hover {
+  background: #9b1c1c;
+  transform: translateY(-1px);
+}
+
+/* Ping animation cho active dot */
+@keyframes ping {
+  75%, 100% { transform: scale(1.8); opacity: 0; }
+}
