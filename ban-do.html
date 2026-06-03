@@ -42,6 +42,44 @@
     .custom-scrollbar::-webkit-scrollbar-thumb:hover {
       background: #d6d3d1;
     }
+
+    /* ── Figure role-grouped chips ── */
+    .fig-group {
+      margin-bottom: 0.75rem;
+    }
+    .fig-group:last-child { margin-bottom: 0; }
+    .fig-group-label {
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #78716c;
+      margin-bottom: 0.4rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid #292524;
+    }
+    .fig-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+    .fig-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.65rem;
+      border-radius: 9999px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid transparent;
+      transition: opacity 0.15s, transform 0.15s;
+    }
+    .fig-chip:hover { opacity: 0.82; transform: translateY(-1px); }
+    .fig-chip-king     { background: rgba(155,28,28,0.18); color: #fca5a5; border-color: rgba(155,28,28,0.35); }
+    .fig-chip-queen    { background: rgba(124,58,237,0.18); color: #c4b5fd; border-color: rgba(124,58,237,0.35); }
+    .fig-chip-official { background: rgba(5,150,105,0.18); color: #6ee7b7; border-color: rgba(5,150,105,0.35); }
+    .fig-chip-advisor  { background: rgba(3,105,161,0.18); color: #7dd3fc; border-color: rgba(3,105,161,0.35); }
+    .fig-chip-enemy    { background: rgba(75,85,99,0.25);  color: #9ca3af; border-color: rgba(75,85,99,0.45); }
   </style>
 </head>
 <body class="font-sans antialiased text-[#1c1917] bg-[#faf9f7]">
@@ -320,10 +358,10 @@
           { name: "Bài 3: 1000 Năm Bắc Thuộc", url: "bai-hoc/1000-nam-bac-thuoc.html" }
         ],
         figures: [
-          { name: "Hai Bà Trưng", url: "nhan-vat/hai-ba-trung.html" },
-          { name: "Phùng Hưng", url: "nhan-vat/phung-hung.html" },
-          { name: "Khúc Thừa Dụ", url: "nhan-vat/khuc-thua-du.html" },
-          { name: "Dương Đình Nghệ", url: "nhan-vat/duong-dinh-nghe.html" }
+          { name: "Hai Bà Trưng",    url: "nhan-vat/hai-ba-trung.html",   role: "king" },
+          { name: "Phùng Hưng",       url: "nhan-vat/phung-hung.html",     role: "king" },
+          { name: "Khúc Thừa Dụ",  url: "nhan-vat/khuc-thua-du.html",   role: "king" },
+          { name: "Dương Đình Nghệ", url: "nhan-vat/duong-dinh-nghe.html",role: "king" }
         ],
         lineConnections: ["line-al-bt", "line-bt-nq"]
       },
@@ -375,9 +413,9 @@
           { name: "Bài 7: Nhà Tiền Lê", url: "bai-hoc/nha-tien-le.html" }
         ],
         figures: [
-          { name: "Lê Hoàn", url: "nhan-vat/le-hoan.html" },
-          { name: "Dương Vân Nga", url: "nhan-vat/duong-van-nga.html" },
-          { name: "Lê Long Đĩnh", url: "nhan-vat/le-long-dinh.html" }
+          { name: "Lê Hoàn",       url: "nhan-vat/le-hoan.html",       role: "king" },
+          { name: "Dương Vân Nga", url: "nhan-vat/duong-van-nga.html",  role: "queen" },
+          { name: "Lê Long Đĩnh", url: "nhan-vat/le-long-dinh.html",   role: "king" }
         ],
         lineConnections: ["line-dl-ntl", "line-ntl-ly"]
       },
@@ -395,24 +433,24 @@
           { name: "Bài 13: Nhà Lý — Suy Tàn & Chuyển Giao", url: "bai-hoc/nha-ly-chap5.html" }
         ],
         figures: [
-          { name: "Lý Công Uẩn", url: "nhan-vat/ly-cong-uan.html" },
-          { name: "Đào Cam Mộc", url: "nhan-vat/dao-cam-moc.html" },
-          { name: "Lưu Cơ", url: "nhan-vat/luu-co.html" },
-          { name: "Nguyễn Đạo Thanh", url: "nhan-vat/nguyen-dao-thanh.html" },
-          { name: "Lý Thái Tông", url: "nhan-vat/ly-thai-tong.html" },
-          { name: "Thiền Sư Vạn Hạnh", url: "nhan-vat/thien-su-van-hanh.html" },
-          { name: "Lý Thánh Tông", url: "nhan-vat/ly-thanh-tong.html" },
-          { name: "Hoàng Hậu Ỷ Lan", url: "nhan-vat/hoang-hau-y-lan.html" },
-          { name: "Lý Nhân Tông", url: "nhan-vat/ly-nhan-tong.html" },
-          { name: "Lê Văn Thịnh", url: "nhan-vat/le-van-thinh.html" },
-          { name: "Quách Quỳ (Nhà Tống)", url: "nhan-vat/quach-quy.html" },
-          { name: "Lý Thường Kiệt", url: "nhan-vat/ly-thuong-kiet.html" },
-          { name: "Tô Hiến Thành", url: "nhan-vat/to-hien-thanh.html" },
-          { name: "Lý Thần Tông", url: "nhan-vat/ly-than-tong.html" },
-          { name: "Nguyễn Minh Không", url: "nhan-vat/nguyen-minh-khong.html" },
-          { name: "Lý Anh Tông", url: "nhan-vat/ly-anh-tong.html" },
-          { name: "Lý Cao Tông", url: "nhan-vat/ly-cao-tong.html" },
-          { name: "Lý Huệ Tông", url: "nhan-vat/ly-hue-tong.html" }
+          { name: "Lý Công Uẩn",          url: "nhan-vat/ly-cong-uan.html",        role: "king" },
+          { name: "Đào Cam Mộc",          url: "nhan-vat/dao-cam-moc.html",        role: "official" },
+          { name: "Lưu Cơ",               url: "nhan-vat/luu-co.html",             role: "official" },
+          { name: "Nguyễn Đạo Thanh",     url: "nhan-vat/nguyen-dao-thanh.html",   role: "official" },
+          { name: "Lý Thái Tông",          url: "nhan-vat/ly-thai-tong.html",       role: "king" },
+          { name: "Thiền Sư Vạn Hạnh",    url: "nhan-vat/thien-su-van-hanh.html",  role: "advisor" },
+          { name: "Lý Thánh Tông",         url: "nhan-vat/ly-thanh-tong.html",      role: "king" },
+          { name: "Hoàng Hậu Ỷ Lan",      url: "nhan-vat/hoang-hau-y-lan.html",    role: "queen" },
+          { name: "Lý Nhân Tông",          url: "nhan-vat/ly-nhan-tong.html",       role: "king" },
+          { name: "Lê Văn Thịnh",          url: "nhan-vat/le-van-thinh.html",       role: "official" },
+          { name: "Quách Quỳ (Nhà Tống)",  url: "nhan-vat/quach-quy.html",          role: "enemy" },
+          { name: "Lý Thường Kiệt",        url: "nhan-vat/ly-thuong-kiet.html",     role: "official" },
+          { name: "Tô Hiến Thành",         url: "nhan-vat/to-hien-thanh.html",      role: "official" },
+          { name: "Lý Thần Tông",          url: "nhan-vat/ly-than-tong.html",       role: "king" },
+          { name: "Nguyễn Minh Không",     url: "nhan-vat/nguyen-minh-khong.html",  role: "advisor" },
+          { name: "Lý Anh Tông",           url: "nhan-vat/ly-anh-tong.html",        role: "king" },
+          { name: "Lý Cao Tông",           url: "nhan-vat/ly-cao-tong.html",        role: "king" },
+          { name: "Lý Huệ Tông",           url: "nhan-vat/ly-hue-tong.html",        role: "king" }
         ],
         lineConnections: ["line-ntl-ly"]
       },
@@ -595,17 +633,46 @@
         lessonsContainer.innerHTML = '<span class="text-xs text-[#78716c] italic">Không có bài học liên kết trực tiếp</span>';
       }
 
-      // Update figures
+      // Update figures — grouped by role
       const figuresContainer = document.getElementById('detail-figures');
       figuresContainer.innerHTML = '';
       if (data.figures && data.figures.length > 0) {
+
+        const roleConfig = {
+          king:     { label: '\u{1F451} Vua / Thủ lĩnh',   chipClass: 'fig-chip-king' },
+          queen:    { label: '\u{1F478} Hoàng hậu / Nhiếp chính', chipClass: 'fig-chip-queen' },
+          official: { label: '\u{1F4DC} Quan đại thần',   chipClass: 'fig-chip-official' },
+          advisor:  { label: '\u{1F9D8} Cố vấn / Thiền sư',  chipClass: 'fig-chip-advisor' },
+          enemy:    { label: '\u2694\uFE0F Đối lập / Ngoại xâm', chipClass: 'fig-chip-enemy' }
+        };
+
+        const roleOrder = ['king','queen','official','advisor','enemy'];
+        const grouped = {};
         data.figures.forEach(f => {
-          const span = document.createElement('a');
-          span.href = f.url;
-          span.className = "px-3 py-1.5 bg-[#292524] text-xs font-semibold rounded-xl text-[#fcd34d] hover:bg-[#3e3a38] transition-colors border border-[#3e3a38]";
-          span.innerText = f.name;
-          figuresContainer.appendChild(span);
+          const r = f.role || 'official';
+          if (!grouped[r]) grouped[r] = [];
+          grouped[r].push(f);
         });
+
+        roleOrder.forEach(role => {
+          if (!grouped[role]) return;
+          const cfg = roleConfig[role];
+          const group = document.createElement('div');
+          group.className = 'fig-group';
+          group.innerHTML = `<div class="fig-group-label">${cfg.label}</div>`;
+          const row = document.createElement('div');
+          row.className = 'fig-chip-row';
+          grouped[role].forEach(f => {
+            const a = document.createElement('a');
+            a.href = f.url;
+            a.className = `fig-chip ${cfg.chipClass}`;
+            a.innerText = f.name;
+            row.appendChild(a);
+          });
+          group.appendChild(row);
+          figuresContainer.appendChild(group);
+        });
+
       } else {
         figuresContainer.innerHTML = '<span class="text-xs text-[#78716c] italic">Không có nhân vật liên kết trực tiếp</span>';
       }
