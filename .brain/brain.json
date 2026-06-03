@@ -2,7 +2,8 @@
   "project": {
     "name": "history-web",
     "description": "Website lịch sử Việt Nam — Phân tích nhân vật theo hệ thống 3 Gốc / 3 Độc",
-    "created_at": "2026-05-21T11:36:07+07:00"
+    "created_at": "2026-05-21T11:36:07+07:00",
+    "last_saved": "2026-06-03T21:39:00+07:00"
   },
   "tech_stack": [
     "HTML5",
@@ -14,17 +15,19 @@
     "Trang phân tích nhân vật lịch sử (1 file HTML / nhân vật)",
     "Hệ thống đánh giá 3 Gốc (Trí tuệ, Đạo đức, Nghị lực)",
     "Hệ thống đánh giá 3 Độc (Tham lam, Sân giận, Si mê)",
-    "Trang danh sách nhân vật (index)",
+    "index.html — Timeline Triều Đại (Bắc thuộc → Nhà Lý)",
+    "ban-do.html — Bản đồ khái niệm tương tác (click node, grouped figures by role)",
+    "so-do-trieu-dinh.html — Sơ đồ Vua → Quan (era blocks, role cards)",
     "Reading progress bar",
     "Fade-in scroll animations",
-    "Responsive design",
+    "Responsive design + mobile hamburger menu",
     "Share / Copy link CTA"
   ],
   "decisions": [
     {
       "date": "2026-05-21",
-      "decision": "Dùng Tailwind CDN thay vì build pipeline để đơn giản, dễ deploy static",
-      "reason": "Dự án là static HTML, không cần bundler"
+      "decision": "Dùng Tailwind CDN thay vì build pipeline",
+      "reason": "Static HTML, không cần bundler"
     },
     {
       "date": "2026-05-21",
@@ -33,46 +36,106 @@
     },
     {
       "date": "2026-05-21",
-      "decision": "Cấu truc: mỗi nhân vật là 1 file HTML riêng",
+      "decision": "Cấu trúc: mỗi nhân vật là 1 file HTML riêng",
       "reason": "Dễ quản lý, SEO-friendly, không cần backend"
+    },
+    {
+      "date": "2026-06-02",
+      "decision": "index.html đổi cấu trúc từ 'Nhân vật' sang 'Triều Đại' (era-based timeline)",
+      "reason": "Sắp xếp khoa học hơn, dễ nhìn theo dòng thời gian lịch sử"
+    },
+    {
+      "date": "2026-06-02",
+      "decision": "ban-do.html: figures grouped by role (king/queen/official/advisor/enemy) với màu chip riêng",
+      "reason": "18 nhân vật Nhà Lý nếu hiện flat chip sẽ lộn xộn, cần phân cấp rõ ràng"
+    },
+    {
+      "date": "2026-06-03",
+      "decision": "Không dùng từ tiếng Anh trong nội dung (Technocrat, Kingmaker, Soft Power đã bị thay)",
+      "reason": "Website lịch sử Việt Nam phải dùng tiếng Việt hoàn toàn"
     }
   ],
+  "design_rules": {
+    "fonts": ["Be Vietnam Pro", "Noto Serif"],
+    "colors": {
+      "ink": "#1c1409",
+      "crimson": "#921c1c",
+      "gold": "#b07c28",
+      "cream": "#f4eed8",
+      "rule": "#c4aa84"
+    },
+    "nav_anchors": {
+      "index.html": ["#trieu-dai", "#phuong-phap", "#ve-khoa-hoc"],
+      "ban-do.html": "links to index.html#trieu-dai (NOT #nhan-vat)"
+    },
+    "figure_roles": ["king", "queen", "official", "advisor", "enemy"],
+    "language": "Tiếng Việt hoàn toàn — không dùng từ tiếng Anh trong nội dung"
+  },
   "content_plan": {
     "nhan_vat": [
-      { "ten": "Hai Bà Trưng", "file": "nhan-vat/hai-ba-trung.html", "status": "done" },
-      { "ten": "Phùng Hưng", "file": "nhan-vat/phung-hung.html", "status": "done" },
-      { "ten": "Khúc Thừa Dụ", "file": "nhan-vat/khuc-thua-du.html", "status": "done" },
-      { "ten": "Dương Đình Nghệ", "file": "nhan-vat/duong-dinh-nghe.html", "status": "done" },
-      { "ten": "Ngô Quyền", "file": "nhan-vat/ngo-quyen.html", "status": "done" },
-      { "ten": "Đinh Bộ Lĩnh", "file": "nhan-vat/dinh-bo-linh.html", "status": "done" },
-      { "ten": "Dương Vân Nga", "file": "nhan-vat/duong-van-nga.html", "status": "done" },
-      { "ten": "Lê Hoàn", "file": "nhan-vat/le-hoan.html", "status": "done" },
-      { "ten": "Thiền Sư Vạn Hạnh", "file": "nhan-vat/thien-su-van-hanh.html", "status": "done" },
-      { "ten": "Lê Long Đĩnh", "file": "nhan-vat/le-long-dinh.html", "status": "done" },
-      { "ten": "Lý Công Uẩn", "file": "nhan-vat/ly-cong-uan.html", "status": "done" },
-      { "ten": "Lý Thái Tông", "file": "nhan-vat/ly-thai-tong.html", "status": "done" },
-      { "ten": "Lý Thánh Tông", "file": "nhan-vat/ly-thanh-tong.html", "status": "done" },
-      { "ten": "Hoàng Hậu Ỷ Lan", "file": "nhan-vat/hoang-hau-y-lan.html", "status": "done" },
-      { "ten": "Quách Quỳ (Nhà Tống)", "file": "nhan-vat/quach-quy.html", "status": "done" },
-      { "ten": "Lý Nhân Tông", "file": "nhan-vat/ly-nhan-tong.html", "status": "done" },
-      { "ten": "Lê Văn Thịnh", "file": "nhan-vat/le-van-thinh.html", "status": "done" }
+      { "ten": "Hai Bà Trưng", "file": "nhan-vat/hai-ba-trung.html", "status": "done", "era": "Bắc thuộc", "role": "king" },
+      { "ten": "Phùng Hưng", "file": "nhan-vat/phung-hung.html", "status": "done", "era": "Bắc thuộc", "role": "king" },
+      { "ten": "Khúc Thừa Dụ", "file": "nhan-vat/khuc-thua-du.html", "status": "done", "era": "Bắc thuộc", "role": "king" },
+      { "ten": "Dương Đình Nghệ", "file": "nhan-vat/duong-dinh-nghe.html", "status": "done", "era": "Bắc thuộc", "role": "king" },
+      { "ten": "Ngô Quyền", "file": "nhan-vat/ngo-quyen.html", "status": "done", "era": "Ngô", "role": "king" },
+      { "ten": "Đinh Bộ Lĩnh", "file": "nhan-vat/dinh-bo-linh.html", "status": "done", "era": "Đinh", "role": "king" },
+      { "ten": "Dương Vân Nga", "file": "nhan-vat/duong-van-nga.html", "status": "done", "era": "Đinh-Tiền Lê", "role": "queen" },
+      { "ten": "Lê Hoàn", "file": "nhan-vat/le-hoan.html", "status": "done", "era": "Tiền Lê", "role": "king" },
+      { "ten": "Thiền Sư Vạn Hạnh", "file": "nhan-vat/thien-su-van-hanh.html", "status": "done", "era": "Tiền Lê - Nhà Lý", "role": "advisor" },
+      { "ten": "Lê Long Đĩnh", "file": "nhan-vat/le-long-dinh.html", "status": "done", "era": "Tiền Lê", "role": "king" },
+      { "ten": "Lý Công Uẩn", "file": "nhan-vat/ly-cong-uan.html", "status": "done", "era": "Nhà Lý", "role": "king" },
+      { "ten": "Đào Cam Mộc", "file": "nhan-vat/dao-cam-moc.html", "status": "done", "era": "Nhà Lý", "role": "official" },
+      { "ten": "Lưu Cơ", "file": "nhan-vat/luu-co.html", "status": "done", "era": "Nhà Lý", "role": "official" },
+      { "ten": "Nguyễn Đạo Thanh", "file": "nhan-vat/nguyen-dao-thanh.html", "status": "done", "era": "Nhà Lý", "role": "official" },
+      { "ten": "Lý Thái Tông", "file": "nhan-vat/ly-thai-tong.html", "status": "done", "era": "Nhà Lý", "role": "king" },
+      { "ten": "Lý Thánh Tông", "file": "nhan-vat/ly-thanh-tong.html", "status": "done", "era": "Nhà Lý", "role": "king" },
+      { "ten": "Hoàng Hậu Ỷ Lan", "file": "nhan-vat/hoang-hau-y-lan.html", "status": "done", "era": "Nhà Lý", "role": "queen" },
+      { "ten": "Lý Nhân Tông", "file": "nhan-vat/ly-nhan-tong.html", "status": "done", "era": "Nhà Lý", "role": "king" },
+      { "ten": "Lê Văn Thịnh", "file": "nhan-vat/le-van-thinh.html", "status": "done", "era": "Nhà Lý", "role": "official" },
+      { "ten": "Quách Quỳ (Nhà Tống)", "file": "nhan-vat/quach-quy.html", "status": "done", "era": "Nhà Lý", "role": "enemy" },
+      { "ten": "Lý Thường Kiệt", "file": "nhan-vat/ly-thuong-kiet.html", "status": "done", "era": "Nhà Lý", "role": "official" },
+      { "ten": "Tô Hiến Thành", "file": "nhan-vat/to-hien-thanh.html", "status": "done", "era": "Nhà Lý", "role": "official" },
+      { "ten": "Lý Thần Tông", "file": "nhan-vat/ly-than-tong.html", "status": "done", "era": "Nhà Lý", "role": "king" },
+      { "ten": "Nguyễn Minh Không", "file": "nhan-vat/nguyen-minh-khong.html", "status": "done", "era": "Nhà Lý", "role": "advisor" },
+      { "ten": "Lý Anh Tông", "file": "nhan-vat/ly-anh-tong.html", "status": "done", "era": "Nhà Lý", "role": "king" },
+      { "ten": "Lý Cao Tông", "file": "nhan-vat/ly-cao-tong.html", "status": "done", "era": "Nhà Lý", "role": "king" },
+      { "ten": "Lý Huệ Tông", "file": "nhan-vat/ly-hue-tong.html", "status": "done", "era": "Nhà Lý", "role": "king" },
+      { "ten": "Lê Phụng Hiểu", "file": "nhan-vat/le-phung-hieu.html", "status": "pending", "era": "Nhà Lý - Lý Thái Tông", "role": "official", "note": "Anh sẽ cung cấp tài liệu" },
+      { "ten": "Trần Thủ Độ", "file": "nhan-vat/tran-thu-do.html", "status": "planned", "era": "Nhà Trần" },
+      { "ten": "Trần Hưng Đạo", "file": "nhan-vat/tran-hung-dao.html", "status": "planned", "era": "Nhà Trần" }
     ],
     "bai_hoc": [
-      { "ten": "Nhà Nước Văn Lang: Từ huyền thoại đến sự thật khảo cổ", "file": "bai-hoc/nha-nuoc-van-lang.html", "status": "done" },
-      { "ten": "Nhà Nước Âu Lạc: Hợp nhất Âu - Lạc, kỳ quan Cổ Loa & bài học an ninh thông tin", "file": "bai-hoc/nha-nuoc-au-lac.html", "status": "done" },
-      { "ten": "1.000 Năm Bắc Thuộc: Pháo đài làng xã tự trị & cơ chế bảo tồn văn hóa Việt", "file": "bai-hoc/1000-nam-bac-thuoc.html", "status": "done" },
-      { "ten": "Ngô Quyền 938: Tại sao lần này là vĩnh viễn? Thiên thời & chuỗi triều đại", "file": "bai-hoc/ngo-quyen.html", "status": "done" },
-      { "ten": "Loạn 12 Sứ Quân: Hoa Lư lập quốc, chiến lược 4 bước thu phục giang sơn", "file": "bai-hoc/loan-12-su-quan.html", "status": "done" },
-      { "ten": "Đinh – Lê: Từ Thủ lĩnh thành Hoàng đế", "file": "bai-hoc/dinh-le.html", "status": "done" },
-      { "ten": "Nhà Tiền Lê: Chuyển giao quyền lực khẩn cấp & nghệ thuật Cương & Nhu", "file": "bai-hoc/nha-tien-le.html", "status": "done" },
-      { "ten": "Nhà Lý: Quốc gia thật sự — Đại Việt 1009–1225", "file": "bai-hoc/nha-ly-total.html", "status": "done" },
-      { "ten": "Nhà Lý — Khai Quốc & Dời Đô (1009–1054)", "file": "bai-hoc/nha-ly-chap1.html", "status": "done" },
-      { "ten": "Nhà Lý — Củng Cố & Mở Rộng (1054–1075)", "file": "bai-hoc/nha-ly-chap2.html", "status": "done" },
-      { "ten": "Nhà Lý — Kháng Chiến Chống Tống (1075–1077)", "file": "bai-hoc/nha-ly-chap3.html", "status": "done" },
-      { "ten": "Nhà Lý — Phát Triển Văn Hoá & Thể Chế (1077–1127)", "file": "bai-hoc/nha-ly-chap4.html", "status": "done" },
-      { "ten": "Nhà Lý — Suy Tàn & Chuyển Giao (1127–1225)", "file": "bai-hoc/nha-ly-chap5.html", "status": "done" }
+      { "ten": "Nhà Nước Văn Lang", "file": "bai-hoc/nha-nuoc-van-lang.html", "status": "done" },
+      { "ten": "Nhà Nước Âu Lạc", "file": "bai-hoc/nha-nuoc-au-lac.html", "status": "done" },
+      { "ten": "1.000 Năm Bắc Thuộc", "file": "bai-hoc/1000-nam-bac-thuoc.html", "status": "done" },
+      { "ten": "Ngô Quyền 938", "file": "bai-hoc/ngo-quyen.html", "status": "done" },
+      { "ten": "Loạn 12 Sứ Quân", "file": "bai-hoc/loan-12-su-quan.html", "status": "done" },
+      { "ten": "Đinh – Lê", "file": "bai-hoc/dinh-le.html", "status": "done" },
+      { "ten": "Nhà Tiền Lê", "file": "bai-hoc/nha-tien-le.html", "status": "done" },
+      { "ten": "Nhà Lý — Tổng Quan", "file": "bai-hoc/nha-ly-total.html", "status": "done" },
+      { "ten": "Nhà Lý — Khai Quốc & Dời Đô", "file": "bai-hoc/nha-ly-chap1.html", "status": "done" },
+      { "ten": "Nhà Lý — Củng Cố & Mở Rộng", "file": "bai-hoc/nha-ly-chap2.html", "status": "done" },
+      { "ten": "Nhà Lý — Kháng Chiến Chống Tống", "file": "bai-hoc/nha-ly-chap3.html", "status": "done" },
+      { "ten": "Nhà Lý — Xây Dựng Văn Hóa & Thể Chế", "file": "bai-hoc/nha-ly-chap4.html", "status": "done" },
+      { "ten": "Nhà Lý — Suy Tàn & Chuyển Giao", "file": "bai-hoc/nha-ly-chap5.html", "status": "done" }
     ],
-    "tong_so_ke_hoach": 30,
-    "note": "Có 2 loại page: nhan-vat/ (phân tích nhân vật 3 Gốc/3 Độc) và bai-hoc/ (bài học lịch sử)"
+    "stats": {
+      "nhan_vat_done": 27,
+      "nhan_vat_pending": 1,
+      "nhan_vat_planned": 2,
+      "bai_hoc_done": 13
+    }
+  },
+  "workflow_checklist": {
+    "add_nhan_vat": [
+      "Tạo nhan-vat/[file].html theo template ly-cong-uan.html",
+      "KHÔNG dùng từ tiếng Anh trong nội dung",
+      "Cập nhật index.html — thêm chip đúng era, tăng bộ đếm",
+      "Cập nhật ban-do.html — thêm vào figures[] với role đúng",
+      "Cập nhật so-do-trieu-dinh.html — thêm official-card, cập nhật stats badge",
+      "Cập nhật docs/ideas.md",
+      "Cập nhật .brain/brain.json",
+      "git add → git commit → git push"
+    ]
   }
 }
