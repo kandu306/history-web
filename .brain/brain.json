@@ -3,7 +3,7 @@
     "name": "history-web",
     "description": "Website lịch sử Việt Nam — Phân tích nhân vật theo hệ thống 3 Gốc / 3 Độc",
     "created_at": "2026-05-21T11:36:07+07:00",
-    "last_saved": "2026-06-03T21:39:00+07:00"
+    "last_saved": "2026-06-04T12:02:50+07:00"
   },
   "tech_stack": [
     "HTML5",
@@ -15,9 +15,9 @@
     "Trang phân tích nhân vật lịch sử (1 file HTML / nhân vật)",
     "Hệ thống đánh giá 3 Gốc (Trí tuệ, Đạo đức, Nghị lực)",
     "Hệ thống đánh giá 3 Độc (Tham lam, Sân giận, Si mê)",
-    "index.html — Timeline Triều Đại (Bắc thuộc → Nhà Lý)",
+    "index.html — Timeline Triều Đại (era-based, Bắc thuộc → Nhà Trần)",
     "ban-do.html — Bản đồ khái niệm tương tác (click node, grouped figures by role)",
-    "so-do-trieu-dinh.html — Sơ đồ Vua → Quan (era blocks, role cards)",
+    "so-do-trieu-dinh.html — Sơ đồ Vua → Quan (era blocks, phân tầng Vua / Quyền thần)",
     "Reading progress bar",
     "Fade-in scroll animations",
     "Responsive design + mobile hamburger menu",
@@ -53,6 +53,16 @@
       "date": "2026-06-03",
       "decision": "Không dùng từ tiếng Anh trong nội dung (Technocrat, Kingmaker, Soft Power đã bị thay)",
       "reason": "Website lịch sử Việt Nam phải dùng tiếng Việt hoàn toàn"
+    },
+    {
+      "date": "2026-06-04",
+      "decision": "so-do-trieu-dinh.html: ERA Nhà Trần tách thành 2 sub-section: 'Vua khai triều' vs 'Quyền thần & Tước vương'",
+      "reason": "Trần Thủ Độ và Trần Liễu không phải vua — không nên ngang hàng với Trần Thái Tông"
+    },
+    {
+      "date": "2026-06-04",
+      "decision": "Chiến lược hoàng hậu: chỉ thêm 4 bà nổi bật (Dương Vân Nga, Ỷ Lan, Lý Chiêu Hoàng, Trần Thị Dung)",
+      "reason": "Chỉ đưa vào khi bà tự tạo ra lịch sử — nhiếp chính, quyết định then chốt, anh hùng kháng chiến"
     }
   ],
   "design_rules": {
@@ -69,7 +79,17 @@
       "ban-do.html": "links to index.html#trieu-dai (NOT #nhan-vat)"
     },
     "figure_roles": ["king", "queen", "official", "advisor", "enemy"],
-    "language": "Tiếng Việt hoàn toàn — không dùng từ tiếng Anh trong nội dung"
+    "language": "Tiếng Việt hoàn toàn — không dùng từ tiếng Anh trong nội dung",
+    "so_do_hierarchy": {
+      "rule": "Chỉ dùng king-card cho vua thực sự cầm quyền",
+      "sub_sections": ["Vua / Hoàng đế", "Quyền thần & Tước vương (không phải vua)"]
+    }
+  },
+  "historical_facts": {
+    "tran_thi_dung": "Hoàng hậu của vua Lý Huệ Tông (Nhà Lý), sau đó lấy Trần Thủ Độ → Linh Từ Quốc Mẫu. KHÔNG phải hoàng hậu Nhà Trần.",
+    "tran_lieu": "An Sinh Vương — tước vương, KHÔNG phải vua trị vì. Anh ruột vua Trần Thái Tông.",
+    "ly_chieu_hoang": "Vừa là nữ hoàng cuối Nhà Lý (1224-1225) vừa là hoàng hậu đầu của Trần Thái Tông → xuất hiện đúng ở CẢ HAI node trong ban-do.html",
+    "tran_thu_do": "Thái Sư — kiến trúc sư quyền lực, không phải vua. Nhầm lẫn phổ biến khi thiết kế sơ đồ."
   },
   "content_plan": {
     "nhan_vat": [
@@ -101,8 +121,13 @@
       { "ten": "Lý Cao Tông", "file": "nhan-vat/ly-cao-tong.html", "status": "done", "era": "Nhà Lý", "role": "king" },
       { "ten": "Lý Huệ Tông", "file": "nhan-vat/ly-hue-tong.html", "status": "done", "era": "Nhà Lý", "role": "king" },
       { "ten": "Lê Phụng Hiểu", "file": "nhan-vat/le-phung-hieu.html", "status": "pending", "era": "Nhà Lý - Lý Thái Tông", "role": "official", "note": "Anh sẽ cung cấp tài liệu" },
-      { "ten": "Trần Thủ Độ", "file": "nhan-vat/tran-thu-do.html", "status": "planned", "era": "Nhà Trần" },
-      { "ten": "Trần Hưng Đạo", "file": "nhan-vat/tran-hung-dao.html", "status": "planned", "era": "Nhà Trần" }
+      { "ten": "Trần Thủ Độ", "file": "nhan-vat/tran-thu-do.html", "status": "done", "era": "Nhà Trần", "role": "official" },
+      { "ten": "Lý Chiêu Hoàng", "file": "nhan-vat/ly-chieu-hoang.html", "status": "done", "era": "Lý → Trần", "role": "queen", "note": "Xuất hiện ở CẢ HAI node Lý và Trần trong ban-do.html" },
+      { "ten": "Trần Thị Dung", "file": "nhan-vat/tran-thi-dung.html", "status": "done", "era": "Lý → Trần", "role": "queen", "note": "Hoàng hậu Lý Huệ Tông, sau lấy Trần Thủ Độ — thuộc node Nhà Lý trong ban-do.html" },
+      { "ten": "Trần Liễu", "file": "nhan-vat/tran-lieu.html", "status": "done", "era": "Nhà Trần", "role": "official", "note": "An Sinh Vương — KHÔNG phải vua trị vì" },
+      { "ten": "Lê Phụ Trần", "file": "nhan-vat/le-phu-tran.html", "status": "done", "era": "Nhà Trần", "role": "official" },
+      { "ten": "Trần Thái Tông", "file": "nhan-vat/tran-thai-tong.html", "status": "done", "era": "Nhà Trần", "role": "king" },
+      { "ten": "Trần Hưng Đạo", "file": "nhan-vat/tran-hung-dao.html", "status": "planned", "era": "Nhà Trần", "role": "official" }
     ],
     "bai_hoc": [
       { "ten": "Nhà Nước Văn Lang", "file": "bai-hoc/nha-nuoc-van-lang.html", "status": "done" },
@@ -117,13 +142,15 @@
       { "ten": "Nhà Lý — Củng Cố & Mở Rộng", "file": "bai-hoc/nha-ly-chap2.html", "status": "done" },
       { "ten": "Nhà Lý — Kháng Chiến Chống Tống", "file": "bai-hoc/nha-ly-chap3.html", "status": "done" },
       { "ten": "Nhà Lý — Xây Dựng Văn Hóa & Thể Chế", "file": "bai-hoc/nha-ly-chap4.html", "status": "done" },
-      { "ten": "Nhà Lý — Suy Tàn & Chuyển Giao", "file": "bai-hoc/nha-ly-chap5.html", "status": "done" }
+      { "ten": "Nhà Lý — Suy Tàn & Chuyển Giao", "file": "bai-hoc/nha-ly-chap5.html", "status": "done" },
+      { "ten": "Nhà Trần — Khai Triều & Chuyển Giao Máu Lửa", "file": "bai-hoc/nha-tran-chap1.html", "status": "planned" }
     ],
     "stats": {
-      "nhan_vat_done": 27,
+      "nhan_vat_done": 33,
       "nhan_vat_pending": 1,
-      "nhan_vat_planned": 2,
-      "bai_hoc_done": 13
+      "nhan_vat_planned": 1,
+      "bai_hoc_done": 13,
+      "bai_hoc_planned": 1
     }
   },
   "workflow_checklist": {
@@ -131,11 +158,41 @@
       "Tạo nhan-vat/[file].html theo template ly-cong-uan.html",
       "KHÔNG dùng từ tiếng Anh trong nội dung",
       "Cập nhật index.html — thêm chip đúng era, tăng bộ đếm",
-      "Cập nhật ban-do.html — thêm vào figures[] với role đúng",
-      "Cập nhật so-do-trieu-dinh.html — thêm official-card, cập nhật stats badge",
-      "Cập nhật docs/ideas.md",
+      "Cập nhật ban-do.html — thêm vào figures[] với role đúng (xem historical_facts)",
+      "Cập nhật so-do-trieu-dinh.html — chỉ dùng king-card cho VUA thực sự, không phải tước vương",
       "Cập nhật .brain/brain.json",
       "git add → git commit → git push"
-    ]
+    ],
+    "role_assignment_rules": {
+      "king": "Vua/hoàng đế thực sự cầm quyền trị vì",
+      "queen": "Hoàng hậu thực sự (vợ vua đang trị vì) hoặc nữ hoàng",
+      "official": "Quan đại thần, tước vương không trị vì (Trần Liễu), Quốc mẫu (Trần Thị Dung)",
+      "advisor": "Thiền sư, cố vấn tinh thần",
+      "enemy": "Đối lập / ngoại xâm"
+    }
+  },
+  "session_log": {
+    "2026-06-04": {
+      "summary": "Thêm 5 nhân vật Nhà Trần + fix nhiều lỗi cấu trúc lịch sử",
+      "new_files": [
+        "nhan-vat/ly-chieu-hoang.html",
+        "nhan-vat/tran-thi-dung.html",
+        "nhan-vat/tran-lieu.html",
+        "nhan-vat/le-phu-tran.html",
+        "nhan-vat/tran-thai-tong.html"
+      ],
+      "fixes": [
+        "ban-do.html: thêm Node 9 Nhà Trần + SVG line-ly-tran (node thiếu hoàn toàn)",
+        "ban-do.html: sửa role Trần Liễu king→official, Trần Thị Dung queen→official",
+        "ban-do.html: thêm Trần Thị Dung + Lý Chiêu Hoàng vào node Nhà Lý (đúng lịch sử)",
+        "so-do-trieu-dinh.html: xóa card Lê Phụ Trần trùng lặp",
+        "so-do-trieu-dinh.html: thêm Lý Chiêu Hoàng vào cuối ERA Nhà Lý",
+        "so-do-trieu-dinh.html: tái cấu trúc ERA Nhà Trần thành 2 sub-section phân cấp rõ ràng"
+      ],
+      "commits": ["83bc6d4", "49b2b07", "60f87de", "40478ed", "56204ad"],
+      "decisions": [
+        "Chiến lược hoàng hậu: chỉ 4 bà nổi bật (Dương Vân Nga ✅, Ỷ Lan ✅, Lý Chiêu Hoàng ✅, Trần Thị Dung ✅)"
+      ]
+    }
   }
 }
