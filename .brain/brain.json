@@ -127,7 +127,13 @@
       { "ten": "Trần Liễu", "file": "nhan-vat/tran-lieu.html", "status": "done", "era": "Nhà Trần", "role": "official", "note": "An Sinh Vương — KHÔNG phải vua trị vì" },
       { "ten": "Lê Phụ Trần", "file": "nhan-vat/le-phu-tran.html", "status": "done", "era": "Nhà Trần", "role": "official" },
       { "ten": "Trần Thái Tông", "file": "nhan-vat/tran-thai-tong.html", "status": "done", "era": "Nhà Trần", "role": "king" },
-      { "ten": "Trần Hưng Đạo", "file": "nhan-vat/tran-hung-dao.html", "status": "planned", "era": "Nhà Trần", "role": "official" }
+      { "ten": "Trần Hưng Đạo", "file": "nhan-vat/tran-hung-dao.html", "status": "done", "era": "Nhà Trần", "role": "official" },
+      { "ten": "Trần Thánh Tông", "file": "nhan-vat/tran-thanh-tong.html", "status": "done", "era": "Nhà Trần", "role": "king" },
+      { "ten": "Trần Quang Khải", "file": "nhan-vat/tran-quang-khai.html", "status": "done", "era": "Nhà Trần", "role": "official" },
+      { "ten": "Trần Khánh Dư", "file": "nhan-vat/tran-khanh-du.html", "status": "done", "era": "Nhà Trần", "role": "official" },
+      { "ten": "An Tư Công Chúa", "file": "nhan-vat/an-tu-cong-chua.html", "status": "done", "era": "Nhà Trần", "role": "queen", "note": "Hy sinh thầm lặng năm 1285 — bi ịch bị lịch sử lãng quên" },
+      { "ten": "Trần Ích Tắc", "file": "nhan-vat/tran-ich-tac.html", "status": "done", "era": "Nhà Trần", "role": "enemy", "note": "Bị gọi là 'Ả Trần' — tội nhân vĩ đại" },
+      { "ten": "Trần Quốc Toản", "file": "nhan-vat/tran-quoc-toan.html", "status": "done", "era": "Nhà Trần", "role": "official", "note": "Anh hùng thiếu niên — hy sinh 18 tuổi" }
     ],
     "bai_hoc": [
       { "ten": "Nhà Nước Văn Lang", "file": "bai-hoc/nha-nuoc-van-lang.html", "status": "done" },
@@ -143,13 +149,14 @@
       { "ten": "Nhà Lý — Kháng Chiến Chống Tống", "file": "bai-hoc/nha-ly-chap3.html", "status": "done" },
       { "ten": "Nhà Lý — Xây Dựng Văn Hóa & Thể Chế", "file": "bai-hoc/nha-ly-chap4.html", "status": "done" },
       { "ten": "Nhà Lý — Suy Tàn & Chuyển Giao", "file": "bai-hoc/nha-ly-chap5.html", "status": "done" },
-      { "ten": "Nhà Trần — Khai Triều & Chuyển Giao Máu Lửa", "file": "bai-hoc/nha-tran-chap1.html", "status": "planned" }
+      { "ten": "Nhà Trần — Khai Triều & Chuyển Giao Máu Lửa", "file": "bai-hoc/nha-tran-chap1.html", "status": "planned" },
+      { "ten": "Nhà Trần — 3 Lần Kháng Chiến Chống Mông-Nguyên", "file": "bai-hoc/nha-tran-chap2.html", "status": "done" }
     ],
     "stats": {
-      "nhan_vat_done": 33,
+      "nhan_vat_done": 40,
       "nhan_vat_pending": 1,
-      "nhan_vat_planned": 1,
-      "bai_hoc_done": 13,
+      "nhan_vat_planned": 0,
+      "bai_hoc_done": 14,
       "bai_hoc_planned": 1
     }
   },
