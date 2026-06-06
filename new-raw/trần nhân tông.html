@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>40. Trần Nhân Tông (1258–1308)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream:       #f6f1e3;
+      --cream-dark:  #ede5ce;
+      --ink:         #18120a;
+      --ink-mid:     #3a2e1c;
+      --ink-light:   #5c4e36;
+      --rule:        #c9b99a;
+      --red:         #8b1c1c;
+      --red-light:   #b52a2a;
+      --gold:        #8a6320;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #e8e0cc;
+      background-image: radial-gradient(circle, #b9a88a 0.9px, transparent 0.9px);
+      background-size: 22px 22px;
+      min-height: 100vh;
+      padding: 2.5rem 1rem;
+      color: var(--ink);
+    }
+
+    /* ───── PAPER ───── */
+    .paper {
+      background: var(--cream);
+      max-width: 920px;
+      margin: 0 auto;
+      border: 1px solid var(--rule);
+      box-shadow: 0 8px 48px rgba(24,18,10,.18), 0 2px 8px rgba(24,18,10,.10);
+    }
+
+    /* ───── MASTHEAD ───── */
+    .masthead {
+      padding: 1.75rem 2.75rem 0;
+      border-bottom: 3px solid var(--ink);
+    }
+    .pub-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 0.6rem;
+      margin-bottom: 0.6rem;
+    }
+    .pub-name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 900;
+      letter-spacing: -.025em;
+      color: var(--ink);
+      flex: 1;
+      text-align: center;
+    }
+    .pub-sub {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      white-space: nowrap;
+    }
+    .dateline-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-bottom: 0.9rem;
+      gap: 0.5rem;
+    }
+    .dl { font-family: 'JetBrains Mono', monospace; font-size: .58rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-light); }
+    .dl-c { text-align: center; }
+    .dl-r { text-align: right; }
+
+    /* ───── CONTENT ───── */
+    .content { padding: 2.75rem 2.75rem 0; }
+
+    /* ───── HEADLINE ───── */
+    .headline-block {
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 1.75rem;
+      margin-bottom: 2rem;
+    }
+    .kicker {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .6rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: .8rem;
+    }
+    h1.main-headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 3.6rem;
+      font-weight: 900;
+      line-height: 1.04;
+      color: var(--ink);
+      margin-bottom: 1.1rem;
+    }
+    h1.main-headline .stk {
+      text-decoration: line-through;
+      text-decoration-color: var(--red);
+      text-decoration-thickness: 3px;
+    }
+    h1.main-headline .acc {
+      font-style: italic;
+      color: var(--red);
+    }
+    .deck {
+      font-family: 'IBM Plex Serif', Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.65;
+      color: var(--ink-mid);
+      max-width: 66ch;
+      border-left: 3px solid var(--red);
+      padding-left: 1rem;
+    }
+
+    /* ───── TWO-COLUMN BODY ───── */
+    .body-cols {
+      columns: 2;
+      column-gap: 2.75rem;
+      column-rule: 1px solid var(--rule);
+    }
+
+    /* ───── SECTION ───── */
+    .sec {
+      break-inside: avoid;
+      margin-bottom: 2rem;
+    }
+    .sec-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.25rem;
+      font-weight: 900;
+      line-height: 1;
+      color: var(--cream-dark);
+      user-select: none;
+      margin-bottom: -.35rem;
+    }
+    .sec-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .56rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: .2rem;
+    }
+    .sec-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.3;
+      margin-bottom: .7rem;
+      padding-bottom: .35rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .sec-body {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: .855rem;
+      line-height: 1.78;
+      color: var(--ink-mid);
+    }
+    .sec-body p + p { margin-top: .65rem; }
+    .b { font-weight: 600; color: var(--ink); }
+
+    /* ───── PULL QUOTE ───── */
+    .pull {
+      margin: 1.1rem 0;
+      padding: .9rem 1.1rem;
+      border-left: 3px solid var(--red);
+      background: var(--cream-dark);
+      break-inside: avoid;
+    }
+    .pull p {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: .95rem;
+      line-height: 1.55;
+      color: var(--ink);
+    }
+    .pull cite {
+      display: block;
+      font-family: 'JetBrains Mono', monospace;
+      font-style: normal;
+      font-size: .54rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-top: .4rem;
+    }
+
+    /* ───── INLINE BADGE ───── */
+    .badge {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .5rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      background: var(--red);
+      color: var(--cream);
+      padding: .12rem .45rem;
+      vertical-align: middle;
+      margin-right: .3rem;
+    }
+
+    /* ───── FULL-WIDTH BREAK ───── */
+    .full-w {
+      column-span: all;
+      break-inside: avoid;
+    }
+    .ornament-line {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      color: var(--rule);
+      font-size: 1.1rem;
+      letter-spacing: .7em;
+      margin: .25rem 0 2rem;
+    }
+
+    /* ───── ANALYSIS GRID ───── */
+    .analysis-grid {
+      column-span: all;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 2rem 0;
+      margin-bottom: 2rem;
+    }
+    .analysis-head {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .56rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: .35rem;
+    }
+    .analysis-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: .35rem;
+      margin-bottom: .75rem;
+    }
+    table.atbl { width: 100%; border-collapse: collapse; }
+    table.atbl th {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .56rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      border-bottom: 1px solid var(--ink);
+      padding: .4rem .6rem;
+      text-align: left;
+    }
+    table.atbl td {
+      padding: .6rem .6rem;
+      border-bottom: 1px solid var(--rule);
+      font-family: 'IBM Plex Serif', serif;
+      font-size: .79rem;
+      line-height: 1.55;
+      color: var(--ink-mid);
+      vertical-align: top;
+    }
+    table.atbl td.crit {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: var(--ink);
+      white-space: nowrap;
+      width: 5.5rem;
+    }
+    table.atbl td.rating { white-space: nowrap; width: 6.5rem; }
+    table.atbl tr:last-child td { border-bottom: none; }
+    .stars { color: var(--gold); font-size: .85rem; letter-spacing: .05em; }
+    .stars .emp { color: var(--rule); }
+
+    /* ───── ASSESSMENT BOX ───── */
+    .assess-box {
+      background: var(--cream-dark);
+      border: 1px solid var(--rule);
+      border-top: 3px solid var(--ink);
+      padding: 1.25rem 1.4rem;
+      margin-top: .75rem;
+      break-inside: avoid;
+    }
+    .assess-box p {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: .845rem;
+      line-height: 1.75;
+      color: var(--ink-mid);
+    }
+    .assess-box p + p { margin-top: .6rem; }
+
+    /* ───── LESSON ───── */
+    .lesson {
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: .8rem;
+      margin-bottom: .8rem;
+    }
+    .lesson:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .lesson-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .56rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: .25rem;
+    }
+    .lesson-text {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: .845rem;
+      line-height: 1.7;
+      color: var(--ink-mid);
+    }
+
+    /* ───── QUESTION + ANSWER ───── */
+    .q-box {
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--red);
+      padding: 1rem 1.2rem;
+      margin-top: .75rem;
+      break-inside: avoid;
+    }
+    .q-box p {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: .845rem;
+      line-height: 1.72;
+      color: var(--ink-mid);
+    }
+    .a-box {
+      background: var(--cream-dark);
+      border: 1px solid var(--rule);
+      padding: .9rem 1.1rem;
+      margin-top: .6rem;
+      break-inside: avoid;
+    }
+    .a-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .54rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: .35rem;
+    }
+    .a-box p {
+      font-family: 'IBM Plex Serif', serif;
+      font-style: italic;
+      font-size: .805rem;
+      line-height: 1.7;
+      color: var(--ink-mid);
+    }
+
+    /* ───── REFERENCES ───── */
+    .references {
+      column-span: all;
+      border-top: 2px solid var(--ink);
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+    }
+    .ref-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .58rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 1rem;
+    }
+    .ref-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .9rem;
+    }
+    .ref-item {
+      border-left: 2px solid var(--rule);
+      padding-left: .8rem;
+    }
+    .ref-num {
+      font-family: 'Playfair Display', serif;
+      font-size: .7rem;
+      font-style: italic;
+      color: var(--red);
+      margin-bottom: .15rem;
+    }
+    .ref-name {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: .85rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .ref-desc {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: .775rem;
+      color: var(--ink-light);
+      line-height: 1.5;
+      margin-top: .12rem;
+    }
+
+    /* ───── FOOTER ───── */
+    .footer {
+      border-top: 3px solid var(--ink);
+      padding: 1.2rem 2.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2.25rem;
+    }
+    .footer-side {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .56rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      line-height: 1.7;
+    }
+    .footer-orn {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      color: var(--red);
+      line-height: 1;
+    }
+  </style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ════════ MASTHEAD ════════ -->
+  <header class="masthead">
+    <div class="pub-row">
+      <div class="pub-sub dl">Nhân vật #40 · Chronicle</div>
+      <div class="pub-name">LỊCH SỬ VIỆT NAM</div>
+      <div class="pub-sub dl dl-r">Khoá học đặc biệt</div>
+    </div>
+    <div class="dateline-row">
+      <div class="dl">Nhân vật: Trần Nhân Tông · Điều Ngự Giác Hoàng<br>1258 – 1308 · Vua của các vị vua</div>
+      <div class="dl dl-c">Nhà Trần · Nhân vật #40<br>Chronicle Mode</div>
+      <div class="dl dl-r">Biên soạn: 06.06.2026<br>Kandu306 · Bản đặc san</div>
+    </div>
+  </header>
+
+  <!-- ════════ CONTENT ════════ -->
+  <main class="content">
+
+    <!-- ── HEADLINE ── -->
+    <div class="headline-block">
+      <div class="kicker">Nhà Trần · Nhân vật #40 &nbsp;·&nbsp; 1258–1308 &nbsp;·&nbsp; Trần Nhân Tông &nbsp;·&nbsp; Điều Ngự Giác Hoàng</div>
+      <h1 class="main-headline">
+        Trần Nhân Tông<br>
+        <span class="acc">Điều Ngự Giác Hoàng</span>
+      </h1>
+      <p class="deck">
+        Vị vua thứ 3 nhà Trần — người duy nhất trong lịch sử Việt Nam vừa là minh quân kiệt xuất vừa là vị Phật, sáng lập Thiền phái Trúc Lâm.
+        Lãnh đạo đánh tan Mông Cổ 2 lần, tha thứ toàn bộ quan lại từng viết thư xin hàng giặc, rồi nhường ngôi ở tuổi 35 lên núi Yên Tử.
+        Triết lý <em>"Cư trần lạc đạo"</em> — sống giữa cõi trần mà vui với đạo — là di sản trường tồn.
+      </p>
+    </div>
+
+    <!-- ════ TWO-COLUMN BLOCK ════ -->
+    <div class="body-cols">
+
+      <!-- 01 · TL;DR -->
+      <div class="sec">
+        <div class="sec-num">01</div>
+        <div class="sec-label">TL;DR · Tóm tắt</div>
+        <h2 class="sec-title">Vua Của Các Vị Vua — Vị Phật Nhập Thế: Trí Tuệ ★★★★★ + Đạo Đức ★★★★★</h2>
+        <div class="sec-body">
+          <p>Trần Nhân Tông vĩ đại vì ông chứng minh được: một người có thể lên đến đỉnh cao nhất của quyền lực trần thế (Vua) mà tâm hồn vẫn đạt đến sự tĩnh lặng tuyệt đối của một vị thánh (Phật).</p>
+          <p>Lãnh đạo đánh tan Mông Cổ 2 lần, tha thứ toàn bộ quan lại từng viết thư xin hàng giặc, rồi nhường ngôi ở tuổi 35 lên núi Yên Tử sáng lập Thiền phái Trúc Lâm.</p>
+          <p>Profile: <span class="b">Vua của các vị vua / Vị Phật nhập thế</span> — Trí tuệ ★★★★★ + Đạo đức ★★★★★.</p>
+        </div>
+      </div>
+
+      <!-- 02 · Tiểu sử nhanh -->
+      <div class="sec">
+        <div class="sec-num">02</div>
+        <div class="sec-label">Tiểu sử · Background</div>
+        <h2 class="sec-title">Con Trưởng Trần Thánh Tông — Vua, Thái Thượng Hoàng, Rồi Trở Thành Vị Phật</h2>
+        <div class="sec-body">
+          <p>Con trưởng của Trần Thánh Tông (1258–1308). Lên ngôi năm 21 tuổi (1278). Nhường ngôi cho con (Trần Anh Tông) năm 35 tuổi (1293), lên làm Thái Thượng Hoàng.</p>
+          <p>Năm 1299 chính thức xuất gia lên núi Yên Tử, lấy đạo hiệu Hương Vân Đại Đầu Đà, lập ra phái <span class="b">Trúc Lâm Yên Tử</span> — dòng thiền thuần Việt đầu tiên.</p>
+          <p>Triết lý <span class="b">"Cư trần lạc đạo"</span> — sống giữa cõi trần mà vui với đạo — là di sản ông để lại cho muôn đời.</p>
+        </div>
+      </div>
+
+      <!-- 03 · Sự kiện 1278–1289 -->
+      <div class="sec">
+        <div class="sec-num">03</div>
+        <div class="sec-label">Sự kiện · 1278–1289</div>
+        <h2 class="sec-title">Lên Ngôi Giữa Bóng Đen Chiến Tranh — Và Đốt Rương Thư Đầu Hàng Sau Chiến Thắng</h2>
+        <div class="sec-body">
+          <p><span class="b">1278</span> — Lên ngôi Hoàng đế giữa lúc bóng đen chiến tranh Mông Cổ đang bao trùm.</p>
+          <p><span class="b">1284</span> — Đồng chủ trì Hội nghị Bình Than với cha Trần Thánh Tông chuẩn bị kháng chiến.</p>
+          <p><span class="b">1285 &amp; 1288</span> — Trực tiếp cầm quân ra trận. Cùng Trần Hưng Đạo vạch ra chiến lược "vườn không nhà trống". Đích thân dẫn quân truy kích giặc ở trận Bạch Đằng 1288.</p>
+          <p><span class="b">1289 — Đốt rương thư đầu hàng</span> — Sau chiến thắng, đốt toàn bộ thư xin hàng giặc mà quan lại đã gửi cho Mông Cổ. Không điều tra, không trừng phạt. <em>"Để mọi người yên lòng tái thiết đất nước."</em></p>
+        </div>
+      </div>
+
+      <!-- 04 · Nhường ngôi & Xuất gia -->
+      <div class="sec">
+        <div class="sec-num">04</div>
+        <div class="sec-label">Sự kiện · 1293–1306</div>
+        <h2 class="sec-title">Nhường Ngôi Ở Đỉnh Cao Quyền Lực — Lên Núi Yên Tử Lập Thiền Phái Trúc Lâm</h2>
+        <div class="sec-body">
+          <p><span class="b">1293</span> — Nhường ngôi cho con Trần Anh Tông, lên làm Thái Thượng Hoàng.</p>
+          <p><span class="b">1299</span> — Chính thức xuất gia lên núi Yên Tử, lập ra phái Trúc Lâm.</p>
+          <p><span class="b">1306</span> — Gả con gái <span class="b">Huyền Trân Công chúa</span> cho Vua Chiêm Thành Chế Mân để đổi lấy 2 châu Ô, châu Lý (nay là Quảng Trị, Thừa Thiên) — nước cờ địa chính trị cuối đời.</p>
+        </div>
+        <div class="pull">
+          <p>"Nghị lực để bỏ xuống quyền lực tối cao vĩ đại hơn nhiều lần nghị lực để đạt được nó."</p>
+          <cite>Nhường ngôi ở tuổi 35, khoác áo cà sa đi khất thực trên núi Yên Tử</cite>
+        </div>
+      </div>
+
+      <!-- 05 · Đánh giá tổng thể -->
+      <div class="sec">
+        <div class="sec-num">05</div>
+        <div class="sec-label">Đánh giá · Assessment</div>
+        <h2 class="sec-title">Cư Trần Lạc Đạo — Tu Không Phải Là Trốn Tránh Trách Nhiệm</h2>
+        <div class="sec-body">
+          <p>Triết lý <span class="b">"Cư trần lạc đạo"</span> là di sản lớn nhất của ông: Tu không phải là trốn tránh trách nhiệm. Làm tốt công việc của mình, giữ tâm thiện ngay giữa dòng đời, đó chính là Đạo.</p>
+          <p>Ông chứng minh: <span class="b">Quyền lực là phương tiện để cứu dân, không phải mục đích để hưởng thụ. Tha thứ đúng lúc mang lại sức mạnh lớn hơn sự trừng phạt.</span></p>
+        </div>
+        <div class="pull">
+          <p>"Không cần lên núi để tu, không cần thoát tục để sống tốt — giữ tâm thiện, làm việc có ý nghĩa, đó là đạo ngay giữa cuộc đời."</p>
+        </div>
+      </div>
+
+      <!-- ORNAMENT DIVIDER -->
+      <div class="full-w ornament-line">✦ &nbsp;&nbsp; ✦ &nbsp;&nbsp; ✦</div>
+
+      <!-- ════ ANALYSIS TABLES — FULL WIDTH ════ -->
+      <div class="analysis-grid">
+
+        <!-- 3 Gốc -->
+        <div>
+          <div class="analysis-head">Phân tích · 3 Gốc</div>
+          <div class="analysis-title">Trí Tuệ — Đạo Đức — Nghị Lực</div>
+          <table class="atbl">
+            <thead>
+              <tr>
+                <th>Tiêu chí</th>
+                <th>Rating</th>
+                <th>Bằng chứng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="crit">Trí tuệ</td>
+                <td class="rating"><span class="stars">★★★★★</span></td>
+                <td>Hiểu nghệ thuật dùng người (tin dùng Trần Hưng Đạo, tha Trần Khánh Dư). Đốt rương thư là đỉnh cao của Trí tuệ chính trị — giữ vững đại đoàn kết. Sáng lập Trúc Lâm với triết lý "Cư trần lạc đạo" — kết hợp việc đời và việc đạo.</td>
+              </tr>
+              <tr>
+                <td class="crit">Đạo đức</td>
+                <td class="rating"><span class="stars">★★★★★</span></td>
+                <td>Yêu dân thương lính sâu sắc. Tha mạng và cấp phương tiện cho toàn bộ tù binh Mông Cổ về nước. Không có một vụ thảm sát công thần nào dưới triều ông. Sự tha thứ xuất phát từ lòng từ bi vĩ đại.</td>
+              </tr>
+              <tr>
+                <td class="crit">Nghị lực</td>
+                <td class="rating"><span class="stars">★★★★★</span></td>
+                <td>Chủ động từ bỏ ngai vàng ở đỉnh cao quyền lực (tuổi 35) để khoác áo cà sa đi khất thực trên núi Yên Tử. Nghị lực để "bỏ xuống" quyền lực tối cao vĩ đại hơn nhiều lần nghị lực để "đạt được" nó.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 3 Độc -->
+        <div>
+          <div class="analysis-head">Phân tích · 3 Độc</div>
+          <div class="analysis-title">Tham Lam — Sân Giận — Si Mê</div>
+          <table class="atbl">
+            <thead>
+              <tr>
+                <th>Tiêu chí</th>
+                <th>Rating</th>
+                <th>Bằng chứng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="crit">Tham lam</td>
+                <td class="rating"><span class="stars">★<span class="emp">★★★★</span></span></td>
+                <td>Hoàn toàn không bám víu quyền lực hay vật chất. Từ bỏ ngai vàng để sống cuộc đời tu hành kham khổ.</td>
+              </tr>
+              <tr>
+                <td class="crit">Sân giận</td>
+                <td class="rating"><span class="stars">★<span class="emp">★★★★</span></span></td>
+                <td>Có nghiêm khắc khi thấy Thái tử Anh Tông say rượu quên việc nước — nhưng đó là sự nghiêm khắc vì vận nước, không phải tư thù. Nhanh chóng tha thứ khi Thái tử hối lỗi.</td>
+              </tr>
+              <tr>
+                <td class="crit">Si mê</td>
+                <td class="rating"><span class="stars">★<span class="emp">★★★★</span></span></td>
+                <td>Đi tu nhưng không "si mê" mù quáng. Vẫn dạo khắp nơi phá bỏ dâm từ (miếu thờ tà thần), dạy dân phong tục văn minh và sắp xếp hôn nhân chính trị để mở mang bờ cõi.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div><!-- end analysis-grid -->
+
+      <!-- 06 · Bài học -->
+      <div class="sec">
+        <div class="sec-num">06</div>
+        <div class="sec-label">Bài học · Lessons Applied</div>
+        <h2 class="sec-title">Hai Bài Học Từ Vị Vua Biết Buông Bỏ Quyền Lực Ở Đỉnh Cao</h2>
+        <div class="sec-body">
+          <div class="lesson">
+            <div class="lesson-label">Lãnh đạo</div>
+            <p class="lesson-text">Quyền lực là phương tiện để cứu dân, không phải mục đích để hưởng thụ. Tha thứ đúng lúc mang lại sức mạnh lớn hơn sự trừng phạt.</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-label">Cuộc sống</div>
+            <p class="lesson-text"><em>"Cư trần lạc đạo"</em> — Không cần lên núi để tu, không cần thoát tục để sống tốt. Giữ tâm thiện, làm việc có ý nghĩa, đó là đạo ngay giữa cuộc đời.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 07 · Tự kiểm tra -->
+      <div class="sec">
+        <div class="sec-num">07</div>
+        <div class="sec-label">Tự kiểm tra · Self-Assessment</div>
+        <h2 class="sec-title">Hành Động "Đốt Rương Thư Đầu Hàng" Là Lòng Bao Dung Hay Một Nước Cờ Chính Trị?</h2>
+        <div class="sec-body">
+          <div class="q-box">
+            <p>Hành động "đốt rương thư đầu hàng" của Trần Nhân Tông là lòng bao dung hay một nước cờ chính trị?</p>
+          </div>
+          <div class="a-box">
+            <div class="a-label">Gợi ý phân tích</div>
+            <p>Nó là sự kết hợp đỉnh cao của cả hai. Về chính trị: nếu trừng phạt tất cả những người từng nhát gan viết thư hàng giặc, triều đình sẽ rơi vào cảnh tắm máu, hoang mang, nội bộ chia rẽ sau chiến tranh. Đốt bỏ là để yên lòng bá quan, gom sức tái thiết đất nước. Về đạo đức: đó là lòng từ bi vĩ đại của một vị Phật tương lai — hiểu được sự yếu đuối của con người trước cái chết và chọn cách tha thứ.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- REFERENCES -->
+      <div class="references">
+        <div class="ref-label">Liên kết &amp; Nhân vật liên quan</div>
+        <div class="ref-grid">
+          <div class="ref-item">
+            <div class="ref-num">Nhân vật #37</div>
+            <div class="ref-name">Trần Thánh Tông</div>
+            <div class="ref-desc">Cha, đồng hành và truyền cảm hứng bao dung.</div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">Nhân vật #39</div>
+            <div class="ref-name">Trần Hưng Đạo</div>
+            <div class="ref-desc">Cánh tay phải hoàn hảo trên chiến trường — cùng nhau đánh tan Mông Cổ 2 lần.</div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">Nhân vật #41</div>
+            <div class="ref-name">Trần Khánh Dư</div>
+            <div class="ref-desc">Tướng được ông tha tội và trao lại binh quyền — minh chứng cho nghệ thuật dùng người.</div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">Chapter tương ứng</div>
+            <div class="ref-name">Nhà Trần — Khai Triều &amp; Chuyển Giao Máu Lửa</div>
+            <div class="ref-desc">1225 – 1258. Nền tảng ông thừa hưởng — bối cảnh khai triều và giai đoạn trước ba lần kháng chiến.</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end body-cols -->
+  </main>
+
+  <!-- ════════ FOOTER ════════ -->
+  <footer class="footer">
+    <div class="footer-side">
+      Lịch Sử Việt Nam · Nhân vật #40<br>
+      Nhà Trần — Trần Nhân Tông (1258&nbsp;–&nbsp;1308)
+    </div>
+    <div class="footer-orn">❧</div>
+    <div class="footer-side" style="text-align:right">
+      Khoá học Lịch Sử Việt Nam<br>
+      Biên soạn: 06.06.2026
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
