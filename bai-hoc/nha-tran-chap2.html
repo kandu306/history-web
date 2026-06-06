@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nhà Trần — 3 Lần Kháng Chiến Chống Mông-Nguyên (1258–1288) | Bài Học Lịch Sử</title>
+  <meta name="description" content="Phân tích sâu 3 lần kháng chiến chống Mông-Nguyên của nhà Trần — Hệ thống chiến lược, bài học từ từng trận đánh lớn: Đông Bộ Đầu 1258, Vân Đồn & Bạch Đằng 1288. Lý do Mông Cổ thua cả 3 lần.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Nhà Trần — 3 Lần Kháng Chiến Chống Mông-Nguyên | Bài Học Lịch Sử">
+  <meta property="og:description" content="Đế quốc vô địch nhất lịch sử nhân loại thua 3 lần trước Đại Việt. Đây không phải may mắn — đây là hệ thống chiến lược hoàn hảo.">
+
+  <link rel="icon" type="image/svg+xml" href="../../shared/favicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../shared/styles.css">
+  <script src="../../shared/scripts.js" defer></script>
+
+  <style>
+    .score-bar-bg { height: 4px; background: #e7e5e4; border-radius: 2px; margin-top: 4px; width: 80px; }
+    .score-bar-fill { height: 100%; background: linear-gradient(90deg, #9b1c1c, #b45309); border-radius: 2px; }
+    .rule-thin { border: none; border-top: 1px solid #e7e5e4; }
+    .battle-card { border-left: 4px solid #9b1c1c; }
+  </style>
+</head>
+
+<body class="font-sans antialiased text-[#1c1917]">
+
+  <div id="progress-bar"></div>
+
+  <nav style="background: rgba(250,249,247,0.92); backdrop-filter: blur(12px);" class="sticky top-0 z-50 border-b border-[#e7e5e4]">
+    <div class="max-w-4xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2 text-sm text-[#78716c]">
+        <a href="../../index.html" class="text-[#9b1c1c] text-base leading-none hover:opacity-75 transition-opacity">◈</a>
+        <span>Lịch sử Việt Nam</span>
+        <span class="text-[#d6d3d1]">›</span>
+        <span class="text-[#d6d3d1]">Nhà Trần</span>
+        <span class="text-[#d6d3d1]">›</span>
+        <span class="font-medium text-[#1c1917]">3 Lần Kháng Chiến</span>
+      </div>
+      <span class="text-xs text-[#a8a29e] font-semibold tracking-widest uppercase hidden sm:block">Bài Học Lịch Sử</span>
+      <button id="mobile-menu-btn" class="sm:hidden text-[#1c1917] focus:outline-none p-1.5 rounded-lg hover:bg-[#f5f4f1] transition-colors" aria-label="Toggle menu">
+        <svg id="hamburger-icon" class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden sm:hidden border-t border-[#e7e5e4] bg-[#faf9f7] py-2 px-6 shadow-lg">
+      <div class="flex flex-col gap-2 py-2">
+        <a href="../../index.html#trieu-dai" class="mobile-nav-link text-sm text-[#57534e] hover:text-[#9b1c1c] font-medium py-2 transition-colors">Triều Đại</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="max-w-4xl mx-auto px-6 pt-16 pb-12">
+      <div class="relative overflow-hidden">
+        <svg class="hero-ornament" viewBox="0 0 200 200" fill="currentColor" style="color:#9b1c1c;"><path d="M100 0 L173 50 L173 150 L100 200 L27 150 L27 50 Z"/></svg>
+
+        <div class="flex flex-wrap items-center gap-3 mb-7">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold tracking-wider uppercase bg-[#fef2f2] text-[#9b1c1c] rounded-full border border-[#9b1c1c]/20">
+            <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3-10a1 1 0 10-2 0v4a1 1 0 001 1h3a1 1 0 100-2H12V8z" clip-rule="evenodd"/></svg>
+            Bài học lịch sử
+          </span>
+          <span class="text-sm text-[#78716c] font-medium">1258 – 1288 SCN · Nhà Trần · 3 Cuộc kháng chiến</span>
+        </div>
+
+        <h1 class="font-serif font-bold text-[#1c1917] leading-tight mb-4" style="font-size: clamp(2.4rem, 5.5vw, 3.5rem);">
+          Nhà Trần — 3 Lần Kháng Chiến<br>Chống Mông-Nguyên
+        </h1>
+
+        <p class="font-serif text-xl text-[#78716c] italic leading-snug mb-8 max-w-2xl">
+          1258 · 1285 · 1288 — <em class="text-[#9b1c1c] not-italic font-semibold">Đế quốc vô địch nhất lịch sử nhân loại thua 3 lần trước Đại Việt — đây không phải may mắn, đây là hệ thống chiến lược hoàn hảo</em>
+        </p>
+
+        <div class="flex flex-wrap items-center gap-5 text-sm text-[#57534e] border-t border-[#e7e5e4] py-4 mb-6">
+          <div class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-[#9b1c1c] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            Lịch sử Việt Nam — Nhà Trần Kháng Mông Cổ
+          </div>
+          <div class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-[#9b1c1c] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            10 phút đọc
+          </div>
+          <div class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-[#9b1c1c] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            Chapter 2 · Nhà Trần
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4 text-center sm:text-left card-hover">
+            <div class="font-serif text-3xl font-bold text-[#9b1c1c]">3×</div>
+            <div class="text-[10px] text-[#78716c] font-semibold tracking-wider uppercase mt-1">Lần chiến thắng · 1258, 1285, 1288</div>
+          </div>
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4 text-center sm:text-left card-hover">
+            <div class="font-serif text-3xl font-bold text-[#9b1c1c]">500K</div>
+            <div class="text-[10px] text-[#78716c] font-semibold tracking-wider uppercase mt-1">Quân Mông Cổ · Lần 2 & 3 cộng lại</div>
+          </div>
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4 text-center sm:text-left card-hover">
+            <div class="font-serif text-3xl font-bold text-[#9b1c1c]">5</div>
+            <div class="text-[10px] text-[#78716c] font-semibold tracking-wider uppercase mt-1">Lãnh tụ cốt lõi · Bộ tứ + Thái sư</div>
+          </div>
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4 text-center sm:text-left card-hover">
+            <div class="font-serif text-3xl font-bold text-[#9b1c1c]">30</div>
+            <div class="text-[10px] text-[#78716c] font-semibold tracking-wider uppercase mt-1">Năm sự kiện · 1258–1288</div>
+          </div>
+        </div>
+
+        <!-- TL;DR -->
+        <div class="relative rounded-2xl bg-[#1c1917] p-8 overflow-hidden shadow-md">
+          <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+            <svg width="100%" height="100%"><defs><pattern id="grid-nt2" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(#grid-nt2)"/></svg>
+          </div>
+          <div class="relative">
+            <div class="text-xs font-semibold tracking-[0.15em] uppercase text-[#9b1c1c] mb-3">TL;DR / Bản tóm tắt nhanh</div>
+            <p class="text-base leading-relaxed text-[#d6d3d1] mb-5">
+              Đế quốc Mông Cổ đã chinh phạt gần như toàn bộ châu Á và một phần châu Âu — nhưng thua Đại Việt 3 lần liên tiếp. Không phải may mắn. Đó là vì nhà Trần có một <strong class="text-[#faf9f7]">hệ thống 5 yếu tố hoàn hảo</strong>: đoàn kết nội bộ, chiến lược linh hoạt, tình báo xuất sắc, tướng lĩnh tài ba và tinh thần toàn dân chiến đấu.
+            </p>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="inline-flex items-center gap-2 px-4 py-2 bg-[#292524] rounded-xl text-sm">
+                <span class="text-[#a8a29e]">Lần 1 (1258)</span>
+                <span class="text-[#f59e0b] tracking-tight">Đông Bộ Đầu</span>
+              </span>
+              <span class="inline-flex items-center gap-2 px-4 py-2 bg-[#292524] rounded-xl text-sm">
+                <span class="text-[#a8a29e]">Lần 2 (1285)</span>
+                <span class="text-[#f59e0b] tracking-tight">Chương Dương · Hàm Tử</span>
+              </span>
+              <span class="inline-flex items-center gap-2 px-4 py-2 bg-[#9b1c1c] rounded-xl text-sm font-semibold text-[#faf9f7]">
+                Lần 3 (1288) · Vân Đồn · Bạch Đằng
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <article class="max-w-[700px] mx-auto px-6 pb-28">
+
+      <!-- Bối cảnh -->
+      <section class="fade-section">
+        <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">Bối cảnh — Đế quốc Mông Cổ là ai?</h2>
+        <p class="text-lg leading-relaxed text-[#44403c] mb-4 first-letter:font-serif first-letter:text-5xl first-letter:font-bold first-letter:float-left first-letter:mr-2 first-letter:text-[#9b1c1c]">
+          Thế kỷ 13, đế quốc Mông Cổ dưới triều Thành Cát Tư Hãn và sau đó là Hốt Tất Liệt — đã chinh phạt và thống trị hầu hết châu Á: Trung Quốc, Ba Tư, Trung Á, một phần châu Âu. Họ tàn phá nhiều đế quốc lớn như nhà Tống, nhà Kim, đế quốc Hồi giáo Baghdad. Kỵ binh Mông Cổ được coi là bất khả chiến bại.
+        </p>
+        <p class="text-lg leading-relaxed text-[#44403c] mb-4">
+          Đại Việt thời nhà Trần, lãnh thổ nhỏ, dân số chỉ khoảng 4–5 triệu người. Vậy mà đánh bại đế quốc hùng mạnh nhất thế giới không phải 1, mà 3 lần liên tiếp. Đây là câu chuyện về <strong>hệ thống chiến lược hoàn hảo</strong>, không phải sự may mắn.
+        </p>
+
+        <!-- Điểm yếu của Mông Cổ -->
+        <div class="rounded-xl border border-[#9b1c1c]/30 bg-[#fef2f2] p-6 mb-6">
+          <h3 class="font-serif font-bold text-lg text-[#9b1c1c] mb-3">Điểm yếu chết người của Mông Cổ — mà nhà Trần nắm được</h3>
+          <div class="space-y-3">
+            <div class="flex gap-3">
+              <span class="text-[#9b1c1c] font-bold text-lg flex-shrink-0">①</span>
+              <p class="text-sm leading-relaxed text-[#44403c]"><strong>Hậu cần yếu:</strong> Kỵ binh Mông Cổ di chuyển nhanh nhưng phụ thuộc hoàn toàn vào đoàn thuyền lương — đây là gót chân Achilles.</p>
+            </div>
+            <div class="flex gap-3">
+              <span class="text-[#9b1c1c] font-bold text-lg flex-shrink-0">②</span>
+              <p class="text-sm leading-relaxed text-[#44403c]"><strong>Không hợp địa hình:</strong> Kỵ binh mạnh ở thảo nguyên mở, yếu trong rừng rậm, đồng bằng ngập nước và sông ngòi chằng chịt của Đại Việt.</p>
+            </div>
+            <div class="flex gap-3">
+              <span class="text-[#9b1c1c] font-bold text-lg flex-shrink-0">③</span>
+              <p class="text-sm leading-relaxed text-[#44403c]"><strong>Không hợp thủy chiến:</strong> Thủy quân Mông Cổ không thể sánh với người Đại Việt quen sông nước từ nhỏ.</p>
+            </div>
+            <div class="flex gap-3">
+              <span class="text-[#9b1c1c] font-bold text-lg flex-shrink-0">④</span>
+              <p class="text-sm leading-relaxed text-[#44403c]"><strong>Kiêu ngạo:</strong> Thắng quá nhiều, đánh giá thấp đối thủ — cùng một kế "vườn không nhà trống" mà 3 lần vẫn bị lừa.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <!-- Kháng chiến lần 1 -->
+      <section class="fade-section">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-[#9b1c1c] flex items-center justify-center text-white font-serif font-bold text-xl">1</div>
+          <h2 class="font-serif text-3xl font-bold text-[#1c1917]">Kháng chiến lần 1 · 1258</h2>
+        </div>
+
+        <div class="card battle-card p-6 mb-5">
+          <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Bối cảnh — Cơn bão đầu tiên</h3>
+          <p class="text-base leading-relaxed text-[#44403c]">
+            Mông Cổ điều 3 vạn quân do tướng Ngột Lương Hợp Thai chỉ huy, tiến vào Đại Việt từ hướng Vân Nam (ngày nay là Trung Quốc) với mục tiêu mượn đường để tấn công nhà Tống. Quân Trần bị đánh bất ngờ, liên tiếp thua trận ở biên giới phía Bắc.
+          </p>
+        </div>
+
+        <div class="card battle-card p-6 mb-5">
+          <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Trận Đông Bộ Đầu (1258) — Đòn phản công quyết định</h3>
+          <p class="text-base leading-relaxed text-[#44403c] mb-3">
+            Sau khi chạy về Thiên Mạc (Nam Định), vua Trần Thái Tông và Thái tử Trần Thánh Tông củng cố lực lượng. Áp dụng chiến thuật <strong>"vườn không nhà trống"</strong> — đốt hết lương thực, bỏ Thăng Long để giặc chiếm một thành phố trống. Quân Mông Cổ không có gì để ăn, không có người dân để bắt làm nô lệ và sốt rét lan rộng.
+          </p>
+          <p class="text-base leading-relaxed text-[#44403c]">
+            Khi giặc suy yếu, Trần Thái Tông đích thân dẫn thủy quân phản công tại bến Đông Bộ Đầu trên sông Hồng. Quân Mông Cổ đại bại, rút chạy khỏi Đại Việt sau chưa đầy 9 ngày chiếm Thăng Long.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4">
+            <div class="text-xs font-semibold text-[#9b1c1c] uppercase tracking-wider mb-2">Bài học từ lần 1</div>
+            <p class="text-sm leading-relaxed text-[#44403c]">Chiến lược "vườn không nhà trống" — khiến kẻ thù đánh vào không khí, không tìm được mục tiêu. Thời gian là vũ khí lợi hại nhất.</p>
+          </div>
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4">
+            <div class="text-xs font-semibold text-[#9b1c1c] uppercase tracking-wider mb-2">Nhân vật chủ chốt</div>
+            <p class="text-sm leading-relaxed text-[#44403c]"><strong>Trần Thái Tông</strong> — đích thân dẫn quân phản công. <strong>Trần Thánh Tông</strong> — hỗ trợ điều phối. Chiến thắng xây nền cho 30 năm chuẩn bị tiếp theo.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <!-- Kháng chiến lần 2 -->
+      <section class="fade-section">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-[#9b1c1c] flex items-center justify-center text-white font-serif font-bold text-xl">2</div>
+          <h2 class="font-serif text-3xl font-bold text-[#1c1917]">Kháng chiến lần 2 · 1285</h2>
+        </div>
+
+        <div class="card battle-card p-6 mb-5">
+          <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Bối cảnh — Cơn bão lớn nhất</h3>
+          <p class="text-base leading-relaxed text-[#44403c]">
+            Sau khi bị từ chối mượn đường, Hốt Tất Liệt cử hoàng tử Thoát Hoan với khoảng 30 vạn quân xâm lược Đại Việt. Đây là đội quân lớn nhất từng tấn công Đại Việt trong lịch sử. Đầu năm 1285, quân Mông Cổ chia làm nhiều cánh, đánh bật quân Trần khỏi mọi phòng tuyến sông Hồng.
+          </p>
+        </div>
+
+        <!-- Hội nghị Diên Hồng -->
+        <div class="rounded-xl border border-[#9b1c1c]/30 bg-[#fef2f2] p-6 mb-5">
+          <h3 class="font-serif font-bold text-lg text-[#9b1c1c] mb-3">Hội nghị Diên Hồng — Tiếng hô vang lịch sử</h3>
+          <p class="text-sm leading-relaxed text-[#44403c] mb-3">Thái Thượng Hoàng Trần Thánh Tông triệu tập bô lão toàn quốc về Thăng Long, hỏi ý kiến về kháng chiến hay hàng giặc.</p>
+          <blockquote class="border-l-4 border-[#9b1c1c] pl-4 italic text-base text-[#1c1917] font-serif">
+            "Đánh! Đánh! Đánh!" — Tiếng hô của bô lão toàn quốc
+          </blockquote>
+        </div>
+
+        <div class="card battle-card p-6 mb-5">
+          <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Các trận quyết định</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="font-serif font-bold text-sm text-[#9b1c1c] mb-1">Vân Đồn (Tháng 1/1285)</div>
+              <p class="text-sm leading-relaxed text-[#44403c]">An Tư Công Chúa được dâng cho Thoát Hoan để mua thời gian rút lui. Quân Trần rút về phía Nam, thực hiện "vườn không nhà trống" lần 2. Quân Mông Cổ chiếm Thăng Long trống không.</p>
+            </div>
+            <div>
+              <div class="font-serif font-bold text-sm text-[#9b1c1c] mb-1">Tây Kết + Hàm Tử (Tháng 4-5/1285)</div>
+              <p class="text-sm leading-relaxed text-[#44403c]">Trần Hưng Đạo phát động tổng phản công. Trận Tây Kết: Tướng Toa Đô bị chém đầu — lần đầu tiên một đại tướng Mông Cổ bị tiêu diệt trên chiến trường. Địch mất ý chí chiến đấu.</p>
+            </div>
+            <div>
+              <div class="font-serif font-bold text-sm text-[#9b1c1c] mb-1">Chương Dương (Tháng 5/1285)</div>
+              <p class="text-sm leading-relaxed text-[#44403c]">Trần Quang Khải đánh tan thủy quân Mông Cổ, cô lập Thoát Hoan. Thoát Hoan phải chui vào ống đồng cho quân khiêng chạy về phương Bắc.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4">
+            <div class="text-xs font-semibold text-[#9b1c1c] uppercase tracking-wider mb-2">Bài học từ lần 2</div>
+            <p class="text-sm leading-relaxed text-[#44403c]">Đoàn kết nội bộ và phân công đúng người đúng việc. Biết chịu đau mất đất để phát động đòn phản công quyết định. Tiêu diệt chỉ huy địch = tiêu diệt tinh thần quân địch.</p>
+          </div>
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4">
+            <div class="text-xs font-semibold text-[#9b1c1c] uppercase tracking-wider mb-2">Nhân vật chủ chốt</div>
+            <p class="text-sm leading-relaxed text-[#44403c]"><strong>Trần Hưng Đạo</strong> (Tiết chế) · <strong>Trần Quang Khải</strong> (Tây Kết, Chương Dương) · <strong>Trần Quốc Toản</strong> (biểu tượng tinh thần) · <strong>An Tư Công Chúa</strong> (hy sinh thầm lặng)</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <!-- Kháng chiến lần 3 -->
+      <section class="fade-section">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-[#9b1c1c] flex items-center justify-center text-white font-serif font-bold text-xl">3</div>
+          <h2 class="font-serif text-3xl font-bold text-[#1c1917]">Kháng chiến lần 3 · 1287–1288</h2>
+        </div>
+
+        <div class="card battle-card p-6 mb-5">
+          <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Bối cảnh — Mông Cổ học mà vẫn thua</h3>
+          <p class="text-base leading-relaxed text-[#44403c]">
+            Hốt Tất Liệt không chấp nhận 2 lần thất bại. Cử Thoát Hoan và Omar chỉ huy khoảng 30 vạn quân lần 3, lần này có chuẩn bị đoàn thuyền lương khổng lồ để tránh điểm yếu hậu cần — nhưng chính đoàn thuyền lương đó mới là vũ khí của Trần Hưng Đạo.
+          </p>
+        </div>
+
+        <div class="card battle-card p-6 mb-5">
+          <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Trận Vân Đồn — Nước cờ quyết định</h3>
+          <p class="text-base leading-relaxed text-[#44403c]">
+            Trần Hưng Đạo giao nhiệm vụ tối mật cho Trần Khánh Dư: không đánh trực tiếp đội quân tiền vệ mạnh của địch mà hãy chặn đoàn thuyền lương khổng lồ đi sau. Trận Vân Đồn: Trần Khánh Dư tiêu diệt hoàn toàn đoàn thuyền lương Mông Cổ. Quân địch mất hoàn toàn nguồn hậu cần — bắt đầu sụp đổ.
+          </p>
+        </div>
+
+        <div class="card battle-card p-6 mb-5">
+          <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Trận Bạch Đằng 1288 — Huyền thoại cọc gỗ</h3>
+          <p class="text-base leading-relaxed text-[#44403c]">
+            Trần Hưng Đạo sử dụng chiến thuật sông Bạch Đằng từ thời Ngô Quyền (938): đóng cọc gỗ nhọn bịt sắt bên dưới mực nước triều lên. Nhử thủy quân Mông Cổ vào sâu lúc triều cao rồi phản công khi triều xuống. Cọc gỗ lộ ra đâm thủng thuyền địch. Ô Mã Nhi bị bắt sống. Đây là trận đánh kết thúc hoàn toàn cuộc xâm lăng lần thứ 3 và mãi mãi.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4">
+            <div class="text-xs font-semibold text-[#9b1c1c] uppercase tracking-wider mb-2">Bài học từ lần 3</div>
+            <p class="text-sm leading-relaxed text-[#44403c]">Tiêu diệt hậu cần trước, rồi mới đánh chính diện. Tướng giỏi nhìn ra điểm yếu bên trong của kẻ địch và tấn công vào đó — không phải vào chỗ mạnh của họ.</p>
+          </div>
+          <div class="rounded-xl bg-[#fafaf8] border border-[#e7e5e4] p-4">
+            <div class="text-xs font-semibold text-[#9b1c1c] uppercase tracking-wider mb-2">Nhân vật chủ chốt</div>
+            <p class="text-sm leading-relaxed text-[#44403c]"><strong>Trần Hưng Đạo</strong> (tổng chỉ huy) · <strong>Trần Khánh Dư</strong> (Vân Đồn — quyết định cục diện) · <strong>Trần Thánh Tông</strong> (Thái Thượng Hoàng bảo trợ)</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <!-- 5 lý do thắng -->
+      <section class="fade-section">
+        <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">5 Lý do nhà Trần thắng cả 3 lần</h2>
+        <div class="space-y-4">
+          <div class="card p-6">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-[#fef2f2] border border-[#9b1c1c]/20 flex items-center justify-center font-serif font-bold text-[#9b1c1c]">1</div>
+              <div>
+                <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-1">Đoàn kết nội bộ hoàn toàn</h3>
+                <p class="text-sm leading-relaxed text-[#44403c]">Trần Thánh Tông xóa bỏ thù hận gia tộc → Trần Quang Khải hòa giải với Trần Hưng Đạo → Toàn bộ hoàng tộc và vương hầu đoàn kết một lòng. Ngay cả Trần Ích Tắc phản quốc cũng không đủ để chia rẽ khối đoàn kết đó.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card p-6">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-[#fef2f2] border border-[#9b1c1c]/20 flex items-center justify-center font-serif font-bold text-[#9b1c1c]">2</div>
+              <div>
+                <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-1">Chiến lược "vườn không nhà trống" — sử dụng cả 3 lần</h3>
+                <p class="text-sm leading-relaxed text-[#44403c]">Biết điểm yếu chết người của kỵ binh Mông Cổ là hậu cần — tiêu diệt toàn bộ lương thực, bỏ thành phố trống để giặc đánh vào không khí. Rồi phản công khi địch kiệt sức.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card p-6">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-[#fef2f2] border border-[#9b1c1c]/20 flex items-center justify-center font-serif font-bold text-[#9b1c1c]">3</div>
+              <div>
+                <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-1">Tình báo xuất sắc — biết trước ý đồ địch</h3>
+                <p class="text-sm leading-relaxed text-[#44403c]">Nhà Trần có mạng lưới tình báo hiệu quả, biết trước mọi đợt tấn công của Mông Cổ từ nhiều tháng trước. Đây là lý do họ luôn chủ động về chiến lược, dù thụ động về chiến thuật ở giai đoạn đầu.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card p-6">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-[#fef2f2] border border-[#9b1c1c]/20 flex items-center justify-center font-serif font-bold text-[#9b1c1c]">4</div>
+              <div>
+                <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-1">Đặt đúng người vào đúng vị trí</h3>
+                <p class="text-sm leading-relaxed text-[#44403c]">Trần Hưng Đạo làm Tiết chế (không nghi kỵ dù mang thù nhà). Trần Khánh Dư giữ Vân Đồn (không loại bỏ vì lỗi lầm đạo đức trong quá khứ). Trần Quang Khải chỉ huy thủy chiến Chương Dương.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card p-6">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-[#fef2f2] border border-[#9b1c1c]/20 flex items-center justify-center font-serif font-bold text-[#9b1c1c]">5</div>
+              <div>
+                <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-1">Tinh thần toàn dân — không phải chỉ chiến tranh vương quyền</h3>
+                <p class="text-sm leading-relaxed text-[#44403c]">Hội nghị Diên Hồng, Hịch Tướng Sĩ, lá cờ 6 chữ vàng của Trần Quốc Toản — tất cả chuyển hóa cuộc chiến bảo vệ vương quyền thành <strong>chiến tranh nhân dân</strong>. Người dân tự đốt nhà, tự bỏ quê hương. Đây là điều Mông Cổ không bao giờ phá vỡ được.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <!-- Bài học -->
+      <section class="fade-section">
+        <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">Bài học từ nhà Trần cho cuộc sống hiện đại</h2>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div class="card p-5">
+            <div class="text-xs font-semibold uppercase tracking-wider mb-2 text-[#9b1c1c]">Bài học 01</div>
+            <h4 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Biết điểm yếu của đối thủ hơn điểm mạnh của mình</h4>
+            <p class="text-sm leading-relaxed text-[#57534e]">
+              Không đánh vào nơi kẻ thù mạnh nhất. Tìm và tấn công vào gót chân Achilles của họ. Trận Vân Đồn chứng minh điều này — không phải Bạch Đằng mới là trận quyết định.
+            </p>
+          </div>
+          <div class="card p-5">
+            <div class="text-xs font-semibold uppercase tracking-wider mb-2 text-[#9b1c1c]">Bài học 02</div>
+            <h4 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Đoàn kết nội bộ > sức mạnh vật chất</h4>
+            <p class="text-sm leading-relaxed text-[#57534e]">
+              Một đội ngũ nhỏ đoàn kết sẽ thắng tổ chức lớn chia rẽ. Đây là lý do Mông Cổ — dù đông và mạnh hơn — vẫn thua nhà Trần 3 lần.
+            </p>
+          </div>
+          <div class="card p-5">
+            <div class="text-xs font-semibold uppercase tracking-wider mb-2 text-[#9b1c1c]">Bài học 03</div>
+            <h4 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Kiên nhẫn chiến lược trước áp lực ngắn hạn</h4>
+            <p class="text-sm leading-relaxed text-[#57534e]">
+              Bỏ Thăng Long để giặc chiếm — đây là đau đớn ngắn hạn vì mục tiêu dài hạn. Không phải hèn nhát, mà là chiến lược sáng suốt nhất trong lịch sử chiến tranh Việt Nam.
+            </p>
+          </div>
+          <div class="card p-5">
+            <div class="text-xs font-semibold uppercase tracking-wider mb-2 text-[#9b1c1c]">Bài học 04</div>
+            <h4 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Đặt đúng người — kể cả người không hoàn hảo</h4>
+            <p class="text-sm leading-relaxed text-[#57534e]">
+              Trần Khánh Dư là ví dụ điển hình: không loại bỏ người tài vì lỗi lầm đạo đức trong quá khứ, mà đặt họ vào đúng vị trí mà điểm mạnh của họ phát huy tối đa.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align:center; max-width:68ch; margin:2rem auto 0; padding:1.75rem 0;">
+          <p class="font-serif text-xl font-semibold italic leading-relaxed text-[#1c1917]">
+            "Đế quốc vô địch nhất lịch sử nhân loại<br>
+            thua 3 lần vì không học được bài học của lần trước."
+          </p>
+          <hr class="rule-thin" style="margin:1rem auto; width:3.5rem;">
+          <p class="font-mono text-[10px] tracking-widest text-[#78716c] uppercase">— Nhà Trần · 1258–1288 · 3 Lần Kháng Chiến Chống Mông-Nguyên</p>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <!-- Nhân vật liên quan -->
+      <section class="fade-section">
+        <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">Nhân vật của giai đoạn lịch sử này</h2>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <a href="../../nhan-vat/tran-thanh-tong.html" class="card p-5 card-hover block">
+            <div class="text-xs font-semibold text-[#a8a29e] mb-1">NHÂN VẬT 37</div>
+            <h4 class="font-serif font-bold text-base text-[#1c1917] mb-1">Trần Thánh Tông</h4>
+            <p class="text-xs text-[#78716c] leading-relaxed">Thái Thượng Hoàng — người dọn đường bằng hòa giải nội bộ và Hội nghị Diên Hồng.</p>
+          </a>
+          <a href="../../nhan-vat/tran-hung-dao.html" class="card p-5 card-hover block">
+            <div class="text-xs font-semibold text-[#a8a29e] mb-1">NHÂN VẬT 39</div>
+            <h4 class="font-serif font-bold text-base text-[#1c1917] mb-1">Trần Hưng Đạo</h4>
+            <p class="text-xs text-[#78716c] leading-relaxed">Quốc Công Tiết Chế — tổng chỉ huy 3 lần kháng chiến, thiên tài chiến lược vĩ đại nhất lịch sử Việt Nam.</p>
+          </a>
+          <a href="../../nhan-vat/tran-quang-khai.html" class="card p-5 card-hover block">
+            <div class="text-xs font-semibold text-[#a8a29e] mb-1">NHÂN VẬT 38</div>
+            <h4 class="font-serif font-bold text-base text-[#1c1917] mb-1">Trần Quang Khải</h4>
+            <p class="text-xs text-[#78716c] leading-relaxed">Thượng tướng Thái sư — thắng trận Chương Dương, tác giả Tụng giá hoàn kinh sư bất hủ.</p>
+          </a>
+          <a href="../../nhan-vat/tran-khanh-du.html" class="card p-5 card-hover block">
+            <div class="text-xs font-semibold text-[#a8a29e] mb-1">NHÂN VẬT 41</div>
+            <h4 class="font-serif font-bold text-base text-[#1c1917] mb-1">Trần Khánh Dư</h4>
+            <p class="text-xs text-[#78716c] leading-relaxed">Thiên tài lệch chuẩn — người thực hiện nước cờ quyết định tại Vân Đồn (1288).</p>
+          </a>
+          <a href="../../nhan-vat/an-tu-cong-chua.html" class="card p-5 card-hover block">
+            <div class="text-xs font-semibold text-[#a8a29e] mb-1">NHÂN VẬT 42</div>
+            <h4 class="font-serif font-bold text-base text-[#1c1917] mb-1">An Tư Công Chúa</h4>
+            <p class="text-xs text-[#78716c] leading-relaxed">Đóa hoa nhuốm máu — hy sinh thầm lặng mua thời gian cho bộ chỉ huy rút lui an toàn.</p>
+          </a>
+          <a href="../../nhan-vat/tran-quoc-toan.html" class="card p-5 card-hover block">
+            <div class="text-xs font-semibold text-[#a8a29e] mb-1">NHÂN VẬT 44</div>
+            <h4 class="font-serif font-bold text-base text-[#1c1917] mb-1">Trần Quốc Toản</h4>
+            <p class="text-xs text-[#78716c] leading-relaxed">Anh hùng thiếu niên — lá cờ 6 chữ vàng, biểu tượng tinh thần kháng chiến toàn dân.</p>
+          </a>
+          <a href="../../nhan-vat/tran-ich-tac.html" class="card p-5 card-hover block sm:col-span-2">
+            <div class="text-xs font-semibold text-[#a8a29e] mb-1">NHÂN VẬT 43</div>
+            <h4 class="font-serif font-bold text-base text-[#1c1917] mb-1">Trần Ích Tắc</h4>
+            <p class="text-xs text-[#78716c] leading-relaxed">Tội nhân vĩ đại — kẻ phản quốc tương phản hoàn hảo nhất với Trần Hưng Đạo. Bị gọi là "Ả Trần" muôn đời.</p>
+          </a>
+        </div>
+      </section>
+
+      <div class="ornament-divider"><span>◈</span></div>
+
+      <section class="fade-section">
+        <div class="rounded-2xl bg-[#1c1917] text-[#faf9f7] p-8 text-center relative overflow-hidden">
+          <div class="absolute inset-0 opacity-[0.04] pointer-events-none">
+            <svg width="100%" height="100%"><defs><pattern id="dots-nt2" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1.5" fill="white"/></pattern></defs><rect width="100%" height="100%" fill="url(#dots-nt2)"/></svg>
+          </div>
+          <div class="relative">
+            <p class="font-serif text-xl font-semibold mb-2">Chia sẻ bài học lịch sử này?</p>
+            <p class="text-[#a8a29e] text-base mb-6">Nhà Trần — 3 Lần Kháng Chiến Chống Mông-Nguyên (1258–1288).</p>
+            <div class="flex flex-wrap justify-center gap-3">
+              <button id="share-btn" onclick="if(navigator.share){navigator.share({title:document.title,url:location.href})}else{navigator.clipboard&&navigator.clipboard.writeText(location.href);this.textContent='Đã sao chép link ✓'}" class="px-6 py-2.5 bg-[#9b1c1c] hover:bg-[#7f1d1d] rounded-xl text-sm font-semibold transition-colors focus:outline-none">Chia sẻ bài viết</button>
+              <a href="../../index.html" class="px-6 py-2.5 bg-[#292524] hover:bg-[#44403c] rounded-xl text-sm font-semibold transition-colors">← Về trang chủ</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="border-t border-[#e7e5e4] py-8" style="background:#1c1917; border-color:rgba(255,255,255,0.06);">
+    <div class="max-w-[700px] mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-[#a8a29e]">
+      <div>
+        <p class="font-semibold font-serif" style="color:#b45309;">Lịch sử Việt Nam · Nhà Trần Chapter 2</p>
+        <p class="text-xs mt-0.5 text-[#57534e]">3 Lần Kháng Chiến Chống Mông-Nguyên (1258–1288) · Phân tích hệ thống chiến lược</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="../../index.html" class="flex items-center gap-1.5 hover:text-[#9b1c1c] transition-colors text-xs">
+          <span class="text-[#9b1c1c]">◈</span>
+          Lịch sử Việt Nam
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nhà Trần Chapter 2/4 — 3 Lần Kháng Chiến Chống Mông-Nguyên</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream:       #f6f1e3;
+      --cream-dark:  #ede5ce;
+      --ink:         #18120a;
+      --ink-mid:     #3a2e1c;
+      --ink-light:   #5c4e36;
+      --rule:        #c9b99a;
+      --red:         #8b1c1c;
+      --red-light:   #b52a2a;
+      --gold:        #8a6320;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #e8e0cc;
+      background-image: radial-gradient(circle, #b9a88a 0.9px, transparent 0.9px);
+      background-size: 22px 22px;
+      min-height: 100vh;
+      padding: 2.5rem 1rem;
+      color: var(--ink);
+    }
+
+    /* ───── PAPER ───── */
+    .paper {
+      background: var(--cream);
+      max-width: 920px;
+      margin: 0 auto;
+      border: 1px solid var(--rule);
+      box-shadow: 0 8px 48px rgba(24,18,10,.18), 0 2px 8px rgba(24,18,10,.10);
+    }
+
+    /* ───── MASTHEAD ───── */
+    .masthead {
+      padding: 1.75rem 2.75rem 0;
+      border-bottom: 3px solid var(--ink);
+    }
+    .pub-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 0.6rem;
+      margin-bottom: 0.6rem;
+    }
+    .pub-name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 900;
+      letter-spacing: -.025em;
+      color: var(--ink);
+      flex: 1;
+      text-align: center;
+    }
+    .pub-sub {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      white-space: nowrap;
+    }
+    .dateline-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-bottom: 0.9rem;
+      gap: 0.5rem;
+    }
+    .dl { font-family: 'JetBrains Mono', monospace; font-size: .58rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-light); }
+    .dl-c { text-align: center; }
+    .dl-r { text-align: right; }
+
+    /* ───── CONTENT ───── */
+    .content { padding: 2.75rem 2.75rem 0; }
+
+    /* ───── HEADLINE ───── */
+    .headline-block {
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 1.75rem;
+      margin-bottom: 2rem;
+    }
+    .kicker {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .6rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: .8rem;
+    }
+    h1.main-headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 3.6rem;
+      font-weight: 900;
+      line-height: 1.04;
+      color: var(--ink);
+      margin-bottom: 1.1rem;
+    }
+    h1.main-headline .stk {
+      text-decoration: line-through;
+      text-decoration-color: var(--red);
+      text-decoration-thickness: 3px;
+    }
+    h1.main-headline .acc {
+      font-style: italic;
+      color: var(--red);
+    }
+    .deck {
+      font-family: 'IBM Plex Serif', Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.65;
+      color: var(--ink-mid);
+      max-width: 66ch;
+      border-left: 3px solid var(--red);
+      padding-left: 1rem;
+    }
+
+    /* ───── TWO-COLUMN BODY ───── */
+    .body-cols {
+      columns: 2;
+      column-gap: 2.75rem;
+      column-rule: 1px solid var(--rule);
+    }
+
+    /* ───── SECTION ───── */
+    .sec {
+      break-inside: avoid;
+      margin-bottom: 2rem;
+    }
+    .sec-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.25rem;
+      font-weight: 900;
+      line-height: 1;
+      color: var(--cream-dark);
+      user-select: none;
+      margin-bottom: -.35rem;
+    }
+    .sec-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .56rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: .2rem;
+    }
+    .sec-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.3;
+      margin-bottom: .7rem;
+      padding-bottom: .35rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .sec-body {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: .855rem;
+      line-height: 1.78;
+      color: var(--ink-mid);
+    }
+    .sec-body p + p { margin-top: .65rem; }
+    .b { font-weight: 600; color: var(--ink); }
+
+    /* ───── PULL QUOTE ───── */
+    .pull {
+      margin: 1.1rem 0;
+      padding: .9rem 1.1rem;
+      border-left: 3px solid var(--red);
+      background: var(--cream-dark);
+      break-inside: avoid;
+    }
+    .pull p {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: .95rem;
+      line-height: 1.55;
+      color: var(--ink);
+    }
+    .pull cite {
+      display: block;
+      font-family: 'JetBrains Mono', monospace;
+      font-style: normal;
+      font-size: .54rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-top: .4rem;
+    }
+
+    /* ───── INLINE BADGE ───── */
+    .badge {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .5rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      background: var(--red);
+      color: var(--cream);
+      padding: .12rem .45rem;
+      vertical-align: middle;
+      margin-right: .3rem;
+    }
+
+    /* ───── FULL-WIDTH BREAK ───── */
+    .full-w {
+      column-span: all;
+      break-inside: avoid;
+    }
+    .ornament-line {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      color: var(--rule);
+      font-size: 1.1rem;
+      letter-spacing: .7em;
+      margin: .25rem 0 2rem;
+    }
+
+    /* ───── ANALYSIS GRID ───── */
+    .analysis-grid {
+      column-span: all;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 2rem 0;
+      margin-bottom: 2rem;
+    }
+    .analysis-head {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .56rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: .35rem;
+    }
+    .analysis-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: .35rem;
+      margin-bottom: .75rem;
+    }
+    table.atbl { width: 100%; border-collapse: collapse; }
+    table.atbl th {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .56rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      border-bottom: 1px solid var(--ink);
+      padding: .4rem .6rem;
+      text-align: left;
+    }
+    table.atbl td {
+      padding: .6rem .6rem;
+      border-bottom: 1px solid var(--rule);
+      font-family: 'IBM Plex Serif', serif;
+      font-size: .79rem;
+      line-height: 1.55;
+      color: var(--ink-mid);
+      vertical-align: top;
+    }
+    table.atbl td.crit {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: var(--ink);
+      white-space: nowrap;
+      width: 5.5rem;
+    }
+    table.atbl td.rating { white-space: nowrap; width: 6.5rem; }
+    table.atbl tr:last-child td { border-bottom: none; }
+    .stars { color: var(--gold); font-size: .85rem; letter-spacing: .05em; }
+    .stars .emp { color: var(--rule); }
+
+    /* ───── ASSESSMENT BOX ───── */
+    .assess-box {
+      background: var(--cream-dark);
+      border: 1px solid var(--rule);
+      border-top: 3px solid var(--ink);
+      padding: 1.25rem 1.4rem;
+      margin-top: .75rem;
+      break-inside: avoid;
+    }
+    .assess-box p {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: .845rem;
+      line-height: 1.75;
+      color: var(--ink-mid);
+    }
+    .assess-box p + p { margin-top: .6rem; }
+
+    /* ───── LESSON ───── */
+    .lesson {
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: .8rem;
+      margin-bottom: .8rem;
+    }
+    .lesson:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .lesson-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .56rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: .25rem;
+    }
+    .lesson-text {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: .845rem;
+      line-height: 1.7;
+      color: var(--ink-mid);
+    }
+
+    /* ───── QUESTION + ANSWER ───── */
+    .q-box {
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--red);
+      padding: 1rem 1.2rem;
+      margin-top: .75rem;
+      break-inside: avoid;
+    }
+    .q-box p {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: .845rem;
+      line-height: 1.72;
+      color: var(--ink-mid);
+    }
+    .a-box {
+      background: var(--cream-dark);
+      border: 1px solid var(--rule);
+      padding: .9rem 1.1rem;
+      margin-top: .6rem;
+      break-inside: avoid;
+    }
+    .a-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .54rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: .35rem;
+    }
+    .a-box p {
+      font-family: 'IBM Plex Serif', serif;
+      font-style: italic;
+      font-size: .805rem;
+      line-height: 1.7;
+      color: var(--ink-mid);
+    }
+
+    /* ───── REFERENCES ───── */
+    .references {
+      column-span: all;
+      border-top: 2px solid var(--ink);
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+    }
+    .ref-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .58rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 1rem;
+    }
+    .ref-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .9rem;
+    }
+    .ref-item {
+      border-left: 2px solid var(--rule);
+      padding-left: .8rem;
+    }
+    .ref-num {
+      font-family: 'Playfair Display', serif;
+      font-size: .7rem;
+      font-style: italic;
+      color: var(--red);
+      margin-bottom: .15rem;
+    }
+    .ref-name {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: .85rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .ref-desc {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: .775rem;
+      color: var(--ink-light);
+      line-height: 1.5;
+      margin-top: .12rem;
+    }
+
+    /* ───── FOOTER ───── */
+    .footer {
+      border-top: 3px solid var(--ink);
+      padding: 1.2rem 2.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2.25rem;
+    }
+    .footer-side {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .56rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      line-height: 1.7;
+    }
+    .footer-orn {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      color: var(--red);
+      line-height: 1;
+    }
+  </style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ════════ MASTHEAD ════════ -->
+  <header class="masthead">
+    <div class="pub-row">
+      <div class="pub-sub dl">Chapter 2/4 · Chronicle</div>
+      <div class="pub-name">LỊCH SỬ VIỆT NAM</div>
+      <div class="pub-sub dl dl-r">Khoá học đặc biệt</div>
+    </div>
+    <div class="dateline-row">
+      <div class="dl">Giai đoạn: 3 Kháng Chiến Mông-Nguyên<br>Thế kỷ XIII · 1258 – 1288</div>
+      <div class="dl dl-c">Nhà Trần · Chapter 2/4<br>Chronicle Mode</div>
+      <div class="dl dl-r">Biên soạn: 06.06.2026<br>Kandu306 · Bản đặc san</div>
+    </div>
+  </header>
+
+  <!-- ════════ CONTENT ════════ -->
+  <main class="content">
+
+    <!-- ── HEADLINE ── -->
+    <div class="headline-block">
+      <div class="kicker">Nhà Trần · Chapter 2/4 &nbsp;·&nbsp; 1258 – 1288 &nbsp;·&nbsp; 3 Lần Kháng Chiến &nbsp;·&nbsp; Hào Khí Đông A</div>
+      <h1 class="main-headline">
+        3 Lần Kháng Chiến<br>
+        Chống <span class="acc">Mông-Nguyên</span>
+      </h1>
+      <p class="deck">
+        Cuối thế kỷ 13, đế quốc Mông Cổ đã san bằng Baghdad, chinh phục toàn bộ Trung Quốc, tràn vào Ba Lan và Hungary.
+        Không có đội quân nào trên Trái Đất lúc bấy giờ có thể cầm cự lâu dài trước kỵ binh Mông Cổ.
+        Nhà Trần không chỉ cầm cự — mà thắng ba lần liên tiếp.
+      </p>
+    </div>
+
+    <!-- ════ TWO-COLUMN BLOCK ════ -->
+    <div class="body-cols">
+
+      <!-- 01 · Bối cảnh -->
+      <div class="sec">
+        <div class="sec-num">01</div>
+        <div class="sec-label">Bối cảnh · Context</div>
+        <h2 class="sec-title">Đế Quốc Không Thể Đánh Bại — Cho Đến Khi Gặp Đại Việt</h2>
+        <div class="sec-body">
+          <p>Cuối thế kỷ 13, đế quốc Mông Cổ là thế lực quân sự đáng sợ nhất thế giới — đã san bằng Baghdad (1258), chinh phục toàn bộ Trung Quốc, tràn vào Ba Lan và Hungary. Không có đội quân nào trên Trái Đất lúc bấy giờ có thể cầm cự lâu dài trước kỵ binh Mông Cổ.</p>
+          <p>Nhà Trần kết thúc Chapter 1 (1258) với Đại Việt vừa được củng cố. Nhưng mối nguy đã lờ mờ xuất hiện: <span class="b">Mông Cổ muốn dùng Đại Việt làm bàn đạp tấn công Trung Quốc từ phía Nam.</span></p>
+          <p>Câu hỏi không phải là <em>"liệu Mông Cổ có đến không"</em> — mà là <em>"khi họ đến, Đại Việt sẽ sống hay chết?"</em></p>
+        </div>
+      </div>
+
+      <!-- 02 · Lần 1: 1258 -->
+      <div class="sec">
+        <div class="sec-num">02</div>
+        <div class="sec-label">Sự kiện · Lần 1: 1258</div>
+        <h2 class="sec-title">Thử Lửa Đầu Tiên — Vườn Không Nhà Trống Khai Sinh</h2>
+        <div class="sec-body">
+          <p><span class="b">1257</span> — Mông Cổ cử sứ thần sang yêu cầu thần phục và cho mượn đường đánh nhà Tống. Triều Trần <span class="b">bắt giam sứ thần</span> — tuyên ngôn chiến tranh không lời.</p>
+          <p><span class="b">Tháng 1/1258</span> — Tướng Ngột Lương Hợp Thai dẫn ~3 vạn quân vượt biên giới phía Tây Bắc. Quân Trần chống cự ở Bình Lệ Nguyên nhưng thất bại — Lê Phụ Trần can vua Trần Thái Tông rút lui, xé ván thuyền che tên cứu thoát.</p>
+          <p><span class="b">Chiến lược:</span> Bỏ Thăng Long — thực hiện <span class="b">"vườn không nhà trống"</span> lần đầu. Quân Mông Cổ chiếm được một thành phố rỗng, không lương thực. Chỉ sau 9 ngày chiếm đóng, khủng hoảng hậu cần buộc Mông Cổ rút lui.</p>
+          <p><span class="b">Trận Đông Bộ Đầu</span> — Quân Trần phản công khi địch rút, đánh tan đội hình. Lần 1 kết thúc — Đại Việt thắng, nhưng nhận ra chiến thắng này còn rất mong manh.</p>
+        </div>
+      </div>
+
+      <!-- 03 · Lần 2: Chuẩn bị -->
+      <div class="sec">
+        <div class="sec-num">03</div>
+        <div class="sec-label">Sự kiện · Lần 2: 1285 — Chuẩn bị</div>
+        <h2 class="sec-title">50 Vạn Quân Gọng Kìm — Bình Than, Diên Hồng, Hịch Tướng Sĩ</h2>
+        <div class="sec-body">
+          <p>Sau khi diệt nhà Tống (1279), Hốt Tất Liệt quyết tâm trả thù. Cử con trai <span class="b">Thoát Hoan</span> chỉ huy <span class="b">50 vạn quân</span> từ phía Bắc + tướng <span class="b">Toa Đô</span> từ Chiêm Thành đánh lên — gọng kìm hai đầu.</p>
+          <p><span class="b">Hội nghị Bình Than (1282)</span> — Triệu tập vương hầu bàn kế phòng thủ. Trần Quốc Toản bóp nát quả cam vì không được dự bàn. Trần Khánh Dư được tha tội và phục chức.</p>
+          <p><span class="b">Hội nghị Diên Hồng (cuối 1284)</span> — Triệu tập bô lão toàn quốc. Cả điện Diên Hồng vang tiếng hô <em>"Đánh! Đánh! Đánh!"</em> — nước cờ chính trị bậc thầy tạo "sự đồng thuận quốc gia" để dân tự nguyện thực thi "vườn không nhà trống".</p>
+        </div>
+        <div class="pull">
+          <p>"Ta thường tới bữa quên ăn, nửa đêm vỗ gối, ruột đau như cắt..."</p>
+          <cite>Trần Hưng Đạo — Hịch Tướng Sĩ (1285) — không phải hùng tráng, mà là đau đớn chân thành của người thực sự lo cho đất nước</cite>
+        </div>
+      </div>
+
+      <!-- 04 · Lần 2: Phản công -->
+      <div class="sec">
+        <div class="sec-num">04</div>
+        <div class="sec-label">Sự kiện · Lần 2: 1285 — Phản công</div>
+        <h2 class="sec-title">Toa Đô Bị Chém Đầu — Thoát Hoan Chui Ống Đồng Tháo Chạy</h2>
+        <div class="sec-body">
+          <p>Giai đoạn đầu quân Trần liên tục thất bại. <span class="b">Trần Ích Tắc đầu hàng và theo giặc</span> — bi kịch lớn nhất của kháng chiến lần 2. <span class="b">An Tư Công Chúa</span> bị dâng cho Thoát Hoan để hoãn binh — hy sinh thầm lặng đổi lấy thời gian rút lui cho bộ chỉ huy.</p>
+          <p><span class="b">Tháng 5/1285 — Phản công:</span> Trần Hưng Đạo phát động tổng phản công. <span class="b">Tướng Toa Đô bị chém đầu tại trận Tây Kết.</span> Không còn gọng kìm phía Nam, Thoát Hoan bị cô lập.</p>
+          <p><span class="b">Trận Chương Dương</span> — Trần Quang Khải đánh tan thủy quân Mông Cổ trên sông. <span class="b">Thoát Hoan tháo chạy — tương truyền phải chui vào ống đồng để tránh tên.</span> Lần 2 kết thúc — Đại Việt thắng.</p>
+        </div>
+      </div>
+
+      <!-- 05 · Lần 3: 1287–1288 -->
+      <div class="sec">
+        <div class="sec-num">05</div>
+        <div class="sec-label">Sự kiện · Lần 3: 1287–1288</div>
+        <h2 class="sec-title">Bạch Đằng Bất Tử — Cọc Gỗ Bịt Sắt Và Thủy Triều</h2>
+        <div class="sec-body">
+          <p>Hốt Tất Liệt không chấp nhận thất bại. Năm 1287, Thoát Hoan quay lại — lần này có thêm <span class="b">đội thủy quân khổng lồ</span> chở theo toàn bộ lương thực. Mục tiêu: <span class="b">giải quyết vấn đề hậu cần</span>.</p>
+          <p><span class="b">Trận Vân Đồn</span> — Trần Hưng Đạo đọc được ý đồ này. Ra lệnh cho Trần Khánh Dư chặn đánh đoàn thuyền lương tại Vân Đồn. <span class="b">Toàn bộ thuyền lương bị đánh chìm và cướp sạch.</span> Kế hoạch hậu cần của Mông Cổ sụp đổ hoàn toàn trước khi cuộc chiến chính thức bắt đầu.</p>
+          <p><span class="b">Trận Bạch Đằng — 9/4/1288</span> — Trần Hưng Đạo lệnh <span class="b">đóng cọc gỗ bịt đầu sắt</span> xuống lòng sông Bạch Đằng, chờ thủy triều. Khi thủy triều xuống, thuyền Ô Mã Nhi bị nhử vào — cắm chặt vào cọc, không thể cơ động. Quân Trần từ hai bờ tấn công bằng lửa. <span class="b">Ô Mã Nhi bị bắt sống. Thoát Hoan tháo chạy lần thứ hai.</span></p>
+          <p><span class="b">Mông Cổ không bao giờ quay lại Đại Việt nữa.</span></p>
+        </div>
+      </div>
+
+      <!-- 06 · Tại sao thắng -->
+      <div class="sec">
+        <div class="sec-num">06</div>
+        <div class="sec-label">Phân tích · Lý do chiến thắng</div>
+        <h2 class="sec-title">Tại Sao Đại Việt Thắng Ba Lần Liên Tiếp?</h2>
+        <div class="sec-body">
+          <p><span class="b">1. Địa lý và khí hậu là đồng minh thầm lặng</span> — Kỵ binh Mông Cổ bất khả chiến bại trên thảo nguyên, nhưng Đại Việt có sông, đồng lầy, rừng nhiệt đới, mùa hè nóng ẩm.</p>
+          <p><span class="b">2. "Vườn không nhà trống" đánh vào điểm yếu chết người</span> — Mông Cổ di chuyển nhanh vì không mang lương thực theo — họ cướp của địch để nuôi quân. Khi Đại Việt không để lại gì, mô hình đó sụp đổ. Trận Vân Đồn (lần 3) là đỉnh cao: đánh vào thuyền lương trước khi đánh vào quân địch.</p>
+          <p><span class="b">3. Đoàn kết toàn dân là điều kiện cần</span> — Hội nghị Diên Hồng không chỉ là tinh thần — đó là điều kiện để "vườn không nhà trống" hoạt động. Không có dân chịu bỏ nhà, bỏ thóc, chiến lược này không thể thực thi.</p>
+          <p><span class="b">4. Trần Hưng Đạo gạt bỏ thù riêng</span> — Nếu ông dùng thời cơ chiến tranh để toan tính riêng như Trần Ích Tắc, cục diện có thể rất khác. Sức mạnh của Đại Việt phần lớn là sức mạnh của một người đã chọn quên đi nỗi thù sâu nhất của đời mình.</p>
+        </div>
+        <div class="pull">
+          <p>"Đánh vào điều kiện, không phải đánh vào người — Trận Vân Đồn quyết định cuộc chiến, không phải trận Bạch Đằng."</p>
+        </div>
+      </div>
+
+      <!-- ORNAMENT DIVIDER -->
+      <div class="full-w ornament-line">✦ &nbsp;&nbsp; ✦ &nbsp;&nbsp; ✦</div>
+
+      <!-- ════ ANALYSIS TABLES — FULL WIDTH ════ -->
+      <div class="analysis-grid">
+
+        <!-- Hệ quả -->
+        <div>
+          <div class="analysis-head">Hệ quả · Consequences</div>
+          <div class="analysis-title">Kết Quả Ngắn Hạn &amp; Dài Hạn</div>
+          <table class="atbl">
+            <thead>
+              <tr>
+                <th>Ngắn hạn</th>
+                <th>Dài hạn</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mông Cổ không bao giờ xâm lược Đại Việt lần nữa</td>
+                <td>"Hào khí Đông A" trở thành bản sắc văn hóa thời Trần</td>
+              </tr>
+              <tr>
+                <td>Đại Việt thiết lập quan hệ bang giao triều cống danh nghĩa</td>
+                <td>Nhận thức tập thể: Đại Việt không thể bị tiêu diệt nếu đoàn kết — tái hiện qua kháng Pháp, kháng Mỹ</td>
+              </tr>
+              <tr>
+                <td>Trần Nhân Tông nhường ngôi, sáng lập Thiền phái Trúc Lâm</td>
+                <td>Lê Văn Hưu hoàn thành Đại Việt sử ký — vũ khí tinh thần cho thế hệ sau</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Dễ nhầm lẫn -->
+        <div>
+          <div class="analysis-head">Lưu ý · Common Mistakes</div>
+          <div class="analysis-title">Dễ Nhầm Lẫn — Đính Chính</div>
+          <table class="atbl">
+            <thead>
+              <tr>
+                <th style="width:2rem"></th>
+                <th>Nội dung</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color:var(--red);font-size:1.1rem;text-align:center;vertical-align:middle">✗</td>
+                <td>"Vườn không nhà trống" là rút lui, là hèn nhát</td>
+              </tr>
+              <tr>
+                <td style="color:var(--gold);font-size:1.1rem;text-align:center;vertical-align:middle">✓</td>
+                <td>Đây là chiến thuật chủ động — không cho địch thứ họ cần (lương thực) để ép chúng suy yếu từ bên trong</td>
+              </tr>
+              <tr>
+                <td style="color:var(--red);font-size:1.1rem;text-align:center;vertical-align:middle">✗</td>
+                <td>Trận Bạch Đằng 1288 quyết định cuộc chiến lần 3</td>
+              </tr>
+              <tr>
+                <td style="color:var(--gold);font-size:1.1rem;text-align:center;vertical-align:middle">✓</td>
+                <td>Trận Vân Đồn (phá thuyền lương) mới là nước cờ quyết định — Bạch Đằng chỉ là kết thúc tất yếu sau khi địch đã suy kiệt</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div><!-- end analysis-grid -->
+
+      <!-- 07 · Bài học -->
+      <div class="sec">
+        <div class="sec-num">07</div>
+        <div class="sec-label">Bài học · Lessons Applied</div>
+        <h2 class="sec-title">Ba Bài Học Từ 30 Năm Kháng Chiến</h2>
+        <div class="sec-body">
+          <div class="lesson">
+            <div class="lesson-label">Chiến lược</div>
+            <p class="lesson-text">Đánh vào điều kiện, không phải đánh vào người — Mông Cổ không thể bị đánh bại trực diện. Nhưng phá vỡ điều kiện của họ (lương thực, hậu cần) thì có thể. Trận Vân Đồn quyết định cuộc chiến — không phải trận Bạch Đằng.</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-label">Lãnh đạo</div>
+            <p class="lesson-text">Chiến lược cần sự đồng thuận — Vườn không nhà trống là chiến lược thiên tài, nhưng chỉ hoạt động khi toàn dân tin vào nó và chịu đựng được cái giá. Hội nghị Diên Hồng là để xây sự đồng thuận đó — không phải để hỏi ý kiến.</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-label">Hy sinh</div>
+            <p class="lesson-text">Những hy sinh vô danh làm nên chiến thắng — An Tư Công Chúa không được tạc tượng. Nhưng bà mua thời gian sống còn cho cả triều đình. Lịch sử thường chỉ ghi nhớ những người vung gươm — không ghi nhớ những người im lặng gánh chịu.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 08 · Dẫn sang Chapter 3 -->
+      <div class="sec">
+        <div class="sec-num">08</div>
+        <div class="sec-label">Tiếp theo · Chapter 3 Preview</div>
+        <h2 class="sec-title">Bên Dưới Thịnh Trị — Hạt Mầm Suy Tàn Đang Nảy</h2>
+        <div class="sec-body">
+          <p>Sau 30 năm chiến tranh (1258–1288), Đại Việt bước vào thái bình. Tầng lớp quý tộc giàu lên nhanh chóng. Phật giáo Trúc Lâm phát triển. Thơ ca nở rộ.</p>
+          <p>Nhưng <span class="b">bên dưới sự thịnh trị, những hạt mầm suy tàn đang bắt đầu nảy</span> — tập trung ruộng đất, quyền lực phân tán, và nội bộ hoàng tộc bắt đầu nứt vỡ...</p>
+        </div>
+        <div class="assess-box">
+          <p><span class="b">Chapter 3:</span> Nhà Trần — Từ Đỉnh Cao Đến Sụp Đổ. Khi chiến tranh không còn là lực lượng gắn kết, những mâu thuẫn nội tại bắt đầu lộ diện. <span class="b">Hào khí Đông A chuyển dần thành xa xỉ và chia rẽ.</span></p>
+        </div>
+      </div>
+
+      <!-- REFERENCES -->
+      <div class="references">
+        <div class="ref-label">Liên kết &amp; Nhân vật liên quan</div>
+        <div class="ref-grid">
+          <div class="ref-item">
+            <div class="ref-num">Nhân vật #39</div>
+            <div class="ref-name">Trần Hưng Đạo</div>
+            <div class="ref-desc">Tổng tư lệnh toàn bộ 3 cuộc kháng chiến. Soạn Hịch Tướng Sĩ, chỉ huy trận Vân Đồn và Bạch Đằng, gạt bỏ thù riêng vì đại nghĩa.</div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">Nhân vật #40</div>
+            <div class="ref-name">Trần Nhân Tông</div>
+            <div class="ref-desc">Vua trong lần 2 và 3. Chủ trì Hội nghị Diên Hồng. Sau chiến thắng nhường ngôi, sáng lập Thiền phái Trúc Lâm Yên Tử.</div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">Nhân vật #37</div>
+            <div class="ref-name">Trần Thánh Tông</div>
+            <div class="ref-desc">Thượng hoàng trong lần 2 và 3. Chủ trì Hội nghị Bình Than (1282) — bàn kế hoạch phòng thủ trước nguy cơ Mông Cổ tái xâm lược.</div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">Nhân vật #38</div>
+            <div class="ref-name">Trần Quang Khải</div>
+            <div class="ref-desc">Chỉ huy trận Chương Dương — đánh tan thủy quân Mông Cổ trên sông, cô lập Thoát Hoan và kết thúc lần 2.</div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">Nhân vật #41</div>
+            <div class="ref-name">Trần Khánh Dư</div>
+            <div class="ref-desc">Đánh tan toàn bộ thuyền lương Mông Cổ ở Vân Đồn — nước cờ xoay chuyển lần 3 trước khi cuộc chiến chính thức bắt đầu.</div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">Nhân vật #42</div>
+            <div class="ref-name">An Tư Công Chúa</div>
+            <div class="ref-desc">Hy sinh thầm lặng — bị dâng cho Thoát Hoan để hoãn binh trong lần 2, mua thời gian sống còn cho bộ chỉ huy rút lui.</div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">Nhân vật #43</div>
+            <div class="ref-name">Trần Ích Tắc</div>
+            <div class="ref-desc">Kẻ phản quốc trong lần 2 — đầu hàng và theo giặc, trở thành bi kịch lớn nhất và tấm gương đối lập với Trần Hưng Đạo.</div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">Nhân vật #44</div>
+            <div class="ref-name">Trần Quốc Toản</div>
+            <div class="ref-desc">Anh hùng thiếu niên bóp nát quả cam tại Hội nghị Bình Than. Lá cờ 6 chữ vàng — biểu tượng tinh thần kháng chiến.</div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">Chapter trước</div>
+            <div class="ref-name">Nhà Trần — Khai Triều &amp; Chuyển Giao Máu Lửa</div>
+            <div class="ref-desc">1225 – 1258. Bối cảnh thành lập nhà Trần và cuộc kháng chiến lần 1 — nền tảng cho 3 lần đại thắng Mông-Nguyên.</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end body-cols -->
+  </main>
+
+  <!-- ════════ FOOTER ════════ -->
+  <footer class="footer">
+    <div class="footer-side">
+      Lịch Sử Việt Nam · Chapter 2/4<br>
+      Nhà Trần — 3 Kháng Chiến (1258&nbsp;–&nbsp;1288)
+    </div>
+    <div class="footer-orn">❧</div>
+    <div class="footer-side" style="text-align:right">
+      Khoá học Lịch Sử Việt Nam<br>
+      Biên soạn: 06.06.2026
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
