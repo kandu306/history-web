@@ -463,6 +463,61 @@
       background: #e5e7eb;
     }
 
+    /* ── Official accordion toggle ── */
+    .official-toggle-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.45rem 0.85rem;
+      margin-top: 0.6rem;
+      background: #f5f4f1;
+      border: 1px solid #e7e5e4;
+      border-radius: 10px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #78716c;
+      cursor: pointer;
+      transition: background 0.18s, border-color 0.18s, color 0.18s;
+      letter-spacing: 0.01em;
+    }
+    .official-toggle-btn:hover:not([disabled]) {
+      background: rgba(155,28,28,0.06);
+      border-color: rgba(155,28,28,0.35);
+      color: #9b1c1c;
+    }
+    .official-toggle-btn.open {
+      background: rgba(155,28,28,0.08);
+      border-color: rgba(155,28,28,0.4);
+      color: #9b1c1c;
+    }
+    .official-toggle-btn[disabled] {
+      opacity: 0.45;
+      cursor: default;
+    }
+    .toggle-chevron {
+      display: inline-block;
+      font-style: normal;
+      transition: transform 0.22s ease;
+      font-size: 0.9rem;
+      line-height: 1;
+    }
+    .official-toggle-btn.open .toggle-chevron {
+      transform: rotate(90deg);
+    }
+    .official-list {
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      margin-top: 0;
+      transition: max-height 0.32s ease, opacity 0.25s ease, margin-top 0.2s ease;
+    }
+    .official-list.open {
+      max-height: 1200px;
+      opacity: 1;
+      margin-top: 0.6rem;
+    }
+
     /* ── Responsive ── */
     @media (max-width: 640px) {
       .tree-row { flex-direction: column; }
@@ -1235,6 +1290,54 @@
       });
     }, { threshold: 0.08 });
     document.querySelectorAll('.fade-section').forEach(el => observer.observe(el));
+
+    // ── Official accordion ──
+    document.querySelectorAll('.dynasty-column').forEach(col => {
+      const list = col.querySelector('.official-list');
+      if (!list) return;
+
+      // Remove inline margin-top (now handled via CSS .open)
+      list.style.marginTop = '';
+
+      // Count clickable official cards
+      const cards = list.querySelectorAll('.official-card');
+      const count  = cards.length;
+
+      // Build toggle button
+      const btn = document.createElement('button');
+      btn.className = 'official-toggle-btn';
+
+      if (count === 0) {
+        btn.innerHTML = `<span style="font-style:italic">Chưa có hồ sơ quan thần</span>`;
+        btn.disabled = true;
+      } else {
+        btn.innerHTML =
+          `<span>👥 ${count} nhân vật liên quan</span>` +
+          `<i class="toggle-chevron">›</i>`;
+
+        btn.addEventListener('click', () => {
+          const isOpen = list.classList.contains('open');
+
+          // Close all open lists (accordion)
+          document.querySelectorAll('.official-list.open').forEach(l => {
+            l.classList.remove('open');
+            const b = l.previousElementSibling;
+            if (b && b.classList.contains('official-toggle-btn')) b.classList.remove('open');
+          });
+
+          // Toggle current
+          if (!isOpen) {
+            list.classList.add('open');
+            btn.classList.add('open');
+            // Smooth scroll into view if needed
+            setTimeout(() => btn.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+          }
+        });
+      }
+
+      // Insert button between king-card and official-list
+      col.insertBefore(btn, list);
+    });
   </script>
 </body>
 </html>
