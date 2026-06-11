@@ -1,5 +1,5 @@
 # Ý tưởng & Kế hoạch nội dung
-> Cập nhật lần cuối: 2026-06-03
+> Cập nhật lần cuối: 2026-06-11
 
 ## Tổng quan dự án
 
@@ -31,7 +31,7 @@ Website **"Lịch sử Việt Nam"** — Phân tích nhân vật theo hệ thố
 
 ## 🗺️ Map nội dung hiện tại
 
-### Bài học lịch sử (`bai-hoc/`) — 13 bài ✅
+### Bài học lịch sử (`bai-hoc/`) — 21 bài ✅
 
 | # | File | Tiêu đề | Thời kỳ | Status |
 |---|------|---------|---------|--------|
@@ -48,8 +48,15 @@ Website **"Lịch sử Việt Nam"** — Phân tích nhân vật theo hệ thố
 | 11 | `nha-ly-chap3.html` | Nhà Lý — Kháng Chiến Chống Tống | 1075–1077 SCN | ✅ Done |
 | 12 | `nha-ly-chap4.html` | Nhà Lý — Xây Dựng Văn Hóa & Thể Chế | 1077–1175 SCN | ✅ Done |
 | 13 | `nha-ly-chap5.html` | Nhà Lý — Suy Tàn & Chuyển Giao | 1175–1225 SCN | ✅ Done |
+| 14 | `nha-tran-chap2.html` | Nhà Trần — 3 Lần Kháng Mông-Nguyên | 1258–1288 | ✅ Done |
+| 15 | `nha-tran-chap3.html` | Nhà Trần — Thịnh Trị & Văn Hoá | 1288–1341 | ✅ Done |
+| 16 | `tran-nhan-tong-yen-tu.html` | Sự kiện 1299: Trần Nhân Tông lên Yên Tử | 1299 SCN | ✅ Done |
+| 17 | `du-ngoan-phuong-nam.html` | Sự kiện 1301: Du Ngoạn Phương Nam | 1301–1306 SCN | ✅ Done |
+| 18 | `cuop-dau-huyen-tran.html` | Sự kiện 1307: Vụ Cướp Dâu Huyền Trân | 1307 SCN | ✅ Done |
+| 19 | `doan-nhu-hai-du-hang.html` | Sự kiện 1312: Đoàn Nhữ Hài Dụ Hàng Chiêm | 1312 SCN | ✅ Done |
+| 20 | `vu-an-tran-quoc-chan.html` | Sự kiện 1328: Vụ Án Trần Quốc Chẩn | 1328 SCN | ✅ Done |
 
-### Nhân vật (`nhan-vat/`) — 27 nhân vật ✅
+### Nhân vật (`nhan-vat/`) — 30 nhân vật ✅
 
 #### Thời kỳ Bắc Thuộc & Đấu Tranh Giành Độc Lập (40–937 SCN)
 

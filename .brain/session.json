@@ -1,29 +1,58 @@
 {
-  "session_id": "eb83cdab-4900-4d98-94f7-12e6762d1ff6",
-  "saved_at": "2026-06-03T21:39:00+07:00",
+  "session_id": "37d3131f-2dc9-464d-9aea-3c743ff06991",
+  "saved_at": "2026-06-11T16:30:00+07:00",
   "trigger": "user_request (/save-brain)",
 
   "last_completed": [
-    "Tạo 4 trang nhân vật mới: dao-cam-moc, luu-co, nguyen-dao-thanh, ly-hue-tong",
-    "Cập nhật index.html — thêm 4 chip Nhà Lý, tổng 27 nhân vật / 18 badge",
-    "Cập nhật ban-do.html — thêm 4 nhân vật vào figures[] với role metadata",
-    "Nâng cấp ban-do.html — figures grouped by role với 5 màu chip riêng",
-    "Cập nhật so-do-trieu-dinh.html — Đào Cam Mộc + Lưu Cơ + Nguyễn Đạo Thanh dưới Lý Thái Tổ; thêm cột Lý Huệ Tông (dark styling); stats 15→16 vua, 3→6 quan, 3→4 cố vấn",
-    "Fix nav ban-do.html: #nhan-vat → #trieu-dai, thêm link Vua→Quan",
-    "Rewrite docs/ideas.md phản ánh thực tế 27 NV + 13 bài + roadmap Nhà Trần",
-    "Xóa hoàn toàn từ tiếng Anh: Technocrat → nhà kỹ trị, Kingmaker → người lập vương triều, Soft Power → sức mạnh mềm"
+    "Tạo trang nhân vật Dương Vân Nga (nhan-vat/duong-van-nga.html)",
+    "Tạo 6 nhân vật Nhà Trần đợt 2: tran-anh-tong, huyen-tran-cong-chua, tran-nhat-duat, pham-ngu-lao, tran-binh-trong, yet-kieu-da-tuong",
+    "Cập nhật so-do-trieu-dinh.html: 5 officials dưới Trần Nhân Tông + dynasty-column Trần Anh Tông",
+    "Cập nhật index.html: counter 14 → 20 nhân vật Nhà Trần, thêm 6 chips mới",
+    "Cập nhật ban-do.html: 6 figures mới trong node nha_tran",
+    "Xóa 6 file raw trong new-raw/ sau khi xử lý xong",
+    "Git push lên main — commit 299dab5"
   ],
 
-  "pending": [
-    "Lê Phụng Hiểu — chờ anh gửi tài liệu (quan thần Lý Thái Tông, 1028)"
-  ],
+  "pending": [],
 
   "key_rules_this_session": {
+    "template": "Tailwind CSS + Be Vietnam Pro + Noto Serif — shared/styles.css + shared/scripts.js",
+    "card_hierarchy": "Chỉ vua mới có dynasty-column; quan/tướng/công chúa đặt trong official-list của vua tương ứng",
+    "nha_tran_layout": "Một tree-row liên tục — không ngắt quãng như Nhà Lý",
+    "new_raw_workflow": "Anh để file vào new-raw/ → em đọc → tạo nhan-vat/ → update so-do + index + ban-do → xóa raw",
     "nav_anchors": "ban-do.html dùng index.html#trieu-dai (KHÔNG phải #nhan-vat)",
     "language": "Không dùng từ tiếng Anh trong nội dung trang web",
     "figure_roles": "Mỗi figure trong ban-do.html PHẢI có role: king/queen/official/advisor/enemy",
-    "workflow": "Khi thêm nhân vật mới: cập nhật đủ 4 file (index, ban-do, so-do, ideas.md)"
+    "workflow": "Khi thêm nhân vật mới: cập nhật đủ 3 file (index, ban-do, so-do)"
   },
 
-  "next_session_resume": "Khi anh gửi tài liệu Lê Phụng Hiểu → tạo trang nhân vật → cập nhật 4 files theo workflow. Sau đó xem xét mở era Nhà Trần."
+  "dynasty_progress": {
+    "nha_ly": {
+      "status": "Hoàn thành",
+      "vua": ["Lý Thái Tổ", "Lý Thái Tông", "Lý Thánh Tông", "Lý Nhân Tông", "Lý Thần Tông", "Lý Anh Tông", "Lý Cao Tông", "Lý Huệ Tông"],
+      "quan_tuong": ["Đào Cam Mộc", "Lưu Cơ", "Nguyễn Đạo Thanh", "Hoàng Hậu Ỷ Lan", "Lý Thường Kiệt", "Lê Văn Thịnh", "Nguyễn Minh Không", "Tô Hiến Thành", "Đàm Thị", "Nùng Trí Cao"]
+    },
+    "nha_tran": {
+      "status": "Đang làm — 20 nhân vật",
+      "vua": ["Trần Thái Tông", "Trần Thánh Tông", "Trần Nhân Tông", "Trần Anh Tông"],
+      "quan_tuong": ["Trần Thủ Độ", "Trần Liễu", "Lê Phụ Trần", "Trần Hưng Đạo", "Trần Quang Khải", "Trần Khánh Dư", "Trần Quốc Toản", "Trần Ích Tắc (phản diện)", "Trần Nhật Duật", "Phạm Ngũ Lão", "Trần Bình Trọng", "Yết Kiêu & Dã Tượng"],
+      "nu_nhan": ["Lý Chiêu Hoàng", "Trần Thị Dung", "An Tư Công Chúa", "Huyền Trân Công Chúa"],
+      "total": "20 nhân vật"
+    },
+    "nha_hau_le": "Chưa làm — sắp ra mắt"
+  },
+
+  "tran_nhan_tong_officials_order": [
+    "Trần Hưng Đạo (#39)",
+    "Trần Khánh Dư",
+    "Trần Quốc Toản (#44)",
+    "Trần Ích Tắc (#43) — phản diện (dark styling)",
+    "Trần Nhật Duật (#38a)",
+    "Phạm Ngũ Lão (#39a)",
+    "Trần Bình Trọng (#39b)",
+    "Yết Kiêu & Dã Tượng (#39c)",
+    "Huyền Trân Công Chúa (#45a)"
+  ],
+
+  "next_session_resume": "Anh thêm file mới vào new-raw/ thì em vào đó đọc và xử lý theo quy trình: tạo nhan-vat/ → cập nhật so-do + index + ban-do → xóa raw → push git."
 }
