@@ -1,16 +1,19 @@
 {
-  "session_id": "37d3131f-2dc9-464d-9aea-3c743ff06991",
-  "saved_at": "2026-06-11T16:30:00+07:00",
+  "session_id": "0926af12-21da-4a24-9831-b30446b3cbf2",
+  "saved_at": "2026-06-12T10:59:00+07:00",
   "trigger": "user_request (/save-brain)",
 
   "last_completed": [
-    "Tạo trang nhân vật Dương Vân Nga (nhan-vat/duong-van-nga.html)",
-    "Tạo 6 nhân vật Nhà Trần đợt 2: tran-anh-tong, huyen-tran-cong-chua, tran-nhat-duat, pham-ngu-lao, tran-binh-trong, yet-kieu-da-tuong",
-    "Cập nhật so-do-trieu-dinh.html: 5 officials dưới Trần Nhân Tông + dynasty-column Trần Anh Tông",
-    "Cập nhật index.html: counter 14 → 20 nhân vật Nhà Trần, thêm 6 chips mới",
-    "Cập nhật ban-do.html: 6 figures mới trong node nha_tran",
-    "Xóa 6 file raw trong new-raw/ sau khi xử lý xong",
-    "Git push lên main — commit 299dab5"
+    "Phiên 11/06 — Nhà Trần đợt 3:",
+    "  - Tạo 3 nhân vật mới: tran-minh-tong.html, doan-nhu-hai.html, mac-dinh-chi.html",
+    "  - Tạo 7 bài học/sự kiện: nha-tran-chap3.html, tran-nhan-tong-yen-tu.html, du-ngoan-phuong-nam.html, cuop-dau-huyen-tran.html, doan-nhu-hai-du-hang.html, vu-an-tran-quoc-chan.html",
+    "  - Cập nhật index.html: 3 Chapter (chap1 → active, chap2, chap3) + 2 nhóm phân cấp (Bài học / Sự kiện nổi bật Chương 3)",
+    "  - Cập nhật ban-do.html: thêm 8 lessons + 3 figures mới vào node nha_tran",
+    "  - Cập nhật so-do-trieu-dinh.html: official-list Trần Anh Tông (Đoàn Nhữ Hài + Mạc Đĩnh Chi) + column Trần Minh Tông mới",
+    "  - Xóa 9 file raw trong new-raw/ sau khi xử lý xong",
+    "  - Git push: 4 commits (cc73b0c, 245e4cb, 887779e, ecd2db6)",
+    "  - Redesign so-do-trieu-dinh.html: accordion toggle — quan lại ẩn mặc định, click vua → mở/đóng với animation",
+    "  - Stats: 25 nhân vật · 21 bài học trên index.html"
   ],
 
   "pending": [],
@@ -19,40 +22,47 @@
     "template": "Tailwind CSS + Be Vietnam Pro + Noto Serif — shared/styles.css + shared/scripts.js",
     "card_hierarchy": "Chỉ vua mới có dynasty-column; quan/tướng/công chúa đặt trong official-list của vua tương ứng",
     "nha_tran_layout": "Một tree-row liên tục — không ngắt quãng như Nhà Lý",
-    "new_raw_workflow": "Anh để file vào new-raw/ → em đọc → tạo nhan-vat/ → update so-do + index + ban-do → xóa raw",
+    "new_raw_workflow": "Anh để file vào new-raw/ → em đọc → tạo nhan-vat/ hoặc bai-hoc/ → update so-do + index + ban-do → xóa raw → git push",
     "nav_anchors": "ban-do.html dùng index.html#trieu-dai (KHÔNG phải #nhan-vat)",
     "language": "Không dùng từ tiếng Anh trong nội dung trang web",
     "figure_roles": "Mỗi figure trong ban-do.html PHẢI có role: king/queen/official/advisor/enemy",
-    "workflow": "Khi thêm nhân vật mới: cập nhật đủ 3 file (index, ban-do, so-do)"
+    "workflow_4_files": "Khi thêm nhân vật/bài học mới: cập nhật đủ 4 file (index, ban-do, so-do, docs/ideas.md)",
+    "lesson_layout": "Nhà Trần chia 2 sub-group: '📖 Bài học' (các Chapter đỏ) + '📌 Sự kiện nổi bật — Chương 3' (cam)",
+    "so_do_accordion": "so-do-trieu-dinh.html dùng JS accordion: quan lại ẩn mặc định, click button '👥 X nhân vật' để mở/đóng"
   },
 
   "dynasty_progress": {
     "nha_ly": {
       "status": "Hoàn thành",
       "vua": ["Lý Thái Tổ", "Lý Thái Tông", "Lý Thánh Tông", "Lý Nhân Tông", "Lý Thần Tông", "Lý Anh Tông", "Lý Cao Tông", "Lý Huệ Tông"],
-      "quan_tuong": ["Đào Cam Mộc", "Lưu Cơ", "Nguyễn Đạo Thanh", "Hoàng Hậu Ỷ Lan", "Lý Thường Kiệt", "Lê Văn Thịnh", "Nguyễn Minh Không", "Tô Hiến Thành", "Đàm Thị", "Nùng Trí Cao"]
+      "quan_tuong": ["Đào Cam Mộc", "Lưu Cơ", "Nguyễn Đạo Thanh", "Hoàng Hậu Ỷ Lan", "Lý Thường Kiệt", "Lê Văn Thịnh", "Nguyễn Minh Không", "Tô Hiến Thành", "Nùng Trí Cao"]
     },
     "nha_tran": {
-      "status": "Đang làm — 20 nhân vật",
-      "vua": ["Trần Thái Tông", "Trần Thánh Tông", "Trần Nhân Tông", "Trần Anh Tông"],
-      "quan_tuong": ["Trần Thủ Độ", "Trần Liễu", "Lê Phụ Trần", "Trần Hưng Đạo", "Trần Quang Khải", "Trần Khánh Dư", "Trần Quốc Toản", "Trần Ích Tắc (phản diện)", "Trần Nhật Duật", "Phạm Ngũ Lão", "Trần Bình Trọng", "Yết Kiêu & Dã Tượng"],
+      "status": "Đang làm — 23 nhân vật, 8 bài học",
+      "vua": ["Trần Thái Tông", "Trần Thánh Tông", "Trần Nhân Tông", "Trần Anh Tông", "Trần Minh Tông"],
+      "quan_tuong": ["Trần Thủ Độ", "Trần Liễu", "Lê Phụ Trần", "Trần Hưng Đạo", "Trần Quang Khải", "Trần Khánh Dư", "Trần Quốc Toản", "Trần Ích Tắc", "Trần Nhật Duật", "Phạm Ngũ Lão", "Trần Bình Trọng", "Yết Kiêu & Dã Tượng", "Đoàn Nhữ Hài", "Mạc Đĩnh Chi"],
       "nu_nhan": ["Lý Chiêu Hoàng", "Trần Thị Dung", "An Tư Công Chúa", "Huyền Trân Công Chúa"],
-      "total": "20 nhân vật"
+      "bai_hoc": [
+        "nha-tran-chap1.html — Khai Triều (✅ done)",
+        "nha-tran-chap2.html — 3 Lần Kháng Mông Cổ (✅ done)",
+        "nha-tran-chap3.html — Thịnh Trị & Văn Hoá 1288-1341 (✅ done)",
+        "tran-nhan-tong-yen-tu.html — 1299 Yên Tử (✅ done)",
+        "du-ngoan-phuong-nam.html — 1301 Du Ngoạn (✅ done)",
+        "cuop-dau-huyen-tran.html — 1307 Huyền Trân (✅ done)",
+        "doan-nhu-hai-du-hang.html — 1312 Chiêm Thành (✅ done)",
+        "vu-an-tran-quoc-chan.html — 1328 Vụ Án (✅ done)"
+      ],
+      "total": "23 nhân vật, 8 bài học"
     },
     "nha_hau_le": "Chưa làm — sắp ra mắt"
   },
 
-  "tran_nhan_tong_officials_order": [
-    "Trần Hưng Đạo (#39)",
-    "Trần Khánh Dư",
-    "Trần Quốc Toản (#44)",
-    "Trần Ích Tắc (#43) — phản diện (dark styling)",
-    "Trần Nhật Duật (#38a)",
-    "Phạm Ngũ Lão (#39a)",
-    "Trần Bình Trọng (#39b)",
-    "Yết Kiêu & Dã Tượng (#39c)",
-    "Huyền Trân Công Chúa (#45a)"
-  ],
+  "site_stats": {
+    "nhan_vat_total": 25,
+    "bai_hoc_total": 21,
+    "last_git_commit": "887779e — fix !important CSS accordion",
+    "live_url": "https://kandu306.github.io/history-web/"
+  },
 
-  "next_session_resume": "Anh thêm file mới vào new-raw/ thì em vào đó đọc và xử lý theo quy trình: tạo nhan-vat/ → cập nhật so-do + index + ban-do → xóa raw → push git."
+  "next_session_resume": "Anh thêm file mới vào new-raw/ thì em vào đó đọc và xử lý theo quy trình: tạo nhan-vat/ hoặc bai-hoc/ → cập nhật 4 file (index, ban-do, so-do, ideas.md) → xóa raw → push git. Nhà Trần còn thiếu: Trần Quốc Chẩn, Chu Văn An, các vua cuối (Trần Hiến Tông, Trần Dụ Tông, Hồ Quý Ly...)."
 }

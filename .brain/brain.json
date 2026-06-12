@@ -3,7 +3,7 @@
     "name": "history-web",
     "description": "Website lịch sử Việt Nam — Phân tích nhân vật theo hệ thống 3 Gốc / 3 Độc",
     "created_at": "2026-05-21T11:36:07+07:00",
-    "last_saved": "2026-06-04T12:02:50+07:00"
+    "last_saved": "2026-06-12T10:59:00+07:00"
   },
   "tech_stack": [
     "HTML5",
@@ -63,6 +63,16 @@
       "date": "2026-06-04",
       "decision": "Chiến lược hoàng hậu: chỉ thêm 4 bà nổi bật (Dương Vân Nga, Ỷ Lan, Lý Chiêu Hoàng, Trần Thị Dung)",
       "reason": "Chỉ đưa vào khi bà tự tạo ra lịch sử — nhiếp chính, quyết định then chốt, anh hùng kháng chiến"
+    },
+    {
+      "date": "2026-06-11",
+      "decision": "index.html Nhà Trần: tách 2 sub-group rõ ràng: '📖 Bài học' (Chapter đỏ) và '📌 Sự kiện nổi bật Chương 3' (cam)",
+      "reason": "Tránh 8 chip flat lộn xộn, phân cấp Chapter > Sự kiện rõ ràng"
+    },
+    {
+      "date": "2026-06-11",
+      "decision": "so-do-trieu-dinh.html: Accordion toggle — quan lại ẩn mặc định, click button '👥 X nhân vật' để mở/đóng",
+      "reason": "Nhiều vóu có rất nhiều quan (Ẩn Tư 13+ thẻ) nhưng có vóu không có quan nào — hiển thị flat rất xấu và bất đối xứng"
     }
   ],
   "design_rules": {
@@ -133,7 +143,16 @@
       { "ten": "Trần Khánh Dư", "file": "nhan-vat/tran-khanh-du.html", "status": "done", "era": "Nhà Trần", "role": "official" },
       { "ten": "An Tư Công Chúa", "file": "nhan-vat/an-tu-cong-chua.html", "status": "done", "era": "Nhà Trần", "role": "queen", "note": "Hy sinh thầm lặng năm 1285 — bi ịch bị lịch sử lãng quên" },
       { "ten": "Trần Ích Tắc", "file": "nhan-vat/tran-ich-tac.html", "status": "done", "era": "Nhà Trần", "role": "enemy", "note": "Bị gọi là 'Ả Trần' — tội nhân vĩ đại" },
-      { "ten": "Trần Quốc Toản", "file": "nhan-vat/tran-quoc-toan.html", "status": "done", "era": "Nhà Trần", "role": "official", "note": "Anh hùng thiếu niên — hy sinh 18 tuổi" }
+      { "ten": "Trần Quốc Toản", "file": "nhan-vat/tran-quoc-toan.html", "status": "done", "era": "Nhà Trần", "role": "official", "note": "Anh hùng thiếu niên — hy sinh 18 tuổi" },
+      { "ten": "Trần Anh Tông", "file": "nhan-vat/tran-anh-tong.html", "status": "done", "era": "Nhà Trần", "role": "king" },
+      { "ten": "Trần Nhật Duật", "file": "nhan-vat/tran-nhat-duat.html", "status": "done", "era": "Nhà Trần", "role": "official" },
+      { "ten": "Phạm Ngũ Lão", "file": "nhan-vat/pham-ngu-lao.html", "status": "done", "era": "Nhà Trần", "role": "official" },
+      { "ten": "Trần Bình Trọng", "file": "nhan-vat/tran-binh-trong.html", "status": "done", "era": "Nhà Trần", "role": "official" },
+      { "ten": "Yết Kiêu & Dã Tượng", "file": "nhan-vat/yet-kieu-da-tuong.html", "status": "done", "era": "Nhà Trần", "role": "official" },
+      { "ten": "Huyền Trân Công Chúa", "file": "nhan-vat/huyen-tran-cong-chua.html", "status": "done", "era": "Nhà Trần", "role": "queen" },
+      { "ten": "Trần Minh Tông", "file": "nhan-vat/tran-minh-tong.html", "status": "done", "era": "Nhà Trần", "role": "king" },
+      { "ten": "Đoàn Nhữ Hài", "file": "nhan-vat/doan-nhu-hai.html", "status": "done", "era": "Nhà Trần", "role": "official" },
+      { "ten": "Mạc Đĩnh Chi", "file": "nhan-vat/mac-dinh-chi.html", "status": "done", "era": "Nhà Trần", "role": "official" }
     ],
     "bai_hoc": [
       { "ten": "Nhà Nước Văn Lang", "file": "bai-hoc/nha-nuoc-van-lang.html", "status": "done" },
@@ -149,15 +168,21 @@
       { "ten": "Nhà Lý — Kháng Chiến Chống Tống", "file": "bai-hoc/nha-ly-chap3.html", "status": "done" },
       { "ten": "Nhà Lý — Xây Dựng Văn Hóa & Thể Chế", "file": "bai-hoc/nha-ly-chap4.html", "status": "done" },
       { "ten": "Nhà Lý — Suy Tàn & Chuyển Giao", "file": "bai-hoc/nha-ly-chap5.html", "status": "done" },
-      { "ten": "Nhà Trần — Khai Triều & Chuyển Giao Máu Lửa", "file": "bai-hoc/nha-tran-chap1.html", "status": "planned" },
-      { "ten": "Nhà Trần — 3 Lần Kháng Chiến Chống Mông-Nguyên", "file": "bai-hoc/nha-tran-chap2.html", "status": "done" }
+      { "ten": "Nhà Trần — Khai Triều & Chuyển Giao Máu Lửa", "file": "bai-hoc/nha-tran-chap1.html", "status": "done" },
+      { "ten": "Nhà Trần — 3 Lần Kháng Chiến Chống Mông-Nguyên", "file": "bai-hoc/nha-tran-chap2.html", "status": "done" },
+      { "ten": "Nhà Trần — Thịnh Trị & Văn Hoá (1288–1341)", "file": "bai-hoc/nha-tran-chap3.html", "status": "done" },
+      { "ten": "Sự kiện 1299: Trần Nhân Tông lên Yên Tử", "file": "bai-hoc/tran-nhan-tong-yen-tu.html", "status": "done" },
+      { "ten": "Sự kiện 1301: Du Ngoạn Phương Nam", "file": "bai-hoc/du-ngoan-phuong-nam.html", "status": "done" },
+      { "ten": "Sự kiện 1307: Vụ Cướp Dâu Huyền Trân", "file": "bai-hoc/cuop-dau-huyen-tran.html", "status": "done" },
+      { "ten": "Sự kiện 1312: Đoàn Nhữ Hài Dụ Hàng Chiêm", "file": "bai-hoc/doan-nhu-hai-du-hang.html", "status": "done" },
+      { "ten": "Sự kiện 1328: Vụ Án Trần Quốc Chẩn", "file": "bai-hoc/vu-an-tran-quoc-chan.html", "status": "done" }
     ],
     "stats": {
-      "nhan_vat_done": 40,
+      "nhan_vat_done": 50,
       "nhan_vat_pending": 1,
       "nhan_vat_planned": 0,
-      "bai_hoc_done": 14,
-      "bai_hoc_planned": 1
+      "bai_hoc_done": 21,
+      "bai_hoc_planned": 0
     }
   },
   "workflow_checklist": {
@@ -200,6 +225,33 @@
       "decisions": [
         "Chiến lược hoàng hậu: chỉ 4 bà nổi bật (Dương Vân Nga ✅, Ỷ Lan ✅, Lý Chiêu Hoàng ✅, Trần Thị Dung ✅)"
       ]
+    },
+    "2026-06-11": {
+      "summary": "Nhà Trần đợt 3: thêm 10 nhân vật + 8 bài học, redesign so-do accordion",
+      "new_files": [
+        "nhan-vat/tran-anh-tong.html",
+        "nhan-vat/tran-nhat-duat.html",
+        "nhan-vat/pham-ngu-lao.html",
+        "nhan-vat/tran-binh-trong.html",
+        "nhan-vat/yet-kieu-da-tuong.html",
+        "nhan-vat/huyen-tran-cong-chua.html",
+        "nhan-vat/tran-minh-tong.html",
+        "nhan-vat/doan-nhu-hai.html",
+        "nhan-vat/mac-dinh-chi.html",
+        "bai-hoc/nha-tran-chap3.html",
+        "bai-hoc/tran-nhan-tong-yen-tu.html",
+        "bai-hoc/du-ngoan-phuong-nam.html",
+        "bai-hoc/cuop-dau-huyen-tran.html",
+        "bai-hoc/doan-nhu-hai-du-hang.html",
+        "bai-hoc/vu-an-tran-quoc-chan.html"
+      ],
+      "site_changes": [
+        "index.html: Chapter 1 active, 2 sub-group bài học/sự kiện, stats 25 nhân vật · 21 bài học",
+        "ban-do.html: 8 lessons + 3 figures mới vào node nha_tran",
+        "so-do-trieu-dinh.html: accordion toggle quan lại (JS + CSS !important)",
+        "docs/ideas.md: cập nhật map nội dung"
+      ],
+      "commits": ["cc73b0c", "245e4cb", "887779e", "ecd2db6"]
     }
   }
 }
