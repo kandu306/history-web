@@ -1,5 +1,5 @@
 # Ý tưởng & Kế hoạch nội dung
-> Cập nhật lần cuối: 2026-06-11
+> Cập nhật lần cuối: 2026-06-22
 
 ## Tổng quan dự án
 
@@ -55,6 +55,11 @@ Website **"Lịch sử Việt Nam"** — Phân tích nhân vật theo hệ thố
 | 18 | `cuop-dau-huyen-tran.html` | Sự kiện 1307: Vụ Cướp Dâu Huyền Trân | 1307 SCN | ✅ Done |
 | 19 | `doan-nhu-hai-du-hang.html` | Sự kiện 1312: Đoàn Nhữ Hài Dụ Hàng Chiêm | 1312 SCN | ✅ Done |
 | 20 | `vu-an-tran-quoc-chan.html` | Sự kiện 1328: Vụ Án Trần Quốc Chẩn | 1328 SCN | ✅ Done |
+| 21 | `nha-tran-chap4.html` | Nhà Trần — Suy Tàn & Bóng Ma Hồ Quý Ly (Chương 4) | 1341–1400 | ✅ Done |
+| 22 | `ky-nguyen-sa-doa-tran-du-tong.html` | Sự kiện 1341–1369: Kỷ Nguyên Sa Đọa Của Trần Dụ Tông & Thất Trảm Sớ | 1341–1369 SCN | ✅ Done |
+| 23 | `bien-co-duong-nhat-le.html` | Sự kiện 1369–1370: Biến Cố Dương Nhật Lễ | 1369–1370 SCN | ✅ Done |
+| 24 | `su-nhu-nuoc-tran-nghe-tong.html` | Sự kiện 1370–1394: Sự Nhu Nhược Của Trần Nghệ Tông & Việc Trao Quyền Cho Hồ Quý Ly | 1370–1394 SCN | ✅ Done |
+| 25 | `cu-chot-ha-cua-ho-quy-ly.html` | Sự kiện 1400: Cú Chốt Hạ Của Hồ Quý Ly — Nhà Hồ Thành Lập | 1400 SCN | ✅ Done |
 
 ### Nhân vật (`nhan-vat/`) — 30 nhân vật ✅
 
