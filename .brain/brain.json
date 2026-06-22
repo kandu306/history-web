@@ -3,7 +3,7 @@
     "name": "history-web",
     "description": "Website lịch sử Việt Nam — Phân tích nhân vật theo hệ thống 3 Gốc / 3 Độc",
     "created_at": "2026-05-21T11:36:07+07:00",
-    "last_saved": "2026-06-12T10:59:00+07:00"
+    "last_saved": "2026-06-22T15:48:00+07:00"
   },
   "tech_stack": [
     "HTML5",
@@ -152,7 +152,15 @@
       { "ten": "Huyền Trân Công Chúa", "file": "nhan-vat/huyen-tran-cong-chua.html", "status": "done", "era": "Nhà Trần", "role": "queen" },
       { "ten": "Trần Minh Tông", "file": "nhan-vat/tran-minh-tong.html", "status": "done", "era": "Nhà Trần", "role": "king" },
       { "ten": "Đoàn Nhữ Hài", "file": "nhan-vat/doan-nhu-hai.html", "status": "done", "era": "Nhà Trần", "role": "official" },
-      { "ten": "Mạc Đĩnh Chi", "file": "nhan-vat/mac-dinh-chi.html", "status": "done", "era": "Nhà Trần", "role": "official" }
+      { "ten": "Mạc Đĩnh Chi", "file": "nhan-vat/mac-dinh-chi.html", "status": "done", "era": "Nhà Trần", "role": "official" },
+      { "ten": "Trần Hiến Tông", "file": "nhan-vat/tran-hien-tong.html", "status": "done", "era": "Nhà Trần", "role": "king", "note": "#48a — Quân Cờ Trên Bàn Cờ, lên ngôi 10 tuổi, mất 22 tuổi" },
+      { "ten": "Chu Văn An", "file": "nhan-vat/chu-van-an.html", "status": "done", "era": "Nhà Trần", "role": "advisor", "note": "Dâng Thất Trảm Sớ thời Trần Dụ Tông" },
+      { "ten": "Trần Dụ Tông", "file": "nhan-vat/tran-du-tong.html", "status": "done", "era": "Nhà Trần", "role": "king", "note": "Phá Gia Chi Tử — 28 năm ăn chơi trác táng" },
+      { "ten": "Dương Nhật Lễ", "file": "nhan-vat/duong-nhat-le.html", "status": "done", "era": "Nhà Trần", "role": "king", "note": "Con nhà hát xướng, trị vì 14 tháng" },
+      { "ten": "Trần Nghệ Tông", "file": "nhan-vat/tran-nghe-tong.html", "status": "done", "era": "Nhà Trần", "role": "king", "note": "Kẻ Đào Huyệt Cho Gia Tộc — nâng đỡ Hồ Quý Ly" },
+      { "ten": "Chế Bồng Nga", "file": "nhan-vat/che-bong-nga.html", "status": "done", "era": "Nhà Trần", "role": "enemy", "note": "Vua Chiêm Thành, 3 lần đốt phá Thăng Long" },
+      { "ten": "Trần Khát Chân", "file": "nhan-vat/tran-khat-chan.html", "status": "done", "era": "Nhà Trần", "role": "official", "note": "Hạ Chế Bồng Nga 1390, lập mưu ám sát Hồ Quý Ly thất bại" },
+      { "ten": "Bộ Ba Vua Bù Nhìn", "file": "nhan-vat/bo-ba-vua-bu-nhin.html", "status": "done", "era": "Nhà Trần", "role": "king", "note": "#49b — Trần Phế Đế + Trần Thuận Tông + Trần Thiếu Đế (1377–1400)" }
     ],
     "bai_hoc": [
       { "ten": "Nhà Nước Văn Lang", "file": "bai-hoc/nha-nuoc-van-lang.html", "status": "done" },
@@ -178,11 +186,12 @@
       { "ten": "Sự kiện 1328: Vụ Án Trần Quốc Chẩn", "file": "bai-hoc/vu-an-tran-quoc-chan.html", "status": "done" }
     ],
     "stats": {
-      "nhan_vat_done": 50,
+      "nhan_vat_done": 58,
       "nhan_vat_pending": 1,
       "nhan_vat_planned": 0,
       "bai_hoc_done": 21,
-      "bai_hoc_planned": 0
+      "bai_hoc_planned": 4,
+      "note": "Nhà Trần: 31 nhân vật, 13 bài học. 4 bài học Chap4 là placeholder chưa có nội dung đầy đủ."
     }
   },
   "workflow_checklist": {
@@ -252,6 +261,25 @@
         "docs/ideas.md: cập nhật map nội dung"
       ],
       "commits": ["cc73b0c", "245e4cb", "887779e", "ecd2db6"]
+    },
+    "2026-06-22": {
+      "summary": "Nhà Trần Chap4 + Extra: thêm 8 nhân vật, cập nhật đầy đủ so-do + ban-do + index",
+      "new_files": [
+        "nhan-vat/chu-van-an.html",
+        "nhan-vat/tran-du-tong.html",
+        "nhan-vat/duong-nhat-le.html",
+        "nhan-vat/tran-nghe-tong.html",
+        "nhan-vat/che-bong-nga.html",
+        "nhan-vat/tran-khat-chan.html",
+        "nhan-vat/tran-hien-tong.html",
+        "nhan-vat/bo-ba-vua-bu-nhin.html"
+      ],
+      "site_changes": [
+        "index.html: counter 23→29→31 nhân vật, thêm chip link Chap4 + Extra",
+        "so-do-trieu-dinh.html: thêm 5 block mới (Hiến Tông, Dụ Tông, Nhật Lễ, Nghệ Tông, Bộ Ba), stats 24→26 vua",
+        "ban-do.html: thêm 8 nhân vật + 4 bài học Chap4 vào khối nha_tran"
+      ],
+      "commits": ["ad350f2", "65e0ac7"]
     }
   }
 }
