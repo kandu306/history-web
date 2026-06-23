@@ -3,7 +3,7 @@
     "name": "history-web",
     "description": "Website lịch sử Việt Nam — Phân tích nhân vật theo hệ thống 3 Gốc / 3 Độc",
     "created_at": "2026-05-21T11:36:07+07:00",
-    "last_saved": "2026-06-22T15:48:00+07:00"
+    "last_saved": "2026-06-23T16:13:00+07:00"
   },
   "tech_stack": [
     "HTML5",
@@ -15,7 +15,7 @@
     "Trang phân tích nhân vật lịch sử (1 file HTML / nhân vật)",
     "Hệ thống đánh giá 3 Gốc (Trí tuệ, Đạo đức, Nghị lực)",
     "Hệ thống đánh giá 3 Độc (Tham lam, Sân giận, Si mê)",
-    "index.html — Timeline Triều Đại (era-based, Bắc thuộc → Nhà Trần)",
+    "index.html — Timeline Triều Đại (ERA 1–9, Văn Lang → Nhà Hậu Lê)",
     "ban-do.html — Bản đồ khái niệm tương tác (click node, grouped figures by role)",
     "so-do-trieu-dinh.html — Sơ đồ Vua → Quan (era blocks, phân tầng Vua / Quyền thần)",
     "Reading progress bar",
@@ -72,7 +72,17 @@
     {
       "date": "2026-06-11",
       "decision": "so-do-trieu-dinh.html: Accordion toggle — quan lại ẩn mặc định, click button '👥 X nhân vật' để mở/đóng",
-      "reason": "Nhiều vóu có rất nhiều quan (Ẩn Tư 13+ thẻ) nhưng có vóu không có quan nào — hiển thị flat rất xấu và bất đối xứng"
+      "reason": "Nhiều vua có rất nhiều quan (Ẩn Tư 13+ thẻ) nhưng có vua không có quan nào — hiển thị flat rất xấu và bất đối xứng"
+    },
+    {
+      "date": "2026-06-23",
+      "decision": "Kháng chiến chống Minh (Lam Sơn khởi nghĩa) thuộc ERA Nhà Hậu Lê — KHÔNG phải Nhà Hồ",
+      "reason": "Nhà Hồ mất 1407, Lam Sơn khởi nghĩa 1418–1427, kết thúc → lập Nhà Hậu Lê 1428"
+    },
+    {
+      "date": "2026-06-23",
+      "decision": "index.html ERA format chuẩn: ERA badge + subtitle tagline + section BÀI HỌC / NHÂN VẬT / Tool buttons",
+      "reason": "Đồng bộ toàn bộ 9 ERA theo format mới của Nhà Hồ/Nhà Hậu Lê — nhất quán UX"
     }
   ],
   "design_rules": {
@@ -93,13 +103,21 @@
     "so_do_hierarchy": {
       "rule": "Chỉ dùng king-card cho vua thực sự cầm quyền",
       "sub_sections": ["Vua / Hoàng đế", "Quyền thần & Tước vương (không phải vua)"]
+    },
+    "era_card_format": {
+      "rule": "Mỗi ERA card phải có: ERA badge (số thứ tự) + subtitle tagline + section BÀI HỌC + section NHÂN VẬT (nếu có) + Tool buttons",
+      "tool_buttons": ["🗺 Bản đồ khái niệm →", "👑 Sơ đồ Vua – Quan →"],
+      "ban_do_nodes": "Node phải được thêm vào CẢ HAI nơi: database JS object VÀ HTML DOM card trong tab-flow"
     }
   },
   "historical_facts": {
     "tran_thi_dung": "Hoàng hậu của vua Lý Huệ Tông (Nhà Lý), sau đó lấy Trần Thủ Độ → Linh Từ Quốc Mẫu. KHÔNG phải hoàng hậu Nhà Trần.",
     "tran_lieu": "An Sinh Vương — tước vương, KHÔNG phải vua trị vì. Anh ruột vua Trần Thái Tông.",
     "ly_chieu_hoang": "Vừa là nữ hoàng cuối Nhà Lý (1224-1225) vừa là hoàng hậu đầu của Trần Thái Tông → xuất hiện đúng ở CẢ HAI node trong ban-do.html",
-    "tran_thu_do": "Thái Sư — kiến trúc sư quyền lực, không phải vua. Nhầm lẫn phổ biến khi thiết kế sơ đồ."
+    "tran_thu_do": "Thái Sư — kiến trúc sư quyền lực, không phải vua. Nhầm lẫn phổ biến khi thiết kế sơ đồ.",
+    "khang_chien_chong_minh": "Lam Sơn khởi nghĩa (1418–1427) và kháng chiến chống Minh thuộc ERA Nhà Hậu Lê — KHÔNG phải Nhà Hồ. Nhà Hồ mất năm 1407.",
+    "nha_ho": "1400–1407 (7 năm). Hồ Quý Ly cải cách tiến bộ nhưng mất lòng dân → bị Minh xâm lược → mất nước.",
+    "nha_hau_le": "1428+. Lê Lợi khai quốc sau Lam Sơn khởi nghĩa. Triều đại dài nhất VN (đến 1789). Nguyễn Trãi viết Bình Ngô Đại Cáo."
   },
   "content_plan": {
     "nhan_vat": [
@@ -141,9 +159,9 @@
       { "ten": "Trần Thánh Tông", "file": "nhan-vat/tran-thanh-tong.html", "status": "done", "era": "Nhà Trần", "role": "king" },
       { "ten": "Trần Quang Khải", "file": "nhan-vat/tran-quang-khai.html", "status": "done", "era": "Nhà Trần", "role": "official" },
       { "ten": "Trần Khánh Dư", "file": "nhan-vat/tran-khanh-du.html", "status": "done", "era": "Nhà Trần", "role": "official" },
-      { "ten": "An Tư Công Chúa", "file": "nhan-vat/an-tu-cong-chua.html", "status": "done", "era": "Nhà Trần", "role": "queen", "note": "Hy sinh thầm lặng năm 1285 — bi ịch bị lịch sử lãng quên" },
-      { "ten": "Trần Ích Tắc", "file": "nhan-vat/tran-ich-tac.html", "status": "done", "era": "Nhà Trần", "role": "enemy", "note": "Bị gọi là 'Ả Trần' — tội nhân vĩ đại" },
-      { "ten": "Trần Quốc Toản", "file": "nhan-vat/tran-quoc-toan.html", "status": "done", "era": "Nhà Trần", "role": "official", "note": "Anh hùng thiếu niên — hy sinh 18 tuổi" },
+      { "ten": "An Tư Công Chúa", "file": "nhan-vat/an-tu-cong-chua.html", "status": "done", "era": "Nhà Trần", "role": "queen" },
+      { "ten": "Trần Ích Tắc", "file": "nhan-vat/tran-ich-tac.html", "status": "done", "era": "Nhà Trần", "role": "enemy" },
+      { "ten": "Trần Quốc Toản", "file": "nhan-vat/tran-quoc-toan.html", "status": "done", "era": "Nhà Trần", "role": "official" },
       { "ten": "Trần Anh Tông", "file": "nhan-vat/tran-anh-tong.html", "status": "done", "era": "Nhà Trần", "role": "king" },
       { "ten": "Trần Nhật Duật", "file": "nhan-vat/tran-nhat-duat.html", "status": "done", "era": "Nhà Trần", "role": "official" },
       { "ten": "Phạm Ngũ Lão", "file": "nhan-vat/pham-ngu-lao.html", "status": "done", "era": "Nhà Trần", "role": "official" },
@@ -153,14 +171,20 @@
       { "ten": "Trần Minh Tông", "file": "nhan-vat/tran-minh-tong.html", "status": "done", "era": "Nhà Trần", "role": "king" },
       { "ten": "Đoàn Nhữ Hài", "file": "nhan-vat/doan-nhu-hai.html", "status": "done", "era": "Nhà Trần", "role": "official" },
       { "ten": "Mạc Đĩnh Chi", "file": "nhan-vat/mac-dinh-chi.html", "status": "done", "era": "Nhà Trần", "role": "official" },
-      { "ten": "Trần Hiến Tông", "file": "nhan-vat/tran-hien-tong.html", "status": "done", "era": "Nhà Trần", "role": "king", "note": "#48a — Quân Cờ Trên Bàn Cờ, lên ngôi 10 tuổi, mất 22 tuổi" },
-      { "ten": "Chu Văn An", "file": "nhan-vat/chu-van-an.html", "status": "done", "era": "Nhà Trần", "role": "advisor", "note": "Dâng Thất Trảm Sớ thời Trần Dụ Tông" },
-      { "ten": "Trần Dụ Tông", "file": "nhan-vat/tran-du-tong.html", "status": "done", "era": "Nhà Trần", "role": "king", "note": "Phá Gia Chi Tử — 28 năm ăn chơi trác táng" },
-      { "ten": "Dương Nhật Lễ", "file": "nhan-vat/duong-nhat-le.html", "status": "done", "era": "Nhà Trần", "role": "king", "note": "Con nhà hát xướng, trị vì 14 tháng" },
-      { "ten": "Trần Nghệ Tông", "file": "nhan-vat/tran-nghe-tong.html", "status": "done", "era": "Nhà Trần", "role": "king", "note": "Kẻ Đào Huyệt Cho Gia Tộc — nâng đỡ Hồ Quý Ly" },
-      { "ten": "Chế Bồng Nga", "file": "nhan-vat/che-bong-nga.html", "status": "done", "era": "Nhà Trần", "role": "enemy", "note": "Vua Chiêm Thành, 3 lần đốt phá Thăng Long" },
-      { "ten": "Trần Khát Chân", "file": "nhan-vat/tran-khat-chan.html", "status": "done", "era": "Nhà Trần", "role": "official", "note": "Hạ Chế Bồng Nga 1390, lập mưu ám sát Hồ Quý Ly thất bại" },
-      { "ten": "Bộ Ba Vua Bù Nhìn", "file": "nhan-vat/bo-ba-vua-bu-nhin.html", "status": "done", "era": "Nhà Trần", "role": "king", "note": "#49b — Trần Phế Đế + Trần Thuận Tông + Trần Thiếu Đế (1377–1400)" }
+      { "ten": "Trần Hiến Tông", "file": "nhan-vat/tran-hien-tong.html", "status": "done", "era": "Nhà Trần", "role": "king" },
+      { "ten": "Chu Văn An", "file": "nhan-vat/chu-van-an.html", "status": "done", "era": "Nhà Trần", "role": "advisor" },
+      { "ten": "Trần Dụ Tông", "file": "nhan-vat/tran-du-tong.html", "status": "done", "era": "Nhà Trần", "role": "king" },
+      { "ten": "Dương Nhật Lễ", "file": "nhan-vat/duong-nhat-le.html", "status": "done", "era": "Nhà Trần", "role": "king" },
+      { "ten": "Trần Nghệ Tông", "file": "nhan-vat/tran-nghe-tong.html", "status": "done", "era": "Nhà Trần", "role": "king" },
+      { "ten": "Chế Bồng Nga", "file": "nhan-vat/che-bong-nga.html", "status": "done", "era": "Nhà Trần", "role": "enemy" },
+      { "ten": "Trần Khát Chân", "file": "nhan-vat/tran-khat-chan.html", "status": "done", "era": "Nhà Trần", "role": "official" },
+      { "ten": "Bộ Ba Vua Bù Nhìn", "file": "nhan-vat/bo-ba-vua-bu-nhin.html", "status": "done", "era": "Nhà Trần", "role": "king" },
+      { "ten": "Hồ Quý Ly", "file": "nhan-vat/ho-quy-ly.html", "status": "done", "era": "Nhà Hồ", "role": "king" },
+      { "ten": "Hồ Nguyên Trừng", "file": "nhan-vat/ho-nguyen-trung.html", "status": "done", "era": "Nhà Hồ", "role": "official" },
+      { "ten": "Lê Lợi", "file": "nhan-vat/le-loi.html", "status": "done", "era": "Nhà Hậu Lê", "role": "king" },
+      { "ten": "Nguyễn Trãi", "file": "nhan-vat/nguyen-trai.html", "status": "done", "era": "Nhà Hậu Lê", "role": "advisor" },
+      { "ten": "Lê Lai", "file": "nhan-vat/le-lai.html", "status": "done", "era": "Nhà Hậu Lê", "role": "official" },
+      { "ten": "Nguyễn Chích", "file": "nhan-vat/nguyen-chich.html", "status": "done", "era": "Nhà Hậu Lê", "role": "official" }
     ],
     "bai_hoc": [
       { "ten": "Nhà Nước Văn Lang", "file": "bai-hoc/nha-nuoc-van-lang.html", "status": "done" },
@@ -183,15 +207,18 @@
       { "ten": "Sự kiện 1301: Du Ngoạn Phương Nam", "file": "bai-hoc/du-ngoan-phuong-nam.html", "status": "done" },
       { "ten": "Sự kiện 1307: Vụ Cướp Dâu Huyền Trân", "file": "bai-hoc/cuop-dau-huyen-tran.html", "status": "done" },
       { "ten": "Sự kiện 1312: Đoàn Nhữ Hài Dụ Hàng Chiêm", "file": "bai-hoc/doan-nhu-hai-du-hang.html", "status": "done" },
-      { "ten": "Sự kiện 1328: Vụ Án Trần Quốc Chẩn", "file": "bai-hoc/vu-an-tran-quoc-chan.html", "status": "done" }
+      { "ten": "Sự kiện 1328: Vụ Án Trần Quốc Chẩn", "file": "bai-hoc/vu-an-tran-quoc-chan.html", "status": "done" },
+      { "ten": "Nhà Hồ Tổng Quan", "file": "bai-hoc/nha-ho-tong-quan.html", "status": "done" },
+      { "ten": "Nhà Hồ Sụp Đổ — Đô Hộ Lần Thứ Tư", "file": "bai-hoc/nha-ho-sup-do-1407.html", "status": "done" },
+      { "ten": "Hậu Lê — Kháng Chiến Chống Minh (Lam Sơn)", "file": "bai-hoc/hau-le-khang-chien-chong-minh.html", "status": "done" }
     ],
     "stats": {
-      "nhan_vat_done": 58,
+      "nhan_vat_done": 63,
       "nhan_vat_pending": 1,
-      "nhan_vat_planned": 0,
-      "bai_hoc_done": 21,
-      "bai_hoc_planned": 4,
-      "note": "Nhà Trần: 31 nhân vật, 13 bài học. 4 bài học Chap4 là placeholder chưa có nội dung đầy đủ."
+      "bai_hoc_done": 24,
+      "era_count": 9,
+      "eras": ["Văn Lang–Âu Lạc", "Bắc thuộc", "Nhà Ngô", "Nhà Đinh", "Tiền Lê", "Nhà Lý", "Nhà Trần", "Nhà Hồ", "Nhà Hậu Lê"],
+      "note": "Session 2026-06-23: Thêm ERA 8 Nhà Hồ + ERA 9 Nhà Hậu Lê. Chuẩn hóa format toàn bộ 9 ERA trên index.html. Fix bug duplicate block Nhà Trần."
     }
   },
   "workflow_checklist": {
@@ -199,10 +226,16 @@
       "Tạo nhan-vat/[file].html theo template ly-cong-uan.html",
       "KHÔNG dùng từ tiếng Anh trong nội dung",
       "Cập nhật index.html — thêm chip đúng era, tăng bộ đếm",
-      "Cập nhật ban-do.html — thêm vào figures[] với role đúng (xem historical_facts)",
+      "Cập nhật ban-do.html — thêm vào figures[] VÀ thêm node card HTML trong tab-flow + SVG line",
       "Cập nhật so-do-trieu-dinh.html — chỉ dùng king-card cho VUA thực sự, không phải tước vương",
       "Cập nhật .brain/brain.json",
       "git add → git commit → git push"
+    ],
+    "add_era_moi": [
+      "index.html: thêm ERA card mới với format chuẩn (ERA badge + subtitle + sections + tool buttons)",
+      "ban-do.html: thêm vào database JS VÀ thêm node card HTML trong #tab-flow + SVG line kết nối",
+      "so-do-trieu-dinh.html: thêm ERA block mới",
+      "Cập nhật brain.json stats.era_count"
     ],
     "role_assignment_rules": {
       "king": "Vua/hoàng đế thực sự cầm quyền trị vì",
@@ -215,71 +248,35 @@
   "session_log": {
     "2026-06-04": {
       "summary": "Thêm 5 nhân vật Nhà Trần + fix nhiều lỗi cấu trúc lịch sử",
-      "new_files": [
-        "nhan-vat/ly-chieu-hoang.html",
-        "nhan-vat/tran-thi-dung.html",
-        "nhan-vat/tran-lieu.html",
-        "nhan-vat/le-phu-tran.html",
-        "nhan-vat/tran-thai-tong.html"
-      ],
-      "fixes": [
-        "ban-do.html: thêm Node 9 Nhà Trần + SVG line-ly-tran (node thiếu hoàn toàn)",
-        "ban-do.html: sửa role Trần Liễu king→official, Trần Thị Dung queen→official",
-        "ban-do.html: thêm Trần Thị Dung + Lý Chiêu Hoàng vào node Nhà Lý (đúng lịch sử)",
-        "so-do-trieu-dinh.html: xóa card Lê Phụ Trần trùng lặp",
-        "so-do-trieu-dinh.html: thêm Lý Chiêu Hoàng vào cuối ERA Nhà Lý",
-        "so-do-trieu-dinh.html: tái cấu trúc ERA Nhà Trần thành 2 sub-section phân cấp rõ ràng"
-      ],
-      "commits": ["83bc6d4", "49b2b07", "60f87de", "40478ed", "56204ad"],
-      "decisions": [
-        "Chiến lược hoàng hậu: chỉ 4 bà nổi bật (Dương Vân Nga ✅, Ỷ Lan ✅, Lý Chiêu Hoàng ✅, Trần Thị Dung ✅)"
-      ]
+      "commits": ["83bc6d4", "49b2b07", "60f87de", "40478ed", "56204ad"]
     },
     "2026-06-11": {
       "summary": "Nhà Trần đợt 3: thêm 10 nhân vật + 8 bài học, redesign so-do accordion",
-      "new_files": [
-        "nhan-vat/tran-anh-tong.html",
-        "nhan-vat/tran-nhat-duat.html",
-        "nhan-vat/pham-ngu-lao.html",
-        "nhan-vat/tran-binh-trong.html",
-        "nhan-vat/yet-kieu-da-tuong.html",
-        "nhan-vat/huyen-tran-cong-chua.html",
-        "nhan-vat/tran-minh-tong.html",
-        "nhan-vat/doan-nhu-hai.html",
-        "nhan-vat/mac-dinh-chi.html",
-        "bai-hoc/nha-tran-chap3.html",
-        "bai-hoc/tran-nhan-tong-yen-tu.html",
-        "bai-hoc/du-ngoan-phuong-nam.html",
-        "bai-hoc/cuop-dau-huyen-tran.html",
-        "bai-hoc/doan-nhu-hai-du-hang.html",
-        "bai-hoc/vu-an-tran-quoc-chan.html"
-      ],
-      "site_changes": [
-        "index.html: Chapter 1 active, 2 sub-group bài học/sự kiện, stats 25 nhân vật · 21 bài học",
-        "ban-do.html: 8 lessons + 3 figures mới vào node nha_tran",
-        "so-do-trieu-dinh.html: accordion toggle quan lại (JS + CSS !important)",
-        "docs/ideas.md: cập nhật map nội dung"
-      ],
       "commits": ["cc73b0c", "245e4cb", "887779e", "ecd2db6"]
     },
     "2026-06-22": {
       "summary": "Nhà Trần Chap4 + Extra: thêm 8 nhân vật, cập nhật đầy đủ so-do + ban-do + index",
+      "commits": ["ad350f2", "65e0ac7"]
+    },
+    "2026-06-23": {
+      "summary": "ERA 8 Nhà Hồ + ERA 9 Nhà Hậu Lê. Chuẩn hóa format toàn bộ 9 ERA index.html. Fix bug Nhà Trần duplicate.",
       "new_files": [
-        "nhan-vat/chu-van-an.html",
-        "nhan-vat/tran-du-tong.html",
-        "nhan-vat/duong-nhat-le.html",
-        "nhan-vat/tran-nghe-tong.html",
-        "nhan-vat/che-bong-nga.html",
-        "nhan-vat/tran-khat-chan.html",
-        "nhan-vat/tran-hien-tong.html",
-        "nhan-vat/bo-ba-vua-bu-nhin.html"
+        "nhan-vat/le-loi.html",
+        "nhan-vat/nguyen-trai.html",
+        "nhan-vat/le-lai.html",
+        "nhan-vat/nguyen-chich.html",
+        "bai-hoc/hau-le-khang-chien-chong-minh.html"
       ],
       "site_changes": [
-        "index.html: counter 23→29→31 nhân vật, thêm chip link Chap4 + Extra",
-        "so-do-trieu-dinh.html: thêm 5 block mới (Hiến Tông, Dụ Tông, Nhật Lễ, Nghệ Tông, Bộ Ba), stats 24→26 vua",
-        "ban-do.html: thêm 8 nhân vật + 4 bài học Chap4 vào khối nha_tran"
+        "index.html: thêm ERA 9 Nhà Hậu Lê, chuẩn hóa format ERA 1-7 (ERA badge + subtitle + sections + tool buttons)",
+        "ban-do.html: thêm Node 10 Nhà Hồ + Node 11 Nhà Hậu Lê vào flow map HTML + SVG connector lines",
+        "so-do-trieu-dinh.html: thêm ERA 9 block Nhà Hậu Lê",
+        "Fix bug: Nhà Trần bị duplicate block orphan — xóa bằng Python script"
       ],
-      "commits": ["ad350f2", "65e0ac7"]
+      "corrections": [
+        "Kháng chiến chống Minh thuộc Nhà Hậu Lê KHÔNG phải Nhà Hồ"
+      ],
+      "commits": ["81579e3", "c16279c", "967b3d2", "f36c8c4"]
     }
   }
 }
