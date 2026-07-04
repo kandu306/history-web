@@ -367,7 +367,6 @@ const DATABASE = {
       { name: "Chap 1 · Kháng Chiến Chống Minh (1418–1427)", url: "bai-hoc/hau-le-khang-chien-chong-minh.html" },
       { name: "Chap 2 · Đỉnh Cao Hoàng Kim (1428–1497)", url: "bai-hoc/nha-hau-le-chap2-dinh-cao-hoang-kim.html" },
       { name: "Chap 3 · Suy Tàn & Mạc Thay Thế (1497–1527)", url: "bai-hoc/nha-hau-le-chap3-suy-tan-mac-thay-the.html" },
-      { name: "Chap 4 · Lê Sơ Suy Tàn (1497–1527)", url: "bai-hoc/nha-hau-le-chap4-cum1-le-hien-tong.html" },
       { name: "└ Cụm 1 · Lê Hiến Tông & Lê Túc Tông", url: "bai-hoc/nha-hau-le-chap4-cum1-le-hien-tong.html" },
       { name: "└ Cụm 2 · Lê Uy Mục — Vua Quỷ", url: "bai-hoc/nha-hau-le-chap4-cum2-le-uy-muc.html" },
       { name: "└ Cụm 3 · Lê Tương Dực — Vua Lợn", url: "bai-hoc/nha-hau-le-chap4-cum3-le-tuong-duc.html" },
