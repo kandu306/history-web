@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
@@ -128,164 +128,17 @@
       <div id="tab-flow" class="flex-1 relative flex flex-col justify-between py-4 select-none">
         <!-- SVG lines container -->
         <svg class="absolute inset-0 w-full h-full pointer-events-none z-0" id="lines-container">
-          <!-- Lines will be dynamically colored/animated in JS -->
-          <line id="line-vl-al"  x1="50%" y1="60"  x2="50%" y2="120" stroke="#e7e5e4" stroke-width="2" />
-          <line id="line-al-bt"  x1="50%" y1="170" x2="50%" y2="230" stroke="#e7e5e4" stroke-width="2" />
-          <line id="line-bt-nq"  x1="50%" y1="280" x2="50%" y2="340" stroke="#e7e5e4" stroke-width="2" />
-          <line id="line-nq-l12" x1="50%" y1="390" x2="50%" y2="450" stroke="#e7e5e4" stroke-width="2" />
-          <line id="line-l12-dl" x1="50%" y1="500" x2="50%" y2="560" stroke="#e7e5e4" stroke-width="2" />
-          <line id="line-dl-ntl" x1="50%" y1="610" x2="50%" y2="670" stroke="#e7e5e4" stroke-width="2" />
-          <line id="line-ntl-ly" x1="50%" y1="720" x2="50%" y2="780" stroke="#e7e5e4" stroke-width="2" />
-          <line id="line-ly-tran"    x1="50%" y1="830" x2="50%" y2="890" stroke="#e7e5e4" stroke-width="2" />
-          <line id="line-tran-ho"   x1="50%" y1="940" x2="50%" y2="1000" stroke="#e7e5e4" stroke-width="2" />
-          <line id="line-ho-haule"  x1="50%" y1="1050" x2="50%" y2="1110" stroke="#e7e5e4" stroke-width="2" />
+          <!-- Lines rendered from ban-do-data.js LINES_CONFIG -->
         </svg>
 
-        <!-- Chronological Dynasty Nodes -->
-        <div class="relative z-10 flex flex-col items-center gap-12">
-          
-          <!-- Node 1: Văn Lang -->
-          <div onclick="selectNode('vl')" id="node-vl" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-[9px] font-semibold tracking-wider text-[#b45309] uppercase">Dựng Nước</span>
-              <span class="text-[9px] text-[#a8a29e] tracking-widest">Thế kỷ 7-6 TCN</span>
-            </div>
-            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Nhà nước Văn Lang</h4>
-            <div class="text-[10px] text-[#78716c] italic mt-1">Cơ cấu 3 cấp Hùng Vương, Lạc Tướng, Lạc Dân</div>
-          </div>
-
-          <!-- Node 2: Âu Lạc -->
-          <div onclick="selectNode('al')" id="node-al" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-[9px] font-semibold tracking-wider text-[#b45309] uppercase">Thục Phán lập thành</span>
-              <span class="text-[9px] text-[#a8a29e] tracking-widest">257–179 TCN</span>
-            </div>
-            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Nhà nước Âu Lạc</h4>
-            <div class="text-[10px] text-[#78716c] italic mt-1">Thành Cổ Loa kiên cố & bài học nỏ thần mất nước</div>
-          </div>
-
-          <!-- Node 3: 1.000 Năm Bắc Thuộc -->
-          <div onclick="selectNode('bt')" id="node-bt" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-[9px] font-semibold tracking-wider text-[#9b1c1c] uppercase">Thời kỳ Đề kháng</span>
-              <span class="text-[9px] text-[#a8a29e] tracking-widest">111 TCN – 938 SCN</span>
-            </div>
-            <h4 class="font-serif font-bold text-sm text-[#1c1917]">1.000 Năm Bắc Thuộc</h4>
-            <div class="text-[10px] text-[#78716c] italic mt-1">Làng xã tự trị chống đồng hóa & Các khởi nghĩa</div>
-          </div>
-
-          <!-- Node 4: Ngô Quyền -->
-          <div onclick="selectNode('nq')" id="node-nq" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-[9px] font-semibold tracking-wider text-[#b45309] uppercase">Bạch Đằng vĩ đại</span>
-              <span class="text-[9px] text-[#a8a29e] tracking-widest">Năm 938 SCN</span>
-            </div>
-            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Ngô Quyền — Độc lập vĩnh viễn</h4>
-            <div class="text-[10px] text-[#78716c] italic mt-1">Khai quốc vương triều, đóng đô Cổ Loa</div>
-          </div>
-
-          <!-- Node 5: Loạn 12 Sứ Quân -->
-          <div onclick="selectNode('l12')" id="node-l12" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-[9px] font-semibold tracking-wider text-[#9b1c1c] uppercase">Nội chiến cát cứ</span>
-              <span class="text-[9px] text-[#a8a29e] tracking-widest">944–968 SCN</span>
-            </div>
-            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Loạn 12 Sứ Quân</h4>
-            <div class="text-[10px] text-[#78716c] italic mt-1">Nguy cơ mất nước & Bài học khoảng trống quyền lực</div>
-          </div>
-
-          <!-- Node 6: Đinh – Lê -->
-          <div onclick="selectNode('dl')" id="node-dl" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-[9px] font-semibold tracking-wider text-[#b45309] uppercase">Hoa Lư lập hoàng đế</span>
-              <span class="text-[9px] text-[#a8a29e] tracking-widest">968–979 SCN</span>
-            </div>
-            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Nhà Đinh — Đinh Bộ Lĩnh</h4>
-            <div class="text-[10px] text-[#78716c] italic mt-1">Sự thống nhất Hoa Lư & Sáng lập Đại Cồ Việt</div>
-          </div>
-
-          <!-- Node 7: Nhà Tiền Lê -->
-          <div onclick="selectNode('ntl')" id="node-ntl" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-[9px] font-semibold tracking-wider text-[#b45309] uppercase">Lê Hoàn phá Tống</span>
-              <span class="text-[9px] text-[#a8a29e] tracking-widest">980–1009 SCN</span>
-            </div>
-            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Nhà Tiền Lê — Lê Đại Hành</h4>
-            <div class="text-[10px] text-[#78716c] italic mt-1">Chuyển giao quyền lực Dương Vân Nga & Ngoại giao khôn ngoan</div>
-          </div>
-
-          <!-- Node 8: Nhà Lý -->
-          <div onclick="selectNode('ly')" id="node-ly" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-[9px] font-semibold tracking-wider text-[#9b1c1c] uppercase">Thể chế hóa tối cao</span>
-              <span class="text-[9px] text-[#a8a29e] tracking-widest">1009–1225 SCN</span>
-            </div>
-            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Nhà Lý — Thăng Long thịnh trị</h4>
-            <div class="text-[10px] text-[#78716c] italic mt-1">Dời đô Thăng Long, ban Hình Thư & dựng Văn Miếu</div>
-          </div>
-
-          <!-- Node 9: Nhà Trần -->
-          <div onclick="selectNode('nha_tran')" id="node-nha_tran" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-[9px] font-semibold tracking-wider text-[#9b1c1c] uppercase">Hào Khí Đông A</span>
-              <span class="text-[9px] text-[#a8a29e] tracking-widest">1225–1400 SCN</span>
-            </div>
-            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Nhà Trần — 3 Lần Phá Mông Cổ</h4>
-            <div class="text-[10px] text-[#78716c] italic mt-1">Vườn không nhà trống & Trần Hưng Đạo bất khuất</div>
-          </div>
-
-          <!-- Node 10: Nhà Hồ -->
-          <div onclick="selectNode('nha_ho')" id="node-nha_ho" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-[9px] font-semibold tracking-wider text-[#9b1c1c] uppercase">Cải cách vượt thời đại</span>
-              <span class="text-[9px] text-[#a8a29e] tracking-widest">1400–1407 SCN</span>
-            </div>
-            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Nhà Hồ — Sụp Đổ Vì Mất Lòng Dân</h4>
-            <div class="text-[10px] text-[#78716c] italic mt-1">Tiền giấy, hạn điền, súng thần công — không có lòng dân</div>
-          </div>
-
-          <!-- Node 11: Nhà Hậu Lê -->
-          <div onclick="selectNode('nha_hau_le')" id="node-nha_hau_le" class="w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md">
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-[9px] font-semibold tracking-wider text-[#166534] uppercase">Khai quốc</span>
-              <span class="text-[9px] text-[#a8a29e] tracking-widest">1428 SCN – ...</span>
-            </div>
-            <h4 class="font-serif font-bold text-sm text-[#1c1917]">Nhà Hậu Lê — Triều Đại Dài Nhất</h4>
-            <div class="text-[10px] text-[#78716c] italic mt-1">Lam Sơn khởi nghĩa & Bình Ngô Đại Cáo</div>
-          </div>
-
-        </div>
+        <!-- Nodes rendered from ban-do-data.js NODES_CONFIG -->
+        <div id="nodes-container" class="relative z-10 flex flex-col items-center gap-12"></div>
       </div>
 
       <!-- Tab Content 2: Patterns Map -->
       <div id="tab-patterns" class="hidden flex-1 grid sm:grid-cols-2 gap-4 py-2">
-        <div onclick="selectPattern('pt1')" class="border border-[#e7e5e4] bg-[#faf9f7] rounded-2xl p-5 cursor-pointer hover:border-[#9b1c1c]/50 transition-all">
-          <div class="text-[10px] font-semibold text-[#9b1c1c] tracking-wider uppercase mb-1">Pattern 1</div>
-          <h4 class="font-serif font-bold text-sm mb-2">Thiên thời + Nhân hòa</h4>
-          <p class="text-xs text-[#78716c] leading-relaxed">Tại sao các cuộc khởi nghĩa Bắc thuộc chỉ thắng tạm thời, còn Ngô Quyền thắng vĩnh viễn nhờ kết hợp triều đại suy thoái với xây dựng triều đình tự lập.</p>
-        </div>
-        <div onclick="selectPattern('pt2')" class="border border-[#e7e5e4] bg-[#faf9f7] rounded-2xl p-5 cursor-pointer hover:border-[#9b1c1c]/50 transition-all">
-          <div class="text-[10px] font-semibold text-[#9b1c1c] tracking-wider uppercase mb-1">Pattern 2</div>
-          <h4 class="font-serif font-bold text-sm mb-2">Khoảng trống quyền lực</h4>
-          <p class="text-xs text-[#78716c] leading-relaxed">Khi lãnh đạo tối cao qua đời đột ngột mà chưa thiết lập thể chế vững chắc sẽ dẫn đến thảm họa cát cứ chia cắt (Ngô Quyền, Đinh Bộ Lĩnh).</p>
-        </div>
-        <div onclick="selectPattern('pt3')" class="border border-[#e7e5e4] bg-[#faf9f7] rounded-2xl p-5 cursor-pointer hover:border-[#9b1c1c]/50 transition-all">
-          <div class="text-[10px] font-semibold text-[#9b1c1c] tracking-wider uppercase mb-1">Pattern 3</div>
-          <h4 class="font-serif font-bold text-sm mb-2">Trả rẻ giữ đắt</h4>
-          <p class="text-xs text-[#78716c] leading-relaxed">Phương châm ngoại giao sinh tồn của nước nhỏ: Chấp nhận triều cống giữ hòa khí và hạ mình danh nghĩa, nhưng kiên định giữ tự trị nội bộ thực chất.</p>
-        </div>
-        <div onclick="selectPattern('pt4')" class="border border-[#e7e5e4] bg-[#faf9f7] rounded-2xl p-5 cursor-pointer hover:border-[#9b1c1c]/50 transition-all">
-          <div class="text-[10px] font-semibold text-[#9b1c1c] tracking-wider uppercase mb-1">Pattern 4</div>
-          <h4 class="font-serif font-bold text-sm mb-2">Trận Bạch Đằng lặp lại</h4>
-          <p class="text-xs text-[#78716c] leading-relaxed">Mô hình cọc nhọn bịt sắt cắm sâu lòng sông Bạch Đằng là biểu tượng quân sự lặp lại xuất sắc qua 3 triều đại (Ngô Quyền 938, Lê Hoàn 981).</p>
-        </div>
-        <div onclick="selectPattern('pt5')" class="sm:col-span-2 border border-[#e7e5e4] bg-[#faf9f7] rounded-2xl p-5 cursor-pointer hover:border-[#9b1c1c]/50 transition-all">
-          <div class="text-[10px] font-semibold text-[#9b1c1c] tracking-wider uppercase mb-1">Pattern 5</div>
-          <h4 class="font-serif font-bold text-sm mb-2">Uy vũ cá nhân chuyển sang Thể chế hóa</h4>
-          <p class="text-xs text-[#78716c] leading-relaxed">Sự phát triển từ cai trị phụ thuộc vào sức mạnh của một anh hùng cụ thể sang việc vận hành bằng luật pháp, giáo dục và di sản ổn định bền vững lâu dài (Hình thư và Văn miếu nhà Lý).</p>
-        </div>
+        <!-- Patterns rendered from ban-do-data.js PATTERNS_CONFIG -->
       </div>
-
     </div>
 
     <!-- RIGHT: Concept Details Panel (Column 5/12) -->
@@ -354,344 +207,63 @@
     </div>
   </footer>
 
+  <script src="ban-do-data.js"></script>
   <script>
-    // Live database of concepts based on concept-map.md
-    const database = {
-      vl: {
-        category: "Thời kỳ Dựng Nước",
-        title: "Nhà nước Văn Lang",
-        period: "Thế kỷ 7–6 TCN",
-        desc: "Văn Lang là nhà nước sơ khai đầu tiên của người Việt cổ. Mặc dù huyền thoại chép lại lập quốc năm 2879 TCN, các bằng chứng khảo cổ học văn hóa Đông Sơn xác thực nhà nước chỉ thực sự hình thành rõ rệt từ thế kỷ 7–6 TCN. Mô hình cai trị chia 3 cấp: Vua Hùng ở trung ương, Lạc tướng cai quản các bộ và Lạc dân tự do canh tác lúa nước.",
-        lessons: [
-          { name: "Bài 1: Nhà nước Văn Lang", url: "bai-hoc/nha-nuoc-van-lang.html" }
-        ],
-        figures: [
-          { name: "Vua Hùng (Huyền thoại)", url: "#" }
-        ],
-        lineConnections: ["line-vl-al"]
-      },
-      al: {
-        category: "Kế thừa & Chuyển tiếp",
-        title: "Nhà nước Âu Lạc",
-        period: "257–179 TCN",
-        desc: "Thục Phán sáp nhập Âu Việt và Lạc Việt, tự xưng là An Dương Vương lập nước Âu Lạc. Triều đại này đánh dấu sự chuyển mình từ uy vũ bộ lạc sang một nhà nước tập quyền thật sự. Bằng chứng khảo cổ học là kỳ quan Thành Cổ Loa kiên cố xoắn ốc dài 16km. Tuy nhiên vương triều sụp đổ vì mất bí mật nỏ thần quân sự qua cuộc hôn nhân chính trị Trọng Thủy - Mỵ Châu.",
-        lessons: [
-          { name: "Bài 2: Nhà nước Âu Lạc", url: "bai-hoc/nha-nuoc-au-lac.html" }
-        ],
-        figures: [
-          { name: "An Dương Vương", url: "#" }
-        ],
-        lineConnections: ["line-vl-al", "line-al-bt"]
-      },
-      bt: {
-        category: "Hơn 10 thế kỷ đề kháng",
-        title: "1.000 Năm Bắc Thuộc",
-        period: "111 TCN – 938 SCN",
-        desc: "Giai đoạn bị các triều đại phong kiến Trung Hoa chiếm đóng và thực thi chính sách đồng hóa khốc liệt bằng chữ Hán, nho giáo và luật pháp quan liêu. Mặc dù tầng lớp quý tộc trên bị Hán hóa, nền văn hóa Việt cốt lõi vẫn được bảo tồn vững chắc nhờ pháo đài tự trị Làng xã (Phép vua thua lệ làng) kết hợp các cuộc khởi nghĩa liên tục tích lũy ký ức kháng cự.",
-        lessons: [
-          { name: "Bài 3: 1000 Năm Bắc Thuộc", url: "bai-hoc/1000-nam-bac-thuoc.html" }
-        ],
-        figures: [
-          { name: "Hai Bà Trưng",    url: "nhan-vat/hai-ba-trung.html",   role: "king" },
-          { name: "Phùng Hưng",       url: "nhan-vat/phung-hung.html",     role: "king" },
-          { name: "Khúc Thừa Dụ",  url: "nhan-vat/khuc-thua-du.html",   role: "king" },
-          { name: "Dương Đình Nghệ", url: "nhan-vat/duong-dinh-nghe.html",role: "king" }
-        ],
-        lineConnections: ["line-al-bt", "line-bt-nq"]
-      },
-      nq: {
-        category: "Mốc son vĩnh viễn",
-        title: "Ngô Quyền — 938 SCN",
-        period: "Năm 938 SCN",
-        desc: "Ngô Quyền hạ sát phản tặc Kiều Công Tiễn và lập trận địa cọc gỗ bịt sắt trên sông Bạch Đằng dẹp tan quân Nam Hán xâm lược năm 938 SCN. Chiến thắng này chấm dứt vĩnh viễn 1.000 năm Bắc thuộc. Ông dời đô về lại Cổ Loa xưng vương vĩ đại, tuy nhiên do băng hà sớm năm 944 nên chưa kịp thiết lập hệ thống thể chế vững chắc lâu dài.",
-        lessons: [
-          { name: "Bài 4: Ngô Quyền 938", url: "bai-hoc/ngo-quyen.html" }
-        ],
-        figures: [
-          { name: "Ngô Quyền", url: "nhan-vat/ngo-quyen.html" }
-        ],
-        lineConnections: ["line-bt-nq", "line-nq-l12"]
-      },
-      l12: {
-        category: "Hậu Ngô Quyền",
-        title: "Loạn 12 Sứ Quân",
-        period: "944–968 SCN",
-        desc: "Sau cái chết của Ngô Quyền, đất nước xuất hiện khoảng trống quyền lực tối cao, dẫn đến các hào trưởng tự lập địa bàn chia cát cứ nội chiến đẫm máu suốt hơn 20 năm. Loạn sứ quân phản ánh điểm yếu chí mạng khi vương triều cai trị chỉ dựa trên uy vũ cá nhân của một người lãnh đạo mà thiếu đi cơ chế pháp trị hay thể chế hóa bộ máy kế vị.",
-        lessons: [
-          { name: "Bài 5: Loạn 12 Sứ Quân", url: "bai-hoc/loan-12-su-quan.html" }
-        ],
-        figures: [
-          { name: "Đinh Bộ Lĩnh", url: "nhan-vat/dinh-bo-linh.html" }
-        ],
-        lineConnections: ["line-nq-l12", "line-l12-dl"]
-      },
-      dl: {
-        category: "Thiết lập Hoàng quyền",
-        title: "Nhà Đinh — Đinh Bộ Lĩnh",
-        period: "968–979 SCN",
-        desc: "Đinh Bộ Lĩnh bằng chiến lược liên minh hôn nhân và thu phục khéo léo đã dẹp tan 12 sứ quân, lập ra nhà Đinh năm 968 SCN tại vùng thung lũng hiểm trở Hoa Lư. Ông xưng Hoàng đế (ngang hàng Trung Hoa), đặt quốc hiệu Đại Cồ Việt, xác lập 3 nền móng độc lập vững chắc: danh hiệu tự lập, bộ máy quan lại phân cấp và ngoại giao triều cống khôn ngoan.",
-        lessons: [
-          { name: "Bài 6: Đinh – Lê", url: "bai-hoc/dinh-le.html" }
-        ],
-        figures: [
-          { name: "Đinh Bộ Lĩnh", url: "nhan-vat/dinh-bo-linh.html" }
-        ],
-        lineConnections: ["line-l12-dl", "line-dl-ntl"]
-      },
-      ntl: {
-        category: "Ngoại giao Cương & Nhu",
-        title: "Nhà Tiền Lê — Lê Đại Hành",
-        period: "980–1009 SCN",
-        desc: "Sau khi Đinh Bộ Lĩnh bị ám sát 979, trước nguy cơ xâm lược của nhà Tống, Thái hậu Dương Vân Nga đã quyết định thực dụng: trao áo long bào cống hiến quốc gia cho Thập đạo tướng quân Lê Hoàn. Vua Lê Hoàn đánh tan quân Tống năm 981 bằng chiến thuật Bạch Đằng lặp lại, ngay lập tức cử sứ giả bang giao triều cống nhún nhường để bảo đảm hòa bình lâu dài.",
-        lessons: [
-          { name: "Bài 7: Nhà Tiền Lê", url: "bai-hoc/nha-tien-le.html" }
-        ],
-        figures: [
-          { name: "Lê Hoàn",       url: "nhan-vat/le-hoan.html",       role: "king" },
-          { name: "Dương Vân Nga", url: "nhan-vat/duong-van-nga.html",  role: "queen" },
-          { name: "Lê Long Đĩnh", url: "nhan-vat/le-long-dinh.html",   role: "king" }
-        ],
-        lineConnections: ["line-dl-ntl", "line-ntl-ly"]
-      },
-      ly: {
-        category: "Kỷ nguyên văn hiến",
-        title: "Nhà Lý — Thời kỳ Thịnh Trị",
-        period: "1009–1225 SCN",
-        desc: "Nhà Lý dời đô về Thăng Long phát triển giao thương cởi mở, kết hợp văn hóa Phật giáo khoan hòa, tạo nên kỷ nguyên văn hiến hoàng kim. Triều đại này giải quyết triệt để tính bấp bênh của Đinh-Tiền Lê bằng cách 'thể chế hóa' đất nước: dời đô phát triển kinh tế (Lý Thái Tổ), ban Hình thư lập pháp (Lý Thánh Tông), và xây dựng Văn Miếu (1070) đào tạo hiền tài bằng thực học, giúp vương triều tự vận hành ổn định lâu dài.",
-        lessons: [
-          { name: "Bài 8: Nhà Lý — Tổng quan", url: "bai-hoc/nha-ly-total.html" },
-          { name: "Bài 9: Nhà Lý — Khai Quốc & Dời Đô", url: "bai-hoc/nha-ly-chap1.html" },
-          { name: "Bài 10: Nhà Lý — Củng Cố & Mở Rộng", url: "bai-hoc/nha-ly-chap2.html" },
-          { name: "Bài 11: Nhà Lý — Kháng Chiến Chống Tống", url: "bai-hoc/nha-ly-chap3.html" },
-          { name: "Bài 12: Nhà Lý — Xây Dựng Văn Hóa & Thể Chế", url: "bai-hoc/nha-ly-chap4.html" },
-          { name: "Bài 13: Nhà Lý — Suy Tàn & Chuyển Giao", url: "bai-hoc/nha-ly-chap5.html" }
-        ],
-        figures: [
-          { name: "Lý Công Uẩn",          url: "nhan-vat/ly-cong-uan.html",        role: "king" },
-          { name: "Đào Cam Mộc",          url: "nhan-vat/dao-cam-moc.html",        role: "official" },
-          { name: "Lưu Cơ",               url: "nhan-vat/luu-co.html",             role: "official" },
-          { name: "Nguyễn Đạo Thanh",     url: "nhan-vat/nguyen-dao-thanh.html",   role: "official" },
-          { name: "Lý Thái Tông",          url: "nhan-vat/ly-thai-tong.html",       role: "king" },
-          { name: "Lê Phụng Hiểu",         url: "nhan-vat/le-phung-hieu.html",      role: "official" },
-          { name: "Nùng Trí Cao",           url: "nhan-vat/nung-tri-cao.html",       role: "enemy" },
-          { name: "Thiền Sư Vạn Hạnh",    url: "nhan-vat/thien-su-van-hanh.html",  role: "advisor" },
-          { name: "Lý Thánh Tông",         url: "nhan-vat/ly-thanh-tong.html",      role: "king" },
-          { name: "Hoàng Hậu Ỷ Lan",      url: "nhan-vat/hoang-hau-y-lan.html",    role: "queen" },
-          { name: "Lý Nhân Tông",          url: "nhan-vat/ly-nhan-tong.html",       role: "king" },
-          { name: "Lê Văn Thịnh",          url: "nhan-vat/le-van-thinh.html",       role: "official" },
-          { name: "Quách Quỳ (Nhà Tống)",  url: "nhan-vat/quach-quy.html",          role: "enemy" },
-          { name: "Lý Thường Kiệt",        url: "nhan-vat/ly-thuong-kiet.html",     role: "official" },
-          { name: "Tô Hiến Thành",         url: "nhan-vat/to-hien-thanh.html",      role: "official" },
-          { name: "Lý Thần Tông",          url: "nhan-vat/ly-than-tong.html",       role: "king" },
-          { name: "Nguyễn Minh Không",     url: "nhan-vat/nguyen-minh-khong.html",  role: "advisor" },
-          { name: "Lý Anh Tông",           url: "nhan-vat/ly-anh-tong.html",        role: "king" },
-          { name: "Lý Cao Tông",           url: "nhan-vat/ly-cao-tong.html",        role: "king" },
-          { name: "Lý Huệ Tông",           url: "nhan-vat/ly-hue-tong.html",        role: "king" },
-          { name: "Trần Thị Dung",       url: "nhan-vat/tran-thi-dung.html",       role: "queen" },
-          { name: "Lý Chiêu Hoàng",       url: "nhan-vat/ly-chieu-hoang.html",      role: "king" }
-        ],
-        lineConnections: ["line-ntl-ly", "line-ly-tran"]
-      },
+    // ══════════════════════════════════════════════
+    //  RENDERER — Tạo nodes, lines, patterns từ data
+    // ══════════════════════════════════════════════
 
-      // NHÀ TRẦN
-      nha_tran: {
-        category: "Triều Đại",
-        title: "Nhà Trần",
-        period: "1225 – 1400 SCN",
-        desc: "Vương triều thành lập bởi bàn tay sắt của Thái sư Trần Thủ Độ — đạo diễn hoàn hảo cuộc chuyển giao quyền lực không đổ máu. Nhà Trần đối mặt ngay với bóng ma Mông Cổ và 3 lần đánh bại đế chế hùng mạnh nhất thế giới. Chiến thắng Đông Bộ Đầu (1258), Hàm Tử Quan và Bạch Đằng Giang (1288) là kỳ tích quân sự vĩ đại nhất Đại Việt.",
-        lessons: [
-          { name: "Nhà Trần - Khai Triều & Chuyển Giao Máu Lửa", url: "bai-hoc/nha-tran-chap1.html" },
-          { name: "Nhà Trần - 3 Lần Kháng Chiến Chống Mông-Nguyên", url: "bai-hoc/nha-tran-chap2.html" },
-          { name: "Nhà Trần - Thịnh Trị & Văn Hoá (1288–1341)", url: "bai-hoc/nha-tran-chap3.html" },
-          { name: "Sự kiện 1299: Trần Nhân Tông lên Yên Tử", url: "bai-hoc/tran-nhan-tong-yen-tu.html" },
-          { name: "Sự kiện 1301: Du Ngoạn Phương Nam", url: "bai-hoc/du-ngoan-phuong-nam.html" },
-          { name: "Sự kiện 1307: Vụ Cướp Dâu Huyền Trân", url: "bai-hoc/cuop-dau-huyen-tran.html" },
-          { name: "Sự kiện 1312: Đoàn Nhữ Hài Dụ Hàng Chiêm", url: "bai-hoc/doan-nhu-hai-du-hang.html" },
-          { name: "S\u1ef1 ki\u1ec7n 1328: V\u1ee5 \u00c1n Tr\u1ea7n Qu\u1ed1c Ch\u1ea9n", url: "bai-hoc/vu-an-tran-quoc-chan.html" },
-          { name: "1341 \u00b7 K\u1ef7 Nguy\u00ean Sa \u0110\u1ecda \u0026 Th\u1ea5t Tr\u1ea3m S\u1edb", url: "bai-hoc/ky-nguyen-sa-doa-tran-du-tong.html" },
-          { name: "1369 \u00b7 Bi\u1ebfn C\u1ed1 D\u01b0\u01a1ng Nh\u1eadt L\u1ec5", url: "bai-hoc/bien-co-duong-nhat-le.html" },
-          { name: "1370 \u00b7 S\u1ef1 Nhu Nh\u01b0\u1ee3c C\u1ee7a Tr\u1ea7n Ngh\u1ec7 T\u00f4ng", url: "bai-hoc/su-nhu-nuoc-tran-nghe-tong.html" },
-          { name: "1400 \u00b7 C\u00fa Ch\u1ed1t H\u1ea1 C\u1ee7a H\u1ed3 Qu\u00fd Ly", url: "bai-hoc/cu-chot-ha-cua-ho-quy-ly.html" }
-        ],
-        figures: [
-          { name: "Tr\u1ea7n Th\u1ee7 \u0110\u1ed9",     url: "nhan-vat/tran-thu-do.html",       role: "official" },
-          { name: "Tr\u1ea7n Th\u00e1i T\u00f4ng", url: "nhan-vat/tran-thai-tong.html",    role: "king"     },
-          { name: "L\u00fd Chi\u00eau Ho\u00e0ng", url: "nhan-vat/ly-chieu-hoang.html",    role: "queen"    },
-          { name: "Tr\u1ea7n Th\u1ecb Dung",  url: "nhan-vat/tran-thi-dung.html",     role: "official" },
-          { name: "Tr\u1ea7n Li\u1ec5u",      url: "nhan-vat/tran-lieu.html",          role: "official" },
-          { name: "L\u00ea Ph\u1ee5 Tr\u1ea7n",    url: "nhan-vat/le-phu-tran.html",      role: "official" },
-          { name: "Tr\u1ea7n Th\u00e1nh T\u00f4ng",  url: "nhan-vat/tran-thanh-tong.html",  role: "king"     },
-          { name: "Tr\u1ea7n Nh\u00e2n T\u00f4ng",   url: "nhan-vat/tran-nhan-tong.html",   role: "king"     },
-          { name: "Tr\u1ea7n H\u01b0ng \u0110\u1ea1o",    url: "nhan-vat/tran-hung-dao.html",    role: "official" },
-          { name: "Tr\u1ea7n Quang Kh\u1ea3i",  url: "nhan-vat/tran-quang-khai.html",  role: "official" },
-          { name: "Tr\u1ea7n Kh\u00e1nh D\u01b0",    url: "nhan-vat/tran-khanh-du.html",    role: "official" },
-          { name: "An T\u01b0 C\u00f4ng Ch\u00faa",  url: "nhan-vat/an-tu-cong-chua.html",  role: "queen"    },
-          { name: "Tr\u1ea7n \u00cdch T\u1eafc",     url: "nhan-vat/tran-ich-tac.html",     role: "enemy"    },
-          { name: "Tr\u1ea7n Qu\u1ed1c To\u1ea3n",   url: "nhan-vat/tran-quoc-toan.html",   role: "official" },
-          { name: "Tr\u1ea7n Anh T\u00f4ng",     url: "nhan-vat/tran-anh-tong.html",    role: "king"     },
-          { name: "Tr\u1ea7n Nh\u1eadt Du\u1eadt",    url: "nhan-vat/tran-nhat-duat.html",   role: "official" },
-          { name: "Ph\u1ea1m Ng\u0169 L\u00e3o",      url: "nhan-vat/pham-ngu-lao.html",     role: "official" },
-          { name: "Tr\u1ea7n B\u00ecnh Tr\u1ecdng",   url: "nhan-vat/tran-binh-trong.html",  role: "official" },
-          { name: "Y\u1ebft Ki\u00eau \u0026 D\u00e3 T\u01b0\u1ee3ng", url: "nhan-vat/yet-kieu-da-tuong.html", role: "official" },
-          { name: "Huy\u1ec1n Tr\u00e2n C\u00f4ng Ch\u00faa", url: "nhan-vat/huyen-tran-cong-chua.html", role: "queen" },
-          { name: "Tr\u1ea7n Minh T\u00f4ng",      url: "nhan-vat/tran-minh-tong.html",       role: "king"     },
-          { name: "\u0110o\u00e0n Nh\u1eef H\u00e0i",        url: "nhan-vat/doan-nhu-hai.html",         role: "official" },
-          { name: "M\u1ea1c \u0110\u1ec9nh Chi",        url: "nhan-vat/mac-dinh-chi.html",         role: "official" },
-          { name: "Chu V\u0103n An",          url: "nhan-vat/chu-van-an.html",           role: "advisor"  },
-          { name: "Tr\u1ea7n D\u1ee5 T\u00f4ng",        url: "nhan-vat/tran-du-tong.html",         role: "king"     },
-          { name: "D\u01b0\u01a1ng Nh\u1eadt L\u1ec5",       url: "nhan-vat/duong-nhat-le.html",        role: "king"     },
-          { name: "Tr\u1ea7n Ngh\u1ec7 T\u00f4ng",       url: "nhan-vat/tran-nghe-tong.html",       role: "king"     },
-          { name: "Ch\u1ebf B\u1ed3ng Nga",         url: "nhan-vat/che-bong-nga.html",         role: "enemy"    },
-          { name: "Tr\u1ea7n Kh\u00e1t Ch\u00e2n",        url: "nhan-vat/tran-khat-chan.html",       role: "official" },
-          { name: "Tr\u1ea7n Hi\u1ebfn T\u00f4ng",      url: "nhan-vat/tran-hien-tong.html",       role: "king"     },
-          { name: "B\u1ed9 Ba Vua B\u00f9 Nh\u00ecn",    url: "nhan-vat/bo-ba-vua-bu-nhin.html",    role: "king"     }
-        ],
-        lineConnections: ["line-ly-tran"]
-      },
+    // Render SVG lines
+    (function renderLines() {
+      const svg = document.getElementById('lines-container');
+      LINES_CONFIG.forEach(l => {
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.id = l.id;
+        line.setAttribute('x1', l.x1); line.setAttribute('y1', l.y1);
+        line.setAttribute('x2', l.x2); line.setAttribute('y2', l.y2);
+        line.setAttribute('stroke', '#e7e5e4');
+        line.setAttribute('stroke-width', '2');
+        svg.appendChild(line);
+      });
+    })();
 
-      nha_ho: {
-        category: "Triều đại",
-        title: "Nhà Hồ (Đại Ngu)",
-        period: "1400 – 1407 SCN",
-        desc: "Triều đại ngắn nhất nhưng cải cách nhất lịch sử Việt Nam. Hồ Quý Ly đưa ra tiền giấy, hạn điền, thi chữ Nôm đi trước thời đại 200 năm. Sụp đổ chỉ sau 7 năm vì không có lòng dân — khi nhà Minh đến, không ai đứng ra bảo vệ.",
-        lessons: [
-          { name: "Nhà Hồ — Tổng Quan", url: "bai-hoc/nha-ho-tong-quan.html" },
-          { name: "Kháng Chiến Chống Minh (1407)", url: "bai-hoc/nha-ho-sup-do-1407.html" }
-        ],
-        figures: [
-          { name: "Hồ Quý Ly",       url: "nhan-vat/ho-quy-ly.html",       role: "king"     },
-          { name: "Hồ Nguyên Trừng", url: "nhan-vat/ho-nguyen-trung.html", role: "official" }
-        ],
-        lineConnections: []
-      },
+    // Render dynasty nodes
+    (function renderNodes() {
+      const container = document.getElementById('nodes-container');
+      NODES_CONFIG.forEach(n => {
+        const div = document.createElement('div');
+        div.id = `node-${n.id}`;
+        div.onclick = () => selectNode(n.id);
+        div.className = 'w-72 bg-[#faf9f7] border border-[#e7e5e4] rounded-2xl p-4 cursor-pointer transition-all duration-300 hover:border-[#9b1c1c]/50 hover:shadow-md';
+        div.innerHTML = `
+          <div class="flex items-center justify-between mb-1">
+            <span class="text-[9px] font-semibold tracking-wider uppercase" style="color:${n.tagColor}">${n.tagLabel}</span>
+            <span class="text-[9px] text-[#a8a29e] tracking-widest">${n.period}</span>
+          </div>
+          <h4 class="font-serif font-bold text-sm text-[#1c1917]">${n.title}</h4>
+          <div class="text-[10px] text-[#78716c] italic mt-1">${n.subtitle}</div>`;
+        container.appendChild(div);
+      });
+    })();
 
-      nha_hau_le: {
-        category: "Triều đại",
-        title: "Nhà Hậu Lê",
-        period: "1428 – 1788 SCN",
-        desc: "Triều đại dài nhất lịch sử Việt Nam (360 năm). Chia 2 giai đoạn: Lê Sơ (1428–1527) — 100 năm đỉnh cao với Lê Thánh Tông, Luật Hồng Đức, Nam Tiến 1471. Lê Trung Hưng (1533–1789) — 250 năm bóng ma trên ngai vàng, Chúa Trịnh – Chúa Nguyễn phân tranh.",
-        lessons: [
-          { name: "Kháng Chiến Chống Minh (1418–1427)", url: "bai-hoc/hau-le-khang-chien-chong-minh.html" },
-          { name: "Nhà Hậu Lê — Tổng Quan", url: "bai-hoc/nha-hau-le-tong-quan.html" },
-          { name: "Chap 2 · Đỉnh Cao Hoàng Kim (1428–1497)", url: "bai-hoc/nha-hau-le-chap2-dinh-cao-hoang-kim.html" },
-          { name: "Chap 3 · Suy Tàn & Mạc Thay Thế (1497-1527)", url: "bai-hoc/nha-hau-le-chap3-suy-tan-mac-thay-the.html" },
-          { name: "Chap 4 / Cụm 1 · Lê Hiến Tông & Lê Túc Tông", url: "bai-hoc/nha-hau-le-chap4-cum1-le-hien-tong.html" },
-          { name: "Chap 4 / Cụm 2 · Lê Uy Mục - Vua Quỷ", url: "bai-hoc/nha-hau-le-chap4-cum2-le-uy-muc.html" },
-          { name: "Chap 4 / Cụm 3 · Lê Tương Dực - Vua Lợn", url: "bai-hoc/nha-hau-le-chap4-cum3-le-tuong-duc.html" },
-          { name: "Chap 4 / Cụm 4 · Triều Đình Tan Rã & Mạc Soán Ngôi", url: "bai-hoc/nha-hau-le-chap4-cum4-trieu-dinh-tan-ra.html" }
-        ],
-        figures: [
-          { name: "Lê Lợi",          url: "nhan-vat/le-loi.html",          role: "king"     },
-          { name: "Lê Thái Tông",    url: "nhan-vat/le-thai-tong.html",    role: "king"     },
-          { name: "Lê Thánh Tông",   url: "nhan-vat/le-thanh-tong.html",   role: "king"     },
-          { name: "Nguyễn Trãi",     url: "nhan-vat/nguyen-trai.html",     role: "advisor"  },
-          { name: "Lê Lai",          url: "nhan-vat/le-lai.html",          role: "official" },
-          { name: "Nguyễn Chích",    url: "nhan-vat/nguyen-chich.html",    role: "official" },
-          { name: "Lê Sát",          url: "nhan-vat/le-sat.html",          role: "official" },
-          { name: "Thân Nhân Trung", url: "nhan-vat/than-nhan-trung.html", role: "advisor"  },
-          { name: "Lương Thế Vinh",  url: "nhan-vat/luong-the-vinh.html",  role: "advisor"  },
-          { name: "Nguyễn Thị Anh",  url: "nhan-vat/nguyen-thi-anh.html",  role: "queen"    },
-          { name: "Nguyễn Thị Lộ",   url: "nhan-vat/nguyen-thi-lo.html",   role: "official" },
-          { name: "Trà Toàn",        url: "nhan-vat/tra-toan.html",        role: "enemy"    },
-          { name: "Lê Hiến Tông",    url: "nhan-vat/le-hien-tong.html",    role: "king"     },
-          { name: "Lê Uy Mục",       url: "nhan-vat/le-uy-muc.html",       role: "king"     },
-          { name: "Lê Tương Dực",    url: "nhan-vat/le-tuong-duc.html",    role: "king"     },
-          { name: "Vũ Như Tô",       url: "nhan-vat/vu-nhu-to.html",       role: "advisor"  },
-          { name: "Trịnh Duy Sản",   url: "nhan-vat/trinh-duy-san.html",   role: "official" },
-          { name: "Lê Chiêu Tông",   url: "nhan-vat/le-chieu-tong.html",   role: "king"     },
-          { name: "Lê Cung Hoàng",   url: "nhan-vat/le-cung-hoang.html",   role: "king"     },
-          { name: "Mạc Đăng Dung",   url: "nhan-vat/mac-dang-dung.html",   role: "king"     },
-          { name: "Nguyễn Kim",      url: "nhan-vat/nguyen-kim.html",      role: "official" },
-          { name: "Trần Cảo",        url: "nhan-vat/tran-cao.html",        role: "enemy"    }
-        ],
-        lineConnections: []
-      },
+    // Render pattern cards
+    (function renderPatterns() {
+      const container = document.getElementById('tab-patterns');
+      PATTERNS_CONFIG.forEach(p => {
+        const div = document.createElement('div');
+        div.onclick = () => selectPattern(p.id);
+        div.className = (p.span === 2 ? 'sm:col-span-2 ' : '') +
+          'border border-[#e7e5e4] bg-[#faf9f7] rounded-2xl p-5 cursor-pointer hover:border-[#9b1c1c]/50 transition-all';
+        div.innerHTML = `
+          <div class="text-[10px] font-semibold text-[#9b1c1c] tracking-wider uppercase mb-1">${p.label}</div>
+          <h4 class="font-serif font-bold text-sm mb-2">${p.title}</h4>
+          <p class="text-xs text-[#78716c] leading-relaxed">${p.desc}</p>`;
+        container.appendChild(div);
+      });
+    })();
 
-      // Patterns
-      pt1: {
-        category: "Quy Luật Lịch Sử 01",
-        title: "Thiên thời + Nhân hòa",
-        period: "Pattern Quy luật",
-        desc: "Sự khác biệt chí mạng giữa các cuộc khởi nghĩa thời Bắc thuộc và đại thắng Ngô Quyền 938 là sự kết hợp thời cơ vàng. Trước 938, khởi nghĩa thắng trận rồi mất vì Trung Hoa còn mạnh và ta chưa xây nhà nước vững chãi. Năm 938, Trung Hoa rơi vào đại loạn Ngũ Đại Thập Quốc (Thiên thời), và Ngô Quyền lập tức xưng vương dựng triều đình đóng đô Cổ Loa (Nhân hòa) thiết lập rào cản ngăn chặn sự tái chiếm.",
-        lessons: [
-          { name: "Bài 3: 1000 Năm Bắc Thuộc", url: "bai-hoc/1000-nam-bac-thuoc.html" },
-          { name: "Bài 4: Ngô Quyền 938", url: "bai-hoc/ngo-quyen.html" }
-        ],
-        figures: [
-          { name: "Ngô Quyền", url: "nhan-vat/ngo-quyen.html" }
-        ],
-        lineConnections: []
-      },
-      pt2: {
-        category: "Quy Luật Lịch Sử 02",
-        title: "Tránh khoảng trống quyền lực",
-        period: "Pattern Quy luật",
-        desc: "Lịch sử chỉ ra rằng khi vị anh hùng tối cao dựng nước mất sớm hoặc qua đời đột ngột mà chưa hoàn thành xây dựng thể chế và cơ chế thừa kế rõ ràng, đất nước sẽ lập tức rơi vào khủng hoảng hoặc bị ngoại bang dòm ngó. Điển hình là sau cái chết của Ngô Quyền 944 dẫn đến Loạn 12 sứ quân, và cái chết của Đinh Tiên Hoàng 979 dẫn đến đại quân Tống nam tiến. Sự có mặt dũng cảm, thực dụng của Đinh Bộ Lĩnh, Dương Vân Nga, Lê Hoàn và sau này là việc nhiếp chính vững vàng của Hoàng hậu Ỷ Lan đã cứu quốc gia kịp thời thoát khỏi hiểm cảnh.",
-        lessons: [
-          { name: "Bài 5: Loạn 12 Sứ Quân", url: "bai-hoc/loan-12-su-quan.html" },
-          { name: "Bài 6: Đinh – Lê", url: "bai-hoc/dinh-le.html" },
-          { name: "Bài 7: Nhà Tiền Lê", url: "bai-hoc/nha-tien-le.html" }
-        ],
-        figures: [
-          { name: "Đinh Bộ Lĩnh", url: "nhan-vat/dinh-bo-linh.html" },
-          { name: "Dương Vân Nga", url: "nhan-vat/duong-van-nga.html" },
-          { name: "Hoàng Hậu Ỷ Lan", url: "nhan-vat/hoang-hau-y-lan.html" }
-        ],
-        lineConnections: []
-      },
-      pt3: {
-        category: "Quy Luật Lịch Sử 03",
-        title: "Trả rẻ giữ đắt (Ngoại giao)",
-        period: "Pattern Quy luật",
-        desc: "Sách lược ngoại giao xuyên suốt 1.000 năm của các vương triều độc lập tự chủ nước Việt: Chấp nhận nhún nhường, chịu triều cống triều đình phong kiến phương Bắc (trả cái rẻ - danh vị hào nhoáng bên ngoài) để giữ lấy nền độc lập, chủ quyền nội trị thực chất bên trong (giữ cái đắt). Vua Lê Hoàn sau khi đánh bại quân Tống năm 981 đã thả tù binh và lập tức cử sứ thần sang triều cống cầu hòa để đổi lấy hòa bình bền vững.",
-        lessons: [
-          { name: "Bài 6: Đinh – Lê", url: "bai-hoc/dinh-le.html" },
-          { name: "Bài 7: Nhà Tiền Lê", url: "bai-hoc/nha-tien-le.html" }
-        ],
-        figures: [
-          { name: "Lê Hoàn", url: "nhan-vat/le-hoan.html" }
-        ],
-        lineConnections: []
-      },
-      pt4: {
-        category: "Quy Luật Lịch Sử 04",
-        title: "Biểu tượng Bạch Đằng Giang",
-        period: "Pattern Quy luật",
-        desc: "Sự lặp lại kỳ diệu của tri thức và chiến thuật quân sự. Sông Bạch Đằng với trận địa cắm cọc gỗ nhọn bịt sắt lợi dụng thủy triều lên xuống đã ghi nhận 2 lần chiến thắng vang dội trong thời kỳ này: Ngô Quyền đánh tan quân Nam Hán năm 938 và Lê Hoàn đánh bại quân Tống năm 981. Nó chứng tỏ tri thức quân sự được lưu truyền, kế thừa xuất sắc qua các thế hệ anh hùng cứu quốc.",
-        lessons: [
-          { name: "Bài 4: Ngô Quyền 938", url: "bai-hoc/ngo-quyen.html" },
-          { name: "Bài 7: Nhà Tiền Lê", url: "bai-hoc/nha-tien-le.html" }
-        ],
-        figures: [
-          { name: "Ngô Quyền", url: "nhan-vat/ngo-quyen.html" },
-          { name: "Lê Hoàn", url: "nhan-vat/le-hoan.html" }
-        ],
-        lineConnections: []
-      },
-      pt5: {
-        category: "Quy Luật Lịch Sử 05",
-        title: "Chuyển từ Uy Vũ sang Thể Chế",
-        period: "Pattern Quy luật",
-        desc: "Đỉnh cao của sự trưởng thành quốc gia. Các triều đại Ngô, Đinh, Tiền Lê cai trị đất nước chủ yếu bằng 'uy vũ cá nhân' của vị dũng tướng lập quốc, khiến vương triều bấp bênh dễ sụp khi vua chết. Nhà Lý lập quốc 1009 đã giải quyết triệt để bằng 'thể chế hóa': Dời đô Thăng Long mở mang giao thương phát triển, ban Hình Thư xác lập luật pháp tối cao và dựng Văn Miếu đào tạo quan lại bằng quy trình chọn lọc thực tài.",
-        lessons: [
-          { name: "Bài 6: Đinh – Lê", url: "bai-hoc/dinh-le.html" },
-          { name: "Bài 8: Nhà Lý — Tổng quan", url: "bai-hoc/nha-ly-total.html" },
-          { name: "Bài 9: Nhà Lý — Khai Quốc & Dời Đô", url: "bai-hoc/nha-ly-chap1.html" },
-          { name: "Bài 10: Nhà Lý — Củng Cố & Mở Rộng", url: "bai-hoc/nha-ly-chap2.html" },
-          { name: "Bài 12: Nhà Lý — Chap 4", url: "bai-hoc/nha-ly-chap4.html" }
-        ],
-        figures: [
-          { name: "Lý Công Uẩn", url: "nhan-vat/ly-cong-uan.html" },
-          { name: "Lý Thái Tông", url: "nhan-vat/ly-thai-tong.html" },
-          { name: "Thiền Sư Vạn Hạnh", url: "nhan-vat/thien-su-van-hanh.html" },
-          { name: "Lý Thánh Tông", url: "nhan-vat/ly-thanh-tong.html" },
-          { name: "Hoàng Hậu Ỷ Lan", url: "nhan-vat/hoang-hau-y-lan.html" },
-          { name: "Lý Nhân Tông", url: "nhan-vat/ly-nhan-tong.html" },
-          { name: "Lê Văn Thịnh", url: "nhan-vat/le-van-thinh.html" }
-        ],
-        lineConnections: []
-      }
-    };
+    // Data alias
+    const database = DATABASE;
 
     // Tab switcher logic
     const btnFlow = document.getElementById('btn-flow');
