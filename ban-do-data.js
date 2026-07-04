@@ -363,14 +363,15 @@ const DATABASE = {
     period: "1428 – 1788 SCN",
     desc: "Triều đại dài nhất lịch sử Việt Nam (360 năm). Chia 2 giai đoạn: Lê Sơ (1428–1527) — 100 năm đỉnh cao với Lê Thánh Tông, Luật Hồng Đức, Nam Tiến 1471. Lê Trung Hưng (1533–1789) — 250 năm bóng ma trên ngai vàng, Chúa Trịnh – Chúa Nguyễn phân tranh.",
     lessons: [
-      { name: "Kháng Chiến Chống Minh (1418–1427)", url: "bai-hoc/hau-le-khang-chien-chong-minh.html" },
       { name: "Nhà Hậu Lê — Tổng Quan", url: "bai-hoc/nha-hau-le-tong-quan.html" },
+      { name: "Chap 1 · Kháng Chiến Chống Minh (1418–1427)", url: "bai-hoc/hau-le-khang-chien-chong-minh.html" },
       { name: "Chap 2 · Đỉnh Cao Hoàng Kim (1428–1497)", url: "bai-hoc/nha-hau-le-chap2-dinh-cao-hoang-kim.html" },
-      { name: "Chap 3 · Suy Tàn & Mạc Thay Thế (1497-1527)", url: "bai-hoc/nha-hau-le-chap3-suy-tan-mac-thay-the.html" },
-      { name: "Chap 4 / Cụm 1 · Lê Hiến Tông & Lê Túc Tông", url: "bai-hoc/nha-hau-le-chap4-cum1-le-hien-tong.html" },
-      { name: "Chap 4 / Cụm 2 · Lê Uy Mục - Vua Quỷ", url: "bai-hoc/nha-hau-le-chap4-cum2-le-uy-muc.html" },
-      { name: "Chap 4 / Cụm 3 · Lê Tương Dực - Vua Lợn", url: "bai-hoc/nha-hau-le-chap4-cum3-le-tuong-duc.html" },
-      { name: "Chap 4 / Cụm 4 · Triều Đình Tan Rã & Mạc Soán Ngôi", url: "bai-hoc/nha-hau-le-chap4-cum4-trieu-dinh-tan-ra.html" }
+      { name: "Chap 3 · Suy Tàn & Mạc Thay Thế (1497–1527)", url: "bai-hoc/nha-hau-le-chap3-suy-tan-mac-thay-the.html" },
+      { name: "Chap 4 · Lê Sơ Suy Tàn (1497–1527)", url: "bai-hoc/nha-hau-le-chap4-cum1-le-hien-tong.html" },
+      { name: "└ Cụm 1 · Lê Hiến Tông & Lê Túc Tông", url: "bai-hoc/nha-hau-le-chap4-cum1-le-hien-tong.html" },
+      { name: "└ Cụm 2 · Lê Uy Mục — Vua Quỷ", url: "bai-hoc/nha-hau-le-chap4-cum2-le-uy-muc.html" },
+      { name: "└ Cụm 3 · Lê Tương Dực — Vua Lợn", url: "bai-hoc/nha-hau-le-chap4-cum3-le-tuong-duc.html" },
+      { name: "└ Cụm 4 · Triều Đình Tan Rã & Mạc Soán Ngôi", url: "bai-hoc/nha-hau-le-chap4-cum4-trieu-dinh-tan-ra.html" }
     ],
     figures: [
       { name: "Lê Lợi",          url: "nhan-vat/le-loi.html",          role: "king"     },
