@@ -1,6 +1,7 @@
 # 📋 HISTORY-WEB PROJECT RULES
 
 > Các quy tắc BẮT BUỘC khi làm việc với project `D:\01. Projects\history-web`
+> **Từ 2026-07: project đã chuyển sang Eleventy (11ty).** Nguồn nằm trong `src/`, KHÔNG sửa `_site/` (output build).
 
 ---
 
@@ -11,112 +12,87 @@ Khi nhận bất kỳ file nội dung nào từ user (nhân vật, bài học, .
 ### ✅ PHẢI làm:
 - **Chỉ lấy nội dung (text)** từ file gốc của user
 - **KHÔNG lấy CSS, font, layout** từ file gốc
-- **Rebuild hoàn toàn** theo design system của project
+- **Rebuild theo template chuẩn**: file mới trong `src/nhan-vat/` hoặc `src/bai-hoc/` chỉ gồm
+  **front matter + nội dung từ `<main>` đến hết `<footer>`** — head/nav do layout `page.njk` tự sinh.
 
-### Design System chuẩn của project:
+### Front matter chuẩn:
+```yaml
+---
+title: "Tên trang | Phân tích 3 Gốc / 3 Độc"
+description: "Mô tả SEO..."
+breadcrumb: "Tên hiển thị trên nav"
+# tuỳ chọn:
+# breadcrumbParent: {"href": "nha-hau-le-tong-quan.html", "text": "Nhà Hậu Lê"}
+# navLabel: "nhãn phải của nav (mặc định: 3 Gốc / 3 Độc | Bài học lịch sử)"
+# ogTitle / ogDescription: nếu khác title/description
+---
 ```
-Fonts     : Be Vietnam Pro + Noto Serif (Google Fonts)
-Styles    : ../shared/styles.css + ../shared/scripts.js
-Layout    : sticky nav → hero header → TL;DR dark card →
-            sections với cards → timeline → bài học grid →
-            liên kết → share CTA → footer
+
+### Design System chuẩn:
+```
+Fonts     : Be Vietnam Pro + Noto Serif (layout tự load)
 Colors    : cream #faf9f7 | đỏ #9b1c1c | ink #1c1917
+Layout    : (nav tự sinh) → hero header → TL;DR dark card →
+            sections với cards → timeline → liên kết → share CTA → footer
+<style>   : style riêng của trang đặt NGAY ĐẦU nội dung (trong body)
 ```
 
 ### Template tham chiếu (source of truth):
-- **Nhân vật**: `nhan-vat/dinh-bo-linh.html` hoặc `nhan-vat/ly-nhan-tong.html`
-- **Bài học**: `bai-hoc/nha-ly-chap4.html` hoặc `bai-hoc/nha-ly-chap5.html`
+- **Nhân vật**: `src/nhan-vat/ly-nhan-tong.html`
+- **Bài học**: `src/bai-hoc/nha-ly-chap4.html`
 
 ### ❌ DẤU HIỆU SAI cần check ngay:
-- File dùng `Playfair Display` hoặc `IBM Plex Serif` → SAI
-- File có `font-family: 'IBM Plex Serif'` trong CSS → SAI
-- File không có `../shared/styles.css` → SAI
-- File dùng Tailwind config inline (tailwind.config = {...}) → SAI
+- File mới có `<!DOCTYPE>`, `<head>`, `<nav>` riêng → SAI (layout đã lo)
+- File dùng `Playfair Display` / `IBM Plex Serif` / tailwind.config inline → SAI
+- Sửa file trong `_site/` → SAI (bị ghi đè khi build)
 
 ---
 
-## 📦 QUY TẮC 2: GIT COMMIT — ĐỒNG BỘ TẤT CẢ TRANG LIÊN QUAN
-
-Khi hoàn thành thêm/sửa nhân vật hoặc bài học, **PHẢI commit đồng thời** tất cả file bị ảnh hưởng:
-
-### Checklist trước khi commit:
+## 📦 QUY TẮC 2: THÊM TRANG MỚI — CHECKLIST
 
 #### Khi thêm NHÂN VẬT mới:
 ```
-□ nhan-vat/[ten-nhan-vat].html          ← file chính
-□ index.html                             ← thêm card vào grid
-□ so-do-trieu-dinh.html                 ← thêm node vào sơ đồ
-□ ban-do.html                            ← thêm điểm vào bản đồ (nếu cần)
+□ src/nhan-vat/<ten>.html       ← file chính (front matter + nội dung)
+□ src/_data/eras.json           ← thêm 1 dòng vào era đúng, ĐÚNG THỨ TỰ THỜI GIAN
+                                   → trang chủ TỰ cập nhật chip + số liệu
+□ src/so-do-data.js             ← thêm node vào sơ đồ (nếu cần)
+□ src/ban-do-data.js            ← thêm điểm vào bản đồ (nếu cần)
 ```
 
 #### Khi thêm BÀI HỌC mới:
 ```
-□ bai-hoc/[ten-bai-hoc].html            ← file chính
-□ index.html                             ← thêm card vào grid bài học
-□ ban-do-khai-niem.html                 ← thêm nội dung vào bản đồ khái niệm (nếu có)
+□ src/bai-hoc/<ten>.html        ← file chính
+□ src/_data/eras.json           ← thêm chip vào groups của era tương ứng
+```
+
+### Trước khi commit:
+```
+npm run build && node scripts/check-links.js   # 0 link gãy mới được commit
 ```
 
 ### Format commit message chuẩn:
 ```
-feat: add [tên nhân vật/bài học] - sync all related pages
+feat: add [tên nhân vật/bài học]
 
-- [ten-file].html: [mô tả ngắn]
-- index.html: add card to character/lesson grid  
-- so-do-trieu-dinh.html: add node (nếu có)
-- ban-do.html: add location (nếu có)
+- src/nhan-vat/<ten>.html: [mô tả ngắn]
+- src/_data/eras.json: add chip to era X
 ```
+
+Push `main` → GitHub Actions tự build + deploy Pages. KHÔNG cần commit `_site/`.
 
 ---
 
-## 📅 QUY TẮC 3: THỨ TỰ THỜI GIAN trong index.html
+## 📅 QUY TẮC 3: THỨ TỰ THỜI GIAN trong eras.json
 
-Khi thêm card mới vào index (nhân vật hoặc bài học), **PHẢI chèn đúng vị trí theo thứ tự thời gian**:
-
-### Nhân vật — thứ tự theo năm tại vị / hoạt động chính:
-```
-40 SCN    → Hai Bà Trưng
-~791      → Phùng Hưng
-905       → Khúc Thừa Dụ
-931       → Dương Đình Nghệ
-938       → Ngô Quyền
-968       → Đinh Bộ Lĩnh
-979       → Dương Vân Nga
-980       → Lê Hoàn
-TK X-XI   → Thiền Sư Vạn Hạnh
-1005      → Lê Long Đĩnh
-1009      → Lý Công Uẩn
-1028      → Lý Thái Tông
-1019      → Lý Thường Kiệt   ← chèn trước Lý Thánh Tông
-1054      → Lý Thánh Tông
-1044      → Hoàng Hậu Ỷ Lan
-1072      → Lý Nhân Tông
-1075      → Lê Văn Thịnh
-1076      → Quách Quỳ
-1065      → Nguyễn Minh Không  ← chèn sau nhóm 1075
-1102      → Tô Hiến Thành
-1128      → Lý Thần Tông
-1138      → Lý Anh Tông
-1173      → Lý Cao Tông
-```
-
-### ❌ Lỗi cần tránh:
-- Thêm nhân vật vào cuối list mà không kiểm tra mốc thời gian
-- Đặt nhân vật sai vị trí so với timeline
+Chip trong `src/_data/eras.json` phải chèn đúng vị trí theo năm hoạt động chính
+(trang chủ render đúng thứ tự mảng). Sai vị trí = sai timeline trên trang chủ.
 
 ---
 
-## 🔄 QUY TRÌNH CHUẨN khi nhận file nội dung từ user:
-
-```
-1. ĐỌC file gốc  → CHỈ extract text/nội dung
-2. REBUILD      → Dùng template chuẩn của project (KHÔNG copy design cũ)
-3. VERIFY       → Kiểm tra font, styles, layout đúng chưa
-4. UPDATE INDEX → index.html (thêm card)
-5. UPDATE SƠ ĐỒ → so-do-trieu-dinh.html + ban-do.html (nếu cần)
-6. COMMIT       → git add tất cả file liên quan CÙNG LÚC
-7. PUSH         → git push origin main
-```
+## ⚠️ Trang ngoại lệ (không qua layout):
+- `src/nhan-vat/to-hien-thanh.html` — `layout: false`, còn dùng design cũ (nợ kỹ thuật, chờ restyle)
+- `src/ban-do.html`, `src/so-do-trieu-dinh.html` — trang standalone giữ nguyên trạng
 
 ---
 
-*Cập nhật: 2026-06-02 | Lý do: User nhắc nhở sau lỗi sai design và commit thiếu pages*
+*Cập nhật: 2026-07-20 | Lý do: migrate sang Eleventy — head/nav dùng chung qua layout, index data-driven*

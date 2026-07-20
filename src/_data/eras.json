@@ -1,0 +1,717 @@
+[
+  {
+    "id": "era-van-lang",
+    "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-white border-2 border-[#9b1c1c]/40 flex items-center justify-center shadow-sm\">\n                <div class=\"w-2 h-2 rounded-full bg-[#9b1c1c]/50\"></div>\n              </div>\n            </div>",
+    "yearsClass": "text-[11px] font-mono text-[#a8a29e] mb-1.5 tracking-wide",
+    "years": "~2879 TCN – 258 TCN",
+    "cardClass": "rounded-xl border border-[#e7e5e4] bg-gradient-to-br from-[#faf9f7] to-white p-5 hover:border-[#9b1c1c]/30 hover:shadow-sm transition-all duration-300",
+    "cardStyle": "",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#9b1c1c] bg-[#fef2f2] border border-[#9b1c1c]/20 px-2 py-0.5 rounded\">ERA 1</span>\n                      <span class=\"text-[10px] text-[#78716c] font-medium\">Dựng nước — Nhà nước đầu tiên của người Việt</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Văn Lang — Âu Lạc</div>\n                  </div>\n                </div>",
+    "dividerAfterHeader": false,
+    "groups": [
+      {
+        "label": "📖 Bài học",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/nha-nuoc-van-lang.html",
+            "text": "Nhà nước Văn Lang"
+          },
+          {
+            "href": "bai-hoc/nha-nuoc-au-lac.html",
+            "text": "Nhà nước Âu Lạc"
+          }
+        ]
+      }
+    ],
+    "characters": [],
+    "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"
+  },
+  {
+    "id": "era-bac-thuoc",
+    "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-white border-2 border-[#9b1c1c]/40 flex items-center justify-center shadow-sm\">\n                <div class=\"w-2 h-2 rounded-full bg-[#9b1c1c]/50\"></div>\n              </div>\n            </div>",
+    "yearsClass": "text-[11px] font-mono text-[#a8a29e] mb-1.5 tracking-wide",
+    "years": "179 TCN – 938 SCN",
+    "cardClass": "rounded-xl border border-[#e7e5e4] bg-gradient-to-br from-[#faf9f7] to-white p-5 hover:border-[#9b1c1c]/30 hover:shadow-sm transition-all duration-300",
+    "cardStyle": "",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#9b1c1c] bg-[#fef2f2] border border-[#9b1c1c]/20 px-2 py-0.5 rounded\">ERA 2</span>\n                      <span class=\"text-[10px] text-[#78716c] font-medium\">Làng xã tự trị — 1.000 năm đề kháng và giữ gìn bản sắc</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">1.000 Năm Bắc Thuộc</div>\n                  </div>\n                </div>",
+    "dividerAfterHeader": false,
+    "groups": [
+      {
+        "label": "📖 Bài học",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/1000-nam-bac-thuoc.html",
+            "text": "1.000 năm Bắc thuộc"
+          }
+        ]
+      }
+    ],
+    "characters": [
+      {
+        "href": "nhan-vat/hai-ba-trung.html",
+        "text": "Hai Bà Trưng"
+      },
+      {
+        "href": "nhan-vat/phung-hung.html",
+        "text": "Phùng Hưng"
+      },
+      {
+        "href": "nhan-vat/khuc-thua-du.html",
+        "text": "Khúc Thừa Dụ"
+      },
+      {
+        "href": "nhan-vat/duong-dinh-nghe.html",
+        "text": "Dương Đình Nghệ"
+      }
+    ],
+    "characterLabel": "👤 Nhân vật",
+    "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+    "characterChipClass": "era-chip-char",
+    "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"
+  },
+  {
+    "id": "era-nha-ngo",
+    "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-white border-2 border-[#9b1c1c]/40 flex items-center justify-center shadow-sm\">\n                <div class=\"w-2 h-2 rounded-full bg-[#9b1c1c]/50\"></div>\n              </div>\n            </div>",
+    "yearsClass": "text-[11px] font-mono text-[#a8a29e] mb-1.5 tracking-wide",
+    "years": "938 – 965 SCN",
+    "cardClass": "rounded-xl border border-[#e7e5e4] bg-gradient-to-br from-[#faf9f7] to-white p-5 hover:border-[#9b1c1c]/30 hover:shadow-sm transition-all duration-300",
+    "cardStyle": "",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#9b1c1c] bg-[#fef2f2] border border-[#9b1c1c]/20 px-2 py-0.5 rounded\">ERA 3</span>\n                      <span class=\"text-[10px] text-[#78716c] font-medium\">Bạch Đằng 938 — Độc lập vĩnh viễn</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Nhà Ngô</div>\n                  </div>\n                </div>",
+    "dividerAfterHeader": false,
+    "groups": [
+      {
+        "label": "📖 Bài học",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/ngo-quyen.html",
+            "text": "Ngô Quyền & Chiến thắng 938"
+          }
+        ]
+      }
+    ],
+    "characters": [
+      {
+        "href": "nhan-vat/ngo-quyen.html",
+        "text": "Ngô Quyền"
+      }
+    ],
+    "characterLabel": "👤 Nhân vật",
+    "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+    "characterChipClass": "era-chip-char",
+    "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"
+  },
+  {
+    "id": "era-nha-dinh",
+    "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-white border-2 border-[#9b1c1c]/40 flex items-center justify-center shadow-sm\">\n                <div class=\"w-2 h-2 rounded-full bg-[#9b1c1c]/50\"></div>\n              </div>\n            </div>",
+    "yearsClass": "text-[11px] font-mono text-[#a8a29e] mb-1.5 tracking-wide",
+    "years": "966 – 980 SCN",
+    "cardClass": "rounded-xl border border-[#e7e5e4] bg-gradient-to-br from-[#faf9f7] to-white p-5 hover:border-[#9b1c1c]/30 hover:shadow-sm transition-all duration-300",
+    "cardStyle": "",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#9b1c1c] bg-[#fef2f2] border border-[#9b1c1c]/20 px-2 py-0.5 rounded\">ERA 4</span>\n                      <span class=\"text-[10px] text-[#78716c] font-medium\">Dẹp loạn 12 sứ quân — Thống nhất Đại Cồ Việt</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Nhà Đinh</div>\n                  </div>\n                </div>",
+    "dividerAfterHeader": false,
+    "groups": [
+      {
+        "label": "📖 Bài học",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/loan-12-su-quan.html",
+            "text": "Loạn 12 Sứ Quân"
+          },
+          {
+            "href": "bai-hoc/dinh-le.html",
+            "text": "Đinh — Lê"
+          }
+        ]
+      }
+    ],
+    "characters": [
+      {
+        "href": "nhan-vat/dinh-bo-linh.html",
+        "text": "Đinh Bộ Lĩnh"
+      },
+      {
+        "href": "nhan-vat/duong-van-nga.html",
+        "text": "Dương Vân Nga"
+      }
+    ],
+    "characterLabel": "👤 Nhân vật",
+    "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+    "characterChipClass": "era-chip-char",
+    "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"
+  },
+  {
+    "id": "era-tien-le",
+    "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-white border-2 border-[#9b1c1c]/40 flex items-center justify-center shadow-sm\">\n                <div class=\"w-2 h-2 rounded-full bg-[#9b1c1c]/50\"></div>\n              </div>\n            </div>",
+    "yearsClass": "text-[11px] font-mono text-[#a8a29e] mb-1.5 tracking-wide",
+    "years": "980 – 1009 SCN",
+    "cardClass": "rounded-xl border border-[#e7e5e4] bg-gradient-to-br from-[#faf9f7] to-white p-5 hover:border-[#9b1c1c]/30 hover:shadow-sm transition-all duration-300",
+    "cardStyle": "",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#9b1c1c] bg-[#fef2f2] border border-[#9b1c1c]/20 px-2 py-0.5 rounded\">ERA 5</span>\n                      <span class=\"text-[10px] text-[#78716c] font-medium\">Lê Hoàn phá Tống — Ngoại giao khôn ngoan</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Nhà Tiền Lê</div>\n                  </div>\n                </div>",
+    "dividerAfterHeader": false,
+    "groups": [
+      {
+        "label": "📖 Bài học",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/nha-tien-le.html",
+            "text": "Nhà Tiền Lê"
+          }
+        ]
+      }
+    ],
+    "characters": [
+      {
+        "href": "nhan-vat/le-hoan.html",
+        "text": "Lê Hoàn"
+      },
+      {
+        "href": "nhan-vat/le-long-dinh.html",
+        "text": "Lê Long Đĩnh"
+      }
+    ],
+    "characterLabel": "👤 Nhân vật",
+    "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+    "characterChipClass": "era-chip-char",
+    "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"
+  },
+  {
+    "id": "era-nha-ly",
+    "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"absolute -inset-1.5 rounded-full bg-[#9b1c1c]/15\" style=\"animation: ping 2s cubic-bezier(0,0,0.2,1) infinite;\"></div>\n              <div class=\"relative w-7 h-7 rounded-full bg-[#9b1c1c] flex items-center justify-center shadow-lg\" style=\"box-shadow: 0 0 0 3px rgba(155,28,28,0.15), 0 4px 12px rgba(155,28,28,0.35);\">\n                <div class=\"w-2.5 h-2.5 rounded-full bg-white/90\"></div>\n              </div>\n            </div>",
+    "yearsClass": "text-[11px] font-mono text-[#9b1c1c] mb-1.5 tracking-wide font-semibold",
+    "years": "1009 – 1225 SCN",
+    "cardClass": "rounded-xl bg-white p-5 md:p-6 transition-all duration-300",
+    "cardStyle": "border: 2px solid rgba(155,28,28,0.22); box-shadow: 0 0 0 1px rgba(155,28,28,0.06), 0 8px 32px rgba(155,28,28,0.08);",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#9b1c1c] bg-[#fef2f2] border border-[#9b1c1c]/20 px-2 py-0.5 rounded\">ERA 6</span>\n                      <span class=\"inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-[#9b1c1c] bg-[#fef2f2] px-2 py-0.5 rounded-full\" style=\"border: 1px solid rgba(155,28,28,0.2);\">✦ Đang học</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Nhà Lý</div>\n                    <div class=\"text-[10px] text-[#78716c] font-medium mt-0.5\">Thể chế hóa — Thăng Long thịnh trị</div>\n                  </div>\n                </div>",
+    "dividerAfterHeader": true,
+    "groups": [
+      {
+        "label": "📖 Bài học",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson-active",
+        "items": [
+          {
+            "href": "bai-hoc/nha-ly-total.html",
+            "text": "Tổng quan Nhà Lý"
+          },
+          {
+            "href": "bai-hoc/nha-ly-chap1.html",
+            "text": "Chương 1"
+          },
+          {
+            "href": "bai-hoc/nha-ly-chap2.html",
+            "text": "Chương 2"
+          },
+          {
+            "href": "bai-hoc/nha-ly-chap3.html",
+            "text": "Chương 3"
+          },
+          {
+            "href": "bai-hoc/nha-ly-chap4.html",
+            "text": "Chương 4"
+          },
+          {
+            "href": "bai-hoc/nha-ly-chap5.html",
+            "text": "Chương 5"
+          }
+        ]
+      }
+    ],
+    "characters": [
+      {
+        "href": "nhan-vat/thien-su-van-hanh.html",
+        "text": "Thiền Sư Vạn Hạnh"
+      },
+      {
+        "href": "nhan-vat/ly-cong-uan.html",
+        "text": "Lý Công Uẩn"
+      },
+      {
+        "href": "nhan-vat/dao-cam-moc.html",
+        "text": "Đào Cam Mộc"
+      },
+      {
+        "href": "nhan-vat/luu-co.html",
+        "text": "Lưu Cơ"
+      },
+      {
+        "href": "nhan-vat/nguyen-dao-thanh.html",
+        "text": "Nguyễn Đạo Thanh"
+      },
+      {
+        "href": "nhan-vat/ly-thai-tong.html",
+        "text": "Lý Thái Tông"
+      },
+      {
+        "href": "nhan-vat/le-phung-hieu.html",
+        "text": "Lê Phụng Hiểu"
+      },
+      {
+        "href": "nhan-vat/nung-tri-cao.html",
+        "text": "Nùng Trí Cao"
+      },
+      {
+        "href": "nhan-vat/ly-thuong-kiet.html",
+        "text": "Lý Thường Kiệt"
+      },
+      {
+        "href": "nhan-vat/ly-thanh-tong.html",
+        "text": "Lý Thánh Tông"
+      },
+      {
+        "href": "nhan-vat/hoang-hau-y-lan.html",
+        "text": "Hoàng Hậu Ỷ Lan"
+      },
+      {
+        "href": "nhan-vat/ly-nhan-tong.html",
+        "text": "Lý Nhân Tông"
+      },
+      {
+        "href": "nhan-vat/le-van-thinh.html",
+        "text": "Lê Văn Thịnh"
+      },
+      {
+        "href": "nhan-vat/quach-quy.html",
+        "text": "Quách Quỳ"
+      },
+      {
+        "href": "nhan-vat/nguyen-minh-khong.html",
+        "text": "Nguyễn Minh Không"
+      },
+      {
+        "href": "nhan-vat/to-hien-thanh.html",
+        "text": "Tô Hiến Thành"
+      },
+      {
+        "href": "nhan-vat/ly-than-tong.html",
+        "text": "Lý Thần Tông"
+      },
+      {
+        "href": "nhan-vat/ly-anh-tong.html",
+        "text": "Lý Anh Tông"
+      },
+      {
+        "href": "nhan-vat/ly-cao-tong.html",
+        "text": "Lý Cao Tông"
+      },
+      {
+        "href": "nhan-vat/ly-hue-tong.html",
+        "text": "Lý Huệ Tông"
+      }
+    ],
+    "characterLabel": "👤 Nhân vật",
+    "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+    "characterChipClass": "era-chip-char",
+    "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"
+  },
+  {
+    "id": "era-nha-tran",
+    "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-[#9b1c1c] border-2 border-[#9b1c1c] flex items-center justify-center shadow-lg shadow-[#9b1c1c]/20\">\n                <div class=\"w-2.5 h-2.5 rounded-full bg-[#faf9f7]\"></div>\n              </div>\n            </div>",
+    "yearsClass": "text-[11px] font-mono text-[#a8a29e] mb-1.5 tracking-wide",
+    "years": "1225 – 1400 SCN",
+    "cardClass": "rounded-xl border border-[#9b1c1c]/30 bg-gradient-to-br from-[#fef2f2] to-[#faf9f7] p-5 md:p-6 transition-all duration-300",
+    "cardStyle": "",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#9b1c1c] bg-[#fef2f2] border border-[#9b1c1c]/20 px-2 py-0.5 rounded\">ERA 7</span>\n                      <span class=\"text-[10px] text-[#78716c] font-medium\">Hào khí Đông A — 3 lần đánh bại quân Mong Cổ</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Nhà Trần</div>\n                  </div>\n                </div>",
+    "dividerAfterHeader": true,
+    "groups": [
+      {
+        "label": "📖 Bài học",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson-active",
+        "items": [
+          {
+            "href": "bai-hoc/nha-tran-chap1.html",
+            "text": "Chương 1 · Khai Triều"
+          },
+          {
+            "href": "bai-hoc/nha-tran-chap2.html",
+            "text": "Chương 2 · 3 Lần Kháng Mông Cổ"
+          },
+          {
+            "href": "bai-hoc/nha-tran-chap3.html",
+            "text": "Chương 3 · Thịnh Trị & Văn Hoá"
+          },
+          {
+            "href": "bai-hoc/nha-tran-chap4.html",
+            "text": "Chương 4 · Suy Tàn & Bóng Ma Hồ Quý Ly"
+          }
+        ]
+      },
+      {
+        "label": "📌 Sự kiện nổi bật — Chương 3",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/tran-nhan-tong-yen-tu.html",
+            "text": "1299 · Trúc Lâm Yên Tử"
+          },
+          {
+            "href": "bai-hoc/du-ngoan-phuong-nam.html",
+            "text": "1301 · Du Ngoạn Phương Nam"
+          },
+          {
+            "href": "bai-hoc/cuop-dau-huyen-tran.html",
+            "text": "1307 · Vụ Cướp Dâu Huyền Trân"
+          },
+          {
+            "href": "bai-hoc/doan-nhu-hai-du-hang.html",
+            "text": "1312 · Đoàn Nhữ Hài Dụ Hàng"
+          },
+          {
+            "href": "bai-hoc/vu-an-tran-quoc-chan.html",
+            "text": "1328 · Vụ Án Trần Quốc Chẩn"
+          }
+        ]
+      },
+      {
+        "label": "📌 Sự kiện nổi bật — Chương 4",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/ky-nguyen-sa-doa-tran-du-tong.html",
+            "text": "1341 · Kỷ Nguyên Sa Đọa & Thất Trảm Sớ"
+          },
+          {
+            "href": "bai-hoc/bien-co-duong-nhat-le.html",
+            "text": "1369 · Biến Cố Dương Nhật Lễ"
+          },
+          {
+            "href": "bai-hoc/su-nhu-nuoc-tran-nghe-tong.html",
+            "text": "1370 · Sự Nhu Nhược Của Trần Nghệ Tông"
+          },
+          {
+            "href": "bai-hoc/cu-chot-ha-cua-ho-quy-ly.html",
+            "text": "1400 · Cú Chốt Hạ Của Hồ Quý Ly"
+          }
+        ]
+      }
+    ],
+    "characters": [
+      {
+        "href": "nhan-vat/tran-thu-do.html",
+        "text": "Trần Thủ Độ"
+      },
+      {
+        "href": "nhan-vat/tran-thai-tong.html",
+        "text": "Trần Thái Tông"
+      },
+      {
+        "href": "nhan-vat/ly-chieu-hoang.html",
+        "text": "Lý Chiêu Hoàng"
+      },
+      {
+        "href": "nhan-vat/tran-thi-dung.html",
+        "text": "Trần Thị Dung"
+      },
+      {
+        "href": "nhan-vat/tran-lieu.html",
+        "text": "Trần Liễu"
+      },
+      {
+        "href": "nhan-vat/le-phu-tran.html",
+        "text": "Lê Phụ Trần"
+      },
+      {
+        "href": "nhan-vat/tran-thanh-tong.html",
+        "text": "Trần Thánh Tông"
+      },
+      {
+        "href": "nhan-vat/tran-hung-dao.html",
+        "text": "Trần Hưng Đạo"
+      },
+      {
+        "href": "nhan-vat/tran-quang-khai.html",
+        "text": "Trần Quang Khải"
+      },
+      {
+        "href": "nhan-vat/tran-khanh-du.html",
+        "text": "Trần Khánh Dư"
+      },
+      {
+        "href": "nhan-vat/an-tu-cong-chua.html",
+        "text": "An Tư Công Chúa"
+      },
+      {
+        "href": "nhan-vat/tran-ich-tac.html",
+        "text": "Trần Ích Tắc"
+      },
+      {
+        "href": "nhan-vat/tran-nhan-tong.html",
+        "text": "Trần Nhân Tông"
+      },
+      {
+        "href": "nhan-vat/tran-quoc-toan.html",
+        "text": "Trần Quốc Toản"
+      },
+      {
+        "href": "nhan-vat/tran-anh-tong.html",
+        "text": "Trần Anh Tông"
+      },
+      {
+        "href": "nhan-vat/tran-nhat-duat.html",
+        "text": "Trần Nhật Duật"
+      },
+      {
+        "href": "nhan-vat/pham-ngu-lao.html",
+        "text": "Phạm Ngũ Lão"
+      },
+      {
+        "href": "nhan-vat/tran-binh-trong.html",
+        "text": "Trần Bình Trọng"
+      },
+      {
+        "href": "nhan-vat/yet-kieu-da-tuong.html",
+        "text": "Yết Kiêu & Dã Tượng"
+      },
+      {
+        "href": "nhan-vat/huyen-tran-cong-chua.html",
+        "text": "Huyền Trân Công Chúa"
+      },
+      {
+        "href": "nhan-vat/tran-minh-tong.html",
+        "text": "Trần Minh Tông"
+      },
+      {
+        "href": "nhan-vat/tran-hien-tong.html",
+        "text": "Trần Hiến Tông"
+      },
+      {
+        "href": "nhan-vat/doan-nhu-hai.html",
+        "text": "Đoàn Nhữ Hài"
+      },
+      {
+        "href": "nhan-vat/mac-dinh-chi.html",
+        "text": "Mạc Đĩnh Chi"
+      },
+      {
+        "href": "nhan-vat/chu-van-an.html",
+        "text": "Chu Văn An"
+      },
+      {
+        "href": "nhan-vat/tran-du-tong.html",
+        "text": "Trần Dụ Tông"
+      },
+      {
+        "href": "nhan-vat/duong-nhat-le.html",
+        "text": "Dương Nhật Lễ"
+      },
+      {
+        "href": "nhan-vat/tran-nghe-tong.html",
+        "text": "Trần Nghệ Tông"
+      },
+      {
+        "href": "nhan-vat/che-bong-nga.html",
+        "text": "Chế Bồng Nga"
+      },
+      {
+        "href": "nhan-vat/tran-khat-chan.html",
+        "text": "Trần Khát Chân"
+      },
+      {
+        "href": "nhan-vat/bo-ba-vua-bu-nhin.html",
+        "text": "Bộ Ba Vua Bù Nhìn"
+      }
+    ],
+    "characterLabel": "👤 Nhân vật",
+    "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+    "characterChipClass": "era-chip-char",
+    "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"
+  },
+  {
+    "id": "era-nha-ho",
+    "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-[#7f1d1d] border-2 border-[#9b1c1c] flex items-center justify-center shadow-md\">\n                <div class=\"w-2 h-2 rounded-full bg-[#fca5a5]\"></div>\n              </div>\n            </div>",
+    "yearsClass": "text-[11px] font-mono text-[#a8a29e] mb-1.5 tracking-wide",
+    "years": "1400 – 1407 SCN",
+    "cardClass": "rounded-xl border border-[#9b1c1c]/30 bg-gradient-to-br from-[#fef2f2] to-[#faf9f7] p-5",
+    "cardStyle": "",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#9b1c1c] bg-[#fef2f2] border border-[#9b1c1c]/20 px-2 py-0.5 rounded\">ERA 8</span>\n                      <span class=\"text-[10px] text-[#78716c] font-medium\">Cải cách vượt thời đại — Sụp đổ vì mất lòng dân</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Nhà Hồ (Đại Ngu)</div>\n                  </div>\n                </div>",
+    "dividerAfterHeader": false,
+    "groups": [
+      {
+        "label": "📖 Bài học",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/nha-ho-tong-quan.html",
+            "text": "1400 · Nhà Hồ Tổng Quan"
+          },
+          {
+            "href": "bai-hoc/nha-ho-sup-do-1407.html",
+            "text": "1407 · Nhà Hồ Sụp Đổ — Đô Hộ Lần Thứ Tư"
+          }
+        ]
+      }
+    ],
+    "characters": [
+      {
+        "href": "nhan-vat/ho-quy-ly.html",
+        "text": "Hồ Quý Ly"
+      },
+      {
+        "href": "nhan-vat/ho-nguyen-trung.html",
+        "text": "Hồ Nguyên Trừng"
+      }
+    ],
+    "characterLabel": "👤 Nhân vật",
+    "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+    "characterChipClass": "era-chip-char",
+    "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"
+  },
+  {
+    "id": "era-hau-le",
+    "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-[#14532d] border-2 border-[#166534] flex items-center justify-center shadow-md\">\n                <div class=\"w-2 h-2 rounded-full bg-[#86efac]\"></div>\n              </div>\n            </div>",
+    "yearsClass": "text-[11px] font-mono text-[#a8a29e] mb-1.5 tracking-wide",
+    "years": "1428 SCN – ...",
+    "cardClass": "rounded-xl border border-[#166534]/30 bg-gradient-to-br from-[#f0fdf4] to-[#faf9f7] p-5",
+    "cardStyle": "",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#166534] bg-[#f0fdf4] border border-[#166534]/20 px-2 py-0.5 rounded\">ERA 9</span>\n                      <span class=\"text-[10px] text-[#78716c] font-medium\">Khai quốc — Triều đại dài nhất lịch sử Việt Nam</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Nhà Hậu Lê</div>\n                  </div>\n                </div>",
+    "dividerAfterHeader": false,
+    "groups": [
+      {
+        "label": "📖 Bài học",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/nha-hau-le-tong-quan.html",
+            "text": "Nhà Hậu Lê — Tổng Quan"
+          },
+          {
+            "href": "bai-hoc/hau-le-khang-chien-chong-minh.html",
+            "text": "1418–1427 · Kháng Chiến Chống Minh"
+          },
+          {
+            "href": "bai-hoc/nha-hau-le-chap2-dinh-cao-hoang-kim.html",
+            "text": "1428–1497 · Đỉnh Cao Hoàng Kim"
+          },
+          {
+            "href": "bai-hoc/nha-hau-le-chap3-suy-tan-mac-thay-the.html",
+            "text": "1497–1527 · Suy Tàn & Mạc Thay Thế"
+          },
+          {
+            "href": "bai-hoc/nha-hau-le-chap4-cum1-le-hien-tong.html",
+            "text": "↳ 1497–1505 · Lê Hiến Tông & Lê Túc Tông"
+          },
+          {
+            "href": "bai-hoc/nha-hau-le-chap4-cum2-le-uy-muc.html",
+            "text": "↳ 1505–1509 · Lê Uy Mục \"Vua Quỷ\""
+          },
+          {
+            "href": "bai-hoc/nha-hau-le-chap4-cum3-le-tuong-duc.html",
+            "text": "↳ 1510–1516 · Lê Tương Dực \"Vua Lợn\""
+          },
+          {
+            "href": "bai-hoc/nha-hau-le-chap4-cum4-trieu-dinh-tan-ra.html",
+            "text": "↳ 1516–1527 · Triều Đình Tan Rã & Mạc Soán Ngôi"
+          }
+        ]
+      }
+    ],
+    "characters": [
+      {
+        "href": "nhan-vat/le-loi.html",
+        "text": "Lê Lợi"
+      },
+      {
+        "href": "nhan-vat/nguyen-trai.html",
+        "text": "Nguyễn Trãi"
+      },
+      {
+        "href": "nhan-vat/le-lai.html",
+        "text": "Lê Lai"
+      },
+      {
+        "href": "nhan-vat/nguyen-chich.html",
+        "text": "Nguyễn Chích"
+      },
+      {
+        "href": "nhan-vat/le-thai-tong.html",
+        "text": "Lê Thái Tông"
+      },
+      {
+        "href": "nhan-vat/le-thanh-tong.html",
+        "text": "Lê Thánh Tông"
+      },
+      {
+        "href": "nhan-vat/le-sat.html",
+        "text": "Lê Sát"
+      },
+      {
+        "href": "nhan-vat/nguyen-thi-anh.html",
+        "text": "Nguyễn Thị Anh"
+      },
+      {
+        "href": "nhan-vat/nguyen-thi-lo.html",
+        "text": "Nguyễn Thị Lộ"
+      },
+      {
+        "href": "nhan-vat/than-nhan-trung.html",
+        "text": "Thân Nhân Trung"
+      },
+      {
+        "href": "nhan-vat/luong-the-vinh.html",
+        "text": "Lương Thế Vinh"
+      },
+      {
+        "href": "nhan-vat/tra-toan.html",
+        "text": "Trà Toàn"
+      },
+      {
+        "href": "nhan-vat/le-hien-tong.html",
+        "text": "Lê Hiến Tông"
+      },
+      {
+        "href": "nhan-vat/le-uy-muc.html",
+        "text": "Lê Uy Mục"
+      },
+      {
+        "href": "nhan-vat/le-tuong-duc.html",
+        "text": "Lê Tương Dực"
+      },
+      {
+        "href": "nhan-vat/vu-nhu-to.html",
+        "text": "Vũ Như Tô"
+      },
+      {
+        "href": "nhan-vat/trinh-duy-san.html",
+        "text": "Trịnh Duy Sản"
+      },
+      {
+        "href": "nhan-vat/le-chieu-tong.html",
+        "text": "Lê Chiêu Tông"
+      },
+      {
+        "href": "nhan-vat/le-cung-hoang.html",
+        "text": "Lê Cung Hoàng"
+      },
+      {
+        "href": "nhan-vat/mac-dang-dung.html",
+        "text": "Mạc Đăng Dung"
+      },
+      {
+        "href": "nhan-vat/nguyen-kim.html",
+        "text": "Nguyễn Kim"
+      },
+      {
+        "href": "nhan-vat/tran-cao.html",
+        "text": "Trần Cảo"
+      }
+    ],
+    "characterLabel": "👤 Nhân vật",
+    "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+    "characterChipClass": "era-chip-char",
+    "toolClass": "border-t border-[#e7f3ec] pt-4 flex flex-wrap gap-2"
+  }
+]

@@ -1,0 +1,468 @@
+---
+layout: false
+---
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>24. Tô Hiến Thành (1102 – 1179) — Cột Trụ Pháp Trị Cuối Cùng</title>
+  <meta name="description" content="Phân tích nhân vật Tô Hiến Thành (1102–1179) theo hệ thống 3 Gốc / 3 Độc — cột trụ pháp trị cuối cùng của nhà Lý.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700;1,900&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'playfair': ['"Playfair Display"', 'Georgia', 'serif'],
+            'plex': ['"IBM Plex Serif"', 'Georgia', 'serif'],
+            'mono': ['"JetBrains Mono"', 'monospace'],
+            'noto': ['"Noto Sans SC"', 'sans-serif'],
+          },
+          colors: {
+            'cream': '#f4eed8','cream-dark': '#ede5c8','ink': '#1c1409','ink-mid': '#2e2010','ink-light': '#4a3520',
+            'crimson': '#921c1c','crimson-light': '#b83232','gold': '#b07c28','gold-light': '#d4a042',
+            'warm': '#7a6040','rule': '#c4aa84','rule-light': '#ddd0b8',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { --cream:#f4eed8; --ink:#1c1409; --crimson:#921c1c; --gold:#b07c28; --rule:#c4aa84; }
+    * { box-sizing: border-box; }
+    body { background-color:#e8dfc0; background-image:radial-gradient(circle,rgba(160,130,80,0.35) 0.6px,transparent 0.6px); background-size:18px 18px; min-height:100vh; padding:2rem 1rem; }
+    .paper { background-color:var(--cream); position:relative; }
+    .paper::before { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(180,150,90,0.12) 0.8px,transparent 0.8px); background-size:22px 22px; pointer-events:none; }
+    .triple-rule { border-top:3px solid var(--ink); position:relative; margin-bottom:2px; }
+    .triple-rule::after { content:''; display:block; border-top:1px solid var(--ink); margin-top:3px; }
+    .single-rule { border-top:1px solid var(--rule); }
+    .double-rule { border-top:2px solid var(--ink); position:relative; }
+    .double-rule::after { content:''; display:block; border-top:1px solid var(--ink); margin-top:2px; }
+    .drop-cap::first-letter { font-family:'Playfair Display',serif; font-size:4.6em; font-weight:900; line-height:0.78; float:left; margin-right:0.06em; margin-top:0.04em; color:var(--crimson); }
+    .two-col { column-count:2; column-gap:2.2rem; column-rule:1px solid var(--rule); }
+    @media (max-width:640px) { .two-col { column-count:1; } }
+    .pull-q { border-left:4px solid var(--crimson); padding-left:1.1rem; }
+    .pull-q-center { border-top:2px solid var(--crimson); border-bottom:2px solid var(--crimson); padding:1rem 0; text-align:center; }
+    .sec-label { font-family:'JetBrains Mono',monospace; font-size:0.6rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--crimson); font-weight:600; }
+    .sf { color:var(--gold); }
+    .tl-dot { width:8px; height:8px; background:var(--crimson); border-radius:50%; flex-shrink:0; margin-top:6px; }
+    .ornament { letter-spacing:0.6em; color:var(--gold); }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+    .fade-in { animation:fadeUp 0.7s ease-out both; }
+    .ink-box { background-color:var(--ink); color:var(--cream); }
+    .ink-box .muted { color:#a89060; }
+    .link-card { border:1px solid var(--rule); border-radius:0.75rem; transition:border-color 0.2s,box-shadow 0.2s; }
+    .link-card:hover { border-color:var(--crimson); box-shadow:0 2px 12px rgba(146,28,28,0.1); }
+    .lesson-num { width:2.8rem; height:2.8rem; border:2px solid var(--crimson); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .rating-row { border-bottom:1px solid var(--rule-light); }
+    ::-webkit-scrollbar { width:6px; }
+    ::-webkit-scrollbar-track { background:#e8dfc0; }
+    ::-webkit-scrollbar-thumb { background:var(--rule); border-radius:3px; }
+    p { orphans:2; widows:2; }
+
+    /* ── KPI ROW ── */
+    .kpi-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px; }
+    @media (max-width:640px) { .kpi-grid { grid-template-columns:1fr; } }
+    .kpi-cell { background:var(--ink); color:var(--cream); padding:1.2rem 1rem; text-align:center; }
+    .kpi-cell.accent { background:var(--crimson); }
+    .kpi-label-sm { font-family:'JetBrains Mono',monospace; font-size:0.55rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); margin-bottom:0.4rem; }
+    .kpi-val { font-family:'Playfair Display',serif; font-size:2.4rem; font-weight:900; line-height:1; color:#f0e8d8; }
+    .kpi-sub { font-family:'IBM Plex Serif',serif; font-size:0.7rem; font-style:italic; color:#9a8b78; margin-top:0.35rem; line-height:1.4; }
+    .kpi-cell.accent .kpi-sub { color:#f0c8c8; }
+
+    /* ── TIMELINE ── */
+    .tl-line { border-left:1px solid var(--rule); padding-left:1rem; position:relative; }
+    .tl-line::before { content:''; position:absolute; left:-4px; top:6px; width:7px; height:7px; background:var(--crimson); border-radius:50%; }
+
+    /* ── RATING TABLE ── */
+    .rating-tbl { width:100%; border-collapse:collapse; }
+    .rating-tbl th { font-family:'JetBrains Mono',monospace; font-size:0.55rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--warm); text-align:left; padding:0.5rem 0.6rem; border-bottom:1px solid var(--rule); }
+    .rating-tbl td { font-family:'IBM Plex Serif',serif; font-size:0.9rem; padding:0.7rem 0.6rem; border-bottom:1px solid var(--rule-light); vertical-align:top; line-height:1.6; color:#4a3520; }
+    .rating-tbl td:first-child { font-family:'Playfair Display',serif; font-weight:700; color:var(--ink); white-space:nowrap; }
+    .rating-tbl td:nth-child(2) { font-family:'JetBrains Mono',monospace; font-size:0.8rem; color:var(--gold); white-space:nowrap; padding-right:1rem; }
+    .rating-tbl.doc td:nth-child(2) { color:var(--crimson); }
+
+    /* ── PARADOX BANNER ── */
+    .paradox { border:2px solid var(--crimson); padding:1.4rem 1.6rem; position:relative; }
+    .paradox::before { content:'NGHỊCH LÝ'; position:absolute; top:-0.6rem; left:1.2rem; background:var(--cream); padding:0 0.5rem; font-family:'JetBrains Mono',monospace; font-size:0.55rem; letter-spacing:0.28em; color:var(--crimson); font-weight:700; }
+
+    /* ── SELF-CHECK ── */
+    .selfcheck { background:var(--ink); color:var(--cream); padding:1.6rem 2rem; }
+    .selfcheck-q { font-family:'Playfair Display',serif; font-size:1.05rem; font-style:italic; line-height:1.65; color:#f0e8d8; margin-bottom:1.2rem; }
+    .selfcheck-label { font-family:'JetBrains Mono',monospace; font-size:0.55rem; letter-spacing:0.28em; text-transform:uppercase; color:var(--gold); margin-bottom:0.6rem; }
+    .selfcheck-ans { font-family:'IBM Plex Serif',serif; font-size:0.88rem; line-height:1.8; color:#d0c4b0; border-top:1px solid rgba(200,185,154,0.3); padding-top:1rem; }
+    .selfcheck-ans strong { color:var(--gold); font-weight:600; }
+  </style>
+</head>
+<body>
+
+<div class="paper max-w-4xl mx-auto shadow-2xl fade-in" style="border:1px solid #b8a070; border-radius:2px; overflow:hidden;">
+
+  <!-- DATELINE -->
+  <div style="border-bottom:1px solid var(--ink);" class="px-10 pt-7 pb-3 flex items-center justify-between gap-4 flex-wrap">
+    <span class="font-mono text-xs tracking-widest text-warm uppercase" style="font-size:0.6rem; letter-spacing:0.2em;">Lịch Sử Việt Nam · Nhân Vật</span>
+    <div class="text-center">
+      <span class="sec-label" style="font-size:0.62rem;">★ Nhân Vật Lịch Sử — Hồ Sơ · Số 24 ★</span>
+    </div>
+    <span class="font-mono text-xs tracking-widest text-warm uppercase" style="font-size:0.6rem; letter-spacing:0.2em;">1102–1179 SCN · Thời Lý</span>
+  </div>
+
+  <!-- MASTHEAD BAR -->
+  <div class="px-10 pt-3 pb-2">
+    <div class="triple-rule"></div>
+    <p class="font-mono text-center py-1" style="font-size:0.55rem; letter-spacing:0.35em; color:var(--warm);">NHÂN VẬT LỊCH SỬ · TÔ HIẾN THÀNH · 1102–1179 SCN · CỘT TRỤ PHÁP TRỊ</p>
+    <div class="single-rule"></div>
+  </div>
+
+  <!-- HEADLINE -->
+  <div class="px-10 pt-6 pb-8 text-center" style="border-bottom:2px solid var(--ink);">
+    <p class="font-playfair italic mb-1" style="font-size:0.9rem; letter-spacing:0.08em; color:var(--crimson);">Nhân Vật Lịch Sử · Hồ Sơ · 1102–1179</p>
+    <h1 class="font-playfair leading-none" style="font-size:clamp(2.8rem,7vw,4.8rem); font-weight:900; color:var(--ink); letter-spacing:-0.015em;">TÔ HIẾN THÀNH</h1>
+    <h2 class="font-playfair leading-none mb-5" style="font-size:clamp(4rem,12vw,8rem); font-weight:900; color:var(--ink); letter-spacing:-0.025em; font-style:italic; margin-top:-0.05em;">1102</h2>
+    <div class="flex items-center gap-5 mb-6 px-4">
+      <div class="flex-1" style="border-top:2px solid var(--ink);"></div>
+      <p class="font-playfair text-lg italic" style="color:var(--ink-mid); white-space:nowrap;"><em style="color:var(--crimson);">Cột Trụ Pháp Trị</em> — Cuối Cùng</p>
+      <div class="flex-1" style="border-top:2px solid var(--ink);"></div>
+    </div>
+    <p class="font-plex mx-auto leading-relaxed" style="max-width:58ch; font-size:1.05rem; color:var(--ink-light); font-style:italic;">Quan đại thần quyền lực bậc nhất thời Lý Anh Tông và Lý Cao Tông. Hiện thân hoàn hảo của lý tưởng Nho giáo: văn võ song toàn, liêm chính tuyệt đối, biểu tượng của sự trung thành và tinh thần pháp trị. Cột trụ cuối cùng ngăn nhà Lý sụp đổ.</p>
+  </div>
+
+  <!-- TL;DR LEAD BLOCK -->
+  <div class="ink-box px-10 py-6">
+    <p class="font-mono mb-3" style="font-size:0.55rem; letter-spacing:0.3em; color:var(--gold);">TL;DR</p>
+    <p class="font-playfair italic leading-relaxed" style="font-size:1.05rem; color:#f0e8d8; line-height:1.75;">Tô Hiến Thành — người <span style="color:var(--gold);">từ chối vàng ngọc hối lộ</span> để bảo vệ di chiếu tiên đế, và khi hấp hối vẫn tiến cử người tài lo việc nước thay vì người hầu hạ mình. Khi ông còn sống, luật pháp còn được thượng tôn. Ngay sau khi ông mất, triều Lý trượt dài vào suy thoái không thể cứu vãn.</p>
+  </div>
+
+  <!-- KPI ROW -->
+  <div class="kpi-grid">
+    <div class="kpi-cell">
+      <div class="kpi-label-sm">Thời gian phụng sự</div>
+      <div class="kpi-val">37<span style="font-size:1.1rem; font-weight:400;"> năm</span></div>
+      <div class="kpi-sub">Từ dẹp loạn Thân Lợi (1142) đến khi mất (1179)</div>
+    </div>
+    <div class="kpi-cell accent">
+      <div class="kpi-label-sm" style="color:#ffd37a;">Hối lộ từ chối</div>
+      <div class="kpi-val">∞</div>
+      <div class="kpi-sub">"Cả triều đình cũng không làm gì được tôi"</div>
+    </div>
+    <div class="kpi-cell">
+      <div class="kpi-label-sm">Nhà Lý sụp đổ sau</div>
+      <div class="kpi-val">30<span style="font-size:1.1rem; font-weight:400;"> năm</span></div>
+      <div class="kpi-sub">Kể từ khi ông qua đời năm 1179</div>
+    </div>
+  </div>
+
+  <!-- §01 HỒ SƠ -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-5">
+      <span class="sec-label">§ 01</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink); letter-spacing:-0.01em;">Hồ Sơ</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <p class="font-plex leading-relaxed" style="font-size:1.02rem; color:var(--ink-light);">Quan đại thần quyền lực bậc nhất thời <strong style="color:var(--ink);">Lý Anh Tông</strong> và <strong style="color:var(--ink);">Lý Cao Tông</strong>. Hiện thân hoàn hảo của lý tưởng Nho giáo: văn võ song toàn, liêm chính tuyệt đối, biểu tượng của sự trung thành và tinh thần pháp trị. <strong style="color:var(--ink);">Cột trụ cuối cùng ngăn nhà Lý sụp đổ.</strong></p>
+    <p class="font-plex leading-relaxed mt-3" style="font-size:0.93rem; color:var(--warm);">Xuất hiện trong: <em>8.4 Nhà Lý — Xây Dựng Văn Hóa &amp; Thể Chế (1077–1175)</em> · <em>8.5 Nhà Lý — Suy Tàn &amp; Chuyển Giao (1175–1225)</em></p>
+  </div>
+
+  <!-- §02 BIÊN NIÊN SỬ -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 02</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink); letter-spacing:-0.01em;">Biên Niên Sử — Một Cuộc Đời Phụng Sự</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+      <div class="space-y-7 font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">
+        <div class="flex gap-5 items-start">
+          <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3.5rem; text-align:right; line-height:1.25; padding-top:2px; letter-spacing:0.03em;">NĂM<br>1142</span>
+          <div class="tl-dot"></div>
+          <div class="tl-line">
+            <p class="font-playfair font-bold mb-1" style="color:var(--ink); font-size:1rem;">Dẹp Loạn Thân Lợi</p>
+            <p>Cầm quân trấn áp Thân Lợi — kẻ tự xưng là con trai Lý Nhân Tông, nổi loạn ở biên cương. Vị tướng tài ba bảo vệ ấu chúa Lý Anh Tông ngay từ những ngày đầu.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 items-start">
+          <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3.5rem; text-align:right; line-height:1.25; padding-top:2px; letter-spacing:0.03em;">NĂM<br>1159</span>
+          <div class="tl-dot"></div>
+          <div class="tl-line">
+            <p class="font-playfair font-bold mb-1" style="color:var(--ink); font-size:1rem;">Dẹp Loạn Ngưu Hống</p>
+            <p>Bình định vùng biên viễn phía Tây. Tiếp tục củng cố uy quyền trung ương, giữ vững bờ cõi. Sau khi quyền thần Đỗ Anh Vũ qua đời, ông nắm vai trò đại thần chủ chốt giúp đất nước hưng thịnh.</p>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-7 font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">
+        <div class="flex gap-5 items-start">
+          <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3.5rem; text-align:right; line-height:1.25; padding-top:2px; letter-spacing:0.03em;">NĂM<br>1175</span>
+          <div class="tl-dot"></div>
+          <div class="tl-line">
+            <p class="font-playfair font-bold mb-2" style="color:var(--ink); font-size:1rem;">Từ Chối Hối Lộ — Bảo Vệ Di Chiếu</p>
+            <p class="mb-2">Vua Lý Anh Tông băng hà. <strong style="color:var(--ink);">Chiêu Linh Thái hậu</strong> dâng vàng ngọc hối lộ để đưa con mình lên ngôi thay vì theo di chiếu. Ông kiên quyết từ chối, đưa đúng hoàng tử 3 tuổi Long Cán lên ngôi (Lý Cao Tông).</p>
+            <div class="pull-q py-1">
+              <p class="font-playfair italic" style="font-size:0.9rem; color:var(--ink); line-height:1.5;">"Bất nghĩa mà được giàu sang, kẻ trung thần nghĩa sĩ đâu có vui làm. Thái hậu có đem vàng bạc dâng cho cả triều đình thì cũng không làm gì được tôi."</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-5 items-start">
+          <span class="font-playfair font-bold flex-shrink-0" style="font-size:0.82rem; color:var(--crimson); min-width:3.5rem; text-align:right; line-height:1.25; padding-top:2px; letter-spacing:0.03em;">NĂM<br>1179</span>
+          <div class="tl-dot"></div>
+          <div class="tl-line">
+            <p class="font-playfair font-bold mb-2" style="color:var(--ink); font-size:1rem;">Tiến Cử Người Tài Trước Khi Mất</p>
+            <p class="mb-2">Khi ốm nặng, Thái hậu hỏi ai thay thế. Ông tiến cử <strong style="color:var(--ink);">Trần Trung Tá</strong> (tài kinh bang tế thế) thay vì <strong style="color:var(--ink);">Vũ Tán Đường</strong> (người ngày đêm hầu hạ thuốc thang).</p>
+            <div class="pull-q py-1">
+              <p class="font-playfair italic" style="font-size:0.9rem; color:var(--ink); line-height:1.5;">"Thái hậu hỏi người thay thế thần để lo việc nước, nên thần tiến cử Trần Trung Tá; nếu hỏi người hầu hạ, thì ngoài Vũ Tán Đường ra không còn ai khác."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- §03 TAM GỐC -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 03</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Phân Tích — Tam Gốc</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div style="display:grid; grid-template-columns:3fr 2fr; gap:2.5rem;">
+      <div>
+        <p class="font-mono mb-3" style="font-size:0.55rem; letter-spacing:0.2em; color:var(--crimson);">3 GỐC — PHẨM HẠNH CĂN BẢN</p>
+        <table class="rating-tbl mb-6">
+          <thead>
+            <tr>
+              <th>Tiêu chí</th>
+              <th>Rating</th>
+              <th>Bằng chứng</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Đạo đức</td>
+              <td class="sf">★★★★★</td>
+              <td><strong style="color:var(--ink);">Tuyệt đỉnh.</strong> Liêm khiết tột cùng: từ chối hối lộ dù được dâng "cả triều đình cũng không làm gì được". Không màng lợi ích cá nhân trong mọi quyết định sinh tử.</td>
+            </tr>
+            <tr>
+              <td>Trí tuệ</td>
+              <td class="sf">★★★★★</td>
+              <td>Văn võ toàn tài. Phân định rạch ròi <em>"người có tài trị nước"</em> với <em>"người khéo bề hầu hạ"</em> ngay trong giờ phút lâm chung — đỉnh cao tư duy nhân sự.</td>
+            </tr>
+            <tr>
+              <td>Nghị lực</td>
+              <td class="sf">★★★★★</td>
+              <td>Một mình đối đầu phe cánh hoàng gia Chiêu Linh Thái hậu. Cầm quân dẹp loạn Thân Lợi (1142), Ngưu Hống (1159) — vững vàng suốt hàng chục năm trong bối cảnh triều đình chia rẽ.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pull-q-center mx-auto" style="max-width:56ch;">
+          <p class="font-playfair italic" style="font-size:1.1rem; color:var(--ink); line-height:1.45;">"Cử hiền bất cử thân —<br><em style="color:var(--crimson);">dùng người tài lo nước, không dùng người thân lo mình."</em></p>
+        </div>
+      </div>
+      <div>
+        <div style="background:rgba(180,150,90,0.08); border-top:2px solid var(--crimson); padding:1rem 1.1rem; margin-bottom:1rem;">
+          <p class="font-mono mb-2" style="font-size:0.55rem; letter-spacing:0.22em; color:var(--crimson);">NHẬN ĐỊNH</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.92rem; color:var(--ink-light);">Tô Hiến Thành đạt cả ba gốc ở mức tuyệt đối — hiếm có trong lịch sử. Phẩm hạnh không phải lý thuyết mà được thử thách bằng <strong style="color:var(--ink);">quyền lực thực tế</strong> và <strong style="color:var(--ink);">áp lực chính trị nghiệt ngã</strong>.</p>
+        </div>
+        <div style="background:rgba(180,150,90,0.08); border-top:2px solid var(--crimson); padding:1rem 1.1rem;">
+          <p class="font-mono mb-2" style="font-size:0.55rem; letter-spacing:0.22em; color:var(--crimson);">VĂN VÕ SONG TOÀN</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.92rem; color:var(--ink-light);">Không chỉ là nhà chiến lược chính trị, ông còn trực tiếp cầm quân ra trận. Sự kết hợp hiếm có giữa trí thức Nho giáo và tài năng quân sự thực chiến.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- §04 TAM ĐỘC -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 04</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Phân Tích — Tam Độc</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;">
+      <div>
+        <p class="font-mono mb-3" style="font-size:0.55rem; letter-spacing:0.2em; color:var(--crimson);">3 ĐỘC — HẠN CHẾ &amp; ĐIỂM MÙ</p>
+        <table class="rating-tbl doc">
+          <thead>
+            <tr>
+              <th>Tiêu chí</th>
+              <th>Rating</th>
+              <th>Nhận xét</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tham lam</td>
+              <td>★☆☆☆☆</td>
+              <td>Gần như không có. Đỉnh cao quyền lực trong tay, không màng lợi dụng. Hành động từ chối hối lộ 1175 là minh chứng bất khả phủ nhận.</td>
+            </tr>
+            <tr>
+              <td>Sân giận</td>
+              <td>★☆☆☆☆</td>
+              <td>Không dùng bạo lực hay thù hận để giải quyết vấn đề chính trị. Xử lý phe đối lập bằng nguyên tắc pháp luật, không bằng trả thù cá nhân.</td>
+            </tr>
+            <tr>
+              <td>Si mê</td>
+              <td>★★☆☆☆</td>
+              <td><span class="font-mono" style="font-size:0.7rem; color:var(--crimson);">[SUY LUẬN]</span> Sự trung thành tuyệt đối dựa trên cốt lõi Nho giáo: trung với huyết thống hoàng gia hơn là trung với sinh mệnh quốc gia — đây là bi kịch của người quân tử.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div class="pull-q mb-5 py-1">
+          <p class="font-playfair italic" style="font-size:1.05rem; color:var(--ink); line-height:1.5;">"Trung quân" mà không "trung quốc" — đó là giới hạn của Tô Hiến Thành và của toàn bộ tư tưởng Nho giáo thời đại ông.</p>
+        </div>
+        <p class="font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">Ông bảo vệ di chiếu để đưa hoàng tử 3 tuổi lên ngôi — trớ trêu thay, chính <strong style="color:var(--ink);">Lý Cao Tông</strong> khi lớn lên lại trở thành bạo chúa ăn chơi sa đọa, đẩy vương triều vào sụp đổ. Lòng trung thành với "lề thói pháp luật và huyết thống hoàng gia" chưa phải sự trung thành tối cao với "sinh mệnh quốc gia".</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- §05 ĐÁNH GIÁ TỔNG THỂ -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 05</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Đánh Giá Tổng Thể</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div style="display:grid; grid-template-columns:3fr 2fr; gap:2.5rem;">
+      <div>
+        <div style="border:1px solid var(--rule); border-radius:0.75rem; padding:1.4rem; background:var(--cream-dark);">
+          <p class="font-playfair font-bold mb-3" style="font-size:1.1rem; color:var(--ink);">Rào Chắn <em style="color:var(--crimson);">Cuối Cùng</em></p>
+          <p class="font-plex leading-relaxed mb-3" style="font-size:0.97rem; color:var(--ink-light);">Tô Hiến Thành là rào chắn cuối cùng ngăn cản sự thối nát của triều đình. Khi ông còn sống, luật pháp còn được thượng tôn. Ngay sau khi ông mất (1179), triều Lý lập tức trượt dài — vua Lý Cao Tông không nghe lời dặn, không dùng Trần Trung Tá mà giao quyền cho kẻ xu nịnh.</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.97rem; color:var(--ink-light);">Chỉ <strong style="color:var(--ink);">30 năm</strong> sau ông mất, nhà Lý sụp đổ hoàn toàn. Không có hệ thống nào đủ mạnh để duy trì kỷ cương khi người trụ cột duy nhất ra đi.</p>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div style="background:rgba(180,150,90,0.08); border-top:2px solid var(--crimson); padding:1rem 1.1rem;">
+          <p class="font-mono mb-2" style="font-size:0.55rem; letter-spacing:0.22em; color:var(--crimson);">DI SẢN THỰC TẾ</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.88rem; color:var(--ink-light);">1179 ông mất → 1209: triều Lý đại loạn → 1225: Trần Thủ Độ ép Lý Chiêu Hoàng nhường ngôi. Toàn bộ chuỗi sụp đổ bắt đầu từ khoảng trống ông để lại.</p>
+        </div>
+        <div style="background:rgba(180,150,90,0.08); border-top:2px solid var(--crimson); padding:1rem 1.1rem;">
+          <p class="font-mono mb-2" style="font-size:0.55rem; letter-spacing:0.22em; color:var(--crimson);">NGHỆ THUẬT DÙNG NGƯỜI</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.88rem; color:var(--ink-light);">Phân biệt rạch ròi <em>"kẻ có tài trị nước"</em> và <em>"kẻ khéo bề hầu hạ"</em> ngay trong giờ hấp hối — đỉnh cao của tư duy nhân sự vượt mọi cảm xúc cá nhân.</p>
+        </div>
+      </div>
+    </div>
+    <div class="pull-q-center mx-auto mt-6" style="max-width:58ch;">
+      <p class="font-playfair italic" style="font-size:1.1rem; color:var(--ink); line-height:1.45;">"Cột trụ pháp trị cuối cùng của nhà Lý —<br><em style="color:var(--crimson);">khi ông mất, không ai thay thế được."</em></p>
+    </div>
+  </div>
+
+  <!-- §06 NGHỊCH LÝ LỊCH SỬ -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 06</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Nghịch Lý Lịch Sử</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div class="paradox">
+      <p class="font-playfair font-bold italic mb-3" style="font-size:1.1rem; color:var(--crimson);">Tận trung bảo vệ một cái ngai vàng, để rồi người ngồi trên đó đạp đổ cơ đồ đất nước.</p>
+      <p class="font-plex leading-relaxed" style="font-size:1rem; color:var(--ink-light); line-height:1.75;">Tô Hiến Thành chọn nguyên tắc trên kết quả. Ông tuân thủ di chiếu, bảo vệ luật pháp, không để quyền lực bị mua chuộc — đúng tuyệt đối theo chuẩn Nho giáo. Nhưng kết quả: Lý Cao Tông lớn lên thành bạo chúa phá nát cơ đồ. Câu hỏi thực sự là: <strong style="color:var(--ink);">khi trung thành với quy trình (di chiếu) mà kết quả có thể là thảm họa, người lãnh đạo có trách nhiệm gì?</strong> Đây là giới hạn của tư duy "trung quân" thay vì "trung với đất nước" — bi kịch không chỉ của ông mà của toàn bộ hệ tư tưởng Nho giáo thời đại.</p>
+    </div>
+  </div>
+
+  <!-- §07 BÀI HỌC RÚT RA -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule); background:rgba(180,150,90,0.04);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 07</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Bài Học Rút Ra</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+      <div class="flex gap-5 items-start">
+        <div class="lesson-num flex-shrink-0">
+          <span class="font-playfair font-bold" style="color:var(--crimson); font-size:1.1rem;">1</span>
+        </div>
+        <div>
+          <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">Lãnh đạo bằng Nguyên Tắc</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.95rem; color:var(--ink-light);">Phân biệt rạch ròi <em>"kẻ có tài trị nước"</em> và <em>"kẻ khéo bề hầu hạ"</em> — đỉnh cao của nghệ thuật dùng người. <strong style="color:var(--ink);">Cảm xúc và lý trí không được lẫn lộn khi quyết định nhân sự.</strong> Vũ Tán Đường hầu hạ sắc thuốc hàng ngày, nhưng Trần Trung Tá mới là người đất nước cần.</p>
+        </div>
+      </div>
+      <div class="flex gap-5 items-start">
+        <div class="lesson-num flex-shrink-0">
+          <span class="font-playfair font-bold" style="color:var(--crimson); font-size:1.1rem;">2</span>
+        </div>
+        <div>
+          <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">Hệ Thống Lớn Hơn Cá Nhân</p>
+          <p class="font-plex leading-relaxed" style="font-size:0.95rem; color:var(--ink-light);">Một quốc gia muốn trường tồn <strong style="color:var(--ink);">không thể chỉ dựa vào sự trong sạch của một cá nhân kiệt xuất</strong>. Khi Tô Hiến Thành ra đi, không có hệ thống nào đủ mạnh để duy trì kỷ cương. Bài học còn nguyên giá trị: xây dựng thể chế, không xây dựng tượng đài.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- §08 TỰ KIỂM TRA -->
+  <div class="px-10 py-9" style="border-bottom:1px solid var(--rule);">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 08</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Tự Kiểm Tra — Câu Hỏi Phân Tích</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div class="selfcheck">
+      <p class="selfcheck-q">Tô Hiến Thành từ chối hối lộ và bảo vệ di chiếu — đưa Lý Cao Tông (3 tuổi) lên ngôi. Đây là hành động đúng hay sai nhìn từ kết quả lịch sử?</p>
+      <div class="selfcheck-label">✦ Gợi Ý Phân Tích</div>
+      <div class="selfcheck-ans">
+        <p><strong>Nhìn từ nguyên tắc:</strong> đúng tuyệt đối — ông tuân thủ di chiếu, bảo vệ luật pháp, không để quyền lực bị mua chuộc.</p>
+        <p style="margin-top:0.6rem;"><strong>Nhìn từ kết quả:</strong> Lý Cao Tông lớn lên thành bạo chúa phá nát cơ đồ. 30 năm sau nhà Lý sụp đổ.</p>
+        <p style="margin-top:0.6rem;">Câu hỏi thực sự: khi trung thành với quy trình mà kết quả có thể là thảm họa, người lãnh đạo có trách nhiệm gì? Tô Hiến Thành chọn nguyên tắc trên kết quả — đó là lựa chọn cao thượng nhưng cũng là <strong>giới hạn của tư duy Nho giáo: "trung quân" thay vì "trung với đất nước"</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- §09 LIÊN KẾT -->
+  <div class="px-10 py-9">
+    <div class="flex items-baseline gap-3 mb-6">
+      <span class="sec-label">§ 09</span>
+      <h2 class="font-playfair font-bold" style="font-size:1.5rem; color:var(--ink);">Liên Kết</h2>
+      <div class="flex-1 single-rule" style="margin-bottom:2px;"></div>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+      <div class="link-card p-5">
+        <div class="flex items-start gap-4">
+          <div class="tl-dot" style="margin-top:4px;"></div>
+          <div>
+            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">VỊ VUA PHỤNG SỰ</p>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">21. Lý Nhân Tông</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Vị vua của giai đoạn hoàng kim — thời kỳ Tô Hiến Thành chứng kiến và phụng sự trước khi Lý Anh Tông lên ngôi.</p>
+          </div>
+        </div>
+      </div>
+      <div class="link-card p-5">
+        <div class="flex items-start gap-4">
+          <div class="tl-dot" style="margin-top:4px;"></div>
+          <div>
+            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">VUA ÔNG BẢO VỆ DI CHIẾU</p>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">Lý Cao Tông (1175–1210)</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Vua 3 tuổi ông đưa lên ngôi. Lớn lên trở thành bạo chúa — bi kịch của lòng trung thành. Không dùng Trần Trung Tá như di nguyện.</p>
+          </div>
+        </div>
+      </div>
+      <div class="link-card p-5">
+        <div class="flex items-start gap-4">
+          <div class="tl-dot" style="margin-top:4px;"></div>
+          <div>
+            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">CHAPTER XUẤT HIỆN</p>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">8.4 Nhà Lý — Xây Dựng Văn Hóa &amp; Thể Chế</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Dẹp loạn Thân Lợi (1142), trụ cột pháp trị thời Lý Anh Tông — giai đoạn ông hoạt động mạnh nhất.</p>
+          </div>
+        </div>
+      </div>
+      <div class="link-card p-5">
+        <div class="flex items-start gap-4">
+          <div class="tl-dot" style="margin-top:4px;"></div>
+          <div>
+            <p class="font-mono mb-1" style="font-size:0.6rem; letter-spacing:0.18em; color:var(--crimson);">CHAPTER LIÊN QUAN</p>
+            <p class="font-playfair font-bold mb-1" style="font-size:1.05rem; color:var(--ink);">8.5 Nhà Lý — Suy Tàn &amp; Chuyển Giao</p>
+            <p class="font-plex leading-relaxed" style="font-size:0.9rem; color:var(--ink-light);">Cái chết của ông (1179) = dấu chấm hết cho pháp trị nhà Lý. Toàn bộ giai đoạn suy tàn bắt đầu từ khoảng trống ông để lại.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-10 mb-2">
+      <p class="ornament" style="font-size:1.2rem;">✦ ✦ ✦</p>
+      <p class="font-mono mt-3" style="font-size:0.58rem; letter-spacing:0.25em; color:var(--warm);">NHÂN VẬT LỊCH SỬ · TÔ HIẾN THÀNH · 1102–1179 · CỘT TRỤ PHÁP TRỊ</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
