@@ -713,5 +713,66 @@
     "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
     "characterChipClass": "era-chip-char",
     "toolClass": "border-t border-[#e7f3ec] pt-4 flex flex-wrap gap-2"
+  },
+  {
+    "id": "era-nha-mac",
+    "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-[#78350f] border-2 border-[#92400e] flex items-center justify-center shadow-md\">\n                <div class=\"w-2 h-2 rounded-full bg-[#fcd34d]\"></div>\n              </div>\n            </div>",
+    "yearsClass": "text-[11px] font-mono text-[#a8a29e] mb-1.5 tracking-wide",
+    "years": "1527–1592 SCN",
+    "cardClass": "rounded-xl border border-[#92400e]/30 bg-gradient-to-br from-[#fffbeb] to-[#faf9f7] p-5",
+    "cardStyle": "",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#92400e] bg-[#fffbeb] border border-[#92400e]/20 px-2 py-0.5 rounded\">ERA 10</span>\n                      <span class=\"text-[10px] text-[#78716c] font-medium\">Nam-Bắc Triều — Triều đại bị lịch sử đánh giá thiếu công bằng</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Nhà Mạc</div>\n                  </div>\n                </div>",
+    "dividerAfterHeader": false,
+    "groups": [
+      {
+        "label": "📖 Bài học",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/nha-mac-chap1-lap-trieu-thinh-tri.html",
+            "text": "1527–1541 · Lập Triều & Thịnh Trị"
+          },
+          {
+            "href": "bai-hoc/nha-mac-chap2-nam-bac-trieu-sup-do.html",
+            "text": "1541–1592 · Nam-Bắc Triều & Sụp Đổ"
+          }
+        ]
+      }
+    ],
+    "characters": [
+      {
+        "href": "nhan-vat/mac-dang-dung.html",
+        "text": "Mạc Đăng Dung"
+      },
+      {
+        "href": "nhan-vat/mac-dang-doanh.html",
+        "text": "Mạc Đăng Doanh"
+      },
+      {
+        "href": "nhan-vat/nguyen-kim.html",
+        "text": "Nguyễn Kim"
+      },
+      {
+        "href": "nhan-vat/trinh-kiem.html",
+        "text": "Trịnh Kiểm"
+      },
+      {
+        "href": "nhan-vat/nguyen-hoang.html",
+        "text": "Nguyễn Hoàng"
+      },
+      {
+        "href": "nhan-vat/trinh-tung.html",
+        "text": "Trịnh Tùng"
+      },
+      {
+        "href": "nhan-vat/mac-mau-hop.html",
+        "text": "Mạc Mậu Hợp"
+      }
+    ],
+    "characterLabel": "👤 Nhân vật",
+    "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+    "characterChipClass": "era-chip-char",
+    "toolClass": "border-t border-[#fef3c7] pt-4 flex flex-wrap gap-2"
   }
 ]
