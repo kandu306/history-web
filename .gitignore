@@ -1,5 +1,6 @@
 node_modules/
 _site/
 new-raw/
+src/shared/tailwind.css
 migrate-report.txt
 verify-report.txt

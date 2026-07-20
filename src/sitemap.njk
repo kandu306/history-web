@@ -1,0 +1,16 @@
+---
+permalink: sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>{{ site.url }}/index.html</loc></url>
+  <url><loc>{{ site.url }}/ban-do.html</loc></url>
+  <url><loc>{{ site.url }}/so-do-trieu-dinh.html</loc></url>
+{%- for page in collections.nhanVat %}
+  <url><loc>{{ site.url }}{{ page.url }}</loc></url>
+{%- endfor %}
+{%- for page in collections.baiHoc %}
+  <url><loc>{{ site.url }}{{ page.url }}</loc></url>
+{%- endfor %}
+</urlset>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kandu306.github.io/history-web/sitemap.xml

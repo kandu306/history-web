@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/ban-do-data.js");
   eleventyConfig.addPassthroughCopy("src/so-do-data.js");
   eleventyConfig.addPassthroughCopy("src/.nojekyll");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
 
   // Collections để đếm số liệu thống kê trên trang chủ
   eleventyConfig.addCollection("nhanVat", (c) =>
