@@ -1,0 +1,33 @@
+<!-- Sticky Nav -->
+  <nav style="background: rgba(250,249,247,0.92); backdrop-filter: blur(12px);"
+       class="sticky top-0 z-50 border-b border-[#e7e5e4]">
+    <div class="max-w-4xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2 text-sm text-[#78716c]">
+        <a href="{{ rel }}index.html" class="text-[#9b1c1c] text-base leading-none hover:opacity-75 transition-opacity">◈</a>
+        <span>Lịch sử Việt Nam</span>
+        <span class="text-[#d6d3d1]">›</span>
+        {%- if breadcrumbParent %}
+        <a href="{{ breadcrumbParent.href }}" class="hover:text-[#9b1c1c] transition-colors">{{ breadcrumbParent.text }}</a>
+        <span class="text-[#d6d3d1]">›</span>
+        {%- endif %}
+        <span class="font-medium text-[#1c1917]">{{ breadcrumb }}</span>
+      </div>
+      <span class="text-xs text-[#a8a29e] font-semibold tracking-widest uppercase hidden sm:block">
+        {{ navLabel }}
+      </span>
+      <button id="mobile-menu-btn" class="sm:hidden text-[#1c1917] focus:outline-none p-1.5 rounded-lg hover:bg-[#f5f4f1] transition-colors" aria-label="Toggle menu">
+        <svg id="hamburger-icon" class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden sm:hidden border-t border-[#e7e5e4] bg-[#faf9f7] py-2 px-6 shadow-lg">
+      <div class="flex flex-col gap-2 py-2">
+        <a href="{{ rel }}index.html#nhan-vat" class="mobile-nav-link text-sm text-[#57534e] hover:text-[#9b1c1c] font-medium py-2 transition-colors">Nhân vật & Bài học</a>
+        <a href="{{ rel }}index.html#phuong-phap" class="mobile-nav-link text-sm text-[#57534e] hover:text-[#9b1c1c] font-medium py-2 transition-colors">Phương pháp</a>
+      </div>
+    </div>
+  </nav>
