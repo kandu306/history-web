@@ -85,6 +85,13 @@ const NODES_CONFIG = [
     period: "1428 SCN – ...",
     title: "Nhà Hậu Lê — Triều Đại Dài Nhất",
     subtitle: "Lam Sơn khởi nghĩa & Bình Ngô Đại Cáo"
+  },
+  {
+    id: "nha_mac",
+    tagLabel: "Nam-Bắc triều", tagColor: "#92400e",
+    period: "1527–1592 SCN",
+    title: "Nhà Mạc — Bị Lịch Sử Đánh Giá Thiếu Công Bằng",
+    subtitle: "Ngư dân lên ngôi · Thịnh trị thực sự · Nhượng danh giữ thực"
   }
 ];
 
@@ -99,7 +106,8 @@ const LINES_CONFIG = [
   { id: "line-ntl-ly", x1: "50%", y1: "720",  x2: "50%", y2: "780"  },
   { id: "line-ly-tran",   x1: "50%", y1: "830",  x2: "50%", y2: "890"  },
   { id: "line-tran-ho",   x1: "50%", y1: "940",  x2: "50%", y2: "1000" },
-  { id: "line-ho-haule",  x1: "50%", y1: "1050", x2: "50%", y2: "1110" }
+  { id: "line-ho-haule",  x1: "50%", y1: "1050", x2: "50%", y2: "1110" },
+  { id: "line-haule-mac", x1: "50%", y1: "1160", x2: "50%", y2: "1220" }
 ];
 
 // ─── PATTERNS: các quy luật lịch sử ───
