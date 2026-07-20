@@ -636,12 +636,10 @@ const DYNASTY_DATA = [
   // Nhà Mạc (1527-1592)
   {
     id: "nha-mac",
-    dynasty: "Nhà Mạc",
-    dynastyStyle: "background: linear-gradient(135deg, #78350f 0%, #92400e 100%); color: #fef3c7;",
-    era: "1527 – 1592",
-    eraNote: "65 năm · Nam-Bắc triều · Bị lịch sử đánh giá thiếu công bằng",
-    eraNoteStyle: "color: #fcd34d;",
-    kings: [
+    label: "Nhà Mạc · 1527–1592 · Nam-Bắc triều",
+    eraBlockStyle: "border-left: 3px solid #92400e;",
+    labelStyle: "color: #92400e;",
+    columns: [
       {
         king: {
           href: "nhan-vat/mac-dang-dung.html",
@@ -702,12 +700,10 @@ const DYNASTY_DATA = [
   // Lê Trung Hưng (sơ lược — bên Nam)
   {
     id: "le-trung-hung",
-    dynasty: "Lê Trung Hưng · Chúa Trịnh · Chúa Nguyễn",
-    dynastyStyle: "background: linear-gradient(135deg, #14532d 0%, #166534 100%); color: #bbf7d0;",
-    era: "1533 – 1789",
-    eraNote: "256 năm · Vua Lê bù nhìn · Trịnh-Nguyễn phân tranh (1627–1775)",
-    eraNoteStyle: "color: #86efac;",
-    kings: [
+    label: "Lê Trung Hưng · Chúa Trịnh · Chúa Nguyễn · 1533–1789",
+    eraBlockStyle: "border-left: 3px solid #166534;",
+    labelStyle: "color: #166534;",
+    columns: [
       {
         king: {
           href: "nhan-vat/nguyen-hoang.html",
