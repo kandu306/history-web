@@ -367,10 +367,10 @@ const DATABASE = {
       { name: "Chap 1 · Kháng Chiến Chống Minh (1418–1427)", url: "bai-hoc/hau-le-khang-chien-chong-minh.html" },
       { name: "Chap 2 · Đỉnh Cao Hoàng Kim (1428–1497)", url: "bai-hoc/nha-hau-le-chap2-dinh-cao-hoang-kim.html" },
       { name: "Chap 3 · Suy Tàn & Mạc Thay Thế (1497–1527)", url: "bai-hoc/nha-hau-le-chap3-suy-tan-mac-thay-the.html" },
-      { name: "└ Cụm 1 · Lê Hiến Tông & Lê Túc Tông", url: "bai-hoc/nha-hau-le-chap4-cum1-le-hien-tong.html" },
-      { name: "└ Cụm 2 · Lê Uy Mục — Vua Quỷ", url: "bai-hoc/nha-hau-le-chap4-cum2-le-uy-muc.html" },
-      { name: "└ Cụm 3 · Lê Tương Dực — Vua Lợn", url: "bai-hoc/nha-hau-le-chap4-cum3-le-tuong-duc.html" },
-      { name: "└ Cụm 4 · Triều Đình Tan Rã & Mạc Soán Ngôi", url: "bai-hoc/nha-hau-le-chap4-cum4-trieu-dinh-tan-ra.html" }
+      { name: "└ 1497–1505 · Lê Hiến Tông & Lê Túc Tông", url: "bai-hoc/nha-hau-le-chap4-cum1-le-hien-tong.html" },
+      { name: "└ 1505–1509 · Lê Uy Mục — Vua Quỷ", url: "bai-hoc/nha-hau-le-chap4-cum2-le-uy-muc.html" },
+      { name: "└ 1510–1516 · Lê Tương Dực — Vua Lợn", url: "bai-hoc/nha-hau-le-chap4-cum3-le-tuong-duc.html" },
+      { name: "└ 1516–1527 · Triều Đình Tan Rã & Mạc Soán Ngôi", url: "bai-hoc/nha-hau-le-chap4-cum4-trieu-dinh-tan-ra.html" }
     ],
     figures: [
       { name: "Lê Lợi",          url: "nhan-vat/le-loi.html",          role: "king"     },
