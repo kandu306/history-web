@@ -738,6 +738,33 @@
             "text": "1541–1592 · Nam-Bắc Triều & Sụp Đổ"
           }
         ]
+      },
+      {
+        "label": "📅 Sự kiện nổi bật",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#92400e] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "su-kien/mac-dang-dung-len-ngoi.html",
+            "text": "1527 · Mạc Đăng Dung lên ngôi"
+          },
+          {
+            "href": "su-kien/le-cung-hoang-thoai-vi.html",
+            "text": "1527 · Lê Cung Hoàng thoái vị"
+          },
+          {
+            "href": "su-kien/thang-long-thinh-tri-mac-dang-doanh.html",
+            "text": "1529–1540 · Thăng Long thịnh trị"
+          },
+          {
+            "href": "su-kien/nguyen-kim-lap-le-trung-hung.html",
+            "text": "1533 · Nguyễn Kim lập Lê Trung Hưng"
+          },
+          {
+            "href": "su-kien/cu-quy-lay-nam-quan.html",
+            "text": "1541 · Cú quỳ lạy Nam Quan"
+          }
+        ]
       }
     ],
     "characters": [
