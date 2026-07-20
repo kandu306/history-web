@@ -631,6 +631,102 @@ const DYNASTY_DATA = [
     id: "divider-le-so-end",
     isDividerOnly: true,
     dividerText: "🔥 1527 — Mạc Đăng Dung soán ngôi · Kết thúc 99 năm Lê Sơ (1428–1527)"
+  },
+
+  // Nhà Mạc (1527-1592)
+  {
+    id: "nha-mac",
+    dynasty: "Nhà Mạc",
+    dynastyStyle: "background: linear-gradient(135deg, #78350f 0%, #92400e 100%); color: #fef3c7;",
+    era: "1527 – 1592",
+    eraNote: "65 năm · Nam-Bắc triều · Bị lịch sử đánh giá thiếu công bằng",
+    eraNoteStyle: "color: #fcd34d;",
+    kings: [
+      {
+        king: {
+          href: "nhan-vat/mac-dang-dung.html",
+          cardStyle: "border-color: rgba(146,64,14,0.6); background: linear-gradient(135deg, #1c0a00 0%, #2d1500 100%); color: white;",
+          crown: "👑",
+          title: "Thái Tổ · Người sáng lập", titleStyle: "color:#fcd34d;",
+          name: "Mạc Đăng Dung", nameStyle: "color:white;",
+          realName: "1483 – 1541 SCN", realNameStyle: "color:#d6d3d1;",
+          years: "📅 Trị vì: 1527 – 1529 · Thái thượng hoàng 1529–1541", yearsStyle: "background:rgba(0,0,0,0.4); color:#fcd34d;",
+          note: "Từ ngư dân Cổ Trai → hoàng đế Đại Việt trong 44 năm. Leo lên bằng công thức: luôn đứng về phía hợp pháp, dẹp loạn cho triều đình, kiên nhẫn tích lũy. Cú quỳ lạy Nam Quan 1541 — nhượng danh giữ thực.", noteStyle: "color:#d6d3d1;"
+        },
+        officials: [
+          { href: "nhan-vat/mac-dang-doanh.html", iconClass: "icon-king", icon: "👑", roleClass: "role-king", role: "Thái tử → Vua thịnh trị", name: "Mạc Đăng Doanh", desc: "Vua giỏi nhất Nhà Mạc. 11 năm thịnh trị (1529–1540): thi cử liên tục, kinh tế sôi động, hình phạt khoan hòa. Ngay cả Đại Việt sử ký toàn thư của phe thắng cuộc cũng phải ghi nhận." },
+          { href: "nhan-vat/nguyen-binh-khiem.html", iconClass: "icon-advisor", icon: "🔮", roleClass: "role-advisor", role: "Trạng Trình · Tiên tri", name: "Nguyễn Bỉnh Khiêm", desc: "Thần đồng đỗ Trạng nguyên 1535. Quan Nhà Mạc nhưng không dính líu tranh quyền. Tiên đoán 'Hoành Sơn nhất đái, vạn đại dung thân' — lời khuyên định hướng 300 năm Nhà Nguyễn." }
+        ]
+      },
+      {
+        king: {
+          href: "nhan-vat/mac-dang-doanh.html",
+          cardStyle: "border-color: rgba(146,64,14,0.6); background: linear-gradient(135deg, #1c0a00 0%, #2d1500 100%); color: white;",
+          crown: "⭐",
+          title: "Thái Tông · Vua thịnh trị nhất", titleStyle: "color:#fcd34d;",
+          name: "Mạc Đăng Doanh", nameStyle: "color:white;",
+          realName: "? – 1540 SCN", realNameStyle: "color:#d6d3d1;",
+          years: "📅 Trị vì: 1529 – 1540 · 11 năm", yearsStyle: "background:rgba(0,0,0,0.4); color:#fcd34d;",
+          note: "Đỉnh cao Nhà Mạc. 22 khoa thi liên tục 3 năm/lần. Cảng Vân Đồn thương mại sôi động. Thuế nhẹ, hình phạt khoan hòa. Được chính sử đối thủ thừa nhận. Mất 1540 — khởi đầu suy yếu.", noteStyle: "color:#d6d3d1;"
+        },
+        officials: [
+          { href: "nhan-vat/phung-khac-khoan.html", iconClass: "icon-advisor", icon: "📜", roleClass: "role-advisor", role: "Trạng Bùng · Sứ thần tài ba", name: "Phùng Khắc Khoan", desc: "Học trò Nguyễn Bỉnh Khiêm. Ban đầu phục vụ Nhà Mạc, sau theo Lê Trung Hưng. Đi sứ Trung Hoa 1597 — mang về kỹ thuật trồng ngô, đổi 'thất bại ngoại giao' thành 'thắng lợi nông nghiệp'." }
+        ]
+      },
+      {
+        king: {
+          href: "nhan-vat/mac-mau-hop.html",
+          cardStyle: "border-color: rgba(146,64,14,0.6); background: linear-gradient(135deg, #1c0a00 0%, #2d1500 100%); color: white;",
+          crown: "💀",
+          title: "Mậu Hợp · Vua cuối Nhà Mạc tại Thăng Long", titleStyle: "color:#fcd34d;",
+          name: "Mạc Mậu Hợp", nameStyle: "color:white;",
+          realName: "1560 – 1592 SCN", realNameStyle: "color:#d6d3d1;",
+          years: "📅 Trị vì: 1562 – 1592 · 30 năm", yearsStyle: "background:rgba(0,0,0,0.4); color:#fcd34d;",
+          note: "Thừa hưởng Nhà Mạc đã bị bào mòn 60 năm chiến tranh tiêu hao. Nội bộ tranh giành, nguồn lực phân tán. Bị Trịnh Tùng đánh chiếm Thăng Long 1592, bị bắt và xử tử — kết thúc Nhà Mạc tại Thăng Long.", noteStyle: "color:#d6d3d1;"
+        },
+        officials: [
+          { href: "nhan-vat/trinh-tung.html", iconClass: "icon-enemy", icon: "⚔️", roleClass: "role-enemy", role: "Chúa Trịnh · Kẻ kết thúc Nhà Mạc", name: "Trịnh Tùng", desc: "Con trai Trịnh Kiểm. Đánh chiếm Thăng Long 1592, kết thúc Nhà Mạc. Ép vua Lê Kính Tông tự vẫn 1619. Lập mô hình Chúa-Vua tồn tại 200 năm — thực quyền không cần ngai vàng." },
+          { href: "nhan-vat/duong-chap-nhat.html", iconClass: "icon-official", icon: "🏴", roleClass: "role-official", role: "Tướng Mạc · Chiến đến cùng", name: "Dương Chấp Nhất", desc: "Tướng trung thành nhà Mạc, chiến đấu đến những ngày cuối cùng. Đại diện cho tầng lớp quan lại và tướng lĩnh Nhà Mạc bị lịch sử phe thắng cuộc cố tình xóa mờ." }
+        ]
+      }
+    ]
+  },
+
+  // Divider: Nhà Mạc sụp đổ
+  {
+    id: "divider-nha-mac-end",
+    isDividerOnly: true,
+    dividerText: "⚔️ 1592 — Trịnh Tùng chiếm Thăng Long · Kết thúc 65 năm Nhà Mạc · Lê Trung Hưng + Chúa Trịnh nắm quyền"
+  },
+
+  // Lê Trung Hưng (sơ lược — bên Nam)
+  {
+    id: "le-trung-hung",
+    dynasty: "Lê Trung Hưng · Chúa Trịnh · Chúa Nguyễn",
+    dynastyStyle: "background: linear-gradient(135deg, #14532d 0%, #166534 100%); color: #bbf7d0;",
+    era: "1533 – 1789",
+    eraNote: "256 năm · Vua Lê bù nhìn · Trịnh-Nguyễn phân tranh (1627–1775)",
+    eraNoteStyle: "color: #86efac;",
+    kings: [
+      {
+        king: {
+          href: "nhan-vat/nguyen-hoang.html",
+          cardStyle: "border-color: rgba(22,101,52,0.5); background: linear-gradient(135deg, #030a06 0%, #0a1f0e 100%); color: white;",
+          crown: "🌟",
+          title: "Chúa Nguyễn Đầu Tiên · Người khai sáng Đàng Trong", titleStyle: "color:#86efac;",
+          name: "Nguyễn Hoàng", nameStyle: "color:white;",
+          realName: "1525 – 1613 SCN", realNameStyle: "color:#d6d3d1;",
+          years: "📅 Trấn thủ Thuận Hóa: 1558 – 1613 · 55 năm xây nền", yearsStyle: "background:rgba(0,0,0,0.4); color:#86efac;",
+          note: "Bị Trịnh Kiểm 'đày' vào Thuận Hóa thay vì giết. 55 năm xây dựng Đàng Trong không đối đầu trực tiếp. Câu 'Hoành Sơn nhất đái, vạn đại dung thân' của Nguyễn Bỉnh Khiêm trở thành chiến lược 300 năm.", noteStyle: "color:#d6d3d1;"
+        },
+        officials: [
+          { href: "nhan-vat/trinh-kiem.html", iconClass: "icon-official", icon: "⚡", roleClass: "role-official", role: "Chúa Trịnh Đầu Tiên · Kiến trúc sư quyền lực", name: "Trịnh Kiểm", desc: "Con rể Nguyễn Kim, tiếp quản thực quyền sau khi Nguyễn Kim bị ám sát 1545. Không lên ngôi vua — học bài từ Nhà Mạc. Đẩy Nguyễn Hoàng vào Nam thay vì giết — quyết định tạo ra 150 năm phân tranh." },
+          { href: "nhan-vat/le-kinh-tong.html", iconClass: "icon-king", icon: "👑", roleClass: "role-king", role: "Vua Lê · Bù nhìn", name: "Lê Kính Tông", desc: "Vua Lê Trung Hưng bị Chúa Trịnh kiểm soát hoàn toàn. Bị ép tự vẫn 1619 khi Trịnh Tùng cho rằng ông có âm mưu với Trịnh Xuân. Bằng chứng rõ nhất: 'phù Lê' chỉ là danh nghĩa." },
+          { href: "nhan-vat/trinh-xuan.html", iconClass: "icon-enemy", icon: "🗡️", roleClass: "role-enemy", role: "Trịnh Xuân · Nổi loạn nội bộ", name: "Trịnh Xuân", desc: "Con trai Trịnh Tùng, tranh quyền thừa kế với anh. Liên minh với vua Lê Kính Tông chống cha — bị phát hiện. Nổi loạn thất bại, bị xử tử. Minh chứng: ngay trong họ Trịnh cũng tranh giành quyền lực." }
+        ]
+      }
+    ]
   }
+
 
 ];

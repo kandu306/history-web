@@ -399,6 +399,38 @@ const DATABASE = {
     lineConnections: []
   },
 
+
+  nha_mac: {
+    category: "Triều đại",
+    title: "Nhà Mạc",
+    period: "1527 – 1592 SCN",
+    desc: "65 năm tồn tại bị lịch sử đánh giá thiếu công bằng — phe thắng cuộc Lê-Trịnh cần Nhà Mạc là phản diện. Thực tế: Mạc Đăng Doanh (1529–1540) mang lại thịnh trị thực sự, 22 khoa thi liên tục, kinh tế sôi động. Sụp đổ 1592 khi Trịnh Tùng chiếm Thăng Long.",
+    lessons: [
+      { name: "Chap 1 · Lập Triều & Thịnh Trị (1527–1541)", url: "bai-hoc/nha-mac-chap1-lap-trieu-thinh-tri.html" },
+      { name: "Chap 2 · Nam-Bắc Triều & Sụp Đổ (1541–1592)", url: "bai-hoc/nha-mac-chap2-nam-bac-trieu-sup-do.html" },
+      { name: "SK1 · Mạc Đăng Dung lên ngôi (1527)", url: "su-kien/mac-dang-dung-len-ngoi.html" },
+      { name: "SK2 · Lê Cung Hoàng thoái vị (1527)", url: "su-kien/le-cung-hoang-thoai-vi.html" },
+      { name: "SK3 · Thăng Long Thịnh Trị (1529–1540)", url: "su-kien/thang-long-thinh-tri-mac-dang-doanh.html" },
+      { name: "SK4 · Nguyễn Kim lập Lê Trung Hưng (1533)", url: "su-kien/nguyen-kim-lap-le-trung-hung.html" },
+      { name: "SK5 · Cú Quỳ Lạy Nam Quan (1541)", url: "su-kien/cu-quy-lay-nam-quan.html" }
+    ],
+    figures: [
+      { name: "Mạc Đăng Dung",    url: "nhan-vat/mac-dang-dung.html",    role: "king"     },
+      { name: "Mạc Đăng Doanh",   url: "nhan-vat/mac-dang-doanh.html",   role: "king"     },
+      { name: "Mạc Mậu Hợp",      url: "nhan-vat/mac-mau-hop.html",      role: "king"     },
+      { name: "Nguyễn Kim",        url: "nhan-vat/nguyen-kim.html",        role: "official" },
+      { name: "Trịnh Kiểm",        url: "nhan-vat/trinh-kiem.html",        role: "official" },
+      { name: "Trịnh Tùng",        url: "nhan-vat/trinh-tung.html",        role: "official" },
+      { name: "Nguyễn Hoàng",      url: "nhan-vat/nguyen-hoang.html",      role: "official" },
+      { name: "Nguyễn Bỉnh Khiêm", url: "nhan-vat/nguyen-binh-khiem.html", role: "advisor"  },
+      { name: "Phùng Khắc Khoan",  url: "nhan-vat/phung-khac-khoan.html",  role: "advisor"  },
+      { name: "Dương Chấp Nhất",   url: "nhan-vat/duong-chap-nhat.html",   role: "official" },
+      { name: "Trịnh Xuân",        url: "nhan-vat/trinh-xuan.html",        role: "official" },
+      { name: "Lê Kính Tông",      url: "nhan-vat/le-kinh-tong.html",      role: "king"     }
+    ],
+    lineConnections: []
+  },
+
   // ─── PATTERNS ───
   pt1: {
     category: "Quy Luật Lịch Sử 01",
