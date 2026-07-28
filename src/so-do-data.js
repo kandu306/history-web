@@ -697,32 +697,65 @@ const DYNASTY_DATA = [
     dividerText: "⚔️ 1592 — Trịnh Tùng chiếm Thăng Long · Kết thúc 65 năm Nhà Mạc · Lê Trung Hưng + Chúa Trịnh nắm quyền"
   },
 
-  // Lê Trung Hưng (sơ lược — bên Nam)
+  // Trịnh-Nguyễn Phân Tranh — SPLIT SECTION
   {
-    id: "le-trung-hung",
-    label: "Lê Trung Hưng · Chúa Trịnh · Chúa Nguyễn · 1533–1789",
-    eraBlockStyle: "border-left: 3px solid #166534;",
-    labelStyle: "color: #166534;",
-    columns: [
-      {
-        king: {
-          href: "nhan-vat/nguyen-hoang.html",
-          cardStyle: "border-color: rgba(22,101,52,0.5); background: linear-gradient(135deg, #030a06 0%, #0a1f0e 100%); color: white;",
-          crown: "🌟",
-          title: "Chúa Nguyễn Đầu Tiên · Người khai sáng Đàng Trong", titleStyle: "color:#86efac;",
-          name: "Nguyễn Hoàng", nameStyle: "color:white;",
-          realName: "1525 – 1613 SCN", realNameStyle: "color:#d6d3d1;",
-          years: "📅 Trấn thủ Thuận Hóa: 1558 – 1613 · 55 năm xây nền", yearsStyle: "background:rgba(0,0,0,0.4); color:#86efac;",
-          note: "Bị Trịnh Kiểm 'đày' vào Thuận Hóa thay vì giết. 55 năm xây dựng Đàng Trong không đối đầu trực tiếp. Câu 'Hoành Sơn nhất đái, vạn đại dung thân' của Nguyễn Bỉnh Khiêm trở thành chiến lược 300 năm.", noteStyle: "color:#d6d3d1;"
-        },
-        officials: [
-          { href: "nhan-vat/trinh-kiem.html", iconClass: "icon-official", icon: "⚡", roleClass: "role-official", role: "Chúa Trịnh Đầu Tiên · Kiến trúc sư quyền lực", name: "Trịnh Kiểm", desc: "Con rể Nguyễn Kim, tiếp quản thực quyền sau khi Nguyễn Kim bị ám sát 1545. Không lên ngôi vua — học bài từ Nhà Mạc. Đẩy Nguyễn Hoàng vào Nam thay vì giết — quyết định tạo ra 150 năm phân tranh." },
-          { href: "nhan-vat/le-kinh-tong.html", iconClass: "icon-king", icon: "👑", roleClass: "role-king", role: "Vua Lê · Bù nhìn", name: "Lê Kính Tông", desc: "Vua Lê Trung Hưng bị Chúa Trịnh kiểm soát hoàn toàn. Bị ép tự vẫn 1619 khi Trịnh Tùng cho rằng ông có âm mưu với Trịnh Xuân. Bằng chứng rõ nhất: 'phù Lê' chỉ là danh nghĩa." },
-          { href: "nhan-vat/trinh-xuan.html", iconClass: "icon-enemy", icon: "🗡️", roleClass: "role-enemy", role: "Trịnh Xuân · Nổi loạn nội bộ", name: "Trịnh Xuân", desc: "Con trai Trịnh Tùng, tranh quyền thừa kế với anh. Liên minh với vua Lê Kính Tông chống cha — bị phát hiện. Nổi loạn thất bại, bị xử tử. Minh chứng: ngay trong họ Trịnh cũng tranh giành quyền lực." }
-        ]
-      }
-    ]
-  }
+    id: "trinh-nguyen-phan-tranh",
+    isSplitSection: true,
+    splitLabel: "Trịnh–Nguyễn Phân Tranh · 1627–1775 · Đất nước chia đôi",
 
+    left: {
+      title: "Đàng Ngoài",
+      subtitle: "Vua Lê danh nghĩa · Chúa Trịnh nắm thực quyền",
+      columns: [
+        {
+          king: {
+            href: "nhan-vat/le-kinh-tong.html",
+            cardStyle: "background: linear-gradient(135deg, #1c1917 0%, #292524 100%); border-color: rgba(155,28,28,0.4); color: white;",
+            crown: "👑",
+            title: "Vua Lê · Danh nghĩa · Bù nhìn", titleStyle: "color:#fca5a5;",
+            name: "Lê Kính Tông", nameStyle: "color:white;",
+            realName: "Đại diện — Vua Lê Trung Hưng", realNameStyle: "color:#d6d3d1;",
+            years: "📅 Trị vì: 1600–1619 · Bị ép tự vẫn",
+            note: "Thực tế: mọi quyết định do Chúa Trịnh phê chuẩn. Vua Lê chỉ là bình phong hợp pháp hóa. Bị ép tự vẫn 1619 khi 'vướng' vào nội loạn Trịnh Xuân."
+          },
+          officials: [
+            { href: "nhan-vat/trinh-kiem.html", iconClass: "icon-official", icon: "⚡", roleClass: "role-official",
+              role: "Chúa Trịnh I · Người lập mô hình", name: "Trịnh Kiểm",
+              desc: "Không lên ngôi vua — học bài từ Nhà Mạc. Thiết kế mô hình Chúa-Vua kéo dài 200 năm. Đẩy Nguyễn Hoàng vào Nam thay vì giết — vô tình tạo ra Đàng Trong." },
+            { href: "nhan-vat/trinh-tung.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official",
+              role: "Chúa Trịnh II · Kết thúc Nhà Mạc", name: "Trịnh Tùng",
+              desc: "Chiếm Thăng Long 1592, kết thúc Nhà Mạc. Ép vua Lê Kính Tông tự vẫn 1619. Hoàn thiện cấu trúc Chúa nắm toàn quyền." },
+            { href: "nhan-vat/trinh-xuan.html", iconClass: "icon-enemy", icon: "🗡️", roleClass: "role-enemy",
+              role: "Trịnh Xuân · Nội loạn kế vị", name: "Trịnh Xuân",
+              desc: "Con trai Trịnh Tùng, không được chọn kế vị. Liên minh với vua Lê Kính Tông chống cha — thất bại, bị xử tử. Minh chứng: nội loạn là bệnh kinh niên của mô hình quyền lực cha truyền con nối." }
+          ]
+        }
+      ]
+    },
+
+    right: {
+      title: "Đàng Trong",
+      subtitle: "Chúa Nguyễn — thực thể độc lập, mở cõi về Nam",
+      columns: [
+        {
+          king: {
+            href: "nhan-vat/nguyen-hoang.html",
+            cardStyle: "background: linear-gradient(135deg, #030a06 0%, #052e16 100%); border-color: rgba(22,101,52,0.5); color: white;",
+            crown: "🌿",
+            title: "Chúa Nguyễn I · Người khai sáng", titleStyle: "color:#86efac;",
+            name: "Nguyễn Hoàng", nameStyle: "color:white;",
+            realName: "1525–1613 SCN", realNameStyle: "color:#d6d3d1;",
+            years: "📅 Trấn thủ Thuận Hóa: 1558–1613 · 55 năm xây nền", yearsStyle: "background:rgba(0,0,0,0.4); color:#86efac;",
+            note: "Bị 'đày' vào Thuận Hóa — biến thành cơ hội. 55 năm không đối đầu trực tiếp, xây nền Đàng Trong vững chắc. Đặt nền móng Nhà Nguyễn 300 năm sau."
+          },
+          officials: [
+            { href: "nhan-vat/nguyen-binh-khiem.html", iconClass: "icon-advisor", icon: "🔮", roleClass: "role-advisor",
+              role: "Cố vấn · Trạng Trình", name: "Nguyễn Bỉnh Khiêm",
+              desc: "'Hoành Sơn nhất đái, vạn đại dung thân' — lời khuyên 7 chữ định hướng chiến lược 300 năm. Người thấy xa nhất thế kỷ XVI." }
+          ]
+        }
+      ]
+    }
+  }
 
 ];
