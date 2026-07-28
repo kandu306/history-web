@@ -705,26 +705,26 @@ const DYNASTY_DATA = [
 
     left: {
       title: "Đàng Ngoài",
-      subtitle: "Vua Lê danh nghĩa · Chúa Trịnh nắm thực quyền",
+      subtitle: "Chúa Trịnh thực quyền · Vua Lê danh nghĩa — bình phong",
       columns: [
         {
           king: {
-            href: "nhan-vat/le-kinh-tong.html",
-            cardStyle: "background: linear-gradient(135deg, #1c1917 0%, #292524 100%); border-color: rgba(155,28,28,0.4); color: white;",
-            crown: "👑",
-            title: "Vua Lê · Danh nghĩa · Bù nhìn", titleStyle: "color:#fca5a5;",
-            name: "Lê Kính Tông", nameStyle: "color:white;",
-            realName: "Đại diện — Vua Lê Trung Hưng", realNameStyle: "color:#d6d3d1;",
-            years: "📅 Trị vì: 1600–1619 · Bị ép tự vẫn",
-            note: "Thực tế: mọi quyết định do Chúa Trịnh phê chuẩn. Vua Lê chỉ là bình phong hợp pháp hóa. Bị ép tự vẫn 1619 khi 'vướng' vào nội loạn Trịnh Xuân."
+            href: "nhan-vat/trinh-kiem.html",
+            cardStyle: "background: linear-gradient(135deg, #1c1917 0%, #292524 100%); border-color: rgba(155,28,28,0.5); color: white;",
+            crown: "⚡",
+            title: "Chúa Trịnh I · Thực quyền Đàng Ngoài", titleStyle: "color:#fca5a5;",
+            name: "Trịnh Kiểm", nameStyle: "color:white;",
+            realName: "1503–1570 SCN", realNameStyle: "color:#d6d3d1;",
+            years: "📅 Nắm quyền: 1545–1570 · Lập mô hình Chúa-Vua", yearsStyle: "background:rgba(0,0,0,0.35); color:#fca5a5;",
+            note: "Không lên ngôi vua — học bài từ Nhà Mạc. Thiết kế mô hình Chúa-Vua kéo dài 200 năm: thực quyền không cần danh hiệu."
           },
           officials: [
-            { href: "nhan-vat/trinh-kiem.html", iconClass: "icon-official", icon: "⚡", roleClass: "role-official",
-              role: "Chúa Trịnh I · Người lập mô hình", name: "Trịnh Kiểm",
-              desc: "Không lên ngôi vua — học bài từ Nhà Mạc. Thiết kế mô hình Chúa-Vua kéo dài 200 năm. Đẩy Nguyễn Hoàng vào Nam thay vì giết — vô tình tạo ra Đàng Trong." },
+            { href: "nhan-vat/le-kinh-tong.html", iconClass: "icon-king", icon: "👑", roleClass: "role-king",
+              role: "Vua Lê · Danh nghĩa · Bình phong", name: "Lê Kính Tông",
+              desc: "Ngồi trên ngai vàng nhưng không có thực quyền. Mọi quyết định do Chúa Trịnh phê chuẩn. Bị ép tự vẫn 1619 khi 'vướng' vào nội loạn Trịnh Xuân — bằng chứng rõ nhất 'phù Lê' chỉ là danh nghĩa." },
             { href: "nhan-vat/trinh-tung.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official",
               role: "Chúa Trịnh II · Kết thúc Nhà Mạc", name: "Trịnh Tùng",
-              desc: "Chiếm Thăng Long 1592, kết thúc Nhà Mạc. Ép vua Lê Kính Tông tự vẫn 1619. Hoàn thiện cấu trúc Chúa nắm toàn quyền." },
+              desc: "Chiếm Thăng Long 1592, kết thúc Nhà Mạc. Ép vua Lê Kính Tông tự vẫn 1619. Hoàn thiện và củng cố cấu trúc Chúa nắm toàn quyền." },
             { href: "nhan-vat/trinh-xuan.html", iconClass: "icon-enemy", icon: "🗡️", roleClass: "role-enemy",
               role: "Trịnh Xuân · Nội loạn kế vị", name: "Trịnh Xuân",
               desc: "Con trai Trịnh Tùng, không được chọn kế vị. Liên minh với vua Lê Kính Tông chống cha — thất bại, bị xử tử. Minh chứng: nội loạn là bệnh kinh niên của mô hình quyền lực cha truyền con nối." }
