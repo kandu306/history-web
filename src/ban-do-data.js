@@ -92,6 +92,13 @@ const NODES_CONFIG = [
     period: "1527–1592 SCN",
     title: "Nhà Mạc — Bị Lịch Sử Đánh Giá Thiếu Công Bằng",
     subtitle: "Ngư dân lên ngôi · Thịnh trị thực sự · Nhượng danh giữ thực"
+  },
+  {
+    id: "trinh_nguyen",
+    tagLabel: "Đất nước chia đôi", tagColor: "#44403c",
+    period: "1533–1786 SCN",
+    title: "Trịnh–Nguyễn Phân Tranh",
+    subtitle: "Đàng Ngoài · Đàng Trong · 148 năm phân tranh · Sông Gianh ranh giới"
   }
 ];
 
@@ -107,7 +114,8 @@ const LINES_CONFIG = [
   { id: "line-ly-tran",   x1: "50%", y1: "830",  x2: "50%", y2: "890"  },
   { id: "line-tran-ho",   x1: "50%", y1: "940",  x2: "50%", y2: "1000" },
   { id: "line-ho-haule",  x1: "50%", y1: "1050", x2: "50%", y2: "1110" },
-  { id: "line-haule-mac", x1: "50%", y1: "1160", x2: "50%", y2: "1220" }
+  { id: "line-haule-mac", x1: "50%", y1: "1160", x2: "50%", y2: "1220" },
+  { id: "line-mac-trinh", x1: "50%", y1: "1270", x2: "50%", y2: "1330" }
 ];
 
 // ─── PATTERNS: các quy luật lịch sử ───
@@ -436,7 +444,27 @@ const DATABASE = {
       { name: "Trịnh Xuân",        url: "nhan-vat/trinh-xuan.html",        role: "official" },
       { name: "Lê Kính Tông",      url: "nhan-vat/le-kinh-tong.html",      role: "king"     }
     ],
-    lineConnections: []
+    lineConnections: ["line-mac-trinh"]
+  },
+
+  trinh_nguyen: {
+    category: "Giai đoạn Phân Tranh",
+    title: "Trịnh–Nguyễn Phân Tranh",
+    period: "1533 – 1786 SCN",
+    desc: "Giai đoạn đất nước chia đôi dài nhất lịch sử (148 năm chiến tranh + 100 năm hòa hoãn). Từ 1533 Nguyễn Kim lập Lê Trung Hưng — thực quyền lần lượt vào tay Chúa Trịnh (Đàng Ngoài) và Chúa Nguyễn (Đàng Trong). 1627–1672: 7 lần đại chiến, Trịnh không phá được Lũy Thầy, Nguyễn không đủ quân tiến ra Bắc. Hòa hoãn ngầm 1672: Sông Gianh thành ranh giới mặc định. Đàng Trong Nam tiến tạo bản đồ hiện đại, Đàng Ngoài dần trì trệ — tiền đề cho Tây Sơn 1771.",
+    lessons: [
+      { name: "C1 · Nguồn Gốc Phân Tranh (1533–1627)", url: "bai-hoc/trinh-nguyen-phan-tranh-c1.html" },
+      { name: "C2 · Chiến Tranh 7 Lần (1627–1672)",     url: "bai-hoc/trinh-nguyen-phan-tranh-c2.html" }
+    ],
+    figures: [
+      { name: "Trịnh Kiểm",        url: "nhan-vat/trinh-kiem.html",        role: "official" },
+      { name: "Trịnh Tùng",        url: "nhan-vat/trinh-tung.html",        role: "official" },
+      { name: "Nguyễn Hoàng",      url: "nhan-vat/nguyen-hoang.html",      role: "king"     },
+      { name: "Nguyễn Bỉnh Khiêm", url: "nhan-vat/nguyen-binh-khiem.html", role: "advisor"  },
+      { name: "Trịnh Xuân",        url: "nhan-vat/trinh-xuan.html",        role: "official" },
+      { name: "Lê Kính Tông",      url: "nhan-vat/le-kinh-tong.html",      role: "king"     }
+    ],
+    lineConnections: ["line-mac-trinh"]
   },
 
   // ─── PATTERNS ───
