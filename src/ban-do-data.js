@@ -457,12 +457,12 @@ const DATABASE = {
       { name: "C2 · Chiến Tranh 7 Lần (1627–1672)",     url: "bai-hoc/trinh-nguyen-phan-tranh-c2.html" }
     ],
     figures: [
-      { name: "Trịnh Kiểm",        url: "nhan-vat/trinh-kiem.html",        role: "official" },
-      { name: "Trịnh Tùng",        url: "nhan-vat/trinh-tung.html",        role: "official" },
+      { name: "Trịnh Kiểm",        url: "nhan-vat/trinh-kiem.html",        role: "king"     },
+      { name: "Trịnh Tùng",        url: "nhan-vat/trinh-tung.html",        role: "king"     },
       { name: "Nguyễn Hoàng",      url: "nhan-vat/nguyen-hoang.html",      role: "king"     },
       { name: "Nguyễn Bỉnh Khiêm", url: "nhan-vat/nguyen-binh-khiem.html", role: "advisor"  },
-      { name: "Trịnh Xuân",        url: "nhan-vat/trinh-xuan.html",        role: "official" },
-      { name: "Lê Kính Tông",      url: "nhan-vat/le-kinh-tong.html",      role: "king"     }
+      { name: "Lê Kính Tông",      url: "nhan-vat/le-kinh-tong.html",      role: "official" },
+      { name: "Trịnh Xuân",        url: "nhan-vat/trinh-xuan.html",        role: "official" }
     ],
     lineConnections: ["line-mac-trinh"]
   },
