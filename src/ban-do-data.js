@@ -461,7 +461,7 @@ const DATABASE = {
       { name: "Trịnh Tùng",        url: "nhan-vat/trinh-tung.html",        role: "king"     },
       { name: "Nguyễn Hoàng",      url: "nhan-vat/nguyen-hoang.html",      role: "king"     },
       { name: "Nguyễn Bỉnh Khiêm", url: "nhan-vat/nguyen-binh-khiem.html", role: "advisor"  },
-      { name: "Lê Kính Tông",      url: "nhan-vat/le-kinh-tong.html",      role: "official" },
+      { name: "Lê Kính Tông",      url: "nhan-vat/le-kinh-tong.html",      role: "puppet"   },
       { name: "Trịnh Xuân",        url: "nhan-vat/trinh-xuan.html",        role: "official" }
     ],
     lineConnections: ["line-mac-trinh"]

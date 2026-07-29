@@ -82,6 +82,7 @@
     }
     .fig-chip:hover { opacity: 0.82; transform: translateY(-1px); }
     .fig-chip-king     { background: rgba(155,28,28,0.18); color: #fca5a5; border-color: rgba(155,28,28,0.35); }
+    .fig-chip-puppet   { background: rgba(120,83,15,0.18); color: #fcd34d; border-color: rgba(120,83,15,0.40); }
     .fig-chip-queen    { background: rgba(124,58,237,0.18); color: #c4b5fd; border-color: rgba(124,58,237,0.35); }
     .fig-chip-official { background: rgba(5,150,105,0.18); color: #6ee7b7; border-color: rgba(5,150,105,0.35); }
     .fig-chip-advisor  { background: rgba(3,105,161,0.18); color: #7dd3fc; border-color: rgba(3,105,161,0.35); }
@@ -369,14 +370,15 @@
       if (data.figures && data.figures.length > 0) {
 
         const roleConfig = {
-          king:     { label: '\u{1F451} Vua / Thủ lĩnh',   chipClass: 'fig-chip-king' },
-          queen:    { label: '\u{1F478} Hoàng hậu / Nhiếp chính', chipClass: 'fig-chip-queen' },
-          official: { label: '\u{1F4DC} Quan đại thần',   chipClass: 'fig-chip-official' },
-          advisor:  { label: '\u{1F9D8} Cố vấn / Thiền sư',  chipClass: 'fig-chip-advisor' },
-          enemy:    { label: '\u2694\uFE0F Đối lập / Ngoại xâm', chipClass: 'fig-chip-enemy' }
+          king:     { label: '\u{1F451} Vua / Thủ lĩnh',          chipClass: 'fig-chip-king' },
+          puppet:   { label: '\u{1F451} Vua Danh Nghĩa (Bù nhìn)', chipClass: 'fig-chip-puppet' },
+          queen:    { label: '\u{1F478} Hoàng hậu / Nhiếp chính',  chipClass: 'fig-chip-queen' },
+          official: { label: '\u{1F4DC} Quan đại thần',            chipClass: 'fig-chip-official' },
+          advisor:  { label: '\u{1F9D8} Cố vấn / Thiền sư',        chipClass: 'fig-chip-advisor' },
+          enemy:    { label: '\u2694\uFE0F Đối lập / Ngoại xâm',   chipClass: 'fig-chip-enemy' }
         };
 
-        const roleOrder = ['king','queen','official','advisor','enemy'];
+        const roleOrder = ['king','puppet','queen','official','advisor','enemy'];
         const grouped = {};
         data.figures.forEach(f => {
           const r = f.role || 'official';
