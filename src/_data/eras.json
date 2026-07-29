@@ -801,5 +801,62 @@
     "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
     "characterChipClass": "era-chip-char",
     "toolClass": "border-t border-[#fef3c7] pt-4 flex flex-wrap gap-2"
+  },
+  {
+    "id": "era-trinh-nguyen",
+    "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-[#1c1917] border-2 border-[#44403c] flex items-center justify-center shadow-md\">\n                <div class=\"w-2 h-2 rounded-full bg-[#a8a29e]\"></div>\n              </div>\n            </div>",
+    "yearsClass": "text-[11px] font-mono text-[#a8a29e] mb-1.5 tracking-wide",
+    "years": "1533–1786 SCN",
+    "cardClass": "rounded-xl border border-[#44403c]/30 bg-gradient-to-br from-[#1c1917]/5 to-[#faf9f7] p-5",
+    "cardStyle": "",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#44403c] bg-[#f5f4f1] border border-[#44403c]/20 px-2 py-0.5 rounded\">ERA 11</span>\n                      <span class=\"text-[10px] text-[#78716c] font-medium\">Đất nước chia đôi — Đàng Ngoài · Đàng Trong · 148 năm phân tranh</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Trịnh–Nguyễn Phân Tranh</div>\n                  </div>\n                </div>",
+    "dividerAfterHeader": false,
+    "groups": [
+      {
+        "label": "📖 Bài học",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/trinh-nguyen-phan-tranh-c1.html",
+            "text": "C1 · Nguồn Gốc 1533–1627"
+          },
+          {
+            "href": "bai-hoc/trinh-nguyen-phan-tranh-c2.html",
+            "text": "C2 · Chiến Tranh 1627–1672"
+          }
+        ]
+      }
+    ],
+    "characters": [
+      {
+        "href": "nhan-vat/trinh-kiem.html",
+        "text": "Trịnh Kiểm"
+      },
+      {
+        "href": "nhan-vat/trinh-tung.html",
+        "text": "Trịnh Tùng"
+      },
+      {
+        "href": "nhan-vat/trinh-xuan.html",
+        "text": "Trịnh Xuân"
+      },
+      {
+        "href": "nhan-vat/nguyen-hoang.html",
+        "text": "Nguyễn Hoàng"
+      },
+      {
+        "href": "nhan-vat/le-kinh-tong.html",
+        "text": "Lê Kính Tông"
+      },
+      {
+        "href": "nhan-vat/nguyen-binh-khiem.html",
+        "text": "Nguyễn Bỉnh Khiêm"
+      }
+    ],
+    "characterLabel": "👤 Nhân vật",
+    "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+    "characterChipClass": "era-chip-char",
+    "toolClass": "border-t border-[#e7e5e4] pt-4 flex flex-wrap gap-2"
   }
 ]
