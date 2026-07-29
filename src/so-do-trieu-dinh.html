@@ -721,16 +721,22 @@
         ? `<div class="official-list" style="margin-top:0.6rem">${col.officials.map(buildOfficialCard).join('')}\n          </div>`
         : '';
 
-      return `
-        <div class="dynasty-column"${colStyle}>
-          <a href="${k.href}" class="king-card"${cardStyle}>
+      // King card: link if href exists, div if no page yet
+      const kingInner = `
             <div class="king-crown">${k.crown}</div>
             <div class="king-title"${titleStyle}>${k.title}</div>
             <div class="king-name"${nameStyle}>${k.name}</div>
             <div class="king-real-name"${realNameStyle}>${k.realName}</div>
             <div class="king-years"${yearsStyle}>${k.years}</div>
-            <div class="king-note"${noteStyle}>${k.note}</div>
-          </a>
+            <div class="king-note"${noteStyle}>${k.note}</div>`;
+
+      const kingCard = k.href
+        ? `<a href="${k.href}" class="king-card"${cardStyle}>${kingInner}\n          </a>`
+        : `<div class="king-card king-no-link"${cardStyle}>${kingInner}\n          </div>`;
+
+      return `
+        <div class="dynasty-column"${colStyle}>
+          ${kingCard}
           ${officialsHtml}
         </div>`;
     }

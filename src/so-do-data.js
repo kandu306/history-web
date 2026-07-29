@@ -703,40 +703,140 @@ const DYNASTY_DATA = [
     isSplitSection: true,
     splitLabel: "Trịnh–Nguyễn Phân Tranh · 1627–1775 · Đất nước chia đôi",
 
+    // ══════════════════════════════════════════════
+    //  ĐÀNG NGOÀI — 6 Chúa Trịnh (kế nhiệm nhau)
+    // ══════════════════════════════════════════════
     left: {
       title: "Đàng Ngoài",
       subtitle: "Chúa Trịnh thực quyền · Vua Lê danh nghĩa — bình phong",
       columns: [
+
+        // ── Chúa Trịnh 1: Trịnh Kiểm ──────────────
         {
           king: {
             href: "nhan-vat/trinh-kiem.html",
             cardStyle: "background: linear-gradient(135deg, #1c1917 0%, #292524 100%); border-color: rgba(155,28,28,0.5); color: white;",
             crown: "⚡",
-            title: "Chúa Trịnh I · Thực quyền Đàng Ngoài", titleStyle: "color:#fca5a5;",
+            title: "Chúa Trịnh I · Người lập mô hình", titleStyle: "color:#fca5a5;",
             name: "Trịnh Kiểm", nameStyle: "color:white;",
             realName: "1503–1570 SCN", realNameStyle: "color:#d6d3d1;",
-            years: "📅 Nắm quyền: 1545–1570 · Lập mô hình Chúa-Vua", yearsStyle: "background:rgba(0,0,0,0.35); color:#fca5a5;",
-            note: "Không lên ngôi vua — học bài từ Nhà Mạc. Thiết kế mô hình Chúa-Vua kéo dài 200 năm: thực quyền không cần danh hiệu."
+            years: "📅 Nắm quyền: 1545–1570",
+            note: "Không lên ngôi vua — học bài từ Nhà Mạc. Thiết kế mô hình Chúa-Vua: thực quyền không cần danh hiệu. Đẩy Nguyễn Hoàng vào Nam — vô tình tạo ra Đàng Trong."
           },
           officials: [
             { href: "nhan-vat/le-kinh-tong.html", iconClass: "icon-king", icon: "👑", roleClass: "role-king",
-              role: "Vua Lê · Danh nghĩa · Bình phong", name: "Lê Kính Tông",
-              desc: "Ngồi trên ngai vàng nhưng không có thực quyền. Mọi quyết định do Chúa Trịnh phê chuẩn. Bị ép tự vẫn 1619 khi 'vướng' vào nội loạn Trịnh Xuân — bằng chứng rõ nhất 'phù Lê' chỉ là danh nghĩa." },
-            { href: "nhan-vat/trinh-tung.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official",
-              role: "Chúa Trịnh II · Kết thúc Nhà Mạc", name: "Trịnh Tùng",
-              desc: "Chiếm Thăng Long 1592, kết thúc Nhà Mạc. Ép vua Lê Kính Tông tự vẫn 1619. Hoàn thiện và củng cố cấu trúc Chúa nắm toàn quyền." },
+              role: "Vua Lê · Bình phong danh nghĩa", name: "Lê Kính Tông",
+              desc: "Đại diện cho các đời vua Lê Trung Hưng — ngai vàng có, thực quyền không. Bị ép tự vẫn 1619 khi 'vướng' vào nội loạn Trịnh Xuân." }
+          ]
+        },
+
+        // ── Chúa Trịnh 2: Trịnh Tùng ──────────────
+        {
+          king: {
+            href: "nhan-vat/trinh-tung.html",
+            cardStyle: "background: linear-gradient(135deg, #1c1917 0%, #292524 100%); border-color: rgba(155,28,28,0.5); color: white;",
+            crown: "⚔️",
+            title: "Chúa Trịnh II · Kết thúc Nhà Mạc", titleStyle: "color:#fca5a5;",
+            name: "Trịnh Tùng", nameStyle: "color:white;",
+            realName: "1550–1623 SCN", realNameStyle: "color:#d6d3d1;",
+            years: "📅 Nắm quyền: 1570–1623",
+            note: "Chiếm Thăng Long 1592, kết thúc 65 năm Nhà Mạc. Ép vua Lê Kính Tông tự vẫn 1619. Hoàn thiện cấu trúc Chúa nắm toàn bộ thực quyền."
+          },
+          officials: [
             { href: "nhan-vat/trinh-xuan.html", iconClass: "icon-enemy", icon: "🗡️", roleClass: "role-enemy",
               role: "Trịnh Xuân · Nội loạn kế vị", name: "Trịnh Xuân",
-              desc: "Con trai Trịnh Tùng, không được chọn kế vị. Liên minh với vua Lê Kính Tông chống cha — thất bại, bị xử tử. Minh chứng: nội loạn là bệnh kinh niên của mô hình quyền lực cha truyền con nối." }
+              desc: "Con trai nổi loạn chống cha, liên minh với vua Lê Kính Tông — thất bại, bị xử tử. Bệnh kinh niên của mô hình quyền lực cha truyền con nối." }
+          ]
+        },
+
+        // ── Chúa Trịnh 3: Trịnh Tráng ─────────────
+        {
+          king: {
+            href: null,
+            cardStyle: "background: linear-gradient(135deg, #1c1917 0%, #292524 100%); border-color: rgba(155,28,28,0.5); color: white;",
+            crown: "🔥",
+            title: "Chúa Trịnh III · Khai hỏa phân tranh", titleStyle: "color:#fca5a5;",
+            name: "Trịnh Tráng", nameStyle: "color:white;",
+            realName: "1577–1657 SCN", realNameStyle: "color:#d6d3d1;",
+            years: "📅 Nắm quyền: 1623–1652",
+            note: "1627: Khai hỏa chiến tranh Trịnh-Nguyễn — cuộc phân tranh kéo dài 148 năm (1627–1775). Xây Lũy Trường Dục ngăn cách hai miền. Đánh 7 lần vào Đàng Trong, không lần nào thắng dứt điểm."
+          },
+          officials: [
+            { href: null, iconClass: "icon-official", icon: "🏯", roleClass: "role-official",
+              role: "Chiến lược · Lũy Trường Dục", name: "Phòng tuyến 1627",
+              desc: "Xây dựng hệ thống lũy phòng thủ tại sông Gianh — ranh giới thực tế chia đôi Đàng Ngoài và Đàng Trong suốt 148 năm phân tranh." }
+          ]
+        },
+
+        // ── Chúa Trịnh 4: Trịnh Doanh ─────────────
+        {
+          king: {
+            href: null,
+            cardStyle: "background: linear-gradient(135deg, #1c1917 0%, #292524 100%); border-color: rgba(155,28,28,0.5); color: white;",
+            crown: "🛡️",
+            title: "Chúa Trịnh VII · Dẹp khởi nghĩa nông dân", titleStyle: "color:#fca5a5;",
+            name: "Trịnh Doanh", nameStyle: "color:white;",
+            realName: "1720–1767 SCN", realNameStyle: "color:#d6d3d1;",
+            years: "📅 Nắm quyền: 1740–1767",
+            note: "Giai đoạn khủng hoảng nội bộ Đàng Ngoài: 4 cuộc khởi nghĩa nông dân lớn (Nguyễn Hữu Cầu, Hoàng Công Chất, Nguyễn Danh Phương, Lê Duy Mật). Dẹp được nhưng kiệt sức — dấu hiệu hệ thống đang mục ruỗng."
+          },
+          officials: [
+            { href: null, iconClass: "icon-enemy", icon: "⚡", roleClass: "role-enemy",
+              role: "Khởi nghĩa nông dân · 1740–1751", name: "Nguyễn Hữu Cầu",
+              desc: "Thủ lĩnh khởi nghĩa quy mô lớn nhất — bị dẹp 1751. Cùng với 3 cuộc khởi nghĩa khác cho thấy mâu thuẫn xã hội Đàng Ngoài đã đến mức bùng nổ." }
+          ]
+        },
+
+        // ── Chúa Trịnh 5: Trịnh Sâm ────────────────
+        {
+          king: {
+            href: null,
+            cardStyle: "background: linear-gradient(135deg, #1c1917 0%, #292524 100%); border-color: rgba(155,28,28,0.5); color: white;",
+            crown: "💀",
+            title: "Chúa Trịnh VIII · Suy đồi & Kiêu binh", titleStyle: "color:#fca5a5;",
+            name: "Trịnh Sâm", nameStyle: "color:white;",
+            realName: "1739–1782 SCN", realNameStyle: "color:#d6d3d1;",
+            years: "📅 Nắm quyền: 1767–1782",
+            note: "Mê đắm Đặng Thị Huệ — muốn truyền ngôi cho con thứ thay con cả, gây hỗn loạn nội bộ. 'Loạn Kiêu binh' 1782: binh lính tự ý phế lập Chúa. Khởi đầu của sự sụp đổ họ Trịnh."
+          },
+          officials: [
+            { href: null, iconClass: "icon-queen", icon: "💃", roleClass: "role-queen",
+              role: "Đặng Thị Huệ · Nguyên nhân nội loạn", name: "Đặng Thị Huệ",
+              desc: "Phi tần được Trịnh Sâm sủng ái, vận động để con trai được lên ngôi thay con cả. Gây chia rẽ nội bộ — dẫn đến Loạn Kiêu binh 1782 và sự sụp đổ của họ Trịnh." }
+          ]
+        },
+
+        // ── Chúa Trịnh 6: Trịnh Khải ───────────────
+        {
+          king: {
+            href: null,
+            cardStyle: "background: linear-gradient(135deg, #1c1917 0%, #292524 100%); border-color: rgba(155,28,28,0.5); color: white;",
+            crown: "🏚️",
+            title: "Chúa Trịnh IX · Đời cuối · Tây Sơn diệt", titleStyle: "color:#fca5a5;",
+            name: "Trịnh Khải", nameStyle: "color:white;",
+            realName: "?–1786 SCN", realNameStyle: "color:#d6d3d1;",
+            years: "📅 Nắm quyền: 1782–1786 · Kết thúc 241 năm",
+            note: "1786: Nguyễn Huệ (Tây Sơn) tiến ra Bắc với danh nghĩa 'phù Lê diệt Trịnh'. Trịnh Khải bị bắt, tự vẫn. Kết thúc 241 năm họ Trịnh nắm quyền Đàng Ngoài."
+          },
+          officials: [
+            { href: null, iconClass: "icon-enemy", icon: "⚡", roleClass: "role-enemy",
+              role: "Nguyễn Huệ · Người kết thúc họ Trịnh", name: "Tây Sơn Bắc tiến 1786",
+              desc: "Nguyễn Huệ tiến ra Bắc danh nghĩa 'phù Lê diệt Trịnh' — diệt họ Trịnh trong 2 tháng. Đặt dấu chấm hết cho 148 năm Trịnh-Nguyễn phân tranh." }
           ]
         }
-      ]
-    },
 
+      ]  // end left.columns
+    },  // end left
+
+    // ══════════════════════════════════════════════
+    //  ĐÀNG TRONG — 6 Chúa Nguyễn (kế nhiệm nhau)
+    // ══════════════════════════════════════════════
     right: {
       title: "Đàng Trong",
       subtitle: "Chúa Nguyễn — thực thể độc lập, mở cõi về Nam",
       columns: [
+
+        // ── Chúa Nguyễn 1: Nguyễn Hoàng ───────────
         {
           king: {
             href: "nhan-vat/nguyen-hoang.html",
@@ -745,17 +845,113 @@ const DYNASTY_DATA = [
             title: "Chúa Nguyễn I · Người khai sáng", titleStyle: "color:#86efac;",
             name: "Nguyễn Hoàng", nameStyle: "color:white;",
             realName: "1525–1613 SCN", realNameStyle: "color:#d6d3d1;",
-            years: "📅 Trấn thủ Thuận Hóa: 1558–1613 · 55 năm xây nền", yearsStyle: "background:rgba(0,0,0,0.4); color:#86efac;",
-            note: "Bị 'đày' vào Thuận Hóa — biến thành cơ hội. 55 năm không đối đầu trực tiếp, xây nền Đàng Trong vững chắc. Đặt nền móng Nhà Nguyễn 300 năm sau."
+            years: "📅 Trấn thủ Thuận Hóa: 1558–1613 · 55 năm",
+            note: "Bị 'đày' vào Thuận Hóa — biến thành cơ hội. 55 năm không đối đầu, xây nền Đàng Trong vững chắc. Đặt nền móng Nhà Nguyễn 300 năm sau."
           },
           officials: [
             { href: "nhan-vat/nguyen-binh-khiem.html", iconClass: "icon-advisor", icon: "🔮", roleClass: "role-advisor",
               role: "Cố vấn · Trạng Trình", name: "Nguyễn Bỉnh Khiêm",
-              desc: "'Hoành Sơn nhất đái, vạn đại dung thân' — lời khuyên 7 chữ định hướng chiến lược 300 năm. Người thấy xa nhất thế kỷ XVI." }
+              desc: "'Hoành Sơn nhất đái, vạn đại dung thân' — lời khuyên 7 chữ định hướng chiến lược 300 năm." }
+          ]
+        },
+
+        // ── Chúa Nguyễn 2: Nguyễn Phúc Nguyên ─────
+        {
+          king: {
+            href: null,
+            cardStyle: "background: linear-gradient(135deg, #030a06 0%, #052e16 100%); border-color: rgba(22,101,52,0.5); color: white;",
+            crown: "🌿",
+            title: "Chúa Nguyễn II · Chính thức cắt đứt với Trịnh", titleStyle: "color:#86efac;",
+            name: "Nguyễn Phúc Nguyên", nameStyle: "color:white;",
+            realName: "1563–1635 SCN", realNameStyle: "color:#d6d3d1;",
+            years: "📅 Cai quản: 1613–1635",
+            note: "Từ chối nộp thuế cho Chúa Trịnh — chính thức cắt đứt quan hệ phục tùng. 1627: Trịnh Tráng khai hỏa chiến tranh. Ông tổ chức phòng thủ thành công, đặt nền tảng độc lập thực sự cho Đàng Trong."
+          },
+          officials: [
+            { href: null, iconClass: "icon-official", icon: "🏯", roleClass: "role-official",
+              role: "Đào Duy Từ · Chiến lược phòng thủ", name: "Đào Duy Từ",
+              desc: "Tư vấn xây Lũy Thầy (Đồng Hới) — hệ thống phòng thủ ngăn 7 lần tấn công của Trịnh Tráng. Nhà Trịnh không chiếm được Đàng Trong suốt 148 năm phần lớn nhờ công trình này." }
+          ]
+        },
+
+        // ── Chúa Nguyễn 3: Nguyễn Phúc Tần ────────
+        {
+          king: {
+            href: null,
+            cardStyle: "background: linear-gradient(135deg, #030a06 0%, #052e16 100%); border-color: rgba(22,101,52,0.5); color: white;",
+            crown: "🌿",
+            title: "Chúa Nguyễn IV · Hiền Vương · Mở cõi Nam", titleStyle: "color:#86efac;",
+            name: "Nguyễn Phúc Tần", nameStyle: "color:white;",
+            realName: "1620–1687 SCN", realNameStyle: "color:#d6d3d1;",
+            years: "📅 Cai quản: 1648–1687",
+            note: "Xưng 'Hiền Vương' — mở rộng lãnh thổ về phía Nam. Chiếm vùng Panduranga (Ninh Thuận–Bình Thuận) từ Champa. Đánh bại hạm đội Hà Lan 1643 — chiến thắng hải chiến đầu tiên của Đàng Trong."
+          },
+          officials: [
+            { href: null, iconClass: "icon-official", icon: "⚓", roleClass: "role-official",
+              role: "Hải chiến · 1643 · Đánh Hà Lan", name: "Chiến thắng Cửa Eo",
+              desc: "Hạm đội Đàng Trong đánh bại 3 tàu chiến Hà Lan tại Cửa Eo (Thuận An). Chiến thắng hải chiến duy nhất của người Việt trước Hà Lan trong lịch sử." }
+          ]
+        },
+
+        // ── Chúa Nguyễn 4: Nguyễn Phúc Chu ────────
+        {
+          king: {
+            href: null,
+            cardStyle: "background: linear-gradient(135deg, #030a06 0%, #052e16 100%); border-color: rgba(22,101,52,0.5); color: white;",
+            crown: "🌿",
+            title: "Chúa Nguyễn VI · Mở Gia Định · Mekong", titleStyle: "color:#86efac;",
+            name: "Nguyễn Phúc Chu", nameStyle: "color:white;",
+            realName: "1675–1725 SCN", realNameStyle: "color:#d6d3d1;",
+            years: "📅 Cai quản: 1691–1725",
+            note: "Thu nhận Mạc Cửu — khai phá Hà Tiên và đồng bằng sông Cửu Long. Lãnh thổ Đàng Trong mở rộng tới cực Nam — gần như đến biên giới hiện đại của miền Nam Việt Nam."
+          },
+          officials: [
+            { href: null, iconClass: "icon-official", icon: "🏝️", roleClass: "role-official",
+              role: "Mạc Cửu · Khai phá Hà Tiên", name: "Mạc Cửu",
+              desc: "Người Hoa trung thành với Nhà Minh, vào Hà Tiên mở đất. Thần phục Chúa Nguyễn 1708 — đưa vùng đất cực Nam vào bản đồ Đàng Trong. Con ông là Mạc Thiên Tứ tiếp tục phát triển." }
+          ]
+        },
+
+        // ── Chúa Nguyễn 5: Nguyễn Phúc Khoát ──────
+        {
+          king: {
+            href: null,
+            cardStyle: "background: linear-gradient(135deg, #030a06 0%, #052e16 100%); border-color: rgba(22,101,52,0.5); color: white;",
+            crown: "🌿",
+            title: "Chúa Nguyễn VIII · Vũ Vương · Xưng tôn hiệu", titleStyle: "color:#86efac;",
+            name: "Nguyễn Phúc Khoát", nameStyle: "color:white;",
+            realName: "1714–1765 SCN", realNameStyle: "color:#d6d3d1;",
+            years: "📅 Cai quản: 1738–1765",
+            note: "Tự xưng 'Vũ Vương' 1744 — lần đầu tiên Chúa Nguyễn dùng tôn hiệu độc lập, không còn nhận danh nghĩa từ triều đình Lê-Trịnh. Đỉnh cao của Đàng Trong, nhưng cũng bắt đầu suy yếu nội bộ."
+          },
+          officials: [
+            { href: null, iconClass: "icon-official", icon: "👘", roleClass: "role-official",
+              role: "Cải cách văn hóa · 1744", name: "Áo dài Đàng Trong",
+              desc: "Năm 1744, ban sắc chỉ quy định y phục — cải cách tạo ra tiền thân của áo dài Việt Nam hiện đại. Đàng Trong phát triển bản sắc văn hóa riêng biệt với Đàng Ngoài." }
+          ]
+        },
+
+        // ── Chúa Nguyễn 6: Nguyễn Phúc Thuần ──────
+        {
+          king: {
+            href: null,
+            cardStyle: "background: linear-gradient(135deg, #030a06 0%, #052e16 100%); border-color: rgba(22,101,52,0.5); color: white;",
+            crown: "🍂",
+            title: "Chúa Nguyễn IX · Đời cuối · Tây Sơn diệt", titleStyle: "color:#86efac;",
+            name: "Nguyễn Phúc Thuần", nameStyle: "color:white;",
+            realName: "1754–1777 SCN", realNameStyle: "color:#d6d3d1;",
+            years: "📅 Cai quản: 1765–1777 · Kết thúc Đàng Trong",
+            note: "Lên ngôi khi còn nhỏ tuổi — thực quyền trong tay quyền thần Trương Phúc Loan. 1771: Khởi nghĩa Tây Sơn bùng nổ. 1777: Bị Tây Sơn bắt và xử tử — kết thúc 219 năm các Chúa Nguyễn cai quản Đàng Trong."
+          },
+          officials: [
+            { href: null, iconClass: "icon-enemy", icon: "🌊", roleClass: "role-enemy",
+              role: "Tây Sơn nổi dậy · 1771", name: "Khởi nghĩa Tây Sơn",
+              desc: "Nguyễn Nhạc, Nguyễn Huệ, Nguyễn Lữ khởi binh tại Quy Nhơn. Sinh ra từ mâu thuẫn xã hội tích tụ của Đàng Trong — đội quân nông dân lật đổ cả hai thế lực phân tranh." }
           ]
         }
-      ]
-    }
+
+      ]  // end right.columns
+    }   // end right
   }
 
 ];
