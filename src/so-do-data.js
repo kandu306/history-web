@@ -752,14 +752,14 @@ const DYNASTY_DATA = [
         // ── Chúa Trịnh 3: Trịnh Tráng ─────────────
         {
           king: {
-            href: null,
+            href: "nhan-vat/trinh-trang.html",
             cardStyle: "background: linear-gradient(135deg, #1c1917 0%, #292524 100%); border-color: rgba(155,28,28,0.5); color: white;",
             crown: "🔥",
             title: "Chúa Trịnh III · Khai hỏa phân tranh", titleStyle: "color:#fca5a5;",
             name: "Trịnh Tráng", nameStyle: "color:white;",
             realName: "1577–1657 SCN", realNameStyle: "color:#d6d3d1;",
-            years: "📅 Nắm quyền: 1623–1652",
-            note: "1627: Khai hỏa chiến tranh Trịnh-Nguyễn — cuộc phân tranh kéo dài 148 năm (1627–1775). Xây Lũy Trường Dục ngăn cách hai miền. Đánh 7 lần vào Đàng Trong, không lần nào thắng dứt điểm."
+            years: "📅 Nắm quyền: 1623–1657",
+            note: "1627: Khai hỏa chiến tranh Trịnh-Nguyễn — 4 lần tấn công (1627, 1633, 1635, 1648), cả 4 lần thất bại vì Lũy Thầy. Trị vì 34 năm — lâu nhất các Chúa Trịnh. Cai trị Đàng Ngoài ổn định nhưng không học được từ thất bại quân sự."
           },
           officials: [
             { href: null, iconClass: "icon-official", icon: "🏯", roleClass: "role-official",
@@ -858,14 +858,14 @@ const DYNASTY_DATA = [
         // ── Chúa Nguyễn 2: Nguyễn Phúc Nguyên ─────
         {
           king: {
-            href: null,
+            href: "nhan-vat/nguyen-phuc-nguyen.html",
             cardStyle: "background: linear-gradient(135deg, #030a06 0%, #052e16 100%); border-color: rgba(22,101,52,0.5); color: white;",
             crown: "🌿",
-            title: "Chúa Nguyễn II · Chính thức cắt đứt với Trịnh", titleStyle: "color:#86efac;",
+            title: "Chúa Nguyễn II · Người châm ngòi phân tranh", titleStyle: "color:#86efac;",
             name: "Nguyễn Phúc Nguyên", nameStyle: "color:white;",
             realName: "1563–1635 SCN", realNameStyle: "color:#d6d3d1;",
             years: "📅 Cai quản: 1613–1635",
-            note: "Từ chối nộp thuế cho Chúa Trịnh — chính thức cắt đứt quan hệ phục tùng. 1627: Trịnh Tráng khai hỏa chiến tranh. Ông tổ chức phòng thủ thành công, đặt nền tảng độc lập thực sự cho Đàng Trong."
+            note: "'Cha không dám — con dám.' Từ chối nộp cống Đàng Ngoài ~1620 (đúng thời điểm). Chọn Đào Duy Từ, xây Lũy Thầy. Trụ vững qua tấn công đầu tiên 1627 — Đàng Trong chính thức độc lập thực tế."
           },
           officials: [
             { href: null, iconClass: "icon-official", icon: "🏯", roleClass: "role-official",
@@ -874,22 +874,41 @@ const DYNASTY_DATA = [
           ]
         },
 
-        // ── Chúa Nguyễn 3: Nguyễn Phúc Tần ────────
+        // ── Chúa Nguyễn 3: Nguyễn Phúc Lan ────────
         {
           king: {
-            href: null,
+            href: "nhan-vat/nguyen-phuc-lan.html",
             cardStyle: "background: linear-gradient(135deg, #030a06 0%, #052e16 100%); border-color: rgba(22,101,52,0.5); color: white;",
             crown: "🌿",
-            title: "Chúa Nguyễn IV · Hiền Vương · Mở cõi Nam", titleStyle: "color:#86efac;",
+            title: "Chúa Nguyễn III · Người giữ lửa", titleStyle: "color:#86efac;",
+            name: "Nguyễn Phúc Lan", nameStyle: "color:white;",
+            realName: "1601–1648 SCN", realNameStyle: "color:#d6d3d1;",
+            years: "📅 Cai quản: 1635–1648",
+            note: "Kế vị khi cha và Đào Duy Từ mất cùng năm 1634. 13 năm ổn định — duy trì Lũy Thầy, Hội An phát triển. Không thắp thêm nhưng không để tắt. Mất 1648 đúng năm Trịnh tấn công lần 3."
+          },
+          officials: [
+            { href: null, iconClass: "icon-official", icon: "🕊️", roleClass: "role-official",
+              role: "Giai đoạn củng cố · 1635–1648", name: "Ổn định nội bộ",
+              desc: "13 năm không có chiến tranh lớn. Duy trì hệ thống Đào Duy Từ để lại. Đây là giai đoạn 'consolidation' cần thiết sau mất mát hai trụ cột lớn nhất cùng lúc." }
+          ]
+        },
+
+        // ── Chúa Nguyễn 4: Nguyễn Phúc Tần ────────
+        {
+          king: {
+            href: "nhan-vat/nguyen-phuc-tan.html",
+            cardStyle: "background: linear-gradient(135deg, #030a06 0%, #052e16 100%); border-color: rgba(22,101,52,0.5); color: white;",
+            crown: "⚔️",
+            title: "Chúa Nguyễn IV · Hiền Vương · Từ phòng thủ sang chủ động", titleStyle: "color:#86efac;",
             name: "Nguyễn Phúc Tần", nameStyle: "color:white;",
             realName: "1620–1687 SCN", realNameStyle: "color:#d6d3d1;",
-            years: "📅 Cai quản: 1648–1687",
-            note: "Xưng 'Hiền Vương' — mở rộng lãnh thổ về phía Nam. Chiếm vùng Panduranga (Ninh Thuận–Bình Thuận) từ Champa. Đánh bại hạm đội Hà Lan 1643 — chiến thắng hải chiến đầu tiên của Đàng Trong."
+            years: "📅 Cai quản: 1648–1687 · 39 năm",
+            note: "1648: phản công Trịnh ngay trong năm kế vị — bắt 3.000 quân. 1655: tiến đến Nghệ An — xa nhất lịch sử chiến tranh. 1672: Trịnh Tạc thất bại, hòa hoãn ngầm hình thành. Đánh chìm tàu Hà Lan 1644."
           },
           officials: [
             { href: null, iconClass: "icon-official", icon: "⚓", roleClass: "role-official",
-              role: "Hải chiến · 1643 · Đánh Hà Lan", name: "Chiến thắng Cửa Eo",
-              desc: "Hạm đội Đàng Trong đánh bại 3 tàu chiến Hà Lan tại Cửa Eo (Thuận An). Chiến thắng hải chiến duy nhất của người Việt trước Hà Lan trong lịch sử." }
+              role: "Hải chiến · 1644 · Đánh Hà Lan", name: "Chiến thắng Cửa Eo",
+              desc: "Hạm đội Đàng Trong đánh bại tàu chiến Hà Lan tại Cửa Eo (Thuận An). Chiến thắng hải chiến hiếm hoi — khẳng định sức mạnh thủy quân Đàng Trong trên biển Đông." }
           ]
         },
 

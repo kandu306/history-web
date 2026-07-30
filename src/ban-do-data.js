@@ -459,7 +459,11 @@ const DATABASE = {
     figures: [
       { name: "Trịnh Kiểm",        url: "nhan-vat/trinh-kiem.html",        role: "king"     },
       { name: "Trịnh Tùng",        url: "nhan-vat/trinh-tung.html",        role: "king"     },
+      { name: "Trịnh Tráng",       url: "nhan-vat/trinh-trang.html",       role: "king"     },
       { name: "Nguyễn Hoàng",      url: "nhan-vat/nguyen-hoang.html",      role: "king"     },
+      { name: "Nguyễn Phúc Nguyên", url: "nhan-vat/nguyen-phuc-nguyen.html", role: "king"  },
+      { name: "Nguyễn Phúc Lan",   url: "nhan-vat/nguyen-phuc-lan.html",   role: "king"     },
+      { name: "Nguyễn Phúc Tần",   url: "nhan-vat/nguyen-phuc-tan.html",   role: "king"     },
       { name: "Nguyễn Bỉnh Khiêm", url: "nhan-vat/nguyen-binh-khiem.html", role: "advisor"  },
       { name: "Lê Kính Tông",      url: "nhan-vat/le-kinh-tong.html",      role: "puppet"   },
       { name: "Trịnh Xuân",        url: "nhan-vat/trinh-xuan.html",        role: "official" }
