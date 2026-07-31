@@ -944,9 +944,21 @@ const DYNASTY_DATA = [
             note: "Quốc Chúa — đưa Đàng Trong tới đỉnh cao toàn diện. Cử Nguyễn Hữu Cảnh lập Phủ Gia Định 1698. Thu nhận Mạc Cửu dâng Hà Tiên 1708. Phát triển ngoại thương Hội An và Phật giáo."
           },
           officials: [
+            { href: "nhan-vat/nguyen-huu-canh.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official",
+              role: "Nguyễn Hữu Cảnh · Lập Phủ Gia Định 1698", name: "Nguyễn Hữu Cảnh",
+              desc: "Kinh lược phương Nam 1698, lập Phủ Gia Định (Biên Hòa - Sài Gòn), chính thức hóa bộ máy hành chính người Việt ở Nam Bộ." },
             { href: "nhan-vat/mac-cuu.html", iconClass: "icon-official", icon: "🏝️", roleClass: "role-official",
               role: "Mạc Cửu · Khai phá Hà Tiên", name: "Mạc Cửu",
-              desc: "Thương gia người Hoa tị nạn, tự mở cảng Hà Tiên rồi chủ động dâng đất cho Chúa Nguyễn 1708 để đổi lấy bảo hộ. Con ông là Mạc Thiên Tứ lập Chiêu Anh Các." }
+              desc: "Thương gia tị nạn dâng đất Hà Tiên thần phục Chúa Nguyễn năm 1708." },
+            { href: "nhan-vat/mac-thien-tu.html", iconClass: "icon-official", icon: "📜", roleClass: "role-official",
+              role: "Mạc Thiên Tứ · Chiêu Anh Các", name: "Mạc Thiên Tứ",
+              desc: "Con Mạc Cửu, phát triển Hà Tiên rực rỡ cả thương mại lẫn văn hóa tao đàn Chiêu Anh Các." },
+            { href: "nhan-vat/tran-thuong-xuyen.html", iconClass: "icon-official", icon: "🏙️", roleClass: "role-official",
+              role: "Trần Thượng Xuyên · Cù Lao Phố", name: "Trần Thượng Xuyên",
+              desc: "Tướng nhà Minh tị nạn khai phá Cù Lao Phố (Biên Hòa) thành đô thị thương mại sầm uất đầu tiên ở Nam Bộ." },
+            { href: "nhan-vat/duong-ngan-dich.html", iconClass: "icon-official", icon: "🌾", roleClass: "role-official",
+              role: "Dương Ngạn Địch · Mỹ Tho đại phố", name: "Dương Ngạn Địch",
+              desc: "Tướng nhà Minh tị nạn khai phá vùng đất Mỹ Tho đại phố sầm uất." }
           ]
         },
 
