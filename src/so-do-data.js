@@ -868,7 +868,7 @@ const DYNASTY_DATA = [
             note: "'Cha không dám — con dám.' Từ chối nộp cống Đàng Ngoài ~1620 (đúng thời điểm). Chọn Đào Duy Từ, xây Lũy Thầy. Trụ vững qua tấn công đầu tiên 1627 — Đàng Trong chính thức độc lập thực tế."
           },
           officials: [
-            { href: null, iconClass: "icon-official", icon: "🏯", roleClass: "role-official",
+            { href: "nhan-vat/dao-duy-tu.html", iconClass: "icon-official", icon: "🏯", roleClass: "role-official",
               role: "Đào Duy Từ · Chiến lược phòng thủ", name: "Đào Duy Từ",
               desc: "Tư vấn xây Lũy Thầy (Đồng Hới) — hệ thống phòng thủ ngăn 7 lần tấn công của Trịnh Tráng. Nhà Trịnh không chiếm được Đàng Trong suốt 148 năm phần lớn nhờ công trình này." }
           ]
