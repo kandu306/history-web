@@ -468,7 +468,14 @@ const DATABASE = {
       { name: "Nguyễn Bỉnh Khiêm", url: "nhan-vat/nguyen-binh-khiem.html", role: "advisor"  },
       { name: "Đào Duy Từ",        url: "nhan-vat/dao-duy-tu.html",        role: "advisor"  },
       { name: "Lê Kính Tông",      url: "nhan-vat/le-kinh-tong.html",      role: "puppet"   },
-      { name: "Trịnh Xuân",        url: "nhan-vat/trinh-xuan.html",        role: "official" }
+      { name: "Trịnh Xuân",        url: "nhan-vat/trinh-xuan.html",        role: "official" },
+      { name: "Nguyễn Phúc Chu",   url: "nhan-vat/nguyen-phuc-chu.html",   role: "king"     },
+      { name: "Nguyễn Hữu Cảnh",   url: "nhan-vat/nguyen-huu-canh.html",   role: "official" },
+      { name: "Mạc Cửu",           url: "nhan-vat/mac-cuu.html",           role: "official" },
+      { name: "Mạc Thiên Tứ",      url: "nhan-vat/mac-thien-tu.html",      role: "official" },
+      { name: "Trần Thượng Xuyên", url: "nhan-vat/tran-thuong-xuyen.html", role: "official" },
+      { name: "Dương Ngạn Địch",   url: "nhan-vat/duong-ngan-dich.html",   role: "official" },
+      { name: "Trịnh Cương",       url: "nhan-vat/trinh-cuong.html",       role: "king"     }
     ],
     lineConnections: ["line-mac-trinh"]
   },

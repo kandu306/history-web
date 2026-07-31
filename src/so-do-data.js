@@ -768,7 +768,26 @@ const DYNASTY_DATA = [
           ]
         },
 
-        // ── Chúa Trịnh 4: Trịnh Doanh ─────────────
+        // ── Chúa Trịnh 4: Trịnh Cương ─────────────
+        {
+          king: {
+            href: "nhan-vat/trinh-cuong.html",
+            cardStyle: "background: linear-gradient(135deg, #1c1917 0%, #292524 100%); border-color: rgba(155,28,28,0.5); color: white;",
+            crown: "⚖️",
+            title: "Chúa Trịnh VI · Nhà cải cách Đàng Ngoài", titleStyle: "color:#fca5a5;",
+            name: "Trịnh Cương", nameStyle: "color:white;",
+            realName: "1686–1729 SCN", realNameStyle: "color:#d6d3d1;",
+            years: "📅 Nắm quyền: 1709–1729 · 20 năm",
+            note: "Nhà cải cách duy nhất của Đàng Ngoài — cải cách phép thuế tô dung điệu (1723), chỉnh đốn thi cử quan lại, đắp đê trị thủy. Nỗ lực bị đảo ngược sau khi ông mất vì hệ thống bảo thủ."
+          },
+          officials: [
+            { href: null, iconClass: "icon-official", icon: "📜", roleClass: "role-official",
+              role: "Cải cách tài chính · 1723", name: "Phép thuế Tô Dung Điệu",
+              desc: "Ban hành chính sách thuế mới nhằm công bằng nghĩa vụ và giảm nhũng nhiễu quan lại — nỗ lực cứu Đàng Ngoài khỏi trì trệ kinh tế." }
+          ]
+        },
+
+        // ── Chúa Trịnh 5: Trịnh Doanh ─────────────
         {
           king: {
             href: null,
@@ -915,19 +934,19 @@ const DYNASTY_DATA = [
         // ── Chúa Nguyễn 4: Nguyễn Phúc Chu ────────
         {
           king: {
-            href: null,
+            href: "nhan-vat/nguyen-phuc-chu.html",
             cardStyle: "background: linear-gradient(135deg, #030a06 0%, #052e16 100%); border-color: rgba(22,101,52,0.5); color: white;",
-            crown: "🌿",
-            title: "Chúa Nguyễn VI · Mở Gia Định · Mekong", titleStyle: "color:#86efac;",
+            crown: "👑",
+            title: "Chúa Nguyễn VI · Quốc Chúa · Mở Gia Định", titleStyle: "color:#86efac;",
             name: "Nguyễn Phúc Chu", nameStyle: "color:white;",
             realName: "1675–1725 SCN", realNameStyle: "color:#d6d3d1;",
-            years: "📅 Cai quản: 1691–1725",
-            note: "Thu nhận Mạc Cửu — khai phá Hà Tiên và đồng bằng sông Cửu Long. Lãnh thổ Đàng Trong mở rộng tới cực Nam — gần như đến biên giới hiện đại của miền Nam Việt Nam."
+            years: "📅 Cai quản: 1691–1725 · 34 năm",
+            note: "Quốc Chúa — đưa Đàng Trong tới đỉnh cao toàn diện. Cử Nguyễn Hữu Cảnh lập Phủ Gia Định 1698. Thu nhận Mạc Cửu dâng Hà Tiên 1708. Phát triển ngoại thương Hội An và Phật giáo."
           },
           officials: [
-            { href: null, iconClass: "icon-official", icon: "🏝️", roleClass: "role-official",
+            { href: "nhan-vat/mac-cuu.html", iconClass: "icon-official", icon: "🏝️", roleClass: "role-official",
               role: "Mạc Cửu · Khai phá Hà Tiên", name: "Mạc Cửu",
-              desc: "Người Hoa trung thành với Nhà Minh, vào Hà Tiên mở đất. Thần phục Chúa Nguyễn 1708 — đưa vùng đất cực Nam vào bản đồ Đàng Trong. Con ông là Mạc Thiên Tứ tiếp tục phát triển." }
+              desc: "Thương gia người Hoa tị nạn, tự mở cảng Hà Tiên rồi chủ động dâng đất cho Chúa Nguyễn 1708 để đổi lấy bảo hộ. Con ông là Mạc Thiên Tứ lập Chiêu Anh Các." }
           ]
         },
 
