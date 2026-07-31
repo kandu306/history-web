@@ -454,7 +454,8 @@ const DATABASE = {
     desc: "Giai đoạn đất nước chia đôi dài nhất lịch sử (148 năm chiến tranh + 100 năm hòa hoãn). Từ 1533 Nguyễn Kim lập Lê Trung Hưng — thực quyền lần lượt vào tay Chúa Trịnh (Đàng Ngoài) và Chúa Nguyễn (Đàng Trong). 1627–1672: 7 lần đại chiến, Trịnh không phá được Lũy Thầy, Nguyễn không đủ quân tiến ra Bắc. Hòa hoãn ngầm 1672: Sông Gianh thành ranh giới mặc định. Đàng Trong Nam tiến tạo bản đồ hiện đại, Đàng Ngoài dần trì trệ — tiền đề cho Tây Sơn 1771.",
     lessons: [
       { name: "C1 · Nguồn Gốc Phân Tranh (1533–1627)", url: "bai-hoc/trinh-nguyen-phan-tranh-c1.html" },
-      { name: "C2 · Chiến Tranh 7 Lần (1627–1672)",     url: "bai-hoc/trinh-nguyen-phan-tranh-c2.html" }
+      { name: "C2 · Chiến Tranh 7 Lần (1627–1672)",     url: "bai-hoc/trinh-nguyen-phan-tranh-c2.html" },
+      { name: "C3 · Đàng Trong Phát Triển (1672–1750)", url: "bai-hoc/trinh-nguyen-phan-tranh-c3.html" }
     ],
     figures: [
       { name: "Trịnh Kiểm",        url: "nhan-vat/trinh-kiem.html",        role: "king"     },
