@@ -80,6 +80,13 @@ const NODES_CONFIG = [
     subtitle: "Tiền giấy, hạn điền, súng thần công — không có lòng dân"
   },
   {
+    id: "nha_hau_tran",
+    tagLabel: "Kháng chiến bi tráng", tagColor: "#7a1f1f",
+    period: "1407–1413 SCN",
+    title: "Nhà Hậu Trần — Kháng Chiến Bi Tráng 4 Năm",
+    subtitle: "Thắng Bô Cô vang dội · Vua nghi kỵ giết công thần · Tiền đề Lam Sơn"
+  },
+  {
     id: "nha_hau_le",
     tagLabel: "Khai quốc", tagColor: "#166534",
     period: "1428 SCN – ...",
@@ -369,6 +376,24 @@ const DATABASE = {
     figures: [
       { name: "Hồ Quý Ly",       url: "nhan-vat/ho-quy-ly.html",       role: "king"     },
       { name: "Hồ Nguyên Trừng", url: "nhan-vat/ho-nguyen-trung.html", role: "official" }
+    ],
+    lineConnections: []
+  },
+
+  nha_hau_tran: {
+    category: "Triều đại",
+    title: "Nhà Hậu Trần",
+    period: "1407 – 1413 SCN",
+    desc: "Vương triều kháng chiến do Giản Định Đế Trần Ngỗi và Trùng Quang Đế Trần Quý Khoáng lãnh đạo chống quân Minh xâm lược. Thắng lớn ở trận Bô Cô (1408) lẫy lừng nhưng rồi bị rạn nứt do Giản Định Đế nghi kỵ sát hại Đặng Tất và Nguyễn Cảnh Chân.",
+    lessons: [
+      { name: "Nhà Hậu Trần — Kháng Chiến Bi Tráng 4 Năm", url: "bai-hoc/nha-hau-tran.html" }
+    ],
+    figures: [
+      { name: "Giản Định Đế",     url: "nhan-vat/tran-ngoi.html",        role: "king"     },
+      { name: "Trùng Quang Đế",   url: "nhan-vat/tran-quy-khoang.html", role: "king"     },
+      { name: "Đặng Tất",          url: "nhan-vat/dang-tat.html",         role: "official" },
+      { name: "Nguyễn Cảnh Chân", url: "nhan-vat/nguyen-canh-chan.html", role: "official" },
+      { name: "Nguyễn Cảnh Dị",   url: "nhan-vat/nguyen-canh-di.html",   role: "official" }
     ],
     lineConnections: []
   },

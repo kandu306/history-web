@@ -490,6 +490,50 @@ const DYNASTY_DATA = [
   },
 
   // ─────────────────────────────────────────────────
+  // NHÀ HẬU TRẦN
+  // ─────────────────────────────────────────────────
+  {
+    id: "era-hau-tran",
+    label: "Nhà Hậu Trần · Kháng chiến chống Minh lần 1 (1407 – 1413 SCN)",
+    labelStyle: "background: #7a1f1f;",
+    eraBlockStyle: "border-top: 2px dashed rgba(122,31,31,0.3); padding-top: 2rem;",
+    dividerBefore: null,
+    columns: [
+      {
+        king: {
+          href: "nhan-vat/tran-ngoi.html",
+          cardStyle: "border-color: rgba(155,28,28,0.5); background: linear-gradient(135deg, #1c0a0a 0%, #2f0e0e 100%); color: white;",
+          crown: "👑",
+          title: "Giản Định Đế · Vua Khai Triều", titleStyle: "color:#fca5a5;",
+          name: "Trần Ngỗi — Giản Định Đế", nameStyle: "color:white;",
+          realName: "Trần Ngỗi · ? – 1410 SCN", realNameStyle: "color:#d6d3d1;",
+          years: "📅 Trị vì: 1407 – 1409", yearsStyle: "background:rgba(0,0,0,0.4); color:#fca5a5;",
+          note: "Con trai thứ vua Trần Nghệ Tông. Dựng ngọn cờ kháng chiến chống Minh tại Nghệ An, đại thắng Bô Cô (1408). Sau nghi kỵ sát hại hai trụ cột Đặng Tất & Nguyễn Cảnh Chân khiến nghĩa quân chia rẽ.", noteStyle: "color:#d6d3d1;"
+        },
+        officials: [
+          { href: "nhan-vat/dang-tat.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Quốc Công · Đại tướng", name: "Đặng Tất", desc: "Tướng tài Nhà Hậu Trần, chỉ huy đại thắng Bô Cô (12/1408) đánh tan quân Minh. Bị Giản Định Đế nghi kỵ sát hại năm 1409." },
+          { href: "nhan-vat/nguyen-canh-chan.html", iconClass: "icon-advisor", icon: "📜", roleClass: "role-advisor", role: "Tán Tương Quân Vụ · Đại thần", name: "Nguyễn Cảnh Chân", desc: "Mưu sĩ, đại thần trụ cột Nhà Hậu Trần cùng Đặng Tất tạo nên chiến thắng Bô Cô. Bị Giản Định Đế giết hại cùng Đặng Tất." }
+        ]
+      },
+      {
+        king: {
+          href: "nhan-vat/tran-quy-khoang.html",
+          cardStyle: "border-color: rgba(155,28,28,0.5); background: linear-gradient(135deg, #1c0a0a 0%, #2f0e0e 100%); color: white;",
+          crown: "👑",
+          title: "Trùng Quang Đế · Vua Kháng Chiến Bi Tráng", titleStyle: "color:#fca5a5;",
+          name: "Trần Quý Khoáng — Trùng Quang Đế", nameStyle: "color:white;",
+          realName: "Trần Quý Khoáng · ? – 1414 SCN", realNameStyle: "color:#d6d3d1;",
+          years: "📅 Trị vì: 1409 – 1413", yearsStyle: "background:rgba(0,0,0,0.4); color:#fca5a5;",
+          note: "Cháu nội vua Trần Nghệ Tông. Được Đặng Dung & Nguyễn Cảnh Dị rước lên ngôi năm 1409. Hàn gắn nghĩa quân, tôn Giản Định Đế làm Thái Thượng Hoàng, kiên cường kháng Minh đến phút cuối rồi tuẫn tiết.", noteStyle: "color:#d6d3d1;"
+        },
+        officials: [
+          { href: "nhan-vat/nguyen-canh-di.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Danh Tướng · Tán Tương Quân Vụ", name: "Nguyễn Cảnh Dị", desc: "Con trai Nguyễn Cảnh Chân. Gạt thù riêng phò Trùng Quang Đế tiếp tục kháng Minh. Bị giặc bắt 1413, chửi mắng quân Minh vuốt mặt rồi hy sinh bi tráng." }
+        ]
+      }
+    ]
+  },
+
+  // ─────────────────────────────────────────────────
   // NHÀ HẬU LÊ
   // ─────────────────────────────────────────────────
   {

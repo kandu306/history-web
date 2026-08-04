@@ -570,6 +570,55 @@
     "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"
   },
   {
+    "id": "era-hau-tran",
+    "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-[#7a1f1f] border-2 border-[#9a3a2f] flex items-center justify-center shadow-md\">\n                <div class=\"w-2 h-2 rounded-full bg-[#fca5a5]\"></div>\n              </div>\n            </div>",
+    "yearsClass": "text-[11px] font-mono text-[#a8a29e] mb-1.5 tracking-wide",
+    "years": "1407 – 1413 SCN",
+    "cardClass": "rounded-xl border border-[#9a3a2f]/30 bg-gradient-to-br from-[#fef2f2] to-[#faf9f7] p-5",
+    "cardStyle": "",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#7a1f1f] bg-[#fef2f2] border border-[#7a1f1f]/20 px-2 py-0.5 rounded\">ERA 8.5</span>\n                      <span class=\"text-[10px] text-[#78716c] font-medium\">Kháng chiến chống Minh bi tráng — Thắng Bô Cô vang dội rồi tự diệt</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Nhà Hậu Trần</div>\n                  </div>\n                </div>",
+    "dividerAfterHeader": false,
+    "groups": [
+      {
+        "label": "📖 Bài học",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/nha-hau-tran.html",
+            "text": "1407–1413 · Nhà Hậu Trần — Kháng Chiến Bi Tráng 4 Năm"
+          }
+        ]
+      }
+    ],
+    "characters": [
+      {
+        "href": "nhan-vat/tran-ngoi.html",
+        "text": "Giản Định Đế (Trần Ngỗi)"
+      },
+      {
+        "href": "nhan-vat/tran-quy-khoang.html",
+        "text": "Trùng Quang Đế (Trần Quý Khoáng)"
+      },
+      {
+        "href": "nhan-vat/dang-tat.html",
+        "text": "Đặng Tất"
+      },
+      {
+        "href": "nhan-vat/nguyen-canh-chan.html",
+        "text": "Nguyễn Cảnh Chân"
+      },
+      {
+        "href": "nhan-vat/nguyen-canh-di.html",
+        "text": "Nguyễn Cảnh Dị"
+      }
+    ],
+    "characterLabel": "👤 Nhân vật",
+    "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+    "characterChipClass": "era-chip-char",
+    "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"
+  },
+  {
     "id": "era-hau-le",
     "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-[#14532d] border-2 border-[#166534] flex items-center justify-center shadow-md\">\n                <div class=\"w-2 h-2 rounded-full bg-[#86efac]\"></div>\n              </div>\n            </div>",
     "yearsClass": "text-[11px] font-mono text-[#a8a29e] mb-1.5 tracking-wide",

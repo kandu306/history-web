@@ -181,6 +181,11 @@
       { "ten": "Bộ Ba Vua Bù Nhìn", "file": "nhan-vat/bo-ba-vua-bu-nhin.html", "status": "done", "era": "Nhà Trần", "role": "king" },
       { "ten": "Hồ Quý Ly", "file": "nhan-vat/ho-quy-ly.html", "status": "done", "era": "Nhà Hồ", "role": "king" },
       { "ten": "Hồ Nguyên Trừng", "file": "nhan-vat/ho-nguyen-trung.html", "status": "done", "era": "Nhà Hồ", "role": "official" },
+      { "ten": "Giản Định Đế (Trần Ngỗi)", "file": "nhan-vat/tran-ngoi.html", "status": "done", "era": "Nhà Hậu Trần", "role": "king" },
+      { "ten": "Trùng Quang Đế (Trần Quý Khoáng)", "file": "nhan-vat/tran-quy-khoang.html", "status": "done", "era": "Nhà Hậu Trần", "role": "king" },
+      { "ten": "Đặng Tất", "file": "nhan-vat/dang-tat.html", "status": "done", "era": "Nhà Hậu Trần", "role": "official" },
+      { "ten": "Nguyễn Cảnh Chân", "file": "nhan-vat/nguyen-canh-chan.html", "status": "done", "era": "Nhà Hậu Trần", "role": "official" },
+      { "ten": "Nguyễn Cảnh Dị", "file": "nhan-vat/nguyen-canh-di.html", "status": "done", "era": "Nhà Hậu Trần", "role": "official" },
       { "ten": "Lê Lợi", "file": "nhan-vat/le-loi.html", "status": "done", "era": "Nhà Hậu Lê", "role": "king" },
       { "ten": "Nguyễn Trãi", "file": "nhan-vat/nguyen-trai.html", "status": "done", "era": "Nhà Hậu Lê", "role": "advisor" },
       { "ten": "Lê Lai", "file": "nhan-vat/le-lai.html", "status": "done", "era": "Nhà Hậu Lê", "role": "official" },
@@ -210,15 +215,16 @@
       { "ten": "Sự kiện 1328: Vụ Án Trần Quốc Chẩn", "file": "bai-hoc/vu-an-tran-quoc-chan.html", "status": "done" },
       { "ten": "Nhà Hồ Tổng Quan", "file": "bai-hoc/nha-ho-tong-quan.html", "status": "done" },
       { "ten": "Nhà Hồ Sụp Đổ — Đô Hộ Lần Thứ Tư", "file": "bai-hoc/nha-ho-sup-do-1407.html", "status": "done" },
+      { "ten": "Nhà Hậu Trần — Kháng Chiến Bi Tráng 4 Năm", "file": "bai-hoc/nha-hau-tran.html", "status": "done" },
       { "ten": "Hậu Lê — Kháng Chiến Chống Minh (Lam Sơn)", "file": "bai-hoc/hau-le-khang-chien-chong-minh.html", "status": "done" }
     ],
     "stats": {
-      "nhan_vat_done": 63,
+      "nhan_vat_done": 75,
       "nhan_vat_pending": 1,
-      "bai_hoc_done": 24,
-      "era_count": 9,
-      "eras": ["Văn Lang–Âu Lạc", "Bắc thuộc", "Nhà Ngô", "Nhà Đinh", "Tiền Lê", "Nhà Lý", "Nhà Trần", "Nhà Hồ", "Nhà Hậu Lê"],
-      "note": "Session 2026-06-23: Thêm ERA 8 Nhà Hồ + ERA 9 Nhà Hậu Lê. Chuẩn hóa format toàn bộ 9 ERA trên index.html. Fix bug duplicate block Nhà Trần."
+      "bai_hoc_done": 25,
+      "era_count": 12,
+      "eras": ["Văn Lang–Âu Lạc", "Bắc thuộc", "Nhà Ngô", "Nhà Đinh", "Tiền Lê", "Nhà Lý", "Nhà Trần", "Nhà Hồ", "Nhà Hậu Trần", "Nhà Hậu Lê", "Nhà Mạc", "Trịnh-Nguyễn Phân Tranh"],
+      "note": "Session 2026-08-04: Tích hợp 6 file từ new-raw: 1 bài học Nhà Hậu Trần + 5 nhân vật (Giản Định Đế, Trùng Quang Đế, Đặng Tất, Nguyễn Cảnh Chân, Nguyễn Cảnh Dị). Cập nhật eras.json, ban-do-data.js, so-do-data.js."
     }
   },
   "workflow_checklist": {
@@ -277,6 +283,23 @@
         "Kháng chiến chống Minh thuộc Nhà Hậu Lê KHÔNG phải Nhà Hồ"
       ],
       "commits": ["81579e3", "c16279c", "967b3d2", "f36c8c4"]
+    },
+    "2026-08-04": {
+      "summary": "Tích hợp giai đoạn Nhà Hậu Trần (1407-1413) từ new-raw",
+      "new_files": [
+        "src/bai-hoc/nha-hau-tran.html",
+        "src/nhan-vat/tran-ngoi.html",
+        "src/nhan-vat/tran-quy-khoang.html",
+        "src/nhan-vat/dang-tat.html",
+        "src/nhan-vat/nguyen-canh-chan.html",
+        "src/nhan-vat/nguyen-canh-di.html"
+      ],
+      "site_changes": [
+        "Chuyển đổi 6 file raw từ new-raw/ vào src/bai-hoc/ và src/nhan-vat/ với frontmatter Eleventy",
+        "Cập nhật eras.json với ERA 8.5 Nhà Hậu Trần (1407–1413 SCN)",
+        "Cập nhật ban-do-data.js với node nha_hau_tran trong NODES_CONFIG và DATABASE",
+        "Cập nhật so-do-data.js với era-hau-tran trong DYNASTY_DATA"
+      ]
     }
   }
 }
