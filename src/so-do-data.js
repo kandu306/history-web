@@ -1050,10 +1050,10 @@ const DYNASTY_DATA = [
 
   {
     id: "era-tay-son",
-    title: "Nhà Tây Sơn — Xóa Bỏ Trịnh-Nguyễn (1771–1802 SCN)",
-    subtitle: "Khởi phát Tây Sơn · Đại phá Xiêm - Thanh · Canh tân Nôm học · Suy tàn sau khi Quang Trung đột ngột qua đời",
-    kingCount: "2 Vua tiêu biểu", officialCount: "16 Nhân vật then chốt",
-    layout: "single",
+    label: "Nhà Tây Sơn · Xóa Bỏ Trịnh-Nguyễn & Đại Phá Xiêm-Thanh (1771 – 1802 SCN)",
+    labelStyle: "background: #9b1c1c;",
+    eraBlockStyle: "border-top: 2px dashed rgba(155,28,28,0.3); padding-top: 2rem;",
+    dividerBefore: null,
     columns: [
       {
         king: {
