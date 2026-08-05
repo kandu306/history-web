@@ -300,6 +300,34 @@
         "Cập nhật ban-do-data.js với node nha_hau_tran trong NODES_CONFIG và DATABASE",
         "Cập nhật so-do-data.js với era-hau-tran trong DYNASTY_DATA"
       ]
+    },
+    "2026-08-05": {
+      "summary": "Tích hợp toàn bộ 17 file Nhà Tây Sơn (1771-1802) từ new-raw vào hệ thống 3 Gốc / 3 Độc",
+      "new_files": [
+        "src/bai-hoc/nha-tay-son.html",
+        "src/nhan-vat/nguyen-hue.html",
+        "src/nhan-vat/nguyen-nhac.html",
+        "src/nhan-vat/nguyen-lu.html",
+        "src/nhan-vat/nguyen-quang-toan.html",
+        "src/nhan-vat/nguyen-anh.html",
+        "src/nhan-vat/le-chieu-thong.html",
+        "src/nhan-vat/ngo-thi-nham.html",
+        "src/nhan-vat/nguyen-thiep.html",
+        "src/nhan-vat/ba-da-loc.html",
+        "src/nhan-vat/bui-thi-xuan.html",
+        "src/nhan-vat/tran-quang-dieu.html",
+        "src/nhan-vat/vu-van-dung.html",
+        "src/nhan-vat/vo-tanh.html",
+        "src/nhan-vat/nguyen-huu-chinh.html",
+        "src/nhan-vat/truong-phuc-loan.html",
+        "src/nhan-vat/ton-si-nghi.html"
+      ],
+      "site_changes": [
+        "Chuyển đổi 17 file raw thành các trang Eleventy tiêu chuẩn với giao diện 3 Gốc / 3 Độc",
+        "Cập nhật eras.json với ERA 12 Nhà Tây Sơn (1771–1802 SCN)",
+        "Cập nhật ban-do-data.js với node nha_tay_son trong NODES_CONFIG và DATABASE",
+        "Cập nhật so-do-data.js với era-tay-son trong DYNASTY_DATA"
+      ]
     }
   }
 }

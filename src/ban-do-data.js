@@ -106,6 +106,13 @@ const NODES_CONFIG = [
     period: "1533–1786 SCN",
     title: "Trịnh–Nguyễn Phân Tranh",
     subtitle: "Đàng Ngoài · Đàng Trong · 148 năm phân tranh · Sông Gianh ranh giới"
+  },
+  {
+    id: "nha_tay_son",
+    tagLabel: "Bão lốc Tây Sơn", tagColor: "#9b1c1c",
+    period: "1771–1802 SCN",
+    title: "Nhà Tây Sơn — Xóa Bỏ Ranh Giới Trịnh - Nguyễn",
+    subtitle: "Đại phá 5 vạn quân Xiêm & 29 vạn quân Thanh · Canh tân Nôm học"
   }
 ];
 
@@ -122,7 +129,8 @@ const LINES_CONFIG = [
   { id: "line-tran-ho",   x1: "50%", y1: "940",  x2: "50%", y2: "1000" },
   { id: "line-ho-haule",  x1: "50%", y1: "1050", x2: "50%", y2: "1110" },
   { id: "line-haule-mac", x1: "50%", y1: "1160", x2: "50%", y2: "1220" },
-  { id: "line-mac-trinh", x1: "50%", y1: "1270", x2: "50%", y2: "1330" }
+  { id: "line-mac-trinh", x1: "50%", y1: "1270", x2: "50%", y2: "1330" },
+  { id: "line-trinh-tayson", x1: "50%", y1: "1380", x2: "50%", y2: "1440" }
 ];
 
 // ─── PATTERNS: các quy luật lịch sử ───
@@ -502,7 +510,36 @@ const DATABASE = {
       { name: "Dương Ngạn Địch",   url: "nhan-vat/duong-ngan-dich.html",   role: "official" },
       { name: "Trịnh Cương",       url: "nhan-vat/trinh-cuong.html",       role: "king"     }
     ],
-    lineConnections: ["line-mac-trinh"]
+    lineConnections: ["line-mac-trinh", "line-trinh-tayson"]
+  },
+
+  nha_tay_son: {
+    category: "Triều đại",
+    title: "Nhà Tây Sơn",
+    period: "1771 – 1802 SCN",
+    desc: "Bão lốc Tây Sơn xóa bỏ cả hai tập đoàn phong kiến Trịnh - Nguyễn, đại phá 5 vạn quân Xiêm tại Rạch Gầm - Xoài Mút (1785) và 29 vạn quân Thanh tại Ngọc Hồi - Đống Đa (1789). Thể chế gắn liền với thiên tài quân sự - chính trị Quang Trung Nguyễn Huệ.",
+    lessons: [
+      { name: "Nhà Tây Sơn — Khởi Phát, Đỉnh Cao & Sụp Đổ", url: "bai-hoc/nha-tay-son.html" }
+    ],
+    figures: [
+      { name: "Quang Trung (Nguyễn Huệ)", url: "nhan-vat/nguyen-hue.html",        role: "king"     },
+      { name: "Thái Đức Đế (Nguyễn Nhạc)", url: "nhan-vat/nguyen-nhac.html",       role: "king"     },
+      { name: "Đông Định Vương (Nguyễn Lữ)", url: "nhan-vat/nguyen-lu.html",       role: "king"     },
+      { name: "Cảnh Thịnh Đế (Nguyễn Quang Toản)", url: "nhan-vat/nguyen-quang-toan.html", role: "king" },
+      { name: "Gia Long (Nguyễn Ánh)",     url: "nhan-vat/nguyen-anh.html",        role: "enemy"    },
+      { name: "Lê Chiêu Thống",           url: "nhan-vat/le-chieu-thong.html",    role: "enemy"    },
+      { name: "Ngô Thì Nhậm",              url: "nhan-vat/ngo-thi-nham.html",     role: "advisor"  },
+      { name: "La Sơn Phu Tử (Nguyễn Thiếp)", url: "nhan-vat/nguyen-thiep.html",   role: "advisor"  },
+      { name: "Bá Đa Lộc",                 url: "nhan-vat/ba-da-loc.html",        role: "advisor"  },
+      { name: "Bùi Thị Xuân",              url: "nhan-vat/bui-thi-xuan.html",     role: "official" },
+      { name: "Trần Quang Diệu",           url: "nhan-vat/tran-quang-dieu.html",  role: "official" },
+      { name: "Vũ Văn Dũng",               url: "nhan-vat/vu-van-dung.html",      role: "official" },
+      { name: "Võ Tánh",                   url: "nhan-vat/vo-tanh.html",          role: "official" },
+      { name: "Nguyễn Hữu Chỉnh",          url: "nhan-vat/nguyen-huu-chinh.html", role: "official" },
+      { name: "Trương Phúc Loan",          url: "nhan-vat/truong-phuc-loan.html", role: "official" },
+      { name: "Tôn Sĩ Nghị",               url: "nhan-vat/ton-si-nghi.html",      role: "enemy"    }
+    ],
+    lineConnections: ["line-trinh-tayson"]
   },
 
   // ─── PATTERNS ───

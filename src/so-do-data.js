@@ -1046,6 +1046,38 @@ const DYNASTY_DATA = [
 
       ]  // end right.columns
     }   // end right
+  },
+
+  {
+    id: "era-tay-son",
+    title: "Nhà Tây Sơn — Xóa Bỏ Trịnh-Nguyễn (1771–1802 SCN)",
+    subtitle: "Khởi phát Tây Sơn · Đại phá Xiêm - Thanh · Canh tân Nôm học · Suy tàn sau khi Quang Trung đột ngột qua đời",
+    kingCount: "2 Vua tiêu biểu", officialCount: "16 Nhân vật then chốt",
+    layout: "single",
+    columns: [
+      {
+        king: {
+          href: "nhan-vat/nguyen-hue.html",
+          cardStyle: "border-color: rgba(155,28,28,0.5); background: linear-gradient(135deg, #1c1917 0%, #450a0a 100%); color: white;",
+          crown: "👑",
+          title: "Thiên Tài Quân Sự — Vua Quang Trung", titleStyle: "color:#fca5a5;",
+          name: "Quang Trung (Nguyễn Huệ)", nameStyle: "color:white;",
+          realName: "Nguyễn Văn Huệ · 1753 – 1792 SCN", realNameStyle: "color:#d6d3d1;",
+          years: "📅 Xưng đế: 1788 – 1792 · 20 năm cầm quân bất bại", yearsStyle: "background:rgba(0,0,0,0.4); color:#fca5a5;",
+          note: "Đại phá 5 vạn quân Xiêm (1785) & 29 vạn quân Thanh Tết Kỷ Dậu (1789). Lật đổ Trịnh-Nguyễn. Đưa chữ Nôm làm quốc ngữ trước khi đột ngột qua đời tuổi 40."
+        },
+        officials: [
+          { href: "nhan-vat/nguyen-nhac.html", iconClass: "icon-king", icon: "👑", roleClass: "role-king", role: "Anh cả · Thái Đức Đế", name: "Nguyễn Nhạc", desc: "Thủ lĩnh dấy binh 1771, quy tụ lòng dân với cờ 'Diệt Trương Phúc Loan', xưng Thái Đức Đế tại Quy Nhơn." },
+          { href: "nhan-vat/ngo-thi-nham.html", iconClass: "icon-advisor", icon: "📜", roleClass: "role-advisor", role: "Danh sĩ · Mưu sĩ", name: "Ngô Thì Nhậm", desc: "Tác giả kế sách rút về Tam Điệp bảo toàn lực lượng và các văn kiện ngoại giao xuất sắc buộc nhà Thanh nể sợ." },
+          { href: "nhan-vat/nguyen-thiep.html", iconClass: "icon-advisor", icon: "📜", roleClass: "role-advisor", role: "Cố vấn · La Sơn Phu Tử", name: "Nguyễn Thiếp", desc: "Ẩn sĩ đức độ, cố vấn chiến lược và làm Viện trưởng Viện Cung nghiệt dịch sách Nôm." },
+          { href: "nhan-vat/tran-quang-dieu.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Đại Đô đốc · Tượng binh", name: "Trần Quang Diệu", desc: "Cột trụ dũng tướng vây thành Quy Nhơn, tinh thần thượng võ tha bổng toàn bộ quân hàng của Võ Tánh." },
+          { href: "nhan-vat/bui-thi-xuan.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Nữ Đô đốc · Voi chiến", name: "Bùi Thị Xuân", desc: "Nữ tướng chỉ huy đội voi chiến kiệt xuất, chiến đấu hiên ngang đến hơi thở cuối cùng." },
+          { href: "nhan-vat/vu-van-dung.html", iconClass: "icon-official", icon: "⚓", roleClass: "role-official", role: "Đại Đô đốc Hải quân", name: "Vũ Văn Dũng", desc: "Chỉ huy hạm đội chiến thuyền Tây Sơn, diệt quyền thần Bùi Đắc Tuyên để cứu vãn vương triều." },
+          { href: "nhan-vat/nguyen-anh.html", iconClass: "icon-enemy", icon: "👑", roleClass: "role-enemy", role: "Gia Long · Phục thù", name: "Nguyễn Ánh", desc: "Chúa Nguyễn kiên trì 25 năm nếm mật nằm gai, kết nối kỹ thuật phương Tây, lật đổ Tây Sơn năm 1802." },
+          { href: "nhan-vat/le-chieu-thong.html", iconClass: "icon-enemy", icon: "⚠️", roleClass: "role-enemy", role: "Vua rước giặc Thanh", name: "Lê Chiêu Thống", desc: "Vua cuối nhà Lê sang Thanh cầu viện 29 vạn quân sang xâm lược, chết tủi hổ ở xứ người." }
+        ]
+      }
+    ]
   }
 
 ];

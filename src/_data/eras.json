@@ -959,5 +959,50 @@
     "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
     "characterChipClass": "era-chip-char",
     "toolClass": "border-t border-[#e7e5e4] pt-4 flex flex-wrap gap-2"
+  },
+  {
+    "id": "era-tay-son",
+    "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-[#9b1c1c] border-2 border-[#b91c1c] flex items-center justify-center shadow-md\">\n                <div class=\"w-2 h-2 rounded-full bg-[#fef08a]\"></div>\n              </div>\n            </div>",
+    "yearsClass": "text-[11px] font-mono text-[#a8a29e] mb-1.5 tracking-wide",
+    "years": "1771 – 1802 SCN",
+    "cardClass": "rounded-xl border border-[#9b1c1c]/30 bg-gradient-to-br from-[#fef2f2] to-[#faf9f7] p-5",
+    "cardStyle": "",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#9b1c1c] bg-[#fef2f2] border border-[#9b1c1c]/20 px-2 py-0.5 rounded\">ERA 12</span>\n                      <span class=\"text-[10px] text-[#78716c] font-medium\">Bão lốc Tây Sơn — Xóa Trịnh-Nguyễn · Đại phá Xiêm - Thanh · Canh tân rực rỡ</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Nhà Tây Sơn</div>\n                  </div>\n                </div>",
+    "dividerAfterHeader": false,
+    "groups": [
+      {
+        "label": "📖 Bài học",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/nha-tay-son.html",
+            "text": "1771–1802 · Nhà Tây Sơn — Khởi Phát, Đỉnh Cao & Sụp Đổ"
+          }
+        ]
+      }
+    ],
+    "characters": [
+      { "href": "nhan-vat/nguyen-hue.html", "text": "Quang Trung (Nguyễn Huệ)" },
+      { "text": "Thái Đức Đế (Nguyễn Nhạc)", "href": "nhan-vat/nguyen-nhac.html" },
+      { "text": "Đông Định Vương (Nguyễn Lữ)", "href": "nhan-vat/nguyen-lu.html" },
+      { "text": "Cảnh Thịnh Đế (Nguyễn Quang Toản)", "href": "nhan-vat/nguyen-quang-toan.html" },
+      { "text": "Gia Long (Nguyễn Ánh)", "href": "nhan-vat/nguyen-anh.html" },
+      { "text": "Lê Chiêu Thống", "href": "nhan-vat/le-chieu-thong.html" },
+      { "text": "Ngô Thì Nhậm", "href": "nhan-vat/ngo-thi-nham.html" },
+      { "text": "La Sơn Phu Tử (Nguyễn Thiếp)", "href": "nhan-vat/nguyen-thiep.html" },
+      { "text": "Bá Đa Lộc", "href": "nhan-vat/ba-da-loc.html" },
+      { "text": "Bùi Thị Xuân", "href": "nhan-vat/bui-thi-xuan.html" },
+      { "text": "Trần Quang Diệu", "href": "nhan-vat/tran-quang-dieu.html" },
+      { "text": "Vũ Văn Dũng", "href": "nhan-vat/vu-van-dung.html" },
+      { "text": "Võ Tánh", "href": "nhan-vat/vo-tanh.html" },
+      { "text": "Nguyễn Hữu Chỉnh", "href": "nhan-vat/nguyen-huu-chinh.html" },
+      { "text": "Trương Phúc Loan", "href": "nhan-vat/truong-phuc-loan.html" },
+      { "text": "Tôn Sĩ Nghị", "href": "nhan-vat/ton-si-nghi.html" }
+    ],
+    "characterLabel": "👤 Nhân vật",
+    "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+    "characterChipClass": "era-chip-char",
+    "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"
   }
 ]
