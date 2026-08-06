@@ -90,9 +90,10 @@ const CHECKS = [
       }
       const section03 = section03Match[0];
       // Đếm các lesson block: có thể là p-6 rounded-xl hoặc h3
-      const byClass = (section03.match(/class="p-6 rounded-xl/g) || []).length;
-      const byH3    = (section03.match(/<h3 /g) || []).length;
-      return byClass >= 3 || byH3 >= 3;
+      const byClass   = (section03.match(/class="p-6 rounded-xl/g) || []).length;
+      const byClassBg = (section03.match(/p-6 rounded-xl bg-/g) || []).length;
+      const byH3      = (section03.match(/<h3 /g) || []).length;
+      return byClass >= 3 || byClassBg >= 3 || byH3 >= 3;
     },
     fix: 'Viết đủ 3 bài học (Ứng dụng 01, 02, 03) mỗi bài có tiêu đề h3 + nội dung + box ứng dụng thực tiễn',
   },
