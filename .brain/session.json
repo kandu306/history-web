@@ -1,26 +1,66 @@
 {
   "project": "history-web",
-  "saved_at": "2026-08-15T16:54:17+07:00",
+  "saved_at": "2026-08-15T22:27:00+07:00",
   "trigger": "user_command_save_brain",
   "git_branch": "main",
   "last_commits": [
-    "10fed1b feat: Add Nha Nguyen era - 8 new character pages",
-    "21e8c1f refactor: nang cap Duong Van Nga",
-    "dba503e refactor: nang cap 3 chua Nguyen cuoi",
-    "0a5daee refactor: nang cap Nguyen Phuc Nguyen",
-    "4e163a5 refactor: nang cap Mac Mau Hop",
-    "5931544 refactor: nang cap Mac Dang Doanh"
+    "e51c0ed fix(so-do): unify all Nguyen dynasty king cards to same dark red color scheme",
+    "de8f475 fix(so-do): Minh Mang & Thieu Tri as separate king columns",
+    "e5d1f92 feat(nha-nguyen): update ban-do-data + so-do-data with new 1802-1847 content",
+    "385b271 feat(nha-nguyen): add 4 lesson + 6 character pages (1802-1858)",
+    "5b1dd4e feat(nha-nguyen): create lesson pages for 1802-1858 early Nguyen period"
   ],
   "summary": {
-    "working_on": "Nâng cấp toàn bộ nội dung nhân vật lịch sử sang Event Block Layout",
-    "status": "COMPLETED - Toàn bộ batch nâng cấp hoàn thành. Đang tiếp tục thêm nhân vật lẻ theo yêu cầu.",
-    "total_files": 137,
-    "files_upgraded": "115+ file đã nâng cấp lên Event Block Layout",
-    "last_file_done": "duong-van-nga.html (commit 21e8c1f)",
-    "progress_percent": 100
+    "working_on": "Mở rộng nội dung Nhà Nguyễn — giai đoạn 1802–1858 (trước khi Pháp xâm lược)",
+    "status": "IN PROGRESS — Đã tạo xong cấu trúc, nhưng nội dung chưa đạt quality check",
+    "total_files": 202,
+    "last_work_today": [
+      "Tạo 4 trang bài học: doc-lap-thong-nhat, cai-cach-minh-mang, le-van-khoi-xiem, chu-quyen-hoang-sa",
+      "Tạo 6 trang nhân vật: gia-long, vua-minh-mang, vua-thieu-tri, nguyen-van-thanh, le-van-duyet, ton-that-thuyet",
+      "Cập nhật eras.json: thêm bài học + nhân vật vào era-nha-nguyen",
+      "Cập nhật ban-do-data.js: thêm 4 bài học + 5 nhân vật mới vào nha_nguyen",
+      "Cập nhật so-do-data.js: thêm 3 cột vua mới (Gia Long, Minh Mạng, Thiệu Trị)",
+      "Fix màu sắc: tất cả vua Nhà Nguyễn dùng cùng màu đỏ thẫm (#450a0a → #7f1d1d)"
+    ],
+    "progress_percent": 60
+  },
+  "pending_quality_fixes": {
+    "critical_4_bai_hoc": {
+      "files": [
+        "src/bai-hoc/nha-nguyen-doc-lap-thong-nhat-dinh-cao.html",
+        "src/bai-hoc/nha-nguyen-cai-cach-hanh-chinh-minh-mang.html",
+        "src/bai-hoc/nha-nguyen-khoi-nghia-le-van-khoi-xiem.html",
+        "src/bai-hoc/nha-nguyen-chu-quyen-hoang-sa-truong-sa.html"
+      ],
+      "score": "25-38% (2-3/8 tiêu chí)",
+      "missing": [
+        "CSS tag pills (.tag-su-kien, .tag-suy-luan, .tag-han-che) — cần thêm <style> block",
+        "Cấu trúc ev-block — cần chuyển đổi nội dung inline sang ev-block mới",
+        "Section 3 Gốc với ≥4 ev-block có tiêu đề riêng",
+        "Section 3 Độc — mỗi mục ≥80 ký tự phân tích",
+        "Section 3 Bài học ứng dụng (Ứng dụng 01, 02, 03) với h3 + insight box",
+        "Section Xem thêm với ≥3 liên kết"
+      ]
+    },
+    "medium_6_nhan_vat": {
+      "files": [
+        "src/nhan-vat/gia-long.html",
+        "src/nhan-vat/vua-minh-mang.html",
+        "src/nhan-vat/vua-thieu-tri.html",
+        "src/nhan-vat/nguyen-van-thanh.html",
+        "src/nhan-vat/le-van-duyet.html",
+        "src/nhan-vat/ton-that-thuyet.html"
+      ],
+      "score": "63-75% (5-6/8 tiêu chí)",
+      "missing": [
+        "Section 3 Độc — mỗi mục Tham/Sân/Si cần ≥80 ký tự thực chất",
+        "Section 3 Bài học ứng dụng (Ứng dụng 01, 02, 03) với h3 + insight box",
+        "Section Xem thêm với ≥3 liên kết (trừ gia-long.html đã có)"
+      ]
+    }
   },
   "architecture": {
-    "build_system": "Eleventy (npm run build → Wrote 181 files)",
+    "build_system": "Eleventy (npm run build → Wrote 202 files)",
     "layout": "Event Block Layout — .tag-su-kien, .tag-suy-luan, .ev-block, .quote-box",
     "validation": "scripts/check-content-quality.js — 8 tiêu chí, cần 8/8 để pass",
     "pipeline": "node scripts/check-content-quality.js → npm run build → git commit → git push",
@@ -53,33 +93,16 @@
     "7": "Section Bài học có đủ 3 bài",
     "8": "Section Xem thêm có ≥3 liên kết"
   },
-  "recent_upgrades": {
-    "batch_25_26": ["le-cung-hoang.html", "le-kinh-tong.html"],
-    "batch_27_28": ["trinh-tung.html", "trinh-xuan.html"],
-    "batch_29": ["trinh-cuong.html", "trinh-trang.html"],
-    "batch_30": ["mac-dang-doanh.html"],
-    "batch_31": ["mac-mau-hop.html"],
-    "batch_32": ["nguyen-phuc-nguyen.html"],
-    "batch_33_34_35": ["nguyen-phuc-lan.html", "nguyen-phuc-tan.html", "nguyen-phuc-chu.html"],
-    "extra": ["duong-van-nga.html"]
-  },
-  "open_files_user": [
-    "scripts/check-content-quality.js",
-    "src/nhan-vat/pham-ngu-lao.html",
-    "src/nhan-vat/ly-chieu-hoang.html",
-    "src/nhan-vat/ly-cong-uan.html",
-    "src/nhan-vat/le-hoan.html",
-    "src/nhan-vat/hai-ba-trung.html"
-  ],
-  "next_steps": [
-    "Tiếp tục viết lại các nhân vật lẻ theo yêu cầu của user",
-    "Workflow: viết file → check-content-quality → build → commit → push",
-    "Không cần scan lại toàn bộ thư mục — đã hoàn thành batch upgrade"
+  "next_session_todo": [
+    "PRIORITY 1: Viết lại 4 trang bài học (25-38%) — cần thêm cấu trúc ev-block + CSS + 3 bài học",
+    "PRIORITY 2: Nâng cấp 6 trang nhân vật (63-75%) — thêm 3 Độc sâu hơn + 3 bài học + Xem thêm",
+    "PRIORITY 3: Kiểm tra so-do-trieu-dinh trên browser sau khi Cloudflare clear cache"
   ],
   "key_patterns": {
     "thematic_angle": "Mỗi nhân vật có góc nhìn triết học/bài học độc đáo — không chỉ kể sự kiện",
     "quote_box_format": "Quote lịch sử + phân tích trong <span class='text-xs font-mono'>",
     "insight_box_format": "💡 [Bài học phổ quát áp dụng ngoài lịch sử]",
-    "ev_block_style": "border-top:none; padding-top:0; margin-top:0 cho ev-block đầu tiên"
+    "ev_block_style": "border-top:none; padding-top:0; margin-top:0 cho ev-block đầu tiên",
+    "nguyen_king_color": "#450a0a → #7f1d1d (dark red, titleStyle: #fca5a5, yearsStyle: #fca5a5)"
   }
 }
