@@ -113,6 +113,13 @@ const NODES_CONFIG = [
     period: "1771–1802 SCN",
     title: "Nhà Tây Sơn — Xóa Bỏ Ranh Giới Trịnh - Nguyễn",
     subtitle: "Đại phá 5 vạn quân Xiêm & 29 vạn quân Thanh · Canh tân Nôm học"
+  },
+  {
+    id: "nha_nguyen",
+    tagLabel: "Thực Dân Pháp Xâm Lược", tagColor: "#7f1d1d",
+    period: "1802–1945 SCN",
+    title: "Nhà Nguyễn — Triều Đại Cuối Cùng",
+    subtitle: "Thống nhất lãnh thổ · Đối đầu Pháp · Cần Vương · Mất chủ quyền 1884"
   }
 ];
 
@@ -130,7 +137,8 @@ const LINES_CONFIG = [
   { id: "line-ho-haule",  x1: "50%", y1: "1050", x2: "50%", y2: "1110" },
   { id: "line-haule-mac", x1: "50%", y1: "1160", x2: "50%", y2: "1220" },
   { id: "line-mac-trinh", x1: "50%", y1: "1270", x2: "50%", y2: "1330" },
-  { id: "line-trinh-tayson", x1: "50%", y1: "1380", x2: "50%", y2: "1440" }
+  { id: "line-trinh-tayson", x1: "50%", y1: "1380", x2: "50%", y2: "1440" },
+  { id: "line-tayson-nguyen", x1: "50%", y1: "1490", x2: "50%", y2: "1550" }
 ];
 
 // ─── PATTERNS: các quy luật lịch sử ───
@@ -627,6 +635,25 @@ const DATABASE = {
       { name: "Hoàng Hậu Ỷ Lan",    url: "nhan-vat/hoang-hau-y-lan.html" },
       { name: "Lý Nhân Tông",        url: "nhan-vat/ly-nhan-tong.html" },
       { name: "Lê Văn Thịnh",        url: "nhan-vat/le-van-thinh.html" }
+    ],
+    lineConnections: []
+  },
+
+  nha_nguyen: {
+    category: "Triều Đại",
+    title: "Nhà Nguyễn — Triều Đại Cuối Cùng",
+    period: "1802–1945 SCN",
+    desc: "Gia Long thống nhất đất nước sau 300 năm chia cắt Trịnh–Nguyễn và 30 năm nội chiến Tây Sơn. Nhà Nguyễn lập kinh đô Huế, đặt quốc hiệu Việt Nam (1804). Nhưng đúng vào lúc đó, chủ nghĩa thực dân phương Tây ập đến với pháo hạm và súng trường hiện đại. Dù có những danh tướng kiên cường như Nguyễn Tri Phương, Hoàng Diệu — và những nhà canh tân sáng suốt như Nguyễn Trường Tộ — triều đình Huế do dự, bảo thủ, từ chối đổi mới. Pháp lần lượt chiếm Nam Kỳ (1858–1867), Bắc Kỳ và Trung Kỳ (1883–1884). Phong trào Cần Vương (1885–1896) bùng lên rồi bị dập tắt. Năm 1945, Vua Bảo Đại thoái vị — khép lại 143 năm triều Nguyễn và nghìn năm phong kiến Việt Nam.",
+    lessons: [],
+    figures: [
+      { name: "Vua Tự Đức",         url: "nhan-vat/vua-tu-duc.html",         role: "king" },
+      { name: "Nguyễn Tri Phương",   url: "nhan-vat/nguyen-tri-phuong.html",  role: "official" },
+      { name: "Hoàng Diệu",          url: "nhan-vat/hoang-dieu.html",          role: "official" },
+      { name: "Phan Thanh Giản",     url: "nhan-vat/phan-thanh-gian.html",    role: "advisor" },
+      { name: "Trương Định",         url: "nhan-vat/truong-dinh.html",         role: "official" },
+      { name: "Nguyễn Trung Trực",   url: "nhan-vat/nguyen-trung-truc.html",  role: "official" },
+      { name: "Nguyễn Trường Tộ",    url: "nhan-vat/nguyen-truong-to.html",   role: "advisor" },
+      { name: "Tôn Thất Thuyết",     url: "nhan-vat/ton-that-thuyet.html",    role: "official" }
     ],
     lineConnections: []
   }

@@ -1004,5 +1004,30 @@
     "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
     "characterChipClass": "era-chip-char",
     "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"
+  },
+  {
+    "id": "era-nha-nguyen",
+    "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-[#7f1d1d] border-2 border-[#9b1c1c] flex items-center justify-center shadow-md\">\n                <div class=\"w-2 h-2 rounded-full bg-[#fca5a5]\"></div>\n              </div>\n            </div>",
+    "yearsClass": "text-[11px] font-mono text-[#a8a29e] mb-1.5 tracking-wide",
+    "years": "1802 – 1945 SCN",
+    "cardClass": "rounded-xl border border-[#9b1c1c]/30 bg-gradient-to-br from-[#fef2f2] to-[#faf9f7] p-5",
+    "cardStyle": "",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#9b1c1c] bg-[#fef2f2] border border-[#9b1c1c]/20 px-2 py-0.5 rounded\">ERA 13</span>\n                      <span class=\"text-[10px] text-[#78716c] font-medium\">Triều đại cuối cùng — Khí tiết & Bi kịch trước thực dân Pháp</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Nhà Nguyễn</div>\n                  </div>\n                </div>",
+    "dividerAfterHeader": false,
+    "groups": [],
+    "characters": [
+      { "href": "nhan-vat/vua-tu-duc.html",        "text": "Vua Tự Đức" },
+      { "href": "nhan-vat/nguyen-tri-phuong.html", "text": "Nguyễn Tri Phương" },
+      { "href": "nhan-vat/hoang-dieu.html",         "text": "Hoàng Diệu" },
+      { "href": "nhan-vat/phan-thanh-gian.html",   "text": "Phan Thanh Giản" },
+      { "href": "nhan-vat/truong-dinh.html",        "text": "Trương Định" },
+      { "href": "nhan-vat/nguyen-trung-truc.html",  "text": "Nguyễn Trung Trực" },
+      { "href": "nhan-vat/nguyen-truong-to.html",   "text": "Nguyễn Trường Tộ" },
+      { "href": "nhan-vat/ton-that-thuyet.html",   "text": "Tôn Thất Thuyết" }
+    ],
+    "characterLabel": "👤 Nhân vật",
+    "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+    "characterChipClass": "era-chip-char",
+    "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"
   }
 ]
