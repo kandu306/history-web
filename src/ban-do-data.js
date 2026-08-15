@@ -645,13 +645,22 @@ const DATABASE = {
     period: "1802–1945 SCN",
     desc: "Gia Long thống nhất đất nước sau 300 năm chia cắt Trịnh–Nguyễn và 30 năm nội chiến Tây Sơn. Nhà Nguyễn lập kinh đô Huế, đặt quốc hiệu Việt Nam (1804). Nhưng đúng vào lúc đó, chủ nghĩa thực dân phương Tây ập đến với pháo hạm và súng trường hiện đại. Dù có những danh tướng kiên cường như Nguyễn Tri Phương, Hoàng Diệu — và những nhà canh tân sáng suốt như Nguyễn Trường Tộ — triều đình Huế do dự, bảo thủ, từ chối đổi mới. Pháp lần lượt chiếm Nam Kỳ (1858–1867), Bắc Kỳ và Trung Kỳ (1883–1884). Phong trào Cần Vương (1885–1896) bùng lên rồi bị dập tắt. Năm 1945, Vua Bảo Đại thoái vị — khép lại 143 năm triều Nguyễn và nghìn năm phong kiến Việt Nam.",
     lessons: [
+      { name: "1802–1858 · Độc Lập, Thống Nhất & Đỉnh Cao", url: "bai-hoc/nha-nguyen-doc-lap-thong-nhat-dinh-cao.html" },
+      { name: "1831–32 · Đại Cải Cách 31 Tỉnh Minh Mạng", url: "bai-hoc/nha-nguyen-cai-cach-hanh-chinh-minh-mang.html" },
+      { name: "1833–35 · Khởi Nghĩa Lê Văn Khôi & Chống Xiêm", url: "bai-hoc/nha-nguyen-khoi-nghia-le-van-khoi-xiem.html" },
+      { name: "1816–1841 · Thực Thi Chủ Quyền Hoàng Sa–Trường Sa", url: "bai-hoc/nha-nguyen-chu-quyen-hoang-sa-truong-sa.html" },
       { name: "1858–1885 · Pháp Xâm Lược & Mất Nước", url: "bai-hoc/nha-nguyen-phap-xam-luoc.html" },
       { name: "1862–1884 · Chuỗi Hòa Ước Nhượng Bộ", url: "bai-hoc/nha-nguyen-hoa-uoc-bat-binh-dang.html" },
       { name: "1873 & 1883 · Hai Chiến Thắng Cầu Giấy", url: "bai-hoc/nha-nguyen-tran-ha-noi-cau-giay.html" },
       { name: "1885 · Biến Cố Kinh Thành & Dụ Cần Vương", url: "bai-hoc/nha-nguyen-bien-co-kinh-thanh-hue-can-vuong.html" }
     ],
     figures: [
-      { name: "Vua Tự Đức",         url: "nhan-vat/vua-tu-duc.html",         role: "king" },
+      { name: "Gia Long",             url: "nhan-vat/gia-long.html",           role: "king" },
+      { name: "Vua Minh Mạng",        url: "nhan-vat/vua-minh-mang.html",      role: "king" },
+      { name: "Vua Thiệu Trị",        url: "nhan-vat/vua-thieu-tri.html",      role: "king" },
+      { name: "Nguyễn Văn Thành",    url: "nhan-vat/nguyen-van-thanh.html",   role: "official" },
+      { name: "Lê Văn Duyệt",         url: "nhan-vat/le-van-duyet.html",       role: "official" },
+      { name: "Vua Tự Đức",          url: "nhan-vat/vua-tu-duc.html",         role: "king" },
       { name: "Nguyễn Tri Phương",   url: "nhan-vat/nguyen-tri-phuong.html",  role: "official" },
       { name: "Hoàng Diệu",          url: "nhan-vat/hoang-dieu.html",          role: "official" },
       { name: "Phan Thanh Giản",     url: "nhan-vat/phan-thanh-gian.html",    role: "advisor" },

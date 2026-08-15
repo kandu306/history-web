@@ -1089,6 +1089,24 @@ const DYNASTY_DATA = [
     columns: [
       {
         king: {
+          href: "nhan-vat/gia-long.html",
+          cardStyle: "border-color: rgba(155,28,28,0.5); background: linear-gradient(135deg, #3b0764 0%, #6b21a8 100%); color: white;",
+          crown: "👑",
+          title: "Gia Long — Hoàng Đế Khai Quốc", titleStyle: "color:#d8b4fe;",
+          name: "Gia Long (Nguyễn Ánh)", nameStyle: "color:white;",
+          realName: "Nguyễn Phúc Ánh · 1762 – 1820 SCN", realNameStyle: "color:#d6d3d1;",
+          years: "📅 Trị vì: 1802 – 1820 · 18 năm — Người thống nhất Việt Nam", yearsStyle: "background:rgba(0,0,0,0.4); color:#d8b4fe;",
+          note: "Sau 25 năm phục thù kiên trì, thống nhất lần đầu tiên lãnh thổ từ Cà Mau đến Cao Bằng. Lập mô hình '1 Trung ương + 2 Tổng trấn' để quản trị chuyển tiếp. Ban Bộ luật Gia Long (1815). Điểm đen: trả thù gia tộc Tây Sơn tàn bạo, vụ oan Nguyễn Văn Thành."
+        },
+        officials: [
+          { href: "nhan-vat/nguyen-van-thanh.html", iconClass: "icon-official", icon: "📜", roleClass: "role-official", role: "Công Thần Khai Quốc Số 1 · Tổng Trấn Bắc Thành", name: "Nguyễn Văn Thành", desc: "Văn võ toàn tài, phù trợ Nguyễn Ánh suốt 25 năm. Tổng trấn Bắc Thành đầu tiên, chủ trì soạn Bộ luật Gia Long 398 điều. Năm 1817, bị nghi oan và uống thuốc độc tự sát trong ngục để giữ danh tiết." },
+          { href: "nhan-vat/le-van-duyet.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Tứ Quân Tổng Trấn · Gia Định Thành", name: "Lê Văn Duyệt", desc: "Võ tướng số 1 triều Nguyễn, hai lần Tổng trấn Gia Định Thành. Đào kênh Vĩnh Tế, mở cửa giao thương, được dân tôn 'Đức Thượng Công'. Sau khi mất bị Minh Mạng truy tố — dẫn đến khởi nghĩa Lê Văn Khôi 1833." },
+          { href: "nhan-vat/vua-minh-mang.html", iconClass: "icon-king", icon: "👑", roleClass: "role-king", role: "Hoàng Đế Thứ Hai · 1820–1841", name: "Vua Minh Mạng", desc: "Kiến trúc sư cải cách 31 tỉnh (1831–32), thực thi chủ quyền Hoàng Sa–Trường Sa. Siêng năng nhất triều Nguyễn, dậy 5h sáng đọc tấu chương đến đêm. Điểm mù: bế quan tỏa cảng và cấm đạo khi thế giới đang thay đổi nhanh." },
+          { href: "nhan-vat/vua-thieu-tri.html", iconClass: "icon-king", icon: "👑", roleClass: "role-king", role: "Hoàng Đế Thứ Ba · 1841–1847", name: "Vua Thiệu Trị", desc: "Con trưởng Minh Mạng, trị vì 7 năm. Vua hiền hòa, thương dân, giảm thuế thường xuyên. Rút quân khỏi Trấn Tây Thành để tránh sa lầy. Năm 1847, tàu chiến Pháp bắn chìm 5 chiến thuyền tại Đà Nẵng — tín hiệu cuối cùng mà không ai hành động." }
+        ]
+      },
+      {
+        king: {
           href: "nhan-vat/vua-tu-duc.html",
           cardStyle: "border-color: rgba(155,28,28,0.6); background: linear-gradient(135deg, #450a0a 0%, #7f1d1d 100%); color: white;",
           crown: "👑",
