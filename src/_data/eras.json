@@ -1022,30 +1022,31 @@
         "items": [
           {
             "href": "bai-hoc/nha-nguyen-phap-xam-luoc.html",
-            "text": "Nhà Nguyễn & Pháp Xâm Lược (1858–1885)"
+            "text": "1858–1885 · Pháp Xâm Lược & Mất Nước"
           }
         ]
       },
       {
-        "label": "⚡ Sự kiện",
-        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#1d4ed8] mb-2.5",
-        "chipClass": "era-chip-event",
+        "label": "📅 Sự kiện nổi bật",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+        "chipClass": "era-chip-lesson",
         "items": [
           {
             "href": "bai-hoc/nha-nguyen-hoa-uoc-bat-binh-dang.html",
-            "text": "Chuỗi Hòa Ước Bất Bình Đẳng (1862–1884)"
+            "text": "1862–1884 · Chuỗi Hòa Ước Nhượng Bộ"
           },
           {
             "href": "bai-hoc/nha-nguyen-tran-ha-noi-cau-giay.html",
-            "text": "Trận Hà Nội & Hai Chiến Thắng Cầu Giấy (1873, 1883)"
+            "text": "1873 & 1883 · Hai Chiến Thắng Cầu Giấy"
           },
           {
             "href": "bai-hoc/nha-nguyen-bien-co-kinh-thanh-hue-can-vuong.html",
-            "text": "Biến Cố Kinh Thành Huế & Dụ Cần Vương (1885)"
+            "text": "1885 · Biến Cố Kinh Thành & Dụ Cần Vương"
           }
         ]
       }
     ],
+
     "characters": [
       { "href": "nhan-vat/vua-tu-duc.html",        "text": "Vua Tự Đức" },
       { "href": "nhan-vat/nguyen-tri-phuong.html", "text": "Nguyễn Tri Phương" },
