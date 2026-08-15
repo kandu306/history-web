@@ -1100,10 +1100,34 @@ const DYNASTY_DATA = [
         },
         officials: [
           { href: "nhan-vat/nguyen-van-thanh.html", iconClass: "icon-official", icon: "📜", roleClass: "role-official", role: "Công Thần Khai Quốc Số 1 · Tổng Trấn Bắc Thành", name: "Nguyễn Văn Thành", desc: "Văn võ toàn tài, phù trợ Nguyễn Ánh suốt 25 năm. Tổng trấn Bắc Thành đầu tiên, chủ trì soạn Bộ luật Gia Long 398 điều. Năm 1817, bị nghi oan và uống thuốc độc tự sát trong ngục để giữ danh tiết." },
-          { href: "nhan-vat/le-van-duyet.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Tứ Quân Tổng Trấn · Gia Định Thành", name: "Lê Văn Duyệt", desc: "Võ tướng số 1 triều Nguyễn, hai lần Tổng trấn Gia Định Thành. Đào kênh Vĩnh Tế, mở cửa giao thương, được dân tôn 'Đức Thượng Công'. Sau khi mất bị Minh Mạng truy tố — dẫn đến khởi nghĩa Lê Văn Khôi 1833." },
-          { href: "nhan-vat/vua-minh-mang.html", iconClass: "icon-king", icon: "👑", roleClass: "role-king", role: "Hoàng Đế Thứ Hai · 1820–1841", name: "Vua Minh Mạng", desc: "Kiến trúc sư cải cách 31 tỉnh (1831–32), thực thi chủ quyền Hoàng Sa–Trường Sa. Siêng năng nhất triều Nguyễn, dậy 5h sáng đọc tấu chương đến đêm. Điểm mù: bế quan tỏa cảng và cấm đạo khi thế giới đang thay đổi nhanh." },
-          { href: "nhan-vat/vua-thieu-tri.html", iconClass: "icon-king", icon: "👑", roleClass: "role-king", role: "Hoàng Đế Thứ Ba · 1841–1847", name: "Vua Thiệu Trị", desc: "Con trưởng Minh Mạng, trị vì 7 năm. Vua hiền hòa, thương dân, giảm thuế thường xuyên. Rút quân khỏi Trấn Tây Thành để tránh sa lầy. Năm 1847, tàu chiến Pháp bắn chìm 5 chiến thuyền tại Đà Nẵng — tín hiệu cuối cùng mà không ai hành động." }
+          { href: "nhan-vat/le-van-duyet.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Tứ Quân Tổng Trấn · Gia Định Thành", name: "Lê Văn Duyệt", desc: "Võ tướng số 1 triều Nguyễn, hai lần Tổng trấn Gia Định Thành. Đào kênh Vĩnh Tế, mở cửa giao thương, được dân tôn 'Đức Thượng Công'. Sau khi mất bị Minh Mạng truy tố — dẫn đến khởi nghĩa Lê Văn Khôi 1833." }
         ]
+      },
+      {
+        king: {
+          href: "nhan-vat/vua-minh-mang.html",
+          cardStyle: "border-color: rgba(155,28,28,0.5); background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 100%); color: white;",
+          crown: "👑",
+          title: "Vua Minh Mạng — Kiến Trúc Sư Đại Cải Cách", titleStyle: "color:#93c5fd;",
+          name: "Vua Minh Mạng", nameStyle: "color:white;",
+          realName: "Nguyễn Phúc Đảm · 1791 – 1841 SCN", realNameStyle: "color:#d6d3d1;",
+          years: "📅 Trị vì: 1820 – 1841 · 21 năm — Cải cách 31 tỉnh · Chủ quyền Hoàng Sa", yearsStyle: "background:rgba(0,0,0,0.4); color:#93c5fd;",
+          note: "Kiến trúc sư cải cách 31 tỉnh (1831–32) — mô hình hành chính ảnh hưởng đến ngày nay. Đánh tan 5 đạo quân Xiêm La (1834). Thực thi chủ quyền Hoàng Sa–Trường Sa bài bản nhất lịch sử. Siêng năng nhất triều Nguyễn. Điểm mù lớn nhất: bế quan tỏa cảng và cấm đạo khi thế giới đang thay đổi."
+        },
+        officials: []
+      },
+      {
+        king: {
+          href: "nhan-vat/vua-thieu-tri.html",
+          cardStyle: "border-color: rgba(155,28,28,0.4); background: linear-gradient(135deg, #064e3b 0%, #065f46 100%); color: white;",
+          crown: "👑",
+          title: "Vua Thiệu Trị — Vị Vua Hiền Hòa & Cơ Hội Bị Bỏ Lỡ", titleStyle: "color:#6ee7b7;",
+          name: "Vua Thiệu Trị", nameStyle: "color:white;",
+          realName: "Nguyễn Phúc Miên Tông · 1807 – 1847 SCN", realNameStyle: "color:#d6d3d1;",
+          years: "📅 Trị vì: 1841 – 1847 · 7 năm — Biến cố Đà Nẵng 1847", yearsStyle: "background:rgba(0,0,0,0.4); color:#6ee7b7;",
+          note: "Con trưởng Minh Mạng. Rút quân khỏi Trấn Tây Thành (Campuchia) tránh sa lầy — quyết định đúng. Thương dân, giảm thuế thường xuyên. Năm 1847, tàu chiến Pháp bắn chìm 5 chiến thuyền tại Đà Nẵng — tín hiệu cảnh báo cuối cùng trước đại biến."
+        },
+        officials: []
       },
       {
         king: {
