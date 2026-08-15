@@ -1078,6 +1078,37 @@ const DYNASTY_DATA = [
         ]
       }
     ]
+  },
+
+  {
+    id: "era-nha-nguyen",
+    label: "Nhà Nguyễn · Triều Đại Cuối Cùng & Pháp Xâm Lược (1802 – 1945 SCN)",
+    labelStyle: "background: #7f1d1d;",
+    eraBlockStyle: "border-top: 2px dashed rgba(155,28,28,0.4); padding-top: 2rem;",
+    dividerBefore: null,
+    columns: [
+      {
+        king: {
+          href: "nhan-vat/vua-tu-duc.html",
+          cardStyle: "border-color: rgba(155,28,28,0.6); background: linear-gradient(135deg, #450a0a 0%, #7f1d1d 100%); color: white;",
+          crown: "👑",
+          title: "Vua Tự Đức — Triều Đại Bi Kịch Nhất", titleStyle: "color:#fca5a5;",
+          name: "Vua Tự Đức", nameStyle: "color:white;",
+          realName: "Nguyễn Phúc Thì · 1829 – 1883 SCN", realNameStyle: "color:#d6d3d1;",
+          years: "📅 Trị vì: 1847 – 1883 · 36 năm — triều đại dài nhất nhà Nguyễn", yearsStyle: "background:rgba(0,0,0,0.4); color:#fca5a5;",
+          note: "Trị vì 36 năm nhưng phải đối diện với cuộc xâm lược của Pháp từ 1858. Bảo thủ Nho giáo, từ chối canh tân, ký 2 hòa ước nhượng bộ (1862, 1874). Mất ngay trước khi Pháp ép ký Hòa ước Harmand (1883) — mất nước chính thức."
+        },
+        officials: [
+          { href: "nhan-vat/nguyen-tri-phuong.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Danh tướng · Tuẫn tiết 1873", name: "Nguyễn Tri Phương", desc: "Chỉ huy phòng thủ Đà Nẵng & Hà Nội. Bị thương khi Pháp chiếm Hà Nội lần 1 (1873), từ chối băng bó và ăn uống, tuẫn tiết giữ khí tiết không hợp tác với kẻ thù." },
+          { href: "nhan-vat/hoang-dieu.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Tổng đốc Hà Nội · Tuẫn tiết 1882", name: "Hoàng Diệu", desc: "Chỉ huy bảo vệ thành Hà Nội lần 2 (1882). Khi kho thuốc súng cháy và cổng thành thất thủ, viết di thư bằng máu tạ tội với vua rồi thắt cổ tự sát giữ khí tiết." },
+          { href: "nhan-vat/phan-thanh-gian.html", iconClass: "icon-advisor", icon: "📜", roleClass: "role-advisor", role: "Đại thần · Ký Hòa ước 1862", name: "Phan Thanh Giản", desc: "Đại thần ký Hòa ước Nhâm Tuất 1862, nhường 3 tỉnh Đông Nam Kỳ cho Pháp. Sau khi mất nốt 3 tỉnh Tây Nam Kỳ (1867), uống thuốc độc tự sát — không ăn trong 17 ngày trước khi mất." },
+          { href: "nhan-vat/truong-dinh.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Bình Tây Đại Nguyên Soái", name: "Trương Định", desc: "Chống lệnh bãi binh của triều đình, ở lại kháng Pháp tại Nam Kỳ. Được dân tôn 'Bình Tây Đại Nguyên Soái'. Hy sinh năm 1864 — biểu tượng ý chí dân tộc độc lập với triều đình." },
+          { href: "nhan-vat/nguyen-trung-truc.html", iconClass: "icon-official", icon: "🔥", roleClass: "role-official", role: "Anh hùng · Đốt tàu Esperance", name: "Nguyễn Trung Trực", desc: "Đốt cháy tàu chiến Pháp Esperance (1861), chiếm đồn Rạch Giá (1868). Bị bắt và xử tử, để lại câu nói bất hủ: 'Bao giờ người Tây nhổ hết cỏ nước Nam mới hết người Nam đánh Tây'." },
+          { href: "nhan-vat/nguyen-truong-to.html", iconClass: "icon-advisor", icon: "📜", roleClass: "role-advisor", role: "Nhà canh tân · 58 điều trần", name: "Nguyễn Trường Tộ", desc: "Dâng 58+ bản điều trần canh tân toàn diện (1863–1871) — tương tự Minh Trị Duy Tân của Nhật. Bị Tự Đức gạt bỏ vì bảo thủ Nho giáo. Đến khi mất nước không còn cơ hội thứ hai." },
+          { href: "nhan-vat/ton-that-thuyet.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Thượng thư Bộ Binh · Phe Chủ chiến", name: "Tôn Thất Thuyết", desc: "Linh hồn phe Chủ chiến. Bí mật xây căn cứ Tân Sở trước, tấn công đồn Mang Cá (1885), đưa Vua Hàm Nghi ban Dụ Cần Vương — châm ngòi phong trào kháng Pháp toàn quốc 10 năm." }
+        ]
+      }
+    ]
   }
 
 ];

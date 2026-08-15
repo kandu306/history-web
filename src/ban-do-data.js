@@ -644,7 +644,12 @@ const DATABASE = {
     title: "Nhà Nguyễn — Triều Đại Cuối Cùng",
     period: "1802–1945 SCN",
     desc: "Gia Long thống nhất đất nước sau 300 năm chia cắt Trịnh–Nguyễn và 30 năm nội chiến Tây Sơn. Nhà Nguyễn lập kinh đô Huế, đặt quốc hiệu Việt Nam (1804). Nhưng đúng vào lúc đó, chủ nghĩa thực dân phương Tây ập đến với pháo hạm và súng trường hiện đại. Dù có những danh tướng kiên cường như Nguyễn Tri Phương, Hoàng Diệu — và những nhà canh tân sáng suốt như Nguyễn Trường Tộ — triều đình Huế do dự, bảo thủ, từ chối đổi mới. Pháp lần lượt chiếm Nam Kỳ (1858–1867), Bắc Kỳ và Trung Kỳ (1883–1884). Phong trào Cần Vương (1885–1896) bùng lên rồi bị dập tắt. Năm 1945, Vua Bảo Đại thoái vị — khép lại 143 năm triều Nguyễn và nghìn năm phong kiến Việt Nam.",
-    lessons: [],
+    lessons: [
+      { name: "1858–1885 · Pháp Xâm Lược & Mất Nước", url: "bai-hoc/nha-nguyen-phap-xam-luoc.html" },
+      { name: "1862–1884 · Chuỗi Hòa Ước Nhượng Bộ", url: "bai-hoc/nha-nguyen-hoa-uoc-bat-binh-dang.html" },
+      { name: "1873 & 1883 · Hai Chiến Thắng Cầu Giấy", url: "bai-hoc/nha-nguyen-tran-ha-noi-cau-giay.html" },
+      { name: "1885 · Biến Cố Kinh Thành & Dụ Cần Vương", url: "bai-hoc/nha-nguyen-bien-co-kinh-thanh-hue-can-vuong.html" }
+    ],
     figures: [
       { name: "Vua Tự Đức",         url: "nhan-vat/vua-tu-duc.html",         role: "king" },
       { name: "Nguyễn Tri Phương",   url: "nhan-vat/nguyen-tri-phuong.html",  role: "official" },
