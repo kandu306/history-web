@@ -1090,12 +1090,12 @@ const DYNASTY_DATA = [
       {
         king: {
           href: "nhan-vat/gia-long.html",
-          cardStyle: "border-color: rgba(155,28,28,0.5); background: linear-gradient(135deg, #3b0764 0%, #6b21a8 100%); color: white;",
+          cardStyle: "border-color: rgba(155,28,28,0.6); background: linear-gradient(135deg, #450a0a 0%, #7f1d1d 100%); color: white;",
           crown: "👑",
-          title: "Gia Long — Hoàng Đế Khai Quốc", titleStyle: "color:#d8b4fe;",
+          title: "Gia Long — Hoàng Đế Khai Quốc", titleStyle: "color:#fca5a5;",
           name: "Gia Long (Nguyễn Ánh)", nameStyle: "color:white;",
           realName: "Nguyễn Phúc Ánh · 1762 – 1820 SCN", realNameStyle: "color:#d6d3d1;",
-          years: "📅 Trị vì: 1802 – 1820 · 18 năm — Người thống nhất Việt Nam", yearsStyle: "background:rgba(0,0,0,0.4); color:#d8b4fe;",
+          years: "📅 Trị vì: 1802 – 1820 · 18 năm — Người thống nhất Việt Nam", yearsStyle: "background:rgba(0,0,0,0.4); color:#fca5a5;",
           note: "Sau 25 năm phục thù kiên trì, thống nhất lần đầu tiên lãnh thổ từ Cà Mau đến Cao Bằng. Lập mô hình '1 Trung ương + 2 Tổng trấn' để quản trị chuyển tiếp. Ban Bộ luật Gia Long (1815). Điểm đen: trả thù gia tộc Tây Sơn tàn bạo, vụ oan Nguyễn Văn Thành."
         },
         officials: [
@@ -1106,12 +1106,12 @@ const DYNASTY_DATA = [
       {
         king: {
           href: "nhan-vat/vua-minh-mang.html",
-          cardStyle: "border-color: rgba(155,28,28,0.5); background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 100%); color: white;",
+          cardStyle: "border-color: rgba(155,28,28,0.6); background: linear-gradient(135deg, #450a0a 0%, #7f1d1d 100%); color: white;",
           crown: "👑",
-          title: "Vua Minh Mạng — Kiến Trúc Sư Đại Cải Cách", titleStyle: "color:#93c5fd;",
+          title: "Vua Minh Mạng — Kiến Trúc Sư Đại Cải Cách", titleStyle: "color:#fca5a5;",
           name: "Vua Minh Mạng", nameStyle: "color:white;",
           realName: "Nguyễn Phúc Đảm · 1791 – 1841 SCN", realNameStyle: "color:#d6d3d1;",
-          years: "📅 Trị vì: 1820 – 1841 · 21 năm — Cải cách 31 tỉnh · Chủ quyền Hoàng Sa", yearsStyle: "background:rgba(0,0,0,0.4); color:#93c5fd;",
+          years: "📅 Trị vì: 1820 – 1841 · 21 năm — Cải cách 31 tỉnh · Chủ quyền Hoàng Sa", yearsStyle: "background:rgba(0,0,0,0.4); color:#fca5a5;",
           note: "Kiến trúc sư cải cách 31 tỉnh (1831–32) — mô hình hành chính ảnh hưởng đến ngày nay. Đánh tan 5 đạo quân Xiêm La (1834). Thực thi chủ quyền Hoàng Sa–Trường Sa bài bản nhất lịch sử. Siêng năng nhất triều Nguyễn. Điểm mù lớn nhất: bế quan tỏa cảng và cấm đạo khi thế giới đang thay đổi."
         },
         officials: []
@@ -1119,12 +1119,12 @@ const DYNASTY_DATA = [
       {
         king: {
           href: "nhan-vat/vua-thieu-tri.html",
-          cardStyle: "border-color: rgba(155,28,28,0.4); background: linear-gradient(135deg, #064e3b 0%, #065f46 100%); color: white;",
+          cardStyle: "border-color: rgba(155,28,28,0.6); background: linear-gradient(135deg, #450a0a 0%, #7f1d1d 100%); color: white;",
           crown: "👑",
-          title: "Vua Thiệu Trị — Vị Vua Hiền Hòa & Cơ Hội Bị Bỏ Lỡ", titleStyle: "color:#6ee7b7;",
+          title: "Vua Thiệu Trị — Vị Vua Hiền Hòa & Cơ Hội Bị Bỏ Lỡ", titleStyle: "color:#fca5a5;",
           name: "Vua Thiệu Trị", nameStyle: "color:white;",
           realName: "Nguyễn Phúc Miên Tông · 1807 – 1847 SCN", realNameStyle: "color:#d6d3d1;",
-          years: "📅 Trị vì: 1841 – 1847 · 7 năm — Biến cố Đà Nẵng 1847", yearsStyle: "background:rgba(0,0,0,0.4); color:#6ee7b7;",
+          years: "📅 Trị vì: 1841 – 1847 · 7 năm — Biến cố Đà Nẵng 1847", yearsStyle: "background:rgba(0,0,0,0.4); color:#fca5a5;",
           note: "Con trưởng Minh Mạng. Rút quân khỏi Trấn Tây Thành (Campuchia) tránh sa lầy — quyết định đúng. Thương dân, giảm thuế thường xuyên. Năm 1847, tàu chiến Pháp bắn chìm 5 chiến thuyền tại Đà Nẵng — tín hiệu cảnh báo cuối cùng trước đại biến."
         },
         officials: []
