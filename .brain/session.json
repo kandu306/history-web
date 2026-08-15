@@ -1,103 +1,85 @@
 {
-  "session_id": "6915d767-90ba-4f35-b3e7-1e82db84a718",
-  "saved_at": "2026-06-29T16:31:00+07:00",
-  "trigger": "user_request (/save-brain)",
-
-  "last_completed": [
-    "Phiên 29/06 — Nhà Hậu Lê (10 file new-raw → project):",
-    "  - Tạo 8 nhân vật nhan-vat/: le-thai-tong.html (#52a), le-sat.html (#52b), nguyen-thi-lo.html (#52c), nguyen-thi-anh.html (#52d), le-thanh-tong.html (#52), luong-the-vinh.html (#52e), than-nhan-trung.html (#52f), tra-toan.html (#52g)",
-    "  - Tạo 2 bài học bai-hoc/: nha-hau-le-tong-quan.html, nha-hau-le-chap2-dinh-cao-hoang-kim.html",
-    "  - Cập nhật index.html: thêm chip link cho 8 nhân vật + 2 bài học; sắp xếp đúng thứ tự (Tổng Quan → 1418-1427 → 1428-1497)",
-    "  - Cập nhật ban-do.html: thêm 8 figure Nhà Hậu Lê + 2 lesson; fix Nguyễn Thị Lộ role queen→official",
-    "  - Cập nhật so-do-trieu-dinh.html: thêm cột Lê Thái Tông (Lê Sát, Nguyễn Thị Anh, Nguyễn Thị Lộ) + cột Lê Thánh Tông (Lương Thế Vinh, Thân Nhân Trung, Trà Toàn)",
-    "  - Xóa tất cả 10 file trong new-raw/ sau khi xử lý",
-    "  - Git push: commit 5948507 (10 files) + 1c02128 (3 fixes)"
+  "project": "history-web",
+  "saved_at": "2026-08-15T16:54:17+07:00",
+  "trigger": "user_command_save_brain",
+  "git_branch": "main",
+  "last_commits": [
+    "10fed1b feat: Add Nha Nguyen era - 8 new character pages",
+    "21e8c1f refactor: nang cap Duong Van Nga",
+    "dba503e refactor: nang cap 3 chua Nguyen cuoi",
+    "0a5daee refactor: nang cap Nguyen Phuc Nguyen",
+    "4e163a5 refactor: nang cap Mac Mau Hop",
+    "5931544 refactor: nang cap Mac Dang Doanh"
   ],
-
-  "pending": [],
-
-  "key_rules_this_session": {
-    "template": "Tailwind CSS + Be Vietnam Pro + Noto Serif — shared/styles.css + shared/scripts.js",
-    "card_hierarchy": "Chỉ vua mới có dynasty-column; quan/tướng/công chúa đặt trong official-list của vua tương ứng",
-    "nha_tran_layout": "Một tree-row liên tục — không ngắt quãng như Nhà Lý",
-    "new_raw_workflow": "Anh để file vào new-raw/ → em đọc → tạo nhan-vat/ hoặc bai-hoc/ → update so-do + index + ban-do → xóa raw → git push",
-    "nav_anchors": "ban-do.html dùng index.html#trieu-dai (KHÔNG phải #nhan-vat)",
-    "language": "Không dùng từ tiếng Anh trong nội dung trang web",
-    "figure_roles": "Mỗi figure trong ban-do.html PHẢI có role: king/queen/official/advisor/enemy — Nguyễn Thị Lộ là official (Lễ Nghi Học Sĩ), KHÔNG phải queen",
-    "workflow_4_files": "Khi thêm nhân vật/bài học mới: cập nhật đủ 4 file (index, ban-do, so-do, docs/ideas.md)",
-    "lesson_layout_hau_le": "Nhà Hậu Lê: bài học chip thứ tự = Tổng Quan → theo năm tăng dần",
-    "so_do_accordion": "so-do-trieu-dinh.html dùng JS accordion: quan lại ẩn mặc định, click button '👥 X nhân vật' để mở/đóng",
-    "hau_le_color": "Nhà Hậu Lê dùng xanh lá đậm: border-color rgba(22,101,52,0.5), bg #030a06→#0a1f0e, accent #86efac",
-    "nguyen_thi_lo_role": "Nguyễn Thị Lộ = Lễ Nghi Học Sĩ (học quan triều đình) — KHÔNG phải hoàng hậu/nhiếp chính. Role: official/advisor"
+  "summary": {
+    "working_on": "Nâng cấp toàn bộ nội dung nhân vật lịch sử sang Event Block Layout",
+    "status": "COMPLETED - Toàn bộ batch nâng cấp hoàn thành. Đang tiếp tục thêm nhân vật lẻ theo yêu cầu.",
+    "total_files": 137,
+    "files_upgraded": "115+ file đã nâng cấp lên Event Block Layout",
+    "last_file_done": "duong-van-nga.html (commit 21e8c1f)",
+    "progress_percent": 100
   },
-
-  "dynasty_progress": {
-    "nha_ly": {
-      "status": "✅ Hoàn thành",
-      "vua": ["Lý Thái Tổ", "Lý Thái Tông", "Lý Thánh Tông", "Lý Nhân Tông", "Lý Thần Tông", "Lý Anh Tông", "Lý Cao Tông", "Lý Huệ Tông"],
-      "quan_tuong": ["Đào Cam Mộc", "Lưu Cơ", "Nguyễn Đạo Thanh", "Hoàng Hậu Ỷ Lan", "Lý Thường Kiệt", "Lê Văn Thịnh", "Nguyễn Minh Không", "Tô Hiến Thành", "Nùng Trí Cao"]
-    },
-    "nha_tran": {
-      "status": "✅ Chap1 + Chap2 + Chap3 + Chap4 hoàn thành",
-      "total_nhan_vat": 31,
-      "total_bai_hoc": 13,
-      "vua": [
-        "Trần Thái Tông", "Trần Thánh Tông", "Trần Nhân Tông", "Trần Anh Tông",
-        "Trần Minh Tông", "Trần Hiến Tông (#48a)",
-        "Trần Dụ Tông", "Dương Nhật Lễ", "Trần Nghệ Tông",
-        "Bộ Ba Vua Bù Nhìn (#49b — Phế Đế, Thuận Tông, Thiếu Đế)"
-      ],
-      "quan_tuong": [
-        "Trần Thủ Độ", "Trần Liễu", "Lê Phụ Trần",
-        "Trần Hưng Đạo", "Trần Quang Khải", "Trần Khánh Dư",
-        "Trần Quốc Toản", "Trần Ích Tắc", "Trần Nhật Duật",
-        "Phạm Ngũ Lão", "Trần Bình Trọng", "Yết Kiêu & Dã Tượng",
-        "Đoàn Nhữ Hài", "Mạc Đĩnh Chi",
-        "Chu Văn An (advisor)", "Trần Khát Chân"
-      ],
-      "nu_nhan": ["Lý Chiêu Hoàng", "Trần Thị Dung", "An Tư Công Chúa", "Huyền Trân Công Chúa"],
-      "ke_thu": ["Trần Ích Tắc", "Chế Bồng Nga"],
-      "bai_hoc_placeholder_can_fill": [
-        "ky-nguyen-sa-doa-tran-du-tong.html",
-        "bien-co-duong-nhat-le.html",
-        "su-nhu-nuoc-tran-nghe-tong.html",
-        "cu-chot-ha-cua-ho-quy-ly.html"
-      ]
-    },
-    "nha_ho": {
-      "status": "Chưa làm",
-      "nhan_vat_can_them": ["Hồ Quý Ly"]
-    },
-    "nha_hau_le": {
-      "status": "✅ Lê Sơ (1428–1497) hoàn thành — Lê Trung Hưng chưa làm",
-      "total_nhan_vat": 8,
-      "total_bai_hoc": 2,
-      "vua": ["Lê Lợi (#51)", "Lê Thái Tông (#52a)", "Lê Thánh Tông (#52)"],
-      "quan_tuong": [
-        "Nguyễn Trãi (#51a)", "Lê Lai (#51b)", "Nguyễn Chích (#51c)",
-        "Lê Sát (#52b)", "Nguyễn Thị Lộ (#52c — Lễ Nghi Học Sĩ)",
-        "Lương Thế Vinh (#52e)", "Thân Nhân Trung (#52f)"
-      ],
-      "hau_cung": ["Nguyễn Thị Anh (#52d — Hoàng hậu nhiếp chính)"],
-      "ke_thu": ["Trà Toàn (#52g — Vua Chiêm Thành)"],
-      "bai_hoc": [
-        "hau-le-khang-chien-chong-minh.html — 1418-1427 (✅ cũ)",
-        "nha-hau-le-tong-quan.html — Tổng Quan 1428-1789 (✅ mới)",
-        "nha-hau-le-chap2-dinh-cao-hoang-kim.html — 1428-1497 (✅ mới)"
-      ],
-      "can_lam_tiep": [
-        "Lê Trung Hưng (1533-1789): Chúa Trịnh, Chúa Nguyễn, Trịnh-Nguyễn phân tranh",
-        "Nhà Mạc (1527-1592): Mạc Đăng Dung"
-      ]
-    }
+  "architecture": {
+    "build_system": "Eleventy (npm run build → Wrote 181 files)",
+    "layout": "Event Block Layout — .tag-su-kien, .tag-suy-luan, .ev-block, .quote-box",
+    "validation": "scripts/check-content-quality.js — 8 tiêu chí, cần 8/8 để pass",
+    "pipeline": "node scripts/check-content-quality.js → npm run build → git commit → git push",
+    "repo": "https://github.com/kandu306/history-web.git",
+    "deploy": "Cloudflare Pages (auto-deploy từ main branch)"
   },
-
-  "site_stats": {
-    "nhan_vat_total": 39,
-    "bai_hoc_total": 15,
-    "last_git_commit": "1c02128 — fix index bai-hoc order, ban-do Nguyen Thi Lo role, so-do add Le Thai Tong + Le Thanh Tong",
-    "live_url": "https://kandu306.github.io/history-web/"
+  "content_structure": {
+    "required_sections": [
+      "Chân dung lịch sử (dark card)",
+      "01 — 3 Gốc (Trí tuệ · Đạo đức · Nghị lực)",
+      "02 — 3 Độc (Tham lam · Sân giận · Si mê)",
+      "03 — Di sản & Bài học (3 góc nhìn sâu với insight box)",
+      "04 — Xem thêm (≥3 liên kết)"
+    ],
+    "required_elements": [
+      "CSS: .tag-su-kien, .tag-suy-luan, .tag-han-che",
+      "Layout: .ev-block (≥4 trong section 3 Gốc)",
+      "Quote box: ≥1 .quote-box với phân tích trong span.text-xs",
+      "Frontmatter: title, description, breadcrumb",
+      "NO: 'Phán quyết nhanh' section"
+    ]
   },
-
-  "next_session_resume": "Nhà Hậu Lê Lê Sơ đã hoàn thành (8 nhân vật, 2 bài học mới + 1 cũ). Bước tiếp: 1) Fill content cho 4 bài học placeholder Nhà Trần Chap4, 2) Làm Nhà Hồ (Hồ Quý Ly), 3) Làm Lê Trung Hưng (Chúa Trịnh/Nguyễn). Workflow tiếp tục: anh bỏ file vào new-raw/ → em xử lý theo quy trình chuẩn."
+  "quality_check_criteria": {
+    "1": "Không còn 'Phán quyết nhanh'",
+    "2": "Có CSS tag pills (.tag-su-kien, .tag-suy-luan)",
+    "3": "Có class .ev-block",
+    "4": "Có ít nhất 1 quote-box",
+    "5": "Section 3 Gốc có ít nhất 4 ev-block",
+    "6": "Section 3 Độc có phân tích đủ dài (≥100 ký tự mỗi mục)",
+    "7": "Section Bài học có đủ 3 bài",
+    "8": "Section Xem thêm có ≥3 liên kết"
+  },
+  "recent_upgrades": {
+    "batch_25_26": ["le-cung-hoang.html", "le-kinh-tong.html"],
+    "batch_27_28": ["trinh-tung.html", "trinh-xuan.html"],
+    "batch_29": ["trinh-cuong.html", "trinh-trang.html"],
+    "batch_30": ["mac-dang-doanh.html"],
+    "batch_31": ["mac-mau-hop.html"],
+    "batch_32": ["nguyen-phuc-nguyen.html"],
+    "batch_33_34_35": ["nguyen-phuc-lan.html", "nguyen-phuc-tan.html", "nguyen-phuc-chu.html"],
+    "extra": ["duong-van-nga.html"]
+  },
+  "open_files_user": [
+    "scripts/check-content-quality.js",
+    "src/nhan-vat/pham-ngu-lao.html",
+    "src/nhan-vat/ly-chieu-hoang.html",
+    "src/nhan-vat/ly-cong-uan.html",
+    "src/nhan-vat/le-hoan.html",
+    "src/nhan-vat/hai-ba-trung.html"
+  ],
+  "next_steps": [
+    "Tiếp tục viết lại các nhân vật lẻ theo yêu cầu của user",
+    "Workflow: viết file → check-content-quality → build → commit → push",
+    "Không cần scan lại toàn bộ thư mục — đã hoàn thành batch upgrade"
+  ],
+  "key_patterns": {
+    "thematic_angle": "Mỗi nhân vật có góc nhìn triết học/bài học độc đáo — không chỉ kể sự kiện",
+    "quote_box_format": "Quote lịch sử + phân tích trong <span class='text-xs font-mono'>",
+    "insight_box_format": "💡 [Bài học phổ quát áp dụng ngoài lịch sử]",
+    "ev_block_style": "border-top:none; padding-top:0; margin-top:0 cho ev-block đầu tiên"
+  }
 }

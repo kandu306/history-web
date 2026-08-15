@@ -1021,6 +1021,10 @@
         "chipClass": "era-chip-lesson",
         "items": [
           {
+            "href": "bai-hoc/nha-nguyen-doc-lap-thong-nhat-dinh-cao.html",
+            "text": "1802–1858 · Độc Lập, Thống Nhất & Đỉnh Cao"
+          },
+          {
             "href": "bai-hoc/nha-nguyen-phap-xam-luoc.html",
             "text": "1858–1885 · Pháp Xâm Lược & Mất Nước"
           }
@@ -1031,6 +1035,18 @@
         "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
         "chipClass": "era-chip-lesson",
         "items": [
+          {
+            "href": "bai-hoc/nha-nguyen-cai-cach-hanh-chinh-minh-mang.html",
+            "text": "1831–1832 · Đại Cải Cách 31 Tỉnh Minh Mạng"
+          },
+          {
+            "href": "bai-hoc/nha-nguyen-khoi-nghia-le-van-khoi-xiem.html",
+            "text": "1833–1835 · Khởi Nghĩa Lê Văn Khôi & Chống Xiêm"
+          },
+          {
+            "href": "bai-hoc/nha-nguyen-chu-quyen-hoang-sa-truong-sa.html",
+            "text": "1816–1841 · Thực Thi Chủ Quyền Hoàng Sa–Trường Sa"
+          },
           {
             "href": "bai-hoc/nha-nguyen-hoa-uoc-bat-binh-dang.html",
             "text": "1862–1884 · Chuỗi Hòa Ước Nhượng Bộ"
@@ -1048,6 +1064,11 @@
     ],
 
     "characters": [
+      { "href": "nhan-vat/gia-long.html",           "text": "Gia Long" },
+      { "href": "nhan-vat/vua-minh-mang.html",      "text": "Vua Minh Mạng" },
+      { "href": "nhan-vat/vua-thieu-tri.html",      "text": "Vua Thiệu Trị" },
+      { "href": "nhan-vat/nguyen-van-thanh.html",   "text": "Nguyễn Văn Thành" },
+      { "href": "nhan-vat/le-van-duyet.html",       "text": "Lê Văn Duyệt" },
       { "href": "nhan-vat/vua-tu-duc.html",        "text": "Vua Tự Đức" },
       { "href": "nhan-vat/nguyen-tri-phuong.html", "text": "Nguyễn Tri Phương" },
       { "href": "nhan-vat/hoang-dieu.html",         "text": "Hoàng Diệu" },

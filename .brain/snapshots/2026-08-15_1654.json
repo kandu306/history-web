@@ -1,0 +1,10 @@
+{
+  "snapshot_at": "2026-08-15T16:54:17+07:00",
+  "trigger": "user_command_save_brain",
+  "project": "history-web",
+  "git_head": "10fed1b",
+  "total_nhan_vat_files": 137,
+  "upgrade_status": "COMPLETE - Toàn bộ 115+ file đã upgrade Event Block Layout",
+  "last_done": "duong-van-nga.html",
+  "resume_instructions": "Dùng /recap trong session mới để khôi phục context. File gốc tại d:\\01. Projects\\history-web. Workflow: viết HTML → node scripts/check-content-quality.js → npm run build → git commit → git push"
+}
