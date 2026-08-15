@@ -1014,7 +1014,38 @@
     "cardStyle": "",
     "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#9b1c1c] bg-[#fef2f2] border border-[#9b1c1c]/20 px-2 py-0.5 rounded\">ERA 13</span>\n                      <span class=\"text-[10px] text-[#78716c] font-medium\">Triều đại cuối cùng — Khí tiết & Bi kịch trước thực dân Pháp</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Nhà Nguyễn</div>\n                  </div>\n                </div>",
     "dividerAfterHeader": false,
-    "groups": [],
+    "groups": [
+      {
+        "label": "📖 Bài học",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/nha-nguyen-phap-xam-luoc.html",
+            "text": "Nhà Nguyễn & Pháp Xâm Lược (1858–1885)"
+          }
+        ]
+      },
+      {
+        "label": "⚡ Sự kiện",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#1d4ed8] mb-2.5",
+        "chipClass": "era-chip-event",
+        "items": [
+          {
+            "href": "bai-hoc/nha-nguyen-hoa-uoc-bat-binh-dang.html",
+            "text": "Chuỗi Hòa Ước Bất Bình Đẳng (1862–1884)"
+          },
+          {
+            "href": "bai-hoc/nha-nguyen-tran-ha-noi-cau-giay.html",
+            "text": "Trận Hà Nội & Hai Chiến Thắng Cầu Giấy (1873, 1883)"
+          },
+          {
+            "href": "bai-hoc/nha-nguyen-bien-co-kinh-thanh-hue-can-vuong.html",
+            "text": "Biến Cố Kinh Thành Huế & Dụ Cần Vương (1885)"
+          }
+        ]
+      }
+    ],
     "characters": [
       { "href": "nhan-vat/vua-tu-duc.html",        "text": "Vua Tự Đức" },
       { "href": "nhan-vat/nguyen-tri-phuong.html", "text": "Nguyễn Tri Phương" },
