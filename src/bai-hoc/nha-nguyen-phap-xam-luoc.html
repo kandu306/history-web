@@ -6,14 +6,14 @@ navLabel: "1858 - 1885"
 ---
 <style>
   .rule-thin { border: none; border-top: 1px solid #e7e5e4; }
-  .timeline-dot { width: 10px; height: 10px; border-radius: 50%; background: #9b1c1c; flex-shrink: 0; margin-top: 5px; }
-  .timeline-line { width: 1px; background: #e7e5e4; flex-shrink: 0; margin: 0 4.5px; }
-  .lesson-box { background: #faf9f7; border: 1px solid #e7e5e4; border-radius: 0.75rem; padding: 1.25rem 1.5rem; }
-  .tag-pill { display:inline-block; font-size:10px; font-family:monospace; font-weight:700; letter-spacing:.12em; text-transform:uppercase; padding:2px 8px; border-radius:4px; background:#fef2f2; color:#9b1c1c; }
+  .quote-box { border-left: 4px solid #9b1c1c; background: #faf9f7; padding: 1.25rem 1.5rem; margin: 1rem 0; border-radius: 0 0.75rem 0.75rem 0; }
+  .ev-block + .ev-block { border-top: 1px solid #e7e5e4; padding-top: 1.25rem; margin-top: 1.25rem; }
+  .tag-su-kien  { display:inline-block; font-size:10px; font-family:monospace; font-weight:700; letter-spacing:.12em; text-transform:uppercase; padding:2px 7px; border-radius:4px; background:#fef2f2; color:#9b1c1c; margin-bottom:.4rem; }
+  .tag-suy-luan { display:inline-block; font-size:10px; font-family:monospace; font-weight:700; letter-spacing:.12em; text-transform:uppercase; padding:2px 7px; border-radius:4px; background:#f5f3ff; color:#6d28d9; margin-bottom:.4rem; }
+  .tag-han-che  { display:inline-block; font-size:10px; font-family:monospace; font-weight:700; letter-spacing:.12em; text-transform:uppercase; padding:2px 7px; border-radius:4px; background:#fffbeb; color:#b45309; margin-bottom:.4rem; }
 </style>
 
 <main>
-  <!-- HERO -->
   <header class="max-w-4xl mx-auto px-6 pt-16 pb-12">
     <div class="flex flex-wrap items-center gap-3 mb-7">
       <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold tracking-wider uppercase bg-[#fef2f2] text-[#9b1c1c] rounded-full border border-[#9b1c1c]/20">Sự kiện lịch sử</span>
@@ -22,18 +22,17 @@ navLabel: "1858 - 1885"
 
     <h1 class="font-serif font-bold text-[#1c1917] leading-tight mb-4" style="font-size: clamp(2.25rem, 5vw, 3.5rem);">
       Nhà Nguyễn — Pháp Xâm Lược<br>
-      <span class="font-serif italic text-[#9b1c1c]" style="font-size: 0.7em;">& Mất Nước (1858–1885)</span>
+      <span class="font-serif italic text-[#9b1c1c]" style="font-size: 0.7em;">&amp; Mất Nước (1858–1885)</span>
     </h1>
 
     <p class="font-serif text-xl text-[#78716c] italic leading-snug mb-8 max-w-2xl">
       27 năm từ phát súng đầu tiên ở Đà Nẵng đến Dụ Cần Vương — 4 lần nhượng bộ, 2 lần thắng trận không thay đổi cục diện, và bài học về sự khác biệt giữa "hòa để tự cường" và nhượng bộ không có kế hoạch thực sự.
     </p>
 
-    <!-- Quick facts -->
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
       <div class="bg-[#faf9f7] rounded-xl border border-[#e7e5e4] p-4 text-center">
-        <div class="font-serif font-bold text-2xl text-[#9b1c1c]">1858</div>
-        <div class="text-xs text-[#78716c] mt-1">Pháp nổ súng Đà Nẵng</div>
+        <div class="font-serif font-bold text-2xl text-[#9b1c1c]">27</div>
+        <div class="text-xs text-[#78716c] mt-1">Năm mất nước từng bước</div>
       </div>
       <div class="bg-[#faf9f7] rounded-xl border border-[#e7e5e4] p-4 text-center">
         <div class="font-serif font-bold text-2xl text-[#9b1c1c]">4</div>
@@ -49,58 +48,89 @@ navLabel: "1858 - 1885"
       </div>
     </div>
 
-    <blockquote class="border-l-4 border-[#9b1c1c] pl-6 py-2">
-      <p class="font-serif text-lg text-[#1c1917] italic leading-relaxed">
-        "Mỗi lần thắng trận Cầu Giấy, triều đình lại ký thêm một hòa ước nhượng bộ. Chiến thắng chiến thuật không thể thay thế chiến lược tổng thể."
-      </p>
-    </blockquote>
+    <div class="quote-box">
+      <p class="font-serif italic text-[#9b1c1c] text-base mb-2">"Mỗi lần thắng trận Cầu Giấy, triều đình lại ký thêm một hòa ước nhượng bộ. Chiến thắng chiến thuật không thể thay thế chiến lược tổng thể."</p>
+      <span class="text-xs font-mono text-[#78716c]">— Bài học cốt lõi: Khí tiết cá nhân và thắng lợi trên chiến trường không cứu được một thể chế đã bế tắc về tư duy và chiến lược.</span>
+    </div>
   </header>
 
   <hr class="rule-thin max-w-4xl mx-auto">
 
-  <!-- 3 GIAI ĐOẠN -->
   <section class="max-w-4xl mx-auto px-6 py-12">
-    <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#9b1c1c] mb-3">Diễn biến</div>
-    <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-8">3 Giai đoạn chiến lược</h2>
+    <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#9b1c1c] mb-3">01 — Diễn biến 3 Gốc</div>
+    <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">3 Giai đoạn chiến lược — Từng bước mất nước</h2>
+    <div class="rounded-xl border border-[#e7e5e4] bg-[#faf9f7] p-6">
 
-    <div class="space-y-8">
+      <div class="ev-block" style="border-top:none; padding-top:0; margin-top:0;">
+        <span class="tag-su-kien">1858–1867 — Mất Nam Kỳ Lục Tỉnh</span>
+        <p class="font-semibold text-[#1c1917] text-sm mb-1.5">Đà Nẵng → Gia Định → Hòa ước Nhâm Tuất → Mất toàn bộ Nam Kỳ</p>
+        <p class="text-sm text-[#57534e] leading-relaxed">Nguyễn Tri Phương dùng chiến thuật "vườn không nhà trống" giam chân Pháp 5 tháng ở Đà Nẵng, buộc Pháp chuyển hướng đánh Gia Định. Sau khi Đại đồn Kỳ Hòa thất thủ (1861), triều đình ký Hòa ước Nhâm Tuất (05/06/1862) nhường 3 tỉnh Đông Nam Kỳ. Trong khi triều đình nhượng bộ, nhân dân Nam Kỳ không chịu buông vũ khí: Trương Định chống lệnh bãi binh, được dân tôn "Bình Tây Đại Nguyên Soái"; Nguyễn Trung Trực đốt tàu Esperance (1861) rồi chiếm đồn Rạch Giá (1868). Năm 1867, Pháp ép nốt 3 tỉnh Tây Nam Kỳ — Nam Kỳ mất hoàn toàn.</p>
+      </div>
 
-      <!-- Giai đoạn 1 -->
-      <div class="rounded-xl border border-[#e7e5e4] bg-[#faf9f7] p-6">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="font-serif font-bold text-2xl text-[#9b1c1c]">1858–1867</span>
-          <span class="tag-pill">Mất Nam Kỳ</span>
+      <div class="ev-block">
+        <span class="tag-suy-luan">Suy luận — Bài toán "hòa để tự cường"</span>
+        <p class="font-semibold text-[#1c1917] text-sm mb-1.5">Hòa ước Nhâm Tuất 1862: nhượng bộ đổi lấy thời gian — nhưng thời gian đó được dùng để làm gì?</p>
+        <p class="text-sm text-[#57534e] leading-relaxed">Lý luận ký Hòa ước Nhâm Tuất là "hòa để tự cường" — dùng thời gian hòa bình để xây dựng thực lực rồi lấy lại đất. Nhưng trong 5 năm 1862–1867, không có cải cách hải quân, không có canh tân quân sự, không có kế hoạch tái chiếm cụ thể. Chiến lược "hòa để tự cường" mà không xác định được "cường bằng cách nào, đo lường thế nào, trong bao lâu" là trì hoãn chứ không phải chiến lược. Năm 1867, Pháp lấy nốt 3 tỉnh còn lại mà không tốn một phát súng.</p>
+      </div>
+
+      <div class="ev-block">
+        <span class="tag-su-kien">1873–1883 — Hai lần Hà Nội, Hai lần Cầu Giấy</span>
+        <p class="font-semibold text-[#1c1917] text-sm mb-1.5">Thắng chiến thuật (Cầu Giấy 1873 &amp; 1883) — Thua chiến lược (Hòa ước 1874 &amp; 1883)</p>
+        <p class="text-sm text-[#57534e] leading-relaxed">Francis Garnier chiếm Hà Nội (1873), Nguyễn Tri Phương bị thương rồi tuyệt ăn đến chết. Quân Cờ Đen diệt Garnier tại Cầu Giấy — nhưng chiến thắng quân sự dẫn đến Hòa ước Giáp Tuất (1874) thừa nhận Nam Kỳ vĩnh viễn thuộc Pháp. 10 năm sau kịch bản lặp lại: Henri Rivière chiếm Hà Nội lần 2 (1882), Hoàng Diệu thắt cổ tự sát giữ khí tiết, quân Cờ Đen lại diệt Rivière tại Cầu Giấy (1883) — nhưng lần này triều đình không còn gì để mặc cả. Cùng trong giai đoạn này, Nguyễn Trường Tộ dâng hơn 58 bản điều trần canh tân (1863–1871) — bị Vua Tự Đức gạt bỏ gần hết vì bảo thủ Nho giáo.</p>
+      </div>
+
+      <div class="ev-block">
+        <span class="tag-han-che">Hạn chế — Mô hình tư duy "thắng trận → thêm nhượng bộ"</span>
+        <p class="font-semibold text-[#1c1917] text-sm mb-1.5">Nghịch lý: Mỗi lần quân Cờ Đen thắng, triều đình ký thêm hòa ước bất lợi hơn</p>
+        <p class="text-sm text-[#57534e] leading-relaxed">Đây là nghịch lý cốt lõi của 27 năm mất nước: hai lần chiến thắng quân sự vang dội (Cầu Giấy 1873 và 1883) không những không cải thiện vị thế đàm phán mà còn dẫn đến những hòa ước bất lợi hơn. Lý do: quân Cờ Đen chiến thắng nhưng triều đình thiếu năng lực chuyển hóa thắng lợi chiến thuật thành lợi thế chiến lược. Thiếu năng lực ngoại giao, thiếu liên minh, thiếu tư duy tổng thể — chiến thắng trên chiến trường trở thành gánh nặng hơn là cơ hội.</p>
+      </div>
+
+      <div class="ev-block">
+        <span class="tag-su-kien">1883–1885 — Hòa ước Harmand &amp; Patenôtre, Dụ Cần Vương</span>
+        <p class="font-semibold text-[#1c1917] text-sm mb-1.5">Vua Tự Đức mất → Khủng hoảng phế lập → Mất nước chính thức → Cần Vương bùng cháy</p>
+        <p class="text-sm text-[#57534e] leading-relaxed">Vua Tự Đức mất giữa năm 1883, triều đình rơi vào khủng hoảng phế lập liên tiếp ("Tứ nguyệt tam vương" — 4 vua trong 4 tháng do Tôn Thất Thuyết thao túng). Pháp đánh cửa biển Thuận An, ép ký Hòa ước Harmand (8/1883) rồi Patenôtre (6/1884) — Việt Nam chính thức bị chia 3 kỳ, mất độc lập hoàn toàn. Tháng 7/1885, Tôn Thất Thuyết liều nổ súng đánh đồn Mang Cá, thất bại, đưa Vua Hàm Nghi (14 tuổi) ra Quảng Trị ban Dụ Cần Vương (13/07/1885) — châm ngọn lửa kháng Pháp 10 năm.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="rule-thin max-w-4xl mx-auto">
+
+  <section class="max-w-4xl mx-auto px-6 py-12">
+    <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#9b1c1c] mb-3">02 — Phân tích 3 Độc</div>
+    <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">Tư duy sai · Cơ hội bỏ lỡ · Điểm mù</h2>
+    <div class="rounded-xl border border-[#e7e5e4] bg-[#faf9f7] p-6 space-y-6">
+
+      <div class="pb-6 border-b border-[#e7e5e4]">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="font-bold text-[#1c1917]">Tham lam</span>
+          <span class="text-[#b45309]">★★★★☆</span>
         </div>
-        <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-3">Đà Nẵng → Gia Định → Mất Nam Kỳ Lục Tỉnh</h3>
-        <div class="space-y-3 text-sm text-[#57534e] leading-relaxed">
-          <p>Nguyễn Tri Phương dùng chiến thuật "vườn không nhà trống" giam chân Pháp 5 tháng ở Đà Nẵng, buộc Pháp chuyển hướng đánh Gia Định. Sau khi Đại đồn Kỳ Hòa thất thủ (1861), Phan Thanh Giản & Lâm Duy Hiệp ký Hòa ước Nhâm Tuất (05/06/1862) nhường 3 tỉnh Đông Nam Kỳ.</p>
-          <p>Trong khi triều đình nhượng bộ, nhân dân Nam Kỳ không chịu buông vũ khí: <strong>Trương Định</strong> chống lệnh bãi binh, được dân tôn "Bình Tây Đại Nguyên Soái"; <strong>Nguyễn Trung Trực</strong> đốt tàu Esperance (1861) rồi chiếm đồn Rạch Giá (1868). Năm 1867, Pháp ép nốt 3 tỉnh Tây Nam Kỳ, Phan Thanh Giản tự sát — Nam Kỳ mất hoàn toàn.</p>
+        <div class="ev-block" style="border-top:none; padding-top:0; margin-top:0;">
+          <span class="tag-suy-luan">Tự mãn với thành tích nội bộ — bỏ qua cảnh báo từ bên ngoài</span>
+          <p class="text-sm text-[#57534e] leading-relaxed">Vua Tự Đức và triều đình Huế ở vào tình trạng tự mãn nguy hiểm: hệ thống Nho giáo hoạt động tốt trong nước, Đại Nam kiểm soát được lãnh thổ, quân sự đủ để trấn áp nổi loạn trong nước. Chính sự ổn định nội bộ này tạo ra điểm mù hoàn toàn đối với nguy cơ bên ngoài. Khi Nguyễn Trường Tộ dâng điều trần canh tân từ 1863, Tự Đức phê "Hãy cứ theo lệ cũ" — không phải vì thiếu thông tin, mà vì tự mãn và tham vị trí an toàn của trật tự hiện tại. Đây là bẫy tự mãn: thành công trong hôm qua khiến bạn không thấy thất bại của ngày mai.</p>
         </div>
       </div>
 
-      <!-- Giai đoạn 2 -->
-      <div class="rounded-xl border border-[#e7e5e4] bg-[#faf9f7] p-6">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="font-serif font-bold text-2xl text-[#9b1c1c]">1873–1883</span>
-          <span class="tag-pill">Hai lần Hà Nội</span>
+      <div class="pb-6 border-b border-[#e7e5e4]">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="font-bold text-[#1c1917]">Sân giận</span>
+          <span class="text-[#b45309]">★★★★★</span>
         </div>
-        <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-3">Hai Lần Hà Nội — Hai Lần Cầu Giấy — Hai Lần Thua Trên Bàn Đàm Phán</h3>
-        <div class="space-y-3 text-sm text-[#57534e] leading-relaxed">
-          <p>Francis Garnier chiếm Hà Nội (1873), Nguyễn Tri Phương bị thương rồi tuyệt ăn đến chết. Quân Cờ Đen (Lưu Vĩnh Phúc) diệt Garnier tại Cầu Giấy ngay sau đó — nhưng chiến thắng quân sự này lại dẫn đến Hòa ước Giáp Tuất (1874), thừa nhận Nam Kỳ vĩnh viễn thuộc Pháp.</p>
-          <p>Cùng lúc, <strong>Nguyễn Trường Tộ</strong> dâng hơn 58 bản điều trần canh tân (1863–1871) — bị Vua Tự Đức gạt bỏ gần hết vì bảo thủ Nho giáo. Gần 10 năm sau, kịch bản lặp lại: Henri Rivière chiếm Hà Nội lần 2 (1882), Hoàng Diệu thắt cổ tự sát giữ khí tiết, quân Cờ Đen lại diệt Rivière tại Cầu Giấy (1883) — nhưng lần này triều đình không còn gì để mặc cả.</p>
+        <div class="ev-block" style="border-top:none; padding-top:0; margin-top:0;">
+          <span class="tag-han-che">Bảo thủ Nho giáo cực đoan — từ chối canh tân ngay cả khi đang mất nước</span>
+          <p class="text-sm text-[#57534e] leading-relaxed">Đây là "độc" lớn nhất của giai đoạn này: sân giận hệ tư tưởng — cứng nhắc đến mức không chịu thay đổi dù thực tế đang sụp đổ. Triều đình Huế xem đề xuất canh tân theo mô hình phương Tây là "xúc phạm văn hóa Nho giáo" và từ chối có hệ thống. Trong khi Nhật Bản (1868) đang học hỏi phương Tây để tự cường (Minh Trị Duy Tân), Triều Tiên đang tranh luận về cải cách, thì Huế năm 1870 vẫn đang tranh luận về việc có nên cho giáo sĩ phương Tây vào hay không. Cứng nhắc hệ tư tưởng trong giai đoạn thế giới thay đổi nhanh là tội ác chính sách — không phải đức hạnh bảo tồn văn hóa.</p>
         </div>
       </div>
 
-      <!-- Giai đoạn 3 -->
-      <div class="rounded-xl border border-[#e7e5e4] bg-[#faf9f7] p-6">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="font-serif font-bold text-2xl text-[#9b1c1c]">1883–1885</span>
-          <span class="tag-pill">Đầu hàng & Cần Vương</span>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <span class="font-bold text-[#1c1917]">Si mê</span>
+          <span class="text-[#b45309]">★★★★★</span>
         </div>
-        <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-3">Hòa ước Harmand & Patenôtre — Mất Nước Chính Thức — Dụ Cần Vương Mở Màn Kháng Chiến Dân Gian</h3>
-        <div class="space-y-3 text-sm text-[#57534e] leading-relaxed">
-          <p>Vua Tự Đức mất giữa năm 1883, triều đình rơi vào khủng hoảng phế lập liên tiếp ("Tứ nguyệt tam vương"). Pháp đánh cửa biển Thuận An, ép ký Hòa ước Harmand rồi Patenôtre (1883–1884) — Việt Nam chính thức bị chia 3 kỳ, mất độc lập hoàn toàn.</p>
-          <p>Tháng 7/1885, Tôn Thất Thuyết — linh hồn phe Chủ chiến — liều nổ súng đánh đồn Mang Cá, thất bại, đưa Vua Hàm Nghi (14 tuổi) ra Quảng Trị ban Dụ Cần Vương (13/07/1885), kích hoạt phong trào Cần Vương bùng cháy toàn quốc suốt hơn 10 năm sau.</p>
+        <div class="ev-block" style="border-top:none; padding-top:0; margin-top:0;">
+          <span class="tag-han-che">Ảo tưởng "hòa để tự cường" không có kế hoạch + ảo tưởng Nhà Thanh sẽ cứu</span>
+          <p class="text-sm text-[#57534e] leading-relaxed">Hai ảo tưởng song song phá hủy chiến lược của triều đình Huế. Thứ nhất: "hòa để tự cường" — ký nhượng bộ với Pháp để có thời gian, nhưng không ai định nghĩa "cường là gì", "đo thế nào", "trong bao lâu". Kết quả: 5 năm hòa bình 1862–1867 không tích lũy được thực lực nào, Pháp lấy nốt phần còn lại. Thứ hai: kỳ vọng Nhà Thanh sẽ can thiệp bảo vệ Đại Nam như thế kỷ XVIII — không nhận ra Nhà Thanh sau 1840 đã suy yếu nghiêm trọng và ưu tiên thỏa hiệp với Pháp hơn là bảo vệ chư hầu. Si mê vào hai ảo tưởng này khiến triều đình không bao giờ tự mình xây dựng kế hoạch phòng thủ thực sự.</p>
         </div>
       </div>
 
@@ -109,35 +139,36 @@ navLabel: "1858 - 1885"
 
   <hr class="rule-thin max-w-4xl mx-auto">
 
-  <!-- BÀI HỌC CỐT LÕI -->
   <section class="max-w-4xl mx-auto px-6 py-12">
-    <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#9b1c1c] mb-3">Bài học cốt lõi</div>
-    <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-8">4 Bài học từ 27 năm mất nước</h2>
+    <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#9b1c1c] mb-3">03 — Di sản &amp; Bài học</div>
+    <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">3 Góc nhìn ứng dụng</h2>
+    <div class="space-y-6">
 
-    <div class="space-y-5">
-
-      <div class="lesson-box">
-        <div class="font-mono text-xs text-[#9b1c1c] font-bold uppercase mb-2">Bài học 01 — Nhượng bộ không kế hoạch</div>
-        <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Mỗi lần "hòa để tự cường" lại là một bước lùi thêm — khi không có kế hoạch tự cường thật sự</h3>
-        <p class="text-sm text-[#57534e] leading-relaxed">Chiến thuật "hòa để tự cường" của Tự Đức không tích lũy được thực lực nào — mỗi hòa ước chỉ tước thêm quyền tự chủ, kể cả sau khi thắng trận (Cầu Giấy 1873, 1883) triều đình vẫn ký nhượng bộ thêm. Nhượng bộ chỉ có ý nghĩa chiến lược nếu đi kèm kế hoạch cụ thể: dùng thời gian này để làm gì, đo lường được, trong bao lâu. Nếu không trả lời được — đó là trì hoãn, không phải chiến lược.</p>
+      <div class="p-6 rounded-xl bg-[#faf9f7] border border-[#e7e5e4]">
+        <div class="flex items-center gap-2 text-[#9b1c1c] font-mono font-bold text-xs uppercase mb-3">
+          <span>Bài học 01</span> · <span>Nhượng bộ chỉ có giá trị khi có kế hoạch cụ thể đi kèm</span>
+        </div>
+        <h3 class="font-serif font-bold text-xl text-[#1c1917] mb-3">"Hòa để tự cường" mà không xác định được "cường bằng cách nào" là trì hoãn — không phải chiến lược</h3>
+        <p class="text-sm text-[#57534e] leading-relaxed mb-4">Chiến thuật nhượng bộ (Hòa ước Nhâm Tuất 1862) có logic hợp lý: dùng thời gian hòa bình để xây dựng thực lực. Nhưng trong 5 năm 1862–1867, không có chỉ số nào về "cường" được đo lường — không có chương trình canh tân hải quân, không có mốc kiểm tra tiến độ, không có kế hoạch tái chiếm. Năm 1867, Pháp lấy nốt 3 tỉnh còn lại không tốn công sức. Nhượng bộ chỉ có giá trị chiến lược nếu: (1) xác định rõ mục tiêu của thời gian hòa bình, (2) có timeline đo lường được, (3) thực thi cải cách thực sự trong thời gian đó.</p>
+        <div class="bg-white p-4 rounded-lg border border-[#e7e5e4] text-xs text-[#78716c] italic">💡 Khi phải nhượng bộ trong đàm phán hay xung đột: hãy xác định rõ "khoảng thời gian này mình sẽ làm gì cụ thể để tăng sức mạnh". Nếu không trả lời được — đó là thua, không phải chiến thuật.</div>
       </div>
 
-      <div class="lesson-box">
-        <div class="font-mono text-xs text-[#9b1c1c] font-bold uppercase mb-2">Bài học 02 — Chiến thắng cục bộ không thay thế chiến lược tổng thể</div>
-        <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Khí tiết cá nhân và chiến thắng chiến thuật là hai thứ có giá trị thật — nhưng không thay thế được một thể chế đúng hướng</h3>
-        <p class="text-sm text-[#57534e] leading-relaxed">Nguyễn Tri Phương và Hoàng Diệu tuẫn tiết lẫm liệt; quân Cờ Đen hai lần diệt tướng Pháp tại Cầu Giấy — nhưng sự hy sinh của danh tướng và chiến thắng chiến thuật không thay đổi được đường lối bảo thủ ở trung ương. Tổ chức sai hướng thì cá nhân giỏi vẫn không cứu được cục diện.</p>
+      <div class="p-6 rounded-xl bg-[#faf9f7] border border-[#e7e5e4]">
+        <div class="flex items-center gap-2 text-[#9b1c1c] font-mono font-bold text-xs uppercase mb-3">
+          <span>Bài học 02</span> · <span>Chiến thắng cục bộ không thay thế chiến lược tổng thể</span>
+        </div>
+        <h3 class="font-serif font-bold text-xl text-[#1c1917] mb-3">Nguyễn Tri Phương, Hoàng Diệu, quân Cờ Đen — khí tiết và thắng lợi chiến thuật không cứu được tổ chức sai hướng</h3>
+        <p class="text-sm text-[#57534e] leading-relaxed mb-4">Đây là bài học đau đớn nhất của 27 năm mất nước: những cá nhân xuất sắc nhất (Nguyễn Tri Phương, Hoàng Diệu) và những chiến thắng ấn tượng nhất (Cầu Giấy 1873, 1883) không thay đổi được đường lối bảo thủ ở trung ương. Tổ chức sai hướng thì cá nhân giỏi vẫn không cứu được cục diện. Hơn nữa, hai lần thắng Cầu Giấy thực tế dẫn đến hai hòa ước bất lợi hơn — vì triều đình không có năng lực chuyển hóa thắng lợi chiến thuật thành lợi thế chiến lược.</p>
+        <div class="bg-white p-4 rounded-lg border border-[#e7e5e4] text-xs text-[#78716c] italic">💡 Trong tổ chức: "star performers" không cứu được cả tổ chức nếu chiến lược sai. Và thắng lợi trong một dự án không có nghĩa là thắng lợi của tổ chức nếu không biết tận dụng nó.</div>
       </div>
 
-      <div class="lesson-box">
-        <div class="font-mono text-xs text-[#9b1c1c] font-bold uppercase mb-2">Bài học 03 — Từ chối canh tân khi còn thời gian</div>
-        <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Nguyễn Trường Tộ cảnh báo đúng hướng từ 1863 — 8 năm bị gạt bỏ — đến khi mất nước thì không còn cơ hội thứ hai</h3>
-        <p class="text-sm text-[#57534e] leading-relaxed">Nguyễn Trường Tộ đề xuất canh tân toàn diện (tương tự Minh Trị Duy Tân của Nhật) từ 1863 đến 1871 — 8 năm liên tục bị gạt bỏ vì bảo thủ Nho giáo. Đến khi mất nước không còn cơ hội thứ hai. Từ chối cải cách khi còn thời gian và nguồn lực là bản án tự ký — không phải thua vì thiếu cảnh báo, mà thua vì không nghe cảnh báo.</p>
-      </div>
-
-      <div class="lesson-box">
-        <div class="font-mono text-xs text-[#9b1c1c] font-bold uppercase mb-2">Bài học 04 — Chính danh kháng chiến từ nhân dân</div>
-        <h3 class="font-serif font-bold text-lg text-[#1c1917] mb-2">Trương Định và Nguyễn Trung Trực tiếp tục đánh Pháp trái lệnh vua — chứng minh ý chí dân tộc tồn tại độc lập với sự sụp đổ của thể chế phong kiến</h3>
-        <p class="text-sm text-[#57534e] leading-relaxed">Khi triều đình đã nhượng bộ và ra lệnh bãi binh, nhân dân Nam Kỳ vẫn tiếp tục kháng chiến. Chính danh kháng chiến không đến từ triều đình — nó đến từ dân. Điều đó chứng minh rằng sức mạnh và ý chí dân tộc tồn tại độc lập với sự sụp đổ của thể chế lãnh đạo chính thức.</p>
+      <div class="p-6 rounded-xl bg-[#faf9f7] border border-[#e7e5e4]">
+        <div class="flex items-center gap-2 text-[#9b1c1c] font-mono font-bold text-xs uppercase mb-3">
+          <span>Bài học 03</span> · <span>Từ chối cải cách khi còn thời gian</span>
+        </div>
+        <h3 class="font-serif font-bold text-xl text-[#1c1917] mb-3">Nguyễn Trường Tộ cảnh báo đúng từ 1863 — 8 năm bị gạt bỏ — đến khi mất nước thì không còn cơ hội thứ hai</h3>
+        <p class="text-sm text-[#57534e] leading-relaxed mb-4">Nguyễn Trường Tộ đề xuất canh tân toàn diện từ 1863 đến 1871 — học hỏi phương Tây về khoa học, kỹ thuật, hải quân, kinh tế. Tương tự chính sách Minh Trị Duy Tân của Nhật (1868) đang triển khai song song cùng thời điểm. Nhưng 8 năm điều trần bị gạt bỏ liên tục vì bảo thủ Nho giáo. Nhật Bản năm 1905 thắng Nga bằng hải quân hiện đại. Đại Nam năm 1885 mất nước. Hai lựa chọn khác nhau dẫn đến hai kết quả hoàn toàn khác nhau trong cùng một thế hệ.</p>
+        <div class="bg-white p-4 rounded-lg border border-[#e7e5e4] text-xs text-[#78716c] italic">💡 Từ chối cải cách khi còn thời gian và nguồn lực là bản án tự ký. Cơ hội cải cách không chờ đến khi khủng hoảng xảy ra — khi khủng hoảng đã đến, thường là quá muộn.</div>
       </div>
 
     </div>
@@ -145,38 +176,24 @@ navLabel: "1858 - 1885"
 
   <hr class="rule-thin max-w-4xl mx-auto">
 
-  <!-- NHÂN VẬT & SỰ KIỆN -->
   <section class="max-w-4xl mx-auto px-6 py-12">
-    <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#9b1c1c] mb-3">Khám phá thêm</div>
-    <h2 class="font-serif text-3xl font-bold text-[#1c1917] mb-6">Sự kiện & Nhân vật then chốt</h2>
-
-    <div class="grid gap-4 sm:grid-cols-2 mb-8">
+    <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#9b1c1c] mb-3">04 — Xem thêm</div>
+    <div class="grid gap-4 sm:grid-cols-2 mb-6">
       <a href="nha-nguyen-hoa-uoc-bat-binh-dang.html" class="p-4 rounded-xl border border-[#e7e5e4] bg-[#faf9f7] hover:border-[#9b1c1c] transition-colors">
         <div class="text-xs font-mono font-bold text-[#9b1c1c] uppercase mb-1">Sự kiện</div>
         <div class="font-semibold text-[#1c1917] text-sm">Chuỗi Hòa ước Bất bình đẳng (1862–1884)</div>
         <div class="text-xs text-[#78716c] mt-1">4 lần nhượng bộ — từ 3 tỉnh đến mất nước hoàn toàn</div>
       </a>
-      <a href="nha-nguyen-tran-ha-noi-cau-giay.html" class="p-4 rounded-xl border border-[#e7e5e4] bg-[#faf9f7] hover:border-[#9b1c1c] transition-colors">
-        <div class="text-xs font-mono font-bold text-[#9b1c1c] uppercase mb-1">Sự kiện</div>
-        <div class="font-semibold text-[#1c1917] text-sm">Trận Hà Nội & Hai Chiến thắng Cầu Giấy (1873, 1883)</div>
-        <div class="text-xs text-[#78716c] mt-1">Thắng chiến thuật — thua chiến lược</div>
-      </a>
       <a href="nha-nguyen-bien-co-kinh-thanh-hue-can-vuong.html" class="p-4 rounded-xl border border-[#e7e5e4] bg-[#faf9f7] hover:border-[#9b1c1c] transition-colors">
         <div class="text-xs font-mono font-bold text-[#9b1c1c] uppercase mb-1">Sự kiện</div>
-        <div class="font-semibold text-[#1c1917] text-sm">Biến cố Kinh thành Huế & Dụ Cần Vương (1885)</div>
+        <div class="font-semibold text-[#1c1917] text-sm">Biến cố Kinh thành Huế &amp; Dụ Cần Vương (1885)</div>
         <div class="text-xs text-[#78716c] mt-1">Khi tổ chức chính thức đã buông xuôi — cá nhân vẫn có thể châm lại ngọn lửa</div>
       </a>
-      <a href="../nhan-vat/truong-dinh.html" class="p-4 rounded-xl border border-[#e7e5e4] bg-[#faf9f7] hover:border-[#9b1c1c] transition-colors">
-        <div class="text-xs font-mono font-bold text-[#9b1c1c] uppercase mb-1">Nhân vật</div>
-        <div class="font-semibold text-[#1c1917] text-sm">Trương Định — Chống lệnh vua, ở lại kháng chiến</div>
-        <div class="text-xs text-[#78716c] mt-1">Khi tuân lệnh triều đình là bỏ dân</div>
-      </a>
     </div>
-
     <div class="flex flex-wrap gap-3">
-      <a href="../nhan-vat/nguyen-trung-truc.html" class="px-3.5 py-2 bg-[#faf9f7] border border-[#e7e5e4] rounded-xl text-sm font-medium text-[#1c1917] hover:border-[#9b1c1c] transition-colors">🔥 Nguyễn Trung Trực</a>
-      <a href="nha-tay-son.html" class="px-3.5 py-2 bg-[#faf9f7] border border-[#e7e5e4] rounded-xl text-sm font-medium text-[#1c1917] hover:border-[#9b1c1c] transition-colors">← Nhà Tây Sơn (chương trước)</a>
-      <a href="nha-mac-chap1-lap-trieu-thinh-tri.html" class="px-3.5 py-2 bg-[#faf9f7] border border-[#e7e5e4] rounded-xl text-sm font-medium text-[#1c1917] hover:border-[#9b1c1c] transition-colors">📖 So sánh: Nhà Mạc — Cổ Quý lạy Nam Quan</a>
+      <a href="../nhan-vat/ton-that-thuyet.html" class="px-3.5 py-2 bg-[#faf9f7] border border-[#e7e5e4] rounded-xl text-sm font-medium text-[#1c1917] hover:border-[#9b1c1c] transition-colors">⚔️ Tôn Thất Thuyết — Người châm Dụ Cần Vương</a>
+      <a href="../nhan-vat/vua-thieu-tri.html" class="px-3.5 py-2 bg-[#faf9f7] border border-[#e7e5e4] rounded-xl text-sm font-medium text-[#1c1917] hover:border-[#9b1c1c] transition-colors">👑 Vua Thiệu Trị — Tín hiệu Đà Nẵng 1847 bị bỏ qua</a>
+      <a href="nha-nguyen-doc-lap-thong-nhat-dinh-cao.html" class="px-3.5 py-2 bg-[#faf9f7] border border-[#e7e5e4] rounded-xl text-sm font-medium text-[#1c1917] hover:border-[#9b1c1c] transition-colors">← Nhà Nguyễn 1802–1858 (chương trước)</a>
     </div>
   </section>
 </main>
