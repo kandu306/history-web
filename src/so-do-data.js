@@ -1143,24 +1143,15 @@ const DYNASTY_DATA = [
           { href: "nhan-vat/nguyen-trung-truc.html", iconClass: "icon-official", icon: "🔥", roleClass: "role-official", role: "Anh hùng · Đốt tàu Esperance", name: "Nguyễn Trung Trực", desc: "Đốt cháy tàu chiến Pháp Esperance (1861), chiếm đồn Rạch Giá (1868). Bị bắt và xử tử, để lại câu nói bất hủ: 'Bao giờ người Tây nhổ hết cỏ nước Nam mới hết người Nam đánh Tây'." },
           { href: "nhan-vat/nguyen-truong-to.html", iconClass: "icon-advisor", icon: "📜", roleClass: "role-advisor", role: "Nhà canh tân · 58 điều trần", name: "Nguyễn Trường Tộ", desc: "Dâng 58+ bản điều trần canh tân toàn diện (1863–1871) — tương tự Minh Trị Duy Tân của Nhật. Bị Tự Đức gạt bỏ vì bảo thủ Nho giáo. Đến khi mất nước không còn cơ hội thứ hai." },
           { href: "nhan-vat/ton-that-thuyet.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Thượng thư Bộ Binh · Phe Chủ chiến", name: "Tôn Thất Thuyết", desc: "Linh hồn phe Chủ chiến. Bí mật xây căn cứ Tân Sở trước, tấn công đồn Mang Cá (1885), đưa Vua Hàm Nghi ban Dụ Cần Vương — châm ngòi phong trào kháng Pháp toàn quốc 10 năm." }
+          { href: "nhan-vat/ton-that-thuyet.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Thượng thư Bộ Binh · Phe Chủ chiến", name: "Tôn Thất Thuyết", desc: "Linh hồn phe Chủ chiến. Bí mật xây căn cứ Tân Sở trước, tấn công đồn Mang Cá (1885), đưa Vua Hàm Nghi ban Dụ Cần Vương — châm ngòi phong trào kháng Pháp toàn quốc 10 năm." }
         ]
-    }
-  ]
-  },
-  // ─────────────────────────────────────────────────────────────
-  // ERA: PHONG TRÀO KHÁNG PHÁP & THỨC TỈNH DÂN TỘC
-  // ─────────────────────────────────────────────────────────────
-  {
-    id: "era-khang-phap",
-    label: "Phong Trào Kháng Pháp & Thức Tỉnh Dân Tộc · 1885 – 1945",
-    labelStyle: "background: #1c1917;",
-    eraBlockStyle: "border-top: 2px dashed rgba(28,25,23,0.4); padding-top: 2rem;",
-    dividerBefore: "⚔️ 1885 — Dụ Cần Vương: Khởi đầu 60 năm kháng chiến & thức tỉnh dân tộc",
-    columns: [
+      },
+
+      // ── Vua Hàm Nghi ─────────────────────────────────────────────────────────
       {
         king: {
           href: "nhan-vat/vua-ham-nghi.html",
-          cardStyle: "border-color: rgba(155,28,28,0.5); background: linear-gradient(135deg, #1c1917 0%, #3b0764 100%); color: white;",
+          cardStyle: "border-color: rgba(155,28,28,0.5); background: linear-gradient(135deg, #450a0a 0%, #3b0764 100%); color: white;",
           crown: "👑", title: "Vua Kháng Chiến · Ngọn Cờ Cần Vương", titleStyle: "color:#e9d5ff;",
           name: "Vua Hàm Nghi", nameStyle: "color:white;",
           realName: "Nguyễn Phúc Ưng Lịch · 1871 – 1943", realNameStyle: "color:#d6d3d1;",
@@ -1168,18 +1159,19 @@ const DYNASTY_DATA = [
           note: "Vua 13 tuổi duy nhất dám chọn kháng chiến. Ban Dụ Cần Vương 13/07/1885 — châm ngòi phong trào toàn quốc. 1888 bị phản bội, bị đày Algérie, học vẽ và từ chối hợp tác với Pháp suốt 55 năm."
         },
         officials: [
-          { href: "nhan-vat/ton-that-thuyet.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Thượng thư · Kiến trúc sư Cần Vương", name: "Tôn Thất Thuyết", desc: "Linh hồn phe Chủ chiến — xây căn cứ Tân Sở, tấn công Pháp tại Mang Cá, đưa Hàm Nghi ban Dụ Cần Vương, mở ra 10 năm kháng chiến toàn quốc." },
-          { href: "nhan-vat/phan-dinh-phung.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Thủ lĩnh Hương Khê · 10 năm kháng chiến", name: "Phan Đình Phùng & Cao Thắng", desc: "Địa bàn 4 tỉnh liên hoàn. Cao Thắng tự chế 350+ súng Gras — kỳ tích Reverse Engineering. Phan Đình Phùng mất 1895 vì bệnh lỵ, không thua trên chiến trường." },
+          { href: "nhan-vat/phan-dinh-phung.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Thủ lĩnh Hương Khê · Đỉnh cao Cần Vương", name: "Phan Đình Phùng & Cao Thắng", desc: "Địa bàn 4 tỉnh liên hoàn. Cao Thắng tự chế 350+ súng Gras — kỳ tích Reverse Engineering. Phan Đình Phùng mất 1895 vì bệnh lỵ, không thua trên chiến trường." },
           { href: "nhan-vat/hoang-hoa-tham.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Hùm Xám Yên Thế · 30 năm bất khuất", name: "Hoàng Hoa Thám (Đề Thám)", desc: "Nông dân không học vị Nho học. Ép Pháp giảng hòa 2 lần. Xây Đồn điền Phồn Xương — mô hình kháng chiến + sản xuất tự cấp. Bị phản bội và ám sát 10/02/1913." },
           { href: "nhan-vat/phan-boi-chau.html", iconClass: "icon-advisor", icon: "📜", roleClass: "role-advisor", role: "Nhà cách mạng · Đông Du & Duy Tân Hội", name: "Phan Bội Châu", desc: "Lập Duy Tân Hội, đưa 200+ du học sinh sang Nhật. 1908 Nhật bán cho Pháp, Đông Du tan rã. Bài học xương máu về bẫy cầu viện ngoại lực." },
           { href: "nhan-vat/phan-chau-trinh.html", iconClass: "icon-advisor", icon: "📜", roleClass: "role-advisor", role: "Con đường Duy Tân · Khai dân trí", name: "Phan Châu Trinh", desc: "'Khai dân trí, Chấn dân khí, Hậu dân sinh'. Đông Kinh Nghĩa Thục 1907. Con đường cải cách nội tại — đối lập với bạo động ngoại viện của Phan Bội Châu." },
           { href: "nhan-vat/nguyen-thai-hoc.html", iconClass: "icon-official", icon: "⚡", roleClass: "role-official", role: "Thủ lĩnh VNQDD · Không thành công thì thành nhân", name: "Nguyễn Thái Học & Cô Giang", desc: "Lập VNQDD 1927, Khởi nghĩa Yên Bái thất bại trong 24 giờ. 17/06/1930: 13 chiến sĩ lên máy chém hô 'Việt Nam muôn năm!'. Cô Giang tự sát ngày hôm sau." }
         ]
       },
+
+      // ── Vua Bảo Đại ──────────────────────────────────────────────────────────
       {
         king: {
           href: "nhan-vat/vua-bao-dai.html",
-          cardStyle: "border-color: rgba(155,28,28,0.5); background: linear-gradient(135deg, #1c1917 0%, #7f1d1d 100%); color: white;",
+          cardStyle: "border-color: rgba(155,28,28,0.6); background: linear-gradient(135deg, #450a0a 0%, #7f1d1d 100%); color: white;",
           crown: "👑", title: "Vua Bảo Đại — Vị Vua Cuối Cùng · Nghịch Lý 1945 vs 1949", titleStyle: "color:#fca5a5;",
           name: "Vua Bảo Đại", nameStyle: "color:white;",
           realName: "Nguyễn Phúc Vĩnh Thụy · 1913 – 1997", realNameStyle: "color:#d6d3d1;",
