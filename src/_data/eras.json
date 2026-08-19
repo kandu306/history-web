@@ -1061,6 +1061,57 @@
           }
         ]
       }
+      {
+        "label": "🔥 Phong trào Kháng Pháp & Thức Tỉnh Dân Tộc (1885–1945)",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/nha-nguyen-bien-co-kinh-thanh-hue-can-vuong.html",
+            "text": "1885 · Biến Cố Kinh Thành & Dụ Cần Vương"
+          },
+          {
+            "href": "bai-hoc/nha-nguyen-cac-cuoc-khoi-nghia-can-vuong.html",
+            "text": "1885–1896 · Các Cuộc Khởi Nghĩa Cần Vương"
+          },
+          {
+            "href": "bai-hoc/nha-nguyen-khoi-nghia-yen-the.html",
+            "text": "1884–1913 · Khởi Nghĩa Yên Thế — Hoàng Hoa Thám"
+          },
+          {
+            "href": "bai-hoc/nha-nguyen-dong-du-duy-tan-hoi.html",
+            "text": "1904–1908 · Đông Du & Duy Tân Hội"
+          },
+          {
+            "href": "bai-hoc/nha-nguyen-duy-tan-dong-kinh-nghia-thuc.html",
+            "text": "1906–1908 · Duy Tân & Đông Kinh Nghĩa Thục"
+          },
+          {
+            "href": "bai-hoc/nha-nguyen-nguyen-ai-quoc-thanh-lap-dang.html",
+            "text": "1911–1930 · Nguyễn Ái Quốc & Thành Lập Đảng"
+          },
+          {
+            "href": "bai-hoc/nha-nguyen-khoi-nghia-yen-bai.html",
+            "text": "1927–1930 · Khởi Nghĩa Yên Bái & VNQDD"
+          },
+          {
+            "href": "bai-hoc/nha-nguyen-nhat-dao-chinh-phap.html",
+            "text": "09/03/1945 · Nhật Đảo Chính Pháp"
+          },
+          {
+            "href": "bai-hoc/nha-nguyen-tong-khoi-nghia-thang-tam.html",
+            "text": "08/1945 · Tổng Khởi Nghĩa Tháng Tám"
+          },
+          {
+            "href": "bai-hoc/nha-nguyen-bao-dai-thoai-vi-doc-lap.html",
+            "text": "30/08–02/09/1945 · Bảo Đại Thoái Vị & Tuyên Ngôn Độc Lập"
+          },
+          {
+            "href": "bai-hoc/nha-nguyen-chapter3-tong-quan.html",
+            "text": "📋 Tổng Quan Chapter 3 · Phong Trào Kháng Pháp 1885–1945"
+          }
+        ]
+      }
     ],
 
     "characters": [
@@ -1076,7 +1127,15 @@
       { "href": "nhan-vat/truong-dinh.html",        "text": "Trương Định" },
       { "href": "nhan-vat/nguyen-trung-truc.html",  "text": "Nguyễn Trung Trực" },
       { "href": "nhan-vat/nguyen-truong-to.html",   "text": "Nguyễn Trường Tộ" },
-      { "href": "nhan-vat/ton-that-thuyet.html",   "text": "Tôn Thất Thuyết" }
+      { "href": "nhan-vat/ton-that-thuyet.html",   "text": "Tôn Thất Thuyết" },
+      { "href": "nhan-vat/vua-ham-nghi.html",       "text": "Vua Hàm Nghi" },
+      { "href": "nhan-vat/phan-dinh-phung.html",    "text": "Phan Đình Phùng" },
+      { "href": "nhan-vat/hoang-hoa-tham.html",     "text": "Hoàng Hoa Thám" },
+      { "href": "nhan-vat/phan-boi-chau.html",      "text": "Phan Bội Châu" },
+      { "href": "nhan-vat/phan-chau-trinh.html",    "text": "Phan Châu Trinh" },
+      { "href": "nhan-vat/nguyen-thai-hoc.html",    "text": "Nguyễn Thái Học" },
+      { "href": "nhan-vat/ho-chi-minh.html",        "text": "Hồ Chí Minh" },
+      { "href": "nhan-vat/vua-bao-dai.html",        "text": "Vua Bảo Đại" }
     ],
     "characterLabel": "👤 Nhân vật",
     "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
