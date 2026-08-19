@@ -177,6 +177,34 @@ const PATTERNS_CONFIG = [
     title: "Uy vũ cá nhân chuyển sang Thể chế hóa",
     desc: "Sự phát triển từ cai trị phụ thuộc vào sức mạnh của một anh hùng cụ thể sang việc vận hành bằng luật pháp, giáo dục và di sản ổn định bền vững lâu dài (Hình thư và Văn miếu nhà Lý).",
     span: 2
+  },
+  {
+    id: "pt6",
+    label: "Pattern 6",
+    title: "Chiến tranh nhân dân vs Quân chính quy",
+    desc: "Nhà Trần 3 lần đánh bại Mông Cổ bằng 'vườn không nhà trống' — bỏ kinh đô tiêu hao địch, rồi phản công khi chúng kiệt sức. Chiến thuật lặp lại trong kháng Pháp và kháng Mỹ — gene chiến lược được di truyền qua các thế hệ.",
+    span: 2
+  },
+  {
+    id: "pt7",
+    label: "Pattern 7",
+    title: "Bẫy cầu viện ngoại lực",
+    desc: "Lê Chiêu Thống rước 20 vạn quân Thanh → mất nhà Lê vĩnh viễn. Phan Bội Châu dựa Nhật → Đông Du tan rã khi Nhật bán cho Pháp 1908. Ngoại lực chỉ hành động khi họ có lợi ích, không phải vì nghĩa với người cầu viện.",
+    span: 2
+  },
+  {
+    id: "pt8",
+    label: "Pattern 8",
+    title: "Canh tân hay Bảo thủ — Ngưỡng cửa sinh tử",
+    desc: "Cùng năm 1868: Nhật Minh Trị Duy Tân → cường quốc. Việt Nam: Nguyễn Trường Tộ dâng 58 bản điều trần canh tân, Vua Tự Đức từ chối → mất nước 1884. Cùng thời điểm áp lực, hai lựa chọn, hai số phận. Tốc độ thích nghi quyết định sự tồn vong.",
+    span: 2
+  },
+  {
+    id: "pt9",
+    label: "Pattern 9",
+    title: "Thức tỉnh dân tộc — Từ dưới lên",
+    desc: "Khi triều đình sụp đổ, tầng lớp dưới tự tổ chức: nông dân Hoàng Hoa Thám 30 năm Yên Thế, trí thức Phan Bội Châu-Phan Châu Trinh khai dân trí, thợ ảnh Nguyễn Ái Quốc lên tàu rồi thành lập ĐCSVN 1930 → Tổng Khởi Nghĩa Tháng Tám. Dân tộc tự cứu mình.",
+    span: 2
   }
 ];
 
@@ -686,6 +714,73 @@ const DATABASE = {
       { name: "Nguyễn Thái Học",     url: "nhan-vat/nguyen-thai-hoc.html",    role: "official" },
       { name: "Hồ Chí Minh",         url: "nhan-vat/ho-chi-minh.html",        role: "official" },
       { name: "Vua Bảo Đại",         url: "nhan-vat/vua-bao-dai.html",        role: "king" }
+    ],
+    lineConnections: []
+  },
+
+  pt6: {
+    category: "Quy Luật Lịch Sử 06",
+    title: "Chiến tranh nhân dân vs Quân chính quy",
+    period: "Pattern Quy luật",
+    desc: "Nhà Trần 3 lần đánh bại đế quốc Mông Cổ không phải bằng chiến trường cố thủ, mà bằng 'vườn không nhà trống' — bỏ kinh đô rút lui để tiêu hao sinh lực địch, rồi phản công khi chúng kiệt sức. Điều đáng kinh ngạc: chiến thuật này lặp lại gần như nguyên xi trong kháng Pháp và kháng Mỹ. Không phải trùng hợp — đó là gene chiến lược được di truyền qua các thế hệ.",
+    lessons: [
+      { name: "Nhà Trần — Tổng quan", url: "bai-hoc/nha-tran-tong-quan.html" },
+      { name: "3 Lần Kháng Mông", url: "bai-hoc/nha-tran-3-lan-khang-mong.html" }
+    ],
+    figures: [
+      { name: "Trần Thái Tông", url: "nhan-vat/tran-thai-tong.html", role: "king" },
+      { name: "Trần Hưng Đạo", url: "nhan-vat/tran-hung-dao.html", role: "official" },
+      { name: "Trần Nhân Tông", url: "nhan-vat/tran-nhan-tong.html", role: "king" }
+    ],
+    lineConnections: []
+  },
+
+  pt7: {
+    category: "Quy Luật Lịch Sử 07",
+    title: "Bẫy cầu viện ngoại lực",
+    period: "Pattern Quy luật",
+    desc: "Lịch sử ghi nhiều lần cầu viện và kết quả hầu như luôn là thảm họa: Lê Chiêu Thống rước 20 vạn quân Thanh để giành lại ngai vàng → mất nhà Lê vĩnh viễn. Phan Bội Châu đưa 200 thanh niên sang Nhật → Nhật ký thỏa thuận với Pháp 1908, bán đứng Đông Du. Bài học cốt lõi: Ngoại lực chỉ hành động khi họ có lợi ích chiến lược, không phải vì nghĩa với người cầu viện.",
+    lessons: [
+      { name: "Đông Du & Duy Tân Hội", url: "bai-hoc/nha-nguyen-dong-du-duy-tan-hoi.html" }
+    ],
+    figures: [
+      { name: "Lê Chiêu Thống", url: "nhan-vat/le-chieu-thong.html", role: "king" },
+      { name: "Phan Bội Châu", url: "nhan-vat/phan-boi-chau.html", role: "advisor" }
+    ],
+    lineConnections: []
+  },
+
+  pt8: {
+    category: "Quy Luật Lịch Sử 08",
+    title: "Canh tân hay Bảo thủ — Ngưỡng cửa sinh tử",
+    period: "Pattern Quy luật",
+    desc: "Năm 1868: Nhật chọn Minh Trị Duy Tân — học hỏi phương Tây toàn diện về quân sự, giáo dục, công nghiệp → hóa cường quốc 30 năm sau. Việt Nam: Nguyễn Trường Tộ dâng 58 bản điều trần canh tân toàn diện, Vua Tự Đức từ chối vì bảo thủ Nho giáo → mất nước 1884. Cùng một thời điểm áp lực thực dân, hai lựa chọn, hai số phận. Không có bài học nào đắt hơn bài học này.",
+    lessons: [
+      { name: "1858–1885 · Pháp Xâm Lược & Mất Nước", url: "bai-hoc/nha-nguyen-phap-xam-luoc.html" }
+    ],
+    figures: [
+      { name: "Vua Tự Đức", url: "nhan-vat/vua-tu-duc.html", role: "king" },
+      { name: "Nguyễn Trường Tộ", url: "nhan-vat/nguyen-truong-to.html", role: "advisor" },
+      { name: "Nguyễn Tri Phương", url: "nhan-vat/nguyen-tri-phuong.html", role: "official" }
+    ],
+    lineConnections: []
+  },
+
+  pt9: {
+    category: "Quy Luật Lịch Sử 09",
+    title: "Thức tỉnh dân tộc — Từ dưới lên",
+    period: "Pattern Quy luật",
+    desc: "Khi triều đình sụp đổ và đầu hàng, tầng lớp dưới tự tổ chức kháng cự và cuối cùng thắng: nông dân Hoàng Hoa Thám 30 năm Yên Thế, trí thức Phan Bội Châu-Phan Châu Trinh khai dân trí, thợ ảnh Nguyễn Ái Quốc lên tàu rồi thành lập ĐCSVN 1930 → Tổng Khởi Nghĩa Tháng Tám 1945 → Bảo Đại thoái vị. Dân tộc không chờ vua cứu — dân tộc tự cứu mình.",
+    lessons: [
+      { name: "Các Cuộc Khởi Nghĩa Cần Vương", url: "bai-hoc/nha-nguyen-cac-cuoc-khoi-nghia-can-vuong.html" },
+      { name: "Khởi Nghĩa Yên Thế", url: "bai-hoc/nha-nguyen-khoi-nghia-yen-the.html" },
+      { name: "1885–1945 · Phong Trào Kháng Pháp", url: "bai-hoc/nha-nguyen-chapter3-tong-quan.html" }
+    ],
+    figures: [
+      { name: "Hoàng Hoa Thám", url: "nhan-vat/hoang-hoa-tham.html", role: "official" },
+      { name: "Phan Bội Châu", url: "nhan-vat/phan-boi-chau.html", role: "advisor" },
+      { name: "Phan Châu Trinh", url: "nhan-vat/phan-chau-trinh.html", role: "advisor" },
+      { name: "Hồ Chí Minh", url: "nhan-vat/ho-chi-minh.html", role: "official" }
     ],
     lineConnections: []
   }

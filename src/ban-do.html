@@ -114,7 +114,7 @@
     <div class="text-xs font-semibold tracking-[0.15em] uppercase text-[#9b1c1c] mb-2">Hệ thống học trực quan</div>
     <h1 class="font-serif font-bold text-[#1c1917] text-4xl sm:text-5xl leading-tight mb-3">Bản Đồ Khái Niệm Lịch Sử</h1>
     <p class="text-sm text-[#78716c] max-w-2xl leading-relaxed">
-      Khám phá mối liên hệ nhân quả, các quy luật lặp lại xuyên suốt 1.000 năm lịch sử Giao thời Dựng nước & Bắc thuộc. Bấm vào một khái niệm để xem chi tiết mối liên kết.
+      Khám phá mối liên hệ nhân quả và các quy luật lặp lại xuyên suốt lịch sử Việt Nam — từ Văn Lang (thế kỷ 7 TCN) đến Tháng Tám 1945. Bấm vào một thời kỳ để xem bài học, nhân vật và quy luật liên kết.
     </p>
   </header>
 
@@ -164,11 +164,10 @@
             <span id="detail-period" class="text-xs text-[#a8a29e] italic">TCN – 1009</span>
           </div>
 
-          <!-- Description -->
           <div class="mb-6">
             <h5 class="text-xs font-semibold uppercase tracking-wider text-[#78716c] mb-2">Ý nghĩa cốt lõi</h5>
             <p id="detail-desc" class="text-sm text-[#d6d3d1] leading-relaxed">
-              Bấm chọn vào các thời kỳ bên trái hoặc thẻ quy luật lịch sử để phân tích sâu sắc các sự kiện lịch sử, nhân vật liên quan và bài học thực tiễn rút ra.
+              <span class="text-[#a8a29e] italic">← Chọn một thời kỳ bên trái hoặc thẻ Quy luật để xem phân tích chi tiết.</span>
             </p>
           </div>
 
@@ -189,11 +188,10 @@
           </div>
         </div>
 
-        <!-- Action Link -->
         <div class="mt-8 border-t border-[#292524] pt-4 flex items-center justify-between">
           <div class="text-xs text-[#78716c]">Hệ thống phân tích 3 Gốc / 3 Độc</div>
           <a id="detail-link" href="#" class="px-4 py-2 bg-[#9b1c1c] hover:bg-[#7f1d1d] text-white rounded-xl text-xs font-semibold transition-colors hidden">
-            Đọc bài viết →
+            Xem tất cả bài học →
           </a>
         </div>
 
@@ -238,6 +236,14 @@
     (function renderNodes() {
       const container = document.getElementById('nodes-container');
       NODES_CONFIG.forEach(n => {
+        const db = DATABASE[n.id];
+        const lessonCount = db && db.lessons ? db.lessons.length : 0;
+        const figureCount = db && db.figures ? db.figures.length : 0;
+        const badgeHtml = `
+          <div class="flex items-center gap-2 mt-2">
+            ${lessonCount > 0 ? `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-semibold bg-[#9b1c1c]/10 text-[#9b1c1c] border border-[#9b1c1c]/20">📖 ${lessonCount} bài</span>` : ''}
+            ${figureCount > 0 ? `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-semibold bg-[#057369]/10 text-[#065f46] border border-[#057369]/20">👤 ${figureCount} nhân vật</span>` : ''}
+          </div>`;
         const div = document.createElement('div');
         div.id = `node-${n.id}`;
         div.onclick = () => selectNode(n.id);
@@ -248,7 +254,8 @@
             <span class="text-[9px] text-[#a8a29e] tracking-widest">${n.period}</span>
           </div>
           <h4 class="font-serif font-bold text-sm text-[#1c1917]">${n.title}</h4>
-          <div class="text-[10px] text-[#78716c] italic mt-1">${n.subtitle}</div>`;
+          <div class="text-[10px] text-[#78716c] italic mt-1">${n.subtitle}</div>
+          ${badgeHtml}`;
         container.appendChild(div);
       });
     })();
