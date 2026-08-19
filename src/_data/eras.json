@@ -983,22 +983,70 @@
       }
     ],
     "characters": [
-      { "href": "nhan-vat/nguyen-hue.html", "text": "Quang Trung (Nguyễn Huệ)" },
-      { "text": "Thái Đức Đế (Nguyễn Nhạc)", "href": "nhan-vat/nguyen-nhac.html" },
-      { "text": "Đông Định Vương (Nguyễn Lữ)", "href": "nhan-vat/nguyen-lu.html" },
-      { "text": "Cảnh Thịnh Đế (Nguyễn Quang Toản)", "href": "nhan-vat/nguyen-quang-toan.html" },
-      { "text": "Gia Long (Nguyễn Ánh)", "href": "nhan-vat/nguyen-anh.html" },
-      { "text": "Lê Chiêu Thống", "href": "nhan-vat/le-chieu-thong.html" },
-      { "text": "Ngô Thì Nhậm", "href": "nhan-vat/ngo-thi-nham.html" },
-      { "text": "La Sơn Phu Tử (Nguyễn Thiếp)", "href": "nhan-vat/nguyen-thiep.html" },
-      { "text": "Bá Đa Lộc", "href": "nhan-vat/ba-da-loc.html" },
-      { "text": "Bùi Thị Xuân", "href": "nhan-vat/bui-thi-xuan.html" },
-      { "text": "Trần Quang Diệu", "href": "nhan-vat/tran-quang-dieu.html" },
-      { "text": "Vũ Văn Dũng", "href": "nhan-vat/vu-van-dung.html" },
-      { "text": "Võ Tánh", "href": "nhan-vat/vo-tanh.html" },
-      { "text": "Nguyễn Hữu Chỉnh", "href": "nhan-vat/nguyen-huu-chinh.html" },
-      { "text": "Trương Phúc Loan", "href": "nhan-vat/truong-phuc-loan.html" },
-      { "text": "Tôn Sĩ Nghị", "href": "nhan-vat/ton-si-nghi.html" }
+      {
+        "href": "nhan-vat/nguyen-hue.html",
+        "text": "Quang Trung (Nguyễn Huệ)"
+      },
+      {
+        "text": "Thái Đức Đế (Nguyễn Nhạc)",
+        "href": "nhan-vat/nguyen-nhac.html"
+      },
+      {
+        "text": "Đông Định Vương (Nguyễn Lữ)",
+        "href": "nhan-vat/nguyen-lu.html"
+      },
+      {
+        "text": "Cảnh Thịnh Đế (Nguyễn Quang Toản)",
+        "href": "nhan-vat/nguyen-quang-toan.html"
+      },
+      {
+        "text": "Gia Long (Nguyễn Ánh)",
+        "href": "nhan-vat/nguyen-anh.html"
+      },
+      {
+        "text": "Lê Chiêu Thống",
+        "href": "nhan-vat/le-chieu-thong.html"
+      },
+      {
+        "text": "Ngô Thì Nhậm",
+        "href": "nhan-vat/ngo-thi-nham.html"
+      },
+      {
+        "text": "La Sơn Phu Tử (Nguyễn Thiếp)",
+        "href": "nhan-vat/nguyen-thiep.html"
+      },
+      {
+        "text": "Bá Đa Lộc",
+        "href": "nhan-vat/ba-da-loc.html"
+      },
+      {
+        "text": "Bùi Thị Xuân",
+        "href": "nhan-vat/bui-thi-xuan.html"
+      },
+      {
+        "text": "Trần Quang Diệu",
+        "href": "nhan-vat/tran-quang-dieu.html"
+      },
+      {
+        "text": "Vũ Văn Dũng",
+        "href": "nhan-vat/vu-van-dung.html"
+      },
+      {
+        "text": "Võ Tánh",
+        "href": "nhan-vat/vo-tanh.html"
+      },
+      {
+        "text": "Nguyễn Hữu Chỉnh",
+        "href": "nhan-vat/nguyen-huu-chinh.html"
+      },
+      {
+        "text": "Trương Phúc Loan",
+        "href": "nhan-vat/truong-phuc-loan.html"
+      },
+      {
+        "text": "Tôn Sĩ Nghị",
+        "href": "nhan-vat/ton-si-nghi.html"
+      }
     ],
     "characterLabel": "👤 Nhân vật",
     "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
@@ -1027,6 +1075,10 @@
           {
             "href": "bai-hoc/nha-nguyen-phap-xam-luoc.html",
             "text": "1858–1885 · Pháp Xâm Lược & Mất Nước"
+          },
+          {
+            "href": "bai-hoc/nha-nguyen-chapter3-tong-quan.html",
+            "text": "📋 Tổng Quan Chapter 3 · Phong Trào Kháng Pháp 1885–1945"
           }
         ]
       },
@@ -1055,17 +1107,6 @@
             "href": "bai-hoc/nha-nguyen-tran-ha-noi-cau-giay.html",
             "text": "1873 & 1883 · Hai Chiến Thắng Cầu Giấy"
           },
-          {
-            "href": "bai-hoc/nha-nguyen-bien-co-kinh-thanh-hue-can-vuong.html",
-            "text": "1885 · Biến Cố Kinh Thành & Dụ Cần Vương"
-          }
-        ]
-      },
-      {
-        "label": "🔥 Phong trào Kháng Pháp & Thức Tỉnh Dân Tộc (1885–1945)",
-        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
-        "chipClass": "era-chip-lesson",
-        "items": [
           {
             "href": "bai-hoc/nha-nguyen-bien-co-kinh-thanh-hue-can-vuong.html",
             "text": "1885 · Biến Cố Kinh Thành & Dụ Cần Vương"
@@ -1105,37 +1146,95 @@
           {
             "href": "bai-hoc/nha-nguyen-bao-dai-thoai-vi-doc-lap.html",
             "text": "30/08–02/09/1945 · Bảo Đại Thoái Vị & Tuyên Ngôn Độc Lập"
-          },
-          {
-            "href": "bai-hoc/nha-nguyen-chapter3-tong-quan.html",
-            "text": "📋 Tổng Quan Chapter 3 · Phong Trào Kháng Pháp 1885–1945"
           }
         ]
       }
     ],
-
     "characters": [
-      { "href": "nhan-vat/gia-long.html",           "text": "Gia Long" },
-      { "href": "nhan-vat/vua-minh-mang.html",      "text": "Vua Minh Mạng" },
-      { "href": "nhan-vat/vua-thieu-tri.html",      "text": "Vua Thiệu Trị" },
-      { "href": "nhan-vat/nguyen-van-thanh.html",   "text": "Nguyễn Văn Thành" },
-      { "href": "nhan-vat/le-van-duyet.html",       "text": "Lê Văn Duyệt" },
-      { "href": "nhan-vat/vua-tu-duc.html",        "text": "Vua Tự Đức" },
-      { "href": "nhan-vat/nguyen-tri-phuong.html", "text": "Nguyễn Tri Phương" },
-      { "href": "nhan-vat/hoang-dieu.html",         "text": "Hoàng Diệu" },
-      { "href": "nhan-vat/phan-thanh-gian.html",   "text": "Phan Thanh Giản" },
-      { "href": "nhan-vat/truong-dinh.html",        "text": "Trương Định" },
-      { "href": "nhan-vat/nguyen-trung-truc.html",  "text": "Nguyễn Trung Trực" },
-      { "href": "nhan-vat/nguyen-truong-to.html",   "text": "Nguyễn Trường Tộ" },
-      { "href": "nhan-vat/ton-that-thuyet.html",   "text": "Tôn Thất Thuyết" },
-      { "href": "nhan-vat/vua-ham-nghi.html",       "text": "Vua Hàm Nghi" },
-      { "href": "nhan-vat/phan-dinh-phung.html",    "text": "Phan Đình Phùng" },
-      { "href": "nhan-vat/hoang-hoa-tham.html",     "text": "Hoàng Hoa Thám" },
-      { "href": "nhan-vat/phan-boi-chau.html",      "text": "Phan Bội Châu" },
-      { "href": "nhan-vat/phan-chau-trinh.html",    "text": "Phan Châu Trinh" },
-      { "href": "nhan-vat/nguyen-thai-hoc.html",    "text": "Nguyễn Thái Học" },
-      { "href": "nhan-vat/ho-chi-minh.html",        "text": "Hồ Chí Minh" },
-      { "href": "nhan-vat/vua-bao-dai.html",        "text": "Vua Bảo Đại" }
+      {
+        "href": "nhan-vat/gia-long.html",
+        "text": "Gia Long"
+      },
+      {
+        "href": "nhan-vat/vua-minh-mang.html",
+        "text": "Vua Minh Mạng"
+      },
+      {
+        "href": "nhan-vat/vua-thieu-tri.html",
+        "text": "Vua Thiệu Trị"
+      },
+      {
+        "href": "nhan-vat/nguyen-van-thanh.html",
+        "text": "Nguyễn Văn Thành"
+      },
+      {
+        "href": "nhan-vat/le-van-duyet.html",
+        "text": "Lê Văn Duyệt"
+      },
+      {
+        "href": "nhan-vat/vua-tu-duc.html",
+        "text": "Vua Tự Đức"
+      },
+      {
+        "href": "nhan-vat/nguyen-tri-phuong.html",
+        "text": "Nguyễn Tri Phương"
+      },
+      {
+        "href": "nhan-vat/hoang-dieu.html",
+        "text": "Hoàng Diệu"
+      },
+      {
+        "href": "nhan-vat/phan-thanh-gian.html",
+        "text": "Phan Thanh Giản"
+      },
+      {
+        "href": "nhan-vat/truong-dinh.html",
+        "text": "Trương Định"
+      },
+      {
+        "href": "nhan-vat/nguyen-trung-truc.html",
+        "text": "Nguyễn Trung Trực"
+      },
+      {
+        "href": "nhan-vat/nguyen-truong-to.html",
+        "text": "Nguyễn Trường Tộ"
+      },
+      {
+        "href": "nhan-vat/ton-that-thuyet.html",
+        "text": "Tôn Thất Thuyết"
+      },
+      {
+        "href": "nhan-vat/vua-ham-nghi.html",
+        "text": "Vua Hàm Nghi"
+      },
+      {
+        "href": "nhan-vat/phan-dinh-phung.html",
+        "text": "Phan Đình Phùng"
+      },
+      {
+        "href": "nhan-vat/hoang-hoa-tham.html",
+        "text": "Hoàng Hoa Thám"
+      },
+      {
+        "href": "nhan-vat/phan-boi-chau.html",
+        "text": "Phan Bội Châu"
+      },
+      {
+        "href": "nhan-vat/phan-chau-trinh.html",
+        "text": "Phan Châu Trinh"
+      },
+      {
+        "href": "nhan-vat/nguyen-thai-hoc.html",
+        "text": "Nguyễn Thái Học"
+      },
+      {
+        "href": "nhan-vat/ho-chi-minh.html",
+        "text": "Hồ Chí Minh"
+      },
+      {
+        "href": "nhan-vat/vua-bao-dai.html",
+        "text": "Vua Bảo Đại"
+      }
     ],
     "characterLabel": "👤 Nhân vật",
     "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
