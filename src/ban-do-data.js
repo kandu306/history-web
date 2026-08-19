@@ -652,7 +652,17 @@ const DATABASE = {
       { name: "1858–1885 · Pháp Xâm Lược & Mất Nước", url: "bai-hoc/nha-nguyen-phap-xam-luoc.html" },
       { name: "1862–1884 · Chuỗi Hòa Ước Nhượng Bộ", url: "bai-hoc/nha-nguyen-hoa-uoc-bat-binh-dang.html" },
       { name: "1873 & 1883 · Hai Chiến Thắng Cầu Giấy", url: "bai-hoc/nha-nguyen-tran-ha-noi-cau-giay.html" },
-      { name: "1885 · Biến Cố Kinh Thành & Dụ Cần Vương", url: "bai-hoc/nha-nguyen-bien-co-kinh-thanh-hue-can-vuong.html" }
+      { name: "1885 · Biến Cố Kinh Thành & Dụ Cần Vương", url: "bai-hoc/nha-nguyen-bien-co-kinh-thanh-hue-can-vuong.html" },
+      { name: "1885–1896 · Các Cuộc Khởi Nghĩa Cần Vương", url: "bai-hoc/nha-nguyen-cac-cuoc-khoi-nghia-can-vuong.html" },
+      { name: "1884–1913 · Khởi Nghĩa Yên Thế — Hoàng Hoa Thám", url: "bai-hoc/nha-nguyen-khoi-nghia-yen-the.html" },
+      { name: "1904–1908 · Đông Du & Duy Tân Hội — Phan Bội Châu", url: "bai-hoc/nha-nguyen-dong-du-duy-tan-hoi.html" },
+      { name: "1906–1908 · Duy Tân & Đông Kinh Nghĩa Thục — Phan Châu Trinh", url: "bai-hoc/nha-nguyen-duy-tan-dong-kinh-nghia-thuc.html" },
+      { name: "1911–1930 · Nguyễn Ái Quốc Tìm Đường & Thành Lập Đảng", url: "bai-hoc/nha-nguyen-nguyen-ai-quoc-thanh-lap-dang.html" },
+      { name: "1927–1930 · Khởi Nghĩa Yên Bái & VNQDD", url: "bai-hoc/nha-nguyen-khoi-nghia-yen-bai.html" },
+      { name: "09/03/1945 · Nhật Đảo Chính Pháp", url: "bai-hoc/nha-nguyen-nhat-dao-chinh-phap.html" },
+      { name: "08/1945 · Tổng Khởi Nghĩa Tháng Tám", url: "bai-hoc/nha-nguyen-tong-khoi-nghia-thang-tam.html" },
+      { name: "30/08–02/09/1945 · Bảo Đại Thoái Vị & Tuyên Ngôn Độc Lập", url: "bai-hoc/nha-nguyen-bao-dai-thoai-vi-doc-lap.html" },
+      { name: "Tổng Quan Chapter 3 · Phong Trào Kháng Pháp 1885–1945", url: "bai-hoc/nha-nguyen-chapter3-tong-quan.html" }
     ],
     figures: [
       { name: "Gia Long",             url: "nhan-vat/gia-long.html",           role: "king" },
@@ -667,7 +677,15 @@ const DATABASE = {
       { name: "Trương Định",         url: "nhan-vat/truong-dinh.html",         role: "official" },
       { name: "Nguyễn Trung Trực",   url: "nhan-vat/nguyen-trung-truc.html",  role: "official" },
       { name: "Nguyễn Trường Tộ",    url: "nhan-vat/nguyen-truong-to.html",   role: "advisor" },
-      { name: "Tôn Thất Thuyết",     url: "nhan-vat/ton-that-thuyet.html",    role: "official" }
+      { name: "Tôn Thất Thuyết",     url: "nhan-vat/ton-that-thuyet.html",    role: "official" },
+      { name: "Vua Hàm Nghi",        url: "nhan-vat/vua-ham-nghi.html",       role: "king" },
+      { name: "Phan Đình Phùng",     url: "nhan-vat/phan-dinh-phung.html",    role: "official" },
+      { name: "Hoàng Hoa Thám",      url: "nhan-vat/hoang-hoa-tham.html",     role: "official" },
+      { name: "Phan Bội Châu",       url: "nhan-vat/phan-boi-chau.html",      role: "advisor" },
+      { name: "Phan Châu Trinh",     url: "nhan-vat/phan-chau-trinh.html",    role: "advisor" },
+      { name: "Nguyễn Thái Học",     url: "nhan-vat/nguyen-thai-hoc.html",    role: "official" },
+      { name: "Hồ Chí Minh",         url: "nhan-vat/ho-chi-minh.html",        role: "king" },
+      { name: "Vua Bảo Đại",         url: "nhan-vat/vua-bao-dai.html",        role: "king" }
     ],
     lineConnections: []
   }
