@@ -1143,7 +1143,6 @@ const DYNASTY_DATA = [
           { href: "nhan-vat/nguyen-trung-truc.html", iconClass: "icon-official", icon: "🔥", roleClass: "role-official", role: "Anh hùng · Đốt tàu Esperance", name: "Nguyễn Trung Trực", desc: "Đốt cháy tàu chiến Pháp Esperance (1861), chiếm đồn Rạch Giá (1868). Bị bắt và xử tử, để lại câu nói bất hủ: 'Bao giờ người Tây nhổ hết cỏ nước Nam mới hết người Nam đánh Tây'." },
           { href: "nhan-vat/nguyen-truong-to.html", iconClass: "icon-advisor", icon: "📜", roleClass: "role-advisor", role: "Nhà canh tân · 58 điều trần", name: "Nguyễn Trường Tộ", desc: "Dâng 58+ bản điều trần canh tân toàn diện (1863–1871) — tương tự Minh Trị Duy Tân của Nhật. Bị Tự Đức gạt bỏ vì bảo thủ Nho giáo. Đến khi mất nước không còn cơ hội thứ hai." },
           { href: "nhan-vat/ton-that-thuyet.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Thượng thư Bộ Binh · Phe Chủ chiến", name: "Tôn Thất Thuyết", desc: "Linh hồn phe Chủ chiến. Bí mật xây căn cứ Tân Sở trước, tấn công đồn Mang Cá (1885), đưa Vua Hàm Nghi ban Dụ Cần Vương — châm ngòi phong trào kháng Pháp toàn quốc 10 năm." }
-          { href: "nhan-vat/ton-that-thuyet.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Thượng thư Bộ Binh · Phe Chủ chiến", name: "Tôn Thất Thuyết", desc: "Linh hồn phe Chủ chiến. Bí mật xây căn cứ Tân Sở trước, tấn công đồn Mang Cá (1885), đưa Vua Hàm Nghi ban Dụ Cần Vương — châm ngòi phong trào kháng Pháp toàn quốc 10 năm." }
         ]
       },
 
