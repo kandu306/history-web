@@ -662,7 +662,7 @@ const DATABASE = {
       { name: "09/03/1945 · Nhật Đảo Chính Pháp", url: "bai-hoc/nha-nguyen-nhat-dao-chinh-phap.html" },
       { name: "08/1945 · Tổng Khởi Nghĩa Tháng Tám", url: "bai-hoc/nha-nguyen-tong-khoi-nghia-thang-tam.html" },
       { name: "30/08–02/09/1945 · Bảo Đại Thoái Vị & Tuyên Ngôn Độc Lập", url: "bai-hoc/nha-nguyen-bao-dai-thoai-vi-doc-lap.html" },
-      { name: "Tổng Quan Chapter 3 · Phong Trào Kháng Pháp 1885–1945", url: "bai-hoc/nha-nguyen-chapter3-tong-quan.html" }
+      { name: "1885–1945 · Phong Trào Kháng Pháp & Thức Tỉnh Dân Tộc", url: "bai-hoc/nha-nguyen-chapter3-tong-quan.html" }
     ],
     figures: [
       { name: "Gia Long",             url: "nhan-vat/gia-long.html",           role: "king" },
