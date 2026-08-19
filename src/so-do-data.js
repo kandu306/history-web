@@ -1016,13 +1016,8 @@ const DYNASTY_DATA = [
             name: "Nguyễn Phúc Khoát", nameStyle: "color:white;",
             realName: "1714–1765 SCN", realNameStyle: "color:#d6d3d1;",
             years: "📅 Cai quản: 1738–1765",
-            note: "Tự xưng 'Vũ Vương' 1744 — lần đầu tiên Chúa Nguyễn dùng tôn hiệu độc lập, không còn nhận danh nghĩa từ triều đình Lê-Trịnh. Đỉnh cao của Đàng Trong, nhưng cũng bắt đầu suy yếu nội bộ."
-          },
-          officials: [
-            { href: null, iconClass: "icon-official", icon: "👘", roleClass: "role-official",
-              role: "Cải cách văn hóa · 1744", name: "Áo dài Đàng Trong",
-              desc: "Năm 1744, ban sắc chỉ quy định y phục — cải cách tạo ra tiền thân của áo dài Việt Nam hiện đại. Đàng Trong phát triển bản sắc văn hóa riêng biệt với Đàng Ngoài." }
-          ]
+            note: "Tự xưng 'Vũ Vương' 1744 — lần đầu tiên Chúa Nguyễn dùng tôn hiệu độc lập, không còn nhận danh nghĩa từ triều đình Lê-Trịnh. Năm 1744, ban sắc chỉ quy định y phục — cải cách tạo ra tiền thân của áo dài Việt Nam hiện đại."
+          }
         },
 
         // ── Chúa Nguyễn 6: Nguyễn Phúc Thuần ──────
@@ -1152,7 +1147,6 @@ const DYNASTY_DATA = [
     }
   ]
   },
-
   // ─────────────────────────────────────────────────────────────
   // ERA: PHONG TRÀO KHÁNG PHÁP & THỨC TỈNH DÂN TỘC
   // ─────────────────────────────────────────────────────────────
@@ -1174,70 +1168,13 @@ const DYNASTY_DATA = [
           note: "Vua 13 tuổi duy nhất dám chọn kháng chiến. Ban Dụ Cần Vương 13/07/1885 — châm ngòi phong trào toàn quốc. 1888 bị phản bội, bị đày Algérie, học vẽ và từ chối hợp tác với Pháp suốt 55 năm."
         },
         officials: [
-          { href: "nhan-vat/ton-that-thuyet.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Thượng thư · Kiến trúc sư Cần Vương", name: "Tôn Thất Thuyết", desc: "Linh hồn phe Chủ chiến — xây căn cứ Tân Sở, tấn công Pháp tại Mang Cá, đưa Hàm Nghi ban Dụ Cần Vương, mở ra 10 năm kháng chiến toàn quốc." }
+          { href: "nhan-vat/ton-that-thuyet.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Thượng thư · Kiến trúc sư Cần Vương", name: "Tôn Thất Thuyết", desc: "Linh hồn phe Chủ chiến — xây căn cứ Tân Sở, tấn công Pháp tại Mang Cá, đưa Hàm Nghi ban Dụ Cần Vương, mở ra 10 năm kháng chiến toàn quốc." },
+          { href: "nhan-vat/phan-dinh-phung.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Thủ lĩnh Hương Khê · 10 năm kháng chiến", name: "Phan Đình Phùng & Cao Thắng", desc: "Địa bàn 4 tỉnh liên hoàn. Cao Thắng tự chế 350+ súng Gras — kỳ tích Reverse Engineering. Phan Đình Phùng mất 1895 vì bệnh lỵ, không thua trên chiến trường." },
+          { href: "nhan-vat/hoang-hoa-tham.html", iconClass: "icon-official", icon: "⚔️", roleClass: "role-official", role: "Hùm Xám Yên Thế · 30 năm bất khuất", name: "Hoàng Hoa Thám (Đề Thám)", desc: "Nông dân không học vị Nho học. Ép Pháp giảng hòa 2 lần. Xây Đồn điền Phồn Xương — mô hình kháng chiến + sản xuất tự cấp. Bị phản bội và ám sát 10/02/1913." },
+          { href: "nhan-vat/phan-boi-chau.html", iconClass: "icon-advisor", icon: "📜", roleClass: "role-advisor", role: "Nhà cách mạng · Đông Du & Duy Tân Hội", name: "Phan Bội Châu", desc: "Lập Duy Tân Hội, đưa 200+ du học sinh sang Nhật. 1908 Nhật bán cho Pháp, Đông Du tan rã. Bài học xương máu về bẫy cầu viện ngoại lực." },
+          { href: "nhan-vat/phan-chau-trinh.html", iconClass: "icon-advisor", icon: "📜", roleClass: "role-advisor", role: "Con đường Duy Tân · Khai dân trí", name: "Phan Châu Trinh", desc: "'Khai dân trí, Chấn dân khí, Hậu dân sinh'. Đông Kinh Nghĩa Thục 1907. Con đường cải cách nội tại — đối lập với bạo động ngoại viện của Phan Bội Châu." },
+          { href: "nhan-vat/nguyen-thai-hoc.html", iconClass: "icon-official", icon: "⚡", roleClass: "role-official", role: "Thủ lĩnh VNQDD · Không thành công thì thành nhân", name: "Nguyễn Thái Học & Cô Giang", desc: "Lập VNQDD 1927, Khởi nghĩa Yên Bái thất bại trong 24 giờ. 17/06/1930: 13 chiến sĩ lên máy chém hô 'Việt Nam muôn năm!'. Cô Giang tự sát ngày hôm sau." }
         ]
-      },
-      {
-        king: {
-          href: "nhan-vat/phan-dinh-phung.html",
-          cardStyle: "border-color: rgba(155,28,28,0.5); background: linear-gradient(135deg, #1c1917 0%, #7f1d1d 100%); color: white;",
-          crown: "⚔️", title: "Thủ Lĩnh Hương Khê · Đỉnh Cao Cần Vương", titleStyle: "color:#fca5a5;",
-          name: "Phan Đình Phùng & Cao Thắng", nameStyle: "color:white;",
-          realName: "Phan Đình Phùng · 1847 – 1895 | Cao Thắng · 1864 – 1893", realNameStyle: "color:#d6d3d1;",
-          years: "📅 Hương Khê 1885–1896 · 10 năm kháng chiến dài nhất Cần Vương", yearsStyle: "background:rgba(0,0,0,0.4); color:#fca5a5;",
-          note: "Địa bàn 4 tỉnh liên hoàn. Cao Thắng tự chế 350+ súng Gras bằng thủ công — kỳ tích 'Reverse Engineering'. Kháng chiến 10 năm. Phan Đình Phùng mất 1895 vì bệnh lỵ — không thua trên chiến trường."
-        },
-        officials: []
-      },
-      {
-        king: {
-          href: "nhan-vat/hoang-hoa-tham.html",
-          cardStyle: "border-color: rgba(155,28,28,0.5); background: linear-gradient(135deg, #1c1917 0%, #7c2d12 100%); color: white;",
-          crown: "⚔️", title: "Hùm Xám Yên Thế · 30 Năm Bất Khuất", titleStyle: "color:#fed7aa;",
-          name: "Hoàng Hoa Thám (Đề Thám)", nameStyle: "color:white;",
-          realName: "Trương Văn Nghĩa · ~1858 – 1913", realNameStyle: "color:#d6d3d1;",
-          years: "📅 Yên Thế 1884–1913 · 30 năm — Kháng chiến dài nhất chống Pháp", yearsStyle: "background:rgba(0,0,0,0.4); color:#fed7aa;",
-          note: "Nông dân, không học vị Nho học. Ép Pháp giảng hòa 2 lần bằng chiến thuật con tin. Xây Đồn điền Phồn Xương — mô hình kháng chiến + sản xuất tự cấp. 10/02/1913 bị phản bội và ám sát."
-        },
-        officials: []
-      },
-      {
-        king: {
-          href: "nhan-vat/phan-boi-chau.html",
-          cardStyle: "border-color: rgba(180,83,9,0.5); background: linear-gradient(135deg, #1c1917 0%, #78350f 100%); color: white;",
-          crown: "📜", title: "Nhà Cách Mạng · Đông Du & Duy Tân Hội", titleStyle: "color:#fde68a;",
-          name: "Phan Bội Châu", nameStyle: "color:white;",
-          realName: "Phan Văn San · 1867 – 1940", realNameStyle: "color:#d6d3d1;",
-          years: "📅 Duy Tân Hội 1904 · Đông Du 1905–1908 · Tù 1925–1940", yearsStyle: "background:rgba(0,0,0,0.4); color:#fde68a;",
-          note: "Lập Duy Tân Hội, phong trào Đông Du đưa 200+ du học sinh sang Nhật. 1908 Nhật ký thỏa thuận với Pháp, Đông Du tan rã. Bài học: bẫy cầu viện ngoại lực. 1925 bị Pháp bắt, 'ông già Bến Ngự' suốt 15 năm."
-        },
-        officials: [
-          { href: "nhan-vat/phan-chau-trinh.html", iconClass: "icon-advisor", icon: "📜", roleClass: "role-advisor", role: "Con đường Duy Tân ôn hòa song song", name: "Phan Châu Trinh", desc: "'Khai dân trí, Chấn dân khí, Hậu dân sinh'. Đông Kinh Nghĩa Thục 1907 — dạy chữ Quốc ngữ miễn phí 9 tháng. Bị đày Côn Đảo 1908. Con đường cải cách nội tại đối lập với bạo động ngoại viện của Phan Bội Châu." }
-        ]
-      },
-      {
-        king: {
-          href: "nhan-vat/nguyen-thai-hoc.html",
-          cardStyle: "border-color: rgba(155,28,28,0.5); background: linear-gradient(135deg, #1c1917 0%, #450a0a 100%); color: white;",
-          crown: "⚡", title: "Thủ Lĩnh VNQDD · Không Thành Công Thì Thành Nhân", titleStyle: "color:#fca5a5;",
-          name: "Nguyễn Thái Học & Cô Giang", nameStyle: "color:white;",
-          realName: "Nguyễn Thái Học · 1902 – 1930 | Cô Giang · 1906 – 1930", realNameStyle: "color:#d6d3d1;",
-          years: "📅 VNQDD 12/1927 · Khởi Nghĩa Yên Bái 09/02/1930 · Máy Chém 17/06/1930", yearsStyle: "background:rgba(0,0,0,0.4); color:#fca5a5;",
-          note: "Lập VNQDD 1927 theo mô hình dân chủ tư sản. Khởi nghĩa Yên Bái thất bại trong 24 giờ. 17/06/1930: 13 chiến sĩ ngẩng đầu trên máy chém hô 'Việt Nam muôn năm!'. Cô Giang tự sát ngày hôm sau."
-        },
-        officials: []
-      },
-      {
-        king: {
-          href: "nhan-vat/ho-chi-minh.html",
-          cardStyle: "border-color: rgba(28,25,23,0.8); background: linear-gradient(135deg, #1c1917 0%, #052e16 100%); color: white;",
-          crown: "🌟", title: "Nguyễn Ái Quốc — Hồ Chí Minh · Người Tìm Đường", titleStyle: "color:#86efac;",
-          name: "Hồ Chí Minh (Nguyễn Ái Quốc)", nameStyle: "color:white;",
-          realName: "Nguyễn Sinh Cung / Nguyễn Tất Thành · 1890 – 1969", realNameStyle: "color:#d6d3d1;",
-          years: "📅 Rời Cảng Nhà Rồng 1911 · Luận Cương Lênin 1920 · ĐCSVN 03/02/1930", yearsStyle: "background:rgba(0,0,0,0.4); color:#86efac;",
-          note: "21 tuổi rời Cảng Nhà Rồng để tìm hiểu 'tại sao Pháp mạnh'. 1920 đọc Luận cương Lênin — tìm ra con đường. 1925 lập Hội Việt Nam Cách mạng Thanh niên. 03/02/1930 chủ trì Hội nghị Hợp nhất thành lập ĐCSVN — tổng hợp cả Đông Du lẫn Duy Tân ở tầng cao hơn."
-        },
-        officials: []
       },
       {
         king: {
@@ -1247,9 +1184,11 @@ const DYNASTY_DATA = [
           name: "Vua Bảo Đại", nameStyle: "color:white;",
           realName: "Nguyễn Phúc Vĩnh Thụy · 1913 – 1997", realNameStyle: "color:#d6d3d1;",
           years: "📅 Trị vì: 1926 – 1945 · Thoái vị 30/08/1945 tại Ngọ Môn (Huế)", yearsStyle: "background:rgba(0,0,0,0.4); color:#fca5a5;",
-          note: "30/08/1945: tự nguyện trao ấn kiếm vàng cho Việt Minh — câu nói 'Thà làm dân một nước độc lập, còn hơn làm vua một nước nô lệ'. Kết thúc 143 năm nhà Nguyễn. Nghịch lý: 1949 lại ký Hiệp ước Élysée quay về làm quốc trưởng bù nhìn dưới Pháp."
+          note: "30/08/1945: trao ấn kiếm vàng cho Việt Minh — 'Thà làm dân một nước độc lập, còn hơn làm vua một nước nô lệ'. Kết thúc 143 năm nhà Nguyễn. Nghịch lý: 1949 ký Hiệp ước Élysée quay về làm quốc trưởng bù nhìn."
         },
-        officials: []
+        officials: [
+          { href: "nhan-vat/ho-chi-minh.html", iconClass: "icon-official", icon: "🌟", roleClass: "role-official", role: "Người nhận chính quyền · Chủ tịch VNDCCH", name: "Hồ Chí Minh (Nguyễn Ái Quốc)", desc: "21 tuổi rời Cảng Nhà Rồng tìm đường cứu nước. 1920 đọc Luận cương Lênin. 03/02/1930 thành lập ĐCSVN. 02/09/1945 đọc Tuyên ngôn Độc lập tại Ba Đình — khai sinh VNDCCH." }
+        ]
       }
     ]
   }
