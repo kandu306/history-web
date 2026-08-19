@@ -116,10 +116,10 @@ const NODES_CONFIG = [
   },
   {
     id: "nha_nguyen",
-    tagLabel: "Thực Dân Pháp Xâm Lược", tagColor: "#7f1d1d",
+    tagLabel: "Triều Đại Cuối — Pháp Xâm Lược & Kháng Chiến", tagColor: "#7f1d1d",
     period: "1802–1945 SCN",
     title: "Nhà Nguyễn — Triều Đại Cuối Cùng",
-    subtitle: "Thống nhất lãnh thổ · Đối đầu Pháp · Cần Vương · Mất chủ quyền 1884"
+    subtitle: "Thống nhất lãnh thổ · Kháng Pháp · Cần Vương · Đông Du · Tháng Tám 1945"
   }
 ];
 
@@ -643,7 +643,7 @@ const DATABASE = {
     category: "Triều Đại",
     title: "Nhà Nguyễn — Triều Đại Cuối Cùng",
     period: "1802–1945 SCN",
-    desc: "Gia Long thống nhất đất nước sau 300 năm chia cắt Trịnh–Nguyễn và 30 năm nội chiến Tây Sơn. Nhà Nguyễn lập kinh đô Huế, đặt quốc hiệu Việt Nam (1804). Nhưng đúng vào lúc đó, chủ nghĩa thực dân phương Tây ập đến với pháo hạm và súng trường hiện đại. Dù có những danh tướng kiên cường như Nguyễn Tri Phương, Hoàng Diệu — và những nhà canh tân sáng suốt như Nguyễn Trường Tộ — triều đình Huế do dự, bảo thủ, từ chối đổi mới. Pháp lần lượt chiếm Nam Kỳ (1858–1867), Bắc Kỳ và Trung Kỳ (1883–1884). Phong trào Cần Vương (1885–1896) bùng lên rồi bị dập tắt. Năm 1945, Vua Bảo Đại thoái vị — khép lại 143 năm triều Nguyễn và nghìn năm phong kiến Việt Nam.",
+    desc: "Gia Long thống nhất đất nước sau 300 năm chia cắt Trịnh–Nguyễn. Nhà Nguyễn lập kinh đô Huế, đặt quốc hiệu Việt Nam (1804). Pháp xâm lược từ 1858 — triều đình lần lượt ký các hòa ước nhượng bộ đến 1884 mất hoàn toàn chủ quyền. Giai đoạn 1885–1945 là 60 năm người Việt không ngừng kháng chiến và thức tỉnh dân tộc: Vua Hàm Nghi ban Dụ Cần Vương (1885) → Phan Đình Phùng 10 năm Hương Khê → Hoàng Hoa Thám 30 năm Yên Thế → Phan Bội Châu Đông Du → Phan Châu Trinh Duy Tân → Nguyễn Thái Học Yên Bái → Hồ Chí Minh thành lập ĐCSVN (1930) → Tổng Khởi Nghĩa Tháng Tám → Vua Bảo Đại thoái vị 30/08/1945, khai sinh VNDCCH — khép lại 143 năm nhà Nguyễn và hơn 1000 năm phong kiến Việt Nam.",
     lessons: [
       { name: "1802–1858 · Độc Lập, Thống Nhất & Đỉnh Cao", url: "bai-hoc/nha-nguyen-doc-lap-thong-nhat-dinh-cao.html" },
       { name: "1831–32 · Đại Cải Cách 31 Tỉnh Minh Mạng", url: "bai-hoc/nha-nguyen-cai-cach-hanh-chinh-minh-mang.html" },
@@ -684,7 +684,7 @@ const DATABASE = {
       { name: "Phan Bội Châu",       url: "nhan-vat/phan-boi-chau.html",      role: "advisor" },
       { name: "Phan Châu Trinh",     url: "nhan-vat/phan-chau-trinh.html",    role: "advisor" },
       { name: "Nguyễn Thái Học",     url: "nhan-vat/nguyen-thai-hoc.html",    role: "official" },
-      { name: "Hồ Chí Minh",         url: "nhan-vat/ho-chi-minh.html",        role: "king" },
+      { name: "Hồ Chí Minh",         url: "nhan-vat/ho-chi-minh.html",        role: "official" },
       { name: "Vua Bảo Đại",         url: "nhan-vat/vua-bao-dai.html",        role: "king" }
     ],
     lineConnections: []
