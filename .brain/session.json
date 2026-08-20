@@ -1,108 +1,62 @@
 {
   "project": "history-web",
-  "saved_at": "2026-08-15T22:27:00+07:00",
-  "trigger": "user_command_save_brain",
-  "git_branch": "main",
-  "last_commits": [
-    "e51c0ed fix(so-do): unify all Nguyen dynasty king cards to same dark red color scheme",
-    "de8f475 fix(so-do): Minh Mang & Thieu Tri as separate king columns",
-    "e5d1f92 feat(nha-nguyen): update ban-do-data + so-do-data with new 1802-1847 content",
-    "385b271 feat(nha-nguyen): add 4 lesson + 6 character pages (1802-1858)",
-    "5b1dd4e feat(nha-nguyen): create lesson pages for 1802-1858 early Nguyen period"
-  ],
-  "summary": {
-    "working_on": "Mở rộng nội dung Nhà Nguyễn — giai đoạn 1802–1858 (trước khi Pháp xâm lược)",
-    "status": "IN PROGRESS — Đã tạo xong cấu trúc, nhưng nội dung chưa đạt quality check",
-    "total_files": 202,
-    "last_work_today": [
-      "Tạo 4 trang bài học: doc-lap-thong-nhat, cai-cach-minh-mang, le-van-khoi-xiem, chu-quyen-hoang-sa",
-      "Tạo 6 trang nhân vật: gia-long, vua-minh-mang, vua-thieu-tri, nguyen-van-thanh, le-van-duyet, ton-that-thuyet",
-      "Cập nhật eras.json: thêm bài học + nhân vật vào era-nha-nguyen",
-      "Cập nhật ban-do-data.js: thêm 4 bài học + 5 nhân vật mới vào nha_nguyen",
-      "Cập nhật so-do-data.js: thêm 3 cột vua mới (Gia Long, Minh Mạng, Thiệu Trị)",
-      "Fix màu sắc: tất cả vua Nhà Nguyễn dùng cùng màu đỏ thẫm (#450a0a → #7f1d1d)"
-    ],
-    "progress_percent": 60
+  "repo": "kandu306/history-web",
+  "live_url": "https://kandu306.github.io/history-web/",
+  "stack": "11ty (Eleventy) + Tailwind CSS",
+  "last_saved": "2026-08-19T12:03:00+07:00",
+  "trigger": "user_request (/save-brain)",
+
+  "session_summary": {
+    "working_on": "Cập nhật & cải thiện 3 trang chính: index, so-do-trieu-dinh, ban-do",
+    "status": "COMPLETED",
+    "last_commit": "0021062 - improve: ban-do - them 4 quy luat LS moi (pt6-pt9), badge dem bai hoc/nhan vat tren node, sua header, visual hint"
   },
-  "pending_quality_fixes": {
-    "critical_4_bai_hoc": {
-      "files": [
-        "src/bai-hoc/nha-nguyen-doc-lap-thong-nhat-dinh-cao.html",
-        "src/bai-hoc/nha-nguyen-cai-cach-hanh-chinh-minh-mang.html",
-        "src/bai-hoc/nha-nguyen-khoi-nghia-le-van-khoi-xiem.html",
-        "src/bai-hoc/nha-nguyen-chu-quyen-hoang-sa-truong-sa.html"
-      ],
-      "score": "25-38% (2-3/8 tiêu chí)",
-      "missing": [
-        "CSS tag pills (.tag-su-kien, .tag-suy-luan, .tag-han-che) — cần thêm <style> block",
-        "Cấu trúc ev-block — cần chuyển đổi nội dung inline sang ev-block mới",
-        "Section 3 Gốc với ≥4 ev-block có tiêu đề riêng",
-        "Section 3 Độc — mỗi mục ≥80 ký tự phân tích",
-        "Section 3 Bài học ứng dụng (Ứng dụng 01, 02, 03) với h3 + insight box",
-        "Section Xem thêm với ≥3 liên kết"
-      ]
-    },
-    "medium_6_nhan_vat": {
-      "files": [
-        "src/nhan-vat/gia-long.html",
-        "src/nhan-vat/vua-minh-mang.html",
-        "src/nhan-vat/vua-thieu-tri.html",
-        "src/nhan-vat/nguyen-van-thanh.html",
-        "src/nhan-vat/le-van-duyet.html",
-        "src/nhan-vat/ton-that-thuyet.html"
-      ],
-      "score": "63-75% (5-6/8 tiêu chí)",
-      "missing": [
-        "Section 3 Độc — mỗi mục Tham/Sân/Si cần ≥80 ký tự thực chất",
-        "Section 3 Bài học ứng dụng (Ứng dụng 01, 02, 03) với h3 + insight box",
-        "Section Xem thêm với ≥3 liên kết (trừ gia-long.html đã có)"
-      ]
-    }
-  },
+
   "architecture": {
-    "build_system": "Eleventy (npm run build → Wrote 202 files)",
-    "layout": "Event Block Layout — .tag-su-kien, .tag-suy-luan, .ev-block, .quote-box",
-    "validation": "scripts/check-content-quality.js — 8 tiêu chí, cần 8/8 để pass",
-    "pipeline": "node scripts/check-content-quality.js → npm run build → git commit → git push",
-    "repo": "https://github.com/kandu306/history-web.git",
-    "deploy": "Cloudflare Pages (auto-deploy từ main branch)"
+    "index_data": "src/_data/eras.json",
+    "so_do_data": "src/so-do-data.js",
+    "ban_do_data": "src/ban-do-data.js",
+    "templates": "src/*.njk (Nunjucks)",
+    "shared_assets": "src/shared/"
   },
-  "content_structure": {
-    "required_sections": [
-      "Chân dung lịch sử (dark card)",
-      "01 — 3 Gốc (Trí tuệ · Đạo đức · Nghị lực)",
-      "02 — 3 Độc (Tham lam · Sân giận · Si mê)",
-      "03 — Di sản & Bài học (3 góc nhìn sâu với insight box)",
-      "04 — Xem thêm (≥3 liên kết)"
-    ],
-    "required_elements": [
-      "CSS: .tag-su-kien, .tag-suy-luan, .tag-han-che",
-      "Layout: .ev-block (≥4 trong section 3 Gốc)",
-      "Quote box: ≥1 .quote-box với phân tích trong span.text-xs",
-      "Frontmatter: title, description, breadcrumb",
-      "NO: 'Phán quyết nhanh' section"
-    ]
-  },
-  "quality_check_criteria": {
-    "1": "Không còn 'Phán quyết nhanh'",
-    "2": "Có CSS tag pills (.tag-su-kien, .tag-suy-luan)",
-    "3": "Có class .ev-block",
-    "4": "Có ít nhất 1 quote-box",
-    "5": "Section 3 Gốc có ít nhất 4 ev-block",
-    "6": "Section 3 Độc có phân tích đủ dài (≥100 ký tự mỗi mục)",
-    "7": "Section Bài học có đủ 3 bài",
-    "8": "Section Xem thêm có ≥3 liên kết"
-  },
-  "next_session_todo": [
-    "PRIORITY 1: Viết lại 4 trang bài học (25-38%) — cần thêm cấu trúc ev-block + CSS + 3 bài học",
-    "PRIORITY 2: Nâng cấp 6 trang nhân vật (63-75%) — thêm 3 Độc sâu hơn + 3 bài học + Xem thêm",
-    "PRIORITY 3: Kiểm tra so-do-trieu-dinh trên browser sau khi Cloudflare clear cache"
+
+  "work_done_this_session": [
+    {
+      "task": "eras.json - Restructure Chapter 3 era-nha-nguyen",
+      "details": "Moved 'Tổng Quan Chapter 3' chip into BÀI HỌC group. Standardized chip format to 'YEAR · SHORT TITLE'. Merged all 15 events into single 'Sự kiện nổi bật' group."
+    },
+    {
+      "task": "so-do-data.js - Chapter 3 Vua→Quan structure",
+      "details": "Removed separate era-khang-phap ERA. Vua Hàm Nghi (+ 5 officials) and Vua Bảo Đại (+ HCM) moved into era-nha-nguyen as proper columns. Tôn Thất Thuyết remains in Vua Tự Đức's officials column."
+    },
+    {
+      "task": "ban-do-data.js - Full update",
+      "details": "Updated nha_nguyen: subtitle/desc covers full 1885-1945 arc. Fixed HCM role king→official. Fixed chip name Tổng Quan. Added 4 new patterns (pt6-pt9) with DATABASE entries."
+    },
+    {
+      "task": "ban-do.html - UX improvements",
+      "details": "Fixed header desc. Node cards show lesson/figure badge counts. Visual hint on empty state. Better button text."
+    },
+    {
+      "task": "Hotfix",
+      "details": "Duplicate Tôn Thất Thuyết line + missing comma → JS crash → page not loading. Fixed."
+    }
   ],
-  "key_patterns": {
-    "thematic_angle": "Mỗi nhân vật có góc nhìn triết học/bài học độc đáo — không chỉ kể sự kiện",
-    "quote_box_format": "Quote lịch sử + phân tích trong <span class='text-xs font-mono'>",
-    "insight_box_format": "💡 [Bài học phổ quát áp dụng ngoài lịch sử]",
-    "ev_block_style": "border-top:none; padding-top:0; margin-top:0 cho ev-block đầu tiên",
-    "nguyen_king_color": "#450a0a → #7f1d1d (dark red, titleStyle: #fca5a5, yearsStyle: #fca5a5)"
-  }
+
+  "key_decisions": [
+    "Vua Hàm Nghi và Vua Bảo Đại thuộc era-nha-nguyen (KHÔNG phải ERA riêng)",
+    "Tôn Thất Thuyết = quan của Vua Tự Đức (KHÔNG lặp trong Hàm Nghi column)",
+    "Format chip index: 'YEAR · SHORT TITLE'",
+    "HCM role trong ban-do = 'official'"
+  ],
+
+  "pending_work": [],
+
+  "git_log_recent": [
+    "0021062 - ban-do UX improvements + 4 new patterns",
+    "683d2da - ban-do chip Tong Quan format fix",
+    "c530a04 - ban-do-data nha_nguyen update",
+    "f6751a8 - hotfix JS duplicate line",
+    "4314727 - merge Ham Nghi/Bao Dai vao era-nha-nguyen"
+  ]
 }

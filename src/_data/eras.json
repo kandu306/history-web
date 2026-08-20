@@ -1240,5 +1240,86 @@
     "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
     "characterChipClass": "era-chip-char",
     "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"
+  },
+  {
+    "id": "era-khang-chien-phap",
+    "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-white border-2 border-[#9b1c1c]/40 flex items-center justify-center shadow-sm\">\n                <div class=\"w-2 h-2 rounded-full bg-[#9b1c1c]/50\"></div>\n              </div>\n            </div>",
+    "yearsClass": "text-[11px] font-mono text-[#a8a29e] mb-1.5 tracking-wide",
+    "years": "1945 – 1954",
+    "cardClass": "rounded-xl border border-[#e7e5e4] bg-gradient-to-br from-[#faf9f7] to-white p-5 hover:border-[#9b1c1c]/30 hover:shadow-sm transition-all duration-300",
+    "cardStyle": "",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#9b1c1c] bg-[#fef2f2] border border-[#9b1c1c]/20 px-2 py-0.5 rounded\">ERA 12</span>\n                      <span class=\"text-[10px] text-[#78716c] font-medium\">Độc lập — Bảo vệ & Giành lại</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Kháng Chiến Chống Pháp</div>\n                  </div>\n                </div>",
+    "dividerAfterHeader": false,
+    "groups": [
+      {
+        "label": "📖 Bài học",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/khang-chien-chapter1-tong-quan.html",
+            "text": "1945–1947 · Bảo vệ chính quyền non trẻ"
+          },
+          {
+            "href": "bai-hoc/khang-chien-tuan-le-vang-quy-doc-lap.html",
+            "text": "09/1945 · Tuần lễ Vàng & Quỹ Độc lập"
+          },
+          {
+            "href": "bai-hoc/khang-chien-nam-bo-khang-chien.html",
+            "text": "23/09/1945 · Nam Bộ Kháng chiến"
+          },
+          {
+            "href": "bai-hoc/khang-chien-hoa-tuong-danh-phap.html",
+            "text": "09/1945–03/1946 · Hòa Tưởng đánh Pháp"
+          },
+          {
+            "href": "bai-hoc/khang-chien-tong-tuyen-cu-1946.html",
+            "text": "06/01/1946 · Tổng tuyển cử đầu tiên"
+          },
+          {
+            "href": "bai-hoc/khang-chien-hiep-dinh-so-bo-tam-uoc.html",
+            "text": "03–09/1946 · Hiệp định Sơ bộ & Tạm ước"
+          },
+          {
+            "href": "bai-hoc/khang-chien-loi-keu-goi-tqkc.html",
+            "text": "19/12/1946 · Lời kêu gọi Toàn quốc Kháng chiến"
+          },
+          {
+            "href": "bai-hoc/khang-chien-60-ngay-dem-ha-noi.html",
+            "text": "12/1946–02/1947 · 60 ngày đêm Hà Nội"
+          }
+        ]
+      }
+    ],
+    "characters": [
+      {
+        "href": "nhan-vat/ho-chi-minh.html",
+        "text": "Hồ Chí Minh"
+      },
+      {
+        "href": "nhan-vat/vo-nguyen-giap.html",
+        "text": "Võ Nguyên Giáp"
+      },
+      {
+        "href": "nhan-vat/truong-chinh.html",
+        "text": "Trường Chinh"
+      },
+      {
+        "href": "nhan-vat/trinh-van-bo.html",
+        "text": "Trịnh Văn Bô"
+      },
+      {
+        "href": "nhan-vat/quyet-tu-quan-ha-noi.html",
+        "text": "Quyết Tử Quân Hà Nội"
+      },
+      {
+        "href": "nhan-vat/phap-va-tuong-gioi-thach.html",
+        "text": "Pháp & Tưởng Giới Thạch"
+      }
+    ],
+    "characterLabel": "👤 Nhân vật",
+    "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+    "characterChipClass": "era-chip-char",
+    "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"
   }
 ]
