@@ -120,6 +120,13 @@ const NODES_CONFIG = [
     period: "1802–1945 SCN",
     title: "Nhà Nguyễn — Triều Đại Cuối Cùng",
     subtitle: "Thống nhất lãnh thổ · Kháng Pháp · Cần Vương · Đông Du · Tháng Tám 1945"
+  },
+  {
+    id: "khang_chien",
+    tagLabel: "Chương mới — Bảo vệ Chính quyền non trẻ", tagColor: "#0f766e",
+    period: "09/1945 – 02/1947",
+    title: "Kháng Chiến Chống Pháp — Giai Đoạn Đầu",
+    subtitle: "Tuần lễ Vàng · Nam Bộ KC · Hòa Tưởng · Tổng tuyển cử · Hiệp định · 60 ngày đêm"
   }
 ];
 
@@ -138,7 +145,8 @@ const LINES_CONFIG = [
   { id: "line-haule-mac", x1: "50%", y1: "1160", x2: "50%", y2: "1220" },
   { id: "line-mac-trinh", x1: "50%", y1: "1270", x2: "50%", y2: "1330" },
   { id: "line-trinh-tayson", x1: "50%", y1: "1380", x2: "50%", y2: "1440" },
-  { id: "line-tayson-nguyen", x1: "50%", y1: "1490", x2: "50%", y2: "1550" }
+  { id: "line-tayson-nguyen", x1: "50%", y1: "1490", x2: "50%", y2: "1550" },
+  { id: "line-nguyen-khangchien", x1: "50%", y1: "1600", x2: "50%", y2: "1660" }
 ];
 
 // ─── PATTERNS: các quy luật lịch sử ───
@@ -204,6 +212,13 @@ const PATTERNS_CONFIG = [
     label: "Pattern 9",
     title: "Thức tỉnh dân tộc — Từ dưới lên",
     desc: "Khi triều đình sụp đổ, tầng lớp dưới tự tổ chức: nông dân Hoàng Hoa Thám 30 năm Yên Thế, trí thức Phan Bội Châu-Phan Châu Trinh khai dân trí, thợ ảnh Nguyễn Ái Quốc lên tàu rồi thành lập ĐCSVN 1930 → Tổng Khởi Nghĩa Tháng Tám. Dân tộc tự cứu mình.",
+    span: 2
+  },
+  {
+    id: "pt10",
+    label: "Pattern 10",
+    title: "Crowdfunding by Trust — Huy động nguồn lực bằng tín nhiệm",
+    desc: "Tuần lễ Vàng 09/1945: Ngân khố rỗng tuếch, Ngân hàng Đông Dương phong tỏa tài chính. Chỉ bằng tín nhiệm 30 năm của Hồ Chí Minh và tính minh bạch về vấn đề, nhân dân tự nguyện quyên 370 kg vàng trong 7 ngày. Gia đình Trịnh Văn Bô đơn lẻ đóng 5.147 lượng. Pattern: Tín nhiệm phải được xây dựng trước khi cần dùng — không thể tạo ra trong lúc khủng hoảng.",
     span: 2
   }
 ];
@@ -713,9 +728,37 @@ const DATABASE = {
       { name: "Phan Châu Trinh",     url: "nhan-vat/phan-chau-trinh.html",    role: "advisor" },
       { name: "Nguyễn Thái Học",     url: "nhan-vat/nguyen-thai-hoc.html",    role: "official" },
       { name: "Hồ Chí Minh",         url: "nhan-vat/ho-chi-minh.html",        role: "official" },
-      { name: "Vua Bảo Đại",         url: "nhan-vat/vua-bao-dai.html",        role: "king" }
+      { name: "Vua Bảo Đại",         url: "nhan-vat/vua-bao-dai.html",        role: "king" },
+      { name: "Võ Nguyên Giáp",      url: "nhan-vat/vo-nguyen-giap.html",     role: "official" },
+      { name: "Trường Chinh",        url: "nhan-vat/truong-chinh.html",       role: "official" }
     ],
-    lineConnections: []
+    lineConnections: ["line-nguyen-khangchien"]
+  },
+
+  khang_chien: {
+    category: "Chương Mới — 1945–1947",
+    title: "Kháng Chiến Chống Pháp — Bảo Vệ Chính Quyền Non Trẻ",
+    period: "09/1945 – 02/1947",
+    desc: "Sau Tuyên ngôn Độc lập 02/09/1945, chính quyền VNDCCH đối mặt đồng thời 3 kẻ thù: giặc đói (ngân khố rỗng, mùa màng thất bát), giặc ngoại xâm (Pháp ở Nam + 20 vạn Tưởng ở Bắc), và giặc dốt. Sách lược ứng phó: Tuần lễ Vàng giải quyết tài chính, Hòa Tưởng đánh Pháp tránh lưỡng đầu thọ địch, Tổng tuyển cử xây dựng tính chính danh, Hiệp định Sơ bộ mua thời gian — trước khi 60 ngày đêm Hà Nội khởi đầu cuộc kháng chiến trường kỳ.",
+    lessons: [
+      { name: "Chapter 1 — Tổng quan 3 giặc", url: "bai-hoc/khang-chien-chapter1-tong-quan.html" },
+      { name: "09/1945 — Tuần Lễ Vàng & Quỹ Độc Lập", url: "bai-hoc/khang-chien-tuan-le-vang-quy-doc-lap.html" },
+      { name: "23/09/1945 — Nam Bộ Kháng Chiến", url: "bai-hoc/khang-chien-nam-bo-khang-chien.html" },
+      { name: "09/1945–03/1946 — Hòa Tưởng Đánh Pháp", url: "bai-hoc/khang-chien-hoa-tuong-danh-phap.html" },
+      { name: "06/01/1946 — Tổng Tuyển Cử Đầu Tiên", url: "bai-hoc/khang-chien-tong-tuyen-cu-1946.html" },
+      { name: "03–09/1946 — Hiệp Định Sơ Bộ & Tạm Ước", url: "bai-hoc/khang-chien-hiep-dinh-so-bo-tam-uoc.html" },
+      { name: "19/12/1946 — Lời Kêu Gọi Toàn Quốc Kháng Chiến", url: "bai-hoc/khang-chien-loi-keu-goi-tqkc.html" },
+      { name: "12/1946–02/1947 — 60 Ngày Đêm Hà Nội", url: "bai-hoc/khang-chien-60-ngay-dem-ha-noi.html" }
+    ],
+    figures: [
+      { name: "Hồ Chí Minh",       url: "nhan-vat/ho-chi-minh.html",        role: "king"     },
+      { name: "Võ Nguyên Giáp",    url: "nhan-vat/vo-nguyen-giap.html",     role: "official" },
+      { name: "Trường Chinh",      url: "nhan-vat/truong-chinh.html",       role: "official" },
+      { name: "Trịnh Văn Bô",     url: "nhan-vat/trinh-van-bo.html",       role: "official" },
+      { name: "Quyết Tử Quân",    url: "nhan-vat/quyet-tu-quan-ha-noi.html", role: "official" },
+      { name: "Pháp & Tưởng Giới Thạch", url: "nhan-vat/phap-va-tuong-gioi-thach.html", role: "enemy" }
+    ],
+    lineConnections: ["line-nguyen-khangchien"]
   },
 
   pt6: {
@@ -781,6 +824,24 @@ const DATABASE = {
       { name: "Phan Bội Châu", url: "nhan-vat/phan-boi-chau.html", role: "advisor" },
       { name: "Phan Châu Trinh", url: "nhan-vat/phan-chau-trinh.html", role: "advisor" },
       { name: "Hồ Chí Minh", url: "nhan-vat/ho-chi-minh.html", role: "official" }
+    ],
+    lineConnections: []
+  },
+
+  pt10: {
+    category: "Quy Luật Lịch Sử 10",
+    title: "Dĩ bất biến ứng vạn biến — Nhượng bộ có tính toán",
+    period: "Pattern Quy luật",
+    desc: "1945–1946: Đồng thời 3 kẻ thù, ngân khố rỗng, chính quyền chưa có kinh nghiệm. Sách lược sống còn: xác định 'bất biến' (quân đội, an ninh, tuyên truyền — không nhường bao giờ) và 'vạn biến' (lương thực, tiền Quan kim, 70 ghế QH hình thức — có thể nhường). Hòa Tưởng đuổi Tưởng mà không tốn một viên đạn. Hiệp định Sơ bộ mua 9 tháng hòa bình bằng nhân nhượng kỹ thuật. Tạm ước Fontainebleau mua thêm 3 tháng để chuẩn bị Việt Bắc. Mỗi ngày hòa bình có giá cụ thể — và đáng bỏ ra.",
+    lessons: [
+      { name: "Hòa Tưởng Đánh Pháp", url: "bai-hoc/khang-chien-hoa-tuong-danh-phap.html" },
+      { name: "Hiệp Định Sơ Bộ & Tạm Ước", url: "bai-hoc/khang-chien-hiep-dinh-so-bo-tam-uoc.html" },
+      { name: "Lời Kêu Gọi TQKC — Red Line", url: "bai-hoc/khang-chien-loi-keu-goi-tqkc.html" }
+    ],
+    figures: [
+      { name: "Hồ Chí Minh", url: "nhan-vat/ho-chi-minh.html", role: "king" },
+      { name: "Trường Chinh", url: "nhan-vat/truong-chinh.html", role: "official" },
+      { name: "Pháp & Tưởng", url: "nhan-vat/phap-va-tuong-gioi-thach.html", role: "enemy" }
     ],
     lineConnections: []
   }
