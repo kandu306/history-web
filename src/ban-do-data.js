@@ -123,10 +123,17 @@ const NODES_CONFIG = [
   },
   {
     id: "khang_chien",
-    tagLabel: "Chương mới — Bảo vệ Chính quyền non trẻ", tagColor: "#0f766e",
+    tagLabel: "Chương 1 — Bảo vệ Chính quyền non trẻ", tagColor: "#0f766e",
     period: "09/1945 – 02/1947",
-    title: "Kháng Chiến Chống Pháp — Giai Đoạn Đầu",
+    title: "Kháng Chiến Chống Pháp — Chương 1",
     subtitle: "Tuần lễ Vàng · Nam Bộ KC · Hòa Tưởng · Tổng tuyển cử · Hiệp định · 60 ngày đêm"
+  },
+  {
+    id: "khang_chien_c2",
+    tagLabel: "Chương 2 — Chủ lực Trưởng thành", tagColor: "#0f766e",
+    period: "10/1947 – 10/1950",
+    title: "Kháng Chiến Chống Pháp — Chương 2",
+    subtitle: "Việt Bắc 1947 · Đại đoàn 308 · Biên giới 1950 — Giành thế chủ động"
   }
 ];
 
@@ -146,7 +153,8 @@ const LINES_CONFIG = [
   { id: "line-mac-trinh", x1: "50%", y1: "1270", x2: "50%", y2: "1330" },
   { id: "line-trinh-tayson", x1: "50%", y1: "1380", x2: "50%", y2: "1440" },
   { id: "line-tayson-nguyen", x1: "50%", y1: "1490", x2: "50%", y2: "1550" },
-  { id: "line-nguyen-khangchien", x1: "50%", y1: "1600", x2: "50%", y2: "1660" }
+  { id: "line-nguyen-khangchien", x1: "50%", y1: "1600", x2: "50%", y2: "1660" },
+  { id: "line-khangchien-c2",     x1: "50%", y1: "1710", x2: "50%", y2: "1770" }
 ];
 
 // ─── PATTERNS: các quy luật lịch sử ───
@@ -844,5 +852,56 @@ const DATABASE = {
       { name: "Pháp & Tưởng", url: "nhan-vat/phap-va-tuong-gioi-thach.html", role: "enemy" }
     ],
     lineConnections: []
+  },
+
+  khang_chien: {
+    category: "Kháng chiến chống Pháp · Chương 1",
+    title: "Bảo Vệ Chính Quyền Non Trẻ (1945–1947)",
+    period: "09/1945 – 02/1947",
+    desc: "Giai đoạn sinh tồn: vừa đối phó 3 kẻ thù đồng thời (Tưởng, Pháp, nội phản), vừa xây dựng chính quyền, vừa mua thời gian bằng ngoại giao thực dụng. Đỉnh điểm: Lời kêu gọi Toàn quốc Kháng chiến 19/12/1946 và 60 ngày đêm bảo vệ Hà Nội 1946–1947.",
+    lessons: [
+      { name: "1945–1947 · Tổng quan Chương 1", url: "bai-hoc/khang-chien-chapter1-tong-quan.html" },
+      { name: "09/1945 · Tuần lễ Vàng & Quỹ Độc lập", url: "bai-hoc/khang-chien-tuan-le-vang-quy-doc-lap.html" },
+      { name: "23/09/1945 · Nam Bộ Kháng chiến", url: "bai-hoc/khang-chien-nam-bo-khang-chien.html" },
+      { name: "Hòa Tưởng Đánh Pháp", url: "bai-hoc/khang-chien-hoa-tuong-danh-phap.html" },
+      { name: "Hiệp Định Sơ Bộ & Tạm Ước", url: "bai-hoc/khang-chien-hiep-dinh-so-bo-tam-uoc.html" },
+      { name: "19/12/1946 · Lời Kêu Gọi TQKC", url: "bai-hoc/khang-chien-loi-keu-goi-tqkc.html" },
+      { name: "60 Ngày Đêm Bảo Vệ Hà Nội", url: "bai-hoc/khang-chien-60-ngay-dem-ha-noi.html" }
+    ],
+    figures: [
+      { name: "Hồ Chí Minh",             url: "nhan-vat/ho-chi-minh.html",             role: "king"    },
+      { name: "Võ Nguyên Giáp",          url: "nhan-vat/vo-nguyen-giap.html",          role: "official" },
+      { name: "Trường Chinh",            url: "nhan-vat/truong-chinh.html",            role: "advisor" },
+      { name: "Trịnh Văn Bô",           url: "nhan-vat/trinh-van-bo.html",           role: "official" },
+      { name: "Quyết Tử Quân Hà Nội",   url: "nhan-vat/quyet-tu-quan-ha-noi.html",   role: "official" },
+      { name: "Pháp & Tưởng Giới Thạch", url: "nhan-vat/phap-va-tuong-gioi-thach.html", role: "enemy" }
+    ],
+    lineConnections: ["line-nguyen-khangchien", "line-khangchien-c2"]
+  },
+
+  khang_chien_c2: {
+    category: "Kháng chiến chống Pháp · Chương 2",
+    title: "Chủ Lực Trưởng Thành & Giành Thế Chủ Động (1947–1950)",
+    period: "10/1947 – 10/1950",
+    desc: "Pháp tấn công Việt Bắc 1947 với Kế hoạch Lea — ta phá tan bằng phục kích Sông Lô và Đèo Bông Lau. 1948–1949 xây dựng hậu phương tự lực, thành lập Đại đoàn 308. Chiến dịch Biên giới 1950: lần đầu tiên ta chủ động tiến công, tiêu diệt 8.000 quân Pháp, giải phóng 750km biên giới, khai thông viện trợ quốc tế và giành thế chủ động chiến lược.",
+    lessons: [
+      { name: "1947–1950 · Tổng quan Chương 2", url: "bai-hoc/khang-chien-chapter2-tong-quan.html" },
+      { name: "10–12/1947 · Chiến dịch Việt Bắc — Phá tan Kế hoạch Lea", url: "bai-hoc/khang-chien-viet-bac-1947.html" },
+      { name: "10–11/1947 · Thủy chiến Sông Lô & Đèo Bông Lau", url: "bai-hoc/khang-chien-song-lo-bong-lau.html" },
+      { name: "1948–1949 · Thi đua Yêu nước & Hậu phương kháng chiến", url: "bai-hoc/khang-chien-thi-dua-yeu-nuoc.html" },
+      { name: "1948 · Pháp đánh lâu dài & Chính quyền Bảo Đại", url: "bai-hoc/khang-chien-phap-bao-dai.html" },
+      { name: "28/08/1949 · Thành lập Đại đoàn 308 — Quân Tiên Phong", url: "bai-hoc/khang-chien-dai-doan-308.html" },
+      { name: "09–10/1950 · Chiến dịch Biên giới — Giành thế chủ động", url: "bai-hoc/khang-chien-bien-gioi-1950.html" }
+    ],
+    figures: [
+      { name: "Hồ Chí Minh",                   url: "nhan-vat/ho-chi-minh.html",                        role: "king"     },
+      { name: "Võ Nguyên Giáp",                url: "nhan-vat/vo-nguyen-giap.html",                    role: "official" },
+      { name: "Trần Đại Nghĩa",               url: "nhan-vat/tran-dai-nghia.html",                    role: "advisor" },
+      { name: "Văn Cao",                       url: "nhan-vat/van-cao.html",                           role: "advisor" },
+      { name: "La Văn Cầu",                   url: "nhan-vat/la-van-cau.html",                        role: "official" },
+      { name: "Bộ Chỉ Đạo Biên Giới 1950",   url: "nhan-vat/bo-chi-dao-chien-dich-bien-gioi-1950.html", role: "official" },
+      { name: "Tướng Pháp Valluy & Revers",   url: "nhan-vat/tuong-phap-valluy-revers.html",           role: "enemy" }
+    ],
+    lineConnections: ["line-khangchien-c2"]
   }
 };

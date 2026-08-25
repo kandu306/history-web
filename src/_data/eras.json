@@ -1252,13 +1252,13 @@
     "dividerAfterHeader": false,
     "groups": [
       {
-        "label": "📖 Bài học",
+        "label": "📖 Chương 1 (1945–1947) — Bảo vệ chính quyền non trẻ",
         "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
         "chipClass": "era-chip-lesson",
         "items": [
           {
             "href": "bai-hoc/khang-chien-chapter1-tong-quan.html",
-            "text": "1945–1947 · Bảo vệ chính quyền non trẻ"
+            "text": "1945–1947 · Tổng quan Chương 1"
           },
           {
             "href": "bai-hoc/khang-chien-tuan-le-vang-quy-doc-lap.html",
@@ -1289,6 +1289,41 @@
             "text": "12/1946–02/1947 · 60 ngày đêm Hà Nội"
           }
         ]
+      },
+      {
+        "label": "📖 Chương 2 (1947–1950) — Chủ lực trưởng thành & Giành thế chủ động",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/khang-chien-chapter2-tong-quan.html",
+            "text": "1947–1950 · Tổng quan Chương 2"
+          },
+          {
+            "href": "bai-hoc/khang-chien-viet-bac-1947.html",
+            "text": "10–12/1947 · Chiến dịch Việt Bắc — Phá tan Kế hoạch Lea"
+          },
+          {
+            "href": "bai-hoc/khang-chien-song-lo-bong-lau.html",
+            "text": "10–11/1947 · Thủy chiến Sông Lô & Đèo Bông Lau"
+          },
+          {
+            "href": "bai-hoc/khang-chien-thi-dua-yeu-nuoc.html",
+            "text": "1948–1949 · Thi đua Yêu nước & Hậu phương kháng chiến"
+          },
+          {
+            "href": "bai-hoc/khang-chien-phap-bao-dai.html",
+            "text": "1948 · Pháp đánh lâu dài & Chính quyền Bảo Đại"
+          },
+          {
+            "href": "bai-hoc/khang-chien-dai-doan-308.html",
+            "text": "28/08/1949 · Thành lập Đại đoàn 308 — Quân Tiên Phong"
+          },
+          {
+            "href": "bai-hoc/khang-chien-bien-gioi-1950.html",
+            "text": "09–10/1950 · Chiến dịch Biên giới — Giành thế chủ động"
+          }
+        ]
       }
     ],
     "characters": [
@@ -1315,6 +1350,26 @@
       {
         "href": "nhan-vat/phap-va-tuong-gioi-thach.html",
         "text": "Pháp & Tưởng Giới Thạch"
+      },
+      {
+        "href": "nhan-vat/tran-dai-nghia.html",
+        "text": "Trần Đại Nghĩa — Vua Quân Giới"
+      },
+      {
+        "href": "nhan-vat/van-cao.html",
+        "text": "Văn Cao — Tiến Quân Ca"
+      },
+      {
+        "href": "nhan-vat/la-van-cau.html",
+        "text": "La Văn Cầu — Chặt Tay Diệt Đồn"
+      },
+      {
+        "href": "nhan-vat/tuong-phap-valluy-revers.html",
+        "text": "Tướng Pháp Valluy & Revers"
+      },
+      {
+        "href": "nhan-vat/bo-chi-dao-chien-dich-bien-gioi-1950.html",
+        "text": "Bộ Chỉ Đạo Biên Giới 1950"
       }
     ],
     "characterLabel": "👤 Nhân vật",
