@@ -133,7 +133,21 @@ const NODES_CONFIG = [
     tagLabel: "Chương 2 — Chủ lực Trưởng thành", tagColor: "#0f766e",
     period: "10/1947 – 10/1950",
     title: "Kháng Chiến Chống Pháp — Chương 2",
-    subtitle: "Việt Bắc 1947 · Đại đoàn 308 · Biên giới 1950 — Giành thế chủ động"
+    subtitle: "Việt Bắc 1947 → Đại đoàn 308 → Biên giới 1950 — Giành thế chủ động"
+  },
+  {
+    id: "khang_chien_c3",
+    tagLabel: "Chương 3 — Quyết chiến chiến lược", tagColor: "#9b1c1c",
+    period: "11/1950 — 07/1954",
+    title: "Kháng Chiến Chống Pháp — Chương 3",
+    subtitle: "Kế hoạch Navarre → Đông Xuân 1953–54 → Điện Biên Phủ → Hiệp định Genève"
+  },
+  {
+    id: "khang_my_c1",
+    tagLabel: "Chương 1 — Đồng khởi & Mặt trận DTGP", tagColor: "#b45309",
+    period: "07/1954 — 12/1960",
+    title: "Kháng Chiến Chống Mỹ — Chương 1",
+    subtitle: "Mỹ-Diệm vi phạm Genève → Luật 10/59 → Nghị quyết 15 → Đồng khởi → Mặt trận DTGP"
   }
 ];
 
@@ -154,7 +168,9 @@ const LINES_CONFIG = [
   { id: "line-trinh-tayson", x1: "50%", y1: "1380", x2: "50%", y2: "1440" },
   { id: "line-tayson-nguyen", x1: "50%", y1: "1490", x2: "50%", y2: "1550" },
   { id: "line-nguyen-khangchien", x1: "50%", y1: "1600", x2: "50%", y2: "1660" },
-  { id: "line-khangchien-c2",     x1: "50%", y1: "1710", x2: "50%", y2: "1770" }
+  { id: "line-khangchien-c2",     x1: "50%", y1: "1710", x2: "50%", y2: "1770" },
+  { id: "line-c2-c3",             x1: "50%", y1: "1820", x2: "50%", y2: "1880" },
+  { id: "line-c3-khangmy",        x1: "50%", y1: "1930", x2: "50%", y2: "1990" }
 ];
 
 // ─── PATTERNS: các quy luật lịch sử ───
@@ -903,5 +919,50 @@ const DATABASE = {
       { name: "Tướng Pháp Valluy & Revers",   url: "nhan-vat/tuong-phap-valluy-revers.html",           role: "enemy" }
     ],
     lineConnections: ["line-khangchien-c2"]
+  },
+
+  khang_chien_c3: {
+    category: "Kháng chiến chống Pháp — Chương 3",
+    title: "Quyết Chiến Chiến Lược — Điện Biên Phủ & Genève (1950–1954)",
+    period: "11/1950 — 07/1954",
+    desc: "Pháp cầu viện Mỹ, 73% chi phí chiến tranh do Mỹ tài trợ. Kế hoạch Navarre lập Tập đoàn cứ điểm Điện Biên Phủ. Đại tướng Võ Nguyên Giáp đổi 'đánh nhanh thắng nhanh' sang 'đánh chắc tiến chắc' — 260.000 dân công kéo pháo qua đèo Pha Đin. 56 ngày đêm (13/03–07/05/1954) tiêu diệt 16.200 quân Pháp. Hiệp định Genève 21/07/1954 công nhận độc lập Việt Nam.",
+    lessons: [
+      { name: "1950–1954 — Tổng quan Chương 3", url: "bai-hoc/khang-chien-chapter3-tong-quan.html" },
+      { name: "Kế hoạch Navarre & Can thiệp Mỹ", url: "bai-hoc/khang-chien-ke-hoach-navarre.html" },
+      { name: "01/1954 — Hoãn nổ súng, kéo pháo ra", url: "bai-hoc/khang-chien-hoan-no-sung-keo-phao-ra.html" },
+      { name: "Đông Xuân 1953–1954 — Năm đòn thần tốc", url: "bai-hoc/khang-chien-dong-xuan-1953-1954.html" },
+      { name: "13/03–07/05/1954 — Điện Biên Phủ", url: "bai-hoc/khang-chien-dien-bien-phu-1954.html" },
+      { name: "21/07/1954 — Hiệp định Genève", url: "bai-hoc/khang-chien-hiep-dinh-geneve-1954.html" }
+    ],
+    figures: [
+      { name: "Đại tướng Võ Nguyên Giáp",        url: "nhan-vat/vo-nguyen-giap.html",         role: "king"     },
+      { name: "Phạm Văn Đồng",                    url: "nhan-vat/pham-van-dong.html",          role: "official" },
+      { name: "Tướng De Castries",                url: "nhan-vat/tuong-de-castries.html",      role: "enemy"    },
+      { name: "Anh hùng ĐBP — Phan Đình Giót…",  url: "nhan-vat/anh-hung-dien-bien-phu.html", role: "official" },
+      { name: "Dân công hỏa tuyến & Xe đạp thồ", url: "nhan-vat/dan-cong-xe-dap-tho.html",    role: "official" },
+      { name: "Hồ Chí Minh",                      url: "nhan-vat/ho-chi-minh.html",            role: "king"     }
+    ],
+    lineConnections: ["line-c2-c3"]
+  },
+
+  khang_my_c1: {
+    category: "Kháng chiến chống Mỹ — Chương 1",
+    title: "Đồng Khởi & Mặt Trận DTGP Miền Nam (1954–1960)",
+    period: "07/1954 — 12/1960",
+    desc: "Mỹ-Diệm vi phạm Genève, từ chối tổng tuyển cử. Luật 10/59: máy chém toàn miền Nam. Nghị quyết 15 (01/1959) mở đường Bạo lực Cách mạng. Nguyễn Thị Định lãnh đạo Đồng khởi Bến Tre 17/01/1960 — Đội quân Tóc dài vô hiệu hóa súng đạn bằng đấu tranh chính trị. 20/12/1960: Mặt trận DTGP thành lập tại Tây Ninh với Luật sư Nguyễn Hữu Thọ làm Chủ tịch.",
+    lessons: [
+      { name: "1954–1960 — Tổng quan Chương 1 chống Mỹ", url: "bai-hoc/khang-my-chapter1-tong-quan.html" },
+      { name: "Mỹ-Diệm vi phạm Genève & Luật 10/59", url: "bai-hoc/khang-my-my-diem-luat-10-59.html" },
+      { name: "01/1959 — Nghị quyết 15 TW Đảng", url: "bai-hoc/khang-my-nghi-quyet-15.html" },
+      { name: "17/01/1960 — Đồng khởi Bến Tre & Đội quân Tóc dài", url: "bai-hoc/khang-my-dong-khoi-ben-tre.html" },
+      { name: "20/12/1960 — Mặt trận DTGP miền Nam", url: "bai-hoc/khang-my-mat-tran-dan-toc-giai-phong.html" }
+    ],
+    figures: [
+      { name: "Nữ tướng Nguyễn Thị Định",   url: "nhan-vat/nguyen-thi-dinh.html",  role: "king"     },
+      { name: "Luật sư Nguyễn Hữu Thọ",     url: "nhan-vat/nguyen-huu-tho.html",   role: "official" },
+      { name: "Hồ Chí Minh",                 url: "nhan-vat/ho-chi-minh.html",      role: "king"     },
+      { name: "Đại tướng Võ Nguyên Giáp",    url: "nhan-vat/vo-nguyen-giap.html",   role: "official" }
+    ],
+    lineConnections: ["line-c3-khangmy"]
   }
 };

@@ -1370,6 +1370,83 @@
       {
         "href": "nhan-vat/bo-chi-dao-chien-dich-bien-gioi-1950.html",
         "text": "Bộ Chỉ Đạo Biên Giới 1950"
+      },
+      {
+        "href": "nhan-vat/pham-van-dong.html",
+        "text": "Phạm Văn Đồng — Trưởng đoàn Genève"
+      },
+      {
+        "href": "nhan-vat/anh-hung-dien-bien-phu.html",
+        "text": "Anh hùng Điện Biên Phủ"
+      },
+      {
+        "href": "nhan-vat/dan-cong-xe-dap-tho.html",
+        "text": "Dân công hỏa tuyến & Xe đạp thồ"
+      },
+      {
+        "href": "nhan-vat/tuong-de-castries.html",
+        "text": "Tướng De Castries — Bại tướng ĐBP"
+      }
+    ],
+    "characterLabel": "👤 Nhân vật",
+    "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
+    "characterChipClass": "era-chip-char",
+    "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"
+  },
+  {
+    "id": "era-khang-chien-my",
+    "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-[#9b1c1c] flex items-center justify-center shadow-md shadow-[#9b1c1c]/40\">\n                <div class=\"w-2 h-2 rounded-full bg-[#faf9f7]\"></div>\n              </div>\n            </div>",
+    "yearsClass": "text-[11px] font-mono text-[#9b1c1c] mb-1.5 tracking-wide font-bold",
+    "years": "1954 — 1960",
+    "cardClass": "rounded-xl border border-[#9b1c1c]/30 bg-gradient-to-br from-[#fef2f2] to-[#faf9f7] p-5 hover:border-[#9b1c1c]/60 hover:shadow-sm transition-all duration-300",
+    "cardStyle": "box-shadow: 0 0 0 1px rgba(155,28,28,0.15);",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#9b1c1c] bg-[#fef2f2] border border-[#9b1c1c]/20 px-2 py-0.5 rounded\">ERA 13</span>\n                      <span class=\"text-[10px] text-[#78716c] font-medium\">Đồng khởi & Đấu tranh chính trị</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Kháng Chiến Chống Mỹ — Chapter 1</div>\n                  </div>\n                </div>",
+    "dividerAfterHeader": false,
+    "groups": [
+      {
+        "label": "📖 Chương 1 (1954–1960) — Đấu tranh chính trị & Đồng khởi",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/khang-my-chapter1-tong-quan.html",
+            "text": "1954–1960 — Tổng quan Chapter 1 chống Mỹ"
+          },
+          {
+            "href": "bai-hoc/khang-my-my-diem-luat-10-59.html",
+            "text": "Mỹ-Diệm vi phạm Genève & Luật 10/59"
+          },
+          {
+            "href": "bai-hoc/khang-my-nghi-quyet-15.html",
+            "text": "01/1959 — Nghị quyết 15 TW Đảng"
+          },
+          {
+            "href": "bai-hoc/khang-my-dong-khoi-ben-tre.html",
+            "text": "17/01/1960 — Đồng khởi Bến Tre & Đội quân Tóc dài"
+          },
+          {
+            "href": "bai-hoc/khang-my-mat-tran-dan-toc-giai-phong.html",
+            "text": "20/12/1960 — Mặt trận DTGP miền Nam"
+          }
+        ]
+      }
+    ],
+    "characters": [
+      {
+        "href": "nhan-vat/nguyen-thi-dinh.html",
+        "text": "Nữ tướng Nguyễn Thị Định"
+      },
+      {
+        "href": "nhan-vat/nguyen-huu-tho.html",
+        "text": "Luật sư Nguyễn Hữu Thọ — Chủ tịch Mặt trận"
+      },
+      {
+        "href": "nhan-vat/ho-chi-minh.html",
+        "text": "Hồ Chí Minh"
+      },
+      {
+        "href": "nhan-vat/vo-nguyen-giap.html",
+        "text": "Đại tướng Võ Nguyên Giáp"
       }
     ],
     "characterLabel": "👤 Nhân vật",
