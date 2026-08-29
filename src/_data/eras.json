@@ -1321,7 +1321,38 @@
           },
           {
             "href": "bai-hoc/khang-chien-bien-gioi-1950.html",
-            "text": "09–10/1950 · Chiến dịch Biên giới — Giành thế chủ động"
+            "text": "09–10/1950 — Chiến dịch Biên giới — Giành thế chủ động"
+          }
+        ]
+      },
+      {
+        "label": "📖 Chương 3 (1950–1954) — Quyết chiến chiến lược & Điện Biên Phủ",
+        "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
+        "chipClass": "era-chip-lesson",
+        "items": [
+          {
+            "href": "bai-hoc/khang-chien-chapter3-tong-quan.html",
+            "text": "1950–1954 — Tổng quan Chương 3"
+          },
+          {
+            "href": "bai-hoc/khang-chien-ke-hoach-navarre.html",
+            "text": "1953 — Kế hoạch Navarre & Can thiệp Mỹ"
+          },
+          {
+            "href": "bai-hoc/khang-chien-dong-xuan-1953-1954.html",
+            "text": "Đông Xuân 1953–1954 — Năm đòn thần tốc"
+          },
+          {
+            "href": "bai-hoc/khang-chien-hoan-no-sung-keo-phao-ra.html",
+            "text": "01/1954 — Hoãn nổ súng, kéo pháo ra"
+          },
+          {
+            "href": "bai-hoc/khang-chien-dien-bien-phu-1954.html",
+            "text": "13/03–07/05/1954 — Điện Biên Phủ"
+          },
+          {
+            "href": "bai-hoc/khang-chien-hiep-dinh-geneve-1954.html",
+            "text": "21/07/1954 — Hiệp định Genève"
           }
         ]
       }
