@@ -148,6 +148,34 @@ const NODES_CONFIG = [
     period: "07/1954 — 12/1960",
     title: "Kháng Chiến Chống Mỹ — Chương 1",
     subtitle: "Mỹ-Diệm vi phạm Genève → Luật 10/59 → Nghị quyết 15 → Đồng khởi → Mặt trận DTGP"
+  },
+  {
+    id: "khang_my_c2",
+    tagLabel: "Chương 2 — Chiến tranh Đặc biệt", tagColor: "#9b1c1c",
+    period: "1961 — 1965",
+    title: "Kháng Chiến Chống Mỹ — Chương 2",
+    subtitle: "Đường Trường Sơn 559 → Ấp Bắc → Phá Ấp chiến lược → Bình Giả-Ba Gia-Đồng Xoài"
+  },
+  {
+    id: "khang_my_c3",
+    tagLabel: "Chương 3 — Chiến tranh Cục bộ", tagColor: "#9b1c1c",
+    period: "1965 — 1968",
+    title: "Kháng Chiến Chống Mỹ — Chương 3",
+    subtitle: "Vạn Tường → 2 Mùa khô → Mậu Thân 1968 → Johnson xuống thang"
+  },
+  {
+    id: "khang_my_c4",
+    tagLabel: "Chương 4 — Việt Nam hóa", tagColor: "#9b1c1c",
+    period: "1969 — 1973",
+    title: "Kháng Chiến Chống Mỹ — Chương 4",
+    subtitle: "CMLT 1969 → Đường 9 Nam Lào → Quảng Trị 81 ngày → ĐBP trên không → Hiệp định Paris"
+  },
+  {
+    id: "khang_my_c5",
+    tagLabel: "Chương 5 — Đại Thắng Mùa Xuân", tagColor: "#7f1d1d",
+    period: "1973 — 30/04/1975",
+    title: "Kháng Chiến Chống Mỹ — Chương 5",
+    subtitle: "Phước Long → Tây Nguyên → Huế-Đà Nẵng → Chiến dịch HCM → 30/04/1975 thống nhất"
   }
 ];
 
@@ -170,7 +198,11 @@ const LINES_CONFIG = [
   { id: "line-nguyen-khangchien", x1: "50%", y1: "1600", x2: "50%", y2: "1660" },
   { id: "line-khangchien-c2",     x1: "50%", y1: "1710", x2: "50%", y2: "1770" },
   { id: "line-c2-c3",             x1: "50%", y1: "1820", x2: "50%", y2: "1880" },
-  { id: "line-c3-khangmy",        x1: "50%", y1: "1930", x2: "50%", y2: "1990" }
+  { id: "line-c3-khangmy",        x1: "50%", y1: "1930", x2: "50%", y2: "1990" },
+  { id: "line-khangmy-c2",        x1: "50%", y1: "2040", x2: "50%", y2: "2100" },
+  { id: "line-c2-c3my",           x1: "50%", y1: "2150", x2: "50%", y2: "2210" },
+  { id: "line-c3my-c4",           x1: "50%", y1: "2260", x2: "50%", y2: "2320" },
+  { id: "line-c4-c5",             x1: "50%", y1: "2370", x2: "50%", y2: "2430" }
 ];
 
 // ─── PATTERNS: các quy luật lịch sử ───
@@ -964,5 +996,83 @@ const DATABASE = {
       { name: "Đại tướng Võ Nguyên Giáp",    url: "nhan-vat/vo-nguyen-giap.html",   role: "official" }
     ],
     lineConnections: ["line-c3-khangmy"]
+  },
+
+  khang_my_c2: {
+    category: "Kháng chiến chống Mỹ — Chương 2",
+    title: "Chiến Tranh Đặc Biệt — Phá Sản Hoàn Toàn (1961–1965)",
+    period: "1961 — 1965",
+    desc: "Mỹ thực thi Kế hoạch Staley-Taylor: dồn 14 triệu dân vào Ấp chiến lược. Đường 559 Trường Sơn (19/05/1959) và Tàu không số (10/1961) xây dựng hệ thống logistics song song. Ấp Bắc (02/01/1963): 200 người đánh bại 2.000 quân + trực thăng + M113, phá tan huyền thoại vũ khí Mỹ. Hơn 80% Ấp chiến lược bị phá — xương sống Chiến tranh Đặc biệt gãy. Bình Giả-Ba Gia-Đồng Xoài 1964–1965 tiêu diệt các đơn vị chủ lực ngụy — buộc Mỹ phải đổ quân viễn chinh.",
+    lessons: [
+      { name: "1961–1965 — Tổng quan Chương 2", url: "bai-hoc/khang-my-chapter2-tong-quan.html" },
+      { name: "1959–1961 — Đường Trường Sơn & Tàu không số", url: "bai-hoc/khang-my-truong-son-tau-khong-so.html" },
+      { name: "02/01/1963 — Chiến thắng Ấp Bắc", url: "bai-hoc/khang-my-ap-bac-1963.html" },
+      { name: "1963 — Phá Ấp chiến lược & Đảo chính Diệm", url: "bai-hoc/khang-my-pha-ap-chien-luoc-1963.html" },
+      { name: "1964–1965 — Bình Giả, Ba Gia, Đồng Xoài", url: "bai-hoc/khang-my-binh-gia-ba-gia-dong-xoai.html" }
+    ],
+    figures: [
+      { name: "Hồ Chí Minh",                 url: "nhan-vat/ho-chi-minh.html",       role: "king"     },
+      { name: "Đại tướng Võ Nguyên Giáp",    url: "nhan-vat/vo-nguyen-giap.html",   role: "official" },
+      { name: "Nữ tướng Nguyễn Thị Định",   url: "nhan-vat/nguyen-thi-dinh.html",  role: "official" }
+    ],
+    lineConnections: ["line-khangmy-c2"]
+  },
+
+  khang_my_c3: {
+    category: "Kháng chiến chống Mỹ — Chương 3",
+    title: "Chiến Tranh Cục Bộ — Vạn Tường, Mậu Thân & Johnson Xuống Thang (1965–1968)",
+    period: "1965 — 1968",
+    desc: "Mỹ đổ quân viễn chinh với chiến lược 'Tìm diệt'. Vạn Tường 08/1965: lần đầu đánh thắng quân Mỹ trực tiếp bằng chiến thuật 'Nắm thắt lưng địch'. Đánh bại 2 cuộc phản công mùa khô 1965–1967 (450 + 895 cuộc càn, Junction City 45.000 quân đại bại). Tổng tiến công Mậu Thân 1968 đêm Giao thừa: đánh vào Đại sứ quán Mỹ, 37 thị xã, Huế 25 ngày — xé tan huyền thoại 'Mỹ đang thắng' trên truyền hình. Johnson xuống thang 31/03/1968.",
+    lessons: [
+      { name: "1965–1968 — Tổng quan Chương 3", url: "bai-hoc/khang-my-chapter3-tong-quan.html" },
+      { name: "08/1965 — Trận Vạn Tường & 'Tìm Mỹ mà đánh'", url: "bai-hoc/khang-my-van-tuong-tim-my-ma-danh.html" },
+      { name: "1965–1967 — Đánh bại 2 cuộc phản công mùa khô", url: "bai-hoc/khang-my-hai-cuoc-phan-cong-mua-kho.html" },
+      { name: "Tết 1968 — Tổng tiến công & Nổi dậy Mậu Thân", url: "bai-hoc/khang-my-mau-than-1968.html" },
+      { name: "31/03/1968 — Mỹ xuống thang & Đàm phán Paris", url: "bai-hoc/khang-my-my-xuong-thang-dam-phan-paris.html" }
+    ],
+    figures: [
+      { name: "Đại tướng Võ Nguyên Giáp",   url: "nhan-vat/vo-nguyen-giap.html",  role: "king"     },
+      { name: "Hồ Chí Minh",                 url: "nhan-vat/ho-chi-minh.html",     role: "king"     }
+    ],
+    lineConnections: ["line-c2-c3my"]
+  },
+
+  khang_my_c4: {
+    category: "Kháng chiến chống Mỹ — Chương 4",
+    title: "Việt Nam Hóa Chiến Tranh — Đường 9, Quảng Trị & Điện Biên Phủ Trên Không (1969–1973)",
+    period: "1969 — 1973",
+    desc: "Nixon 'Việt Nam hóa': rút quân Mỹ, đẩy gánh nặng cho quân ngụy. CMLT thành lập 06/06/1969 (Huỳnh Tấn Phát - Nguyễn Thị Bình tại Paris). Lam Sơn 719 (02/1971): 45.000 quân ngụy tinh nhuệ vào Đường 9 Nam Lào — ta tiêu diệt 20.000, bắn rơi 554 trực thăng. Tiến công chiến lược 1972, Thành cổ Quảng Trị 81 ngày đêm. Linebacker II 12/1972: Bắn hạ 34 B-52 — Nixon ký Hiệp định Paris 27/01/1973.",
+    lessons: [
+      { name: "1969–1973 — Tổng quan Chương 4", url: "bai-hoc/khang-my-chapter4-tong-quan.html" },
+      { name: "06/06/1969 — Chính phủ CMLT CHMNVN", url: "bai-hoc/khang-my-chinh-phu-cmlt.html" },
+      { name: "02/1971 — Đường 9 Nam Lào & Lam Sơn 719 đại bại", url: "bai-hoc/khang-my-duong-9-nam-lao-1971.html" },
+      { name: "1972 — Tiến công chiến lược & Thành cổ Quảng Trị 81 ngày", url: "bai-hoc/khang-my-tien-cong-1972-thanh-co-quang-tri.html" },
+      { name: "18–30/12/1972 — Điện Biên Phủ trên không — 34 B-52 bị bắn hạ", url: "bai-hoc/khang-my-dien-bien-phu-tren-khong-1972.html" }
+    ],
+    figures: [
+      { name: "Đại tướng Võ Nguyên Giáp",    url: "nhan-vat/vo-nguyen-giap.html",   role: "king"     },
+      { name: "Nguyễn Hữu Thọ",              url: "nhan-vat/nguyen-huu-tho.html",   role: "official" },
+      { name: "Hồ Chí Minh",                 url: "nhan-vat/ho-chi-minh.html",      role: "king"     }
+    ],
+    lineConnections: ["line-c3my-c4"]
+  },
+
+  khang_my_c5: {
+    category: "Kháng chiến chống Mỹ — Chương 5",
+    title: "Đại Thắng Mùa Xuân — Giải Phóng Miền Nam 30/04/1975",
+    period: "1973 — 30/04/1975",
+    desc: "Phước Long 01/1975: đòn trinh sát chiến lược xác nhận Mỹ không thể quay lại. Chiến dịch Tây Nguyên: nghi binh Pleiku, đột phá Buôn Ma Thuột 10/03 — 32 giờ làm chủ, Thiệu rút bỏ Tây Nguyên, domino sụp đổ. Huế 26/03, Đà Nẵng 29/03. Mệnh lệnh Võ Nguyên Giáp 07/04: 'Thần tốc, thần tốc hơn nữa'. 5 cánh quân tiến vào Sài Gòn 30/04 — 11h30: Dương Văn Minh đầu hàng. Kết thúc 21 năm kháng chiến và 117 năm ách thực dân.",
+    lessons: [
+      { name: "1973–1975 — Tổng quan Chương 5", url: "bai-hoc/khang-my-chapter5-tong-quan.html" },
+      { name: "01/1975 — Hiệp định Paris & Đòn trinh sát Phước Long", url: "bai-hoc/khang-my-hiep-dinh-paris-phuoc-long.html" },
+      { name: "10–24/03/1975 — Chiến dịch Tây Nguyên & Buôn Ma Thuột", url: "bai-hoc/khang-my-tay-nguyen-buon-ma-thuot.html" },
+      { name: "21–29/03/1975 — Chiến dịch Huế - Đà Nẵng & Thần tốc", url: "bai-hoc/khang-my-hue-da-nang-than-toc.html" },
+      { name: "26–30/04/1975 — Chiến dịch HCM & Đại thắng 30/04", url: "bai-hoc/khang-my-chien-dich-ho-chi-minh-30-04.html" }
+    ],
+    figures: [
+      { name: "Đại tướng Võ Nguyên Giáp",   url: "nhan-vat/vo-nguyen-giap.html",   role: "king"     },
+      { name: "Hồ Chí Minh",                 url: "nhan-vat/ho-chi-minh.html",      role: "king"     }
+    ],
+    lineConnections: ["line-c4-c5"]
   }
 };
