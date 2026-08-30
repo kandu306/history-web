@@ -1,4 +1,4 @@
-// =============================================================
+﻿// =============================================================
 //  ban-do-data.js — Dữ liệu Bản Đồ Khái Niệm
 //  Cách cập nhật:
 //    • Thêm triều đại mới: thêm key vào DATABASE
@@ -144,38 +144,10 @@ const NODES_CONFIG = [
   },
   {
     id: "khang_my_c1",
-    tagLabel: "Chương 1 — Đồng khởi & Mặt trận DTGP", tagColor: "#b45309",
-    period: "07/1954 — 12/1960",
-    title: "Kháng Chiến Chống Mỹ — Chương 1",
-    subtitle: "Mỹ-Diệm vi phạm Genève → Luật 10/59 → Nghị quyết 15 → Đồng khởi → Mặt trận DTGP"
-  },
-  {
-    id: "khang_my_c2",
-    tagLabel: "Chương 2 — Chiến tranh Đặc biệt", tagColor: "#9b1c1c",
-    period: "1961 — 1965",
-    title: "Kháng Chiến Chống Mỹ — Chương 2",
-    subtitle: "Đường Trường Sơn 559 → Ấp Bắc → Phá Ấp chiến lược → Bình Giả-Ba Gia-Đồng Xoài"
-  },
-  {
-    id: "khang_my_c3",
-    tagLabel: "Chương 3 — Chiến tranh Cục bộ", tagColor: "#9b1c1c",
-    period: "1965 — 1968",
-    title: "Kháng Chiến Chống Mỹ — Chương 3",
-    subtitle: "Vạn Tường → 2 Mùa khô → Mậu Thân 1968 → Johnson xuống thang"
-  },
-  {
-    id: "khang_my_c4",
-    tagLabel: "Chương 4 — Việt Nam hóa", tagColor: "#9b1c1c",
-    period: "1969 — 1973",
-    title: "Kháng Chiến Chống Mỹ — Chương 4",
-    subtitle: "CMLT 1969 → Đường 9 Nam Lào → Quảng Trị 81 ngày → ĐBP trên không → Hiệp định Paris"
-  },
-  {
-    id: "khang_my_c5",
-    tagLabel: "Chương 5 — Đại Thắng Mùa Xuân", tagColor: "#7f1d1d",
-    period: "1973 — 30/04/1975",
-    title: "Kháng Chiến Chống Mỹ — Chương 5",
-    subtitle: "Phước Long → Tây Nguyên → Huế-Đà Nẵng → Chiến dịch HCM → 30/04/1975 thống nhất"
+    tagLabel: "Đại Thắng 30/04/1975", tagColor: "#7f1d1d",
+    period: "1954 — 30/04/1975",
+    title: "Kháng Chiến Chống Mỹ (1954–1975)",
+    subtitle: "21 năm — 5 giai đoạn — Đường TS 559 → Ấp Bắc → Mậu Thân → ĐBP trên không → 30/04/1975"
   }
 ];
 
@@ -978,101 +950,43 @@ const DATABASE = {
   },
 
   khang_my_c1: {
-    category: "Kháng chiến chống Mỹ — Chương 1",
-    title: "Đồng Khởi & Mặt Trận DTGP Miền Nam (1954–1960)",
-    period: "07/1954 — 12/1960",
-    desc: "Mỹ-Diệm vi phạm Genève, từ chối tổng tuyển cử. Luật 10/59: máy chém toàn miền Nam. Nghị quyết 15 (01/1959) mở đường Bạo lực Cách mạng. Nguyễn Thị Định lãnh đạo Đồng khởi Bến Tre 17/01/1960 — Đội quân Tóc dài vô hiệu hóa súng đạn bằng đấu tranh chính trị. 20/12/1960: Mặt trận DTGP thành lập tại Tây Ninh với Luật sư Nguyễn Hữu Thọ làm Chủ tịch.",
+    category: "Kh\u00e1ng chi\u1ebfn ch\u1ed1ng M\u1ef9 (1954\u20131975)",
+    title: "21 N\u0103m Kh\u00e1ng Chi\u1ebfn \u2014 T\u1eeb \u0110\u1ed3ng Kh\u1edfi \u0110\u1ebfn \u0110\u1ea1i Th\u1eafng 30/04/1975",
+    period: "1954 \u2014 30/04/1975",
+    desc: "21 n\u0103m kh\u00e1ng chi\u1ebfn v\u1edbi 5 giai \u0111o\u1ea1n chi\u1ebfn l\u01b0\u1ee3c: (1) \u0110\u1ed3ng kh\u1edfi & M\u1eb7t tr\u1eadn DTGP 1954\u20131960; (2) \u0110\u00e1nh b\u1ea1i Chi\u1ebfn tranh \u0110\u1eb7c bi\u1ec7t 1961\u20131965 \u2014 \u1ea4p B\u1eafc, ph\u00e1 \u1ea4p chi\u1ebfn l\u01b0\u1ee3c; (3) \u0110\u00e1nh b\u1ea1i Chi\u1ebfn tranh C\u1ee5c b\u1ed9 1965\u20131968 \u2014 V\u1ea1n T\u01b0\u1eddng, M\u1eadu Th\u00e2n, Johnson xu\u1ed1ng thang; (4) \u0110\u00e1nh b\u1ea1i Vi\u1ec7t Nam h\u00f3a 1969\u20131973 \u2014 \u0110\u01b0\u1eddng 9 Nam L\u00e0o, Th\u00e0nh c\u1ed5 Qu\u1ea3ng Tr\u1ecb, \u0110i\u1ec7n Bi\u00ean Ph\u1ee7 tr\u00ean kh\u00f4ng, Hi\u1ec7p \u0111\u1ecbnh Paris; (5) T\u1ed5ng ti\u1ebfn c\u00f4ng 1975 \u2014 T\u00e2y Nguy\u00ean, Hu\u1ebf-\u0110\u00e0 N\u1eb5ng, Chi\u1ebfn d\u1ecbch H\u1ed3 Ch\u00ed Minh, 30/04/1975.",
     lessons: [
-      { name: "1954–1960 — Tổng quan Chương 1 chống Mỹ", url: "bai-hoc/khang-my-chapter1-tong-quan.html" },
-      { name: "Mỹ-Diệm vi phạm Genève & Luật 10/59", url: "bai-hoc/khang-my-my-diem-luat-10-59.html" },
-      { name: "01/1959 — Nghị quyết 15 TW Đảng", url: "bai-hoc/khang-my-nghi-quyet-15.html" },
-      { name: "17/01/1960 — Đồng khởi Bến Tre & Đội quân Tóc dài", url: "bai-hoc/khang-my-dong-khoi-ben-tre.html" },
-      { name: "20/12/1960 — Mặt trận DTGP miền Nam", url: "bai-hoc/khang-my-mat-tran-dan-toc-giai-phong.html" }
+      { name: "\u2014 Ch.1 \u2014 1954\u20131960 \u2014 T\u1ed5ng quan Ch\u01b0\u01a1ng 1", url: "bai-hoc/khang-my-chapter1-tong-quan.html" },
+      { name: "M\u1ef9-Di\u1ec7m vi ph\u1ea1m Gen\u00e8ve & Lu\u1eadt 10/59", url: "bai-hoc/khang-my-my-diem-luat-10-59.html" },
+      { name: "01/1959 \u2014 Ngh\u1ecb quy\u1ebft 15 TW \u0110\u1ea3ng", url: "bai-hoc/khang-my-nghi-quyet-15.html" },
+      { name: "17/01/1960 \u2014 \u0110\u1ed3ng kh\u1edfi B\u1ebfn Tre & \u0110\u1ed9i qu\u00e2n T\u00f3c d\u00e0i", url: "bai-hoc/khang-my-dong-khoi-ben-tre.html" },
+      { name: "20/12/1960 \u2014 M\u1eb7t tr\u1eadn DTGP mi\u1ec1n Nam", url: "bai-hoc/khang-my-mat-tran-dan-toc-giai-phong.html" },
+      { name: "\u2014 Ch.2 \u2014 1961\u20131965 \u2014 T\u1ed5ng quan Ch\u01b0\u01a1ng 2", url: "bai-hoc/khang-my-chapter2-tong-quan.html" },
+      { name: "1959\u20131961 \u2014 \u0110\u01b0\u1eddng Tr\u01b0\u1eddng S\u01a1n & T\u00e0u kh\u00f4ng s\u1ed1", url: "bai-hoc/khang-my-truong-son-tau-khong-so.html" },
+      { name: "02/01/1963 \u2014 Chi\u1ebfn th\u1eafng \u1ea4p B\u1eafc", url: "bai-hoc/khang-my-ap-bac-1963.html" },
+      { name: "1963 \u2014 Ph\u00e1 \u1ea4p chi\u1ebfn l\u01b0\u1ee3c & \u0110\u1ea3o ch\u00ednh Di\u1ec7m", url: "bai-hoc/khang-my-pha-ap-chien-luoc-1963.html" },
+      { name: "1964\u20131965 \u2014 B\u00ecnh Gi\u1ea3, Ba Gia, \u0110\u1ed3ng Xo\u00e0i", url: "bai-hoc/khang-my-binh-gia-ba-gia-dong-xoai.html" },
+      { name: "\u2014 Ch.3 \u2014 1965\u20131968 \u2014 T\u1ed5ng quan Ch\u01b0\u01a1ng 3", url: "bai-hoc/khang-my-chapter3-tong-quan.html" },
+      { name: "08/1965 \u2014 Tr\u1eadn V\u1ea1n T\u01b0\u1eddng & 'T\u00ecm M\u1ef9 m\u00e0 \u0111\u00e1nh'", url: "bai-hoc/khang-my-van-tuong-tim-my-ma-danh.html" },
+      { name: "1965\u20131967 \u2014 \u0110\u00e1nh b\u1ea1i 2 cu\u1ed9c ph\u1ea3n c\u00f4ng m\u00f9a kh\u00f4", url: "bai-hoc/khang-my-hai-cuoc-phan-cong-mua-kho.html" },
+      { name: "T\u1ebft 1968 \u2014 T\u1ed5ng ti\u1ebfn c\u00f4ng M\u1eadu Th\u00e2n", url: "bai-hoc/khang-my-mau-than-1968.html" },
+      { name: "31/03/1968 \u2014 M\u1ef9 xu\u1ed1ng thang & \u0110\u00e0m ph\u00e1n Paris", url: "bai-hoc/khang-my-my-xuong-thang-dam-phan-paris.html" },
+      { name: "\u2014 Ch.4 \u2014 1969\u20131973 \u2014 T\u1ed5ng quan Ch\u01b0\u01a1ng 4", url: "bai-hoc/khang-my-chapter4-tong-quan.html" },
+      { name: "06/06/1969 \u2014 Ch\u00ednh ph\u1ee7 CMLT CHMNVN", url: "bai-hoc/khang-my-chinh-phu-cmlt.html" },
+      { name: "02/1971 \u2014 \u0110\u01b0\u1eddng 9 Nam L\u00e0o & Lam S\u01a1n 719 \u0111\u1ea1i b\u1ea1i", url: "bai-hoc/khang-my-duong-9-nam-lao-1971.html" },
+      { name: "1972 \u2014 Ti\u1ebfn c\u00f4ng chi\u1ebfn l\u01b0\u1ee3c & Th\u00e0nh c\u1ed5 Qu\u1ea3ng Tr\u1ecb 81 ng\u00e0y", url: "bai-hoc/khang-my-tien-cong-1972-thanh-co-quang-tri.html" },
+      { name: "18\u201330/12/1972 \u2014 \u0110i\u1ec7n Bi\u00ean Ph\u1ee7 tr\u00ean kh\u00f4ng", url: "bai-hoc/khang-my-dien-bien-phu-tren-khong-1972.html" },
+      { name: "\u2014 Ch.5 \u2014 1973\u20131975 \u2014 T\u1ed5ng quan Ch\u01b0\u01a1ng 5", url: "bai-hoc/khang-my-chapter5-tong-quan.html" },
+      { name: "01/1975 \u2014 Hi\u1ec7p \u0111\u1ecbnh Paris & \u0110\u00f2n trinh s\u00e1t Ph\u01b0\u1edbc Long", url: "bai-hoc/khang-my-hiep-dinh-paris-phuoc-long.html" },
+      { name: "10\u201324/03/1975 \u2014 Chi\u1ebfn d\u1ecbch T\u00e2y Nguy\u00ean & Bu\u00f4n Ma Thu\u1ed9t", url: "bai-hoc/khang-my-tay-nguyen-buon-ma-thuot.html" },
+      { name: "21\u201329/03/1975 \u2014 Chi\u1ebfn d\u1ecbch Hu\u1ebf - \u0110\u00e0 N\u1eb5ng & Th\u1ea7n t\u1ed1c", url: "bai-hoc/khang-my-hue-da-nang-than-toc.html" },
+      { name: "26\u201330/04/1975 \u2014 Chi\u1ebfn d\u1ecbch HCM & \u0110\u1ea1i th\u1eafng 30/04", url: "bai-hoc/khang-my-chien-dich-ho-chi-minh-30-04.html" }
     ],
     figures: [
-      { name: "Nữ tướng Nguyễn Thị Định",   url: "nhan-vat/nguyen-thi-dinh.html",  role: "king"     },
-      { name: "Luật sư Nguyễn Hữu Thọ",     url: "nhan-vat/nguyen-huu-tho.html",   role: "official" },
-      { name: "Hồ Chí Minh",                 url: "nhan-vat/ho-chi-minh.html",      role: "king"     },
-      { name: "Đại tướng Võ Nguyên Giáp",    url: "nhan-vat/vo-nguyen-giap.html",   role: "official" }
+      { name: "H\u1ed3 Ch\u00ed Minh",                 url: "nhan-vat/ho-chi-minh.html",      role: "king"     },
+      { name: "\u0110\u1ea1i t\u01b0\u1edbng V\u00f5 Nguy\u00ean Gi\u00e1p",    url: "nhan-vat/vo-nguyen-giap.html",   role: "official" },
+      { name: "N\u1eef t\u01b0\u1edbng Nguy\u1ec5n Th\u1ecb \u0110\u1ecbnh",    url: "nhan-vat/nguyen-thi-dinh.html",  role: "official" },
+      { name: "Lu\u1eadt s\u01b0 Nguy\u1ec5n H\u1eefu Th\u1ecd",      url: "nhan-vat/nguyen-huu-tho.html",   role: "official" }
     ],
     lineConnections: ["line-c3-khangmy"]
-  },
-
-  khang_my_c2: {
-    category: "Kháng chiến chống Mỹ — Chương 2",
-    title: "Chiến Tranh Đặc Biệt — Phá Sản Hoàn Toàn (1961–1965)",
-    period: "1961 — 1965",
-    desc: "Mỹ thực thi Kế hoạch Staley-Taylor: dồn 14 triệu dân vào Ấp chiến lược. Đường 559 Trường Sơn (19/05/1959) và Tàu không số (10/1961) xây dựng hệ thống logistics song song. Ấp Bắc (02/01/1963): 200 người đánh bại 2.000 quân + trực thăng + M113, phá tan huyền thoại vũ khí Mỹ. Hơn 80% Ấp chiến lược bị phá — xương sống Chiến tranh Đặc biệt gãy. Bình Giả-Ba Gia-Đồng Xoài 1964–1965 tiêu diệt các đơn vị chủ lực ngụy — buộc Mỹ phải đổ quân viễn chinh.",
-    lessons: [
-      { name: "1961–1965 — Tổng quan Chương 2", url: "bai-hoc/khang-my-chapter2-tong-quan.html" },
-      { name: "1959–1961 — Đường Trường Sơn & Tàu không số", url: "bai-hoc/khang-my-truong-son-tau-khong-so.html" },
-      { name: "02/01/1963 — Chiến thắng Ấp Bắc", url: "bai-hoc/khang-my-ap-bac-1963.html" },
-      { name: "1963 — Phá Ấp chiến lược & Đảo chính Diệm", url: "bai-hoc/khang-my-pha-ap-chien-luoc-1963.html" },
-      { name: "1964–1965 — Bình Giả, Ba Gia, Đồng Xoài", url: "bai-hoc/khang-my-binh-gia-ba-gia-dong-xoai.html" }
-    ],
-    figures: [
-      { name: "Hồ Chí Minh",                 url: "nhan-vat/ho-chi-minh.html",       role: "king"     },
-      { name: "Đại tướng Võ Nguyên Giáp",    url: "nhan-vat/vo-nguyen-giap.html",   role: "official" },
-      { name: "Nữ tướng Nguyễn Thị Định",   url: "nhan-vat/nguyen-thi-dinh.html",  role: "official" }
-    ],
-    lineConnections: ["line-khangmy-c2"]
-  },
-
-  khang_my_c3: {
-    category: "Kháng chiến chống Mỹ — Chương 3",
-    title: "Chiến Tranh Cục Bộ — Vạn Tường, Mậu Thân & Johnson Xuống Thang (1965–1968)",
-    period: "1965 — 1968",
-    desc: "Mỹ đổ quân viễn chinh với chiến lược 'Tìm diệt'. Vạn Tường 08/1965: lần đầu đánh thắng quân Mỹ trực tiếp bằng chiến thuật 'Nắm thắt lưng địch'. Đánh bại 2 cuộc phản công mùa khô 1965–1967 (450 + 895 cuộc càn, Junction City 45.000 quân đại bại). Tổng tiến công Mậu Thân 1968 đêm Giao thừa: đánh vào Đại sứ quán Mỹ, 37 thị xã, Huế 25 ngày — xé tan huyền thoại 'Mỹ đang thắng' trên truyền hình. Johnson xuống thang 31/03/1968.",
-    lessons: [
-      { name: "1965–1968 — Tổng quan Chương 3", url: "bai-hoc/khang-my-chapter3-tong-quan.html" },
-      { name: "08/1965 — Trận Vạn Tường & 'Tìm Mỹ mà đánh'", url: "bai-hoc/khang-my-van-tuong-tim-my-ma-danh.html" },
-      { name: "1965–1967 — Đánh bại 2 cuộc phản công mùa khô", url: "bai-hoc/khang-my-hai-cuoc-phan-cong-mua-kho.html" },
-      { name: "Tết 1968 — Tổng tiến công & Nổi dậy Mậu Thân", url: "bai-hoc/khang-my-mau-than-1968.html" },
-      { name: "31/03/1968 — Mỹ xuống thang & Đàm phán Paris", url: "bai-hoc/khang-my-my-xuong-thang-dam-phan-paris.html" }
-    ],
-    figures: [
-      { name: "Đại tướng Võ Nguyên Giáp",   url: "nhan-vat/vo-nguyen-giap.html",  role: "king"     },
-      { name: "Hồ Chí Minh",                 url: "nhan-vat/ho-chi-minh.html",     role: "king"     }
-    ],
-    lineConnections: ["line-c2-c3my"]
-  },
-
-  khang_my_c4: {
-    category: "Kháng chiến chống Mỹ — Chương 4",
-    title: "Việt Nam Hóa Chiến Tranh — Đường 9, Quảng Trị & Điện Biên Phủ Trên Không (1969–1973)",
-    period: "1969 — 1973",
-    desc: "Nixon 'Việt Nam hóa': rút quân Mỹ, đẩy gánh nặng cho quân ngụy. CMLT thành lập 06/06/1969 (Huỳnh Tấn Phát - Nguyễn Thị Bình tại Paris). Lam Sơn 719 (02/1971): 45.000 quân ngụy tinh nhuệ vào Đường 9 Nam Lào — ta tiêu diệt 20.000, bắn rơi 554 trực thăng. Tiến công chiến lược 1972, Thành cổ Quảng Trị 81 ngày đêm. Linebacker II 12/1972: Bắn hạ 34 B-52 — Nixon ký Hiệp định Paris 27/01/1973.",
-    lessons: [
-      { name: "1969–1973 — Tổng quan Chương 4", url: "bai-hoc/khang-my-chapter4-tong-quan.html" },
-      { name: "06/06/1969 — Chính phủ CMLT CHMNVN", url: "bai-hoc/khang-my-chinh-phu-cmlt.html" },
-      { name: "02/1971 — Đường 9 Nam Lào & Lam Sơn 719 đại bại", url: "bai-hoc/khang-my-duong-9-nam-lao-1971.html" },
-      { name: "1972 — Tiến công chiến lược & Thành cổ Quảng Trị 81 ngày", url: "bai-hoc/khang-my-tien-cong-1972-thanh-co-quang-tri.html" },
-      { name: "18–30/12/1972 — Điện Biên Phủ trên không — 34 B-52 bị bắn hạ", url: "bai-hoc/khang-my-dien-bien-phu-tren-khong-1972.html" }
-    ],
-    figures: [
-      { name: "Đại tướng Võ Nguyên Giáp",    url: "nhan-vat/vo-nguyen-giap.html",   role: "king"     },
-      { name: "Nguyễn Hữu Thọ",              url: "nhan-vat/nguyen-huu-tho.html",   role: "official" },
-      { name: "Hồ Chí Minh",                 url: "nhan-vat/ho-chi-minh.html",      role: "king"     }
-    ],
-    lineConnections: ["line-c3my-c4"]
-  },
-
-  khang_my_c5: {
-    category: "Kháng chiến chống Mỹ — Chương 5",
-    title: "Đại Thắng Mùa Xuân — Giải Phóng Miền Nam 30/04/1975",
-    period: "1973 — 30/04/1975",
-    desc: "Phước Long 01/1975: đòn trinh sát chiến lược xác nhận Mỹ không thể quay lại. Chiến dịch Tây Nguyên: nghi binh Pleiku, đột phá Buôn Ma Thuột 10/03 — 32 giờ làm chủ, Thiệu rút bỏ Tây Nguyên, domino sụp đổ. Huế 26/03, Đà Nẵng 29/03. Mệnh lệnh Võ Nguyên Giáp 07/04: 'Thần tốc, thần tốc hơn nữa'. 5 cánh quân tiến vào Sài Gòn 30/04 — 11h30: Dương Văn Minh đầu hàng. Kết thúc 21 năm kháng chiến và 117 năm ách thực dân.",
-    lessons: [
-      { name: "1973–1975 — Tổng quan Chương 5", url: "bai-hoc/khang-my-chapter5-tong-quan.html" },
-      { name: "01/1975 — Hiệp định Paris & Đòn trinh sát Phước Long", url: "bai-hoc/khang-my-hiep-dinh-paris-phuoc-long.html" },
-      { name: "10–24/03/1975 — Chiến dịch Tây Nguyên & Buôn Ma Thuột", url: "bai-hoc/khang-my-tay-nguyen-buon-ma-thuot.html" },
-      { name: "21–29/03/1975 — Chiến dịch Huế - Đà Nẵng & Thần tốc", url: "bai-hoc/khang-my-hue-da-nang-than-toc.html" },
-      { name: "26–30/04/1975 — Chiến dịch HCM & Đại thắng 30/04", url: "bai-hoc/khang-my-chien-dich-ho-chi-minh-30-04.html" }
-    ],
-    figures: [
-      { name: "Đại tướng Võ Nguyên Giáp",   url: "nhan-vat/vo-nguyen-giap.html",   role: "king"     },
-      { name: "Hồ Chí Minh",                 url: "nhan-vat/ho-chi-minh.html",      role: "king"     }
-    ],
-    lineConnections: ["line-c4-c5"]
   }
 };
