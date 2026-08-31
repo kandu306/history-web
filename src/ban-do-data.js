@@ -1,4 +1,4 @@
-﻿// =============================================================
+// =============================================================
 //  ban-do-data.js — Dữ liệu Bản Đồ Khái Niệm
 //  Cách cập nhật:
 //    • Thêm triều đại mới: thêm key vào DATABASE
@@ -982,10 +982,19 @@ const DATABASE = {
       { name: "26\u201330/04/1975 \u2014 Chi\u1ebfn d\u1ecbch HCM & \u0110\u1ea1i th\u1eafng 30/04", url: "bai-hoc/khang-my-chien-dich-ho-chi-minh-30-04.html" }
     ],
     figures: [
-      { name: "H\u1ed3 Ch\u00ed Minh",                 url: "nhan-vat/ho-chi-minh.html",      role: "king"     },
-      { name: "\u0110\u1ea1i t\u01b0\u1edbng V\u00f5 Nguy\u00ean Gi\u00e1p",    url: "nhan-vat/vo-nguyen-giap.html",   role: "official" },
-      { name: "N\u1eef t\u01b0\u1edbng Nguy\u1ec5n Th\u1ecb \u0110\u1ecbnh",    url: "nhan-vat/nguyen-thi-dinh.html",  role: "official" },
-      { name: "Lu\u1eadt s\u01b0 Nguy\u1ec5n H\u1eefu Th\u1ecd",      url: "nhan-vat/nguyen-huu-tho.html",   role: "official" }
+      { name: "Hồ Chí Minh",                      url: "nhan-vat/ho-chi-minh.html",                          role: "king"     },
+      { name: "Đại tướng Võ Nguyên Giáp",          url: "nhan-vat/vo-nguyen-giap.html",                       role: "official" },
+      { name: "Nữ tướng Nguyễn Thị Định",          url: "nhan-vat/nguyen-thi-dinh.html",                      role: "official" },
+      { name: "Luật sư Nguyễn Hữu Thọ",            url: "nhan-vat/nguyen-huu-tho.html",                       role: "official" },
+      { name: "Nguyễn Văn Trỗi",                   url: "nhan-vat/nguyen-van-troi.html",                      role: "official" },
+      { name: "HT. Thích Quảng Đức",               url: "nhan-vat/hoa-thuong-thich-quang-duc.html",            role: "official" },
+      { name: "Nguyễn Văn Lém (Bảy Lốp)",          url: "nhan-vat/nguyen-van-lem.html",                       role: "official" },
+      { name: "KTS. Huỳnh Tấn Phát",               url: "nhan-vat/huynh-tan-phat.html",                       role: "official" },
+      { name: "Kíp xe tăng 390 & Bùi Quang Thận", url: "nhan-vat/kip-xe-tang-390-va-bui-quang-than.html",    role: "official" },
+      { name: "Đại tướng Nguyễn Chí Thanh",       url: "nhan-vat/nguyen-chi-thanh.html",                     role: "official" },
+      { name: "Bà Nguyễn Thị Bình",                url: "nhan-vat/nguyen-thi-binh.html",                      role: "official" },
+      { name: "Anh hùng Phạm Tuân",                url: "nhan-vat/pham-tuan.html",                            role: "official" },
+      { name: "Thuyền trưởng Bông Văn Đĩa",       url: "nhan-vat/bong-van-dia.html",                         role: "official" }
     ],
     lineConnections: ["line-c3-khangmy"]
   }

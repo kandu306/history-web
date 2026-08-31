@@ -1499,7 +1499,16 @@
       { "href": "nhan-vat/ho-chi-minh.html", "text": "H\u1ed3 Ch\u00ed Minh" },
       { "href": "nhan-vat/vo-nguyen-giap.html", "text": "\u0110\u1ea1i t\u01b0\u1edbng V\u00f5 Nguy\u00ean Gi\u00e1p" },
       { "href": "nhan-vat/nguyen-thi-dinh.html", "text": "N\u1eef t\u01b0\u1edbng Nguy\u1ec5n Th\u1ecb \u0110\u1ecbnh" },
-      { "href": "nhan-vat/nguyen-huu-tho.html", "text": "Lu\u1eadt s\u01b0 Nguy\u1ec5n H\u1eefu Th\u1ecd" }
+      { "href": "nhan-vat/nguyen-huu-tho.html", "text": "Lu\u1eadt s\u01b0 Nguy\u1ec5n H\u1eefu Th\u1ecd" },
+      { "href": "nhan-vat/nguyen-van-troi.html", "text": "Nguy\u1ec5n V\u0103n Tr\u1ed7i" },
+      { "href": "nhan-vat/hoa-thuong-thich-quang-duc.html", "text": "HT. Th\u00edch Qu\u1ea3ng \u0110\u1ee9c" },
+      { "href": "nhan-vat/nguyen-van-lem.html", "text": "Nguy\u1ec5n V\u0103n L\u00e9m (B\u1ea3y L\u1ed1p)" },
+      { "href": "nhan-vat/huynh-tan-phat.html", "text": "KTS. Hu\u1ef3nh T\u1ea5n Ph\u00e1t" },
+      { "href": "nhan-vat/kip-xe-tang-390-va-bui-quang-than.html", "text": "K\u00edp xe t\u0103ng 390 \u0026 B\u00f9i Quang Th\u1eadn" },
+      { "href": "nhan-vat/nguyen-chi-thanh.html", "text": "\u0110\u1ea1i t\u01b0\u1edbng Nguy\u1ec5n Ch\u00ed Thanh" },
+      { "href": "nhan-vat/nguyen-thi-binh.html", "text": "B\u00e0 Nguy\u1ec5n Th\u1ecb B\u00ecnh" },
+      { "href": "nhan-vat/pham-tuan.html", "text": "Anh h\u00f9ng Ph\u1ea1m Tu\u00e2n" },
+      { "href": "nhan-vat/bong-van-dia.html", "text": "Thuy\u1ec1n tr\u01b0\u1edfng B\u00f4ng V\u0103n \u0110\u0129a" }
     ],
     "characterLabel": "\ud83d\udc64 Nh\u00e2n v\u1eadt",
     "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
