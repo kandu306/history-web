@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "era-van-lang",
     "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"w-7 h-7 rounded-full bg-white border-2 border-[#9b1c1c]/40 flex items-center justify-center shadow-sm\">\n                <div class=\"w-2 h-2 rounded-full bg-[#9b1c1c]/50\"></div>\n              </div>\n            </div>",
@@ -756,6 +756,10 @@
       {
         "href": "nhan-vat/tran-cao.html",
         "text": "Trần Cảo"
+      },
+      {
+        "href": "nhan-vat/nguyen-phuc.html",
+        "text": "Nguyễn Phục (Đán Đông Đại vương)"
       }
     ],
     "characterLabel": "👤 Nhân vật",
@@ -1428,89 +1432,215 @@
     "id": "era-khang-chien-my",
     "markerHtml": "<div class=\"relative z-10 flex-shrink-0 mt-[22px]\">\n              <div class=\"absolute -inset-1.5 rounded-full bg-[#9b1c1c]/15\" style=\"animation: ping 2s cubic-bezier(0,0,0.2,1) infinite;\"></div>\n              <div class=\"relative w-7 h-7 rounded-full bg-[#9b1c1c] flex items-center justify-center shadow-lg\" style=\"box-shadow: 0 0 0 3px rgba(155,28,28,0.15), 0 4px 12px rgba(155,28,28,0.35);\">\n                <div class=\"w-2.5 h-2.5 rounded-full bg-white/90\"></div>\n              </div>\n            </div>",
     "yearsClass": "text-[11px] font-mono text-[#9b1c1c] mb-1.5 tracking-wide font-bold",
-    "years": "1954 \u2014 30/04/1975",
+    "years": "1954 — 30/04/1975",
     "cardClass": "rounded-xl border border-[#9b1c1c]/30 bg-gradient-to-br from-[#fef2f2] to-[#faf9f7] p-5 hover:border-[#9b1c1c]/60 hover:shadow-sm transition-all duration-300",
     "cardStyle": "box-shadow: 0 0 0 1px rgba(155,28,28,0.3), 0 8px 32px rgba(155,28,28,0.08);",
-    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#9b1c1c] bg-[#fef2f2] border border-[#9b1c1c]/20 px-2 py-0.5 rounded\">ERA 13</span>\n                      <span class=\"inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-[#9b1c1c] bg-[#fef2f2] px-2 py-0.5 rounded-full\" style=\"border: 1px solid rgba(155,28,28,0.2);\">&#x2726; \u0110\u1ea1i Th\u1eafng 30/04</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Kh\u00e1ng Chi\u1ebfn Ch\u1ed1ng M\u1ef9 (1954\u20131975)</div>\n                    <div class=\"text-[10px] text-[#78716c] font-medium mt-0.5\">21 n\u0103m kh\u00e1ng chi\u1ebfn \u2014 5 giai \u0111o\u1ea1n chi\u1ebfn l\u01b0\u1ee3c \u2014 Th\u1ed1ng nh\u1ea5t 30/04/1975</div>\n                  </div>\n                </div>",
+    "headerHtml": "<div class=\"flex items-center justify-between gap-3 mb-3.5\">\n                  <div>\n                    <div class=\"flex items-center gap-2 mb-1\">\n                      <span class=\"text-xs font-mono font-semibold text-[#9b1c1c] bg-[#fef2f2] border border-[#9b1c1c]/20 px-2 py-0.5 rounded\">ERA 13</span>\n                      <span class=\"inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-[#9b1c1c] bg-[#fef2f2] px-2 py-0.5 rounded-full\" style=\"border: 1px solid rgba(155,28,28,0.2);\">&#x2726; Đại Thắng 30/04</span>\n                    </div>\n                    <div class=\"font-serif text-xl font-bold text-[#1c1917]\">Kháng Chiến Chống Mỹ (1954–1975)</div>\n                    <div class=\"text-[10px] text-[#78716c] font-medium mt-0.5\">21 năm kháng chiến — 5 giai đoạn chiến lược — Thống nhất 30/04/1975</div>\n                  </div>\n                </div>",
     "dividerAfterHeader": true,
     "groups": [
       {
-        "label": "\ud83d\udcd6 Ch\u01b0\u01a1ng 1 (1954\u20131960) \u2014 \u0110\u1ed3ng kh\u1edfi & M\u1eb7t tr\u1eadn DTGP",
+        "label": "📖 Chương 1 (1954–1960) — Đồng khởi & Mặt trận DTGP",
         "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
         "chipClass": "era-chip-lesson",
         "items": [
-          { "href": "bai-hoc/khang-my-chapter1-tong-quan.html", "text": "1954\u20131960 \u2014 T\u1ed5ng quan Ch.1" },
-          { "href": "bai-hoc/khang-my-my-diem-luat-10-59.html", "text": "M\u1ef9-Di\u1ec7m vi ph\u1ea1m Gen\u00e8ve & Lu\u1eadt 10/59" },
-          { "href": "bai-hoc/khang-my-nghi-quyet-15.html", "text": "01/1959 \u2014 Ngh\u1ecb quy\u1ebft 15 TW \u0110\u1ea3ng" },
-          { "href": "bai-hoc/khang-my-dong-khoi-ben-tre.html", "text": "17/01/1960 \u2014 \u0110\u1ed3ng kh\u1edfi B\u1ebfn Tre" },
-          { "href": "bai-hoc/khang-my-mat-tran-dan-toc-giai-phong.html", "text": "20/12/1960 \u2014 M\u1eb7t tr\u1eadn DTGP mi\u1ec1n Nam" }
+          {
+            "href": "bai-hoc/khang-my-chapter1-tong-quan.html",
+            "text": "1954–1960 — Tổng quan Ch.1"
+          },
+          {
+            "href": "bai-hoc/khang-my-my-diem-luat-10-59.html",
+            "text": "Mỹ-Diệm vi phạm Genève & Luật 10/59"
+          },
+          {
+            "href": "bai-hoc/khang-my-nghi-quyet-15.html",
+            "text": "01/1959 — Nghị quyết 15 TW Đảng"
+          },
+          {
+            "href": "bai-hoc/khang-my-dong-khoi-ben-tre.html",
+            "text": "17/01/1960 — Đồng khởi Bến Tre"
+          },
+          {
+            "href": "bai-hoc/khang-my-mat-tran-dan-toc-giai-phong.html",
+            "text": "20/12/1960 — Mặt trận DTGP miền Nam"
+          }
         ]
       },
       {
-        "label": "\ud83d\udcd6 Ch\u01b0\u01a1ng 2 (1961\u20131965) \u2014 Chi\u1ebfn tranh \u0110\u1eb7c bi\u1ec7t",
+        "label": "📖 Chương 2 (1961–1965) — Chiến tranh Đặc biệt",
         "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
         "chipClass": "era-chip-lesson",
         "items": [
-          { "href": "bai-hoc/khang-my-chapter2-tong-quan.html", "text": "1961\u20131965 \u2014 T\u1ed5ng quan Ch.2" },
-          { "href": "bai-hoc/khang-my-truong-son-tau-khong-so.html", "text": "1959\u20131961 \u2014 \u0110\u01b0\u1eddng Tr\u01b0\u1eddng S\u01a1n & T\u00e0u kh\u00f4ng s\u1ed1" },
-          { "href": "bai-hoc/khang-my-ap-bac-1963.html", "text": "02/01/1963 \u2014 Chi\u1ebfn th\u1eafng \u1ea4p B\u1eafc" },
-          { "href": "bai-hoc/khang-my-pha-ap-chien-luoc-1963.html", "text": "1963 \u2014 Ph\u00e1 \u1ea4p chi\u1ebfn l\u01b0\u1ee3c & \u0110\u1ea3o ch\u00ednh Di\u1ec7m" },
-          { "href": "bai-hoc/khang-my-binh-gia-ba-gia-dong-xoai.html", "text": "1964\u20131965 \u2014 B\u00ecnh Gi\u1ea3, Ba Gia, \u0110\u1ed3ng Xo\u00e0i" }
+          {
+            "href": "bai-hoc/khang-my-chapter2-tong-quan.html",
+            "text": "1961–1965 — Tổng quan Ch.2"
+          },
+          {
+            "href": "bai-hoc/khang-my-truong-son-tau-khong-so.html",
+            "text": "1959–1961 — Đường Trường Sơn & Tàu không số"
+          },
+          {
+            "href": "bai-hoc/khang-my-ap-bac-1963.html",
+            "text": "02/01/1963 — Chiến thắng Ấp Bắc"
+          },
+          {
+            "href": "bai-hoc/khang-my-pha-ap-chien-luoc-1963.html",
+            "text": "1963 — Phá Ấp chiến lược & Đảo chính Diệm"
+          },
+          {
+            "href": "bai-hoc/khang-my-binh-gia-ba-gia-dong-xoai.html",
+            "text": "1964–1965 — Bình Giả, Ba Gia, Đồng Xoài"
+          }
         ]
       },
       {
-        "label": "\ud83d\udcd6 Ch\u01b0\u01a1ng 3 (1965\u20131968) \u2014 Chi\u1ebfn tranh C\u1ee5c b\u1ed9",
+        "label": "📖 Chương 3 (1965–1968) — Chiến tranh Cục bộ",
         "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
         "chipClass": "era-chip-lesson",
         "items": [
-          { "href": "bai-hoc/khang-my-chapter3-tong-quan.html", "text": "1965\u20131968 \u2014 T\u1ed5ng quan Ch.3" },
-          { "href": "bai-hoc/khang-my-van-tuong-tim-my-ma-danh.html", "text": "08/1965 \u2014 V\u1ea1n T\u01b0\u1eddng & 'T\u00ecm M\u1ef9 m\u00e0 \u0111\u00e1nh'" },
-          { "href": "bai-hoc/khang-my-hai-cuoc-phan-cong-mua-kho.html", "text": "1965\u20131967 \u2014 \u0110\u00e1nh b\u1ea1i 2 cu\u1ed9c ph\u1ea3n c\u00f4ng m\u00f9a kh\u00f4" },
-          { "href": "bai-hoc/khang-my-mau-than-1968.html", "text": "T\u1ebft 1968 \u2014 T\u1ed5ng ti\u1ebfn c\u00f4ng M\u1eadu Th\u00e2n" },
-          { "href": "bai-hoc/khang-my-my-xuong-thang-dam-phan-paris.html", "text": "31/03/1968 \u2014 M\u1ef9 xu\u1ed1ng thang & \u0110\u00e0m ph\u00e1n Paris" }
+          {
+            "href": "bai-hoc/khang-my-chapter3-tong-quan.html",
+            "text": "1965–1968 — Tổng quan Ch.3"
+          },
+          {
+            "href": "bai-hoc/khang-my-van-tuong-tim-my-ma-danh.html",
+            "text": "08/1965 — Vạn Tường & 'Tìm Mỹ mà đánh'"
+          },
+          {
+            "href": "bai-hoc/khang-my-hai-cuoc-phan-cong-mua-kho.html",
+            "text": "1965–1967 — Đánh bại 2 cuộc phản công mùa khô"
+          },
+          {
+            "href": "bai-hoc/khang-my-mau-than-1968.html",
+            "text": "Tết 1968 — Tổng tiến công Mậu Thân"
+          },
+          {
+            "href": "bai-hoc/khang-my-my-xuong-thang-dam-phan-paris.html",
+            "text": "31/03/1968 — Mỹ xuống thang & Đàm phán Paris"
+          }
         ]
       },
       {
-        "label": "\ud83d\udcd6 Ch\u01b0\u01a1ng 4 (1969\u20131973) \u2014 Vi\u1ec7t Nam h\u00f3a chi\u1ebfn tranh",
+        "label": "📖 Chương 4 (1969–1973) — Việt Nam hóa chiến tranh",
         "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
         "chipClass": "era-chip-lesson",
         "items": [
-          { "href": "bai-hoc/khang-my-chapter4-tong-quan.html", "text": "1969\u20131973 \u2014 T\u1ed5ng quan Ch.4" },
-          { "href": "bai-hoc/khang-my-chinh-phu-cmlt.html", "text": "06/06/1969 \u2014 Ch\u00ednh ph\u1ee7 CMLT CHMNVN" },
-          { "href": "bai-hoc/khang-my-duong-9-nam-lao-1971.html", "text": "02/1971 \u2014 \u0110\u01b0\u1eddng 9 Nam L\u00e0o & Lam S\u01a1n 719 \u0111\u1ea1i b\u1ea1i" },
-          { "href": "bai-hoc/khang-my-tien-cong-1972-thanh-co-quang-tri.html", "text": "1972 \u2014 Ti\u1ebfn c\u00f4ng chi\u1ebfn l\u01b0\u1ee3c & Th\u00e0nh c\u1ed5 Qu\u1ea3ng Tr\u1ecb 81 ng\u00e0y" },
-          { "href": "bai-hoc/khang-my-dien-bien-phu-tren-khong-1972.html", "text": "18\u201330/12/1972 \u2014 \u0110i\u1ec7n Bi\u00ean Ph\u1ee7 tr\u00ean kh\u00f4ng" }
+          {
+            "href": "bai-hoc/khang-my-chapter4-tong-quan.html",
+            "text": "1969–1973 — Tổng quan Ch.4"
+          },
+          {
+            "href": "bai-hoc/khang-my-chinh-phu-cmlt.html",
+            "text": "06/06/1969 — Chính phủ CMLT CHMNVN"
+          },
+          {
+            "href": "bai-hoc/khang-my-duong-9-nam-lao-1971.html",
+            "text": "02/1971 — Đường 9 Nam Lào & Lam Sơn 719 đại bại"
+          },
+          {
+            "href": "bai-hoc/khang-my-tien-cong-1972-thanh-co-quang-tri.html",
+            "text": "1972 — Tiến công chiến lược & Thành cổ Quảng Trị 81 ngày"
+          },
+          {
+            "href": "bai-hoc/khang-my-dien-bien-phu-tren-khong-1972.html",
+            "text": "18–30/12/1972 — Điện Biên Phủ trên không"
+          }
         ]
       },
       {
-        "label": "\ud83d\udcd6 Ch\u01b0\u01a1ng 5 (1973\u20131975) \u2014 T\u1ed5ng ti\u1ebfn c\u00f4ng & \u0110\u1ea1i th\u1eafng",
+        "label": "📖 Chương 5 (1973–1975) — Tổng tiến công & Đại thắng",
         "labelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#b45309] mb-2.5",
         "chipClass": "era-chip-lesson",
         "items": [
-          { "href": "bai-hoc/khang-my-chapter5-tong-quan.html", "text": "1973\u20131975 \u2014 T\u1ed5ng quan Ch.5" },
-          { "href": "bai-hoc/khang-my-hiep-dinh-paris-phuoc-long.html", "text": "01/1975 \u2014 Hi\u1ec7p \u0111\u1ecbnh Paris & Ph\u01b0\u1edbc Long" },
-          { "href": "bai-hoc/khang-my-tay-nguyen-buon-ma-thuot.html", "text": "10\u201324/03/1975 \u2014 T\u00e2y Nguy\u00ean & Bu\u00f4n Ma Thu\u1ed9t" },
-          { "href": "bai-hoc/khang-my-hue-da-nang-than-toc.html", "text": "21\u201329/03/1975 \u2014 Hu\u1ebf - \u0110\u00e0 N\u1eb5ng & Th\u1ea7n t\u1ed1c" },
-          { "href": "bai-hoc/khang-my-chien-dich-ho-chi-minh-30-04.html", "text": "26\u201330/04/1975 \u2014 Chi\u1ebfn d\u1ecbch HCM & 30/04" }
+          {
+            "href": "bai-hoc/khang-my-chapter5-tong-quan.html",
+            "text": "1973–1975 — Tổng quan Ch.5"
+          },
+          {
+            "href": "bai-hoc/khang-my-hiep-dinh-paris-phuoc-long.html",
+            "text": "01/1975 — Hiệp định Paris & Phước Long"
+          },
+          {
+            "href": "bai-hoc/khang-my-tay-nguyen-buon-ma-thuot.html",
+            "text": "10–24/03/1975 — Tây Nguyên & Buôn Ma Thuột"
+          },
+          {
+            "href": "bai-hoc/khang-my-hue-da-nang-than-toc.html",
+            "text": "21–29/03/1975 — Huế - Đà Nẵng & Thần tốc"
+          },
+          {
+            "href": "bai-hoc/khang-my-chien-dich-ho-chi-minh-30-04.html",
+            "text": "26–30/04/1975 — Chiến dịch HCM & 30/04"
+          }
         ]
       }
     ],
     "characters": [
-      { "href": "nhan-vat/ho-chi-minh.html", "text": "H\u1ed3 Ch\u00ed Minh" },
-      { "href": "nhan-vat/vo-nguyen-giap.html", "text": "\u0110\u1ea1i t\u01b0\u1edbng V\u00f5 Nguy\u00ean Gi\u00e1p" },
-      { "href": "nhan-vat/nguyen-thi-dinh.html", "text": "N\u1eef t\u01b0\u1edbng Nguy\u1ec5n Th\u1ecb \u0110\u1ecbnh" },
-      { "href": "nhan-vat/nguyen-huu-tho.html", "text": "Lu\u1eadt s\u01b0 Nguy\u1ec5n H\u1eefu Th\u1ecd" },
-      { "href": "nhan-vat/nguyen-van-troi.html", "text": "Nguy\u1ec5n V\u0103n Tr\u1ed7i" },
-      { "href": "nhan-vat/hoa-thuong-thich-quang-duc.html", "text": "HT. Th\u00edch Qu\u1ea3ng \u0110\u1ee9c" },
-      { "href": "nhan-vat/nguyen-van-lem.html", "text": "Nguy\u1ec5n V\u0103n L\u00e9m (B\u1ea3y L\u1ed1p)" },
-      { "href": "nhan-vat/huynh-tan-phat.html", "text": "KTS. Hu\u1ef3nh T\u1ea5n Ph\u00e1t" },
-      { "href": "nhan-vat/kip-xe-tang-390-va-bui-quang-than.html", "text": "K\u00edp xe t\u0103ng 390 \u0026 B\u00f9i Quang Th\u1eadn" },
-      { "href": "nhan-vat/nguyen-chi-thanh.html", "text": "\u0110\u1ea1i t\u01b0\u1edbng Nguy\u1ec5n Ch\u00ed Thanh" },
-      { "href": "nhan-vat/nguyen-thi-binh.html", "text": "B\u00e0 Nguy\u1ec5n Th\u1ecb B\u00ecnh" },
-      { "href": "nhan-vat/pham-tuan.html", "text": "Anh h\u00f9ng Ph\u1ea1m Tu\u00e2n" },
-      { "href": "nhan-vat/bong-van-dia.html", "text": "Thuy\u1ec1n tr\u01b0\u1edfng B\u00f4ng V\u0103n \u0110\u0129a" }
+      {
+        "href": "nhan-vat/ho-chi-minh.html",
+        "text": "Hồ Chí Minh"
+      },
+      {
+        "href": "nhan-vat/vo-nguyen-giap.html",
+        "text": "Đại tướng Võ Nguyên Giáp"
+      },
+      {
+        "href": "nhan-vat/nguyen-thi-dinh.html",
+        "text": "Nữ tướng Nguyễn Thị Định"
+      },
+      {
+        "href": "nhan-vat/nguyen-huu-tho.html",
+        "text": "Luật sư Nguyễn Hữu Thọ"
+      },
+      {
+        "href": "nhan-vat/nguyen-van-troi.html",
+        "text": "Nguyễn Văn Trỗi"
+      },
+      {
+        "href": "nhan-vat/hoa-thuong-thich-quang-duc.html",
+        "text": "HT. Thích Quảng Đức"
+      },
+      {
+        "href": "nhan-vat/nguyen-van-lem.html",
+        "text": "Nguyễn Văn Lém (Bảy Lốp)"
+      },
+      {
+        "href": "nhan-vat/huynh-tan-phat.html",
+        "text": "KTS. Huỳnh Tấn Phát"
+      },
+      {
+        "href": "nhan-vat/kip-xe-tang-390-va-bui-quang-than.html",
+        "text": "Kíp xe tăng 390 & Bùi Quang Thận"
+      },
+      {
+        "href": "nhan-vat/nguyen-chi-thanh.html",
+        "text": "Đại tướng Nguyễn Chí Thanh"
+      },
+      {
+        "href": "nhan-vat/nguyen-thi-binh.html",
+        "text": "Bà Nguyễn Thị Bình"
+      },
+      {
+        "href": "nhan-vat/pham-tuan.html",
+        "text": "Anh hùng Phạm Tuân"
+      },
+      {
+        "href": "nhan-vat/bong-van-dia.html",
+        "text": "Thuyền trưởng Bông Văn Đĩa"
+      },
+      {
+        "href": "nhan-vat/dang-van-ngu.html",
+        "text": "GS.BS Đặng Văn Ngữ"
+      },
+      {
+        "href": "nhan-vat/ho-dac-di.html",
+        "text": "GS Hồ Đắc Di"
+      },
+      {
+        "href": "nhan-vat/ton-that-tung.html",
+        "text": "GS.BS Tôn Thất Tùng"
+      }
     ],
-    "characterLabel": "\ud83d\udc64 Nh\u00e2n v\u1eadt",
+    "characterLabel": "👤 Nhân vật",
     "characterLabelClass": "text-[10px] font-bold uppercase tracking-[0.12em] text-[#9b1c1c] mb-2.5",
     "characterChipClass": "era-chip-char",
     "toolClass": "border-t border-[#f0eeec] pt-4 flex flex-wrap gap-2"

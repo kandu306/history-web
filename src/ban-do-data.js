@@ -522,7 +522,8 @@ const DATABASE = {
       { name: "Lê Cung Hoàng",   url: "nhan-vat/le-cung-hoang.html",   role: "king"     },
       { name: "Mạc Đăng Dung",   url: "nhan-vat/mac-dang-dung.html",   role: "king"     },
       { name: "Nguyễn Kim",      url: "nhan-vat/nguyen-kim.html",      role: "official" },
-      { name: "Trần Cảo",        url: "nhan-vat/tran-cao.html",        role: "enemy"    }
+      { name: "Trần Cảo",        url: "nhan-vat/tran-cao.html",        role: "enemy"    },
+      { name: "Nguyễn Phục (Đán Đông Đại vương)", url: "nhan-vat/nguyen-phuc.html", role: "official" }
     ],
     lineConnections: []
   },
@@ -994,7 +995,10 @@ const DATABASE = {
       { name: "Đại tướng Nguyễn Chí Thanh",       url: "nhan-vat/nguyen-chi-thanh.html",                     role: "official" },
       { name: "Bà Nguyễn Thị Bình",                url: "nhan-vat/nguyen-thi-binh.html",                      role: "official" },
       { name: "Anh hùng Phạm Tuân",                url: "nhan-vat/pham-tuan.html",                            role: "official" },
-      { name: "Thuyền trưởng Bông Văn Đĩa",       url: "nhan-vat/bong-van-dia.html",                         role: "official" }
+      { name: "Thuyền trưởng Bông Văn Đĩa",       url: "nhan-vat/bong-van-dia.html",                         role: "official" },
+      { name: "GS.BS Đặng Văn Ngữ",               url: "nhan-vat/dang-van-ngu.html",                         role: "official" },
+      { name: "GS Hồ Đắc Di",                     url: "nhan-vat/ho-dac-di.html",                            role: "official" },
+      { name: "GS.BS Tôn Thất Tùng",              url: "nhan-vat/ton-that-tung.html",                        role: "official" }
     ],
     lineConnections: ["line-c3-khangmy"]
   }
