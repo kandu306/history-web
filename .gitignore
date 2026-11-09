@@ -4,3 +4,7 @@ new-raw/
 src/shared/tailwind.css
 migrate-report.txt
 verify-report.txt
+
+# Tai lieu lam viec voi AI (khong dua len main)
+Agent/
+.bangiao/
