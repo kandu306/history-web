@@ -37,7 +37,7 @@ Website **"Lịch sử Việt Nam"** — Phân tích nhân vật theo hệ thố
 |---|------|---------|---------|--------|
 | 1 | `nha-nuoc-van-lang.html` | Nhà Nước Văn Lang | TK 7–6 TCN | ✅ Done |
 | 2 | `nha-nuoc-au-lac.html` | Nhà Nước Âu Lạc | 257–179 TCN | ✅ Done |
-| 3 | `1000-nam-bac-thuoc.html` | 1.000 Năm Bắc Thuộc | 111 TCN–938 SCN | ✅ Done |
+| 3 | `1000-nam-bac-thuoc.html` | 1.000 Năm Bắc Thuộc | 179 TCN–938 SCN | ✅ Done |
 | 4 | `ngo-quyen.html` | Ngô Quyền 938 | 938 SCN | ✅ Done |
 | 5 | `loan-12-su-quan.html` | Loạn 12 Sứ Quân | 944–968 SCN | ✅ Done |
 | 6 | `dinh-le.html` | Đinh – Lê | 968–1009 SCN | ✅ Done |

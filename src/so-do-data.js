@@ -28,6 +28,26 @@ const DYNASTY_DATA = [
       },
       {
         king: {
+          href: "nhan-vat/ly-bi.html",
+          crown: "👑", title: "Hoàng Đế Vạn Xuân",
+          name: "Lý Nam Đế", realName: "Lý Bí (Lý Bôn)",
+          years: "📅 544 – 548 SCN",
+          note: "Đuổi Thứ sử Tiêu Tư, xưng Nam Việt Đế, lập nước Vạn Xuân năm 544. Thua Trần Bá Tiên, mất năm 548."
+        },
+        officials: []
+      },
+      {
+        king: {
+          href: "nhan-vat/trieu-quang-phuc.html",
+          crown: "👑", title: "Triệu Việt Vương",
+          name: "Triệu Việt Vương", realName: "Triệu Quang Phục",
+          years: "📅 548 – 571 SCN",
+          note: "Kháng chiến du kích ở đầm Dạ Trạch, giữ Vạn Xuân. Hành trạng chủ yếu được biết qua sử Việt."
+        },
+        officials: []
+      },
+      {
+        king: {
           href: "nhan-vat/phung-hung.html",
           crown: "👑", title: "Bố Cái Đại Vương",
           name: "Phùng Hưng", realName: "Phùng Hưng",

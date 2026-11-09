@@ -26,7 +26,7 @@ const NODES_CONFIG = [
   {
     id: "bt",
     tagLabel: "Thời kỳ Đề kháng", tagColor: "#9b1c1c",
-    period: "111 TCN – 938 SCN",
+    period: "179 TCN – 938 SCN",
     title: "1.000 Năm Bắc Thuộc",
     subtitle: "Làng xã tự trị chống đồng hóa & Các khởi nghĩa"
   },
@@ -276,7 +276,8 @@ const DATABASE = {
       { name: "Bài 2: Nhà nước Âu Lạc", url: "bai-hoc/nha-nuoc-au-lac.html" }
     ],
     figures: [
-      { name: "An Dương Vương", url: "#" }
+      { name: "An Dương Vương", url: "nhan-vat/an-duong-vuong.html", role: "king" },
+      { name: "Triệu Đà",       url: "nhan-vat/trieu-da.html",       role: "enemy" }
     ],
     lineConnections: ["line-vl-al", "line-al-bt"]
   },
@@ -284,13 +285,16 @@ const DATABASE = {
   bt: {
     category: "Hơn 10 thế kỷ đề kháng",
     title: "1.000 Năm Bắc Thuộc",
-    period: "111 TCN – 938 SCN",
+    period: "179 TCN – 938 SCN",
     desc: "Giai đoạn bị các triều đại phong kiến Trung Hoa chiếm đóng và thực thi chính sách đồng hóa khốc liệt bằng chữ Hán, nho giáo và luật pháp quan liêu. Mặc dù tầng lớp quý tộc trên bị Hán hóa, nền văn hóa Việt cốt lõi vẫn được bảo tồn vững chắc nhờ pháo đài tự trị Làng xã (Phép vua thua lệ làng) kết hợp các cuộc khởi nghĩa liên tục tích lũy ký ức kháng cự.",
     lessons: [
       { name: "Bài 3: 1000 Năm Bắc Thuộc", url: "bai-hoc/1000-nam-bac-thuoc.html" }
     ],
     figures: [
       { name: "Hai Bà Trưng",    url: "nhan-vat/hai-ba-trung.html",    role: "king" },
+      { name: "Bà Triệu",         url: "nhan-vat/ba-trieu.html",         role: "king" },
+      { name: "Lý Nam Đế",        url: "nhan-vat/ly-bi.html",            role: "king" },
+      { name: "Triệu Quang Phục", url: "nhan-vat/trieu-quang-phuc.html", role: "king" },
       { name: "Phùng Hưng",      url: "nhan-vat/phung-hung.html",      role: "king" },
       { name: "Khúc Thừa Dụ",   url: "nhan-vat/khuc-thua-du.html",    role: "king" },
       { name: "Dương Đình Nghệ", url: "nhan-vat/duong-dinh-nghe.html", role: "king" }

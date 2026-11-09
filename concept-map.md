@@ -37,7 +37,7 @@ Cập nhật: 2026-05-30 | Tổng: **15 concepts, 29 connections** | Nhân vật
        │
     ┌──▼──────────────────────────────────────────────┐
     │              1.000 Năm Bắc Thuộc               │
-    │              (111 TCN – 938 SCN)               │
+    │              (179 TCN – 938 SCN)               │
     │                                                 │
     │  Công cụ đồng hóa:                             │
     │   · Quân đội + vũ khí sắt                      │
