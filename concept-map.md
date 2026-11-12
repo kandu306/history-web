@@ -10,30 +10,30 @@ Cập nhật: 2026-05-30 | Tổng: **15 concepts, 29 connections** | Nhân vật
 
     ┌─────────────────────────────────┐
     │       Nhà nước Văn Lang        │ ← Khởi đầu (thế kỷ 7-6 TCN)
-    │  Vua Hùng (18 đời biểu tượng)  │
+    │ Vua Hùng (truyền thống 18 đời) │
     └──────────┬──────────────────────┘
                │                  │
          (tạo ra)            (tạo ra)
                │                  │
     ┌──────────▼──────┐   ┌────────▼───────────────┐
     │ Văn minh        │   │ Trống đồng Đông Sơn    │
-    │ lúa nước        │   │ = Bằng chứng khảo cổ  │
-    └─────────────────┘   │ vs. Huyền thoại        │
+    │ lúa nước        │   │ = Hiện vật khảo cổ     │
+    └─────────────────┘   │ gắn Văn Lang: suy luận │
                           └────────────────────────┘
                │
-    (258 TCN — Thục Phán / An Dương Vương thay thế)
+    (257 TCN theo ĐVSKTT — Thục Phán / An Dương Vương thay thế)
                │
     ┌──────────▼──────────────────────────┐
     │         Nhà nước Âu Lạc            │
     │        (257–179 TCN)               │
     └──┬──────────────────────────────┬──┘
        │                              │
-  (xây)▼                         (có — bị đánh cắp)
-  Thành Cổ Loa (16km)            Nỏ thần
-  = Nhà nước tập quyền           → Bài học: mất nước
-    thật sự                        qua con đường tình cảm
+  (xây)▼                         (nỏ bị làm hỏng / lấy mất)
+  Thành Cổ Loa                   Nỏ — theo Giao Châu ngoại vực ký
+  (ĐVSKTT: xoáy tròn hình ốc)    ("nỏ thần", rùa vàng = truyền thuyết)
+                                 → Một cách đọc: mất nước vì lòng tin đặt sai chỗ
        │
-  (179 TCN Triệu Đà → 111 TCN nhà Hán hoàn toàn chiếm đóng)
+  (179 TCN Triệu Đà thôn tính Âu Lạc — ĐVSKTT tính Thục kỷ 257–208 TCN; 111 TCN nhà Hán diệt Nam Việt)
        │
     ┌──▼──────────────────────────────────────────────┐
     │              1.000 Năm Bắc Thuộc               │
@@ -145,11 +145,11 @@ Cập nhật: 2026-05-30 | Tổng: **15 concepts, 29 connections** | Nhân vật
 
 | Từ | Quan hệ | Đến | Giải thích |
 |----|---------|-----|------------|
-| Văn Lang | dẫn đến | Âu Lạc | Thục Phán (Âu Việt) thay thế 258 TCN |
+| Văn Lang | dẫn đến | Âu Lạc | Thục Phán thay thế 257 TCN (theo ĐVSKTT); xuất thân: ĐVSKTT chép người nước Thục, giả thuyết hiện đại cho là thủ lĩnh Âu Việt |
 | Văn Lang | tạo ra | Văn minh lúa nước | Kinh tế nền tảng đồng bằng sông Hồng |
-| Văn Lang | tạo ra | Trống đồng Đông Sơn | Bằng chứng khảo cổ — không phải truyền thuyết |
-| Âu Lạc | xây | Thành Cổ Loa | Bằng chứng nhà nước tập quyền — 16km, 3 vòng xoắn |
-| Âu Lạc | sụp đổ vì | Nỏ thần bị đánh cắp | Mất nước qua con đường tình cảm (Trọng Thủy–Mỵ Châu) |
+| Văn Lang | tạo ra | Trống đồng Đông Sơn | Hiện vật khảo cổ; việc gắn văn hóa Đông Sơn với Văn Lang là cách xác định của sử học hiện đại (giả thuyết) |
+| Âu Lạc | xây | Thành Cổ Loa | ĐVSKTT mô tả thành xoáy tròn như hình ốc; chiều dài và niên đại từng vòng chưa kiểm chứng |
+| Âu Lạc | bị thôn tính bởi | Nam Việt (Triệu Đà) | Sử ký (qua trích dẫn): Triệu Đà dùng binh uy và của cải khiến Tây Âu, Lạc lệ thuộc. Giao Châu ngoại vực ký (qua trích dẫn): con Triệu Đà lấy Mỵ Châu, làm hỏng hoặc lấy mất nỏ. Nỏ thần, rùa vàng là truyền thuyết |
 | Âu Lạc | dẫn đến | 1.000 năm Bắc thuộc | Triệu Đà (179 TCN) → nhà Hán (111 TCN) |
 | Bắc thuộc | tác động | Quý tộc bị Hán hóa | Lợi ích kinh tế: học chữ Hán → được làm quan |
 | Bắc thuộc | bị chặn bởi | Làng xã tự trị | Người Hán không với tới cấp làng — 90% dân số |
@@ -219,7 +219,7 @@ Xuất hiện 3 lần trong map:
 - Mỗi lần có người lấp khoảng trống kịp (Đinh Bộ Lĩnh, Lê Hoàn) → thoát
 
 ### Pattern 3: "Trả rẻ giữ đắt" — chiến lược nước nhỏ xuyên suốt
-- Âu Lạc: dùng nỏ thần giữ → thất bại (bị đánh cắp bí mật)
+- Âu Lạc: dựa vào thành và nỏ → vẫn mất nước (theo Giao Châu ngoại vực ký, qua trích dẫn: nỏ bị làm hỏng hoặc lấy mất; "nỏ thần" là truyền thuyết)
 - Nhà Đinh: triều cống ↔ giữ tự trị → thành công
 - Lê Hoàn: thắng Tống 981, thả tù binh + triều cống ngay → hòa bình 30+ năm
 - Mô hình này kéo dài ~1.000 năm đến khi Pháp xâm lược

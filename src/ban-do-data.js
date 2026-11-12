@@ -14,14 +14,14 @@ const NODES_CONFIG = [
     tagLabel: "Dựng Nước", tagColor: "#b45309",
     period: "Thế kỷ 7-6 TCN",
     title: "Nhà nước Văn Lang",
-    subtitle: "Cơ cấu 3 cấp Hùng Vương, Lạc Tướng, Lạc Dân"
+    subtitle: "Hùng Vương, Lạc hầu, Lạc tướng (theo sử truyền thống)"
   },
   {
     id: "al",
     tagLabel: "Thục Phán lập thành", tagColor: "#b45309",
     period: "257–179 TCN",
     title: "Nhà nước Âu Lạc",
-    subtitle: "Thành Cổ Loa kiên cố & bài học nỏ thần mất nước"
+    subtitle: "Thành Cổ Loa & bài học mất nước"
   },
   {
     id: "bt",
@@ -257,7 +257,7 @@ const DATABASE = {
     category: "Thời kỳ Dựng Nước",
     title: "Nhà nước Văn Lang",
     period: "Thế kỷ 7–6 TCN",
-    desc: "Văn Lang là nhà nước sơ khai đầu tiên của người Việt cổ. Mặc dù huyền thoại chép lại lập quốc năm 2879 TCN, các bằng chứng khảo cổ học văn hóa Đông Sơn xác thực nhà nước chỉ thực sự hình thành rõ rệt từ thế kỷ 7–6 TCN. Mô hình cai trị chia 3 cấp: Vua Hùng ở trung ương, Lạc tướng cai quản các bộ và Lạc dân tự do canh tác lúa nước.",
+    desc: "Văn Lang là nhà nước sơ khai đầu tiên của người Việt cổ. Theo ĐVSKTT, năm Nhâm Tuất (2879 TCN) là năm Kinh Dương Vương lên ngôi, quốc hiệu Xích Quỷ; phần Hồng Bàng trong sách có gốc từ dã sử và truyền thuyết. Theo sử truyền thống, quốc hiệu Văn Lang gắn với Hùng Vương. Giới sử học hiện đại thường đặt sự hình thành nhà nước vào khoảng thế kỷ 7–6 TCN, dựa trên tư liệu khảo cổ học văn hóa Đông Sơn. ĐVSKTT chép nước chia làm 15 bộ; tướng văn gọi là Lạc hầu, tướng võ gọi là Lạc tướng.",
     lessons: [
       { name: "Bài 1: Nhà nước Văn Lang", url: "bai-hoc/nha-nuoc-van-lang.html" }
     ],
@@ -271,7 +271,7 @@ const DATABASE = {
     category: "Kế thừa & Chuyển tiếp",
     title: "Nhà nước Âu Lạc",
     period: "257–179 TCN",
-    desc: "Thục Phán sáp nhập Âu Việt và Lạc Việt, tự xưng là An Dương Vương lập nước Âu Lạc. Triều đại này đánh dấu sự chuyển mình từ uy vũ bộ lạc sang một nhà nước tập quyền thật sự. Bằng chứng khảo cổ học là kỳ quan Thành Cổ Loa kiên cố xoắn ốc dài 16km. Tuy nhiên vương triều sụp đổ vì mất bí mật nỏ thần quân sự qua cuộc hôn nhân chính trị Trọng Thủy - Mỵ Châu.",
+    desc: "Sử truyền thống (ĐVSKTT và Giao Châu ngoại vực ký, qua trích dẫn) chép việc Thục Phán đánh Hùng Vương và lập Âu Lạc; theo ĐVSKTT, năm Giáp Thìn (257 TCN) ông xưng An Dương Vương. Theo một giả thuyết hiện đại, ông là thủ lĩnh người Âu Việt và tên Âu Lạc ghép từ Âu Việt và Lạc Việt. ĐVSKTT mô tả thành Cổ Loa xoáy tròn như hình ốc. Âu Lạc bị Nam Việt của Triệu Đà thôn tính (site dùng mốc 179 TCN; ĐVSKTT tính Thục kỷ 257–208 TCN). Giao Châu ngoại vực ký chép con trai Triệu Đà sang Âu Lạc, lấy Mỵ Châu rồi làm hỏng hoặc lấy mất nỏ; Rùa Vàng và nỏ thần là truyền thuyết.",
     lessons: [
       { name: "Bài 2: Nhà nước Âu Lạc", url: "bai-hoc/nha-nuoc-au-lac.html" }
     ],

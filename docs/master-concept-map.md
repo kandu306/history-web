@@ -62,9 +62,9 @@ graph TD
 ### Giai đoạn I: Thời kỳ Dựng Nước & Cổ Đại (Thế kỷ 7 TCN – 179 TCN)
 * **Bối cảnh cốt lõi:** Quá trình định cư nông nghiệp trồng lúa nước sông Hồng và bước phát triển luyện kim đồng thau.
 * **Bài học lịch sử:**
-  * Sự thật khoa học (Khảo cổ Đông Sơn) luôn có sức nặng hơn huyền thoại vương quyền ảo tưởng.
-  * *Bài học Âu Lạc:* Mất nước vì rò rỉ bí mật công nghệ quân sự (Nỏ thần) qua con đường tình cảm cá nhân.
-* **Nhân vật biểu tượng:** Hùng Vương (Vương hiệu dòng họ), An Dương Vương.
+  * Phân biệt các lớp tư liệu: hiện vật khảo cổ (Đông Sơn), sử truyền thống (ĐVSKTT) và truyền thuyết.
+  * *Bài học Âu Lạc (một cách đọc):* theo Giao Châu ngoại vực ký (qua trích dẫn), nỏ bị con trai Triệu Đà làm hỏng hoặc lấy mất sau khi lấy Mỵ Châu; "nỏ thần" và rùa vàng là truyền thuyết.
+* **Nhân vật biểu tượng:** Hùng Vương (vương hiệu chung của các đời vua, theo sử truyền thống), An Dương Vương.
 * **Trạng thái:** `✅ Hoàn thành 100%`
 
 ### Giai đoạn II: 1.000 Năm Bắc Thuộc & Tự Chủ (179 TCN – 938 SCN)
