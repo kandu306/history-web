@@ -141,6 +141,31 @@ Hoặc kiểm tra thủ công theo checklist:
 
 ---
 
+## 🧪 Khuôn mới (đang thử, từ 2026-11-14)
+
+> Trạng thái: **thử nghiệm**. Mới áp dụng cho `src/nhan-vat/an-duong-vuong.html`. Các trang khác vẫn theo cấu trúc chuẩn ở trên cho đến khi người dùng duyệt khuôn mới.
+> Lý do: mục tiêu của người đọc là hiểu nhân vật, hiểu bối cảnh và rút bài học cho bản thân. Khuôn cũ bắt đầu từ chấm điểm và bắt phải điền đủ định mức, nên với nhân vật ít sử liệu dễ phải độn chữ hoặc đoán.
+
+```
+HERO + Chân dung lịch sử (giữ nguyên)
+
+01 — CÂU CHUYỆN        dòng thời gian 5–8 mốc; chỗ truyền thuyết / nguồn lệch ghi ngay tại chỗ
+02 — BỐI CẢNH          thế giới quanh nhân vật (trước, xung quanh); có "Cách đọc của trang" nếu cần
+03 — SỬ LIỆU & TRUYỀN THUYẾT   mọi chi tiết nguồn gom ở đây (tag Nguồn mâu thuẫn / Truyền thuyết / Giả thuyết)
+04 — 3 GỐC & 3 ĐỘC     không chấm sao; mỗi mục ghi "Mức bằng chứng" (có sử liệu / chưa đủ sử liệu / chỉ thuộc lớp truyền thuyết / cách đọc của trang)
+05 — BÀI HỌC CHO MÌNH  3 bài: "Chuyện gì đã xảy ra" + "Nguyên tắc rút ra (một cách đọc)" + "Hỏi mình"
+06 — XEM THÊM          ≥ 3 liên kết
+```
+
+### Quy tắc của khuôn mới
+1. Mỗi dữ kiện chỉ trình bày đầy đủ MỘT lần (ở mục 03); các mục khác nói ngắn và trỏ "xem mục 03". Lặp nguyên văn là chỗ dễ lệch nhất.
+2. Được phép ghi "chưa đủ sử liệu để đánh giá" thay vì điền cho đủ định mức.
+3. Bài học phải rút từ chính nhân vật và gắn với đời sống người đọc, không phải bài học cho người viết web. Bài học đánh dấu rõ là cách đọc, không phải kết luận của sử liệu.
+4. Câu mới viết phải đối chiếu bảng sử liệu chuẩn của ERA (`docs/su-lieu-chuan-eraX.md`) và qua reviewer (xem skill "Mở một ERA/đợt mới").
+5. `scripts/check-content-quality.js` hiện vẫn cho 8/8 với khuôn mới (đã kiểm một trang). Các tiêu chí 5–6 đo theo khuôn cũ nên chưa phản ánh đúng; chưa sửa script cho đến khi khuôn được duyệt.
+
+---
+
 ## 📁 Template File Mới
 
 Khi tạo trang nhân vật mới, sao chép từ:
