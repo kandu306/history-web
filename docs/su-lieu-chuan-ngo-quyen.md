@@ -71,3 +71,13 @@ Tất cả nằm dưới `https://vi.wikisource.org/wiki/Đại_Việt_sử_ký_
 - `Ngô_sứ_quân` (12 sứ quân, Đinh Bộ Lĩnh)
 
 Không có trên Wikisource: Bản kỷ nhà Trần (nên không dùng được cho Trần Hưng Đạo bằng cách này).
+
+## Cập nhật 2026-11-16: đối chiếu bản ĐVSKTT 2013 (NXB Thời Đại)
+
+Người dùng duyệt chọn bản 2013 làm bản chuẩn để trích (xem `docs/su-lieu-chuan-era1-2.md`, mục 1b). Đã đọc phần Ngô Quyền (file .txt dòng 4616–4756) và sửa lời trích trên trang `ngo-quyen.html`. Diễn biến khớp; chỉ khác chữ:
+- Hoằng Tháo "là một đứa trẻ dại" (không phải "ngốc"); "họ có lợi ở thuyền" (không phải "lợi vì có tầu/thuyền"); "quân ta sức còn mạnh địch với quân mỏi mệt, tất phá được" (không phải "Chúng ta lấy quân khỏe mà đợi quân mệt...").
+- Bản 2013 dùng chữ "cọc" ("đem cọc lớn đóng ngầm ở cửa biển trước, vật nhọn đầu mà bịt sắt"), còn bản Wikisource dùng "kè". Dòng 10 ở bảng trên nói "không nói cọc gỗ" nên giữ: bản 2013 cũng không ghi chất liệu.
+- Tiêu Ích: "Ngô Quyền là người kiệt hiệt, chớ nên khinh suất" (không phải "tay tinh giỏi chưa có thể coi khinh được").
+- Lê Văn Hưu: "phá được trăm vạn quân", "làm cho người phương Bắc không dám lại sang nữa", "một cơn giận mà yên được dân" (OCR "dần"), "chính thống của nước Việt ta Ngô hầu đã nối lại được".
+- Ngô Sĩ Liên: "ở ngôi không được lâu, chưa thấy hiệu quả ..." (cuối câu OCR chưa rõ nên trang chỉ trích "chưa thấy hiệu quả").
+- KHÔNG thấy trong bản 2013: lời Ngô Thời Sĩ và lời phê Tự Đức, Phụ chú dẫn Cương mục (Hoằng Tháo chết đuối), Phụ chú dẫn An Nam kỷ yếu (quê Ái châu). Đây là Phụ chú của bản Wikisource; trang giữ nhưng đã ghi rõ nguồn.
